@@ -1,0 +1,372 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+## takes sequence(s) in genbank format. If a CDS is annotated, output the CDS seq in fasta format.  Note - this is only suitable for simple CDS regions annotated in mRNA sequences - it will not deal with spliced CDS seqs in genomic sequence.
+
+## Jan 14 2016:  added the ability to parse amino acid sequences (now deals OK with situations where the codon_start tag is not defined). This is counter-intuititive because the script name says it'll get CDS seqs, but it's a shortcut to output the sequence with a new, more useful header line.
+
+################ some options to specify:
+
+################ these options relate to how we name output sequences
+
+### specify a list of elements to combine in the output seq name
+# possible values: accession, speciesLatin, speciesCommon, geneName, productName
+# species is usually annotated for each Genbank entry.   
+# gene name and product name are annotated for some but not all individual CDS features - when those are not available we'll use the accession instead
+
+#my @outputNameFields = ("accession","speciesLatin","geneName");
+#my @outputNameFields = ("accession","speciesLatin","geneName","productName","speciesCommon");
+#my @outputNameFields = ("speciesCommon");
+#my @outputNameFields = ("speciesCommon","geneName");
+my @outputNameFields = ("speciesCommon","accession");
+#my @outputNameFields = ("speciesLatin");
+#my @outputNameFields = ("accession");
+#my @outputNameFields = ("productName","accession");
+
+### what character to use to combine the elements of the output seq.
+#my $outputNameJoinCharacters = "__";
+my $outputNameJoinCharacters = "_";
+
+### what character to use to replace spaces in geneName/productName/speciesNameCommon/speciesNameLatin:
+#my $characterToReplaceSpacesWith = "-";
+my $characterToReplaceSpacesWith = "_";
+
+### should we replace apostrophes (single quotes) in the geneName/productName/speciesNameCommon/speciesNameLatin?
+#my $replaceApostrophe = "no";
+my $replaceApostrophe = "yes";
+
+### a few seqs have >1 gene name or product name (seems rare) -  what character to use to replace join those multiple gene/product names
+my $multipleGeneOrProductNameJoinCharacters = "+";
+
+### include the description line of each sequence in the output?
+#my $includeDescriptionLine = "yes";
+my $includeDescriptionLine = "no";
+
+### add other text to each output seq name?
+my $addOtherTextToOutputName = ""; ## do not add anything
+#my $addOtherTextToOutputName = "_L1TD1"; ## add _L1TD1
+#my $addOtherTextToOutputName = "_ORF"; ## add _ORF
+#my $addOtherTextToOutputName = "__P2RY8"; ## add _P2RY8
+
+### add "_ORF" to each output seq name?
+#my $addORFtoOutputName = "yes";
+my $addORFtoOutputName = "no";
+
+
+################ other options 
+
+###### what shall we do with sequences where no CDS is annotated?  output the entire genbank entry (e.g. for cDNA sequences)  or not (e.g. we don't want that for genomic sequences)
+my $outputWholeSeqIfNoAnnotatedCDS = "yes";
+#my $outputWholeSeqIfNoAnnotatedCDS = "no";
+
+#### sometimes we also want a bed file, that lists the coordinates of the CDS sequences within each genbank sequence record
+my $getBedFile = "no";
+#my $getBedFile = "yes";
+
+#### sometimes we also want a tabular output file. One row per CDS.  Columns: accession, speciesLatin, speciesCommon, geneName, productName, number of CDSs for that accession, output name of this CDS, startCoordThisCDS, endCoordThisCDS, strandThisCDS, warnings, description
+#my $getTable = "no";
+my $getTable = "yes";
+
+## possibly also include sequence of full genbank entry and/or CDS in the table:
+my $includeCDSseqInTable = "yes";
+#my $includeCDSseqInTable = "no";
+
+my $includeFullSeqInTable = "yes";
+#my $includeFullSeqInTable = "no";
+
+# $includeCDSseqInTable   $includeFullSeqInTable
+
+########################### script starts here - do not edit below this line
+
+if (@ARGV==0) {
+    die "\n\nplease specify one or more genbank format input files\n\n";
+}
+
+foreach my $file (@ARGV){
+    if (!-e $file) {die "\n\nterminating - file $file does not exist\n\n";}
+    print "\nWorking on file $file\n";
+    my $seqIN = Bio::SeqIO->new(-file => "$file", '-format' => 'Genbank');
+    my $out = "$file".".ORFs";
+    my $seqOUT = new Bio::SeqIO(-file => ">$out", -format => 'Fasta');
+    my $bed = "$file".".ORFs.bed";
+    my $table = "$file".".ORFs.info.txt";
+    if ($getBedFile eq "yes") { open(BED, "> $bed"); }
+    if ($getTable eq "yes") { 
+        open(TABLE, "> $table"); 
+        ## print the header row
+        print TABLE "Seq\tspeciesLatin\tspeciesCommon\tgeneName\tproductName\tnumCDSsThisSeq\tCDSname\tCDSstart\tCDSend\tCDSstrand\twarnings\tdescription";
+        if ($includeCDSseqInTable eq "yes") { print TABLE "\tCDSseq"; }
+        if ($includeFullSeqInTable eq "yes") { print TABLE "\tFullSeq"; }
+        print TABLE "\n";  
+    }
+    my $warningsFile = "$file".".ORFs.warnings.txt";
+    open(LOG, ">$warningsFile");
+    print LOG "Seq\tWarnings\n";
+    my %seqNamesUsed;
+    my $numSeqs = 0;
+    my $numEntirelyMissingSequences = 0;
+    while (my $seq = $seqIN ->next_seq) {
+        my @warningsElementsParentSeq;
+        $numSeqs++;
+        my $header = $seq->display_id();
+        my $desc = $seq->description();
+        my $length = $seq->length();
+        my $circ = $seq->is_circular();
+        if (!defined $circ) {$circ = 0;} 
+        
+        ## get species name
+        my $speciesNameLatin = "UNDEFINED";
+        my $speciesNameCommon = "UNDEFINED";
+        my $thisSpecies = $seq->species();
+        if (defined $thisSpecies->binomial('FULL')) {
+            $speciesNameLatin = $thisSpecies->binomial('FULL');
+        } else {
+            if (grep /speciesLatin/,  @outputNameFields) {
+            #if ($outputName =~ m/species/) {
+                print "    WARNING - there is no defined Latin species name for sequence $header\n";
+                push @warningsElementsParentSeq, "noLatinSpeciesName";
+            }
+        }
+        if (defined $thisSpecies->common_name()) {
+            $speciesNameCommon = $thisSpecies->common_name();
+        } else {
+            if (defined $thisSpecies->binomial('FULL')) {
+                $speciesNameCommon = $thisSpecies->binomial('FULL');
+            }
+            #if ($outputName =~ m/speciesCommon/) {
+            if (grep /speciesCommon/,  @outputNameFields) {
+                print "    WARNING - no common name defined for the species of seq $header - using scientific name instead: $speciesNameCommon\n";
+                push @warningsElementsParentSeq, "noCommonSpeciesName";
+            }
+        }
+        $speciesNameLatin =~ s/\s/$characterToReplaceSpacesWith/g;  ## replace spaces in species name with a hyphen
+        $speciesNameCommon =~ s/\s/$characterToReplaceSpacesWith/g;  ## replace spaces in species name with a hyphen
+        
+        if ($replaceApostrophe eq "yes") {
+            $speciesNameLatin =~ s/\'//g;
+            $speciesNameCommon =~ s/\'//g;
+        }
+        
+        my $warningsParentSeq = join ",", @warningsElementsParentSeq;
+        
+        ## unusual sequences do not actually contain the sequence in this genbank entry and refer to others e.g. NG_025745.2
+        if (!defined $seq->seq()) {
+            print "    WARNING - seq $header had no sequence in the genbank entry! skip this one\n";
+            print TABLE "$header\t$speciesNameLatin\t$speciesNameCommon\tnoSequenceAtAll\tnoSequenceAtAll\t0\tnoSequenceAtAll\tNoSeq\tNoSeq\tNoSeq\t$warningsParentSeq\t$desc";
+            $numEntirelyMissingSequences++;
+            next;
+        }
+        
+        ## collect all CDSs before outputting them, to see whether seq has >1 CDS
+        my @CDSs;
+        for my $feat ($seq->get_SeqFeatures) {
+            if ($feat->primary_tag ne "CDS") {next;}
+            push @CDSs, $feat;
+        }
+        my $numCDSs = @CDSs;
+        if ($numCDSs == 0) {
+            print "    WARNING - seq $header had no CDS, giving entire sequence, and using accession as gene/product name\n";
+            push @warningsElementsParentSeq, "noCDSseqs";
+            print LOG "$header\tno CDS\n";
+            my $CDSseqString = $seq->seq();
+            if ($outputWholeSeqIfNoAnnotatedCDS eq "yes") {
+                my $CDSname = getOutputName($header, $speciesNameCommon, $speciesNameLatin, "noCDS", "noCDS", $outputNameJoinCharacters, \@outputNameFields);
+                $CDSname .= $outputNameJoinCharacters;
+                $CDSname .= "wholeSeqORF";
+                my $CDSseq = Bio::Seq->new(-display_id=>$CDSname, -seq=>$CDSseqString );
+                if ($includeDescriptionLine eq "yes") { $CDSseq->description($desc); }
+                $seqOUT->write_seq($CDSseq);
+                print TABLE "$header\t$speciesNameLatin\t$speciesNameCommon\tnoCDS\tnoCDS\t$numCDSs\t$CDSname\tWholeSeq\tWholeSeq\tWholeSeq\t$warningsParentSeq\t$desc";
+                if ($includeCDSseqInTable eq "yes") { print TABLE "\t$CDSseqString"; }
+                if ($includeFullSeqInTable eq "yes") { print TABLE "\t$CDSseqString"; }
+                print TABLE "\n";
+            } else {
+                print TABLE "$header\t$speciesNameLatin\t$speciesNameCommon\tnoCDS\tnoCDS\t$numCDSs\tScriptSetNotToOutputWholeSeq\tWholeSeq\tWholeSeq\tWholeSeq\t$warningsParentSeq\t$desc";
+                if ($includeCDSseqInTable eq "yes") { print TABLE "\t$CDSseqString"; }
+                if ($includeFullSeqInTable eq "yes") { print TABLE "\t$CDSseqString"; }
+                print TABLE "\n";
+            }
+        }
+        my $CDScounter = 1;
+        foreach my $CDS (@CDSs) {
+            #my $CDSname = "$header";
+            #if ($outputName =~ m/species/) { $CDSname = $speciesName; }
+            my @warningsElementsCDS;
+            ### get product name, if possible
+            my @productNames;
+            my $productName = "UNDEFINED";
+            my @allTags = $CDS->get_all_tags(); 
+            #print "acc $header allTags @allTags\n";
+            if (grep /product/, @allTags) {
+                @productNames = $CDS->get_tag_values('product') ;
+                if (@productNames > 0) { 
+                    $productName = join $multipleGeneOrProductNameJoinCharacters, @productNames; 
+                    $productName =~ s/\s/$characterToReplaceSpacesWith/g;
+                    if ($replaceApostrophe eq "yes") {
+                        $productName =~ s/\'//g;
+                    }
+                }
+            } else {
+                $productName = $header;
+                if (grep /productName/, @outputNameFields) {
+                    push @warningsElementsCDS, "noProductName";
+                    print "    WARNING - seq $header had a CDS with no product name defined - using accession instead\n";
+                }
+            }
+            #print "new CDSname $CDSname productNames @productNames\n\n";
+            
+            ### get product name, if possible
+            my @geneNames;
+            my $geneName = "UNDEFINED";
+            #print "acc $header allTags @allTags\n";
+            if (grep /gene/, @allTags) {
+                @geneNames = $CDS->get_tag_values('gene') ;
+                if (@geneNames > 0) { 
+                    $geneName = join $multipleGeneOrProductNameJoinCharacters, @geneNames; 
+                    $geneName =~ s/\s/$characterToReplaceSpacesWith/g;
+                    if ($replaceApostrophe eq "yes") {
+                        $geneName =~ s/\'//g;
+                    }
+                }
+            } else {
+                $geneName = $header;
+                if (grep /geneName/, @outputNameFields) {
+                    push @warningsElementsCDS, "noGeneName";
+                    print "    WARNING - seq $header had a CDS with no gene name defined - using accession instead\n";
+                }
+            }
+            #print "new CDSname $CDSname geneNames @geneNames\n\n";
+            my $CDSname = getOutputName($header, $speciesNameCommon, $speciesNameLatin, $geneName, $productName, $outputNameJoinCharacters, \@outputNameFields);
+
+            if ($addOtherTextToOutputName ne "") {
+                $CDSname .= $addOtherTextToOutputName;
+            }
+            if ($addORFtoOutputName eq "yes") {
+                $CDSname .= $outputNameJoinCharacters;
+                $CDSname .= "ORF";
+            }
+            if ($numCDSs > 1) {
+                push @warningsElementsCDS, "multipleCDSsThisSeq";
+                $CDSname .= $CDScounter;
+                print LOG "$header\tmultipleCDSs\n";
+            }
+            my $start = $CDS->start;
+            my $end = $CDS->end;
+            my $strand = $CDS->strand;
+            my $strand2 = "+"; if ($strand == -1) { $strand2 = "-"; }
+            #print "CDS $CDSname strand $strand\n";
+            ## is there also a codon_start tag?
+            if (grep /codon_start/, @allTags) {
+                my @codonStarts = $CDS->get_tag_values('codon_start');
+                if (@codonStarts > 0) {
+                    if (@codonStarts > 1) {
+                        #print "seq $header seqlength ".$seq->length()." CDS $CDSname start $start end $end\n";
+                        die "\n\nterminating - there's a CDS with multiple codonStarts specified\n\n";
+                    } 
+                    #if ($codonStarts[0] < $start) {
+                        #print "seq $header seqlength ".$seq->length()." CDS $CDSname start $start end $end\n";
+                        #die "\n\nterminating - seems odd that codonStart $codonStarts[0] is before start $start\n\n";
+                    #}
+                    if ($codonStarts[0] != 1) {
+                        print "    WARNING - weird ORF for seq $header!  adding $codonStarts[0] to start, from codon_start tag\n";
+                        push @warningsElementsCDS, "weirdORFreadingFrame";
+                        $start = $start + $codonStarts[0] - 1;
+                    }
+                    #print "codonStarts @codonStarts\n";
+                }
+            } else {
+                print "    WARNING - seq $header did not have a codon_start tag - it might be an amino acid sequence?\n";
+                push @warningsElementsCDS, "no_codon_start";
+            }
+            my $CDSseqString;
+            my $tempStart = $start-1; ## for bed files
+            ### special case: features that span the origin in circular genomes:
+            if (($circ == 1) & ($start>$end)) {
+                push @warningsElementsCDS, "CDSspansOriginInCircularSequence";
+                print "    WARNING - fixing origin-spanning feature in circular genome\n";
+                my $CDSseq1 = $seq->subseq($start,$seq->length());
+                my $CDSseq2 = $seq->subseq(1,$end);
+                $CDSseqString = $CDSseq1 . $CDSseq2;
+                if ($getBedFile eq "yes") {
+                    print BED "$header\t$tempStart\t". $seq->length() ."\t$CDSname\t1000\t$strand2\n";
+                    print BED "$header\t0\t$end\t$CDSname\t1000\t$strand2\n";
+                }
+            } else { ## normal ORFS:
+                $CDSseqString = $seq->subseq($start,$end);
+                if ($getBedFile eq "yes") {
+                    print BED "$header\t$tempStart\t$end\t$CDSname\t1000\t$strand2\n";
+                }
+            }
+            my @allWarnings = (@warningsElementsParentSeq,@warningsElementsCDS);
+            my $allWarningsString = join ",", @allWarnings;
+            print TABLE "$header\t$speciesNameLatin\t$speciesNameCommon\t$geneName\t$productName\t$numCDSs\t$CDSname\t$start\t$end\t$strand\t$allWarningsString\t$desc";
+            if ($includeCDSseqInTable eq "yes") { print TABLE "\t$CDSseqString"; }
+            if ($includeFullSeqInTable eq "yes") { 
+                my $fullSeq = $seq->seq();
+                print TABLE "\t$fullSeq"; 
+            }
+            print TABLE "\n";
+            
+            #print "seq $header seqlength ".$seq->length()." CDS $CDSname start $start end $end\n";
+            my $CDSseq = Bio::Seq->new(-display_id=>$CDSname, -seq=>$CDSseqString);
+            if ($includeDescriptionLine eq "yes") { $CDSseq->description($desc); }
+            if (defined $seqNamesUsed{$CDSname}) {
+                print "\n\nWARNING - seqname $CDSname has been used more than once\n\n";
+                print LOG "$CDSname\tAppearsMoreThanOnce\n";
+            }
+            $seqNamesUsed{$CDSname} = 1;
+            if ($strand == -1) { $CDSseq=$CDSseq->revcom(); }
+            $seqOUT->write_seq($CDSseq);
+            $CDScounter++;
+        }
+    }
+    if ($numSeqs == 0) {
+        print "\n\nWARNING - there seemed to be no sequences in file $file - is it really in Genbank format?\n\n";
+    }
+    if ($numEntirelyMissingSequences > 0) {
+        print "\n\nWARNING - $numEntirelyMissingSequences sequences appeared not to contain any sequence at all - skipped those\n\n";
+    }
+    if ($getBedFile eq "yes") { close BED; }
+    if ($getTable eq "yes") { close TABLE; }
+    close LOG;
+}
+
+######
+sub getOutputName {
+    my $header = $_[0];
+    my $speciesNameCommon = $_[1];
+    my $speciesNameLatin = $_[2];
+    my $geneName = $_[3];
+    my $productName = $_[4];
+    my $outputNameJoinCharacters = $_[5];
+    my $outputNameFieldsRef = $_[6];
+    my @outputNameFields = @$outputNameFieldsRef;
+    ### figure out name for output seqs.  If there's 1 ORF, this'll be the name. If >1, we'll add a counter on the end of the name.  If 0, we add _wholeSeqORF to the name.
+    my @outputElements;
+    for my $outputField (@outputNameFields) {
+        my $output = "UNDEFINED";
+        if ($outputField eq "accession") { $output = $header; }
+        if ($outputField eq "speciesLatin") { $output = $speciesNameLatin; }
+        if ($outputField eq "speciesCommon") { $output = $speciesNameCommon; }
+        if ($outputField eq "geneName") { 
+            if ($geneName eq "noCDS") {
+                $output = $header;
+            } else {
+                $output = $geneName;
+            }
+        }
+        if ($outputField eq "productName") { 
+            if ($productName eq "noCDS") {
+                $output = $header;
+            } else {
+                $output = $productName;
+            }
+        }
+        push @outputElements, $output;
+    }
+    my $outputName = join $outputNameJoinCharacters, @outputElements;
+    return($outputName);
+}

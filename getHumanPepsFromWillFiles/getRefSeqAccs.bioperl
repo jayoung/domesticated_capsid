@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+
+#####################
+
+foreach my $seqFile (@ARGV) {
+    if(!-e $seqFile) { die "\n\nterminating - can't find seqfile $seqFile\n\n"; }
+    my $outfile = $seqFile; 
+    $outfile =~ s/\.fa$//; $outfile .= ".accs.txt";
+    
+    ### get unique list of seqs we want to get
+    my %accsSeen; 
+    my $seqIN = Bio::SeqIO->new(-file=>"$seqFile", -format=>"fasta");
+    while (my $seq = $seqIN->next_seq()) {
+        # figure out original seq name, after removing domain type and coords
+        my $longseqname = $seq->display_id();
+        my $seqname = $longseqname;
+        # remove match end
+        $seqname =~ s/-\d+?$//;
+        # remove match start
+        $seqname =~ s/-\d+?$//;
+        # remove domain query name
+        $seqname =~ s/-\w+?$//;
+        #print "    original seq name $longseqname short name $seqname\n";
+        if (defined $accsSeen{$seqname}) {
+            print "    WARNING - found seq $seqname more than once\n";
+            next;
+        }
+        $accsSeen{$seqname}=$longseqname;
+    } # while seq loop
+    my @accs = sort keys %accsSeen;
+    open (OUT, "> $outfile");
+    foreach my $acc (@accs) {
+        print OUT "$acc\t$accsSeen{$acc}\n";
+    }
+    close OUT;
+}

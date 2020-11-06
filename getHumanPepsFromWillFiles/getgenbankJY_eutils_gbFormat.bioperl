@@ -1,0 +1,100 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::DB::EUtilities;
+
+##### this version of the script I will NOT edit the output format. Useful when other scripts depend on it. see getgenbankJY_eutils.bioperl for a more flexible version of the script
+
+#### this script takes input file(s) of desired NCBI accessions (text file or files, one accession per line).  Output = one file per input file of fasta or genbank format sequences - specify output format in the script.
+
+## note - this might fail to get the full sequence record for very large genomic sequences (e.g. megabase-sized), but will look like it worked - it may just give the sequence header but not the sequence itself
+
+########################### SET THESE OPTIONS:
+
+###### specify the NCBI database type we want to query
+my $database = "protein";
+
+###### specify the output format we want (fasta, or gb=genbank)
+my $returntype = "gb";
+
+###### specify how many sequences to try to retrieve at a time (only relevant for large queries). If the script gives errors about timeouts, try reducing this numbers.
+#my $chunksize = 2000;
+#my $chunksize = 500;
+my $chunksize = 100;
+
+
+########################### script starts here - do not edit below this line
+
+print "\n\nStarting.  Querying the $database database.  Returning sequences in $returntype format\n\n";
+
+print "\n\nWARNING - if you are expecting to download large sequences, check output sequence size, as sometimes sequence retrieval fails without error partway through download\n\n";
+
+if (@ARGV == 0) { die "\n\nterminating - please specify file(s) containing accession(s), one per line\n\n"; }
+
+print "\n";
+foreach my $file (@ARGV){
+    if (! -e $file) {die "\n\nterminating - can't open file $file\n\n";}
+    print "query file $file\n";
+    
+    ### read in accessions
+    my @accs;
+    open (IN, "< $file");
+    while (<IN>) {
+        my $acc = $_; 
+        chomp $acc; 
+        $acc =~ s/^>//;
+        if ($acc =~ m/\//) {
+            $acc = (split /\//, $acc)[0]; ## e.g. for PFAM things
+            print "acc $acc\n";
+        }
+        if ($acc =~ m/\|/) {
+            $acc = (split /\|/, $acc)[1]; ## e.g. for Genbank accs embedded in a blast output
+            #print "acc $acc\n";        
+        }
+        if ($acc =~ m/\t/) {$acc = (split /\t/, $acc)[0];} ## take first field on line
+        if ($acc =~ m/\s/) {$acc = (split /\s/, $acc)[0];} ## take first field on line
+        push @accs, $acc;}
+    close IN;
+    my $num = @accs;
+    #print "getting these accs\n";
+    #foreach my $acc (@accs) {  print "    $acc\n";}
+    #die;
+    open (OUT, "> $file.$returntype");
+    my $retstart = 0;
+    my $retry = 0;
+    RETRIEVE_SEQS:
+    while ($retstart < $num) {
+        my $end = $retstart + $chunksize - 1;
+        if ($end >= $num) {$end = $num-1;}
+        my @accslice = @accs[$retstart..$end];
+        #print "start $retstart end $end slice @accslice\n";
+       # print "start $retstart end $end\n";
+        
+        my $factory = Bio::DB::EUtilities->new(-eutil   => 'efetch',
+                                               -db      => "$database",
+                                               -id      => \@accslice,
+                                               -email   => 'jayoung@fhcrc.org',
+                                               -rettype => "$returntype" );
+        eval { 
+            ### this seems to fail if number of seqs was too high.
+            my @results = $factory->get_Response->content;
+            print OUT join "\n", @results;
+        };
+        if ($@) {
+            if ($retry == 5) {die "\n\nTerminating - server error: $@.  Try again later\n\n";}
+            print STDERR "Server error, redo #$retry\n";
+            $retry++ && redo RETRIEVE_SEQS;
+        }
+        print "Retrieved slice starting at $retstart\n";
+        $retstart += $chunksize;
+    }
+    close OUT;
+
+    if ($returntype eq "fasta") {
+        my $totalcount = `grep '>' $file.$returntype | wc`;
+        $totalcount = (split /\s+/, $totalcount)[1];
+        print "    wrote $totalcount sequences for query file $file\n\n";
+    }
+}
+

@@ -1,0 +1,62 @@
+
+##### workflow, in detail
+
+## (1) take all human seq names in 2020.23.10.CA.Hs.refseq.accessions.csv and ../fromWill/2_2020_Oct23_seqs/2020.23.10.CA.final.seqs.refseq.repbase.accessions.csv (a mix of Refseq and repbase proteins, including some that may have droppped out when Will did CD-Hit and Trimal filters
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_gags_BlakeWiedenheft/getHumanPepsFromWillFiles
+
+./getHumanSeqsFullLen.bioperl
+./getHumanSeqsJustCapsid.bioperl
+
+there are 71 different seqs to get, after combining those two lists
+
+some seqs are in Will's seq file twice, looks like because they either had two chunks of match to an HMM, or they matched two different HMMs.  He does have a downstream step of using CD-HIT to get rid of redundant seqs, so only one will have made it into his alignment and tree, which is good.  I'll just keep the first one here, doesn't matter which I keep 
+    WARNING - found seq NP_001338223.1 more than once, that's OK
+    WARNING - found seq NP_001338222.1 more than once, that's OK
+    WARNING - found seq NP_001019626.1 more than once, that's OK
+    WARNING - found seq XP_024308194.1 more than once, that's OK
+    WARNING - found seq NP_001128360.1 more than once, that's OK
+    WARNING - found seq NP_001165908.1 more than once, that's OK
+    WARNING - found seq NP_001171890.1 more than once, that's OK
+    WARNING - found seq NP_055883.2 more than once, that's OK
+    WARNING - found seq NP_001354699.1 more than once, that's OK
+    WARNING - found seq NP_001341909.1 more than once, that's OK
+    WARNING - found seq NP_001035242.1 more than once, that's OK
+    WARNING - found seq NP_001171891.1 more than once, that's OK
+    WARNING - found seq NP_001165909.1 more than once, that's OK
+
+## look at the genbank entries for the seqs Will got from RefSeq: 
+# get plain Refseqs:
+./getRefSeqAccs.bioperl 2020.23.10.humanSeqs.CAonly.Refseq.fa  2020.23.10.humanSeqs.fullLen.Refseq.fa
+
+diff 2020.23.10.humanSeqs.CAonly.Refseq.accs.txt 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt
+    they're the same, so I can just use one
+rm 2020.23.10.humanSeqs.CAonly.Refseq.accs.txt
+./getgenbankJY_eutils_gbFormat.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt
+
+mv 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb  fullGenbankEntries/
+
+xx make a table from the genbank entry
+
+
+## (3) figure out for each location(s) in the human genome (hg38)
+   ## which human genome version?  hg38 or hg19? whichever has more conservation tracks available.  hg38 and hg19 both have 100 vertebrates. hg38 also has a 27 (or 30?) primates track, and hg19 does not.  USE HG38.
+   
+   ## (i) For the Refseq proteins I'll try BLAT looking at exact and almost exact matches - try require 95% identity
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_gags_BlakeWiedenheft/mapToHg38/Refseq
+ln -s ../../getHumanPepsFromWillFiles/*Refseq.fa .
+
+# get ooc file for hg38 for blatX searches:
+pushd ~/public_databases/UCSC/human_Dec2013
+blat hg38.fa /dev/null /dev/null -t=dnax q=prot -makeOoc=5.dnax.ooc -repMatch=1024 -tileSize=5 
+popd
+
+# do searches
+blat /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/hg38.fa 2020.23.10.humanSeqs.CAonly.Refseq.fa -t=dnax -q=prot -ooc=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/5.dnax.ooc -minIdentity=95 2020.23.10.humanSeqs.CAonly.Refseq.blatHg38.psl
+
+blat /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/hg38.fa 2020.23.10.humanSeqs.fullLen.Refseq.fa -t=dnax -q=prot -ooc=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/5.dnax.ooc -minIdentity=95 2020.23.10.humanSeqs.fullLen.Refseq.blatHg38.psl
+
+
+
+   ## (ii) For the Repbase proteins I will want to be a bit more tolerant of mismatch, but I can exclude hits with frameshifts/stops

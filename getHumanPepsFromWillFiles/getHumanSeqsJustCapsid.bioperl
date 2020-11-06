@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+
+#####################
+
+my $outfileRefseq = "2020.23.10.humanSeqs.CAonly.Refseq.fa";
+my $outfileRepbase = "2020.23.10.humanSeqs.CAonly.Repbase.fa";
+
+my $seqFile = "../fromWill/2_2020_Oct23_seqs/2020.23.10.CA.only.seqs.repbase.ncbivirus.Hs.refseq.faa";
+if(!-e $seqFile) { die "\n\nterminating - can't find seqfile $seqFile\n\n"; }
+
+my @listFiles = ("../fromWill/2_2020_Oct23_seqs/2020.23.10.CA.final.seqs.refseq.repbase.accessions.csv", "../fromWill/2_2020_Oct23_seqs/2020.23.10.CA.Hs.refseq.accessions.csv");
+
+### get unique list of seqs we want to get
+print "\nReading sequence lists\n";
+my %seqsToGet;  # first key - seqname
+                # second key - 'source' - value is the actual source (Repbase or Refseq) 
+                # I'll add 'seq' as another second key later, with the sequence object as value
+foreach my $listFile (@listFiles) {
+    print "    from file $listFile\n";
+    open (LIST, "< $listFile") || die "can't find listfile $listFile\n";
+    while (<LIST>) {
+        my $line = $_; 
+        if ($line =~ m/^query_name/) { next; }
+        chomp $line;
+        my $source = "Refseq";
+        my $acc;
+        if ($line =~ m/\,/) {
+            my @f = split /\,/, $line;
+            $source = $f[1];
+            $acc = $f[0];
+        } else {
+            $acc = $line;
+        }
+        $seqsToGet{$acc}{'source'} = $source;
+    }
+    close LIST;
+}
+print "\n\n";
+my $numSeqs = keys %seqsToGet;
+print "\nGetting a total of $numSeqs seqs from file $seqFile\n\n";
+
+
+my $seqIN = Bio::SeqIO->new(-file=>"$seqFile", -format=>"fasta");
+my $seqOUT_refseq = Bio::SeqIO->new(-file=>"> $outfileRefseq", -format=>"fasta");
+my $seqOUT_repbase = Bio::SeqIO->new(-file=>"> $outfileRepbase", -format=>"fasta");
+
+#### going through sequence file, outputting any sequences that were on the list
+# seqnames in the fasta file look like this:
+#     GYPSY7-I_AG_2-Retrotrans_gag-141-234
+# where I think the HMM for Retrotrans_gag matched amino acids 141-234 of the sequence called GYPSY7-I_AG_2
+
+my $numSeqsFound = 0;
+while (my $seq = $seqIN->next_seq()) {
+    # figure out original seq name, after removing domain type and coords
+    my $longseqname = $seq->display_id();
+    my $seqname = $longseqname;
+    # remove match end
+    $seqname =~ s/-\d+?$//;
+    # remove match start
+    $seqname =~ s/-\d+?$//;
+    # remove domain query name
+    $seqname =~ s/-\w+?$//;
+    #print "    original seq name $longseqname short name $seqname\n";
+    if (defined $seqsToGet{$seqname}) {
+        # check I didn't already get this seq
+        if (defined $seqsToGet{$seqname}{'seq'}) {
+            print "    WARNING - found seq $seqname more than once, that's OK\n";
+            next;
+        }
+        $seqsToGet{$seqname}{'seq'} = $seq;
+        my $thisSource = $seqsToGet{$seqname}{'source'};
+        if ($thisSource eq "Refseq") {
+            $seqOUT_refseq->write_seq($seq);
+        } else {
+            $seqOUT_repbase->write_seq($seq);
+        }
+        $numSeqsFound++;
+    }
+} # while seq loop
+print "\nFound $numSeqsFound seqs\n";
+
+##### check I got all the seqs I was looking for:
+foreach my $acc (keys %seqsToGet) {
+    if (!defined $seqsToGet{$acc}{'seq'}) {
+        print "    $acc not found\n";
+    }
+}
+print "\n\nDone.\n\n";

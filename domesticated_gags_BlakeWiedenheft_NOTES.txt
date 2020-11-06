@@ -1,0 +1,82 @@
+Blake Wiedenheft (PI) bwiedenheft@gmail.com
+Will Henriques (student) henriques.william@gmail.com
+    Montana State University
+    Also have worked on CRISPR and anti-CRISPR
+
+Blake's lab has expertise in protein structure
+
+
+ARC - domesticated gag involved in neuronal synapses
+Convergent evolution - there's a mouse gene called ARC, and two fly genes.  From different ERV families. Derived from LTR retrotransposon capsids.
+
+They're interested in domesticated gag genes, possibly to use as synthetic delivery vehicles, e.g. ARC could deliver to neurons.
+
+They've been trying to do crystal structures. Fly ARCs crystallized really well (published) but human didn't. They thought they would look at other possible domesticated gags to se if they can get a structure. They were going to simply do 18 human gags but Harmit thinks there may be more.
+
+Harmit suggests looking at evolutionary signatures of those 18 to see if they could be prioritized.  When were they born?  What selective pressures are they under?
+
+## ARC notes
+
+dArc1 and dArc2 - one of them appears to specifically package its own mRNA, transfers that across the neuromuscular junction, the other does not include RNA in the capsid.
+rodent ARC transfers RNA between two neurons
+
+
+
+###### zoom meeting Oct 23 2020
+
+# notes
+see slides
+
+icosahedron = 20 faces.
+'regular icosahedron' = each face is an equilateral triangle, vertices have 5-fold symmetry
+but there are infinitely many non-similar shapes of icosahedra, some of them being more symmetrical than others. Some are fancy stellated things.
+
+Virus capsids are composed of 60 asymmetric units. https://viralzone.expasy.org/8577
+T is the 'triangulation number' and describes how many protein molecules make up each of those 60 units (so in a full capsid there are Tx60 proteins).
+
+# to do
+ - Will will send me the 18 human seqs
+
+ - I will start looking for conservation / synteny
+
+ - I want to read some papers (do I need to get them from the lab?)
+including: other people's searches for domesticated capsid genes, e.g. King Jordan.  
+Eugene Koonin's capsid phylogeny paper with Makarova 
+ARC papers
+Pastuzyn (rodent)
+Ashley (fly)
+Krupovic (ICTV viral phylogeny)
+
+
+
+####### Will shared 6 files on Oct 23, 2020 (dropbox) 
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_gags_BlakeWiedenheft/fromWill/1_2020_Oct23
+
+he sent README.txt plus 5 other files.
+see README_JYnotes.xlsx
+
+
+
+###### workflow - outline
+
+(1) take all human seq names in 2020.23.10.CA.Hs.refseq.accessions.csv and ../fromWill/1_2020_Oct23/2020.23.10.CA.final.seqs.refseq.repbase.accessions.csv (a mix of Refseq and repbase proteins, including some that may have droppped out when Will did CD-Hit and Trimal filters
+ and get the unaligned CA seq from 2020.23.10.CA.only.seqs.repbase.ncbivirus.Hs.refseq.faa, or perhaps the unaligned full-length seq from 2020.23.10.CA.containing.seqs.repbase.ncbivirus.Hs.refseq.faa
+
+(2) for the Refseq proteins, get the full genbank entry, and check out gene names and publications
+
+xx perhaps blast known human genes with the refseq proteins?
+
+(3) figure out for each location(s) in the human genome (which version?)
+    (i) For the Refseq proteins that will be by BLAT or BLAST and looking at exact and almost exact matches
+    (ii) For the Repbase proteins I will want to be a bit more tolerant of mismatch, but I can exclude hits with frameshifts/stops
+
+(4) use those locations to look at the region in UCSC including flanks.  I want to know
+    (a) when did the insertion occur
+    (b) pull out syntenic seqs from all other species, ask how many have the CA-coding protein without stops/frameshifts
+    (c) align any intact regions and look at dN/dS.  Could align just the CA region, and/or could align the entire prot seq.
+    (d) look at some metric like phyloP score?  that might be badly influenced by bad alignments from non-syntenic ERVs
+
+(5) we could also ask something about expression of those seqs
+
+

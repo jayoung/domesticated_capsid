@@ -1,0 +1,166 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::Seq;
+use Bio::SeqIO;
+use Bio::AlignIO;
+use Bio::TreeIO;
+use Getopt::Long;
+
+#### takes a maf format multiple alignment file and outputs fasta format alignment(s)
+## I can optionally supply a tree file that has the desired output order of the sequences, otherwise it will output seqs in a random order
+
+## see https://metacpan.org/pod/Bio::AlignIO::maf
+
+##  xxxx maybe I should deal with the between chunk breaks/insertions in the non-reference species? or write a log that tells me about them? right now I just concatenate all the alignment chunks together.
+
+
+
+###########  set up options and their defaults
+
+### by default I use a parsed README file I got for hg38 100-vertebrate track 
+my $writeEachChunk = 0; # whether to write fasta files for each chunk
+my $keepRef = 1;  # whether to keep the first seq in the maf file, regardless of whether its name is in the species file
+my $useSeqOrderFromFile = 1;
+my $speciesFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
+
+## get any non-default options from commandline
+GetOptions("orderSeqs=i" => \$useSeqOrderFromFile,
+           "speciesFile=s" => \$speciesFile,  ## default yes, could be no
+           "keepRef=i" => \$keepRef, ## default yes, could be no
+           "chunks=i" => \$writeEachChunk) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+###########  do stuff
+
+my @assemblyOrder;
+if ($useSeqOrderFromFile == 1) {
+    if (!-e $speciesFile) {
+        die "\n\nterminating - you specified to use a species order file but it does not exist: $speciesFile\n\n";
+    }
+    open (SPECIES, "< $speciesFile");
+    while (<SPECIES>) {
+        my $line = $_; chomp $line; 
+        if ($line =~ m/^Assembly\sname/) {next;}
+        if ($line =~ m/\t/) { $line = (split /\t/, $line)[0]; }
+        push @assemblyOrder, $line;
+    }
+    close SPECIES;
+    my $numSeqsToGet = @assemblyOrder;
+    if ($numSeqsToGet == 0) {
+        die "\n\nterminating - did not find any sequences in file $speciesFile\n\n";
+    }
+}
+
+foreach my $file (@ARGV) {
+    if (!-e $file) {
+        die "\n\nterminating - cannot open file $file\n\n";
+    }
+    my $outstem = $file; $outstem =~ s/\.maf$//;
+    my $outCombined = $outstem . ".combined.fa";
+    my $outCombinedReport = $outstem . ".combined.log.txt";
+    
+    my $alignio = Bio::AlignIO->new(-file => "< $file", 
+                                    -format => "maf", 
+                                    -alphabet => "dna");
+    
+    # $aln is a Bio::SimpleAlign object, containing a single alignment chunk
+    my $alignChunkIndex = 1;
+    my %alnChunks;
+    my %allSeqNames; # want to collect names of all seqs in any aln chunk. will be in same order as first chunks, with any seqs missing from first chunk but present in other chunks tagged onto the end
+    my @allSeqNamesOrdered; 
+    my @allAlns;
+    while (my $aln = $alignio->next_aln()){
+        #print "\n#### chunk $alignChunkIndex\n";
+        push @allAlns, $aln;
+        my $out = $outstem . ".$alignChunkIndex.fa";
+        $alnChunks{$alignChunkIndex}{'aln'} = $aln;
+        $alnChunks{$alignChunkIndex}{'len'} = $aln->length;
+        foreach my $seq ($aln->each_seq) {
+            my $name = $seq->display_id();  # seqnames are e.g hg38.chrX cerSim1.JH767846
+            my $assembly = (split /\./, $name)[0];
+            #print "    got seq $name\n";
+            if (!defined($allSeqNames{$name})) {push @allSeqNamesOrdered, $assembly;}
+            $allSeqNames{$name} = 1;
+        }
+        ## write a fasta file for each chunk
+        if ($writeEachChunk == 1) {
+            my $alignOUT = Bio::AlignIO->new(-file => "> $out", 
+                                             -format => "fasta", 
+                                             -alphabet => "dna");
+            $alignOUT -> write_aln($aln);
+        }
+        $alignChunkIndex++;
+    }
+    
+    ## now go through each chunk. concatenate seqs, and if there are any seqs missing from this chunk, add a gap chunk
+    my %fullSeqs;
+    foreach my $aln (@allAlns){
+        my $len = $aln->length;
+        my $blankSeq = "-" x $len;
+        my %seqsThisChunk;
+        ## read in all seqs this chunk
+        foreach my $seq ($aln->each_seq) {
+            my $name = $seq->display_id();  # seqnames are e.g hg38.chrX cerSim1.JH767846
+            my $assembly = (split /\./, $name)[0];
+            $seqsThisChunk{$assembly} = $seq;
+        }
+        ## go through seqs I am expecting to see (some will be missing)
+        foreach my $assemblyName (@allSeqNamesOrdered) {
+            if (!defined $seqsThisChunk{$assemblyName}) {
+                $fullSeqs{$assemblyName} .= $blankSeq;
+            } else {
+                my $letters = $seqsThisChunk{$assemblyName}->seq();
+                $letters =~ s/\./-/g;
+                $fullSeqs{$assemblyName} .= $letters;
+            }
+        }
+    }
+    
+    ## now go through all seqs in order (either @allSeqNamesOrdered or @assemblyOrder) and output
+    my $alignOUTcombined = Bio::SeqIO->new( -file => "> $outCombined", 
+                                            -format => "fasta",
+                                            -alphabet => "dna");
+    my @seqOrderToUse = @allSeqNamesOrdered;
+    my $refSeqName = $allSeqNamesOrdered[0];
+    if ($useSeqOrderFromFile == 1) { @seqOrderToUse = @assemblyOrder; }
+    
+    open (REPORT, "> $outCombinedReport");
+    ## first, if we've specified keepRef, check if the ref seq is present in @seqOrderToUse and if not, write it out.
+    if ($keepRef == 1) {
+        if ((grep /$refSeqName/, @seqOrderToUse)==0) {
+            print "    Reference seq is not found in the species order file, but we'll write it out anyway\n";
+            outputSeq($refSeqName, \%fullSeqs, $alignOUTcombined);
+        }
+    }
+    foreach my $assemblyName (@seqOrderToUse) {
+        outputSeq($assemblyName, \%fullSeqs, $alignOUTcombined);
+    }
+    close REPORT;
+}
+
+###
+
+sub outputSeq {
+    my ($assemblyName, $fullSeqsRef, $outStream) = @_;
+    my %fullSeqs = %$fullSeqsRef;
+    if (!defined $fullSeqs{$assemblyName}) {
+        print REPORT "$assemblyName\tmissing\n";
+        print "    WARNING - no fullSeqs entry for assembly $assemblyName\n";
+        return();
+    }
+    ## check for seqs that are entirely ---- or ...
+    my $letters = $fullSeqs{$assemblyName};
+    my $lettersNoGaps = $letters; $lettersNoGaps =~ s/-//g;
+    if (length($lettersNoGaps)==0) {
+        print "        skipping $assemblyName - no non-gap characters\n";
+        print REPORT "$assemblyName\tempty\n";
+        return();
+    }
+    my $seq = Bio::Seq->new(-display_id => $assemblyName, 
+                            -seq => $letters, 
+                            -alphabet => "dna");
+    $outStream->write_seq($seq);
+    return();
+}
+

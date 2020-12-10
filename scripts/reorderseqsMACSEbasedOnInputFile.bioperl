@@ -1,0 +1,58 @@
+#!/usr/bin/perl 
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Getopt::Long;
+
+# takes the MACSE output fasta file specified on the command line, figures out the name of the input file, so I can reorders sequences the same as they were to start with
+
+# usage: reorderseqsMACSEbasedOnInputFile.bioperl MACSEoutFile(s).fa 
+
+my $verbose = 1; # whether to emit warnings
+
+## get any non-default options from commandline
+GetOptions("verbose=i" => \$verbose ## default 0, could be 1
+           ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+#################
+
+if (@ARGV < 1) {
+    die "\n\nterminating - please specify MACSE output files\n\n";
+}
+
+foreach my $file (@ARGV) {
+    my $orderedlistfile = $file;
+    $orderedlistfile =~ s/_aln1_NT\.fa//;
+    if (!-e $file) { die "\n\nterminating - seqfile $file does not exist\n\n"; }
+    if (!-e $orderedlistfile) { die "\n\nterminating - seq order file $orderedlistfile does not exist\n\n"; }
+    
+    my $out = $file; $out =~ s/\.fasta$//; $out =~ s/\.fa$//; $out =~ s/\.fas$//;
+    $out = "$out".".sorted.fa";
+        
+    ### read the seqs
+    my $seqIN = Bio::SeqIO->new(-format=>"fasta", -file=>"< $file");
+    my %seqs;
+    my $firstSeqName;
+    while (my $seq = $seqIN->next_seq) {
+        my $header = $seq->display_id();
+        $seqs{$header} = $seq;
+        if (!defined $firstSeqName) {$firstSeqName = $header;}
+        #print "read seq $header BLAH\n";
+    }
+    
+    my $seqOUT = Bio::SeqIO->new(-format=>"fasta", -file=>"> $out");
+    
+    ### read the desired order
+    my $seqINorder = Bio::SeqIO->new(-format=>"fasta", -file=>"< $orderedlistfile");
+    while (my $seq = $seqINorder->next_seq) {
+        my $header = $seq->display_id();
+        if (!defined $seqs{$header}) {
+            if ($verbose==1) {print "    WARNING - seq $header was not in seqfile $file\n"; }
+            next;
+        }
+        $seqOUT->write_seq($seqs{$header});
+    }
+}
+

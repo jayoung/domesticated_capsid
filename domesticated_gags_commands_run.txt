@@ -50,14 +50,17 @@ output =
     (one row per gene)
 
 
-xxx now make a script to go through 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byAccession.txt, use the fourth field (refseq accession) to find the relevant row from /home/jayoung/public_databases/UCSC/human_Dec2013/misc_tracks/hg38.refGene.2020dec3.bed
-and save it as a bed file with just one row
+## get placental mammal maf file for each transcript using RefSeq ID:
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments
+module load Kent_tools
+../scrips/getBedAndMaf.pl
+module purge
 
-xxx then make a script to run mafFrags
+xx accessions now have the version number, but in my previous maf2fasta script they might not have done. Also now there are XM_ accessions as well as NM_ accessions
 
 
 
-## after looking at the gene names, and a review paper by Kaneko-Ishino (fig 7), I realized there are a few more that Will might be missing:
+## after looking at the gene names in 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byGene.txt, and a review paper by Kaneko-Ishino (fig 7), I realized there are a few more that Will might be missing:
 RTL4
 RTL9
 PNMA8C
@@ -97,10 +100,10 @@ blat /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/hg38.fa 2020.23.10
 
 ##### playing with UCSC 100-way vertebrate alignments
 
-cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments/test/ZCCHC12
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/testData/multiz_alignments/ZCCHC12
 
 ### getting maf files, given a bed file:
-cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments/test/PNMA3
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/testData/multiz_alignments/PNMA3
 
 module load Kent_tools
 mafFetch hg38 multiz100way PNMA3region.bed PNMA3region.100way.maf
@@ -261,7 +264,7 @@ the unedited axt2phy.pl needs Bio/Graphics/Wiggle.pm, which I could not install,
 ##### github reminder: pushing edits back up to the github website:
 
 # subsequent updates:
-git add --all . 
+git add --verbose --all . 
    (the --all also lets it take care of files I remove locally, also removing them from the server)
 git commit
     opens up a file in vim where I can make notes about what I've changed. 

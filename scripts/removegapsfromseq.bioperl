@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+foreach my $file (@ARGV) {
+    if (!-e $file) { die "\n\nterminating - cannot find file $file\n\n"; } 
+    print "reading file $file\n";
+    my $io = Bio::SeqIO -> new( -file => ">${file}.nogaps", -format => 'fasta');
+    my $in = Bio::SeqIO -> new( -file => "<$file", -format => 'fasta');
+    while (my $thisseq=$in->next_seq()) {
+        my $letters = $thisseq->seq();
+        $letters =~ s/[-.!]//g;
+        $thisseq->seq($letters);     
+        $io -> write_seq ($thisseq);
+    }
+}

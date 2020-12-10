@@ -5,8 +5,8 @@
 
 cd ~/FH_fast_storage/miscMalikLab/domesticated_gags_BlakeWiedenheft/getHumanPepsFromWillFiles
 
-./getHumanSeqsFullLen.bioperl
-./getHumanSeqsJustCapsid.bioperl
+../scripts/getHumanSeqsFullLen.bioperl
+../scripts/getHumanSeqsJustCapsid.bioperl
 
 there are 71 different seqs to get, after combining those two lists
 
@@ -27,19 +27,19 @@ some seqs are in Will's seq file twice, looks like because they either had two c
 
 ## look at the genbank entries for the seqs Will got from RefSeq: 
 # get plain Refseqs:
-./getRefSeqAccs.bioperl 2020.23.10.humanSeqs.CAonly.Refseq.fa  2020.23.10.humanSeqs.fullLen.Refseq.fa
+../scripts/getRefSeqAccs.bioperl 2020.23.10.humanSeqs.CAonly.Refseq.fa  2020.23.10.humanSeqs.fullLen.Refseq.fa
 
 diff 2020.23.10.humanSeqs.CAonly.Refseq.accs.txt 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt
     they're the same, so I can just use one
 rm 2020.23.10.humanSeqs.CAonly.Refseq.accs.txt
-./getgenbankJY_eutils_gbFormat.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt
+../scripts/getgenbankJY_eutils_gbFormat.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt
 
 mv 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb  fullGenbankEntries/
 
 
-## make a couple of tables summarizing info in the genbank entry
+## make some of tables summarizing info in the genbank entry
 cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/getHumanPepsFromWillFiles/fullGenbankEntries
-./genbank2table.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb 
+../../scripts/genbank2table.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb 
 
 output = 
 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byAccession.txt
@@ -49,6 +49,9 @@ output =
 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byGene.txt
     (one row per gene)
 
+
+
+
 ## after looking at the gene names, and a review paper by Kaneko-Ishino (fig 7), I realized there are a few more that Will might be missing:
 RTL4
 RTL9
@@ -57,11 +60,11 @@ PNMA6B (pseudogene)
 
 # get their seqs and do PFAM search
 cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/additionalHits
-../getHumanPepsFromWillFiles/getgenbankJY_eutils_gbFormat.bioperl RTL4.txt RTL9.txt PNMA8C.txt
-./genbank2fasta.bioperl RTL4.txt.gb RTL9.txt.gb PNMA8C.txt.gb
-./searchPFAMprotqueryNew.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa
-./searchPFAMprotqueryNewMoreSensitive.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa 
-
+../scripts/getgenbankJY_eutils_gbFormat.bioperl RTL4.txt RTL9.txt PNMA8C.txt
+../scripts/genbank2fasta.bioperl RTL4.txt.gb RTL9.txt.gb PNMA8C.txt.gb
+../scripts/searchPFAMprotqueryNew.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa
+../scripts/searchPFAMprotqueryNewMoreSensitive.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa 
+    xxxx should they have been in Will's table? maybe they don't have the capsid region? if so tell him
 
 
 ## (3) figure out for each location(s) in the human genome (hg38)
@@ -252,15 +255,6 @@ the unedited axt2phy.pl needs Bio/Graphics/Wiggle.pm, which I could not install,
 
 ##### github reminder: pushing edits back up to the github website:
 
-# first time:
-made a README.md file
-git init
-git add --all . 
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/jayoung/domesticated_capsid.git
-git push -u origin main
-
 # subsequent updates:
 git add --all . 
    (the --all also lets it take care of files I remove locally, also removing them from the server)
@@ -270,4 +264,13 @@ git commit
     "escape" gets me out of edit mode
     :wq to save and exit vim 
 git push
+
+# first time:
+made a README.md file
+git init
+git add --all . 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jayoung/domesticated_capsid.git
+git push -u origin main
 

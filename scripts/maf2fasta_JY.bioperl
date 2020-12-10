@@ -24,12 +24,14 @@ my $writeEachChunk = 0; # whether to write fasta files for each chunk
 my $keepRef = 1;  # whether to keep the first seq in the maf file, regardless of whether its name is in the species file
 my $useSeqOrderFromFile = 1;
 my $speciesFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
+my $debug = 0;
 
 ## get any non-default options from commandline
 GetOptions("orderSeqs=i" => \$useSeqOrderFromFile,
            "speciesFile=s" => \$speciesFile,  ## default yes, could be no
            "keepRef=i" => \$keepRef, ## default yes, could be no
-           "chunks=i" => \$writeEachChunk) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+           "chunks=i" => \$writeEachChunk,
+           "debug=i" => $debug) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 ###########  do stuff
 
@@ -56,9 +58,10 @@ foreach my $file (@ARGV) {
     if (!-e $file) {
         die "\n\nterminating - cannot open file $file\n\n";
     }
+    print "## working on file $file\n";
     my $outstem = $file; $outstem =~ s/\.maf$//;
-    my $outCombined = $outstem . ".combined.fa";
-    my $outCombinedReport = $outstem . ".combined.log.txt";
+    my $outCombined = $outstem . ".fa";
+    my $outCombinedReport = $outstem . ".maf2fa.log.txt";
     
     my $alignio = Bio::AlignIO->new(-file => "< $file", 
                                     -format => "maf", 
@@ -129,7 +132,7 @@ foreach my $file (@ARGV) {
     ## first, if we've specified keepRef, check if the ref seq is present in @seqOrderToUse and if not, write it out.
     if ($keepRef == 1) {
         if ((grep /$refSeqName/, @seqOrderToUse)==0) {
-            print "    Reference seq is not found in the species order file, but we'll write it out anyway\n";
+            if ($debug==1) { print "    Reference seq is not found in the species order file, but we'll write it out anyway\n"; }
             outputSeq($refSeqName, \%fullSeqs, $alignOUTcombined);
         }
     }
@@ -146,14 +149,14 @@ sub outputSeq {
     my %fullSeqs = %$fullSeqsRef;
     if (!defined $fullSeqs{$assemblyName}) {
         print REPORT "$assemblyName\tmissing\n";
-        print "    WARNING - no fullSeqs entry for assembly $assemblyName\n";
+        if ($debug==1) { print "    WARNING - no fullSeqs entry for assembly $assemblyName\n"; }
         return();
     }
     ## check for seqs that are entirely ---- or ...
     my $letters = $fullSeqs{$assemblyName};
     my $lettersNoGaps = $letters; $lettersNoGaps =~ s/-//g;
     if (length($lettersNoGaps)==0) {
-        print "        skipping $assemblyName - no non-gap characters\n";
+        if ($debug==1) {  print "        skipping $assemblyName - no non-gap characters\n"; }
         print REPORT "$assemblyName\tempty\n";
         return();
     }

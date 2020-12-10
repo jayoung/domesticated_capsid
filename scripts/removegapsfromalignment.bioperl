@@ -1,0 +1,79 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Bio::PrimarySeq; ## specifically loading it, so I can redefine a subroutine
+
+#removes columns from alignment if all sequences have a gap at that position
+
+#read in sequences
+foreach my $infile (@ARGV) {
+    if (!-e $infile) {
+        die "\n\nterminating - cannot find file $infile\n";
+    }
+    my $outfile = "$infile" . ".degapped";
+    if (-e $outfile) {
+        print "Skipping file $infile - outfile exists already $outfile\n";
+        next;
+    }
+    print "Working on file $infile\n";
+    my $seqIN = Bio::SeqIO->new(-file=>"< $infile", -format=>"fasta");
+    my @seqorder;
+    my $prevseqlength = "dummy";
+    #go through sequences and make a hash called sequences (a hash of arrays, one letter per position)
+    my %sequences;
+    my $length;
+    while (my $seq = $seqIN->next_seq) {
+        my $seqname = $seq->display_id();
+        push @seqorder, $seqname;
+        #print "    found seq $seqname\n";
+        $length = $seq->length();
+        if ($prevseqlength ne "dummy") {
+            if ($length != $prevseqlength) {die "\n\nterminating - seqlengths are different - perhaps run makeseqssamelength.pl on the alignment first\n\n";}
+        }
+        $prevseqlength = $length;
+        my $letters = $seq->seq();
+        my @temp = split //, $letters;
+        #print "temp @temp\nblah\n"; die;
+        @{$sequences{$seqname}} = split //, $letters;
+    }
+    #now go through each position in alignment and if at least one non-gap character, add to string in the new hash, newseqs
+    my %newseqs;
+    for (my $j=0;$j<$length;$j++) {
+        my $good = 0;
+        foreach my $key2 (keys %sequences) {
+            #print "pos $j seq $key2\n";
+            if (@{$sequences{$key2}}[$j] ne "-") {$good = 1; next;}
+        }
+        if ($good == 1) {
+            foreach my $key3 (keys %sequences) {
+                #print "key3 $key3\n";
+                $newseqs{$key3} .= @{$sequences{$key3}}[$j];
+            } 
+        }
+    }
+    my $seqOUT = Bio::SeqIO->new(-file=>"> $outfile", -format=>"fasta");
+    foreach my $key4 (@seqorder) {
+        my $newseq = Bio::Seq->new(-display_id=>"$key4", -seq=>"$newseqs{$key4}");
+        $seqOUT->write_seq($newseq);
+    }
+}
+
+### my version of validate_seq, to avoid issues caused by the ! characters
+{ no warnings 'redefine';
+    sub Bio::PrimarySeq::validate_seq {
+        my ($self,$seqstr) = @_;
+        if( ! defined $seqstr ){ $seqstr = $self->seq(); }
+        return 0 unless( defined $seqstr);
+        my $MATCHPATTERN = 'A-Za-z\-\.\*\?=~\!';
+        if ((CORE::length($seqstr) > 0) &&
+            ($seqstr !~ /^([$MATCHPATTERN]+)$/)) {
+            $self->warn("JY seq doesn't validate, mismatch is " .
+                    ($seqstr =~ /([^$MATCHPATTERN]+)/g));
+                return 0;
+        }
+        return 1;
+     }
+}
+

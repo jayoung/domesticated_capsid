@@ -62,14 +62,33 @@ module purge
     remove all gaps, and realign *placMamm.fa.nogaps using MACSE:
 ../scripts/removegapsfromseq.bioperl *placMamm.fa
 ../scripts/runMACSEsimpleInFrameAlignment.pl *placMamm.fa.nogaps
-    xxxx running sbatch
+    took a while, but all finished fine
+../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
 
 
-../scripts/checkAlignmentFrameshiftsStops.bioperl 
+
+../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
+
+    xxxx worked!  I should probably check all ref seqs have ORFs
+
+
+    xxx I don't think git is keeping up with changes in this file
+
+./checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
+removegapsfromalignment.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.noPseuds.fa
+
+./checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
+removegapsfromalignment.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.noPseuds.fa
+
 
 
 xx accessions now have the version number, but in my previous maf2fasta script they might not have done. Also now there are XM_ accessions as well as NM_ accessions
 
+
+xxx what to do with the Repbase things that Will found?  I think I will want to
+1. find where they are in the hg38 - there will be multiple versions of each
+2. ignore any that overlap with the things I already looked at because they're in the RefSeq set
+3. look at the rest and see if there is an intact ORF, and if so do the same thing with getting the mafs and processing them
 
 
 ## after looking at the gene names in 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byGene.txt, and a review paper by Kaneko-Ishino (fig 7), I realized there are a few more that Will might be missing:

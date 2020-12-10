@@ -1,0 +1,185 @@
+LOCUS       NP_001372378            1388 aa            linear   PRI 17-SEP-2020
+DEFINITION  retrotransposon Gag-like protein 9 [Homo sapiens].
+ACCESSION   NP_001372378 XP_011529300
+VERSION     NP_001372378.1
+DBSOURCE    REFSEQ: accession NM_001385449.1
+KEYWORDS    RefSeq; RefSeq Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 1388)
+  AUTHORS   Brandt J, Schrauth S, Veith AM, Froschauer A, Haneke T, Schultheis
+            C, Gessler M, Leimeister C and Volff JN.
+  TITLE     Transposable elements as a source of genetic innovation: expression
+            and evolution of a family of retrotransposon-derived neogenes in
+            mammals
+  JOURNAL   Gene 345 (1), 101-111 (2005)
+   PUBMED   15716091
+REFERENCE   2  (residues 1 to 1388)
+  AUTHORS   Brandt J, Veith AM and Volff JN.
+  TITLE     A family of neofunctionalized Ty3/gypsy retrotransposon genes in
+            mammalian genomes
+  JOURNAL   Cytogenet Genome Res 110 (1-4), 307-317 (2005)
+   PUBMED   16093683
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AL031319.5 and AC000113.1.
+            On Jul 17, 2020 this sequence version replaced XP_011529300.1.
+            
+            Sequence Note: The RefSeq transcript and protein were derived from
+            genomic sequence to make the sequence consistent with the reference
+            genome assembly. The genomic coordinates used for the transcript
+            record were based on alignments.
+            
+            ##Evidence-Data-START##
+            CDS exon combination :: BC117184.1 [ECO:0000331]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            RefSeq Select criteria :: based on conservation, expression,
+                                      longest protein
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1388
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="X"
+                     /map="Xq23"
+     Protein         1..1388
+                     /product="retrotransposon Gag-like protein 9"
+                     /note="retrotransposon gag domain containing 1; tumor
+                     antigen BJHCC23; tumor antigen BJ-HCC-23; retrotransposon
+                     gag domain-containing protein 1; Sushi-Ichi
+                     retrotransposon homolog 10; mammalian
+                     retrotransposon-derived 9"
+                     /calculated_mol_wt=144150
+     CDS             1..1388
+                     /gene="RTL9"
+                     /gene_synonym="MAR9; MART9; RGAG1; SIRH10"
+                     /coded_by="NM_001385449.1:237..4403"
+                     /db_xref="GeneID:57529"
+                     /db_xref="HGNC:HGNC:29245"
+                     /db_xref="MIM:300965"
+ORIGIN      
+        1 msiplhslrf nntmreenve pqnkqmafcr pmtetradvq ilhshvqlpi vstsasdpgg
+       61 tstqlmtspv fdtmsaplmg vpnsgalspp lmpasdsgal spllmpasds galspllmpa
+      121 ldsgtlspll stseygvmsp gmmtipdfgt msatlmvapd saeisplamp apssgvvctp
+      181 imstssseam stplmlapds gelspilmqd mnpgvmstqp vpapsseams plqitdedte
+      241 amskvlmtal asgeissllm sgtdseaiss limsavasgg tspqptstqn sggiptplms
+      301 dldsgimssl lmsspgsevm stpllsvpda gemstlpkpa pdaeamspal mtalpsgvmp
+      361 tqtmpapgsg amspwstqnv dsemmsnppv ratasgvmsa ppvraldsga mstplmgapa
+      421 sgnmstlqkt vpasgamtts lmtvpssgvm steqmsatas rvmsaqltma ktsgamptgs
+      481 mkavakqykr atasgkmstp lrraptsgam stqpvtatas etmsmpqltv pasgsmsmlq
+      541 mrapvseams mpqmrtmasg ltsaaqmkam tsgamstplm taqtsgstst llmrdtasgv
+      601 mscpqmrsla sgalskplmt pkasgtmfte kmtttaseam ptllmrdtvs galsmpqmtd
+      661 tasgglsasl mrdtasgams tsqmtatvsg gmsmplmraq dpgvmpaslm rakvsgkmls
+      721 qpmstqdpgg msmspmksmt aggmqmnspt sdvmstptvr awtsetmstp lmrtsdpger
+      781 pslltrasss gemslplmra pasgeiatpl rspaygamsa pqmtatasgm mssmpqvkap
+      841 isgamsmplt rstasggmsm plmrapdsrv tstsqmmpta sgdmctlpvr apasggvssp
+      901 lvrapasgtm stplrrpsac etvstelmra sasghmstaq ttamvsggms kplmrapasg
+      961 tmpmplmsam asgemsmplm etmasgatst lqtsvansrs mslsqttytv sgrmatapir
+     1021 asasgarsts fmrasvsgsm pmplpratas gcgmgmsmpq mtatdsrgms tplmrasgpg
+     1081 tmstpqtafg vmstpeikat dsgeastshi nitasgskpt shmtattpet akpppkevps
+     1141 fgmltpalcy lleeqeaarg scsveeemei deekqmkgfl ddsermaflv slhlgaaerw
+     1201 filqmevgep lshenksflr rsqgiydsls eidilsavlc hpkqgqksvr qyatdfllla
+     1261 rhlswsdail rtrfleglse avttkmgrif lkvagslkel idrslytecq laeekdspgn
+     1321 ssqvlptack rnneeamgne lssqqqteeh qhvskrcyyl kehgdpqegl hdhlgqstgh
+     1381 hqkahtnk
+//
+
+LOCUS       NP_065820               1388 aa            linear   PRI 01-SEP-2020
+DEFINITION  retrotransposon Gag-like protein 9 [Homo sapiens].
+ACCESSION   NP_065820
+VERSION     NP_065820.1
+DBSOURCE    REFSEQ: accession NM_020769.2
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 1388)
+  AUTHORS   Brandt J, Schrauth S, Veith AM, Froschauer A, Haneke T, Schultheis
+            C, Gessler M, Leimeister C and Volff JN.
+  TITLE     Transposable elements as a source of genetic innovation: expression
+            and evolution of a family of retrotransposon-derived neogenes in
+            mammals
+  JOURNAL   Gene 345 (1), 101-111 (2005)
+   PUBMED   15716091
+REFERENCE   2  (residues 1 to 1388)
+  AUTHORS   Brandt J, Veith AM and Volff JN.
+  TITLE     A family of neofunctionalized Ty3/gypsy retrotransposon genes in
+            mammalian genomes
+  JOURNAL   Cytogenet Genome Res 110 (1-4), 307-317 (2005)
+   PUBMED   16093683
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AB037739.1 and AC000113.1.
+            This sequence is a reference standard in the RefSeqGene project.
+            
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data to make the sequence consistent with the
+            reference genome assembly. The genomic coordinates used for the
+            transcript record were based on transcript alignments.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AB037739.1, AY121804.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA1968968, SAMEA2148093
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1388
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="X"
+                     /map="Xq23"
+     Protein         1..1388
+                     /product="retrotransposon Gag-like protein 9"
+                     /note="retrotransposon gag domain containing 1; tumor
+                     antigen BJHCC23; tumor antigen BJ-HCC-23; retrotransposon
+                     gag domain-containing protein 1; Sushi-Ichi
+                     retrotransposon homolog 10; mammalian
+                     retrotransposon-derived 9"
+                     /calculated_mol_wt=144150
+     Region          1189..1280
+                     /region_name="Retrotrans_gag"
+                     /note="Retrotransposon gag protein; pfam03732"
+                     /db_xref="CDD:252133"
+     CDS             1..1388
+                     /gene="RTL9"
+                     /gene_synonym="MAR9; MART9; RGAG1; SIRH10"
+                     /coded_by="NM_020769.2:247..4413"
+                     /db_xref="CCDS:CCDS14552.1"
+                     /db_xref="GeneID:57529"
+                     /db_xref="HGNC:HGNC:29245"
+                     /db_xref="MIM:300965"
+ORIGIN      
+        1 msiplhslrf nntmreenve pqnkqmafcr pmtetradvq ilhshvqlpi vstsasdpgg
+       61 tstqlmtspv fdtmsaplmg vpnsgalspp lmpasdsgal spllmpasds galspllmpa
+      121 ldsgtlspll stseygvmsp gmmtipdfgt msatlmvapd saeisplamp apssgvvctp
+      181 imstssseam stplmlapds gelspilmqd mnpgvmstqp vpapsseams plqitdedte
+      241 amskvlmtal asgeissllm sgtdseaiss limsavasgg tspqptstqn sggiptplms
+      301 dldsgimssl lmsspgsevm stpllsvpda gemstlpkpa pdaeamspal mtalpsgvmp
+      361 tqtmpapgsg amspwstqnv dsemmsnppv ratasgvmsa ppvraldsga mstplmgapa
+      421 sgnmstlqkt vpasgamtts lmtvpssgvm steqmsatas rvmsaqltma ktsgamptgs
+      481 mkavakqykr atasgkmstp lrraptsgam stqpvtatas etmsmpqltv pasgsmsmlq
+      541 mrapvseams mpqmrtmasg ltsaaqmkam tsgamstplm taqtsgstst llmrdtasgv
+      601 mscpqmrsla sgalskplmt pkasgtmfte kmtttaseam ptllmrdtvs galsmpqmtd
+      661 tasgglsasl mrdtasgams tsqmtatvsg gmsmplmraq dpgvmpaslm rakvsgkmls
+      721 qpmstqdpgg msmspmksmt aggmqmnspt sdvmstptvr awtsetmstp lmrtsdpger
+      781 pslltrasss gemslplmra pasgeiatpl rspaygamsa pqmtatasgm mssmpqvkap
+      841 isgamsmplt rstasggmsm plmrapdsrv tstsqmmpta sgdmctlpvr apasggvssp
+      901 lvrapasgtm stplrrpsac etvstelmra sasghmstaq ttamvsggms kplmrapasg
+      961 tmpmplmsam asgemsmplm etmasgatst lqtsvansrs mslsqttytv sgrmatapir
+     1021 asasgarsts fmrasvsgsm pmplpratas gcgmgmsmpq mtatdsrgms tplmrasgpg
+     1081 tmstpqtafg vmstpeikat dsgeastshi nitasgskpt shmtattpet akpppkevps
+     1141 fgmltpalcy lleeqeaarg scsveeemei deekqmkgfl ddsermaflv slhlgaaerw
+     1201 filqmevgep lshenksflr rsqgiydsls eidilsavlc hpkqgqksvr qyatdfllla
+     1261 rhlswsdail rtrfleglse avttkmgrif lkvagslkel idrslytecq laeekdspgn
+     1321 ssqvlptack rnneeamgne lssqqqteeh qhvskrcyyl kehgdpqegl hdhlgqstgh
+     1381 hqkahtnk
+//
+

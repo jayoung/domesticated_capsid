@@ -1,0 +1,9 @@
+hg38.chrX	pa	match	118825200	118825339	.	+	.	ID=Match_0;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119352740_119352879 1 139
+hg38.chrX	pa	submatch	118825200	118825339	0	+	.	ID=Match_0;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119352740_119352879 1 139;Gap=M2 I2 M13 I1 M2 I1 M5 I1 M5 I5 M6 I13 M2 I3 M1 I3 M2 I7 M1 I4 M103
+hg38.chrX	pa	match	118825340	118826393	.	+	.	ID=Match_1;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119352880_119353933 1 1053
+hg38.chrX	pa	submatch	118825340	118826393	0	+	.	ID=Match_1;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119352880_119353933 1 1053;Gap=M505 I3 M66 I3 M53 I1 M46 I6 M18 I6 M22 I3 M4 I3 M1 I3 M3 I3 M26 I3 M19 I3 M18 I3 M2 I1 M14 I1 M23 I3 M76 I3 M9 I6 M89 I3 M62
+hg38.chrX	pa	match	118826394	118826399	.	+	.	ID=Match_2;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119353934_119353939 1 5
+hg38.chrX	pa	submatch	118826394	118826399	0	+	.	ID=Match_2;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119353934_119353939 1 5;Gap=M3 I6 M5
+hg38.chrX	pa	match	118826400	118826515	.	+	.	ID=Match_3;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119353940_119354055 1 115
+hg38.chrX	pa	submatch	118826400	118826515	0	+	.	ID=Match_3;species=hg38.chrX;Target=hg38.chrX_panTro4.chrX_119353940_119354055 1 115;Gap=M32 I3 M25 I4 M4 I1 M5 I18 M13 I1 M2 I2 M1 I1 M2 I1 M21 I5 M3 I1 M4 I4 M4 I9 M2
+	pa	match	118825200	118826515	.	+	ID=Match_Wig_hg38.chrX;species=hg38.chrX

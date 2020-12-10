@@ -1,0 +1,44 @@
+LOCUS       NP_001373722             204 aa            linear   PRI 05-SEP-2020
+DEFINITION  paraneoplastic antigen-like protein 8C [Homo sapiens].
+ACCESSION   NP_001373722
+VERSION     NP_001373722.1
+DBSOURCE    REFSEQ: accession NM_001386793.1
+KEYWORDS    RefSeq; RefSeq Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AC024584.5.
+            
+            ##RefSeq-Attributes-START##
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..204
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="19"
+                     /map="19q13.32"
+     Protein         1..204
+                     /product="paraneoplastic antigen-like protein 8C"
+                     /note="paraneoplastic Ma antigen family member 8C"
+                     /calculated_mol_wt=22742
+     Region          9..>147
+                     /region_name="PNMA"
+                     /note="pfam14893"
+                     /db_xref="CDD:373368"
+     CDS             1..204
+                     /gene="PNMA8C"
+                     /coded_by="NM_001386793.1:578..1192"
+                     /db_xref="GeneID:110806277"
+                     /db_xref="HGNC:HGNC:53427"
+ORIGIN      
+        1 mlfgvkdial lehgckalev dsykslmilg ipedcnheef eeiirlplkp lgkfevagka
+       61 yleedkskaa iiqltediny avvpreikgk ggvwrvvymp rkqdiefltk lnlflqsegr
+      121 tvedmarvlr qelcppatgp relparkcsv pglgekpeag atvqmdvvpp ldssekeska
+      181 gvgkrgkrkn kknrrrhhas dkkl
+//
+

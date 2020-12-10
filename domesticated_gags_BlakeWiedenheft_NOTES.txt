@@ -20,6 +20,14 @@ Harmit suggests looking at evolutionary signatures of those 18 to see if they co
 dArc1 and dArc2 - one of them appears to specifically package its own mRNA, transfers that across the neuromuscular junction, the other does not include RNA in the capsid.
 rodent ARC transfers RNA between two neurons
 
+## notes on things I've read
+
+SIRHs are from sushi-ichi type retrotransposon
+PNMAs are from Gypsy12_DR related LTR retrotransposon
+
+some duplicated post-domestication: "SIRH4, 5, and 6 as well as PNMA6A, 6B, 6C, and 6D, are other clear examples of gene duplication." (other means in addition to SCAN genes) (Kaneko-Ishino_2012_FrontMicrobiol_review.pdf)
+
+"The SCAN motif consists of only a C-terminal portion of the Gag capsid (CA) protein and, in mammals, it always accompanied by multiple C2H2 zinc finger motifs and/or Krüppel-associated box (KRAB) domains neither of which is of retrotransposon origin." (Kaneko-Ishino_2012_FrontMicrobiol_review.pdf)
 
 
 ###### zoom meeting Oct 23 2020

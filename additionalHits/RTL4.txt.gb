@@ -1,0 +1,112 @@
+LOCUS       NP_001004308             310 aa            linear   PRI 09-OCT-2020
+DEFINITION  retrotransposon Gag-like protein 4 [Homo sapiens].
+ACCESSION   NP_001004308 XP_293405
+VERSION     NP_001004308.2
+DBSOURCE    REFSEQ: accession NM_001004308.2
+KEYWORDS    RefSeq; RefSeq Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 310)
+  AUTHORS   Luck K, Kim DK, Lambourne L, Spirohn K, Begg BE, Bian W, Brignall
+            R, Cafarelli T, Campos-Laborie FJ, Charloteaux B, Choi D, Cote AG,
+            Daley M, Deimling S, Desbuleux A, Dricot A, Gebbia M, Hardy MF,
+            Kishore N, Knapp JJ, Kovacs IA, Lemmens I, Mee MW, Mellor JC,
+            Pollis C, Pons C, Richardson AD, Schlabach S, Teeking B, Yadav A,
+            Babor M, Balcha D, Basha O, Bowman-Colin C, Chin SF, Choi SG,
+            Colabella C, Coppin G, D'Amata C, De Ridder D, De Rouck S,
+            Duran-Frigola M, Ennajdaoui H, Goebels F, Goehring L, Gopal A,
+            Haddad G, Hatchi E, Helmy M, Jacob Y, Kassa Y, Landini S, Li R, van
+            Lieshout N, MacWilliams A, Markey D, Paulson JN, Rangarajan S,
+            Rasla J, Rayhan A, Rolland T, San-Miguel A, Shen Y, Sheykhkarimli
+            D, Sheynkman GM, Simonovsky E, Tasan M, Tejeda A, Tropepe V,
+            Twizere JC, Wang Y, Weatheritt RJ, Weile J, Xia Y, Yang X,
+            Yeger-Lotem E, Zhong Q, Aloy P, Bader GD, De Las Rivas J, Gaudet S,
+            Hao T, Rak J, Tavernier J, Hill DE, Vidal M, Roth FP and Calderwood
+            MA.
+  TITLE     A reference map of the human binary protein interactome
+  JOURNAL   Nature 580 (7803), 402-408 (2020)
+   PUBMED   32296183
+REFERENCE   2  (residues 1 to 310)
+  AUTHORS   Irie M, Koga A, Kaneko-Ishino T and Ishino F.
+  TITLE     An LTR Retrotransposon-Derived Gene Displays Lineage-Specific
+            Structural and Putative Species-Specific Functional Variations in
+            Eutherians
+  JOURNAL   Front Chem 4, 26 (2016)
+   PUBMED   27446905
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 310)
+  AUTHORS   Zemunik T, Boban M, Lauc G, Jankovic S, Rotim K, Vatavuk Z, Bencic
+            G, Dogas Z, Boraska V, Torlak V, Susac J, Zobic I, Rudan D, Pulanic
+            D, Modun D, Mudnic I, Gunjaca G, Budimir D, Hayward C, Vitart V,
+            Wright AF, Campbell H and Rudan I.
+  TITLE     Genome-wide association study of biochemical traits in Korcula
+            Island, Croatia
+  JOURNAL   Croat Med J 50 (1), 23-33 (2009)
+   PUBMED   19260141
+  REMARK    GeneRIF: Observational study and genome-wide association study of
+            gene-disease association. (HuGE Navigator)
+REFERENCE   4  (residues 1 to 310)
+  AUTHORS   Brandt J, Schrauth S, Veith AM, Froschauer A, Haneke T, Schultheis
+            C, Gessler M, Leimeister C and Volff JN.
+  TITLE     Transposable elements as a source of genetic innovation: expression
+            and evolution of a family of retrotransposon-derived neogenes in
+            mammals
+  JOURNAL   Gene 345 (1), 101-111 (2005)
+   PUBMED   15716091
+REFERENCE   5  (residues 1 to 310)
+  AUTHORS   Brandt J, Veith AM and Volff JN.
+  TITLE     A family of neofunctionalized Ty3/gypsy retrotransposon genes in
+            mammalian genomes
+  JOURNAL   Cytogenet Genome Res 110 (1-4), 307-317 (2005)
+   PUBMED   16093683
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AK128465.1 and BX088563.4.
+            On Feb 8, 2008 this sequence version replaced NP_001004308.1.
+            
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data because transcript sequence consistent with
+            the reference genome assembly was not available for all regions of
+            the RefSeq transcript. The extent of this transcript is supported
+            by transcript alignments.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AK128465.1, DB169284.1 [ECO:0000332]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..310
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="X"
+                     /map="Xq23"
+     Protein         1..310
+                     /product="retrotransposon Gag-like protein 4"
+                     /note="zinc finger, CCHC domain containing 16; mammalian
+                     retrotransposon-derived protein 4; zinc finger CCHC
+                     domain-containing protein 16; zinc finger CCHC-type
+                     containing 16; Sushi-Ichi retrotransposon homolog 11;
+                     mammalian retrotransposon-derived 4"
+                     /calculated_mol_wt=34554
+     CDS             1..310
+                     /gene="RTL4"
+                     /gene_synonym="Mar4; Mart4; SIRH11; ZCCHC16"
+                     /coded_by="NM_001004308.2:442..1374"
+                     /db_xref="CCDS:CCDS35369.1"
+                     /db_xref="GeneID:340595"
+                     /db_xref="HGNC:HGNC:25214"
+ORIGIN      
+        1 mekctkssst mqvepsflqa enlilrlqmq hpttentakr gqvmpalatt vmpvpysleh
+       61 ltqfhgdpan csefltqvtt yltalqisnp andaqiklff dylsqqlesc giisgpdkst
+      121 llkqyenlil efqqsfgkpt kqeinplmna kfdkgdnssq qdpatfhlla qnlicnetnq
+      181 sgqfekalad pnqdeesvtd mmdnlpdlit qciqldkkhs drpellqset qlpllasliq
+      241 hqalfsptdp ppkkgpiqlr egqlpltpak rarqqetqlc lycsqsghft rdclakrsra
+      301 pattnntahq
+//
+

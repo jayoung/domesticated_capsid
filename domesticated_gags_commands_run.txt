@@ -36,7 +36,32 @@ rm 2020.23.10.humanSeqs.CAonly.Refseq.accs.txt
 
 mv 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb  fullGenbankEntries/
 
-xx make a table from the genbank entry
+
+## make a couple of tables summarizing info in the genbank entry
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/getHumanPepsFromWillFiles/fullGenbankEntries
+./genbank2table.bioperl 2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.gb 
+
+output = 
+2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byAccession.txt
+    (one row per Refseq ID)
+2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.refs.txt
+    (one row per reference mentioned in those refseq entries)
+2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byGene.txt
+    (one row per gene)
+
+## after looking at the gene names, and a review paper by Kaneko-Ishino (fig 7), I realized there are a few more that Will might be missing:
+RTL4
+RTL9
+PNMA8C
+PNMA6B (pseudogene)
+
+# get their seqs and do PFAM search
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/additionalHits
+../getHumanPepsFromWillFiles/getgenbankJY_eutils_gbFormat.bioperl RTL4.txt RTL9.txt PNMA8C.txt
+./genbank2fasta.bioperl RTL4.txt.gb RTL9.txt.gb PNMA8C.txt.gb
+./searchPFAMprotqueryNew.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa
+./searchPFAMprotqueryNewMoreSensitive.pl RTL4.txt.gb.fa RTL9.txt.gb.fa PNMA8C.txt.gb.fa 
+
 
 
 ## (3) figure out for each location(s) in the human genome (hg38)
@@ -58,5 +83,191 @@ blat /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/hg38.fa 2020.23.10
 blat /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/hg38.fa 2020.23.10.humanSeqs.fullLen.Refseq.fa -t=dnax -q=prot -ooc=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/5.dnax.ooc -minIdentity=95 2020.23.10.humanSeqs.fullLen.Refseq.blatHg38.psl
 
 
+## (ii) For the Repbase proteins I will want to be a bit more tolerant of mismatch, but I can exclude hits with frameshifts/stops
 
-   ## (ii) For the Repbase proteins I will want to be a bit more tolerant of mismatch, but I can exclude hits with frameshifts/stops
+
+
+##### playing with UCSC 100-way vertebrate alignments
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments/test/ZCCHC12
+
+### getting maf files, given a bed file:
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments/test/PNMA3
+
+module load Kent_tools
+mafFetch hg38 multiz100way PNMA3region.bed PNMA3region.100way.maf
+    not sure what it would do if my bed interval contained blocks?  I will want that to work, I think
+
+
+grep 'NM_013364'  ~/public_databases/UCSC/human_Dec2013/misc_tracks/hg38.refGene.2020dec3.bed > PNMA3_NM_013364.refGene.bed
+
+grep 'NM_001282535'  ~/public_databases/UCSC/human_Dec2013/misc_tracks/hg38.refGene.2020dec3.bed > PNMA3_NM_001282535.refGene.bed
+
+
+##### use mafFrags to download alignment for a single ORF specified in a single bed file (if the bed file had >1 ORF I would need to somehow split the maf after getting it):
+
+(mafFetch gets the entire genomic region, whereas mafFrags gets just the exons)
+
+module load Kent_tools
+
+# for NM_013364, just placental mammals
+mafFrags -orgs=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt -bed12 -thickOnly hg38 multiz100way PNMA3_NM_013364.refGene.bed PNMA3_NM_013364.refGene.100way.frags.2.maf
+
+maf2fasta_JY.bioperl PNMA3_NM_013364.refGene.100way.frags.2.maf 
+
+removegapsfromalignment.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa
+
+# for NM_001282535, just placental mammals
+mafFrags -orgs=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt -bed12 -thickOnly hg38 multiz100way PNMA3_NM_001282535.refGene.bed PNMA3_NM_001282535.refGene.100way.frags.2.maf
+
+maf2fasta_JY.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.maf 
+
+removegapsfromalignment.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa
+
+# I wrote a script to check that alignment, but the script helped me realise that the maf alignment is not very good: there are more frameshifts than needed in the poorly conserved regions (so alignment is way out of frame)
+
+./checkAlignmentFrameshiftsStops.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.degapped
+
+output = four files: 
+ noPseuds.fa 
+ pseudReportSummary.txt = num intact genes and pseudogenes
+ pseudReportEachGene.txt = which genes are intact/pseuds
+ pseudReportDetailed.txt = locations of stop codons/frameshifts in each pseudogene
+
+removegapsfromalignment.bioperl  PNMA3_NM_013364.refGene.100way.frags.2.combined.degapped.noPseuds.fa 
+
+
+## some commands to help me check what's going on:
+splitfastafileextractoneseq.pl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps NM_013364
+translate1frame.bioperl NM_013364.fa 
+tblastn -query NM_013364.fa.peps.fasta -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -num_threads 4 -out NM_013364.fa.peps.fasta.tblastn_canFam3
+blastn -query NM_013364.fa -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -num_threads 4 -out NM_013364.fa.blastn_canFam3 -task blastn
+splitfastafileextractoneseq.pl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps canFam3
+blastn -query canFam3.fa -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -num_threads 4 -out canFam3.fa.blastn_canFam3 -task blastn
+
+# I realized that the maf alignment is not very good- more frameshifts than needed in the poorly conserved regions (so alignment is way out of frame)
+
+I started editing it to make an in-frame alignment but realized it was way to far off.
+PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.degapped.inframeManual
+
+
+
+## try realigning PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps using MACSE
+
+# realign using MACSE and a less harsh frameshift penalty - PNMA3_NM_013364
+module load Java/1.8.0_181
+java -jar -Xmx600m /fh/fast/malik_h/grp/malik_lab_shared/bin/macse_v1.2.jar -prog alignSequences -seq PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps -out_NT PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.fa -out_AA PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.aa.fa > PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.log.txt
+module purge
+grep '>' PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps > PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.seqorder.txt
+reorderseqs.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.fa  PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.seqorder.txt
+
+# realign using MACSE and a less harsh frameshift penalty - PNMA3_NM_001282535
+module load Java/1.8.0_181
+java -jar -Xmx600m /fh/fast/malik_h/grp/malik_lab_shared/bin/macse_v1.2.jar -prog alignSequences -seq PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps -out_NT PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.fa -out_AA PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.aa.fa > PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.log.txt
+module purge
+grep '>' PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps > PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.seqorder.txt
+reorderseqs.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.fa  PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.seqorder.txt
+
+
+# parse alignments looking for stops/frameshifts
+
+./checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
+removegapsfromalignment.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.noPseuds.fa
+
+./checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
+removegapsfromalignment.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.noPseuds.fa
+
+
+
+# the older maf alignments - not using these any more
+
+./checkAlignmentFrameshiftsStops.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.degapped
+
+./checkAlignmentFrameshiftsStops.bioperl PNMA3_NM_001282535.refGene.100way.frags.2.combined.fa.degapped
+
+
+
+#### more notes about 100-way alignment display. I may want to think about parsing the between maf-block info
+
+Gap Annotation
+The Display chains between alignments configuration option enables display of gaps between alignment blocks in the pairwise alignments in a manner similar to the Chain track display. The following conventions are used:
+
+Single line: No bases in the aligned species. Possibly due to a lineage-specific insertion between the aligned blocks in the human genome or a lineage-specific deletion between the aligned blocks in the aligning species.
+Double line: Aligning species has one or more unalignable bases in the gap region. Possibly due to excessive evolutionary distance between species or independent indels in the region between the aligned blocks in both species.
+Pale yellow coloring: Aligning species has Ns in the gap region. Reflects uncertainty in the relationship between the DNA of both species, due to lack of sequence in relevant portions of the aligning species.
+
+Genomic Breaks
+Discontinuities in the genomic context (chromosome, scaffold or region) of the aligned DNA in the aligning species are shown as follows:
+
+Vertical blue bar: Represents a discontinuity that persists indefinitely on either side, e.g. a large region of DNA on either side of the bar comes from a different chromosome in the aligned species due to a large scale rearrangement.
+Green square brackets: Enclose shorter alignments consisting of DNA from one genomic context in the aligned species nested inside a larger chain of alignments from a different genomic context. The alignment within the brackets may represent a short misalignment, a lineage-specific insertion of a transposon in the human genome that aligns to a paralogous copy somewhere else in the aligned species, or other similar occurrence.
+
+
+## see other maf tools listed here: http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/
+
+mafFrag - Extract maf sequences for a region from database (perhaps similar to mafFetch, but I specify coords on command line)
+
+mafFrags - Collect MAFs from regions specified in a 6 column bed file (perhaps this is what I need for multi-exon bed intervals?)
+
+mafSpeciesSubset - Extract a maf that just has a subset of species. (perhaps I will want to ignore non-mammals, or bad genomes)
+
+
+
+### converting maf to fasta
+module load LAST
+maf-convert --help
+
+
+# some conversions that work:
+maf-convert axt ZCCHC12plusSmallFlank_100wayAln_hg38.maf > ZCCHC12plusSmallFlank_100wayAln_hg38.axt
+
+maf-convert html ZCCHC12plusSmallFlank_100wayAln_hg38.maf > ZCCHC12plusSmallFlank_100wayAln_hg38.html
+
+# some conversions that don't work:
+maf-convert tab ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: too many values to unpack
+
+maf-convert blast ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: for Blast, each alignment must have 2 sequences
+
+maf-convert blasttab ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: for BlastTab, each alignment must have 2 sequences
+
+maf-convert chain ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: too many values to unpack
+
+maf-convert psl ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: for PSL, each alignment must have 2 sequences
+
+maf-convert sam ZCCHC12plusSmallFlank_100wayAln_hg38.maf
+    maf-convert: error: for SAM, each alignment must have 2 sequences
+
+cd test_axt2phy
+the unedited axt2phy.pl needs Bio/Graphics/Wiggle.pm, which I could not install, but I commented out that line. After that it runs,    it got just the second sequence for each alignment block.
+
+
+./axt2phy.pl -species hg38.chrX -axtin ZCCHC12plusSmallFlank_100wayAln_hg38.axt -gffout ZCCHC12plusSmallFlank_100wayAln_hg38.axt.gff -fastaout ZCCHC12plusSmallFlank_100wayAln_hg38.axt.fa
+ 
+
+
+##### github reminder: pushing edits back up to the github website:
+
+# first time:
+made a README.md file
+git init
+git add --all . 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jayoung/domesticated_capsid.git
+git push -u origin main
+
+# subsequent updates:
+git add --all . 
+   (the --all also lets it take care of files I remove locally, also removing them from the server)
+git commit
+    opens up a file in vim where I can make notes about what I've changed. 
+    "i" gets me into edit mode in vim
+    "escape" gets me out of edit mode
+    :wq to save and exit vim 
+git push
+

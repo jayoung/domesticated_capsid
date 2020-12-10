@@ -1,0 +1,2 @@
+seq id	alignment start	alignment end	envelope start	envelope end	hmm acc	hmm name	type	hmm start	hmm end	hmm length	bit score	E-value	significance	clan
+NP_001373722	9	136	7	163	PF14893.6	PNMA	Family	4	131	330	159.9	1e-46	1	CL0523

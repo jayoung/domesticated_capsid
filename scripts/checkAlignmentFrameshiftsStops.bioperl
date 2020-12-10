@@ -1,0 +1,300 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::AlignIO;
+use Bio::SeqIO;
+use Getopt::Long;
+
+##### input is a multiple sequence alignment, with a reference sequence that encodes a complete ORF as the first sequence. 
+## default option is to deal with output of MACSE (--MACSE=1), which tries to align in-frame, and frameshifts are denoted by ! characters.
+## if --MACSE=0, we expect maf converted to fasta, where alignments are often not in-frame at all (if there are indels in non-ref seqs)
+
+## tests each other sequence for frameshifts w.r.t. the reference sequence, an stop codons that are not at the end of the sequence
+
+## xx may want to build in some tolerance of stops near but not quite at the end.
+## xx may want to check reference seq, e.g check for full ORF with no internal stops?
+## xx partial seqs may have apparent frameshifts at their very beginning or very end, if they start/end out of frame with the reference. I might not want to consider these as frameshifts
+
+
+## output = four files: 
+# noPseuds.fa = same alignment, without any pseudogenes
+# pseudReportSummary.txt = num intact genes and pseudogenes
+# pseudReportEachGene.txt = which genes are intact/pseuds
+# pseudReportDetailed.txt = locations of stop codons/frameshifts in each pseudogene
+
+# checkAlignmentFrameshiftsStops.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.degapped
+
+
+
+#### defaults for options:
+my $alnIsMACSE = 1; ## 0 or 1, whether the alignment is output of MACSE aligner (so that frameshifts can be encoded by !)
+my $minAlignedLengthProportion = 0.8; ## proportion of refseq len that the ungapped length of a a seq needs to cover - if it doesn't meet this threshold, it will be called 'truncated'
+my $debug = 0;  ## to help figure things out
+
+###### get any command line options
+
+## get any non-default options from commandline
+GetOptions("MACSE=i" => \$alnIsMACSE,
+           "minLen=i" => \$minAlignedLengthProportion,
+           "debug=i" => \$debug
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+########## script
+
+if ($alnIsMACSE == 1) {
+    print "\n\nParsing MACSE alignment - frameshifts should be denoted by ! characters\n\n";
+} else {
+    print "\n\nParsing non-MACSE alignment\n\n";
+}
+
+foreach my $file (@ARGV){
+    if (!-e $file) { die "\n\nterminating - cannot open file $file\n\n"; }
+    print "\n#### working on file $file\n\n";
+    my $outStem = $file; $outStem =~ s/\.fasta$//; $outStem =~ s/\.fa$//;
+    my $outSeqs = "$outStem.noPseuds.fa";
+    my $outReportEachGene = "$outStem.pseudReportEachGene.txt";
+    my $outReportOverallSummary = "$outStem.pseudReportSummary.txt";
+    my $outReportDetails = "$outStem.pseudReportDetailed.txt";
+    
+    my $seqOUT = Bio::SeqIO->new(-file => "> $outSeqs", '-format' => 'fasta');
+    open (SUMMARY, "> $outReportOverallSummary");
+    print SUMMARY "Gene_type\tCount\tFile\n";
+    open (EACHGENE, "> $outReportEachGene");
+    print EACHGENE "Seq\tPseud\tNum_frameshifts\tNum_stops\tUngapped_length\n";
+    open (DETAILS, "> $outReportDetails");
+    print DETAILS "Seq\tRegion_start_refCoord\tRegion_end_refCoord\tRegion_start_alnCoord\tRegion_end_alnCoord\tIndel_size\tRegion_type\n";
+    
+    my $refSeq = "NA"; my $refName;
+    my $lengthThreshold;
+    my $refCounts = 0; my $intactCounts = 0; my $pseudCounts = 0; my $truncatedCounts = 0;
+    ## the ! in MACSE alignments made validate_seq complain, so I redefined that subroutine below
+    my $alnIN = Bio::AlignIO->new(-file => "< $file",
+                                 -alphabet => "dna", 
+                                 -format => "fasta");
+    while (my $aln = $alnIN -> next_aln) {
+        if (! $aln->is_flush() ) {
+            die "\n\nterminating - seqs in alignment are not all the same length - input file was $file\n\n";
+        }
+        my $alnLen = $aln->length();
+        
+        ## use gap_col_matrix to see where the alignment gaps are. Generates an array where each element in the array is a hash reference with a key of the sequence name and a value of 1 if the sequence has a gap at that column
+        my $gapsRef;
+        if ($alnIsMACSE==1) {
+            $gapsRef = $aln->gap_col_matrix("-|!");
+        } else {
+            $gapsRef = $aln->gap_col_matrix();
+        }
+        my @gaps = @{$gapsRef};
+        
+        my @refBases; my @seqBases;
+        ### iterate through each non-ref seq
+        ## go through the seqs
+        foreach my $seq ( $aln->each_seq() ) {
+            ### first sequence is the ref seq
+            if ($refSeq eq "NA") {
+                $refSeq = $seq;
+                $seqOUT->write_seq($seq);
+                $refName = $seq->display_id();
+                print EACHGENE "$refName\tReference\tNA\tNA\n";
+                @refBases = split //, $seq->seq();
+                $refCounts++;
+                my $ungappedRefLen = getUngappedLen($refSeq, $alnIsMACSE);
+                $lengthThreshold = $ungappedRefLen * $minAlignedLengthProportion;
+                my $rounded = sprintf("%.1f", $lengthThreshold);
+                print "    got reference seq $refName ungapped length $ungappedRefLen bp : length threshold is $rounded";
+                print "\n\n";
+                next;
+            }
+            
+            ### check remaining seqs against reference seq
+            my $seqName = $seq->display_id();
+            @seqBases = split //, $seq->seq();
+            my $ungappedSeqLen = getUngappedLen($seq, $alnIsMACSE);
+            # if($seqName eq "papAnu2") { $debug = 1 } else {$debug=0;} ## xx temp
+            if ($debug==1) { print "    got other seq $seqName ungappedSeqLen $ungappedSeqLen\n"; }
+            ### iterate through alignment positions
+            my $refPosition = 0; my $seqPosition = 0;
+            my $refIsInAGap = ""; my $seqIsInAGap = "";
+            my $refCharsWithinThisGapCount = 0; my $seqCharsWithinThisGapCount = 0;
+            my $gapOpenPosRef; my $gapOpenPosAln;
+            my $numFrameshifts = 0; my $numStops = 0;
+            my $refCodon = ""; my $seqCodon = ""; ## these codons will be what's aligned to each codon in the ungapped ref seq
+            #  then at each position of the alignment I will compare non-ref to ref, and see if they have the same or opposite gap status.  
+            # If it's opposite, in whichever sequence has the 'insertion' relative to the other, I start counting non-gap characters, until the gap ends in the other seq. 
+            # Once the gap ends, I total up the non-gap characters, and see if it's a multiple of three.
+        
+            for (my $i=0; $i<$alnLen; $i++) {
+                my $refGapThisPos = ${$gaps[$i]}{$refName};
+                my $seqGapThisPos = ${$gaps[$i]}{$seqName};
+                ## for positions where ref is non-gap, update the codons
+                if ($seqGapThisPos eq "") { $seqPosition++ ; }
+                my $distFromSeqEnd = $ungappedSeqLen - $seqPosition;
+                if ($refGapThisPos eq "") {
+                    $refPosition++;
+                    $refCodon .= $refBases[$i];
+                    $seqCodon .= $seqBases[$i];
+                    ## if refCodon length is 3, test for stop codons and reset 
+                    if (length($refCodon)==3) {
+                        if (uc($refCodon) !~ m/TAA|TAG|TGA/) {
+                            if (uc($seqCodon) =~ m/TAA|TAG|TGA/) {
+                               if ($debug==1) {
+                                    print "        seq $seqName pos $i IN-FRAME STOP CODON!\n";
+                                }
+                                print DETAILS "$seqName\t";
+                                print DETAILS $refPosition-2, "\t", $refPosition, "\t";
+                                print DETAILS $i-1, "\t", $i+1 ;
+                                print DETAILS "\tNA\tStop codon\n";
+                                $numStops++;
+                            }
+                        }
+                        $refCodon = ""; $seqCodon = ""; 
+                    }
+                }
+                
+                #### open a gap in the ref seq w.r.t. the other seq
+                if (($refIsInAGap eq "") & 
+                    ($refGapThisPos eq "1") & 
+                    ($refGapThisPos ne $seqGapThisPos)) {
+                    if ($debug==1) {
+                        print "        pos $i opening a gap in reference seq compared to $seqName\n";
+                    }
+                    $refIsInAGap = "1"; 
+                    $gapOpenPosRef = $refPosition;
+                    $gapOpenPosAln = $i + 1;
+                }
+                #### close a gap in the ref seq w.r.t. the other seq
+                if (($refIsInAGap eq "1") & 
+                    ($refGapThisPos eq "") & 
+                    ($seqGapThisPos eq "")) {
+                    if ($debug==1) {
+                        print "        pos $i closing a gap in reference seq compared to $seqName\n";
+                        print "            $seqName had $seqCharsWithinThisGapCount non-gap chars\n";
+                    }
+                    if (($seqCharsWithinThisGapCount % 3) != 0) {
+                        if ($debug==1) {
+                            print "                FRAMESHIFT! seqPosition $seqPosition distFromSeqEnd $distFromSeqEnd\n";
+                        }
+                        if (($seqPosition > 3) & ($distFromSeqEnd > 3)) {
+                            $numFrameshifts++;
+                            print DETAILS "$seqName\t";
+                            print DETAILS "$gapOpenPosRef\t", $refPosition-1, "\t";
+                            print DETAILS "$gapOpenPosAln\t", $i ;
+                            print DETAILS "\t$seqCharsWithinThisGapCount\tFrameshift insertion\n";
+                        }
+                    }
+                    $refIsInAGap = "";
+                    $refCharsWithinThisGapCount = 0; ## reset
+                    $seqCharsWithinThisGapCount = 0; ## reset
+                }
+                #### continue a gap in the ref seq w.r.t. the other seq
+                if (($refIsInAGap eq "1") & 
+                    ($refGapThisPos eq "1")) {
+                    if ($debug==1) {
+                        print "            pos $i continuing a gap in reference seq compared to $seqName\n";
+                    }
+                    if ($seqGapThisPos eq "") {$seqCharsWithinThisGapCount++;}
+                }
+                #### open a gap in this seq w.r.t. the ref seq
+                if (($seqIsInAGap eq "") & 
+                    ($seqGapThisPos eq "1") & 
+                    ($refGapThisPos ne $seqGapThisPos)) {
+                    if ($debug==1) {
+                        print "        pos $i opening a gap in $seqName compared to ref\n";
+                    }
+                    $seqIsInAGap = "1"; 
+                    $gapOpenPosRef = $refPosition; 
+                    $gapOpenPosAln = $i + 1;
+                }
+                #### continue a gap in the ref seq w.r.t. the other seq
+                if (($seqIsInAGap eq "1") & 
+                    ($seqGapThisPos eq "1")) {
+                    if ($debug==1) {
+                        print "            pos $i continuing a gap in $seqName compared to ref\n";
+                    }
+                    if ($refGapThisPos eq "") {$refCharsWithinThisGapCount++;}
+                }
+                #### close a gap in this seq w.r.t. the ref seq
+                if (($seqIsInAGap eq "1") & 
+                    ($seqGapThisPos eq "")) {
+                    if ($debug==1) {
+                        print "        pos $i closing a gap in $seqName compared to ref\n";
+                        print "            Ref had $refCharsWithinThisGapCount non-gap chars\n";
+                    }
+                    if (($refCharsWithinThisGapCount % 3) != 0) {
+                        if ($debug==1) {
+                            print "                FRAMESHIFT! seqPosition $seqPosition distFromSeqEnd $distFromSeqEnd\n";
+                        }
+                        if (($seqPosition > 3) & ($distFromSeqEnd > 3)) {
+                            $numFrameshifts++;
+                            print DETAILS "$seqName\t";
+                            print DETAILS "$gapOpenPosRef\t", $refPosition-1, "\t";
+                            print DETAILS "$gapOpenPosAln\t", $i ;
+                            print DETAILS "\t$refCharsWithinThisGapCount\tFrameshift deletion\n";
+                        }
+                    }
+                    $seqIsInAGap = "";
+                    $refCharsWithinThisGapCount = 0; ## reset
+                    $seqCharsWithinThisGapCount = 0; ## reset
+                }
+            } ## end of $i loop (each alignment position)
+            
+            print EACHGENE "$seqName\t";
+            if ( ($numFrameshifts + $numStops) > 0 ) {
+                print EACHGENE "Pseud";
+                $pseudCounts++;
+            } else {
+                ## test Intact genes for whether they're truncated
+                if ($ungappedSeqLen < $lengthThreshold) {
+                    print EACHGENE "Truncated";
+                    $truncatedCounts++;
+                } else {
+                    print EACHGENE "Intact";
+                    $seqOUT->write_seq($seq);
+                    $intactCounts++;
+                }
+            }
+            print EACHGENE "\t$numFrameshifts\t$numStops\t$ungappedSeqLen\n";
+        } ## end of each seq loop
+    } # next_aln loop (meaningless for fasta files, which only contain one alignment
+    
+    print SUMMARY "Ref\t$refCounts\t$file\n";
+    print SUMMARY "Intact\t$intactCounts\t$file\n";
+    print SUMMARY "Truncated\t$truncatedCounts\t$file\n";
+    print SUMMARY "Pseud\t$pseudCounts\t$file\n";
+    
+    close EACHGENE;
+    close DETAILS;
+    close SUMMARY;
+} # each input file loop
+
+############# subroutines
+
+sub getUngappedLen {
+    my $seqObj = $_[0];
+    my $alnIsMACSE = $_[1];
+    my $seq = $seqObj->seq();
+    $seq =~ s/\-//g;
+    if ($alnIsMACSE == 1) { $seq =~ s/\!//g; }
+    my $ungappedLen = length($seq);
+    return($ungappedLen);
+}
+
+
+### my version of validate_seq, to avoid issues caused by the ! characters
+{ no warnings 'redefine';
+    sub Bio::LocatableSeq::validate_seq {
+        my ($self,$seqstr) = @_;
+        if( ! defined $seqstr ){ $seqstr = $self->seq(); }
+        return 0 unless( defined $seqstr);
+        my $MATCHPATTERN = 'A-Za-z\-\.\*\?=~\!';
+        if ((CORE::length($seqstr) > 0) &&
+            ($seqstr !~ /^([$MATCHPATTERN]+)$/)) {
+            $self->warn("JY seq doesn't validate, mismatch is " .
+                    ($seqstr =~ /([^$MATCHPATTERN]+)/g));
+                return 0;
+        }
+        return 1;
+     }
+}

@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+my $useFileNameAsSeqName = "no";
+# my $useFileNameAsSeqName = "yes";
+
+#--------------------------------
+if (@ARGV == 0) {die "\n\nterminating - please specify some files\n\n";}
+
+if ($useFileNameAsSeqName eq "yes") {
+    print "\n\nUsing file names as sequence names\n\n";
+}
+
+foreach my $file (@ARGV){
+    print "processing $file\n";
+    if (!(-e $file)) {die "\n\nterminating - file $file not found\n\n";}
+    my $in  = Bio::SeqIO->new(-file => "$file", -format => 'Genbank');
+    my $outfile = "$file";
+    $outfile =~ s/\.gbff//;
+    $outfile .= ".fa";
+    my $out = Bio::SeqIO->new(-file => ">$outfile", -format => 'Fasta');
+    my $count=0;
+    my $shortFileName = $file;
+    $shortFileName =~ s/\.ape$//;
+    $shortFileName =~ s/\.str$//;
+    while ( my $seq = $in->next_seq() ) {
+        $count++;
+        if ($useFileNameAsSeqName eq "yes") {
+            $seq->display_id($shortFileName);
+            if ($count > 1) {
+                die "\n\nterminating - should not use the useFileNameAsSeqName option with seq files that contain >1 sequence\n\n";
+            }
+        }
+        $out->write_seq($seq); 
+    }
+}

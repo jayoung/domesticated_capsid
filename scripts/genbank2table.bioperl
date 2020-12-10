@@ -1,0 +1,229 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+## parses genbank format protein database entry, gets various metadata as a table. 
+
+
+#######################
+if (@ARGV==0) {
+    die "\n\nplease specify one or more genbank format input files\n\n";
+}
+
+foreach my $file (@ARGV){
+    if (!-e $file) {die "\n\nterminating - file $file does not exist\n\n";}
+    ## open input file
+    print "\nWorking on file $file\n";
+    my $seqIN = Bio::SeqIO->new(-file => "$file", '-format' => 'Genbank');
+    my $seqCounter = 0;
+    my @outputLines; 
+    my %refs;  # first key will be pubmed ID
+    my %genes; # first key is gene name
+    ## process one sequence entry at a time
+    while (my $seq = $seqIN ->next_seq) {
+        $seqCounter++;
+        my $header = $seq->display_id();
+        print "## seq $seqCounter name $header\n";
+        my $desc = $seq->description();
+        my $length = $seq->length();
+        my $species = $seq->species()->binomial('FULL');
+        
+        ## get protein products
+        my $protProductNames = "";
+        my $protNotes = "";
+        my (@regionNamesJoined, @regionNamesIndividually, @regionNotes, @gene_synonyms, @productNames);
+        my $CDSgene = "";
+        my $CDSgeneSynonym = "";
+        for my $feat ($seq->get_SeqFeatures) {
+            my @allTags = $feat->get_all_tags(); 
+            ## protein features: get product, note
+            if ($feat->primary_tag eq "Protein") {
+                if (grep /product/, @allTags) {
+                    @productNames = $feat->get_tag_values('product') ;
+                    $protProductNames = join ",", @productNames;
+                }
+                if (grep /note/, @allTags) {
+                    my @notes = $feat->get_tag_values('note') ;
+                    $protNotes = join ",", @notes;
+                }
+            }
+            ## region features: get region_name note
+            if ($feat->primary_tag eq "Region") {
+                if (grep /region_name/, @allTags) {
+                    my @region_names = $feat->get_tag_values('region_name');
+                    # @regionNamesJoined - for each refseq, I join all the regions
+                    # @regionNamesIndividually - I keep each separate so I can combine later across all isoforms for a given gene
+                    push @regionNamesJoined, join "_", @region_names;
+                    push @regionNamesIndividually, @region_names;
+                }
+                if (grep /note/, @allTags) {
+                    my @notes = $feat->get_tag_values('note') ;
+                    push @regionNotes, join "_", @notes;
+                }
+                #foreach my $tag (@allTags) { print "        tag $tag\n"; }
+            }
+            ## CDS features: get gene, gene_synonym
+            if ($feat->primary_tag eq "CDS") {
+                ## might need to fix grep as gene might also match gene_synonym
+                if (grep /gene/, @allTags) {
+                    my @genes = $feat->get_tag_values('gene') ;
+                    $CDSgene = join ",", @genes;
+                }
+                if (grep /gene_synonym/, @allTags) {
+                    @gene_synonyms = $feat->get_tag_values('gene_synonym') ;
+                    $CDSgeneSynonym = join ",", @gene_synonyms;
+                }
+            }
+        }
+        
+        ##  get corresponding REFSEQ ID (xxx perhaps only valid for protein entries ?)
+        my @dblinks = $seq->annotation()->get_Annotations('dblink');
+        my $refseqlink;
+        for my $dblink ( @dblinks ) {
+            if(defined $dblink->database()) {
+                my $db = $dblink->database();
+                if ($db eq "REFSEQ") {
+                    my $link = $dblink->primary_id();
+                    #print "        got primary id $link\n";
+                    $genes{$CDSgene}{'refseqlink'}{$link}=1;
+                    $refseqlink = $link;
+                }
+            }
+        }
+        if (!defined $refseqlink) {
+            print "        no refseq link for this entry\n";
+        }
+        my $outputString = "$header\t$length\t$species\t$refseqlink\t";
+        $outputString .= "$CDSgene\t$CDSgeneSynonym\t";
+        $outputString .= "$desc\t";
+        $outputString .= "$protProductNames\t$protNotes\t";
+        my $regionNameString = join ",", @regionNamesJoined;
+        my $regionNoteString = join ",", @regionNotes;
+        $outputString .= "$regionNameString\t$regionNoteString";
+        $outputString .= "\n";  
+        push @outputLines, $outputString;
+        
+        ## store info for each gene
+        # accs
+        $genes{$CDSgene}{'accs'}{$header} = 1;
+        # gene_synonyms
+        foreach my $synonym (@gene_synonyms) {
+            $genes{$CDSgene}{'synonyms'}{$synonym} = 1;
+        }
+        # protein product names (subtract isoform from end)
+        foreach my $product (@productNames) {
+            $product =~ s/\sisoform\s.+?$//;
+            $genes{$CDSgene}{'products'}{$product} = 1;
+        }
+        # region names
+        foreach my $regionName (@regionNamesIndividually) {
+            $genes{$CDSgene}{'regions'}{$regionName} = 1;
+        }
+        
+        ## references - there can be >1 per seq
+        my @refs = $seq->annotation()->get_Annotations('reference');
+        foreach my $ref (@refs) {
+            if (defined $ref->pubmed()) {
+                my $pubmed = $ref->pubmed();
+                $refs{$pubmed}{'ref'} = $ref;
+                push @{$refs{$pubmed}{'genes'}}, $CDSgene;
+                push @{$refs{$pubmed}{'accs'}}, $header;
+                push @{$refs{$pubmed}{'refseqlink'}}, $refseqlink;
+                my $longRefName = "PMID_".$pubmed;
+                $genes{$CDSgene}{'references'}{$longRefName}=1;
+            } else {
+                print "    no pubmed for this ref\n";
+                my $hash_ref = $ref->hash_tree;
+                for my $key (keys %{$hash_ref}) {
+                    print "        " , $key,": ",$hash_ref->{$key},"\n";
+                }
+            }
+        }
+        
+    } #end of each seq loop
+    
+    ## set up output file names
+    my $table_byAcc = $file; $table_byAcc =~ s/\.gb$//; 
+    my $table_refs = $table_byAcc . ".info.refs.txt";
+    my $table_byGene = $table_byAcc . ".info.byGene.txt";
+    $table_byAcc .= ".info.byAccession.txt";
+    
+    ## open table by accession 
+    # print the header row 
+    open(TABLE_BYACC, "> $table_byAcc"); 
+    print TABLE_BYACC "Accession\tLength(aa)\tSpecies\tRefseq_link\t"; ## xx add Refseq_link to outputLines
+    print TABLE_BYACC "Gene_name\tGene_synonyms\tDescription\t";
+    print TABLE_BYACC "Protein_product_names\tProtein_product_notes\t";
+    print TABLE_BYACC "Region_names\tRegion_notes\t";
+    print TABLE_BYACC "\n"; 
+    # print output lines 
+    @outputLines = sort @outputLines;
+    foreach my $line (@outputLines) { print TABLE_BYACC $line; }
+    close TABLE_BYACC;
+    
+    
+    ## open genes table
+    open(TABLE_BYGENE, "> $table_byGene"); 
+    # print the header row 
+    print TABLE_BYGENE "Gene\tSynonyms\tAccessions\tRefseq_accs\t";
+    print TABLE_BYGENE "Products\tRegions\tReferences\n";
+    # row for each gene
+    foreach my $gene (sort keys %genes) {
+        # synonyms
+        my @synonyms = sort keys %{$genes{$gene}{'synonyms'}};
+        my $synonymString = join ",", @synonyms;
+        # accs
+        my @accs = sort keys %{$genes{$gene}{'accs'}};
+        my $accString = join ",", @accs;
+        # refseq accs
+        my @refseqs = sort keys %{$genes{$gene}{'refseqlink'}};
+        my $refseqString = join ",", @refseqs;
+        # products
+        my @products = sort keys %{$genes{$gene}{'products'}};
+        my $productString = join ",", @products;
+        # regions
+        my @regions = sort keys %{$genes{$gene}{'regions'}};
+        my $regionString = join ",", @regions;
+        # references
+        my @references = sort keys %{$genes{$gene}{'references'}};
+        my $referenceString = join ",", @references;
+        print TABLE_BYGENE "$gene\t$synonymString\t$accString\t$refseqString\t";
+        print TABLE_BYGENE "$productString\t$regionString\t$referenceString\n";
+    }
+    close TABLE_BYGENE;
+    
+    ## open refs table
+    open(REFS, "> $table_refs");
+    # print the header row 
+    print REFS "PubmedID\tGenes\tAccessions\tRefseq_accessions\t";
+    print REFS "Authors\tJournal\tTitle\n";
+    # go through each ref
+    foreach my $pubmedID (sort keys %refs) {
+        my @genes = sort @{$refs{$pubmedID}{'genes'}};
+        my %g; foreach my $gene (@genes) { $g{$gene} = 1; }
+        my @uniqueGenes = sort keys %g;
+        my $geneString = join ",", @uniqueGenes;
+        
+        my @accs = sort @{$refs{$pubmedID}{'accs'}};
+        my %a; foreach my $acc (@accs) { $a{$acc} = 1; }
+        my @uniqueAccs = sort keys %a;
+        my $accString = join ",", @uniqueAccs;
+        
+        my @refseqAccs = sort @{$refs{$pubmedID}{'refseqlink'}};
+        my %r; foreach my $refseqAcc (@refseqAccs) { $r{$refseqAcc} = 1; }
+        my @uniqueRefseqAccs = sort keys %r;
+        my $refseqAccString = join ",", @uniqueRefseqAccs;
+        
+        # title, authors, location
+        my $refobj = $refs{$pubmedID}{'ref'};
+        my $title = $refobj->title();
+        my $location = $refobj->location();
+        my $authors = $refobj->authors();
+        
+        print REFS "$pubmedID\t$geneString\t$accString\t$refseqAccString\t";
+        print REFS "$authors\t$location\t$title\n";
+    }
+    close REFS;
+}

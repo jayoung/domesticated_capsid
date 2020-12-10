@@ -1,5 +1,0 @@
-Gene_type	Count	File
-Ref	1	PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
-Intact	16	PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
-Truncated	1	PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
-Pseud	21	PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa

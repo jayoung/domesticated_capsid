@@ -53,8 +53,20 @@ output =
 ## get placental mammal maf file for each transcript using RefSeq ID:
 cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/multiz_alignments
 module load Kent_tools
-../scrips/getBedAndMaf.pl
+../scripts/getBedAndMaf.pl
 module purge
+
+
+#
+../scripts/maf2fasta_JY.bioperl *placMamm.maf
+    remove all gaps, and realign *placMamm.fa.nogaps using MACSE:
+../scripts/removegapsfromseq.bioperl *placMamm.fa
+../scripts/runMACSEsimpleInFrameAlignment.pl *placMamm.fa.nogaps
+    xxxx running sbatch
+
+
+../scripts/checkAlignmentFrameshiftsStops.bioperl 
+
 
 xx accessions now have the version number, but in my previous maf2fasta script they might not have done. Also now there are XM_ accessions as well as NM_ accessions
 

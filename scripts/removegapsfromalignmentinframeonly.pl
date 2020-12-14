@@ -3,6 +3,7 @@
 use warnings;
 use strict;
 use Bio::SeqIO;
+use Bio::PrimarySeq; ## specifically loading it, so I can redefine a subroutine
 
 #removes columns from alignment if all sequences have a gap at that position
 #also checks whether there are any codons at all where more than one seq has bases
@@ -74,12 +75,27 @@ foreach my $infile (@ARGV) {
     my $seqOUT = Bio::SeqIO->new(-file => "> $outfile", '-format' => 'Fasta');
     foreach my $key4 (@orderedseqs) {
         my $letters = $newseqs{$key4};
-        if ($letters =~ m/\!/) {
-            print "    WARNING - replacing ! in seq with -\n";
-            $letters =~ s/\!/-/g;
-        }
-        my $seq = Bio::Seq->new(-display_id=>$key4, -seq=>$letters);
+        my $seq = Bio::Seq->new(-display_id=>$key4, -seq=>$letters, -alphabet=>"dna");
         $seqOUT->write_seq($seq);
     }
 }
+
+
+### my version of validate_seq, to avoid issues caused by the ! characters
+{ no warnings 'redefine';
+    sub Bio::PrimarySeq::validate_seq {
+        my ($self,$seqstr) = @_;
+        if( ! defined $seqstr ){ $seqstr = $self->seq(); }
+        return 0 unless( defined $seqstr);
+        my $MATCHPATTERN = 'A-Za-z\-\.\*\?=~\!';
+        if ((CORE::length($seqstr) > 0) &&
+            ($seqstr !~ /^([$MATCHPATTERN]+)$/)) {
+            $self->warn("JY seq doesn't validate, mismatch is " .
+                    ($seqstr =~ /([^$MATCHPATTERN]+)/g));
+                return 0;
+        }
+        return 1;
+     }
+}
+
 

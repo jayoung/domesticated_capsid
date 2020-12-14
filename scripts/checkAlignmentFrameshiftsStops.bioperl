@@ -107,7 +107,8 @@ foreach my $file (@ARGV){
                 print "\n\n";
                 my $refSeqIntact = checkUngappedSeq($refSeq);
                 if ($refSeqIntact == 0) {
-                    die "\n\nterminating - the reference sequence has frameshifts or in-frame stop codons\n\n";
+                    print "    WARNING - the reference sequence has frameshifts or in-frame stop codons\n\n";
+                    # xxx PEG10 has a programmed frameshift. how do I handle that?
                 }
                 next;
             }

@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	RTL8C_NM_001078171.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	32	RTL8C_NM_001078171.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	2	RTL8C_NM_001078171.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	6	RTL8C_NM_001078171.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

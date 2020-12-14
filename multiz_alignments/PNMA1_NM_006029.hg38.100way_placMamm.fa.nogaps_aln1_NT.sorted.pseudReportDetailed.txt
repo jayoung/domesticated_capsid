@@ -1,0 +1,7 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+nomLeu3	706	706	730	730	1	Frameshift deletion
+nomLeu3	736	736	760	760	1	Frameshift deletion
+octDeg1	1015	1017	1102	1104	NA	Stop codon
+turTru2	766	766	850	850	1	Frameshift deletion
+turTru2	972	972	1059	1059	1	Frameshift insertion
+dasNov3	139	140	142	143	2	Frameshift deletion

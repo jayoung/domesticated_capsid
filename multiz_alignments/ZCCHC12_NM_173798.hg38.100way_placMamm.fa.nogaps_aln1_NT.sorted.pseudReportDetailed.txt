@@ -1,0 +1,12 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+nomLeu3	883	884	937	938	2	Frameshift deletion
+papAnu2	700	701	706	707	2	Frameshift deletion
+papAnu2	745	745	751	751	1	Frameshift deletion
+papAnu2	772	773	781	782	2	Frameshift deletion
+papAnu2	784	784	793	793	1	Frameshift deletion
+tupChi1	1204	1206	1285	1287	NA	Stop codon
+myoDav1	1021	1023	1090	1092	NA	Stop codon
+myoDav1	1105	1112	1177	1184	8	Frameshift deletion
+myoDav1	1153	1154	1231	1232	2	Frameshift deletion
+eriEur2	1192	1196	1273	1277	5	Frameshift deletion
+loxAfr3	94	94	94	94	1	Frameshift deletion

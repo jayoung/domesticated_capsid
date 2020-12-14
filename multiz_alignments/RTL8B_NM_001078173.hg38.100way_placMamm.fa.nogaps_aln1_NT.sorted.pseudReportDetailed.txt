@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+nomLeu3	58	58	67	67	1	Frameshift deletion
+nomLeu3	324	324	337	345	7	Frameshift insertion
+oryCun2	291	291	303	303	1	Frameshift insertion
+oryCun2	333	333	357	357	1	Frameshift insertion
+capHir1	55	55	64	64	1	Frameshift deletion

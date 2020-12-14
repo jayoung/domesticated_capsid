@@ -1,0 +1,10 @@
+hg38	missing
+otoGar3	empty
+hetGla2	empty
+chiLan1	empty
+octDeg1	empty
+eriEur2	empty
+sorAra2	empty
+eleEdw1	empty
+chrAsi1	empty
+dasNov3	empty

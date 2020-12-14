@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	LOC107986113_XM_017007620.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	0	LOC107986113_XM_017007620.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	0	LOC107986113_XM_017007620.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	0	LOC107986113_XM_017007620.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

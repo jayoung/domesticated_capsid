@@ -1,0 +1,11 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+nomLeu3	118	119	118	119	2	Frameshift deletion
+tupChi1	1120	1120	1282	1282	1	Frameshift deletion
+camFer1	409	533	415	554	125	Frameshift deletion
+camFer1	891	891	1018	1032	14	Frameshift insertion
+oviAri3	283	284	289	290	2	Frameshift deletion
+equCab2	169	169	175	175	1	Frameshift deletion
+equCab2	214	214	220	220	1	Frameshift deletion
+equCab2	241	241	247	247	1	Frameshift deletion
+equCab2	262	262	268	268	1	Frameshift deletion
+ailMel1	40	40	40	40	1	Frameshift deletion

@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	RTL3_NM_152694.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	13	RTL3_NM_152694.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	0	RTL3_NM_152694.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	35	RTL3_NM_152694.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

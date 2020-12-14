@@ -1,0 +1,7 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+cavPor3	142	142	157	157	1	Frameshift deletion
+oviAri3	88	181	100	196	94	Frameshift deletion
+pteVam1	627	627	657	657	1	Frameshift insertion
+myoDav1	574	575	589	590	2	Frameshift deletion
+oryAfe1	286	286	301	301	1	Frameshift deletion
+oryAfe1	487	489	502	504	NA	Stop codon

@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA6E_XM_024452426.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	18	PNMA6E_XM_024452426.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	5	PNMA6E_XM_024452426.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	31	PNMA6E_XM_024452426.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

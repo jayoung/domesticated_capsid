@@ -1,0 +1,12 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+calJac3	67	69	79	81	NA	Stop codon
+calJac3	259	261	274	276	NA	Stop codon
+bosTau8	10	12	10	12	NA	Stop codon
+bosTau8	79	79	91	91	1	Frameshift deletion
+bosTau8	235	237	250	252	NA	Stop codon
+bosTau8	283	283	298	298	1	Frameshift deletion
+capHir1	55	55	67	67	1	Frameshift deletion
+equCab2	24	24	27	27	1	Frameshift insertion
+equCab2	90	90	104	105	2	Frameshift insertion
+ailMel1	16	16	16	16	1	Frameshift deletion
+myoDav1	28	28	34	34	1	Frameshift deletion

@@ -1,0 +1,9 @@
+hg38	missing
+chiLan1	empty
+octDeg1	empty
+ochPri3	empty
+vicPac2	empty
+camFer1	empty
+myoLuc2	empty
+eriEur2	empty
+sorAra2	empty

@@ -1,0 +1,36 @@
+55	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+Start building smaller alignments 30
+compute kmer dist 
+build UPGMA done 
++++++++++++++++++++++++++++++start refining the alignment
+++..+.+.......+.....+....++++.+...+++....+........+++...++.
+Refine 2 cut : sum of pair========= 1 => -321964.84
+..+.+.+.......+....+..............+......+......++.........
+Refine 2 cut : sum of pair========= 2 => -323186.4
+-........+.+....+.....++...................+...............
+Refine 2 cut : sum of pair========= 3 => -323331.47
+......-....-.--...........+................................
+Refine 2 cut : sum of pair========= 4 => -323339.47
+-.....-........-..........---.-...-......-..--..-..--------
+Refine 2 cut : sum of pair========= 5 => -323339.47
+compute kmer dist 
+build UPGMA done 
+++++++++++++++++++++++++start refining the alignment
++++++.++..+.+++.+..+...+.++.+...++..+....++.++.-.
+Refine 2 cut : sum of pair========= 1 => -179362.5
+.++...++...+.......++.+.+........++.++.......+.-.
+Refine 2 cut : sum of pair========= 2 => -181069.5
+.-...............+......+...+................+...
+Refine 2 cut : sum of pair========= 3 => -181240.5
+........................-......................--
+Refine 2 cut : sum of pair========= 4 => -181240.5
++Start refining the whole alignment of reliable sequences 55
+..........+...++.++.+..+.+..++.+..++..........+...+..+.+..++.....+....................+...+.+.......+....++..
+Refine 2 cut : sum of pair========= 1 => -931964.0
+......................................-+.....................+........+...++..............+............+...-.
+Refine 2 cut : sum of pair========= 2 => -932442.6
+.......................................................................................................---.--
+Refine 2 cut : sum of pair========= 3 => -932442.6
+true
+PNMA6E_NM_001351293.hg38.100way_placMamm.fa.nogaps_aln1_NT.fa

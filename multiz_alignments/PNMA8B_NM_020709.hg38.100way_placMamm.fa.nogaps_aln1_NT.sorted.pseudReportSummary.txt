@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA8B_NM_020709.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	14	PNMA8B_NM_020709.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	3	PNMA8B_NM_020709.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	32	PNMA8B_NM_020709.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

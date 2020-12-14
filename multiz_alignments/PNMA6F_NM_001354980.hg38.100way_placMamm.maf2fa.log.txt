@@ -1,0 +1,6 @@
+hg38	missing
+speTri2	empty
+micOch1	empty
+orcOrc1	empty
+eriEur2	empty
+conCri1	empty

@@ -1,0 +1,11 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+jacJac1	235	239	325	329	5	Frameshift deletion
+cavPor3	193	194	211	212	2	Frameshift deletion
+ochPri3	220	220	295	295	1	Frameshift deletion
+camFer1	88	89	100	101	2	Frameshift deletion
+capHir1	55	55	67	67	1	Frameshift deletion
+canFam3	196	197	214	215	2	Frameshift deletion
+musFur1	211	212	277	278	2	Frameshift deletion
+ailMel1	193	194	211	212	2	Frameshift deletion
+loxAfr3	211	212	277	278	2	Frameshift deletion
+chrAsi1	214	215	280	281	2	Frameshift deletion

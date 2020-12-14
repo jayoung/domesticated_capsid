@@ -1,0 +1,14 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+jacJac1	148	149	253	254	2	Frameshift deletion
+criGri1	631	632	946	947	2	Frameshift deletion
+mm10	148	148	253	253	1	Frameshift deletion
+rn6	553	553	868	868	1	Frameshift deletion
+rn6	598	598	913	913	1	Frameshift deletion
+rn6	814	814	1294	1294	1	Frameshift deletion
+rn6	882	882	1365	1365	1	Frameshift insertion
+rn6	961	961	1468	1468	1	Frameshift deletion
+chiLan1	742	742	1096	1096	1	Frameshift deletion
+octDeg1	739	739	1093	1093	1	Frameshift deletion
+ochPri3	127	127	154	154	1	Frameshift deletion
+capHir1	700	700	1018	1018	1	Frameshift deletion
+loxAfr3	961	962	1468	1469	2	Frameshift deletion

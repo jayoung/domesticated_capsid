@@ -1,0 +1,9 @@
+1	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+compute kmer dist 
+build UPGMA done 
+start refining the alignment
+.
+Refine 2 cut : sum of pair========= 1 => 0.0
+true
+LOC107986113_XM_017007620.hg38.100way_placMamm.fa.nogaps_aln1_NT.fa

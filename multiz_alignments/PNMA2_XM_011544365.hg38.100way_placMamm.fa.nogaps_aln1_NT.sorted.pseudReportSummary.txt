@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA2_XM_011544365.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	46	PNMA2_XM_011544365.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Truncated	0	PNMA2_XM_011544365.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	10	PNMA2_XM_011544365.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

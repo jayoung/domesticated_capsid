@@ -72,7 +72,6 @@ module purge
     xxxx worked!  I should probably check all ref seqs have ORFs
 
 
-    xxx I don't think git is keeping up with changes in this file
 
 ./checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.fa
 removegapsfromalignment.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.nogaps.MACSE.nt.sorted.noPseuds.fa

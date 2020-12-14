@@ -62,16 +62,16 @@ while (<ACCS>) {
     if (!-e $bedFile) { die "\n\nterminating - grep command failed\n\n"; }
     if (-z $bedFile) { die "\n\nterminating - grep command gave empty output\n\n"; }
     
-    my $numLines = `wc $bedFile`;
     ### check whether there was >1 bed entry, if so, do something about it
+    open (BED, "< $bedFile");
+    my @lines = <BED>;
+    close BED;
+    my $numLines = @lines;
     if ($numLines > 1) {
         print "    WARNING - found >1 bed file entry, taking only one of them\n";
-        open (BED, "< $bedFile");
-        my @lines = <BED>;
-        close BED;
         
         ## choose one entry, hopefully one that's not on an alt/random/Un chromosome
-        my @goodlines;
+        my @goodLines;
         my $lineToKeep;
         foreach my $line (@lines) {
             my $chr = (split /\t/, $line)[0];

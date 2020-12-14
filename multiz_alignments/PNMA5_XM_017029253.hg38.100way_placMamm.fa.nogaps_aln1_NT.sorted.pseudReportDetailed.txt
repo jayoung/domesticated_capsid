@@ -8,13 +8,13 @@ ponAbe2	688	689	766	767	2	Frameshift deletion
 ponAbe2	781	781	868	868	1	Frameshift deletion
 ponAbe2	820	821	913	914	2	Frameshift deletion
 papAnu2	427	428	502	503	2	Frameshift deletion
-otoGar3	1336	1338	1609	1611	NA	Stop codon
-speTri2	1336	1338	1609	1611	NA	Stop codon
+otoGar3	1336	1338	1609	1611	NA	Ignoring stop codon near end
+speTri2	1336	1338	1609	1611	NA	Ignoring stop codon near end
 criGri1	973	973	1066	1066	1	Frameshift deletion
-cavPor3	1336	1338	1609	1611	NA	Stop codon
+cavPor3	1336	1338	1609	1611	NA	Ignoring stop codon near end
 vicPac2	1054	1055	1243	1244	2	Frameshift deletion
 vicPac2	1255	1256	1525	1526	2	Frameshift deletion
-vicPac2	1336	1338	1609	1611	NA	Stop codon
+vicPac2	1336	1338	1609	1611	NA	Ignoring stop codon near end
 turTru2	112	113	115	116	2	Frameshift deletion
 turTru2	448	448	523	523	1	Frameshift deletion
 orcOrc1	1051	1052	1240	1241	2	Frameshift deletion
@@ -28,11 +28,11 @@ bosTau8	1258	1262	1528	1532	5	Frameshift deletion
 equCab2	1054	1055	1243	1244	2	Frameshift deletion
 equCab2	1123	1126	1384	1387	4	Frameshift deletion
 equCab2	1255	1255	1525	1525	1	Frameshift deletion
-equCab2	1336	1338	1609	1611	NA	Stop codon
+equCab2	1336	1338	1609	1611	NA	Ignoring stop codon near end
 cerSim1	1051	1052	1240	1241	2	Frameshift deletion
 cerSim1	1123	1126	1384	1387	4	Frameshift deletion
 cerSim1	1255	1255	1525	1525	1	Frameshift deletion
-cerSim1	1336	1338	1609	1611	NA	Stop codon
+cerSim1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 canFam3	127	128	130	131	2	Frameshift deletion
 canFam3	652	652	730	730	1	Frameshift deletion
 canFam3	793	793	880	880	1	Frameshift deletion
@@ -50,7 +50,7 @@ ailMel1	793	795	880	882	NA	Stop codon
 ailMel1	934	936	1027	1029	NA	Stop codon
 ailMel1	991	993	1123	1125	NA	Stop codon
 ailMel1	1240	1241	1510	1511	2	Frameshift deletion
-ailMel1	1336	1338	1609	1611	NA	Stop codon
+ailMel1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 odoRosDiv1	31	31	34	34	1	Frameshift deletion
 odoRosDiv1	478	479	556	557	2	Frameshift deletion
 odoRosDiv1	991	993	1123	1125	NA	Stop codon
@@ -58,34 +58,34 @@ odoRosDiv1	1249	1249	1519	1519	1	Frameshift deletion
 pteAle1	1051	1052	1240	1241	2	Frameshift deletion
 pteAle1	1126	1126	1387	1387	1	Frameshift deletion
 pteAle1	1258	1258	1528	1528	1	Frameshift deletion
-pteAle1	1336	1338	1609	1611	NA	Stop codon
+pteAle1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 pteVam1	1051	1052	1240	1241	2	Frameshift deletion
 pteVam1	1126	1126	1387	1387	1	Frameshift deletion
 pteVam1	1258	1258	1528	1528	1	Frameshift deletion
-pteVam1	1336	1338	1609	1611	NA	Stop codon
+pteVam1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 myoLuc2	1042	1043	1183	1184	2	Frameshift deletion
 myoLuc2	1249	1249	1519	1519	1	Frameshift deletion
 eptFus1	1048	1049	1189	1190	2	Frameshift deletion
 eptFus1	1123	1126	1384	1387	4	Frameshift deletion
 eptFus1	1258	1258	1528	1528	1	Frameshift deletion
-eptFus1	1336	1338	1609	1611	NA	Stop codon
+eptFus1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 sorAra2	19	19	22	22	1	Frameshift deletion
 sorAra2	433	433	508	508	1	Frameshift deletion
 sorAra2	1102	1103	1312	1313	2	Frameshift deletion
 sorAra2	1273	1274	1543	1544	2	Frameshift deletion
-sorAra2	1336	1338	1609	1611	NA	Stop codon
+sorAra2	1336	1338	1609	1611	NA	Ignoring stop codon near end
 loxAfr3	1051	1052	1240	1241	2	Frameshift deletion
 loxAfr3	1276	1276	1546	1546	1	Frameshift deletion
-loxAfr3	1336	1338	1609	1611	NA	Stop codon
+loxAfr3	1336	1338	1609	1611	NA	Ignoring stop codon near end
 triMan1	1054	1055	1243	1244	2	Frameshift deletion
 triMan1	1276	1276	1546	1546	1	Frameshift deletion
-triMan1	1336	1338	1609	1611	NA	Stop codon
+triMan1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 chrAsi1	1045	1046	1186	1187	2	Frameshift deletion
 chrAsi1	1228	1228	1498	1498	1	Frameshift deletion
-chrAsi1	1336	1338	1609	1611	NA	Stop codon
+chrAsi1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 oryAfe1	1051	1052	1240	1241	2	Frameshift deletion
 oryAfe1	1276	1276	1546	1546	1	Frameshift deletion
-oryAfe1	1336	1338	1609	1611	NA	Stop codon
+oryAfe1	1336	1338	1609	1611	NA	Ignoring stop codon near end
 dasNov3	1051	1052	1240	1241	2	Frameshift deletion
 dasNov3	1258	1258	1528	1528	1	Frameshift deletion
-dasNov3	1336	1338	1609	1611	NA	Stop codon
+dasNov3	1336	1338	1609	1611	NA	Ignoring stop codon near end

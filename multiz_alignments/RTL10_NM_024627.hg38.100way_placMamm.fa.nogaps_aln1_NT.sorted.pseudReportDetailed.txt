@@ -1,8 +1,8 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-rheMac3	1039	1041	1645	1647	NA	Stop codon
-macFas5	1039	1041	1645	1647	NA	Stop codon
-papAnu2	1039	1041	1645	1647	NA	Stop codon
-chlSab2	1039	1041	1645	1647	NA	Stop codon
+rheMac3	1039	1041	1645	1647	NA	Ignoring stop codon near end
+macFas5	1039	1041	1645	1647	NA	Ignoring stop codon near end
+papAnu2	1039	1041	1645	1647	NA	Ignoring stop codon near end
+chlSab2	1039	1041	1645	1647	NA	Ignoring stop codon near end
 otoGar3	82	83	100	101	2	Frameshift deletion
 otoGar3	190	192	319	321	NA	Stop codon
 otoGar3	244	244	376	376	1	Frameshift deletion
@@ -57,7 +57,7 @@ mesAur1	649	649	1045	1045	1	Frameshift deletion
 mesAur1	679	680	1075	1076	2	Frameshift deletion
 mesAur1	934	934	1495	1495	1	Frameshift deletion
 mesAur1	964	965	1546	1547	2	Frameshift deletion
-mesAur1	1069	1071	1693	1695	NA	Stop codon
+mesAur1	1069	1071	1693	1695	NA	Ignoring stop codon near end
 mm10	88	88	112	112	1	Frameshift deletion
 mm10	307	307	463	463	1	Frameshift deletion
 mm10	346	347	517	518	2	Frameshift deletion
@@ -253,7 +253,7 @@ eleEdw1	535	535	865	865	1	Frameshift deletion
 eleEdw1	619	619	1009	1009	1	Frameshift deletion
 eleEdw1	808	808	1312	1312	1	Frameshift deletion
 eleEdw1	1018	1019	1621	1622	2	Frameshift deletion
-eleEdw1	1072	1074	1696	1698	NA	Stop codon
+eleEdw1	1072	1074	1696	1698	NA	Ignoring stop codon near end
 triMan1	286	286	421	421	1	Frameshift deletion
 triMan1	412	412	715	715	1	Frameshift deletion
 triMan1	646	646	1039	1039	1	Frameshift deletion

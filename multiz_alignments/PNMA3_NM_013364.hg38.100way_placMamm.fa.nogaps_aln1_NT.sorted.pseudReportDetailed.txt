@@ -44,7 +44,7 @@ capHir1	1318	1318	1420	1420	1	Frameshift deletion
 equCab2	1087	1088	1129	1130	2	Frameshift deletion
 cerSim1	1120	1121	1204	1205	2	Frameshift deletion
 cerSim1	1201	1202	1294	1295	2	Frameshift deletion
-cerSim1	1381	1383	1486	1488	NA	Stop codon
+cerSim1	1381	1383	1486	1488	NA	Ignoring stop codon near end
 felCat8	1087	1088	1129	1130	2	Frameshift deletion
 canFam3	1144	1145	1228	1229	2	Frameshift deletion
 musFur1	1087	1088	1129	1130	2	Frameshift deletion
@@ -57,12 +57,12 @@ pteAle1	1087	1088	1129	1130	2	Frameshift deletion
 pteVam1	895	895	934	934	1	Frameshift deletion
 myoLuc2	1087	1088	1129	1130	2	Frameshift deletion
 eptFus1	1087	1088	1129	1130	2	Frameshift deletion
-eptFus1	1357	1359	1462	1464	NA	Stop codon
+eptFus1	1357	1359	1462	1464	NA	Ignoring stop codon near end
 sorAra2	19	19	19	19	1	Frameshift deletion
 sorAra2	1138	1138	1222	1222	1	Frameshift deletion
-sorAra2	1381	1383	1486	1488	NA	Stop codon
+sorAra2	1381	1383	1486	1488	NA	Ignoring stop codon near end
 triMan1	412	412	436	436	1	Frameshift deletion
 triMan1	636	636	666	666	1	Frameshift insertion
 triMan1	922	924	961	963	NA	Stop codon
 triMan1	1171	1172	1261	1262	2	Frameshift deletion
-dasNov3	1357	1359	1462	1464	NA	Stop codon
+dasNov3	1357	1359	1462	1464	NA	Ignoring stop codon near end

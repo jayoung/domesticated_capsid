@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-NM_013364	Reference	NA	NA
+NM_013364	Reference	0	0	1392
 gorGor3	Intact	0	0	1392
 ponAbe2	Pseud	1	0	1393
 nomLeu3	Intact	0	0	1392
@@ -21,7 +21,7 @@ bosTau8	Pseud	3	3	1292
 oviAri3	Pseud	9	1	1275
 capHir1	Pseud	6	1	1200
 equCab2	Pseud	1	0	1390
-cerSim1	Pseud	2	1	1343
+cerSim1	Pseud	2	0	1343
 felCat8	Pseud	1	0	1390
 canFam3	Pseud	1	0	1186
 musFur1	Pseud	1	0	1390
@@ -31,10 +31,10 @@ lepWed1	Intact	0	0	1389
 pteAle1	Pseud	2	0	1377
 pteVam1	Pseud	1	0	953
 myoLuc2	Pseud	1	0	1384
-eptFus1	Pseud	1	1	1384
-sorAra2	Pseud	2	1	1255
+eptFus1	Pseud	1	0	1384
+sorAra2	Pseud	2	0	1255
 loxAfr3	Intact	0	0	1353
 triMan1	Pseud	3	1	1219
 chrAsi1	Intact	0	0	1344
 oryAfe1	Intact	0	0	1338
-dasNov3	Pseud	0	1	1383
+dasNov3	Intact	0	0	1383

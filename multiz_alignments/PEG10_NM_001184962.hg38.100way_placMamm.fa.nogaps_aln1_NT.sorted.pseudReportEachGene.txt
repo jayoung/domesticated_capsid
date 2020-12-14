@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-NM_001184962	Reference	NA	NA
+NM_001184962	Reference	0	0	1080
 panTro4	Intact	0	0	1080
 gorGor3	Intact	0	0	1080
 ponAbe2	Intact	0	0	1083

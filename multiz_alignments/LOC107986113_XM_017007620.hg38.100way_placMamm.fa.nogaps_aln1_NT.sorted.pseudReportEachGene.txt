@@ -1,2 +1,2 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-XM_017007620	Reference	NA	NA
+XM_017007620	Reference	0	0	2085

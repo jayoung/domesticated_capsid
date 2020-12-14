@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
-Intact	33	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Intact	34	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
 Truncated	0	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
-Pseud	20	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+Pseud	19	PNMA8A_XM_011527067.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa

@@ -87,6 +87,7 @@ eriEur2	2512	2512	3043	3043	1	Frameshift deletion
 sorAra2	346	346	475	475	1	Frameshift deletion
 sorAra2	3274	3392	3910	4061	119	Frameshift deletion
 sorAra2	3643	3643	4360	4360	1	Frameshift deletion
+sorAra2	4076	4078	4942	4944	NA	Ignoring stop codon near end
 conCri1	346	346	475	475	1	Frameshift deletion
 loxAfr3	118	119	133	134	2	Frameshift deletion
 loxAfr3	229	229	298	298	1	Frameshift deletion

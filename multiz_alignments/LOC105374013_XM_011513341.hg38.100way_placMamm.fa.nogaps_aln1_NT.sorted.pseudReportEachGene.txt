@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-XM_011513341	Reference	NA	NA
+XM_011513341	Reference	0	0	2127
 panTro4	Pseud	1	0	658
 gorGor3	Truncated	0	0	11
 ponAbe2	Truncated	0	0	11

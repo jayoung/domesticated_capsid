@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-NM_032040	Reference	NA	NA
+NM_032040	Reference	0	0	1617
 panTro4	Intact	0	0	1617
 gorGor3	Intact	0	0	1617
 ponAbe2	Intact	0	0	1590
@@ -31,7 +31,7 @@ turTru2	Pseud	3	0	1424
 orcOrc1	Pseud	4	0	1521
 panHod1	Pseud	3	0	1562
 bosTau8	Pseud	3	0	1520
-oviAri3	Pseud	3	0	1685
+oviAri3	Pseud	3	1	1685
 capHir1	Pseud	4	0	1501
 equCab2	Pseud	4	0	1617
 cerSim1	Pseud	3	0	1547

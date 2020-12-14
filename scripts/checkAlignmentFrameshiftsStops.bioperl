@@ -13,8 +13,8 @@ use Getopt::Long;
 ## tests each other sequence for frameshifts w.r.t. the reference sequence, and stop codons that are not at the end of the sequence.
 ## I do tolerate frameshifts at the very beginning or very end of each aligned seq
 ## tests the reference seq for an intact ORF
-
-## xx may want to build in some tolerance of stops near but not quite at the end.
+## allows for a special case, PEG10, that has a programmed ribosome frameshift, and allows us to ignore frameshifts within a certain distance of the programmed frameshift
+## tolerates stops near but not quite at the end (as well as AFTER end of ref seq) - tolerable distance is (by default) 60bp (20 codons)
 
 
 ## output = four files: 
@@ -26,17 +26,25 @@ use Getopt::Long;
 # checkAlignmentFrameshiftsStops.bioperl PNMA3_NM_013364.refGene.100way.frags.2.combined.fa.degapped
 
 
+#### one gene has a programmed ribosomal frameshift. MACSE does find it, although it might not be in exactly the right place
+our %programmedFrameshiftGenes;
+$programmedFrameshiftGenes{'PEG10'} = 1;
+# for programmed ribosomal frameshift genes, sometimes the other seq has frameshift in a slightly different place. This specifies the acceptable distance in base-pairs for frameshifts in the other species. If closer than this distance, it is assumed to be the programmed frameshift but in the wrong place 
+our $fsDistCheck = 30;
 
-#### defaults for options:
-my $alnIsMACSE = 1; ## 0 or 1, whether the alignment is output of MACSE aligner (so that frameshifts can be encoded by !)
-my $minAlignedLengthProportion = 0.8; ## proportion of refseq len that the ungapped length of a a seq needs to cover - if it doesn't meet this threshold, it will be called 'truncated'
-my $debug = 0;  ## to help figure things out
+
+#### defaults for command-line specifiable options:
+our $stopCodonDistCheck = 60; ## stop codon is OK if it is within this distance from the end of the reference seq (also OK if any distance after the end of the reference seq)
+our $alnIsMACSE = 1; ## 0 or 1, whether the alignment is output of MACSE aligner (so that frameshifts can be encoded by !)
+our $minAlignedLengthProportion = 0.8; ## proportion of refseq len that the ungapped length of a a seq needs to cover - if it doesn't meet this threshold, it will be called 'truncated'
+our $debug = 0;  ## to help figure things out
 
 ###### get any command line options
 
 ## get any non-default options from commandline
 GetOptions("MACSE=i" => \$alnIsMACSE,
            "minLen=i" => \$minAlignedLengthProportion,
+           "stopCodonDist=i" => \$stopCodonDistCheck,
            "debug=i" => \$debug
             ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
@@ -51,7 +59,15 @@ if ($alnIsMACSE == 1) {
 
 foreach my $file (@ARGV){
     if (!-e $file) { die "\n\nterminating - cannot open file $file\n\n"; }
-    print "\n#### working on file $file\n\n";
+    print "\n#### working on file $file\n";
+    ## gene should be the first part of the file name
+    my $gene = "notDefined";
+    if ($file !~ m/_/) {
+        print "    cannot figure out gene name from file name $file\n";
+    } else {
+        $gene = (split /_/, $file)[0];
+        print "    gene $gene\n";
+    }
     my $outStem = $file; $outStem =~ s/\.fasta$//; $outStem =~ s/\.fa$//;
     my $outSeqs = "$outStem.noPseuds.fa";
     my $outReportEachGene = "$outStem.pseudReportEachGene.txt";
@@ -88,28 +104,48 @@ foreach my $file (@ARGV){
         }
         my @gaps = @{$gapsRef};
         
-        my @refBases; my @seqBases;
+        my @refBases; my @seqBases; my $ungappedRefLen;
+        my %refInfo; # keys = status: pseud/intact
+                     #        MACSEframeshifts (array of 0-based bp locations w.r.t. ref seq of any MACSE frameshifts (!)
+                     #        inFrameStops (array of 0-based bp locations w.r.t. ref seq of any MACSE frameshifts (!)
         ### iterate through each non-ref seq
         ## go through the seqs
         foreach my $seq ( $aln->each_seq() ) {
-            ### first sequence is the ref seq
+            
+            ### the first sequence is the ref seq
             if ($refSeq eq "NA") {
                 $refSeq = $seq;
                 $seqOUT->write_seq($seq);
                 $refName = $seq->display_id();
-                print EACHGENE "$refName\tReference\tNA\tNA\n";
                 @refBases = split //, $seq->seq();
                 $refCounts++;
-                my $ungappedRefLen = getUngappedLen($refSeq, $alnIsMACSE);
+                $ungappedRefLen = getUngappedLen($refSeq, $alnIsMACSE);
                 $lengthThreshold = $ungappedRefLen * $minAlignedLengthProportion;
                 my $rounded = sprintf("%.1f", $lengthThreshold);
                 print "    got reference seq $refName ungapped length $ungappedRefLen bp : length threshold is $rounded";
                 print "\n\n";
-                my $refSeqIntact = checkUngappedSeq($refSeq);
-                if ($refSeqIntact == 0) {
-                    print "    WARNING - the reference sequence has frameshifts or in-frame stop codons\n\n";
-                    # xxx PEG10 has a programmed frameshift. how do I handle that?
+                
+                ## we check the reference seq for unexpected stops and frameshifts, e.g. for PEG10, which has a programmed frameshift.
+                my $numRefFrameshifts = 0; my $numRefStops = 0;
+                %refInfo = checkRefSeqIntact($refSeq);
+                if ($refInfo{'status'} eq "pseud") {
+                    if (defined $refInfo{'MACSEframeshifts'}) {
+                        $numRefFrameshifts = @{$refInfo{'MACSEframeshifts'}};
+                    }
+                    if (defined $refInfo{'inFrameStops'}) {
+                        $numRefStops = @{$refInfo{'inFrameStops'}};
+                    }
+                    print "    WARNING - the reference sequence has frameshifts or in-frame stop codons\n";
+                    print "        Num frameshifts $numRefFrameshifts num stops $numRefStops\n";
+                    # check whether this is listed as being OK to be pseud
+                    if (defined $programmedFrameshiftGenes{$gene}) {
+                        print "        BUT it is gene $gene where we expect a programmed frameshift\n";
+                    }
+                    print "\n";
                 }
+                
+                ## output for ref seq
+                print EACHGENE "$refName\tReference\t$numRefFrameshifts\t$numRefStops\t$ungappedRefLen\n";
                 next;
             }
             
@@ -117,7 +153,6 @@ foreach my $file (@ARGV){
             my $seqName = $seq->display_id();
             @seqBases = split //, $seq->seq();
             my $ungappedSeqLen = getUngappedLen($seq, $alnIsMACSE);
-            # if($seqName eq "papAnu2") { $debug = 1 } else {$debug=0;} ## xx temp
             if ($debug==1) { print "    got other seq $seqName ungappedSeqLen $ungappedSeqLen\n"; }
             ### iterate through alignment positions
             my $refPosition = 0; my $seqPosition = 0;
@@ -129,33 +164,29 @@ foreach my $file (@ARGV){
             #  then at each position of the alignment I will compare non-ref to ref, and see if they have the same or opposite gap status.  
             # If it's opposite, in whichever sequence has the 'insertion' relative to the other, I start counting non-gap characters, until the gap ends in the other seq. 
             # Once the gap ends, I total up the non-gap characters, and see if it's a multiple of three.
-        
             for (my $i=0; $i<$alnLen; $i++) {
                 my $refGapThisPos = ${$gaps[$i]}{$refName};
                 my $seqGapThisPos = ${$gaps[$i]}{$seqName};
                 ## for positions where ref is non-gap, update the codons
                 if ($seqGapThisPos eq "") { $seqPosition++ ; }
                 my $distFromSeqEnd = $ungappedSeqLen - $seqPosition;
-                if ($refGapThisPos eq "") {
-                    $refPosition++;
+                my $distFromRefEnd = $ungappedRefLen - $refPosition;
+                
+                #### if it is a MACSE alignment, we check for stop codons w.r.t. the in-frame alignment (if not we check below)
+                if ($alnIsMACSE==1) {
                     $refCodon .= $refBases[$i];
                     $seqCodon .= $seqBases[$i];
-                    ## if refCodon length is 3, test for stop codons and reset 
-                    if (length($refCodon)==3) {
-                        if (uc($refCodon) !~ m/TAA|TAG|TGA/) {
-                            if (uc($seqCodon) =~ m/TAA|TAG|TGA/) {
-                               if ($debug==1) {
-                                    print "        seq $seqName pos $i IN-FRAME STOP CODON!\n";
-                                }
-                                print DETAILS "$seqName\t";
-                                print DETAILS $refPosition-2, "\t", $refPosition, "\t";
-                                print DETAILS $i-1, "\t", $i+1 ;
-                                print DETAILS "\tNA\tStop codon\n";
-                                $numStops++;
-                            }
-                        }
-                        $refCodon = ""; $seqCodon = ""; 
+                    ($refCodon, $seqCodon, $numStops) = checkForStopCodon($refCodon, $seqCodon, $refPosition, $distFromRefEnd, $i, $seqName, $numStops);
+                }
+                
+                if ($refGapThisPos eq "") { 
+                    #### if it is a non-MACSE alignment, we check for stop codons w.r.t the ungapped ref seq.
+                    if ($alnIsMACSE==0) {
+                        $refCodon .= $refBases[$i];
+                        $seqCodon .= $seqBases[$i];
+                        ($refCodon, $seqCodon, $numStops) = checkForStopCodon($refCodon, $seqCodon, $refPosition, $distFromRefEnd, $i, $seqName, $numStops);
                     }
+                    $refPosition++;
                 }
                 
                 #### open a gap in the ref seq w.r.t. the other seq
@@ -178,16 +209,7 @@ foreach my $file (@ARGV){
                         print "            $seqName had $seqCharsWithinThisGapCount non-gap chars\n";
                     }
                     if (($seqCharsWithinThisGapCount % 3) != 0) {
-                        if ($debug==1) {
-                            print "                FRAMESHIFT! seqPosition $seqPosition distFromSeqEnd $distFromSeqEnd\n";
-                        }
-                        if (($seqPosition > 3) & ($distFromSeqEnd > 3)) {
-                            $numFrameshifts++;
-                            print DETAILS "$seqName\t";
-                            print DETAILS "$gapOpenPosRef\t", $refPosition-1, "\t";
-                            print DETAILS "$gapOpenPosAln\t", $i ;
-                            print DETAILS "\t$seqCharsWithinThisGapCount\tFrameshift insertion\n";
-                        }
+                        $numFrameshifts = reportFrameshift($refPosition, $seqPosition, $i, $seqCharsWithinThisGapCount, $distFromSeqEnd, $gapOpenPosRef, $gapOpenPosAln, $numFrameshifts, "insertion", $seqName, $gene, \%refInfo);
                     }
                     $refIsInAGap = "";
                     $refCharsWithinThisGapCount = 0; ## reset
@@ -228,23 +250,13 @@ foreach my $file (@ARGV){
                         print "            Ref had $refCharsWithinThisGapCount non-gap chars\n";
                     }
                     if (($refCharsWithinThisGapCount % 3) != 0) {
-                        if ($debug==1) {
-                            print "                FRAMESHIFT! seqPosition $seqPosition distFromSeqEnd $distFromSeqEnd\n";
-                        }
-                        if (($seqPosition > 3) & ($distFromSeqEnd > 3)) {
-                            $numFrameshifts++;
-                            print DETAILS "$seqName\t";
-                            print DETAILS "$gapOpenPosRef\t", $refPosition-1, "\t";
-                            print DETAILS "$gapOpenPosAln\t", $i ;
-                            print DETAILS "\t$refCharsWithinThisGapCount\tFrameshift deletion\n";
-                        }
+                        $numFrameshifts = reportFrameshift($refPosition, $seqPosition, $i, $refCharsWithinThisGapCount, $distFromSeqEnd, $gapOpenPosRef, $gapOpenPosAln, $numFrameshifts, "deletion", $seqName, $gene, \%refInfo);
                     }
                     $seqIsInAGap = "";
                     $refCharsWithinThisGapCount = 0; ## reset
                     $seqCharsWithinThisGapCount = 0; ## reset
                 }
             } ## end of $i loop (each alignment position)
-            
             print EACHGENE "$seqName\t";
             if ( ($numFrameshifts + $numStops) > 0 ) {
                 print EACHGENE "Pseud";
@@ -304,24 +316,122 @@ sub getUngappedLen {
      }
 }
 
-## simply check an ungapped seq for whether it is an intact ORF
-sub checkUngappedSeq {
+## simply check an ungapped seq for whether it is an intact ORF. This is only intended for the reference sequence - all the others get checked in a different way. I leave the frameshifts where they are for this purpose.
+sub checkRefSeqIntact {
     my $seq = $_[0];
     my $letters = $seq->seq();
+    my @eachLetter = split //, $letters;
+    my %info;
+    $info{'status'} = "intact";
     my $goodORF = 1;
     my $ungapped = $letters; $ungapped =~ s/-//g; 
     if ($ungapped =~ m/\!/) {
-        print "    WARNING - there are frameshifts!\n\n$ungapped\n\n";
-        $goodORF = 0;
+        $info{'status'} = "pseud";
+        @{$info{'MACSEframeshifts'}} = ();
+        my @ungappedLetters = split //, $ungapped;
+        my $gappedCount = 0; my $ungappedCount = 0;
+        foreach my $l (@eachLetter) {
+            if ($l eq "!") {
+                push @{$info{'MACSEframeshifts'}}, $ungappedCount;
+                my $tempUngappedCount = 1+$ungappedCount;
+                my $tempGappedCount = 1+$gappedCount;
+                print DETAILS $seq->display_id();
+                print DETAILS "\t$tempUngappedCount\t$tempUngappedCount\t";
+                print DETAILS "$tempGappedCount\t$tempGappedCount\t";
+                print DETAILS "1\tFrameshift ref\n";
+            }
+            $gappedCount++;
+            if ($l !~ m/!|-/) {$ungappedCount++;}
+        }
     }
-    $ungapped =~ s/!//g;
+    $ungapped =~ s/!/-/g;
     my $ungappedObj = Bio::Seq->new(-seq=>$ungapped);
     my $translated = $ungappedObj->translate()->seq();
     # stop codon is OK at the end but nowhere else 
     $translated =~ s/\*$//;
     if ($translated =~ m/\*/) {
-        print "    WARNING - there are in-frame stop-codons!\n\n$translated\n\n";
-        $goodORF = 0;
+        $info{'status'} = "pseud";
+        my @ungappedAminoAcids = split //, $translated;
+        my $gappedCount = 0; my $ungappedCount = 0;
+        @{$info{'inFrameStops'}} = ();
+        foreach my $u (@ungappedAminoAcids) {
+            if ($u eq "*") {
+                my $pos = $ungappedCount*3;
+                push @{$info{'inFrameStops'}}, $pos;
+                $pos = $pos + 1;
+                print DETAILS $seq->display_id();
+                print DETAILS "\t$pos\t$pos\t";
+                print DETAILS "NA\tNA\t";
+                print DETAILS "1\tStop codon ref\n";
+            }
+            $ungappedCount++;
+        }
     }
-    return($goodORF);
+    return(%info);
+}
+
+sub checkForStopCodon {
+    my ($refCodon, $seqCodon, $refPosition, $distFromRefEnd, $i, $seqName, $numStops) = @_;
+    ## if refCodon length is 3, test for stop codons and reset 
+    if (length($refCodon)==3) {
+        if (uc($refCodon) !~ m/TAA|TAG|TGA/) {
+            if (uc($seqCodon) =~ m/TAA|TAG|TGA/) {
+                if ($debug==1) {
+                    print "        seq $seqName pos $i IN-FRAME STOP CODON!\n";  
+                }
+                my $stopType = "Stop codon";
+                if ($distFromRefEnd < $stopCodonDistCheck) {
+                    $stopType = "Ignoring stop codon near end";
+                    if ($debug==1) {
+                        print "        $seqName has stop codon close to ref end - ignoring\n";
+                    }
+                } else  {
+                    $numStops++;
+                }
+                print DETAILS "$seqName\t";
+                print DETAILS $refPosition-1, "\t", $refPosition+1, "\t";
+                print DETAILS $i-1, "\t", $i+1 ;
+                print DETAILS "\tNA\t$stopType\n";
+            }
+        }
+        $refCodon = ""; $seqCodon = ""; 
+    }
+    return ($refCodon, $seqCodon, $numStops);
+}
+
+sub reportFrameshift {
+    my ($refPosition, $seqPosition, $i, $gapLen, $distFromSeqEnd, $gapOpenPosRef, $gapOpenPosAln, $numFrameshifts, $fsType, $seqName, $gene, $refInfoRef) = @_;
+    my %refInfo = %$refInfoRef;
+    
+    if ($debug==1) {
+        print "                FRAMESHIFT! refPosition $refPosition seqPosition $seqPosition distFromSeqEnd $distFromSeqEnd\n";
+    }
+    if (($seqPosition > 3) & ($distFromSeqEnd > 3)) {
+        my $frameshiftIsOK = 0;
+        ## if it's PEG10 (etc), we ignore frameshifts
+        if (defined $programmedFrameshiftGenes{$gene} ) {
+            if (defined $refInfo{'MACSEframeshifts'}) {
+                foreach my $fs (@{$refInfo{'MACSEframeshifts'}}) {
+                    my $dist = abs( $fs - $refPosition );
+                    if ($dist < $fsDistCheck) {
+                        $frameshiftIsOK = 1;
+                        if ($debug==1) {
+                            print "                close enough to programmed frameshift\n";
+                        }
+                    }
+                }
+            }
+        }
+        my $fsTag = "Frameshift $fsType";
+        if ($frameshiftIsOK == 0) {
+            $numFrameshifts++;
+        } else {
+            $fsTag = "Possible programmed frameshift";
+        }
+        print DETAILS "$seqName\t";
+        print DETAILS "$gapOpenPosRef\t", $refPosition-1, "\t";
+        print DETAILS "$gapOpenPosAln\t", $i ;
+        print DETAILS "\t$gapLen\t$fsTag\n";
+    }
+    return($numFrameshifts);
 }

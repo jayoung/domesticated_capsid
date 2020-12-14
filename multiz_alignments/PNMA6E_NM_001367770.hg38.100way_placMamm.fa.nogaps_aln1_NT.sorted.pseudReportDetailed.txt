@@ -36,11 +36,13 @@ camFer1	655	655	1477	1477	1	Frameshift deletion
 camFer1	781	781	1924	1924	1	Frameshift deletion
 camFer1	877	878	2149	2150	2	Frameshift deletion
 camFer1	1762	1763	3343	3344	2	Frameshift deletion
+panHod1	353	355	367	369	NA	Stop codon
 panHod1	901	901	2191	2191	1	Frameshift deletion
 panHod1	1561	1563	2986	2988	NA	Stop codon
 panHod1	1753	1757	3334	3338	5	Frameshift deletion
 bosTau8	157	159	160	162	NA	Stop codon
 bosTau8	892	892	2182	2182	1	Frameshift deletion
+bosTau8	1559	1561	2977	2979	NA	Stop codon
 bosTau8	1660	1660	3184	3184	1	Frameshift deletion
 bosTau8	1753	1757	3334	3338	5	Frameshift deletion
 oviAri3	354	354	359	411	14	Frameshift insertion
@@ -63,7 +65,7 @@ equCab2	1917	1917	3596	3600	2	Frameshift insertion
 cerSim1	1522	1538	2842	2870	17	Frameshift deletion
 cerSim1	1579	1579	3010	3010	1	Frameshift deletion
 cerSim1	1762	1763	3343	3344	2	Frameshift deletion
-cerSim1	1939	1941	3622	3624	NA	Stop codon
+cerSim1	1939	1941	3622	3624	NA	Ignoring stop codon near end
 felCat8	349	349	352	352	1	Frameshift deletion
 felCat8	619	620	1285	1286	2	Frameshift deletion
 felCat8	892	892	2182	2182	1	Frameshift deletion
@@ -111,7 +113,7 @@ myoDav1	892	892	2182	2182	1	Frameshift deletion
 myoDav1	963	963	2254	2265	10	Frameshift insertion
 myoDav1	1579	1579	3010	3010	1	Frameshift deletion
 myoDav1	1762	1762	3343	3343	1	Frameshift deletion
-myoDav1	1939	1941	3622	3624	NA	Stop codon
+myoDav1	1939	1941	3622	3624	NA	Ignoring stop codon near end
 myoLuc2	354	354	358	411	14	Frameshift insertion
 myoLuc2	895	895	2185	2185	1	Frameshift deletion
 myoLuc2	1579	1579	3010	3010	1	Frameshift deletion

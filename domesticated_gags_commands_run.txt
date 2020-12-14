@@ -64,14 +64,29 @@ module purge
 ../scripts/runMACSEsimpleInFrameAlignment.pl *placMamm.fa.nogaps
     took a while, but all finished fine
 ../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
+    took a while, but all finished fine
 
 
+../scripts/maf2fasta_JY.bioperl MOAP1_NM_022151.hg38.100way_placMamm.maf
+../scripts/removegapsfromseq.bioperl MOAP1_NM_022151.hg38.100way_placMamm.fa
+../scripts/runMACSEsimpleInFrameAlignment.pl MOAP1_NM_022151.hg38.100way_placMamm.fa.nogaps
+../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 MOAP1_NM_022151.hg38.100way_placMamm.fa.nogaps_aln1_NT.fa 
 
-../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1  ARC_NM_015193.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+
 
 ../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
 
-    xxxx worked!  I should probably check all ref seqs have ORFs
+cd zz_test
+
+../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 PEG10_NM_001172437.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+
+../../scripts/checkAlignmentFrameshiftsStops.bioperl  --MACSE=1 PNMA3_NM_001282535.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+
+
+xx still want to fix script to tolerate stop codons very near end, e.g. echTel2 PEG10
+
+
+
 
 
 

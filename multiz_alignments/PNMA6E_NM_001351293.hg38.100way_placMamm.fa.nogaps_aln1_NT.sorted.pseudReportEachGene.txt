@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-NM_001351293	Reference	NA	NA
+NM_001351293	Reference	0	0	1110
 panTro4	Intact	0	0	1110
 gorGor3	Intact	0	0	1110
 ponAbe2	Intact	0	0	1110
@@ -29,11 +29,11 @@ vicPac2	Truncated	0	0	143
 camFer1	Pseud	1	0	941
 turTru2	Truncated	0	0	77
 panHod1	Pseud	1	1	1084
-bosTau8	Pseud	2	0	974
+bosTau8	Pseud	2	1	974
 oviAri3	Pseud	1	1	1084
 capHir1	Pseud	1	1	1084
 equCab2	Pseud	2	0	1113
-cerSim1	Pseud	3	1	643
+cerSim1	Pseud	3	0	643
 felCat8	Pseud	4	0	1076
 canFam3	Pseud	2	0	1137
 musFur1	Pseud	2	0	1080

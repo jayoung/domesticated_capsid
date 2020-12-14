@@ -55,6 +55,7 @@ panHod1	1381	1381	1963	1963	1	Frameshift deletion
 bosTau8	715	725	832	842	11	Frameshift deletion
 bosTau8	877	877	1075	1075	1	Frameshift deletion
 bosTau8	1381	1381	1963	1963	1	Frameshift deletion
+oviAri3	713	715	787	789	NA	Stop codon
 oviAri3	877	877	1075	1075	1	Frameshift deletion
 oviAri3	1261	1262	1699	1700	2	Frameshift deletion
 oviAri3	1381	1381	1963	1963	1	Frameshift deletion

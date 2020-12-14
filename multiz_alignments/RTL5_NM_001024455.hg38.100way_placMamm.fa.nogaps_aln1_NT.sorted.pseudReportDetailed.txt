@@ -17,6 +17,7 @@ hetGla2	1345	1346	2146	2147	2	Frameshift deletion
 cavPor3	1149	1149	1654	1725	20	Frameshift insertion
 cavPor3	1345	1346	2146	2147	2	Frameshift deletion
 chiLan1	1117	1117	1564	1564	1	Frameshift deletion
+chiLan1	1388	1390	2284	2286	NA	Stop codon
 octDeg1	1149	1149	1654	1725	71	Frameshift insertion
 octDeg1	1389	1389	2218	2334	89	Frameshift insertion
 oryCun2	1171	1171	1765	1765	1	Frameshift deletion
@@ -105,4 +106,4 @@ dasNov3	1027	1029	1399	1401	NA	Stop codon
 dasNov3	1168	1169	1762	1763	2	Frameshift deletion
 dasNov3	1267	1267	1972	1972	1	Frameshift deletion
 dasNov3	1381	1382	2209	2210	2	Frameshift deletion
-dasNov3	1654	1656	2674	2676	NA	Stop codon
+dasNov3	1654	1656	2674	2676	NA	Ignoring stop codon near end

@@ -5,6 +5,7 @@ otoGar3	1672	1674	3046	3048	NA	Stop codon
 tupChi1	1356	1356	2288	2409	1	Frameshift insertion
 jacJac1	274	275	289	290	2	Frameshift deletion
 jacJac1	649	650	1228	1229	2	Frameshift deletion
+jacJac1	752	754	1576	1578	NA	Stop codon
 jacJac1	1333	1333	2173	2173	1	Frameshift deletion
 criGri1	340	340	373	373	1	Frameshift deletion
 criGri1	796	797	1624	1625	2	Frameshift deletion
@@ -51,7 +52,7 @@ equCab2	343	344	376	377	2	Frameshift deletion
 equCab2	739	739	1558	1558	1	Frameshift deletion
 equCab2	1447	1447	2566	2566	1	Frameshift deletion
 cerSim1	1405	1406	2509	2510	2	Frameshift deletion
-cerSim1	1732	1734	3124	3126	NA	Stop codon
+cerSim1	1732	1734	3124	3126	NA	Ignoring stop codon near end
 felCat8	523	525	856	858	NA	Stop codon
 felCat8	742	742	1561	1561	1	Frameshift deletion
 felCat8	1356	1356	2239	2409	50	Frameshift insertion

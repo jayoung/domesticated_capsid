@@ -9,6 +9,7 @@ susScr3	937	938	1360	1361	2	Frameshift deletion
 camFer1	943	944	1366	1367	2	Frameshift deletion
 panHod1	727	729	874	876	NA	Stop codon
 panHod1	943	944	1366	1367	2	Frameshift deletion
+bosTau8	719	721	865	867	NA	Stop codon
 bosTau8	826	826	1213	1213	1	Frameshift deletion
 bosTau8	943	944	1366	1367	2	Frameshift deletion
 oviAri3	727	729	874	876	NA	Stop codon
@@ -20,7 +21,7 @@ equCab2	1083	1083	1604	1605	2	Frameshift insertion
 cerSim1	679	692	715	764	14	Frameshift deletion
 cerSim1	745	745	898	898	1	Frameshift deletion
 cerSim1	934	935	1357	1358	2	Frameshift deletion
-cerSim1	1105	1107	1630	1632	NA	Stop codon
+cerSim1	1105	1107	1630	1632	NA	Ignoring stop codon near end
 felCat8	550	551	553	554	2	Frameshift deletion
 felCat8	652	652	655	655	1	Frameshift deletion
 felCat8	742	743	889	890	2	Frameshift deletion

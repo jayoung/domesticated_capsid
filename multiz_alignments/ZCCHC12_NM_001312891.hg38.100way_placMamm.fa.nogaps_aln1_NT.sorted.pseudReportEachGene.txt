@@ -1,5 +1,5 @@
 Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
-NM_001312891	Reference	NA	NA
+NM_001312891	Reference	0	0	1209
 panTro4	Intact	0	0	1209
 ponAbe2	Intact	0	0	1209
 nomLeu3	Pseud	1	0	1210
@@ -10,7 +10,7 @@ chlSab2	Intact	0	0	1215
 calJac3	Intact	0	0	1221
 saiBol1	Intact	0	0	1221
 otoGar3	Intact	0	0	1188
-tupChi1	Pseud	0	1	1209
+tupChi1	Intact	0	0	1209
 speTri2	Intact	0	0	1206
 jacJac1	Intact	0	0	1209
 micOch1	Intact	0	0	1197

@@ -1,6 +1,8 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
 ponAbe2	37	37	37	37	1	Frameshift deletion
 ponAbe2	52	53	52	53	2	Frameshift deletion
+mesAur1	422	424	454	456	NA	Ignoring stop codon near end
 oviAri3	226	238	235	247	13	Frameshift deletion
 loxAfr3	102	102	105	105	1	Frameshift insertion
 loxAfr3	162	162	171	171	1	Frameshift insertion
+loxAfr3	440	442	511	513	NA	Ignoring stop codon near end

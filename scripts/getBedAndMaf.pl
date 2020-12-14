@@ -4,7 +4,9 @@ use warnings;
 use strict;
 
 
-## gets refseq accessions from a table, gets a single line bed12 file giving coordinates of that gene in hg38, and runs mafFrags to get the maf for just placental mammals for each gene.  Run without arguments - all input files are specified here:
+## gets refseq accessions from a table, gets a single line bed12 file giving coordinates of that gene in hg38, and runs mafFrags to get the maf for just placental mammals for each gene.  Run without arguments - all input files are specified below:
+
+# if there's >1 entry for this RefSeq ID in the whole-genome bed file, I try to get rid of alt chromosomes etc
 
 my $baseDir = "/fh/fast/malik_h/user/jayoung/miscMalikLab/domesticated_capsid";
 
@@ -32,7 +34,7 @@ if (!-e $speciesListFile) {
     die "\n\nterminating - speciesListFile does not exist $speciesListFile\n\n";
 }
 
-# xx check that mafFrags is in my path (need to have loaded Kent_tools module)
+# check that mafFrags is in my path (need to have loaded Kent_tools module)
 my $whichMafFrags = `which mafFrags`;
 if ($whichMafFrags eq "") {
     die "\n\nterminating - please run this command before running getBedAndMaf.pl :\n\nmodule load Kent_tools\n\n";
@@ -59,6 +61,40 @@ while (<ACCS>) {
     # test for empty output of grep and report
     if (!-e $bedFile) { die "\n\nterminating - grep command failed\n\n"; }
     if (-z $bedFile) { die "\n\nterminating - grep command gave empty output\n\n"; }
+    
+    my $numLines = `wc $bedFile`;
+    ### check whether there was >1 bed entry, if so, do something about it
+    if ($numLines > 1) {
+        print "    WARNING - found >1 bed file entry, taking only one of them\n";
+        open (BED, "< $bedFile");
+        my @lines = <BED>;
+        close BED;
+        
+        ## choose one entry, hopefully one that's not on an alt/random/Un chromosome
+        my @goodlines;
+        my $lineToKeep;
+        foreach my $line (@lines) {
+            my $chr = (split /\t/, $line)[0];
+            if ($chr =~ m/_alt|_random|chrUn/) {next;}
+            push @goodLines, $line;
+        }
+        my $numGoodLines = @goodLines;
+        if ($numGoodLines == 0) {
+            print "        WARNING 2a - found no entries on a good chromosome\n";
+            $lineToKeep = $lines[0];
+        }
+        if ($numGoodLines > 1) {
+            print "        WARNING 2b - found >1 entry on a good chromosome\n";
+            $lineToKeep = $goodLines[0];
+        }
+        if ($numGoodLines == 1) {
+            print "        successfully filtered to just the entry on a good chromosome\n";
+            $lineToKeep = $goodLines[0]; 
+        }
+        open (BED, "> $bedFile");
+        print BED $lineToKeep;
+        close BED;
+    }
     
     # now run mafFrags
     my $mafFragsCommand = "mafFrags -orgs=$speciesListFile -bed12 -thickOnly hg38 multiz100way $bedFile $mafFile";

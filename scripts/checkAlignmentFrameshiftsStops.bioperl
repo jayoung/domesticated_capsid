@@ -10,11 +10,11 @@ use Getopt::Long;
 ## default option is to deal with output of MACSE (--MACSE=1), which tries to align in-frame, and frameshifts are denoted by ! characters.
 ## if --MACSE=0, we expect maf converted to fasta, where alignments are often not in-frame at all (if there are indels in non-ref seqs)
 
-## tests each other sequence for frameshifts w.r.t. the reference sequence, an stop codons that are not at the end of the sequence
+## tests each other sequence for frameshifts w.r.t. the reference sequence, and stop codons that are not at the end of the sequence.
+## I do tolerate frameshifts at the very beginning or very end of each aligned seq
+## tests the reference seq for an intact ORF
 
 ## xx may want to build in some tolerance of stops near but not quite at the end.
-## xx may want to check reference seq, e.g check for full ORF with no internal stops?
-## xx partial seqs may have apparent frameshifts at their very beginning or very end, if they start/end out of frame with the reference. I might not want to consider these as frameshifts
 
 
 ## output = four files: 
@@ -105,6 +105,10 @@ foreach my $file (@ARGV){
                 my $rounded = sprintf("%.1f", $lengthThreshold);
                 print "    got reference seq $refName ungapped length $ungappedRefLen bp : length threshold is $rounded";
                 print "\n\n";
+                my $refSeqIntact = checkUngappedSeq($refSeq);
+                if ($refSeqIntact == 0) {
+                    die "\n\nterminating - the reference sequence has frameshifts or in-frame stop codons\n\n";
+                }
                 next;
             }
             
@@ -297,4 +301,26 @@ sub getUngappedLen {
         }
         return 1;
      }
+}
+
+## simply check an ungapped seq for whether it is an intact ORF
+sub checkUngappedSeq {
+    my $seq = $_[0];
+    my $letters = $seq->seq();
+    my $goodORF = 1;
+    my $ungapped = $letters; $ungapped =~ s/-//g; 
+    if ($ungapped =~ m/\!/) {
+        print "    WARNING - there are frameshifts!\n\n$ungapped\n\n";
+        $goodORF = 0;
+    }
+    $ungapped =~ s/!//g;
+    my $ungappedObj = Bio::Seq->new(-seq=>$ungapped);
+    my $translated = $ungappedObj->translate()->seq();
+    # stop codon is OK at the end but nowhere else 
+    $translated =~ s/\*$//;
+    if ($translated =~ m/\*/) {
+        print "    WARNING - there are in-frame stop-codons!\n\n$translated\n\n";
+        $goodORF = 0;
+    }
+    return($goodORF);
 }

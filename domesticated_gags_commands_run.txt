@@ -67,6 +67,8 @@ module purge
 
 
 
+../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1  ARC_NM_015193.hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.fa
+
 ../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
 
     xxxx worked!  I should probably check all ref seqs have ORFs

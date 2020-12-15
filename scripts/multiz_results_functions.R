@@ -1,21 +1,38 @@
-
-readMultizResults <- function(analysisName, refAssembly="hg38", 
-                              tree=tree_placMammals, info=species_dat) {
+readMultizResults <- function(analysisName, 
+                              resultsDir="multiz_alignments",
+                              refAssembly="hg38", 
+                              tree=tree_placMammals, 
+                              info=species_dat,
+                              mafParseFileSuffix=".hg38.100way_placMamm.maf2fa.log.txt",
+                              pseudReportFileSuffix=".hg38.100way_placMamm.fa.nogaps_aln1_NT.sorted.pseudReportEachGene.txt") {
     
     ## start the table using the tree and info table
     results <- data.frame(assemblyName=tree$tip.label, row.names=tree$tip.label)
     results[,"commonName"] <- info[ match(results[,"assemblyName"], info[,"Assembly.name"]), "Common.name" ]
-    results[,"status"] <- NA
+    results[,"status"] <- factor(NA, 
+                                 levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
     results[which(results[,"assemblyName"]==refAssembly),"status"] <- "Reference"
-    
+
+    ## read in the mafParsing log and the pseudogene report
+    mafParseFile <- paste(resultsDir, "/", analysisName, mafParseFileSuffix, sep="")
+    pseudReportFile <- paste(resultsDir, "/", analysisName, pseudReportFileSuffix, sep="")
+    if(!file.exists(mafParseFile)) {
+        stop("ERROR - cannot find mafParseFile",mafParseFile," - check mafParseFileSuffix option\n")
+    }
+    if(!file.exists(pseudReportFile)) {
+        stop("ERROR - cannot find pseudReportFile",pseudReportFile," - check pseudReportFileSuffix option\n")
+    }
+    mafParse <- read.delim(mafParseFile, header=FALSE) 
+    pseudReport <- read.delim(pseudReportFile, header=TRUE) 
+
     ## add the seqs that were missing from maf using x[["mafParse"]]
-    missingFromMaf <- inputs[[analysisName]][["mafParse"]]
+    missingFromMaf <- mafParse
     missingFromMaf <- missingFromMaf[which(missingFromMaf[,1] != refAssembly),]
     missingFromMaf <- missingFromMaf[,1]
     results[which(results[,"assemblyName"] %in% missingFromMaf),"status"] <- "Absent"
     
     ## add intact/pseud status using x[["pseudReport"]]
-    pseuds <- inputs[[analysisName]][["pseudReport"]]
+    pseuds <- pseudReport
     pseuds <- pseuds[which(pseuds[,"Pseud"] != "Reference"),]
     results[ match(pseuds[,"Seq"], results[,"assemblyName"]), "status"] <- pseuds[,"Pseud"]
     return(results)

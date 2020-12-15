@@ -70,9 +70,21 @@ module purge
 
 ../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
 
+
+mkdir aa_justAlignments
+mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
+
+cp *noPseuds.fa.degapcodon aa_justAlignments/noPseuds
+cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
+
+xxx problem:
+species where there is a gap with unalignable stuff in it appear as pseudogenes when they're not really, e.g. CCDC8 rheMac3
+I may be able to use liftover to get seqs to align, instead of mafs?
+
+
 xxx next:
-    make those diagrams (Rscript)
-    make tables summarizing num
+    make tables summarizing NUMBERS of intact/pseudo?
+    make tables summarizing intact/pseud status by species?
 
 
 

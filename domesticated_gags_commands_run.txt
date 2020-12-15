@@ -91,51 +91,30 @@ Example request for obtaining DNA sequence:
 https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr1;start=11110531;end=11110538
 {"downloadTime": "2020:12:15T14:28:55Z", "downloadTimeStamp": 1608042535, "genome": "hg38", "chrom": "chr1", "start": 11110531, "end": 11110538, "dna": "gattaca"}
 
-# 2. this gets some sort of bed-type output (from the gold track which I don't care about)
-ucscApiClient "/getData/track" "track=gold;genome=hg38;chrom=chrM;maxItemsOutput=2"
+pushd ~/public_databases/UCSC/human_Dec2013/liftOverFiles
+wget --timestamping  'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg38/liftOver/hg38ToSusScr3.over.chain.gz' 
+popd
 
 
-ucscApiClient "/getData/sequence" "genome=hg38;chrom=chr1;start=11110531;end=11110538"
+### how to get the bits that should align:
 
+0. choose chain.gz files to download (I can make a script)
+
+species-by-species:
+
+1. use liftOver, something like this.  The -minMatch=0.1 mimics the settings use with online liftOver.
+actually, I think I'll do it on all 46 things at once.
+
+liftOver -minMatch=0.1 CCDC8_NM_032040.bed ~/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToSusScr3.over.chain.gz CCDC8_NM_032040.liftOver.susScr3.mimicOnline.bed CCDC8_NM_032040.liftOver.susScr3.mimicOnline.unmapped.bed
+
+I also tried using a remote chain file (e.g. http://hgdownload.cse.ucsc.edu/goldenPath/hg38/liftOver/hg38ToSusScr3.over.chain.gz), but it failed to find the lifted over region, despite it succeeded with the same chain file stored locally. It was also slow.
+
+2. for the queries where liftOver succeeded, use ucscApiClient and the coords in the bed file, line by line.  Parse the resulting JSON output to get a fasta file. Reverse-complement if needed. The unmapped.bed file will record which queries I don't have.
 ucscApiClient -p "/getData/sequence" "genome=hg38;chrom=chr1;start=11110531;end=11110538"
 
-# trying reverse strand - these do not work
-ucscApiClient -p --debug  "/getData/sequence" "genome=hg38;chrom=chr1;strand=-;start=11110531;end=11110538"
-ucscApiClient -p --debug  "/getData/sequence" "genome=hg38;chrom=chr1;strand=minus;start=11110531;end=11110538"
-ucscApiClient -p --debug  "/getData/sequence" "genome=hg38;chrom=chr1;revComp=on;start=11110531;end=11110538"
-ucscApiClient -p --debug  "/getData/sequence" "genome=hg38;chrom=chr1;revComp=1;start=11110531;end=11110538"
-ucscApiClient -p --debug  "/getData/sequence" "genome=hg38;chrom=chr1;end=11110531;start=11110538"
+gene by gene
 
-xxx I don't know how to get reverse strand, but perhaps that's OK
-perhaps use this, and parse JSON on the fly to get the sequence
-
-ucscApiClient -p "/getData/sequence" "genome=susScr3;chrom=chr6;start=47680546;end=47681962"
-
-ucscApiClient -h
-
-
-usage: ucscApiClient [-h] [-p] [--debug] [-test0] [-getDnaExample]
-                     [endpoint] [parameters]
-
-Command line utility for UCSC Genome Browser API access
-
-positional arguments:
-  endpoint            Endpoint string like "/list/tracks" or "/getData/track/"
-  parameters          Parameters to endpoints. semi-colon separated key=value
-                      formatted string, like
-                      "genome=hg38;chrom=chrM;maxItemsOutput=2"
-
-optional arguments:
-  -h, --help          show this help message and exit
-  -p, --pretty-print  Print json response with newlines
-  --debug             Print final URL of the request
-  -test0              Run special test
-  -getDnaExample      Show example query for fetching Human GRCh38(hg38) DNA
-                      sequence
-
-Example usage:
-ucscApiClient "/getData/track" "track=gold;genome=hg38;chrom=chrM;maxItemsOutput=2"
-
+3. then collect together each ortholog for each gene, and use MACSE as before
 
 
 xxx next:

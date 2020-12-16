@@ -2,3 +2,6 @@
 ~$*
 old
 .DS_Store
+liftOver_alignments
+slurm-*
+.Rhistory

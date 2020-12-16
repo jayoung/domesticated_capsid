@@ -1,0 +1,175 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use JSON;
+use Getopt::Long;
+use Data::Dumper;
+
+### script to take bed12 files, figure out from file name what assembly they are from, and use ucscApiClient to get the sequence of the CDS (or the transcript)
+
+## example of ucscApiClient use
+# ucscApiClient -p "/getData/sequence" "genome=hg38;chrom=chr1;start=11110531;end=11110538"
+
+my $returnType = "transcript";
+my $inferAssembly = 1;
+my $assemblyName;
+
+## get any non-default options from commandline
+GetOptions("returnType=s" => \$returnType, # cds or transcript
+           "inferAssembly=i" => \$inferAssembly,
+           "assemblyName=s" => \$assemblyName
+           ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
+
+######
+
+if (@ARGV==0) {
+    die "\nUsage: getCDSseqsUsingAPIclient.bioperl bed12file(s).bed\n\n";
+}
+
+## check that ucscApiClient is in my path (need to have loaded Kent_tools module)
+my $whichExe = `which ucscApiClient`;
+if ($whichExe eq "") {
+    die "\n\nterminating - please run this command before running getCDSseqsUsingAPIclient.bioperl :\n\nmodule load Kent_tools\n\n";
+}
+
+## get list of acceptable assemblies
+open (ASSEMBLIES, "< $assemblyListFile");
+my %assemblies;
+while (<ASSEMBLIES>) {
+    my $line = $_; chomp $line;
+    $assemblies{$line} = 1;
+}
+close ASSEMBLIES;
+
+BEDLOOP: foreach my $bed (@ARGV) {
+    if (!-e $bed) {
+        die "\n\nterminating - cannot open bed file $bed\n\n";
+    }
+    if ($bed =~ m/unmapped/) {
+        die "\n\nterminating - you probably don't want to run this script on unmapped liftOver outputs\n\n";
+    }
+    print "\n### working on bed file $bed\n";
+    
+    ## initiate output files
+    my $out = $bed; $out =~ s/\.bed$//; $out .= ".$returnType.fa";
+    my $log = $bed; $log =~ s/\.bed$//; $log .= ".getCDSlog.txt";
+    if (-e $out) {
+        print "    skipping this one - output exists\n";
+        next;  
+    }
+    my $seqOUT = Bio::SeqIO->new(-file=>"> $out", -format=>"fasta");
+    open (LOG, "> $log");
+    
+    ## which assembly should I be getting seqs from?
+    my $assembly;
+    if ($inferAssembly == 1) {
+        $assembly = (split /\./, $bed)[2];
+        if(!defined $assemblies{$assembly}) {
+            die "\n\nterminating - I inferred assembly name to be $assembly by parsing bed file name, but that assembly is not listed in $assemblyListFile\n\n";
+        }
+        print "    assembly inferred from filename: $assembly\n";
+    } else {
+        $assembly = $assemblyName;
+        print "    assembly supplied on command line: $assembly\n";
+    }
+    ## start getting seqs:
+    my %seqsSeenThisBed; # so I don't create two seqs with the same name in the output
+    open (BED, "< $bed");
+    while (<BED>) {
+        my $line = $_; chomp $line; my @f = split /\t/, $line;
+        my $seq = $f[0]; my $id = $f[3]; my $strand = $f[5];
+        my $thinStart = $f[1]; my $thinEnd = $f[2];
+        my $thickStart = $f[6]; my $thickEnd = $f[7];
+        my $numBlocks = $f[9]; my $blockSizes = $f[10]; my $blockStarts = $f[11];
+        
+        ## get thickStart and thickEnd relative to the start of the whole region
+        my $thickStartRelative = $thickStart - $thinStart;
+        my $thickEndRelative = $thickEnd - $thinStart;
+        
+        # check we don't have duplicate seq names
+        if (defined $seqsSeenThisBed{$id}) {
+            print "    WARNING - there is >1 seq with the same ID: $id\n";
+        }
+        $seqsSeenThisBed{$id} = 1;
+        
+        my $getSeqCommand = "ucscApiClient -p \"/getData/sequence\" \"genome=$assembly;chrom=$seq;start=$thinStart;end=$thinEnd\"";
+        #print "    running getSeqCommand:    $getSeqCommand\n";
+        my $stdErrFile = "/tmp/program.stderr";
+        my $seqJSON = `$getSeqCommand 2>$stdErrFile`;
+        if (!-z $stdErrFile) {
+            my $genomeMissing = 0;
+            open (ERR, "< $stdErrFile");
+            my @lines;
+            while(<ERR>) {
+                my $line = $_; push @lines, $line;
+                if ($line =~ m/can not find genome/) { $genomeMissing = 1; }
+            }
+            close ERR;
+            if ($genomeMissing == 1) {
+                print "\n    ucscApiClient does not appear to support this genome - skipping this bed file\n\n";
+                print LOG "$assembly\tAssembly not supported by ucscApiClient\n";
+                unlink $out; close BED; close LOG;
+                next BEDLOOP;
+            } else {
+                die "\n\nterminating - unexpected error from ucscApiClient:\n@lines\n\n";
+            }
+        }
+        print LOG "$getSeqCommand\n";
+        my $seqDecodedRef = decode_json($seqJSON); #it is a hash ref
+        my %seqDecoded = %$seqDecodedRef;
+        if (!defined $seqDecoded{'dna'}) {
+            print "\n\nterminating - did not find DNA sequence in the output of ucscApiClient. Here's the raw output:\n$seqJSON\n\n";
+            die;
+        }
+        my $dna = $seqDecoded{'dna'};
+        
+        ## now parse the blocks and get their sequence
+        my @bStarts = split /\,/, $blockStarts; my @bSizes = split /\,/, $blockSizes;
+        my $fullseq = "";
+        for (my $i=0; $i<$numBlocks; $i++) {
+            ## if we're looking for the CDS, trim to thickStart/thickEnd
+            my $blockStart = $bStarts[$i];
+            my $blockEnd = $bStarts[$i] + $bSizes[$i];
+            my $blockSize = $bSizes[$i];
+            if ($returnType eq "cds") {
+                # ignore exons entirely before thickStart
+                if ($blockEnd < $thickStartRelative) { next; }
+                # ignore exons entirely after thickEnd
+                if ($blockStart > $thickEndRelative) { next; }
+                # trim exons that overlap thickStart
+                if ($blockStart < $thickStartRelative) {
+                    $blockStart = $thickStartRelative;
+                    $blockSize = $blockEnd - $blockStart;
+                }
+                # trim exons that overlap thickEnd
+                if ($blockEnd > $thickEndRelative) {
+                    $blockEnd = $thickEndRelative;
+                    $blockSize = $blockEnd - $blockStart;
+                }
+            }
+            
+            # block starts are relative to chromStart, so it's easy to get the seq
+            my $blockSeq = substr $dna, $blockStart, $blockSize;
+            $fullseq .= $blockSeq;
+        }
+        if ($fullseq eq "") {
+            die "\n\nterminating - did not get any sequence for this line: $line\n\n";
+        }
+        ## make a seq object
+        my $newname = $id . "_" . $assembly;
+        my $seqObj = Bio::Seq->new(-seq=>$fullseq, -display_id=> $newname);
+        
+        ## perhaps reverse-complement
+        if ($strand eq "-") { $seqObj=$seqObj->revcom(); }
+        
+        ## write it out
+        $seqOUT->write_seq($seqObj);
+    }
+    close BED;
+    close LOG;
+}

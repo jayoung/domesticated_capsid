@@ -1,0 +1,45 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Getopt::Long;
+
+
+### goes through a bunch of fasta files
+# from each seqname, it works out the RefSeq ID (e.g. NM_015193.5_hg38 has ID NM_015193.5)
+# puts seqs with the same RefSeq ID into the same file as each other, to be aligned
+
+my $outfileSuffix = "cdsSeqs.fa";
+
+## get any non-default options from commandline
+GetOptions("suffix=s" => \$outfileSuffix
+           ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+################
+
+my %seqsByRefSeqID; # key = refseq ID, value = array of the seqs
+
+foreach my $file (@ARGV) {
+    if (!-e $file) { die "\n\nterminating - cannot find file $file\n\n"; } 
+    print "reading file $file\n";
+    my $in = Bio::SeqIO -> new( -file => "<$file", -format => 'fasta');
+    while (my $seq=$in->next_seq()) {
+        my $ID = $seq->display_id();
+        my $newID = $ID;
+        my $assembly = (split /_/, $ID)[-1];
+        $newID =~ s/$assembly//; $newID =~ s/_$//;
+        push @{$seqsByRefSeqID{$newID}}, $seq;
+    }
+}
+print "\n";
+
+## go through each refseq ID and create output
+foreach my $ID (keys %seqsByRefSeqID) {
+    my $out = "$ID.$outfileSuffix";
+    print "writing file $out\n";
+    my $seqOUT = Bio::SeqIO->new(-file => "> $out", -format=>"fasta");
+    foreach my $seq (@{$seqsByRefSeqID{$ID}}) { $seqOUT->write_seq($seq); }
+}
+print "\n";

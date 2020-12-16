@@ -144,6 +144,17 @@ cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments
 ## align with MACSE
 ../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
     xxx running sbatch
+    xxxx once MACSE finishes running, maybe remove liftOver_alignments from .gitignore and re-sync.  then run downstream steps again including R script
+    
+../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
+../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
+../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
+
+mkdir aa_justAlignments
+mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
+
+cp *noPseuds.fa.degapcodon aa_justAlignments/noPseuds
+cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
 
 xxxx
 

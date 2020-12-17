@@ -9,15 +9,43 @@ use Getopt::Long;
 ### goes through a bunch of fasta files
 # from each seqname, it works out the RefSeq ID (e.g. NM_015193.5_hg38 has ID NM_015193.5)
 # puts seqs with the same RefSeq ID into the same file as each other, to be aligned
+# also reads gene-refseq connections so we can include gene name in output file name
 
 my $outfileSuffix = "cdsSeqs.fa";
 
+#my $baseDir = "/Users/jayoung/Desktop/mac_workStuff/domesticated_capsid";
+my $baseDir = "/fh/fast/malik_h/user/jayoung/miscMalikLab/domesticated_capsid";
+
+my $accsFile = "getHumanPepsFromWillFiles/fullGenbankEntries/2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byAccession.txt";
+
 ## get any non-default options from commandline
-GetOptions("suffix=s" => \$outfileSuffix
+GetOptions("suffix=s" => \$outfileSuffix,
+           "baseDir=s" => \$baseDir,
+           "accsFile=s" => \$accsFile
            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 
 ################
+
+if (!-e "$baseDir") {
+    die "\n\nterminating - baseDir does not exist $baseDir\n\n";
+}
+if (!-e "$baseDir/$accsFile") {
+    die "\n\nterminating - accsFile does not exist $baseDir/$accsFile\n\n";
+}
+
+
+# read in gene-accession connection (these accessions do not have the version number after a .)
+my %info;
+open (ACCS, "< $baseDir/$accsFile");
+while (<ACCS>) {
+    my $line = $_; 
+    if ($line =~ m/^Accession/) { next; }
+    my @f = split /\t/, $line;
+    my $acc = $f[3]; my $gene = $f[4]; 
+    $info{$acc} = $gene;
+}
+
 
 my %seqsByRefSeqID; # key = refseq ID, value = array of the seqs
 
@@ -29,7 +57,13 @@ foreach my $file (@ARGV) {
         my $ID = $seq->display_id();
         my $newID = $ID;
         my $assembly = (split /_/, $ID)[-1];
-        $newID =~ s/$assembly//; $newID =~ s/_$//;
+        $newID =~ s/$assembly//; $newID =~ s/_$//; $newID =~ s/\.\d+$//;
+        if (!defined $info{$newID}) {
+            die "\n\nterminating - did not find accession $newID in file $baseDir/$accsFile\n\n";
+        }
+        my $geneName = $info{$newID};
+        $newID = $geneName . "_" . $newID;
+        print "ID $ID newID $newID\n";
         push @{$seqsByRefSeqID{$newID}}, $seq;
     }
 }

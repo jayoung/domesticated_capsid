@@ -118,6 +118,7 @@ cat ../multiz_alignments/*bed > allRefSeqs.hg38.bed
 
 ### use liftOver (for now, this still tries to get full transcript, not just CDS)
 ../scripts/runLiftOver.pl
+mv allRefSeqs.liftOver.* liftOverFiles/
 
 I checked results for chimp (panTro4). With the scicomp installed version of liftOver (Kent_tools/20200519-linux.x86_64), there was one unmapped transcript that should have been mapped according to online liftOver (NM_001143978.3).  With a newly downloaded liftOver, it was mapped.
 
@@ -133,18 +134,21 @@ The getCDSlog.txt files will record species that totally failed. There are 19 sp
     grep 'Assembly not supported by ucscApiClient' *log.txt  | wc
 
 cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments
-../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds *.mapped.bed 
 ../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds -inferAssembly=0 -assemblyName=hg38 allRefSeqs.hg38.bed
 
+cd liftOverFiles
+../../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds *.mapped.bed 
 
 
 ## collect together each ortholog for each gene
-../scripts/compileSameTranscriptSeqs.bioperl *cds.fa
+../../scripts/compileSameTranscriptSeqs.bioperl ../allRefSeqs.hg38.cds.fa *cds.fa
+mv *cdsSeqs.fa ../unaligned/
+cd ../unaligned/
 
 ## align with MACSE
-../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
-    xxx running sbatch
-    xxxx once MACSE finishes running, maybe remove liftOver_alignments from .gitignore and re-sync.  then run downstream steps again including R script
+../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
+    xxx running (using sbatch)
+    xxxx  then run downstream steps again including R script
     
 ../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
 ../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa

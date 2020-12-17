@@ -26,7 +26,13 @@ foreach my $file (@ARGV) {
     my $orderedlistfile = $file;
     $orderedlistfile =~ s/_aln1_NT\.fa//;
     if (!-e $file) { die "\n\nterminating - seqfile $file does not exist\n\n"; }
-    if (!-e $orderedlistfile) { die "\n\nterminating - seq order file $orderedlistfile does not exist\n\n"; }
+    if (!-e $orderedlistfile) { 
+        ## try adding .fa
+        $orderedlistfile .= ".fa";
+        if (!-e $orderedlistfile) { 
+            die "\n\nterminating - seq order file $orderedlistfile does not exist\n\n"; 
+        }
+    }
     
     my $out = $file; $out =~ s/\.fasta$//; $out =~ s/\.fa$//; $out =~ s/\.fas$//;
     $out = "$out".".sorted.fa";

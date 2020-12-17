@@ -1,0 +1,7 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001134321.2_criGri1	10	12	16	18	NA	Stop codon
+NM_001134321.2_criGri1	232	233	310	311	2	Frameshift deletion
+NM_001134321.2_mm10	244	245	328	329	2	Frameshift deletion
+NM_001134321.2_cavPor3	193	194	208	209	2	Frameshift deletion
+NM_001134321.2_ochPri3	220	220	295	295	1	Frameshift deletion
+NM_001134321.2_loxAfr3	211	212	268	269	2	Frameshift deletion

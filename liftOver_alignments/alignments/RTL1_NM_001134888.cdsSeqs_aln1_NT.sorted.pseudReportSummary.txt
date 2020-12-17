@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	RTL1_NM_001134888.cdsSeqs_aln1_NT.sorted.fa
+Intact	20	RTL1_NM_001134888.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	RTL1_NM_001134888.cdsSeqs_aln1_NT.sorted.fa
+Pseud	7	RTL1_NM_001134888.cdsSeqs_aln1_NT.sorted.fa

@@ -1,0 +1,2 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_015193.5_panTro4	463	464	469	470	2	Frameshift deletion

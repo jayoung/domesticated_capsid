@@ -1,0 +1,2 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_024452426.1_otoGar3	1051	1053	1108	1110	NA	Ignoring stop codon near end

@@ -1,0 +1,15 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_022151.5_susScr3	118	120	118	120	NA	Stop codon
+NM_022151.5_susScr3	153	153	154	159	4	Frameshift insertion
+NM_022151.5_susScr3	280	280	289	289	1	Frameshift deletion
+NM_022151.5_susScr3	472	474	484	486	NA	Stop codon
+NM_022151.5_susScr3	583	585	595	597	NA	Stop codon
+NM_022151.5_susScr3	772	774	787	789	NA	Stop codon
+NM_022151.5_susScr3	946	946	961	961	1	Frameshift deletion
+NM_022151.5_vicPac2	265	267	274	276	NA	Stop codon
+NM_022151.5_vicPac2	586	588	598	600	NA	Stop codon
+NM_022151.5_turTru2	94	94	94	94	1	Frameshift deletion
+NM_022151.5_turTru2	207	207	216	216	1	Frameshift insertion
+NM_022151.5_turTru2	606	606	621	621	1	Frameshift insertion
+NM_022151.5_turTru2	772	774	787	789	NA	Stop codon
+NM_022151.5_turTru2	904	904	919	919	1	Frameshift deletion

@@ -1,0 +1,12 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_018215.4_ponAbe2	97	97	112	112	1	Frameshift deletion
+NM_018215.4_ponAbe2	180	180	201	201	1	Frameshift insertion
+NM_018215.4_ponAbe2	379	379	400	400	1	Frameshift deletion
+NM_018215.4_ponAbe2	601	602	661	662	2	Frameshift deletion
+NM_018215.4_ponAbe2	693	693	768	768	1	Frameshift insertion
+NM_018215.4_ponAbe2	1243	1243	2332	2332	1	Frameshift deletion
+NM_018215.4_ponAbe2	1297	1297	2386	2386	1	Frameshift deletion
+NM_018215.4_calJac3	624	624	690	690	1	Frameshift insertion
+NM_018215.4_calJac3	697	698	772	773	2	Frameshift deletion
+NM_018215.4_calJac3	838	839	1693	1694	2	Frameshift deletion
+NM_018215.4_calJac3	919	919	1774	1774	1	Frameshift deletion

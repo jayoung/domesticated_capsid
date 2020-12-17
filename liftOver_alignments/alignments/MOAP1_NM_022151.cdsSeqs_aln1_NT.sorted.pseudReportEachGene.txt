@@ -1,0 +1,14 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+NM_022151.5_hg38	Reference	0	0	1056
+NM_022151.5_panTro4	Intact	0	0	1056
+NM_022151.5_gorGor3	Intact	0	0	1056
+NM_022151.5_nomLeu3	Intact	0	0	1056
+NM_022151.5_macFas5	Intact	0	0	1056
+NM_022151.5_papAnu2	Intact	0	0	1056
+NM_022151.5_chlSab2	Intact	0	0	1056
+NM_022151.5_calJac3	Intact	0	0	1059
+NM_022151.5_saiBol1	Intact	0	0	1059
+NM_022151.5_susScr3	Pseud	3	4	1061
+NM_022151.5_vicPac2	Pseud	0	2	1047
+NM_022151.5_turTru2	Pseud	4	1	1050
+NM_022151.5_triMan1	Intact	0	0	1062

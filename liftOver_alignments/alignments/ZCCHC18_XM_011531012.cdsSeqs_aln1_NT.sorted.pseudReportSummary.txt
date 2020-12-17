@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	ZCCHC18_XM_011531012.cdsSeqs_aln1_NT.sorted.fa
+Intact	6	ZCCHC18_XM_011531012.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	ZCCHC18_XM_011531012.cdsSeqs_aln1_NT.sorted.fa
+Pseud	6	ZCCHC18_XM_011531012.cdsSeqs_aln1_NT.sorted.fa

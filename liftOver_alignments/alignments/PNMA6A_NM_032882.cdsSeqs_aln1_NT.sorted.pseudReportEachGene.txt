@@ -1,0 +1,4 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+NM_032882.5_hg38	Reference	0	0	1200
+NM_032882.5_canFam3	Intact	0	0	1362
+NM_032882.5_triMan1	Intact	0	0	1383

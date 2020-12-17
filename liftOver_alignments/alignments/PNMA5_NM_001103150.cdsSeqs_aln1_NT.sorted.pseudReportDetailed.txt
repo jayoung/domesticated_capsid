@@ -1,0 +1,29 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001103150.1_ponAbe2	400	401	409	410	2	Frameshift deletion
+NM_001103150.1_ponAbe2	466	466	478	478	1	Frameshift deletion
+NM_001103150.1_ponAbe2	520	521	532	533	2	Frameshift deletion
+NM_001103150.1_ponAbe2	532	532	544	544	1	Frameshift deletion
+NM_001103150.1_ponAbe2	555	555	568	870	302	Frameshift insertion
+NM_001103150.1_ponAbe2	610	610	925	925	1	Frameshift deletion
+NM_001103150.1_ponAbe2	688	689	1003	1004	2	Frameshift deletion
+NM_001103150.1_ponAbe2	793	794	1108	1109	2	Frameshift deletion
+NM_001103150.1_ponAbe2	835	835	1150	1150	1	Frameshift deletion
+NM_001103150.1_papAnu2	427	428	436	437	2	Frameshift deletion
+NM_001103150.1_otoGar3	1336	1338	1660	1662	NA	Ignoring stop codon near end
+NM_001103150.1_speTri2	1336	1338	1660	1662	NA	Ignoring stop codon near end
+NM_001103150.1_criGri1	973	973	1288	1288	1	Frameshift deletion
+NM_001103150.1_turTru2	112	113	115	116	2	Frameshift deletion
+NM_001103150.1_bosTau8	10	11	13	14	2	Frameshift deletion
+NM_001103150.1_bosTau8	343	345	346	348	NA	Stop codon
+NM_001103150.1_bosTau8	637	639	952	954	NA	Stop codon
+NM_001103150.1_bosTau8	934	936	1249	1251	NA	Stop codon
+NM_001103150.1_bosTau8	1045	1047	1366	1368	NA	Stop codon
+NM_001103150.1_oviAri3	127	128	130	131	2	Frameshift deletion
+NM_001103150.1_oviAri3	343	345	346	348	NA	Stop codon
+NM_001103150.1_oviAri3	469	471	481	483	NA	Stop codon
+NM_001103150.1_oviAri3	934	936	1249	1251	NA	Stop codon
+NM_001103150.1_cerSim1	1186	1187	1507	1508	2	Frameshift deletion
+NM_001103150.1_cerSim1	1336	1338	1660	1662	NA	Ignoring stop codon near end
+NM_001103150.1_pteVam1	1336	1338	1660	1662	NA	Ignoring stop codon near end
+NM_001103150.1_loxAfr3	1336	1338	1660	1662	NA	Ignoring stop codon near end
+NM_001103150.1_dasNov3	1336	1338	1660	1662	NA	Ignoring stop codon near end

@@ -1,0 +1,62 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_024627.6_rheMac3	1039	1041	1159	1161	NA	Ignoring stop codon near end
+NM_024627.6_macFas5	1039	1041	1159	1161	NA	Ignoring stop codon near end
+NM_024627.6_papAnu2	1039	1041	1159	1161	NA	Ignoring stop codon near end
+NM_024627.6_chlSab2	1039	1041	1159	1161	NA	Ignoring stop codon near end
+NM_024627.6_otoGar3	82	83	85	86	2	Frameshift deletion
+NM_024627.6_otoGar3	190	192	208	210	NA	Stop codon
+NM_024627.6_otoGar3	244	244	265	265	1	Frameshift deletion
+NM_024627.6_otoGar3	325	326	346	347	2	Frameshift deletion
+NM_024627.6_otoGar3	397	398	424	425	2	Frameshift deletion
+NM_024627.6_otoGar3	457	458	490	491	2	Frameshift deletion
+NM_024627.6_otoGar3	649	664	691	706	16	Frameshift deletion
+NM_024627.6_otoGar3	772	773	814	815	2	Frameshift deletion
+NM_024627.6_otoGar3	841	841	928	928	1	Frameshift deletion
+NM_024627.6_otoGar3	883	884	970	971	2	Frameshift deletion
+NM_024627.6_otoGar3	988	988	1093	1093	1	Frameshift deletion
+NM_024627.6_otoGar3	1080	1080	1222	1242	20	Frameshift insertion
+NM_024627.6_hetGla2	304	304	325	325	1	Frameshift deletion
+NM_024627.6_hetGla2	394	394	421	421	1	Frameshift deletion
+NM_024627.6_hetGla2	412	413	439	440	2	Frameshift deletion
+NM_024627.6_hetGla2	451	451	481	481	1	Frameshift deletion
+NM_024627.6_hetGla2	871	871	958	958	1	Frameshift deletion
+NM_024627.6_hetGla2	1000	1000	1108	1108	1	Frameshift deletion
+NM_024627.6_felCat8	292	294	313	315	NA	Stop codon
+NM_024627.6_felCat8	457	458	490	491	2	Frameshift deletion
+NM_024627.6_felCat8	769	771	811	813	NA	Stop codon
+NM_024627.6_felCat8	880	880	967	967	1	Frameshift deletion
+NM_024627.6_felCat8	961	962	1048	1049	2	Frameshift deletion
+NM_024627.6_musFur1	19	19	22	22	1	Frameshift deletion
+NM_024627.6_musFur1	175	175	190	190	1	Frameshift deletion
+NM_024627.6_musFur1	349	350	376	377	2	Frameshift deletion
+NM_024627.6_musFur1	448	449	478	479	2	Frameshift deletion
+NM_024627.6_musFur1	582	582	621	624	1	Frameshift insertion
+NM_024627.6_musFur1	664	664	706	706	1	Frameshift deletion
+NM_024627.6_musFur1	972	972	1062	1062	1	Frameshift insertion
+NM_024627.6_musFur1	1071	1071	1192	1212	17	Frameshift insertion
+NM_024627.6_ailMel1	118	119	127	128	2	Frameshift deletion
+NM_024627.6_ailMel1	175	175	190	190	1	Frameshift deletion
+NM_024627.6_ailMel1	274	274	295	295	1	Frameshift deletion
+NM_024627.6_ailMel1	373	374	400	401	2	Frameshift deletion
+NM_024627.6_ailMel1	445	447	475	477	NA	Stop codon
+NM_024627.6_ailMel1	760	760	802	802	1	Frameshift deletion
+NM_024627.6_ailMel1	973	975	1063	1065	NA	Stop codon
+NM_024627.6_pteVam1	124	124	139	139	1	Frameshift deletion
+NM_024627.6_pteVam1	265	266	286	287	2	Frameshift deletion
+NM_024627.6_pteVam1	451	451	481	481	1	Frameshift deletion
+NM_024627.6_pteVam1	877	879	964	966	NA	Stop codon
+NM_024627.6_pteVam1	1080	1080	1222	1242	20	Frameshift insertion
+NM_024627.6_triMan1	286	286	307	307	1	Frameshift deletion
+NM_024627.6_triMan1	412	412	439	439	1	Frameshift deletion
+NM_024627.6_triMan1	646	646	688	688	1	Frameshift deletion
+NM_024627.6_triMan1	982	983	1087	1088	2	Frameshift deletion
+NM_024627.6_triMan1	1000	1000	1108	1108	1	Frameshift deletion
+NM_024627.6_triMan1	1078	1078	1219	1219	1	Frameshift deletion
+NM_024627.6_echTel2	79	79	82	82	1	Frameshift deletion
+NM_024627.6_echTel2	136	138	151	153	NA	Stop codon
+NM_024627.6_echTel2	244	244	265	265	1	Frameshift deletion
+NM_024627.6_echTel2	334	334	355	355	1	Frameshift deletion
+NM_024627.6_echTel2	457	458	490	491	2	Frameshift deletion
+NM_024627.6_echTel2	580	581	616	617	2	Frameshift deletion
+NM_024627.6_echTel2	724	724	766	766	1	Frameshift deletion
+NM_024627.6_echTel2	871	873	958	960	NA	Stop codon

@@ -1,0 +1,9 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+XM_024452426.1_hg38	Reference	0	0	1110
+XM_024452426.1_gorGor3	Intact	0	0	1110
+XM_024452426.1_nomLeu3	Intact	0	0	1110
+XM_024452426.1_rheMac3	Intact	0	0	1110
+XM_024452426.1_papAnu2	Intact	0	0	1083
+XM_024452426.1_chlSab2	Intact	0	0	1110
+XM_024452426.1_saiBol1	Intact	0	0	1140
+XM_024452426.1_otoGar3	Intact	0	0	1107

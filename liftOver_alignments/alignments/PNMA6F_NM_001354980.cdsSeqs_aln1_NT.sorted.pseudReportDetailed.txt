@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001354980.2_equCab2	70	70	70	70	1	Frameshift deletion
+NM_001354980.2_equCab2	250	250	250	250	1	Frameshift deletion
+NM_001354980.2_felCat8	514	515	1333	1334	2	Frameshift deletion
+NM_001354980.2_felCat8	1342	1342	2584	2584	1	Frameshift deletion
+NM_001354980.2_felCat8	1474	1475	3052	3053	2	Frameshift deletion

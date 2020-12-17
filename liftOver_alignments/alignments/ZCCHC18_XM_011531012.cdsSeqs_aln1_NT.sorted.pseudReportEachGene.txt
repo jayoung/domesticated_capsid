@@ -1,0 +1,14 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+XM_011531012.3_hg38	Reference	0	0	1212
+XM_011531012.3_gorGor3	Intact	0	0	1212
+XM_011531012.3_ponAbe2	Intact	0	0	1212
+XM_011531012.3_nomLeu3	Intact	0	0	1212
+XM_011531012.3_macFas5	Pseud	0	1	1218
+XM_011531012.3_papAnu2	Pseud	1	1	1213
+XM_011531012.3_chlSab2	Pseud	1	0	1211
+XM_011531012.3_calJac3	Pseud	1	0	1208
+XM_011531012.3_saiBol1	Pseud	1	0	1211
+XM_011531012.3_cerSim1	Intact	0	0	1209
+XM_011531012.3_canFam3	Intact	0	0	1192
+XM_011531012.3_musFur1	Pseud	6	2	1207
+XM_011531012.3_ailMel1	Intact	0	0	1210

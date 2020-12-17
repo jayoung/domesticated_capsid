@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001282535.2_ponAbe2	885	885	886	1134	247	Frameshift insertion
+NM_001282535.2_ponAbe2	891	891	1143	1143	1	Frameshift insertion
+NM_001282535.2_nomLeu3	1351	1353	1615	1617	NA	Ignoring stop codon near end
+NM_001282535.2_macFas5	1339	1341	1603	1605	NA	Ignoring stop codon near end
+NM_001282535.2_papAnu2	1339	1341	1603	1605	NA	Ignoring stop codon near end

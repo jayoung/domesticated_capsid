@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_032040.5_ochPri3	1358	1360	5002	5004	NA	Stop codon
+NM_032040.5_ochPri3	1359	1359	4345	5175	827	Frameshift insertion
+NM_032040.5_ochPri3	1366	1367	5182	5183	2	Frameshift deletion
+NM_032040.5_ochPri3	1371	1371	5188	5967	779	Frameshift insertion
+NM_032040.5_ochPri3	1384	1384	5980	5980	1	Frameshift deletion

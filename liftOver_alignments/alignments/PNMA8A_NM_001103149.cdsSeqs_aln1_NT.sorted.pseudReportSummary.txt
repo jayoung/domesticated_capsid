@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA8A_NM_001103149.cdsSeqs_aln1_NT.sorted.fa
+Intact	14	PNMA8A_NM_001103149.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	PNMA8A_NM_001103149.cdsSeqs_aln1_NT.sorted.fa
+Pseud	6	PNMA8A_NM_001103149.cdsSeqs_aln1_NT.sorted.fa

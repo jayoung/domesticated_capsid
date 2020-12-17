@@ -1,0 +1,5 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_013364.6_ponAbe2	885	885	889	1137	247	Frameshift insertion
+NM_013364.6_ponAbe2	891	891	1146	1146	1	Frameshift insertion
+NM_013364.6_papAnu2	1318	1318	1684	1684	1	Frameshift deletion
+NM_013364.6_papAnu2	1381	1382	1747	1748	2	Frameshift deletion

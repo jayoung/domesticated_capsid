@@ -1,0 +1,15 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_011531012.3_macFas5	1027	1029	1036	1038	NA	Stop codon
+XM_011531012.3_papAnu2	475	476	475	476	2	Frameshift deletion
+XM_011531012.3_papAnu2	1027	1029	1036	1038	NA	Stop codon
+XM_011531012.3_chlSab2	1111	1111	1120	1120	1	Frameshift deletion
+XM_011531012.3_calJac3	1108	1108	1117	1117	1	Frameshift deletion
+XM_011531012.3_saiBol1	1108	1108	1117	1117	1	Frameshift deletion
+XM_011531012.3_musFur1	34	34	34	34	1	Frameshift deletion
+XM_011531012.3_musFur1	130	131	130	131	2	Frameshift deletion
+XM_011531012.3_musFur1	493	494	493	494	2	Frameshift deletion
+XM_011531012.3_musFur1	664	666	670	672	NA	Stop codon
+XM_011531012.3_musFur1	895	895	901	901	1	Frameshift deletion
+XM_011531012.3_musFur1	978	978	987	987	1	Frameshift insertion
+XM_011531012.3_musFur1	1027	1029	1036	1038	NA	Stop codon
+XM_011531012.3_musFur1	1138	1138	1147	1147	1	Frameshift deletion

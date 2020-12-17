@@ -1,0 +1,16 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001103149.1_panTro4	1117	1117	2185	2185	1	Frameshift deletion
+NM_001103149.1_ponAbe2	97	97	109	109	1	Frameshift deletion
+NM_001103149.1_ponAbe2	180	180	198	198	1	Frameshift insertion
+NM_001103149.1_ponAbe2	379	379	397	397	1	Frameshift deletion
+NM_001103149.1_ponAbe2	601	602	652	653	2	Frameshift deletion
+NM_001103149.1_ponAbe2	693	693	759	759	1	Frameshift insertion
+NM_001103149.1_calJac3	624	624	681	681	1	Frameshift insertion
+NM_001103149.1_calJac3	697	698	763	764	2	Frameshift deletion
+NM_001103149.1_calJac3	838	839	1681	1682	2	Frameshift deletion
+NM_001103149.1_calJac3	919	919	1762	1762	1	Frameshift deletion
+NM_001103149.1_otoGar3	1126	1128	2197	2199	NA	Ignoring stop codon near end
+NM_001103149.1_speTri2	1117	1118	2185	2186	2	Frameshift deletion
+NM_001103149.1_equCab2	1117	1118	2185	2186	2	Frameshift deletion
+NM_001103149.1_equCab2	1136	1138	2209	2211	NA	Ignoring stop codon near end
+NM_001103149.1_felCat8	1132	1133	2203	2204	2	Frameshift deletion

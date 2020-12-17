@@ -1,0 +1,16 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001134888.2_panTro4	1093	1093	1705	1705	1	Frameshift deletion
+NM_001134888.2_hetGla2	2278	2280	2986	2988	NA	Stop codon
+NM_001134888.2_hetGla2	3390	3390	5287	5292	4	Frameshift insertion
+NM_001134888.2_hetGla2	3826	3827	5953	5954	2	Frameshift deletion
+NM_001134888.2_hetGla2	4033	4033	6226	6226	1	Frameshift deletion
+NM_001134888.2_oryCun2	361	362	493	494	2	Frameshift deletion
+NM_001134888.2_ailMel1	3337	3337	5221	5221	1	Frameshift deletion
+NM_001134888.2_pteVam1	1075	1075	1687	1687	1	Frameshift deletion
+NM_001134888.2_myoLuc2	3111	3111	4966	4992	8	Frameshift insertion
+NM_001134888.2_myoLuc2	3502	3503	5404	5405	2	Frameshift deletion
+NM_001134888.2_loxAfr3	118	118	121	121	1	Frameshift deletion
+NM_001134888.2_loxAfr3	1465	1466	2077	2078	2	Frameshift deletion
+NM_001134888.2_loxAfr3	1507	1508	2128	2129	2	Frameshift deletion
+NM_001134888.2_loxAfr3	4063	4064	6286	6287	2	Frameshift deletion
+NM_001134888.2_echTel2	4069	4071	6292	6294	NA	Ignoring stop codon near end

@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA6F_NM_001354980.cdsSeqs_aln1_NT.sorted.fa
+Intact	14	PNMA6F_NM_001354980.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	PNMA6F_NM_001354980.cdsSeqs_aln1_NT.sorted.fa
+Pseud	2	PNMA6F_NM_001354980.cdsSeqs_aln1_NT.sorted.fa

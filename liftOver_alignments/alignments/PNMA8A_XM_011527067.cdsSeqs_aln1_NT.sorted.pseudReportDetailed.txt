@@ -1,0 +1,20 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_011527067.2_panTro4	1393	1393	2470	2470	1	Frameshift deletion
+XM_011527067.2_ponAbe2	97	97	109	109	1	Frameshift deletion
+XM_011527067.2_ponAbe2	180	180	198	198	1	Frameshift insertion
+XM_011527067.2_ponAbe2	379	379	397	397	1	Frameshift deletion
+XM_011527067.2_ponAbe2	601	602	652	653	2	Frameshift deletion
+XM_011527067.2_ponAbe2	693	693	759	759	1	Frameshift insertion
+XM_011527067.2_ponAbe2	1243	1243	2314	2314	1	Frameshift deletion
+XM_011527067.2_ponAbe2	1297	1297	2371	2371	1	Frameshift deletion
+XM_011527067.2_macFas5	1369	1369	2446	2446	1	Frameshift deletion
+XM_011527067.2_papAnu2	1363	1363	2440	2440	1	Frameshift deletion
+XM_011527067.2_chlSab2	1360	1362	2437	2439	NA	Ignoring stop codon near end
+XM_011527067.2_calJac3	624	624	681	681	1	Frameshift insertion
+XM_011527067.2_calJac3	697	698	763	764	2	Frameshift deletion
+XM_011527067.2_calJac3	838	839	1681	1682	2	Frameshift deletion
+XM_011527067.2_calJac3	919	919	1762	1762	1	Frameshift deletion
+XM_011527067.2_otoGar3	1327	1327	2401	2401	1	Frameshift deletion
+XM_011527067.2_otoGar3	1402	1404	2479	2481	NA	Ignoring stop codon near end
+XM_011527067.2_felCat8	1408	1409	2485	2486	2	Frameshift deletion
+XM_011527067.2_dasNov3	1309	1310	2383	2384	2	Frameshift deletion

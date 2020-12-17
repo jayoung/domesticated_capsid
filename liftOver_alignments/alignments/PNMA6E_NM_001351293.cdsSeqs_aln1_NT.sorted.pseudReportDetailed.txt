@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001351293.2_otoGar3	1045	1047	4084	4086	NA	Stop codon
+NM_001351293.2_felCat8	550	551	556	557	2	Frameshift deletion
+NM_001351293.2_felCat8	655	656	661	662	2	Frameshift deletion
+NM_001351293.2_felCat8	712	712	1243	1243	1	Frameshift deletion
+NM_001351293.2_musFur1	723	723	1264	3639	2375	Frameshift insertion

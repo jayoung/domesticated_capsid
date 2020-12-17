@@ -38,6 +38,41 @@ readMultizResults <- function(analysisName,
     return(results)
 } 
 
+
+
+
+readLiftOverResults <- function(file=liftOver_pseudReportFile, 
+                                dir="liftOver_alignments/alignments",
+                                refAssembly="hg38", 
+                                tree=tree_placMammals_liftOverSubset, 
+                                info=species_dat,
+                                pseudReportFileSuffix=".cdsSeqs_aln1_NT.sorted.pseudReportEachGene.txt") {
+    
+    ## start the table using the tree and info table
+    results <- data.frame(assemblyName=tree$tip.label, row.names=tree$tip.label)
+    results[,"commonName"] <- info[ match(results[,"assemblyName"], info[,"Assembly.name"]), "Common.name" ]
+    results[,"status"] <- factor(NA, 
+                                 levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
+    results[which(results[,"assemblyName"]==refAssembly),"status"] <- "Reference"
+    
+    ## read in the pseudogene report
+    if(!file.exists(paste(dir,file,sep="/"))) {
+        stop("ERROR - cannot find pseudReportFile",paste(dir,file,sep="/")," - check pseudReportFileSuffix option\n")
+    }
+    pseudReport <- read.delim(paste(dir,file,sep="/"), header=TRUE) 
+    pseudReport[,"species"] <- sapply( strsplit(pseudReport[,"Seq"],"_"), function(x) {x[length(x)]})
+    
+    ## add the seqs that were missing from the pseudReport (they failed to liftOver)
+    results[which(! results[,"assemblyName"] %in% pseudReport[,"species"]),"status"] <- "Absent"
+    
+    ## add intact/pseud status using x[["pseudReport"]]
+    pseuds <- pseudReport
+    pseuds <- pseuds[which(pseuds[,"Pseud"] != "Reference"),]
+    results[ match(pseuds[,"species"], results[,"assemblyName"]), "status"] <- pseuds[,"Pseud"]
+    return(results)
+} 
+
+
 #### define how I want to plot each type of gene
 geneStatusSymbols <- list()
 geneStatusSymbols[["Reference"]][["pch"]] <- 15
@@ -90,4 +125,42 @@ plotGeneStatusLegend <- function(pos, key=geneStatusSymbols, ...) {
     legend(x=pos, legend=keyText, pch=keyPch, pt.bg=keyBg, ...)
 }
 
+
+plotStatusManyGenes <- function(analyses, 
+                                tree=tree_placMammals_commonNames, 
+                                resultsTables=multiz_results,
+                                myTitle="Gene status in placental mammals\n(100-way mafs, MACSE realigned)",
+                                xSeparation=0.02,
+                                xAmountToAddForSpeciesNames=0.51,
+                                yAmountToAddForIsoformNames=25) {
+    ## get num genes so I can put a space between each gene, add some more
+    numGenes <- length(unique(sapply(strsplit(analyses, "_"), "[[", 1)))
+    tempLabelOffset <- xSeparation/2 + (length(analyses)+numGenes-1) * xSeparation
+    cat("num genes",numGenes,"\n")
+    plot.phylo(tree, 
+               cex=0.5, font=1, 
+               label.offset = tempLabelOffset,
+               align.tip.label=TRUE,
+               x.lim=tempLabelOffset+xAmountToAddForSpeciesNames, 
+               y.lim=length(tree$tip.label) + 
+                            yAmountToAddForIsoformNames, 
+               no.margin = TRUE) 
+    currentOffset <- 0.01
+    prevGene <- strsplit(analyses[1], "_")[[1]][1]
+    for(thisAnalysis in analyses) {
+        geneName <- strsplit(thisAnalysis, "_")[[1]][1]
+        if (geneName != prevGene) { 
+            currentOffset <- currentOffset + xSeparation 
+        }
+        prevGene <- geneName
+        plotGeneStatusSymbols(thisAnalysis, 
+                              tree=tree,
+                              Xoffset=currentOffset, 
+                              resultsTables=resultsTables,
+                              myTitle=thisAnalysis)
+        currentOffset <- currentOffset + xSeparation
+    }
+    plotGeneStatusLegend("topleft", cex=1)
+    title(myTitle, line=-2, cex.main=1)
+}
 

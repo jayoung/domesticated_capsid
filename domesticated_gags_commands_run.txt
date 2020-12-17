@@ -142,23 +142,22 @@ cd liftOverFiles
 
 ## collect together each ortholog for each gene
 ../../scripts/compileSameTranscriptSeqs.bioperl ../allRefSeqs.hg38.cds.fa *cds.fa
-mv *cdsSeqs.fa ../unaligned/
-cd ../unaligned/
+mv *cdsSeqs.fa ../alignments/
+cd ../alignments/
 
 ## align with MACSE
 ../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
-    xxx running (using sbatch)
-    xxxx  then run downstream steps again including R script
-    
-../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
-../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
-../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
+    ran (using sbatch)
+../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
+../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
+../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
 
 mkdir aa_justAlignments
 mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
 
 cp *noPseuds.fa.degapcodon aa_justAlignments/noPseuds
 cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
+    xxxx  then run downstream steps again including R script
 
 xxxx
 

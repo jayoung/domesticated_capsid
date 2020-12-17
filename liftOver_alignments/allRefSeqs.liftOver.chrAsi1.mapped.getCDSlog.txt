@@ -1,0 +1,1 @@
+chrAsi1	Assembly not supported by ucscApiClient

@@ -1,0 +1,7 @@
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798150;start=36058149;end=36071404"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798150;start=36058149;end=36071404"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798150;start=36058149;end=36071404"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798200;start=1084168;end=1086668"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798279;start=1013104;end=1019695"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798221;start=2356010;end=2359278"
+ucscApiClient -p "/getData/sequence" "genome=sorAra2;chrom=JH798221;start=2356010;end=2359278"

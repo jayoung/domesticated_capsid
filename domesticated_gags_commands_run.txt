@@ -157,7 +157,33 @@ mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
 
 cp *noPseuds.fa.degapcodon aa_justAlignments/noPseuds
 cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
-    xxxx  then run downstream steps again including R script
+
+then used R script to make a plot
+
+
+######### comparing multiz- and liftOver-based alignments
+
+Using liftOver means the number of things called pseudogenes is a lot lower (e.g. for CCDC8). 
+The maf alignments missed out poorly-aligning but in-frame regions
+
+But using liftOver means a lot of species are missing entirely (e.g. for ARC), because liftOver failed.
+
+
+xx other ideas:
+
+doing liftOver on just the CDSs will improve its hit rate
+playing with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate
+
+## get only the CDS and try liftOver again
+cd liftOver_alignments
+../scripts/bed12_getCDSonly.pl allRefSeqs.hg38.bed 
+
+
+use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
+
+use BLAT or sim4-like program to get intact and pseudogenes from entire assemblies (should get pseudogenes as well), and blat/blast back to human to check we get the right bits
+
+use liftOver to get a bigger region from the genome, then use sim4 or BLAT to get the spliced CDS
 
 xxxx
 

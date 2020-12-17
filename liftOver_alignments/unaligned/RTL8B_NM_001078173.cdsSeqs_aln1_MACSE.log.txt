@@ -4,6 +4,6 @@ compute kmer dist
 build UPGMA done 
 +++++++++++++++start refining the alignment
 .............................-.
-Refine 2 cut : sum of pair========= 1 => -64865.742
+Refine 2 cut : sum of pair========= 1 => -64865.734
 true
 RTL8B_NM_001078173.cdsSeqs_aln1_NT.fa

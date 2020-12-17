@@ -3,9 +3,9 @@ Build draft alignment using greedy strategy based on UPGMA tree
 compute kmer dist 
 build UPGMA done 
 +++++++++++++++++++++++++++start refining the alignment
-+....................................................-.
-Refine 2 cut : sum of pair========= 1 => -156826.64
-.------------------------------------------------------
-Refine 2 cut : sum of pair========= 2 => -156826.64
+.+.......................+.....+.....................-.
+Refine 2 cut : sum of pair========= 1 => -156943.67
+.-.................................-.-.-.-.-.-.-.-.----
+Refine 2 cut : sum of pair========= 2 => -156943.67
 true
 RTL8C_NM_001078171.cdsSeqs_aln1_NT.fa

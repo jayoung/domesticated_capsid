@@ -10,6 +10,7 @@ use Getopt::Long;
 # from each seqname, it works out the RefSeq ID (e.g. NM_015193.5_hg38 has ID NM_015193.5)
 # puts seqs with the same RefSeq ID into the same file as each other, to be aligned
 # also reads gene-refseq connections so we can include gene name in output file name
+# optionally uses phylogenetic order from 100-way maf to order seqs
 
 my $outfileSuffix = "cdsSeqs.fa";
 
@@ -18,10 +19,15 @@ my $baseDir = "/fh/fast/malik_h/user/jayoung/miscMalikLab/domesticated_capsid";
 
 my $accsFile = "getHumanPepsFromWillFiles/fullGenbankEntries/2020.23.10.humanSeqs.fullLen.Refseq.accs.txt.info.byAccession.txt";
 
+my $orderBySpecies = 1;
+my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
+
 ## get any non-default options from commandline
 GetOptions("suffix=s" => \$outfileSuffix,
            "baseDir=s" => \$baseDir,
-           "accsFile=s" => \$accsFile
+           "accsFile=s" => \$accsFile,
+           "orderBySpecies=i" => \$orderBySpecies,
+           "assemblyListFile=s" => \$assemblyListFile
            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 
@@ -32,6 +38,9 @@ if (!-e "$baseDir") {
 }
 if (!-e "$baseDir/$accsFile") {
     die "\n\nterminating - accsFile does not exist $baseDir/$accsFile\n\n";
+}
+if (($orderBySpecies == 1) & (!-e "$assemblyListFile")) {
+    die "\n\nterminating - assemblyListFile does not exist $assemblyListFile\n\n";
 }
 
 
@@ -46,9 +55,19 @@ while (<ACCS>) {
     $info{$acc} = $gene;
 }
 
+# read in species order
+my @assemblyOrder;
+if ($orderBySpecies == 1) {
+    open (ASSEMBLIES, "< $assemblyListFile");
+    while (<ASSEMBLIES>) {
+        my $line = $_; chomp $line; push @assemblyOrder, $line;
+    }
+    close ASSEMBLIES;
+}
 
+## read in all the seqs
 my %seqsByRefSeqID; # key = refseq ID, value = array of the seqs
-
+my %seqsByRefSeqIDandAssembly; # key = refseq ID, value = array of the seqs
 foreach my $file (@ARGV) {
     if (!-e $file) { die "\n\nterminating - cannot find file $file\n\n"; } 
     print "reading file $file\n";
@@ -65,6 +84,7 @@ foreach my $file (@ARGV) {
         $newID = $geneName . "_" . $newID;
         print "ID $ID newID $newID\n";
         push @{$seqsByRefSeqID{$newID}}, $seq;
+        $seqsByRefSeqIDandAssembly{$newID}{$assembly} = $seq;
     }
 }
 print "\n";
@@ -74,6 +94,14 @@ foreach my $ID (keys %seqsByRefSeqID) {
     my $out = "$ID.$outfileSuffix";
     print "writing file $out\n";
     my $seqOUT = Bio::SeqIO->new(-file => "> $out", -format=>"fasta");
-    foreach my $seq (@{$seqsByRefSeqID{$ID}}) { $seqOUT->write_seq($seq); }
+    if ($orderBySpecies == 1) {
+        foreach my $assembly (@assemblyOrder) {
+            if (defined $seqsByRefSeqIDandAssembly{$ID}{$assembly}) {
+                $seqOUT->write_seq($seqsByRefSeqIDandAssembly{$ID}{$assembly});
+            }
+        }
+    } else {
+        foreach my $seq (@{$seqsByRefSeqID{$ID}}) { $seqOUT->write_seq($seq); }
+    }
 }
 print "\n";

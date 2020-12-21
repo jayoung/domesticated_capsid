@@ -21,6 +21,7 @@ use strict;
 
 ## I use downloaded chain files. I also tried using a remote chain file (e.g. http://hgdownload.cse.ucsc.edu/goldenPath/hg38/liftOver/hg38ToSusScr3.over.chain.gz), but it failed to find the lifted over region, despite the fact it succeeded with the same chain file stored locally. It was also slow.
 
+my $bedInputFile = "allRefSeqs.hg38.justCDS.bed";
 
 ### this has a list of the assemblies we expect to see
 my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
@@ -30,8 +31,6 @@ my %assembliesToIgnore;
 $assembliesToIgnore{'hg38'}=1;  ## meaningless to chain against itself
 
 my $chainFilesDir = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles";
-
-my $bedInputFile = "allRefSeqs.hg38.bed";
 
 my $liftOverExecutable = "./liftOver";
 

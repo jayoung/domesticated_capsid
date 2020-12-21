@@ -68,7 +68,11 @@ BEDLOOP: foreach my $bed (@ARGV) {
     ## which assembly should I be getting seqs from?
     my $assembly;
     if ($inferAssembly == 1) {
-        $assembly = (split /\./, $bed)[2];
+        # $assembly = (split /\./, $bed)[2];
+        $assembly = $bed; 
+        $assembly =~ s/allRefSeqs\.hg38\.justCDS\.liftOver\.//;
+        $assembly =~ s/allRefSeqs\.liftOver\.//;
+        $assembly =~ s/\.mapped\.bed//;
         if(!defined $assemblies{$assembly}) {
             die "\n\nterminating - I inferred assembly name to be $assembly by parsing bed file name, but that assembly is not listed in $assemblyListFile\n\n";
         }

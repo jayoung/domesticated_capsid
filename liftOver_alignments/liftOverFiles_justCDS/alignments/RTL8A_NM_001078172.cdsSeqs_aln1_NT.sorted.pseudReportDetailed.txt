@@ -1,0 +1,2 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001078172.1_criGri1	10	12	16	18	NA	Stop codon

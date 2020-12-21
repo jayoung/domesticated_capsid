@@ -68,11 +68,10 @@ dev.off()
 
 ##### read in info from parsed liftOver alignments
 
-liftOver_pseudReportFiles <- list.files("liftOver_alignments/alignments", pattern=".pseudReportEachGene.txt$")
+liftOver_pseudReportFiles <- list.files("liftOver_alignments/liftOverFiles_justCDS/alignments", pattern=".pseudReportEachGene.txt$")
 names(liftOver_pseudReportFiles) <- gsub(".cdsSeqs_aln1_NT.sorted.pseudReportEachGene.txt","", liftOver_pseudReportFiles)
 
-liftOverLogFiles <- list.files("liftOver_alignments/liftOverFiles", pattern=".getCDSlog.txt", full.names=TRUE)
-
+liftOverLogFiles <- list.files("liftOver_alignments/liftOverFiles_justCDS/liftOverFiles", pattern=".getCDSlog.txt", full.names=TRUE)
 names(liftOverLogFiles) <- sapply(strsplit(liftOverLogFiles, "\\."), "[[", 3)
 
 liftOverLogs <- lapply(liftOverLogFiles, scan, what="character", sep="\n", quiet=TRUE)
@@ -90,13 +89,15 @@ tree_placMammals_liftOverSubset_commonNames$tip.label <- species_dat[ match(tree
 tree_placMammals_liftOverSubset_commonNames <- rotate_all_nodes(tree_placMammals_liftOverSubset_commonNames)
 
 
-liftOver_results <- lapply(liftOver_pseudReportFiles, readLiftOverResults)
+liftOver_results <- lapply(liftOver_pseudReportFiles, 
+                           readLiftOverResults, 
+                           dir="liftOver_alignments/liftOverFiles_justCDS/alignments")
 
 summaryTableByGene_liftOver <- t(sapply(liftOver_results, function(x) { table(x[,"status"])}))
 #                           Reference Intact Truncated Pseud Absent
-# ARC_NM_015193                     1     43         2     6      6
-# CCDC8_NM_032040                   1      9         1    45      2
-# LDOC1_NM_012317                   1     52         1     3      1
+# ARC_NM_015193                     1     24         0     5     28
+# CCDC8_NM_032040                   1     29         3     3     22
+# LDOC1_NM_012317                   1     31         0     4     22
 # etc...
 
 ## check species are in the same order
@@ -114,9 +115,9 @@ summaryBySpecies_liftOver <- t(apply(tableBySpecies_liftOver, 1, function(x) {
 }))
 
 
-pdf(height=7,width=11, file="plots/geneStatus_plots_liftOverAlns.pdf")
+pdf(height=7,width=11, file="plots/geneStatus_plots_liftOverAlns_justCDS.pdf")
 plotStatusManyGenes(analysisNames, 
                     tree=tree_placMammals_liftOverSubset_commonNames,
                     resultsTables=liftOver_results,
-                    myTitle="Gene status in placental mammals\n(liftOver seqs, MACSE aligned)")
+                    myTitle="Gene status in placental mammals\n(liftOver seqs, just CDS, MACSE aligned)")
 dev.off()

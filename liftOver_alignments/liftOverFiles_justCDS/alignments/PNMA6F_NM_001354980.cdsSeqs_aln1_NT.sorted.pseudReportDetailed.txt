@@ -1,0 +1,16 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001354980.2_speTri2	1630	1632	6328	6330	NA	Stop codon
+NM_001354980.2_speTri2	1723	1723	6448	6448	1	Frameshift deletion
+NM_001354980.2_ochPri3	106	108	106	108	NA	Stop codon
+NM_001354980.2_ochPri3	358	358	403	403	1	Frameshift deletion
+NM_001354980.2_ochPri3	879	879	2248	2253	4	Frameshift insertion
+NM_001354980.2_ochPri3	1063	1065	2476	2478	NA	Stop codon
+NM_001354980.2_ochPri3	1114	1116	2527	2529	NA	Stop codon
+NM_001354980.2_ochPri3	1489	1490	5956	5957	2	Frameshift deletion
+NM_001354980.2_equCab2	70	70	70	70	1	Frameshift deletion
+NM_001354980.2_equCab2	250	250	250	250	1	Frameshift deletion
+NM_001354980.2_felCat8	547	548	1633	1634	2	Frameshift deletion
+NM_001354980.2_felCat8	1342	1342	3028	3028	1	Frameshift deletion
+NM_001354980.2_felCat8	1474	1475	5941	5942	2	Frameshift deletion
+NM_001354980.2_musFur1	1437	1437	3544	5817	2273	Frameshift insertion
+NM_001354980.2_pteVam1	874	875	2242	2243	2	Frameshift deletion

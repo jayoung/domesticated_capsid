@@ -42,7 +42,7 @@ readMultizResults <- function(analysisName,
 
 
 readLiftOverResults <- function(file=liftOver_pseudReportFile, 
-                                dir="liftOver_alignments/alignments",
+                                dir=NULL,
                                 refAssembly="hg38", 
                                 tree=tree_placMammals_liftOverSubset, 
                                 info=species_dat,
@@ -56,10 +56,12 @@ readLiftOverResults <- function(file=liftOver_pseudReportFile,
     results[which(results[,"assemblyName"]==refAssembly),"status"] <- "Reference"
     
     ## read in the pseudogene report
-    if(!file.exists(paste(dir,file,sep="/"))) {
-        stop("ERROR - cannot find pseudReportFile",paste(dir,file,sep="/")," - check pseudReportFileSuffix option\n")
+    fullFile <- file
+    if (!is.null(dir)) { fullFile <- paste(dir,file,sep="/") }
+    if(!file.exists(fullFile)) {
+        stop("ERROR - cannot find pseudReportFile ",fullFile," - check pseudReportFileSuffix option\n")
     }
-    pseudReport <- read.delim(paste(dir,file,sep="/"), header=TRUE) 
+    pseudReport <- read.delim(fullFile, header=TRUE) 
     pseudReport[,"species"] <- sapply( strsplit(pseudReport[,"Seq"],"_"), function(x) {x[length(x)]})
     
     ## add the seqs that were missing from the pseudReport (they failed to liftOver)

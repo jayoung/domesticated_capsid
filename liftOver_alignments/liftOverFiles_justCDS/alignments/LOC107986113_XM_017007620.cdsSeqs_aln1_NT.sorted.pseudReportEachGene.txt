@@ -1,0 +1,2 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+XM_017007620.2_hg38	Reference	0	0	2085

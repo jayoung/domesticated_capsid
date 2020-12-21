@@ -1,0 +1,31 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_015068.3_hg38	925	925	1411	1411	1	Frameshift ref
+NM_015068.3_otoGar3	2072	2072	5398	5409	10	Frameshift insertion
+NM_015068.3_mm10	924	924	1411	1411	1	Possible programmed frameshift
+NM_015068.3_mm10	927	927	1414	1414	1	Possible programmed frameshift
+NM_015068.3_rn6	553	553	892	892	1	Frameshift deletion
+NM_015068.3_rn6	598	598	937	937	1	Frameshift deletion
+NM_015068.3_rn6	814	814	1276	1276	1	Frameshift deletion
+NM_015068.3_rn6	877	877	1345	1345	1	Frameshift deletion
+NM_015068.3_rn6	924	924	1411	1411	1	Possible programmed frameshift
+NM_015068.3_rn6	1041	1041	1534	1534	1	Frameshift deletion
+NM_015068.3_rn6	1092	1093	1588	1589	2	Frameshift deletion
+NM_015068.3_rn6	1167	1167	1663	1663	1	Frameshift deletion
+NM_015068.3_rn6	1329	1330	1831	1832	2	Frameshift deletion
+NM_015068.3_rn6	1377	1377	1882	1882	1	Frameshift deletion
+NM_015068.3_rn6	1444	1446	2533	2535	NA	Stop codon
+NM_015068.3_rn6	1444	1446	3112	3114	NA	Stop codon
+NM_015068.3_rn6	1445	1445	1957	3411	1448	Frameshift insertion
+NM_015068.3_rn6	1454	1454	3421	3552	130	Frameshift insertion
+NM_015068.3_rn6	1464	1465	3562	3563	2	Frameshift deletion
+NM_015068.3_rn6	1465	1467	3793	3795	NA	Stop codon
+NM_015068.3_rn6	1465	1467	4450	4452	NA	Stop codon
+NM_015068.3_rn6	1466	1466	3565	4644	1072	Frameshift insertion
+NM_015068.3_rn6	1551	1551	4744	4744	1	Frameshift deletion
+NM_015068.3_rn6	1613	1613	4807	4812	5	Frameshift insertion
+NM_015068.3_vicPac2	2124	2125	5488	5489	2	Frameshift deletion
+NM_015068.3_vicPac2	2125	2127	5497	5499	NA	Ignoring stop codon near end
+NM_015068.3_oviAri3	1928	1928	5224	5247	23	Frameshift insertion
+NM_015068.3_oviAri3	2049	2050	5374	5375	2	Frameshift deletion
+NM_015068.3_echTel2	2124	2124	5488	5488	1	Frameshift deletion
+NM_015068.3_echTel2	2125	2127	5497	5499	NA	Ignoring stop codon near end

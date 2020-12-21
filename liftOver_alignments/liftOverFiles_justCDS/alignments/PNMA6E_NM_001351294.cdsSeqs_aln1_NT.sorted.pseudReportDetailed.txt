@@ -1,0 +1,10 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001351294.1_otoGar3	1051	1053	4678	4680	NA	Ignoring stop codon near end
+NM_001351294.1_equCab2	840	840	3913	4410	61	Frameshift insertion
+NM_001351294.1_equCab2	955	955	4531	4531	1	Frameshift deletion
+NM_001351294.1_equCab2	991	992	4567	4568	2	Frameshift deletion
+NM_001351294.1_felCat8	550	551	556	557	2	Frameshift deletion
+NM_001351294.1_felCat8	655	656	661	662	2	Frameshift deletion
+NM_001351294.1_felCat8	733	733	3736	3736	1	Frameshift deletion
+NM_001351294.1_musFur1	726	726	1417	3729	2312	Frameshift insertion
+NM_001351294.1_pteVam1	839	841	3991	3993	NA	Stop codon

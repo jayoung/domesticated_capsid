@@ -104,21 +104,29 @@ popd
 
 "The over.chain files that the liftOver tool uses for coordinate conversions are less stringent compared to the filtered alignments used in the reciprocal best files, which constructs this particular multiz track."
 
-xxxxx I'd be better off getting just the thickStart etc regions for each gene before I do this - if some UTR regions are missing it will care less
-https://bedparse.readthedocs.io/en/stable/Usage.html
-usage: bedparse cds transcripts.bed 
-have asked scicomp to install bedparse
 
 ### download the relevant chain files for liftOver:
 scripts/getChainFiles.pl
+
 
 ### prep bed file for all RefSeq genes:
 cd liftOver_alignments
 cat ../multiz_alignments/*bed > allRefSeqs.hg38.bed
 
+
+## get only the CDS, as liftOver in sensitive to bits that are missing, and I only care about the CDS.  I initially did it with the full length of the transcript - moved results to liftOverFiles_fullTranscript
+
+I wrote a script to do get a new bed file that shows only the CDS, although I had also asked scicomp to installed a program called bedparse that should do the same thing: 
+https://bedparse.readthedocs.io/en/stable/Usage.html
+usage: bedparse cds transcripts.bed 
+
+cd liftOver_alignments
+../scripts/bed12_getCDSonly.pl allRefSeqs.hg38.bed 
+
+
 ### use liftOver (for now, this still tries to get full transcript, not just CDS)
 ../scripts/runLiftOver.pl
-mv allRefSeqs.liftOver.* liftOverFiles/
+mv allRefSeqs.hg38.justCDS.liftOver.* liftOverFiles_justCDS/liftOverFiles
 
 I checked results for chimp (panTro4). With the scicomp installed version of liftOver (Kent_tools/20200519-linux.x86_64), there was one unmapped transcript that should have been mapped according to online liftOver (NM_001143978.3).  With a newly downloaded liftOver, it was mapped.
 
@@ -133,24 +141,21 @@ The unmapped.bed file will record which queries I don't have.
 The getCDSlog.txt files will record species that totally failed. There are 19 species:
     grep 'Assembly not supported by ucscApiClient' *log.txt  | wc
 
-cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments
-../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds -inferAssembly=0 -assemblyName=hg38 allRefSeqs.hg38.bed
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/liftOverFiles_justCDS/liftOverFiles
 
-cd liftOverFiles
-../../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds *.mapped.bed 
-
+../../../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds *.mapped.bed 
 
 ## collect together each ortholog for each gene
-../../scripts/compileSameTranscriptSeqs.bioperl ../allRefSeqs.hg38.cds.fa *cds.fa
+../../../scripts/compileSameTranscriptSeqs.bioperl ../../allRefSeqs.hg38.cds.fa *cds.fa
 mv *cdsSeqs.fa ../alignments/
 cd ../alignments/
 
 ## align with MACSE
-../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
+../../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
     ran (using sbatch)
-../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
-../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
-../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
+../../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
+../../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
+../../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
 
 mkdir aa_justAlignments
 mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
@@ -168,16 +173,12 @@ The maf alignments missed out poorly-aligning but in-frame regions
 
 But using liftOver means a lot of species are missing entirely (e.g. for ARC), because liftOver failed.
 
+xxx now I have run liftOver with just the CDS - see how much better that does.
+
+xxx then implement Jairo Gonzalez's advice about getting seqs from other genomes
 
 xx other ideas:
-
-doing liftOver on just the CDSs will improve its hit rate
 playing with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate
-
-## get only the CDS and try liftOver again
-cd liftOver_alignments
-../scripts/bed12_getCDSonly.pl allRefSeqs.hg38.bed 
-
 
 use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
 

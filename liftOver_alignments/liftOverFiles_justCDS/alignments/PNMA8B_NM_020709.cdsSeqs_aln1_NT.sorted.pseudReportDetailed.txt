@@ -1,0 +1,25 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_020709.3_ponAbe2	1088	1090	1369	1371	NA	Stop codon
+NM_020709.3_ponAbe2	1573	1573	2104	2104	1	Frameshift deletion
+NM_020709.3_nomLeu3	1489	1489	1936	1936	1	Frameshift deletion
+NM_020709.3_criGri1	1405	1405	1753	1753	1	Frameshift deletion
+NM_020709.3_criGri1	1470	1470	1870	1914	44	Frameshift insertion
+NM_020709.3_bosTau8	265	265	271	271	1	Frameshift deletion
+NM_020709.3_bosTau8	346	347	358	359	2	Frameshift deletion
+NM_020709.3_bosTau8	691	692	739	740	2	Frameshift deletion
+NM_020709.3_bosTau8	853	853	916	916	1	Frameshift deletion
+NM_020709.3_bosTau8	1078	1079	1237	1238	2	Frameshift deletion
+NM_020709.3_bosTau8	1156	1156	1483	1483	1	Frameshift deletion
+NM_020709.3_bosTau8	1369	1370	1714	1715	2	Frameshift deletion
+NM_020709.3_bosTau8	1384	1384	1732	1732	1	Frameshift deletion
+NM_020709.3_bosTau8	1489	1490	1936	1937	2	Frameshift deletion
+NM_020709.3_bosTau8	1819	1819	2596	2596	1	Frameshift deletion
+NM_020709.3_canFam3	64	65	64	65	2	Frameshift deletion
+NM_020709.3_canFam3	112	112	112	112	1	Frameshift deletion
+NM_020709.3_canFam3	223	223	223	223	1	Frameshift deletion
+NM_020709.3_canFam3	448	448	475	475	1	Frameshift deletion
+NM_020709.3_canFam3	727	727	778	778	1	Frameshift deletion
+NM_020709.3_canFam3	817	817	868	868	1	Frameshift deletion
+NM_020709.3_canFam3	910	910	1060	1060	1	Frameshift deletion
+NM_020709.3_canFam3	1678	1678	2428	2428	1	Frameshift deletion
+NM_020709.3_canFam3	1885	1885	2662	2662	1	Frameshift deletion

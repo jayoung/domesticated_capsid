@@ -1,0 +1,3 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_011544365.3_dasNov3	1066	1067	1081	1082	2	Frameshift deletion
+XM_011544365.3_dasNov3	1071	1071	1087	1092	4	Frameshift insertion

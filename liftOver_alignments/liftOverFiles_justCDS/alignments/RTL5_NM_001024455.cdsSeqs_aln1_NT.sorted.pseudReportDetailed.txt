@@ -1,0 +1,28 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001024455.4_pteVam1	223	225	787	789	NA	Stop codon
+NM_001024455.4_pteVam1	430	431	1108	1109	2	Frameshift deletion
+NM_001024455.4_pteVam1	1636	1636	3208	3208	1	Frameshift deletion
+NM_001024455.4_echTel2	26	28	76	78	NA	Stop codon
+NM_001024455.4_echTel2	27	27	31	240	208	Frameshift insertion
+NM_001024455.4_echTel2	36	36	250	462	211	Frameshift insertion
+NM_001024455.4_echTel2	46	46	472	472	1	Frameshift deletion
+NM_001024455.4_echTel2	148	149	694	695	2	Frameshift deletion
+NM_001024455.4_echTel2	253	254	844	845	2	Frameshift deletion
+NM_001024455.4_echTel2	352	352	946	946	1	Frameshift deletion
+NM_001024455.4_echTel2	436	437	1117	1118	2	Frameshift deletion
+NM_001024455.4_echTel2	727	727	1432	1432	1	Frameshift deletion
+NM_001024455.4_echTel2	781	781	1486	1486	1	Frameshift deletion
+NM_001024455.4_echTel2	868	868	1573	1573	1	Frameshift deletion
+NM_001024455.4_echTel2	976	977	1681	1682	2	Frameshift deletion
+NM_001024455.4_echTel2	1024	1025	1729	1730	2	Frameshift deletion
+NM_001024455.4_echTel2	1312	1313	2416	2417	2	Frameshift deletion
+NM_001024455.4_echTel2	1470	1470	3038	3039	2	Frameshift insertion
+NM_001024455.4_echTel2	1591	1591	3163	3163	1	Frameshift deletion
+NM_001024455.4_echTel2	1654	1654	3229	3229	1	Frameshift deletion
+NM_001024455.4_dasNov3	103	105	649	651	NA	Stop codon
+NM_001024455.4_dasNov3	226	226	790	790	1	Frameshift deletion
+NM_001024455.4_dasNov3	499	499	1192	1192	1	Frameshift deletion
+NM_001024455.4_dasNov3	1027	1029	1732	1734	NA	Stop codon
+NM_001024455.4_dasNov3	1267	1267	2263	2263	1	Frameshift deletion
+NM_001024455.4_dasNov3	1390	1390	2590	2590	1	Frameshift deletion
+NM_001024455.4_dasNov3	1654	1656	3229	3231	NA	Ignoring stop codon near end

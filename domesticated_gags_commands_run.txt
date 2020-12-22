@@ -175,7 +175,7 @@ xxx perhaps I want to read in which seqs I rejected because they have NNNs and d
 
 xxx blast/blat back - is it going to correct location?
 
-xxx align paralogs with each other? ensure I don't have wrong ortholog
+xxx align paralogs with each other? ensure I don't have wrong orthologs
 
 xxx perhaps I want to use more recent genomes for some species?
 

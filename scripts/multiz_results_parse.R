@@ -72,7 +72,7 @@ liftOver_pseudReportFiles <- list.files("liftOver_alignments/liftOverFiles_justC
 names(liftOver_pseudReportFiles) <- gsub(".cdsSeqs_aln1_NT.sorted.pseudReportEachGene.txt","", liftOver_pseudReportFiles)
 
 liftOverLogFiles <- list.files("liftOver_alignments/liftOverFiles_justCDS/liftOverFiles", pattern=".getCDSlog.txt", full.names=TRUE)
-names(liftOverLogFiles) <- sapply(strsplit(liftOverLogFiles, "\\."), "[[", 3)
+names(liftOverLogFiles) <- sapply(strsplit(liftOverLogFiles, "\\."), "[[", 5)
 
 liftOverLogs <- lapply(liftOverLogFiles, scan, what="character", sep="\n", quiet=TRUE)
 
@@ -80,6 +80,20 @@ liftOverLogs <- lapply(liftOverLogFiles, scan, what="character", sep="\n", quiet
 liftOverImpossible <- names(liftOverLogs) [which( sapply(liftOverLogs, function(x) {
     sum(grepl("Assembly not supported by ucscApiClient", x))>0
 }) )]
+
+
+liftOverSeqsWithNs <- lapply( liftOverLogs, function(x) { 
+    y <- grep("of bases are Ns", x, value=TRUE)
+    if (length(y)==0) {return(y)}
+    y <- gsub("    WARNING - ignoring seq ","",y)
+    y <- sapply(strsplit(y, ","), "[[", 1)
+    assembly <- strsplit(y[1], "_")[[1]]
+    assembly <- assembly[length(assembly)]
+    y <- gsub( paste("_",assembly,sep=""),"",y)
+    y <- sapply(strsplit(y, "\\."), "[[", 1)
+    return(y)
+})
+
 
 ## get a tree with only the species where liftOver is possible:
 tree_placMammals_liftOverSubset <- drop.tip(tree_placMammals, liftOverImpossible)
@@ -93,12 +107,27 @@ liftOver_results <- lapply(liftOver_pseudReportFiles,
                            readLiftOverResults, 
                            dir="liftOver_alignments/liftOverFiles_justCDS/alignments")
 
+## note which seqs were truncated by Ns so much that I didn't try to align them (from liftOverSeqsWithNs)
+liftOver_results <- lapply( analysisNames, function(x)  {
+    geneName <- strsplit(x, "_")[[1]][1]
+    transcriptName <- gsub( paste(geneName,"_",sep=""), "", x)
+    
+    speciesWithNs <- names(liftOverSeqsWithNs)[grep(transcriptName, liftOverSeqsWithNs)]
+    #return(speciesWithNs)
+    results <- liftOver_results[[x]]
+    results[match(speciesWithNs, rownames(results)),"status"] <- "Truncated"
+    return(results)
+    
+} )
+names(liftOver_results) <- analysisNames
+
+
 summaryTableByGene_liftOver <- t(sapply(liftOver_results, function(x) { table(x[,"status"])}))
+head(summaryTableByGene_liftOver)
 #                           Reference Intact Truncated Pseud Absent
-# ARC_NM_015193                     1     37         0     5     15
-# CCDC8_NM_032040                   1     37         6     7      7
-# LDOC1_NM_012317                   1     47         0     3      7
-# etc...
+# ARC_NM_015193                     1     37         2     5     13
+# CCDC8_NM_032040                   1     37        10     7      3
+# LDOC1_NM_012317                   1     47         1     3      6
 
 ## check species are in the same order
 table( sapply(2:length(liftOver_results), function(i) {

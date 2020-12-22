@@ -134,16 +134,20 @@ I checked results for chimp (panTro4). With the scicomp installed version of lif
 
 ## get cds seqs using liftOver mapped.bed files:
 
-I use ucscApiClient and the coords in the bed file, line by line.  Parse the resulting JSON output to get a fasta file. Reverse-complement if needed. 
-
-The cds.fa files contain CDS seqs I did manage to get. There are 38 of those files.
-The unmapped.bed file will record which queries I don't have.
-The getCDSlog.txt files will record species that totally failed. There are 19 species:
-    grep 'Assembly not supported by ucscApiClient' *log.txt  | wc
+I use ucscApiClient and the coords in the bed file to get sequences, line by line, parsing the resulting JSON output to get a fasta file. Reverse-complement if needed. 
 
 cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/liftOverFiles_justCDS/liftOverFiles
-
+module load Kent_tools
 ../../../scripts/getCDSseqsUsingAPIclient.bioperl -returnType=cds *.mapped.bed 
+module purge
+
+The unmapped.bed file will record which queries I don't have.
+The getCDSlog.txt files would record any species that totally failed, but there are none
+    grep 'Assembly not supported' *log.txt  | wc
+
+I ignore seqs that have >20% Ns - there are 36 seqs:
+    grep 'ignoring seq' *log.txt  | wc
+
 
 ## collect together each ortholog for each gene
 ../../../scripts/compileSameTranscriptSeqs.bioperl ../../allRefSeqs.hg38.cds.fa *cds.fa
@@ -156,6 +160,7 @@ cd ../alignments/
 ../../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
 ../../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
 ../../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
+
 
 mkdir aa_justAlignments
 mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
@@ -175,10 +180,9 @@ But using liftOver means a lot of species are missing entirely (e.g. for ARC), b
 
 xxx now I have run liftOver with just the CDS - see how much better that does.
 
-xxx then implement Jairo Gonzalez's advice about getting seqs from other genomes
 
 xx other ideas:
-playing with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate
+play with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate
 
 use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
 
@@ -192,7 +196,8 @@ xxxx
 xxx next:
     make tables summarizing NUMBERS of intact/pseudo?
     make tables summarizing intact/pseud status by species?
-
+    dN/dS model 0 across vertebrates?
+    primate positive selection?
 
 
 

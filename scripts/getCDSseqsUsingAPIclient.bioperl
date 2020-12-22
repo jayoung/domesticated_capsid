@@ -15,20 +15,30 @@ use Data::Dumper;
 my $returnType = "transcript";
 my $inferAssembly = 1;
 my $assemblyName;
+my $usePreviewSite = 1;  ## for genomes not available at the main UCSC site, should we try the preview site? default is yes.
+my $maxNs = 0.2;  # proportion of the seq that can be Ns. Set this to 1 to not filter on N content
 
 ## get any non-default options from commandline
 GetOptions("returnType=s" => \$returnType, # cds or transcript
            "inferAssembly=i" => \$inferAssembly,
-           "assemblyName=s" => \$assemblyName
+           "assemblyName=s" => \$assemblyName,
+           "usePreviewSite=i" => \$usePreviewSite,
+           "maxNs=i" => \$maxNs
            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 
 my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
 
+
+# https://genome-preview.soe.ucsc.edu/cgi-bin/hubApi/getData/sequence?genome=camFer1;chrom=KB016485;start=316036;end=318886
+
 ######
 
 if (@ARGV==0) {
     die "\nUsage: getCDSseqsUsingAPIclient.bioperl bed12file(s).bed\n\n";
+}
+if ($maxNs < 1) {
+    print "\n\nIgnoring sequences where proportion of N bases is >$maxNs\n\n";
 }
 
 ## check that ucscApiClient is in my path (need to have loaded Kent_tools module)
@@ -84,7 +94,7 @@ BEDLOOP: foreach my $bed (@ARGV) {
     ## start getting seqs:
     my %seqsSeenThisBed; # so I don't create two seqs with the same name in the output
     open (BED, "< $bed");
-    while (<BED>) {
+    REGIONLOOP: while (<BED>) {
         my $line = $_; chomp $line; my @f = split /\t/, $line;
         my $seq = $f[0]; my $id = $f[3]; my $strand = $f[5];
         my $thinStart = $f[1]; my $thinEnd = $f[2];
@@ -105,25 +115,34 @@ BEDLOOP: foreach my $bed (@ARGV) {
         #print "    running getSeqCommand:    $getSeqCommand\n";
         my $stdErrFile = "/tmp/program.stderr";
         my $seqJSON = `$getSeqCommand 2>$stdErrFile`;
-        if (!-z $stdErrFile) {
-            my $genomeMissing = 0;
-            open (ERR, "< $stdErrFile");
-            my @lines;
-            while(<ERR>) {
-                my $line = $_; push @lines, $line;
-                if ($line =~ m/can not find genome/) { $genomeMissing = 1; }
-            }
-            close ERR;
-            if ($genomeMissing == 1) {
-                print "\n    ucscApiClient does not appear to support this genome - skipping this bed file\n\n";
-                print LOG "$assembly\tAssembly not supported by ucscApiClient\n";
+        
+        my $apiClientStatus = checkStdErrFile($stdErrFile);
+        if ($apiClientStatus eq "genomeMissing") {
+            if ($usePreviewSite == 1) {
+                unlink $stdErrFile;
+                my $altCommand = "curl -s \"https://genome-preview.soe.ucsc.edu/cgi-bin/hubApi/getData/sequence?genome=$assembly;chrom=$seq;start=$thinStart;end=$thinEnd\"";
+                $seqJSON = `$altCommand 2>$stdErrFile`;
+                $apiClientStatus = checkStdErrFile($stdErrFile);
+                if ($apiClientStatus eq "genomeMissing") {
+                    ## missing, even after tried the preview site
+                    print "\n    neither ucscApiClient or preview site appears to support this genome - skipping this bed file\n\n";
+                    print LOG "$assembly\tAssembly not supported by ucscApiClient or preview site\n";
+                    unlink $out; close BED; close LOG;
+                    next BEDLOOP;
+                } else {
+                    print LOG "$altCommand\n";
+                }
+            } else {
+                ## missing, but we did not try the preview site
+                print "\n    ucscApiClient does not appear to support this genome and we are not trying the preview site - skipping this bed file\n\n";
+                print LOG "$assembly\tAssembly not supported by ucscApiClient, did not try preview site\n";
                 unlink $out; close BED; close LOG;
                 next BEDLOOP;
-            } else {
-                die "\n\nterminating - unexpected error from ucscApiClient:\n@lines\n\n";
             }
+        } else {
+            ## original ucscApiClient command worked:
+            print LOG "$getSeqCommand\n";
         }
-        print LOG "$getSeqCommand\n";
         my $seqDecodedRef = decode_json($seqJSON); #it is a hash ref
         my %seqDecoded = %$seqDecodedRef;
         if (!defined $seqDecoded{'dna'}) {
@@ -164,8 +183,21 @@ BEDLOOP: foreach my $bed (@ARGV) {
         if ($fullseq eq "") {
             die "\n\nterminating - did not get any sequence for this line: $line\n\n";
         }
-        ## make a seq object
+        
         my $newname = $id . "_" . $assembly;
+        
+        ## check for seqs that have large blocks of Ns
+        if ($maxNs < 1) {
+            my $fullseq_noNs = $fullseq; $fullseq_noNs =~ s/N//gi;
+            my $proportionNs = 1 - length($fullseq_noNs) / length($fullseq);
+            if ($proportionNs > $maxNs) {
+                $proportionNs = sprintf("%.1f", 100*$proportionNs);
+                print "    WARNING - ignoring seq $newname, because $proportionNs % of bases are Ns\n";
+                print LOG "    WARNING - ignoring seq $newname, because $proportionNs % of bases are Ns\n";
+                next REGIONLOOP;
+            }
+        }
+        ## make a seq object
         my $seqObj = Bio::Seq->new(-seq=>$fullseq, -display_id=> $newname);
         
         ## perhaps reverse-complement
@@ -173,7 +205,28 @@ BEDLOOP: foreach my $bed (@ARGV) {
         
         ## write it out
         $seqOUT->write_seq($seqObj);
-    }
+    }  ## end of loop processing each BED line
     close BED;
     close LOG;
+}
+
+
+sub checkStdErrFile {
+    my $stdErrFile = $_[0];
+    my $status = "";
+    if (-z $stdErrFile) {
+        $status = "noErrors";
+    } else {
+        open (ERR, "< $stdErrFile");
+        my @lines;
+        while(<ERR>) {
+            my $line = $_; push @lines, $line;
+            if ($line =~ m/can not find genome/) { $status = "genomeMissing"; }
+        }
+        close ERR;
+        if ($status ne "genomeMissing") {
+            die "\n\nterminating - unexpected error from ucscApiClient:\n@lines\n\n";
+        }
+    }
+    return($status);
 }

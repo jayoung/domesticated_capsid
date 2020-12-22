@@ -17,10 +17,14 @@ ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=139722419;
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=139722419;end=139723757"
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=139776292;end=139777496"
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=139927484;end=139929580"
+    WARNING - ignoring seq NM_001367770.1_calJac3, because 23.5 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=139854955;end=139856680"
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chr22;start=38408847;end=38411836"
+    WARNING - ignoring seq NM_001103149.1_calJac3, because 44.5 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chr22;start=38408870;end=38411836"
+    WARNING - ignoring seq NM_018215.4_calJac3, because 40.6 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chr22;start=38408847;end=38411836"
+    WARNING - ignoring seq XM_011527067.2_calJac3, because 38.8 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chr22;start=38438815;end=38440723"
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chr1;start=184275153;end=184276248"
 ucscApiClient -p "/getData/sequence" "genome=calJac3;chrom=chrX;start=69741850;end=69743268"

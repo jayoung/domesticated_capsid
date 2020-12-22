@@ -1,5 +1,6 @@
 ucscApiClient -p "/getData/sequence" "genome=myoLuc2;chrom=GL430125;start=256944;end=257382"
 ucscApiClient -p "/getData/sequence" "genome=myoLuc2;chrom=GL430083;start=500255;end=501370"
+    WARNING - ignoring seq NM_022151.5_myoLuc2, because 38.3 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=myoLuc2;chrom=GL429782;start=3540501;end=3541485"
 ucscApiClient -p "/getData/sequence" "genome=myoLuc2;chrom=GL429782;start=3534666;end=3542624"
 ucscApiClient -p "/getData/sequence" "genome=myoLuc2;chrom=GL429782;start=3534666;end=3541485"

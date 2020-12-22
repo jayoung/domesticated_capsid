@@ -14,14 +14,20 @@ ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897105;start=504919
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897133;start=2496637;end=2498126"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897133;start=2496734;end=2498126"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897199;start=1319395;end=1324593"
+    WARNING - ignoring seq NM_001351293.2_musFur1, because 50.9 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897199;start=1319395;end=1324593"
+    WARNING - ignoring seq NM_001351294.1_musFur1, because 50.9 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897199;start=1319395;end=1324593"
+    WARNING - ignoring seq NM_001367770.1_musFur1, because 43.7 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897199;start=1319395;end=1324593"
+    WARNING - ignoring seq XM_024452426.1_musFur1, because 50.9 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897199;start=1319413;end=1324593"
+    WARNING - ignoring seq NM_001354980.2_musFur1, because 43.9 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897027;start=3641800;end=3643650"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897027;start=3641822;end=3643650"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897027;start=3641800;end=3643650"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897027;start=3590413;end=3592228"
+    WARNING - ignoring seq NM_020709.3_musFur1, because 30.2 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL896906;start=3313908;end=3314995"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897136;start=1031582;end=1033084"
 ucscApiClient -p "/getData/sequence" "genome=musFur1;chrom=GL897138;start=1803152;end=1804844"

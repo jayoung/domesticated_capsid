@@ -15,6 +15,7 @@ ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrUn0604;start=47601
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrUn0604;start=47601;end=49731"
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrUn0128;start=822672;end=823748"
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrUn0352;start=5409;end=10144"
+    WARNING - ignoring seq NM_001134888.2_oryCun2, because 35.0 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrX;start=70307434;end=70309126"
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrX;start=50840266;end=50841914"
 ucscApiClient -p "/getData/sequence" "genome=oryCun2;chrom=chrX;start=109580008;end=109580353"

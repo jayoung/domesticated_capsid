@@ -17,6 +17,7 @@ ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836934;start=3179;e
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836934;start=3179;end=4508"
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836934;start=3179;end=4508"
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836049;start=769520;end=773369"
+    WARNING - ignoring seq NM_001354980.2_eriEur2, because 25.1 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836173;start=154071;end=155727"
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH835458;start=3186210;end=3186936"
 ucscApiClient -p "/getData/sequence" "genome=eriEur2;chrom=JH836909;start=36136;end=36478"

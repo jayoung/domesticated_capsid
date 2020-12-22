@@ -6,6 +6,7 @@ ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_9;start=4968
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_22;start=8903602;end=8904697"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_22;start=8903602;end=8904697"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_111;start=3435927;end=3437225"
+    WARNING - ignoring seq NM_013364.6_loxAfr3, because 23.8 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_111;start=3366986;end=3368330"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_111;start=3366986;end=3368330"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_111;start=3366986;end=3368330"
@@ -17,6 +18,7 @@ ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_4;start=5772
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_4;start=5772705;end=5774781"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_4;start=5795371;end=5797324"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_9;start=75660884;end=75665038"
+    WARNING - ignoring seq NM_001134888.2_loxAfr3, because 29.1 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_24;start=22459375;end=22460915"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_24;start=30233755;end=30235345"
 ucscApiClient -p "/getData/sequence" "genome=loxAfr3;chrom=scaffold_73;start=337199;end=337919"

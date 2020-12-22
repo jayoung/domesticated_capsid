@@ -1,5 +1,6 @@
 ucscApiClient -p "/getData/sequence" "genome=ochPri3;chrom=JH802069;start=48258953;end=48260129"
 ucscApiClient -p "/getData/sequence" "genome=ochPri3;chrom=JH802147;start=5422224;end=5428624"
+    WARNING - ignoring seq NM_032040.5_ochPri3, because 27.8 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=ochPri3;chrom=JH802089;start=21350111;end=21350552"
 ucscApiClient -p "/getData/sequence" "genome=ochPri3;chrom=JH802073;start=11376463;end=11377564"
 ucscApiClient -p "/getData/sequence" "genome=ochPri3;chrom=JH802073;start=11369674;end=11378730"

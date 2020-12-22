@@ -23,6 +23,7 @@ ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=AAQR03194462;start=13
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873768;start=158476;end=160995"
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873768;start=158476;end=160995"
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873768;start=158476;end=160995"
+    WARNING - ignoring seq NM_001367770.1_otoGar3, because 21.1 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873768;start=158476;end=160995"
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873671;start=3351028;end=3352739"
 ucscApiClient -p "/getData/sequence" "genome=otoGar3;chrom=GL873671;start=3351028;end=3352711"

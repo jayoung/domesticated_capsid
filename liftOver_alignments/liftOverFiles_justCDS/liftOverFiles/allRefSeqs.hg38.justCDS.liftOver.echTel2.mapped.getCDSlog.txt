@@ -1,4 +1,5 @@
 ucscApiClient -p "/getData/sequence" "genome=echTel2;chrom=JH980338;start=11298059;end=11299949"
+    WARNING - ignoring seq NM_032040.5_echTel2, because 45.1 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=echTel2;chrom=JH980367;start=4000661;end=4001102"
 ucscApiClient -p "/getData/sequence" "genome=echTel2;chrom=JH980297;start=77210230;end=77211295"
 ucscApiClient -p "/getData/sequence" "genome=echTel2;chrom=JH980305;start=31657126;end=31658212"

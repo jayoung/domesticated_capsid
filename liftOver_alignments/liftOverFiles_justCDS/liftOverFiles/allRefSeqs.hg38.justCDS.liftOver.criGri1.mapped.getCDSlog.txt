@@ -1,6 +1,7 @@
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE376579;start=1912838;end=1914029"
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE376857;start=421965;end=423958"
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE380587;start=170668;end=174740"
+    WARNING - ignoring seq NM_012317.4_criGri1, because 88.5 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE381350;start=725895;end=733763"
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE381350;start=725895;end=732558"
 ucscApiClient -p "/getData/sequence" "genome=criGri1;chrom=KE379654;start=55813;end=56875"

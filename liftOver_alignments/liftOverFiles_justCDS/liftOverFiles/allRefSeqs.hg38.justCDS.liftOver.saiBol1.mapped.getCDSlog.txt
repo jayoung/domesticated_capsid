@@ -20,6 +20,7 @@ ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378285;start=72463;
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378285;start=72463;end=73798"
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378285;start=72463;end=73798"
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378285;start=6675;end=8439"
+    WARNING - ignoring seq NM_032882.5_saiBol1, because 22.7 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378299;start=171931;end=173959"
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378299;start=171931;end=173959"
 ucscApiClient -p "/getData/sequence" "genome=saiBol1;chrom=JH378299;start=171931;end=173959"

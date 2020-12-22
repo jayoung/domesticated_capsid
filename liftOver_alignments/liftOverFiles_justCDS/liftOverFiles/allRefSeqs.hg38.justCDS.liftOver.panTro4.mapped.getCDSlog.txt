@@ -1,7 +1,9 @@
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr8;start=141414164;end=141415860"
+    WARNING - ignoring seq NM_015193.5_panTro4, because 36.3 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr19;start=51333940;end=51335557"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chrX;start=141988949;end=141989390"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr3;start=104858754;end=104867304"
+    WARNING - ignoring seq XM_011513341.3_panTro4, because 23.9 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr14;start=92765262;end=92766318"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr7;start=95192239;end=95193217"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr7;start=95185326;end=95194365"
@@ -14,6 +16,7 @@ ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr8;start=22797354;e
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr8;start=22797354;end=22798449"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chrX_GL393269_random;start=5945;end=7337"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chrX;start=154090697;end=154093089"
+    WARNING - ignoring seq NM_001367770.1_panTro4, because 45.2 % of bases are Ns
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chrX;start=153959052;end=153960825"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr19;start=51389964;end=51392381"
 ucscApiClient -p "/getData/sequence" "genome=panTro4;chrom=chr19;start=51389985;end=51392381"

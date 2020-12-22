@@ -17,6 +17,7 @@ my $walltime = "0-12";
 my $debug = "no";
 #my $debug = "yes";
 
+my $memoryRequest = "-Xmx2400m";
 
 ##################
 
@@ -37,7 +38,7 @@ foreach my $file (@ARGV) {
         next;
     }
     
-    my $command = "java -jar -Xmx600m /fh/fast/malik_h/grp/malik_lab_shared/bin/macse_v1.2.jar -prog alignSequences -seq $file -out_NT $outNT -out_AA $outAA > $outLog";
+    my $command = "java -jar $memoryRequest /fh/fast/malik_h/grp/malik_lab_shared/bin/macse_v1.2.jar -prog alignSequences -seq $file -out_NT $outNT -out_AA $outAA > $outLog";
     
     if ($use_sbatch eq "yes") {
         my $time = "";

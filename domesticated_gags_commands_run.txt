@@ -171,6 +171,14 @@ cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
 then used R script to make a plot
 
 
+xxx perhaps I want to read in which seqs I rejected because they have NNNs and depict those as partial
+
+xxx blast/blat back - is it going to correct location?
+
+xxx align paralogs with each other? ensure I don't have wrong ortholog
+
+xxx perhaps I want to use more recent genomes for some species?
+
 ######### comparing multiz- and liftOver-based alignments
 
 Using liftOver means the number of things called pseudogenes is a lot lower (e.g. for CCDC8). 

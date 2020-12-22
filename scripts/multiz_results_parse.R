@@ -95,9 +95,9 @@ liftOver_results <- lapply(liftOver_pseudReportFiles,
 
 summaryTableByGene_liftOver <- t(sapply(liftOver_results, function(x) { table(x[,"status"])}))
 #                           Reference Intact Truncated Pseud Absent
-# ARC_NM_015193                     1     24         0     5     28
-# CCDC8_NM_032040                   1     29         3     3     22
-# LDOC1_NM_012317                   1     31         0     4     22
+# ARC_NM_015193                     1     37         0     5     15
+# CCDC8_NM_032040                   1     37         6     7      7
+# LDOC1_NM_012317                   1     47         0     3      7
 # etc...
 
 ## check species are in the same order

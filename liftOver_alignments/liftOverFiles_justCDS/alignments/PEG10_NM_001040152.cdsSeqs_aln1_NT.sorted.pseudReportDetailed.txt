@@ -1,6 +1,7 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-NM_001040152.2_rn6	553	553	892	892	1	Frameshift deletion
-NM_001040152.2_rn6	598	598	937	937	1	Frameshift deletion
-NM_001040152.2_rn6	814	814	1276	1276	1	Frameshift deletion
-NM_001040152.2_rn6	882	882	1347	1347	1	Frameshift insertion
-NM_001040152.2_rn6	961	961	1444	1444	1	Frameshift deletion
+NM_001040152.2_rn6	553	553	1087	1087	1	Frameshift deletion
+NM_001040152.2_rn6	598	598	1132	1132	1	Frameshift deletion
+NM_001040152.2_rn6	814	814	1624	1624	1	Frameshift deletion
+NM_001040152.2_rn6	882	882	1695	1695	1	Frameshift insertion
+NM_001040152.2_rn6	961	961	1792	1792	1	Frameshift deletion
+NM_001040152.2_capHir1	748	748	1432	1432	1	Frameshift deletion

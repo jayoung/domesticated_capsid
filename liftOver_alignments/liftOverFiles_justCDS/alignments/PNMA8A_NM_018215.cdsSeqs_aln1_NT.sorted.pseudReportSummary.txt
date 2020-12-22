@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	PNMA8A_NM_018215.cdsSeqs_aln1_NT.sorted.fa
-Intact	26	PNMA8A_NM_018215.cdsSeqs_aln1_NT.sorted.fa
+Intact	39	PNMA8A_NM_018215.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	PNMA8A_NM_018215.cdsSeqs_aln1_NT.sorted.fa
 Pseud	3	PNMA8A_NM_018215.cdsSeqs_aln1_NT.sorted.fa

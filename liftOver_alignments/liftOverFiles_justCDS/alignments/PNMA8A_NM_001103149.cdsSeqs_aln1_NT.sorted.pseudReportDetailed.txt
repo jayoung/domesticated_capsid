@@ -1,24 +1,31 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-NM_001103149.1_panTro4	1117	1117	2212	2212	1	Frameshift deletion
-NM_001103149.1_ponAbe2	97	97	109	109	1	Frameshift deletion
-NM_001103149.1_ponAbe2	180	180	198	198	1	Frameshift insertion
-NM_001103149.1_ponAbe2	379	379	406	406	1	Frameshift deletion
-NM_001103149.1_ponAbe2	601	602	667	668	2	Frameshift deletion
-NM_001103149.1_ponAbe2	693	693	780	780	1	Frameshift insertion
-NM_001103149.1_calJac3	624	624	702	702	1	Frameshift insertion
-NM_001103149.1_calJac3	697	698	784	785	2	Frameshift deletion
-NM_001103149.1_calJac3	838	839	1705	1706	2	Frameshift deletion
-NM_001103149.1_calJac3	919	919	1786	1786	1	Frameshift deletion
-NM_001103149.1_otoGar3	1126	1128	2227	2229	NA	Ignoring stop codon near end
-NM_001103149.1_speTri2	1117	1118	2212	2213	2	Frameshift deletion
-NM_001103149.1_susScr3	82	83	94	95	2	Frameshift deletion
-NM_001103149.1_susScr3	273	273	292	297	5	Frameshift insertion
-NM_001103149.1_susScr3	319	321	343	345	NA	Stop codon
-NM_001103149.1_susScr3	357	357	384	384	1	Frameshift insertion
-NM_001103149.1_susScr3	507	507	545	546	2	Frameshift insertion
-NM_001103149.1_bosTau8	1136	1138	2239	2241	NA	Ignoring stop codon near end
-NM_001103149.1_oviAri3	304	304	328	328	1	Frameshift deletion
-NM_001103149.1_oviAri3	421	421	457	457	1	Frameshift deletion
-NM_001103149.1_oviAri3	747	747	837	837	1	Frameshift insertion
-NM_001103149.1_equCab2	1117	1118	2212	2213	2	Frameshift deletion
-NM_001103149.1_felCat8	1132	1133	2233	2234	2	Frameshift deletion
+NM_001103149.1_panTro4	1117	1117	1471	1471	1	Frameshift deletion
+NM_001103149.1_ponAbe2	100	100	115	115	1	Frameshift deletion
+NM_001103149.1_ponAbe2	180	180	201	201	1	Frameshift insertion
+NM_001103149.1_ponAbe2	405	405	443	444	2	Frameshift insertion
+NM_001103149.1_ponAbe2	601	602	694	695	2	Frameshift deletion
+NM_001103149.1_ponAbe2	693	693	807	807	1	Frameshift insertion
+NM_001103149.1_otoGar3	1126	1128	1483	1485	NA	Ignoring stop codon near end
+NM_001103149.1_tupChi1	1132	1134	1489	1491	NA	Ignoring stop codon near end
+NM_001103149.1_speTri2	1117	1118	1471	1472	2	Frameshift deletion
+NM_001103149.1_chiLan1	259	260	280	281	2	Frameshift deletion
+NM_001103149.1_chiLan1	328	330	355	357	NA	Stop codon
+NM_001103149.1_chiLan1	529	529	598	598	1	Frameshift deletion
+NM_001103149.1_chiLan1	979	980	1105	1106	2	Frameshift deletion
+NM_001103149.1_chiLan1	1018	1018	1363	1363	1	Frameshift deletion
+NM_001103149.1_susScr3	82	86	97	101	5	Frameshift deletion
+NM_001103149.1_susScr3	273	273	295	300	5	Frameshift insertion
+NM_001103149.1_susScr3	319	321	346	348	NA	Stop codon
+NM_001103149.1_susScr3	357	357	387	387	1	Frameshift insertion
+NM_001103149.1_susScr3	507	507	572	573	2	Frameshift insertion
+NM_001103149.1_panHod1	1136	1138	1495	1497	NA	Ignoring stop codon near end
+NM_001103149.1_bosTau8	1136	1138	1495	1497	NA	Ignoring stop codon near end
+NM_001103149.1_oviAri3	304	304	331	331	1	Frameshift deletion
+NM_001103149.1_oviAri3	424	424	481	481	1	Frameshift deletion
+NM_001103149.1_oviAri3	747	747	864	864	1	Frameshift insertion
+NM_001103149.1_oviAri3	1136	1138	1495	1497	NA	Ignoring stop codon near end
+NM_001103149.1_capHir1	1136	1138	1495	1497	NA	Ignoring stop codon near end
+NM_001103149.1_equCab2	1117	1118	1471	1472	2	Frameshift deletion
+NM_001103149.1_equCab2	1136	1138	1495	1497	NA	Ignoring stop codon near end
+NM_001103149.1_felCat8	1132	1133	1489	1490	2	Frameshift deletion
+NM_001103149.1_conCri1	1132	1134	1489	1491	NA	Ignoring stop codon near end

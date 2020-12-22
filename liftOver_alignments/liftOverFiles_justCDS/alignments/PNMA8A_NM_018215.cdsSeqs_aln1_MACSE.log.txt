@@ -1,15 +1,13 @@
-30	 sequence(s) with genetic code	The_Standard_Code
+43	 sequence(s) with genetic code	The_Standard_Code
 Build draft alignment using greedy strategy based on UPGMA tree
 compute kmer dist 
 build UPGMA done 
-+++++++++++++++++++++++++++++start refining the alignment
-.+...............+.........+.........+.........++.+.++...-.
-Refine 2 cut : sum of pair========= 1 => -652707.56
-...-.............+...+...................................-.
-Refine 2 cut : sum of pair========= 2 => -652741.56
-...-.-...+...............................................-.
-Refine 2 cut : sum of pair========= 3 => -652747.56
-...-.......-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-...--------------
-Refine 2 cut : sum of pair========= 4 => -652747.56
+++++++++++++++++++++++++++++++++++++++++++start refining the alignment
+++...........+.....+...............+.............+.....+.....+.+.+.....+....+..+.++..
+Refine 2 cut : sum of pair========= 1 => -1290624.0
+...........+.......................................................................-.
+Refine 2 cut : sum of pair========= 2 => -1290637.0
+...-.........-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-...--------------
+Refine 2 cut : sum of pair========= 3 => -1290637.0
 true
 PNMA8A_NM_018215.cdsSeqs_aln1_NT.fa

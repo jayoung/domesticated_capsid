@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	ARC_NM_015193.cdsSeqs_aln1_NT.sorted.fa
-Intact	24	ARC_NM_015193.cdsSeqs_aln1_NT.sorted.fa
+Intact	37	ARC_NM_015193.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	ARC_NM_015193.cdsSeqs_aln1_NT.sorted.fa
 Pseud	5	ARC_NM_015193.cdsSeqs_aln1_NT.sorted.fa

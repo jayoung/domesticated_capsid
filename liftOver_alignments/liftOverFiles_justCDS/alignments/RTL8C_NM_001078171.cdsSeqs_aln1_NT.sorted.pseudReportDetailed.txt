@@ -5,7 +5,7 @@ NM_001078171.2_calJac3	0	0	893	900	8	Frameshift insertion
 NM_001078171.2_calJac3	67	69	1033	1035	NA	Stop codon
 NM_001078171.2_calJac3	259	261	1240	1242	NA	Stop codon
 NM_001078171.2_rn6	67	67	1033	1033	1	Frameshift deletion
-NM_001078171.2_rn6	142	142	1120	1120	1	Frameshift deletion
+NM_001078171.2_rn6	142	166	1120	1144	25	Frameshift deletion
 NM_001078171.2_rn6	252	252	1233	1233	1	Frameshift insertion
 NM_001078171.2_rn6	319	321	1300	1302	NA	Ignoring stop codon near end
 NM_001078171.2_bosTau8	10	12	910	912	NA	Stop codon
@@ -15,3 +15,4 @@ NM_001078171.2_bosTau8	283	283	1264	1264	1	Frameshift deletion
 NM_001078171.2_equCab2	24	24	927	927	1	Frameshift insertion
 NM_001078171.2_equCab2	90	90	1067	1068	2	Frameshift insertion
 NM_001078171.2_ailMel1	16	16	916	916	1	Frameshift deletion
+NM_001078171.2_myoDav1	85	85	1060	1060	1	Frameshift deletion

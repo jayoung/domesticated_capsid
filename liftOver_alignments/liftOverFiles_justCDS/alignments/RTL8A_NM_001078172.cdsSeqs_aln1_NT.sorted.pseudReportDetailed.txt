@@ -1,2 +1,5 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-NM_001078172.1_criGri1	10	12	16	18	NA	Stop codon
+NM_001078172.1_criGri1	10	12	19	21	NA	Stop codon
+NM_001078172.1_mesAur1	136	136	229	229	1	Frameshift deletion
+NM_001078172.1_mesAur1	267	267	369	369	1	Frameshift insertion
+NM_001078172.1_mesAur1	307	307	409	409	1	Frameshift deletion

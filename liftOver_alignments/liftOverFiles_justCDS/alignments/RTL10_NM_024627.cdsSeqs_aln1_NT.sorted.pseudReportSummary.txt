@@ -2,4 +2,4 @@ Gene_type	Count	File
 Ref	1	RTL10_NM_024627.cdsSeqs_aln1_NT.sorted.fa
 Intact	10	RTL10_NM_024627.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	RTL10_NM_024627.cdsSeqs_aln1_NT.sorted.fa
-Pseud	22	RTL10_NM_024627.cdsSeqs_aln1_NT.sorted.fa
+Pseud	38	RTL10_NM_024627.cdsSeqs_aln1_NT.sorted.fa

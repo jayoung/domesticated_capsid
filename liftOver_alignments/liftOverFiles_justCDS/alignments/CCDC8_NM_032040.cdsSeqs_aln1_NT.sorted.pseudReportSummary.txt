@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
-Intact	29	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
-Truncated	3	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
-Pseud	3	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
+Intact	37	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
+Truncated	6	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa
+Pseud	7	CCDC8_NM_032040.cdsSeqs_aln1_NT.sorted.fa

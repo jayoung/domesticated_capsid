@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa
-Intact	34	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa
+Intact	44	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa
-Pseud	2	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa
+Pseud	3	RTL8B_NM_001078173.cdsSeqs_aln1_NT.sorted.fa

@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa
-Intact	19	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa
+Intact	26	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa
-Pseud	12	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa
+Pseud	21	MOAP1_NM_022151.cdsSeqs_aln1_NT.sorted.fa

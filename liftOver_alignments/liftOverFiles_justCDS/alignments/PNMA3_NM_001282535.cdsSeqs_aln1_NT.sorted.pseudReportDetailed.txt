@@ -1,20 +1,32 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-NM_001282535.2_ponAbe2	840	840	865	1113	247	Frameshift insertion
-NM_001282535.2_ponAbe2	891	891	1167	1167	1	Frameshift insertion
-NM_001282535.2_nomLeu3	1351	1353	1639	1641	NA	Ignoring stop codon near end
-NM_001282535.2_rheMac3	1339	1341	1627	1629	NA	Ignoring stop codon near end
-NM_001282535.2_macFas5	1339	1341	1627	1629	NA	Ignoring stop codon near end
-NM_001282535.2_papAnu2	1339	1341	1627	1629	NA	Ignoring stop codon near end
-NM_001282535.2_speTri2	1309	1311	1597	1599	NA	Ignoring stop codon near end
-NM_001282535.2_criGri1	988	988	1264	1264	1	Frameshift deletion
-NM_001282535.2_criGri1	1300	1301	1588	1589	2	Frameshift deletion
+NM_001282535.2_ponAbe2	891	891	934	1185	248	Frameshift insertion
+NM_001282535.2_nomLeu3	1351	1353	1672	1674	NA	Ignoring stop codon near end
+NM_001282535.2_rheMac3	1339	1341	1660	1662	NA	Ignoring stop codon near end
+NM_001282535.2_macFas5	1339	1341	1660	1662	NA	Ignoring stop codon near end
+NM_001282535.2_papAnu2	1339	1341	1660	1662	NA	Ignoring stop codon near end
+NM_001282535.2_speTri2	1309	1311	1630	1632	NA	Ignoring stop codon near end
+NM_001282535.2_criGri1	988	988	1282	1282	1	Frameshift deletion
+NM_001282535.2_criGri1	1300	1301	1621	1622	2	Frameshift deletion
+NM_001282535.2_mesAur1	1324	1324	1645	1645	1	Frameshift deletion
+NM_001282535.2_mesAur1	1351	1351	1672	1672	1	Frameshift deletion
 NM_001282535.2_vicPac2	37	37	37	37	1	Frameshift deletion
-NM_001282535.2_vicPac2	265	267	280	282	NA	Stop codon
-NM_001282535.2_vicPac2	378	378	396	396	1	Frameshift insertion
-NM_001282535.2_vicPac2	424	426	448	450	NA	Stop codon
-NM_001282535.2_vicPac2	541	542	565	566	2	Frameshift deletion
-NM_001282535.2_vicPac2	835	835	859	859	1	Frameshift deletion
-NM_001282535.2_vicPac2	1048	1048	1327	1327	1	Frameshift deletion
-NM_001282535.2_vicPac2	1150	1152	1429	1431	NA	Stop codon
-NM_001282535.2_vicPac2	1321	1323	1609	1611	NA	Ignoring stop codon near end
-NM_001282535.2_echTel2	1294	1295	1582	1583	2	Frameshift deletion
+NM_001282535.2_vicPac2	265	267	289	291	NA	Stop codon
+NM_001282535.2_vicPac2	378	378	411	411	1	Frameshift insertion
+NM_001282535.2_vicPac2	424	426	463	465	NA	Stop codon
+NM_001282535.2_vicPac2	541	542	580	581	2	Frameshift deletion
+NM_001282535.2_vicPac2	835	835	874	874	1	Frameshift deletion
+NM_001282535.2_vicPac2	1048	1048	1357	1357	1	Frameshift deletion
+NM_001282535.2_vicPac2	1150	1152	1459	1461	NA	Stop codon
+NM_001282535.2_vicPac2	1321	1323	1642	1644	NA	Ignoring stop codon near end
+NM_001282535.2_camFer1	37	37	37	37	1	Frameshift deletion
+NM_001282535.2_camFer1	265	267	289	291	NA	Stop codon
+NM_001282535.2_camFer1	541	542	580	581	2	Frameshift deletion
+NM_001282535.2_camFer1	1048	1048	1357	1357	1	Frameshift deletion
+NM_001282535.2_camFer1	1150	1150	1459	1459	1	Frameshift deletion
+NM_001282535.2_camFer1	1188	1188	1506	1506	1	Frameshift insertion
+NM_001282535.2_camFer1	1321	1323	1642	1644	NA	Ignoring stop codon near end
+NM_001282535.2_odoRosDiv1	31	31	31	31	1	Frameshift deletion
+NM_001282535.2_odoRosDiv1	493	494	532	533	2	Frameshift deletion
+NM_001282535.2_odoRosDiv1	1006	1008	1303	1305	NA	Stop codon
+NM_001282535.2_pteAle1	321	321	346	351	4	Frameshift insertion
+NM_001282535.2_echTel2	1294	1295	1615	1616	2	Frameshift deletion

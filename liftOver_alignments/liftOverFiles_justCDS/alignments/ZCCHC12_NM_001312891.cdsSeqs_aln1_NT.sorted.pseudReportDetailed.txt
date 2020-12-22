@@ -1,7 +1,11 @@
 Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
-NM_001312891.2_nomLeu3	883	884	928	929	2	Frameshift deletion
-NM_001312891.2_papAnu2	700	701	703	704	2	Frameshift deletion
-NM_001312891.2_papAnu2	745	745	748	748	1	Frameshift deletion
-NM_001312891.2_papAnu2	772	773	775	776	2	Frameshift deletion
-NM_001312891.2_papAnu2	784	784	787	787	1	Frameshift deletion
-NM_001312891.2_eriEur2	1192	1193	1255	1256	2	Frameshift deletion
+NM_001312891.2_nomLeu3	883	884	934	935	2	Frameshift deletion
+NM_001312891.2_papAnu2	700	701	706	707	2	Frameshift deletion
+NM_001312891.2_papAnu2	745	745	751	751	1	Frameshift deletion
+NM_001312891.2_papAnu2	772	773	778	779	2	Frameshift deletion
+NM_001312891.2_papAnu2	784	784	790	790	1	Frameshift deletion
+NM_001312891.2_tupChi1	1204	1206	1369	1371	NA	Ignoring stop codon near end
+NM_001312891.2_myoDav1	1021	1023	1087	1089	NA	Stop codon
+NM_001312891.2_myoDav1	1105	1112	1174	1181	8	Frameshift deletion
+NM_001312891.2_myoDav1	1153	1154	1228	1229	2	Frameshift deletion
+NM_001312891.2_eriEur2	1192	1196	1357	1361	5	Frameshift deletion

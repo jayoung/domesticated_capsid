@@ -1,5 +1,5 @@
 Gene_type	Count	File
 Ref	1	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa
-Intact	20	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa
+Intact	31	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa
 Truncated	0	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa
-Pseud	8	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa
+Pseud	12	PNMA5_NM_001103150.cdsSeqs_aln1_NT.sorted.fa

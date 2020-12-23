@@ -231,6 +231,9 @@ I put the old alignments here: ../alignments_beforeBlastBack/
 mv */*goodOrthologs.fa .
 ../../../scripts/runMACSEsimpleInFrameAlignment.pl *goodOrthologs.fa
      xxxx running
+     xxx redo git sync after they finish
+     xxx remake plots. have a look. but they're still probably mixing up paralogs
+     
      
 
 

@@ -106,7 +106,11 @@ popd
 
 
 ### download the relevant chain files for liftOver:
+
 scripts/getChainFiles.pl
+
+did this once with the assemblies listed in the 100-way mafs (README.placentalMammals.txt), but then manually chose some newer assemblies and put their names in
+~/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.newerAssemblies.txt
 
 
 ### prep bed file for all RefSeq genes:
@@ -129,8 +133,6 @@ cd liftOver_alignments
 mv allRefSeqs.hg38.justCDS.liftOver.* liftOverFiles_justCDS/liftOverFiles
 
 I checked results for chimp (panTro4). With the scicomp installed version of liftOver (Kent_tools/20200519-linux.x86_64), there was one unmapped transcript that should have been mapped according to online liftOver (NM_001143978.3).  With a newly downloaded liftOver, it was mapped.
-
-
 
 ## get cds seqs using liftOver mapped.bed files:
 
@@ -171,7 +173,50 @@ cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
 then used R script to make a plot
 
 
-xxx perhaps I want to read in which seqs I rejected because they have NNNs and depict those as partial
+
+######## use liftOver but on a newer set of assemblies that were found in the 100-way maf:
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/liftOverFiles_justCDS_newAssemblies/liftOverFiles
+
+../../../scripts/runLiftOver.pl -assemblies=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.newerAssemblies.txt
+     xxx
+
+module load Kent_tools
+../../../scripts/getCDSseqsUsingAPIclient.bioperl -assemblies=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.newerAssemblies.txt -returnType=cds *.mapped.bed 
+module purge
+
+The unmapped.bed file will record which queries I don't have.
+The getCDSlog.txt files would record any species that totally failed, but there are none
+    grep 'Assembly not supported' *log.txt  | wc
+
+I ignore seqs that have >20% Ns - there are 33 seqs:
+    grep 'ignoring seq' *log.txt  | wc
+
+
+## collect together each ortholog for each gene
+../../../scripts/compileSameTranscriptSeqs.bioperl -assemblies=/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.newerAssemblies.txt ../../allRefSeqs.hg38.cds.fa *cds.fa
+mv *cdsSeqs.fa ../alignments/
+cd ../alignments/
+
+## align with MACSE
+../../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
+    xxx running (using sbatch)
+../../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
+../../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
+../../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
+
+
+mkdir aa_justAlignments
+mkdir aa_justAlignments/allPlacMammals aa_justAlignments/noPseuds
+
+cp *noPseuds.fa.degapcodon aa_justAlignments/noPseuds
+cp *aln1_NT.sorted.fa aa_justAlignments/allPlacMammals
+
+then used R script to make a plot
+
+
+
+###########
 
 xxx blast/blat back - is it going to correct location?
 
@@ -184,13 +229,30 @@ xxx perhaps I want to use more recent genomes for some species?
 Using liftOver means the number of things called pseudogenes is a lot lower (e.g. for CCDC8). 
 The maf alignments missed out poorly-aligning but in-frame regions
 
-But using liftOver means a lot of species are missing entirely (e.g. for ARC), because liftOver failed.
+But using liftOver means some species are missing entirely (e.g. for ARC), because liftOver failed.
 
-xxx now I have run liftOver with just the CDS - see how much better that does.
+# try playing with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate:
 
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/test
+
+## test on ARC in rhesus - assembly gap means first 98 bp are missing
+grep 'NM_015193' ../allRefSeqs.hg38.justCDS.bed  > ARC_NM_015193.bed
+
+## default settings - no hit
+../liftOver -minMatch=0.1 ARC_NM_015193.bed /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToRheMac3.over.chain.gz ARC_NM_015193.liftOver.rheMac3.default.mapped.bed  ARC_NM_015193.liftOver.rheMac3.default.unmapped.bed
+
+## add fudgeThick - no hit
+../liftOver -minMatch=0.1 -fudgeThick ARC_NM_015193.bed /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToRheMac3.over.chain.gz ARC_NM_015193.liftOver.rheMac3.fudgeThick.mapped.bed  ARC_NM_015193.liftOver.rheMac3.fudgeThick.unmapped.bed
+
+## add fudgeThick and minBlocks=0.1 - no hit
+../liftOver -minMatch=0.1 -minBlocks=0.1 -fudgeThick ARC_NM_015193.bed /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToRheMac3.over.chain.gz ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThick.mapped.bed  ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThick.unmapped.bed
+
+## add -multiple - no hit.
+../liftOver -minMatch=0.1 -minBlocks=0.1 -fudgeThick -multiple ARC_NM_015193.bed /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToRheMac3.over.chain.gz ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThickMultiple.mapped.bed  ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThickMultiple.unmapped.bed
 
 xx other ideas:
-play with liftOver parameters to report partial genes, or fudge edges, will also improve its hit rate
+
+use NEWER assemblies chain files for some species
 
 use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
 

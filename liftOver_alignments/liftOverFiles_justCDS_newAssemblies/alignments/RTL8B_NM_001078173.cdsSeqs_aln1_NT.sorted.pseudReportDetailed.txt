@@ -1,0 +1,13 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001078173.2_nomLeu3	58	58	142	142	1	Frameshift deletion
+NM_001078173.2_nomLeu3	330	330	427	435	7	Frameshift insertion
+NM_001078173.2_mesAur1	136	136	220	220	1	Frameshift deletion
+NM_001078173.2_mesAur1	267	267	360	360	1	Frameshift insertion
+NM_001078173.2_mesAur1	307	307	403	403	1	Frameshift deletion
+NM_001078173.2_oryCun2	291	291	387	387	1	Frameshift insertion
+NM_001078173.2_oryCun2	333	333	441	459	1	Frameshift insertion
+NM_001078173.2_oviAri4	177	177	264	264	1	Frameshift insertion
+NM_001078173.2_oviAri4	207	207	297	297	1	Frameshift insertion
+NM_001078173.2_oviAri4	295	295	391	391	1	Frameshift deletion
+NM_001078173.2_oviAri4	328	329	424	425	2	Frameshift deletion
+NM_001078173.2_felCat9	169	169	253	253	1	Frameshift deletion

@@ -14,6 +14,14 @@ species_dat[,"isMammal"] <- ! species_dat[,"Species.set"] %in% c("Aves","Fish","
 
 species_dat[,"Assembly.name.short"] <- gsub("\\d+$","",species_dat[,"Assembly.name"], perl=TRUE)
 
+### get newer assembly names:
+newerAssemblies <- scan("/Users/jayoung/Desktop/mac_workStuff/lib/hg38.README.placentalMammals.newerAssemblies.txt", what="character", sep="\n")
+temp <- gsub("\\d+$","",newerAssemblies, perl=TRUE)
+table(temp %in% species_dat[,"Assembly.name.short"])
+species_dat[,"newerAssembly"] <- NA
+species_dat[match(temp, species_dat[,"Assembly.name.short"]),"newerAssembly"] <- newerAssemblies
+rm(temp)
+
 #### species tree
 tree <- read.tree("/Users/jayoung/Desktop/mac_workStuff/lib/hg38.100way.nh")
 ## just mammals
@@ -21,6 +29,13 @@ tree_mammals <- keep.tip(tree, species_dat[which(species_dat[,"isMammal"]),"Asse
 
 ## just placental mammals
 tree_placMammals <- drop.tip(tree_mammals, c("monDom5","sarHar1","macEug2","ornAna1"))
+
+tree_placMammals_shortAssemblyNames <- tree_placMammals
+tree_placMammals_shortAssemblyNames$tip.label <- gsub("\\d+$","",tree_placMammals_shortAssemblyNames$tip.label, perl=TRUE)
+
+tree_placMammals_newAssemblyNames <- tree_placMammals_shortAssemblyNames
+tree_placMammals_newAssemblyNames$tip.label <- species_dat[match(tree_placMammals_shortAssemblyNames$tip.label, species_dat[,"Assembly.name.short"]),"newerAssembly"]
+
 
 ## a version with common species names
 tree_placMammals_commonNames <- tree_placMammals
@@ -172,9 +187,7 @@ liftOverLogs <- lapply(liftOverLogFiles, scan, what="character", sep="\n", quiet
 liftOverImpossible <- names(liftOverLogs) [which( sapply(liftOverLogs, function(x) {
     sum(grepl("Assembly not supported by ucscApiClient", x))>0
 }) )]
-
-
-xxx
+# there were none
 
 liftOverSeqsWithNs <- lapply( liftOverLogs, function(x) { 
     y <- grep("of bases are Ns", x, value=TRUE)
@@ -189,17 +202,15 @@ liftOverSeqsWithNs <- lapply( liftOverLogs, function(x) {
 })
 
 
-## get a tree with only the species where liftOver is possible:
-tree_placMammals_liftOverSubset <- drop.tip(tree_placMammals, liftOverImpossible)
-## a version with common species names
-tree_placMammals_liftOverSubset_commonNames <- tree_placMammals_liftOverSubset
-tree_placMammals_liftOverSubset_commonNames$tip.label <- species_dat[ match(tree_placMammals_liftOverSubset_commonNames$tip.label, species_dat[,"Assembly.name"]), "Common.name" ]   
-tree_placMammals_liftOverSubset_commonNames <- rotate_all_nodes(tree_placMammals_liftOverSubset_commonNames)
 
+# xxx get a version of tree_placMammals that has short names
 
 liftOver_results <- lapply(liftOver_pseudReportFiles, 
-                           readLiftOverResults, 
-                           dir="liftOver_alignments/liftOverFiles_justCDS/alignments")
+                    readLiftOverResults, 
+                    assemblyColNameInfo="newerAssembly",
+                    refAssembly="hg38",
+                    dir="liftOver_alignments/liftOverFiles_justCDS_newAssemblies/alignments",
+                    tree=tree_placMammals_newAssemblyNames)
 
 ## note which seqs were truncated by Ns so much that I didn't try to align them (from liftOverSeqsWithNs)
 liftOver_results <- lapply( analysisNames, function(x)  {

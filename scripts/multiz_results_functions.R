@@ -45,12 +45,12 @@ readLiftOverResults <- function(file=liftOver_pseudReportFile,
                                 dir=NULL,
                                 refAssembly="hg38", 
                                 tree=tree_placMammals_liftOverSubset, 
-                                info=species_dat,
+                                info=species_dat, assemblyColNameInfo="Assembly.name",
                                 pseudReportFileSuffix=".cdsSeqs_aln1_NT.sorted.pseudReportEachGene.txt") {
     
     ## start the table using the tree and info table
     results <- data.frame(assemblyName=tree$tip.label, row.names=tree$tip.label)
-    results[,"commonName"] <- info[ match(results[,"assemblyName"], info[,"Assembly.name"]), "Common.name" ]
+    results[,"commonName"] <- info[ match(results[,"assemblyName"], info[,assemblyColNameInfo]), "Common.name" ]
     results[,"status"] <- factor(NA, 
                                  levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
     results[which(results[,"assemblyName"]==refAssembly),"status"] <- "Reference"

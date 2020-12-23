@@ -1,0 +1,5 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_015193.5_nomLeu3	118	119	121	122	2	Frameshift deletion
+NM_015193.5_camFer1	891	891	1024	1038	14	Frameshift insertion
+NM_015193.5_oviAri4	283	284	289	290	2	Frameshift deletion
+NM_015193.5_ailMel1	40	40	43	43	1	Frameshift deletion

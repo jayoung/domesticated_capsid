@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	RTL3_NM_152694.cdsSeqs_aln1_NT.sorted.fa
+Intact	14	RTL3_NM_152694.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	RTL3_NM_152694.cdsSeqs_aln1_NT.sorted.fa
+Pseud	31	RTL3_NM_152694.cdsSeqs_aln1_NT.sorted.fa

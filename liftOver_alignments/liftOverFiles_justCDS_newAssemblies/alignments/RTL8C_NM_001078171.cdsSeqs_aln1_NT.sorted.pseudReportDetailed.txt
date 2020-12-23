@@ -1,0 +1,15 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001078171.2_calJac3	0	0	2	9	8	Frameshift insertion
+NM_001078171.2_calJac3	67	69	151	153	NA	Stop codon
+NM_001078171.2_calJac3	259	261	355	357	NA	Stop codon
+NM_001078171.2_rn6	67	67	151	151	1	Frameshift deletion
+NM_001078171.2_rn6	142	166	235	259	25	Frameshift deletion
+NM_001078171.2_rn6	252	252	348	348	1	Frameshift insertion
+NM_001078171.2_rn6	319	321	415	417	NA	Ignoring stop codon near end
+NM_001078171.2_bosTau9	10	12	19	21	NA	Stop codon
+NM_001078171.2_bosTau9	79	79	172	172	1	Frameshift deletion
+NM_001078171.2_bosTau9	235	237	328	330	NA	Stop codon
+NM_001078171.2_bosTau9	283	283	379	379	1	Frameshift deletion
+NM_001078171.2_felCat9	169	169	262	262	1	Frameshift deletion
+NM_001078171.2_ailMel1	16	16	25	25	1	Frameshift deletion
+NM_001078171.2_myoDav1	85	85	178	178	1	Frameshift deletion

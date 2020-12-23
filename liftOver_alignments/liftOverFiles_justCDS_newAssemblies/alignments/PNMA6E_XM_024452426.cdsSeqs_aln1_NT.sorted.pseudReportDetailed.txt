@@ -1,0 +1,8 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_024452426.1_otoGar3	1051	1053	2608	2610	NA	Ignoring stop codon near end
+XM_024452426.1_susScr11	726	726	1648	1668	20	Frameshift insertion
+XM_024452426.1_orcOrc1	1084	1085	2665	2666	2	Frameshift deletion
+XM_024452426.1_pteVam1	836	838	1924	1926	NA	Stop codon
+XM_024452426.1_myoDav1	675	675	682	1311	209	Frameshift insertion
+XM_024452426.1_eptFus1	678	678	1317	1578	202	Frameshift insertion
+XM_024452426.1_eptFus1	837	837	1882	2337	20	Frameshift insertion

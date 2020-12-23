@@ -1,0 +1,21 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_007257.6_jacJac1	1072	1073	1126	1127	2	Frameshift deletion
+NM_007257.6_chiLan1	715	717	736	738	NA	Stop codon
+NM_007257.6_octDeg1	145	145	163	163	1	Frameshift deletion
+NM_007257.6_octDeg1	283	284	301	302	2	Frameshift deletion
+NM_007257.6_octDeg1	331	332	349	350	2	Frameshift deletion
+NM_007257.6_octDeg1	364	365	382	383	2	Frameshift deletion
+NM_007257.6_octDeg1	739	740	760	761	2	Frameshift deletion
+NM_007257.6_octDeg1	763	764	790	791	2	Frameshift deletion
+NM_007257.6_octDeg1	829	830	856	857	2	Frameshift deletion
+NM_007257.6_octDeg1	904	905	952	953	2	Frameshift deletion
+NM_007257.6_octDeg1	979	979	1027	1027	1	Frameshift deletion
+NM_007257.6_octDeg1	1084	1085	1150	1151	2	Frameshift deletion
+NM_007257.6_odoRosDiv1	823	823	850	850	1	Frameshift deletion
+NM_007257.6_lepWed1	75	75	81	81	1	Frameshift insertion
+NM_007257.6_conCri1	82	83	88	89	2	Frameshift deletion
+NM_007257.6_conCri1	217	217	235	235	1	Frameshift deletion
+NM_007257.6_conCri1	460	460	478	478	1	Frameshift deletion
+NM_007257.6_conCri1	514	514	535	535	1	Frameshift deletion
+NM_007257.6_conCri1	613	615	634	636	NA	Stop codon
+NM_007257.6_dasNov3	1072	1073	1126	1127	2	Frameshift deletion

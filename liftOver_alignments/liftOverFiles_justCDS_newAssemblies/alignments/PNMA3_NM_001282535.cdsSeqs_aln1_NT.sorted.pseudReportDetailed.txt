@@ -1,0 +1,31 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001282535.2_nomLeu3	1351	1353	1417	1419	NA	Ignoring stop codon near end
+NM_001282535.2_rheMac10	1339	1341	1405	1407	NA	Ignoring stop codon near end
+NM_001282535.2_macFas5	1339	1341	1405	1407	NA	Ignoring stop codon near end
+NM_001282535.2_papAnu4	1339	1341	1405	1407	NA	Ignoring stop codon near end
+NM_001282535.2_speTri2	1309	1311	1375	1377	NA	Ignoring stop codon near end
+NM_001282535.2_criGri1	988	988	1030	1030	1	Frameshift deletion
+NM_001282535.2_criGri1	1300	1301	1366	1367	2	Frameshift deletion
+NM_001282535.2_mesAur1	1324	1324	1390	1390	1	Frameshift deletion
+NM_001282535.2_mesAur1	1351	1351	1417	1417	1	Frameshift deletion
+NM_001282535.2_vicPac2	37	37	37	37	1	Frameshift deletion
+NM_001282535.2_vicPac2	265	267	289	291	NA	Stop codon
+NM_001282535.2_vicPac2	378	378	411	411	1	Frameshift insertion
+NM_001282535.2_vicPac2	424	426	463	465	NA	Stop codon
+NM_001282535.2_vicPac2	541	542	580	581	2	Frameshift deletion
+NM_001282535.2_vicPac2	835	835	874	874	1	Frameshift deletion
+NM_001282535.2_vicPac2	1048	1048	1099	1099	1	Frameshift deletion
+NM_001282535.2_vicPac2	1150	1152	1204	1206	NA	Stop codon
+NM_001282535.2_vicPac2	1321	1323	1387	1389	NA	Ignoring stop codon near end
+NM_001282535.2_camFer1	37	37	37	37	1	Frameshift deletion
+NM_001282535.2_camFer1	265	267	289	291	NA	Stop codon
+NM_001282535.2_camFer1	541	542	580	581	2	Frameshift deletion
+NM_001282535.2_camFer1	1048	1048	1099	1099	1	Frameshift deletion
+NM_001282535.2_camFer1	1150	1150	1204	1204	1	Frameshift deletion
+NM_001282535.2_camFer1	1188	1188	1251	1251	1	Frameshift insertion
+NM_001282535.2_camFer1	1321	1323	1387	1389	NA	Ignoring stop codon near end
+NM_001282535.2_odoRosDiv1	31	31	31	31	1	Frameshift deletion
+NM_001282535.2_odoRosDiv1	493	494	532	533	2	Frameshift deletion
+NM_001282535.2_odoRosDiv1	1006	1008	1051	1053	NA	Stop codon
+NM_001282535.2_pteAle1	321	321	346	351	4	Frameshift insertion
+NM_001282535.2_echTel2	1294	1295	1360	1361	2	Frameshift deletion

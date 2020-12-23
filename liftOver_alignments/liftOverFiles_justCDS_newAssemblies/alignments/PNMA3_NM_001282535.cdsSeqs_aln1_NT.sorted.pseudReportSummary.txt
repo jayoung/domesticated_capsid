@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA3_NM_001282535.cdsSeqs_aln1_NT.sorted.fa
+Intact	23	PNMA3_NM_001282535.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	PNMA3_NM_001282535.cdsSeqs_aln1_NT.sorted.fa
+Pseud	7	PNMA3_NM_001282535.cdsSeqs_aln1_NT.sorted.fa

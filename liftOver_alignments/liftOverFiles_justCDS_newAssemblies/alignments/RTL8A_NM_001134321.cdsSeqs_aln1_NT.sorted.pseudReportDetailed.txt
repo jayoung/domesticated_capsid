@@ -1,0 +1,16 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001134321.2_jacJac1	238	239	439	440	2	Frameshift deletion
+NM_001134321.2_jacJac1	247	249	451	453	NA	Ignoring stop codon near end
+NM_001134321.2_micOch1	247	249	451	453	NA	Ignoring stop codon near end
+NM_001134321.2_criGri1	10	12	19	21	NA	Stop codon
+NM_001134321.2_criGri1	214	215	379	380	2	Frameshift deletion
+NM_001134321.2_criGri1	247	249	451	453	NA	Ignoring stop codon near end
+NM_001134321.2_mesAur1	136	136	220	220	1	Frameshift deletion
+NM_001134321.2_mesAur1	211	212	367	368	2	Frameshift deletion
+NM_001134321.2_mm39	244	245	448	449	2	Frameshift deletion
+NM_001134321.2_cavPor3	193	194	283	284	2	Frameshift deletion
+NM_001134321.2_ochPri3	220	220	403	403	1	Frameshift deletion
+NM_001134321.2_felCat9	202	202	328	328	1	Frameshift deletion
+NM_001134321.2_eriEur2	217	218	382	383	2	Frameshift deletion
+NM_001134321.2_conCri1	208	211	340	367	4	Frameshift deletion
+NM_001134321.2_loxAfr3	205	212	337	368	8	Frameshift deletion

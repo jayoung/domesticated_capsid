@@ -1,0 +1,4 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+XM_011513341.3_panTro6	233	235	328	330	NA	Stop codon
+XM_011513341.3_panTro6	233	235	382	384	NA	Stop codon
+XM_011513341.3_panTro6	234	234	235	546	311	Frameshift insertion

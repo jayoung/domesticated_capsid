@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMA1_NM_006029.cdsSeqs_aln1_NT.sorted.fa
+Intact	52	PNMA1_NM_006029.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	PNMA1_NM_006029.cdsSeqs_aln1_NT.sorted.fa
+Pseud	3	PNMA1_NM_006029.cdsSeqs_aln1_NT.sorted.fa

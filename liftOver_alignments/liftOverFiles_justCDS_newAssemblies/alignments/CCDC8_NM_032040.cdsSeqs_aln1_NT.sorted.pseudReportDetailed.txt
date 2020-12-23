@@ -1,0 +1,11 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_032040.5_speTri2	1219	1220	2404	2405	2	Frameshift deletion
+NM_032040.5_jacJac1	1615	1615	3439	3439	1	Frameshift deletion
+NM_032040.5_micOch1	952	952	1366	1366	1	Frameshift deletion
+NM_032040.5_criGri1	977	979	1540	1542	NA	Stop codon
+NM_032040.5_criGri1	978	978	1393	1812	418	Frameshift insertion
+NM_032040.5_oviAri4	711	711	769	837	68	Frameshift insertion
+NM_032040.5_capHir1	1027	1027	1879	1879	1	Frameshift deletion
+NM_032040.5_myoDav1	592	593	643	644	2	Frameshift deletion
+NM_032040.5_myoDav1	858	858	1028	1086	59	Frameshift insertion
+NM_032040.5_myoDav1	1275	1275	2749	2853	83	Frameshift insertion

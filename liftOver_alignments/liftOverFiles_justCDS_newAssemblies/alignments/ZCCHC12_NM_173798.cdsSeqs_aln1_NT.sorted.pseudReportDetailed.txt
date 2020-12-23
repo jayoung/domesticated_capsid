@@ -1,0 +1,8 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_173798.4_nomLeu3	883	884	934	935	2	Frameshift deletion
+NM_173798.4_tupChi1	1204	1206	1369	1371	NA	Ignoring stop codon near end
+NM_173798.4_susScr11	835	835	856	856	1	Frameshift deletion
+NM_173798.4_myoDav1	1021	1023	1087	1089	NA	Stop codon
+NM_173798.4_myoDav1	1105	1112	1174	1181	8	Frameshift deletion
+NM_173798.4_myoDav1	1153	1154	1228	1229	2	Frameshift deletion
+NM_173798.4_eriEur2	1192	1196	1357	1361	5	Frameshift deletion

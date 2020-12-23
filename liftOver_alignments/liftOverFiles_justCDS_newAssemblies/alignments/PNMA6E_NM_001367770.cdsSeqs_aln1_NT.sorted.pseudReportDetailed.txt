@@ -1,0 +1,23 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_001367770.1_panTro6	736	738	2875	2943	5	Frameshift insertion
+NM_001367770.1_panTro6	786	786	3268	3312	5	Frameshift insertion
+NM_001367770.1_gorGor6	664	665	1597	1598	2	Frameshift deletion
+NM_001367770.1_gorGor6	736	738	2875	2943	5	Frameshift insertion
+NM_001367770.1_gorGor6	786	786	3268	3312	5	Frameshift insertion
+NM_001367770.1_rheMac10	786	786	3292	3312	8	Frameshift insertion
+NM_001367770.1_chlSab2	454	455	796	797	2	Frameshift deletion
+NM_001367770.1_chlSab2	739	759	2944	2967	5	Frameshift insertion
+NM_001367770.1_rn6	475	476	826	827	2	Frameshift deletion
+NM_001367770.1_hetGla2	735	735	2215	2874	298	Frameshift insertion
+NM_001367770.1_chiLan1	669	669	1603	1707	103	Frameshift insertion
+NM_001367770.1_susScr11	502	502	862	862	1	Frameshift deletion
+NM_001367770.1_susScr11	1540	1540	5011	5011	1	Frameshift deletion
+NM_001367770.1_orcOrc1	835	835	3379	3379	1	Frameshift deletion
+NM_001367770.1_orcOrc1	1924	1925	6163	6164	2	Frameshift deletion
+NM_001367770.1_oviAri4	735	735	2215	2874	187	Frameshift insertion
+NM_001367770.1_pteVam1	940	940	3610	3610	1	Frameshift deletion
+NM_001367770.1_pteVam1	1661	1663	5437	5439	NA	Stop codon
+NM_001367770.1_myoDav1	963	963	3634	3645	10	Frameshift insertion
+NM_001367770.1_myoDav1	1579	1579	5227	5227	1	Frameshift deletion
+NM_001367770.1_eptFus1	735	735	2215	2874	307	Frameshift insertion
+NM_001367770.1_eptFus1	1509	1509	4192	4980	661	Frameshift insertion

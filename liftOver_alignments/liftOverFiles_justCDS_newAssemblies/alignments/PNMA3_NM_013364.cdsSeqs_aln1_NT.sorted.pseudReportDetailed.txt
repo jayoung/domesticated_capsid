@@ -1,0 +1,71 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_013364.6_criGri1	988	988	1060	1060	1	Frameshift deletion
+NM_013364.6_cavPor3	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_ochPri3	118	120	142	144	NA	Stop codon
+NM_013364.6_ochPri3	385	387	418	420	NA	Stop codon
+NM_013364.6_ochPri3	520	520	559	559	1	Frameshift deletion
+NM_013364.6_ochPri3	609	609	670	675	4	Frameshift insertion
+NM_013364.6_ochPri3	793	795	862	864	NA	Stop codon
+NM_013364.6_ochPri3	844	846	916	918	NA	Stop codon
+NM_013364.6_ochPri3	1186	1187	1354	1355	2	Frameshift deletion
+NM_013364.6_susScr11	1303	1303	1519	1519	1	Frameshift deletion
+NM_013364.6_susScr11	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_vicPac2	37	37	40	40	1	Frameshift deletion
+NM_013364.6_vicPac2	265	267	289	291	NA	Stop codon
+NM_013364.6_vicPac2	378	378	411	411	1	Frameshift insertion
+NM_013364.6_vicPac2	424	426	463	465	NA	Stop codon
+NM_013364.6_vicPac2	541	542	598	599	2	Frameshift deletion
+NM_013364.6_vicPac2	835	835	904	904	1	Frameshift deletion
+NM_013364.6_vicPac2	1048	1048	1138	1138	1	Frameshift deletion
+NM_013364.6_vicPac2	1150	1152	1270	1272	NA	Stop codon
+NM_013364.6_vicPac2	1378	1378	1621	1621	1	Frameshift deletion
+NM_013364.6_camFer1	37	37	40	40	1	Frameshift deletion
+NM_013364.6_camFer1	265	267	289	291	NA	Stop codon
+NM_013364.6_camFer1	541	542	598	599	2	Frameshift deletion
+NM_013364.6_camFer1	1048	1048	1138	1138	1	Frameshift deletion
+NM_013364.6_camFer1	1150	1150	1270	1270	1	Frameshift deletion
+NM_013364.6_camFer1	1188	1188	1359	1359	1	Frameshift insertion
+NM_013364.6_camFer1	1378	1378	1621	1621	1	Frameshift deletion
+NM_013364.6_turTru2	16	16	19	19	1	Frameshift deletion
+NM_013364.6_panHod1	10	11	13	14	2	Frameshift deletion
+NM_013364.6_panHod1	127	128	151	152	2	Frameshift deletion
+NM_013364.6_panHod1	286	286	310	310	1	Frameshift deletion
+NM_013364.6_panHod1	784	806	853	875	23	Frameshift deletion
+NM_013364.6_panHod1	949	951	1021	1023	NA	Stop codon
+NM_013364.6_panHod1	1318	1318	1534	1534	1	Frameshift deletion
+NM_013364.6_bosTau9	10	11	13	14	2	Frameshift deletion
+NM_013364.6_bosTau9	343	345	373	375	NA	Stop codon
+NM_013364.6_bosTau9	652	654	721	723	NA	Stop codon
+NM_013364.6_bosTau9	949	951	1021	1023	NA	Stop codon
+NM_013364.6_bosTau9	1060	1062	1150	1152	NA	Stop codon
+NM_013364.6_oviAri4	10	11	13	14	2	Frameshift deletion
+NM_013364.6_oviAri4	127	128	151	152	2	Frameshift deletion
+NM_013364.6_oviAri4	172	172	196	196	1	Frameshift deletion
+NM_013364.6_oviAri4	286	286	310	310	1	Frameshift deletion
+NM_013364.6_oviAri4	784	806	853	875	23	Frameshift deletion
+NM_013364.6_oviAri4	949	951	1021	1023	NA	Stop codon
+NM_013364.6_oviAri4	1318	1318	1534	1534	1	Frameshift deletion
+NM_013364.6_capHir1	10	11	13	14	2	Frameshift deletion
+NM_013364.6_capHir1	127	128	151	152	2	Frameshift deletion
+NM_013364.6_capHir1	286	286	310	310	1	Frameshift deletion
+NM_013364.6_capHir1	784	806	853	875	23	Frameshift deletion
+NM_013364.6_capHir1	949	951	1021	1023	NA	Stop codon
+NM_013364.6_capHir1	1318	1318	1534	1534	1	Frameshift deletion
+NM_013364.6_cerSim1	1234	1235	1411	1412	2	Frameshift deletion
+NM_013364.6_cerSim1	1381	1381	1624	1624	1	Frameshift deletion
+NM_013364.6_odoRosDiv1	31	31	34	34	1	Frameshift deletion
+NM_013364.6_odoRosDiv1	493	494	532	533	2	Frameshift deletion
+NM_013364.6_odoRosDiv1	1006	1008	1081	1083	NA	Stop codon
+NM_013364.6_pteAle1	321	321	346	351	4	Frameshift insertion
+NM_013364.6_eptFus1	1357	1359	1594	1596	NA	Ignoring stop codon near end
+NM_013364.6_eriEur2	1345	1347	1582	1584	NA	Ignoring stop codon near end
+NM_013364.6_sorAra2	19	19	22	22	1	Frameshift deletion
+NM_013364.6_sorAra2	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_conCri1	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_eleEdw1	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_triMan1	412	412	451	451	1	Frameshift deletion
+NM_013364.6_triMan1	636	636	705	705	1	Frameshift insertion
+NM_013364.6_triMan1	922	924	994	996	NA	Stop codon
+NM_013364.6_triMan1	1174	1175	1342	1343	2	Frameshift deletion
+NM_013364.6_echTel2	1381	1383	1624	1626	NA	Ignoring stop codon near end
+NM_013364.6_dasNov3	1357	1359	1594	1596	NA	Ignoring stop codon near end

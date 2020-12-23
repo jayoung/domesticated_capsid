@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	LDOC1_NM_012317.cdsSeqs_aln1_NT.sorted.fa
+Intact	48	LDOC1_NM_012317.cdsSeqs_aln1_NT.sorted.fa
+Truncated	0	LDOC1_NM_012317.cdsSeqs_aln1_NT.sorted.fa
+Pseud	2	LDOC1_NM_012317.cdsSeqs_aln1_NT.sorted.fa

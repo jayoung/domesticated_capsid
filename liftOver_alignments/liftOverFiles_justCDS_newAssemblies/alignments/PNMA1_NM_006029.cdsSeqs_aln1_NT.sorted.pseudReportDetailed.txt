@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_006029.5_nomLeu3	706	706	727	727	1	Frameshift deletion
+NM_006029.5_nomLeu3	736	736	757	757	1	Frameshift deletion
+NM_006029.5_turTru2	766	766	847	847	1	Frameshift deletion
+NM_006029.5_turTru2	972	972	1056	1056	1	Frameshift insertion
+NM_006029.5_dasNov3	139	140	139	140	2	Frameshift deletion

@@ -1,0 +1,6 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+NM_012317.4_mesAur1	422	424	454	456	NA	Ignoring stop codon near end
+NM_012317.4_oviAri4	226	226	235	235	1	Frameshift deletion
+NM_012317.4_loxAfr3	102	102	105	105	1	Frameshift insertion
+NM_012317.4_loxAfr3	162	162	171	171	1	Frameshift insertion
+NM_012317.4_loxAfr3	440	442	511	513	NA	Ignoring stop codon near end

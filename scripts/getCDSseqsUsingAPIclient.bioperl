@@ -17,20 +17,17 @@ my $inferAssembly = 1;
 my $assemblyName;
 my $usePreviewSite = 1;  ## for genomes not available at the main UCSC site, should we try the preview site? default is yes.
 my $maxNs = 0.2;  # proportion of the seq that can be Ns. Set this to 1 to not filter on N content
+my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
 
 ## get any non-default options from commandline
 GetOptions("returnType=s" => \$returnType, # cds or transcript
            "inferAssembly=i" => \$inferAssembly,
            "assemblyName=s" => \$assemblyName,
+           "assemblies=s" => \$assemblyListFile,
            "usePreviewSite=i" => \$usePreviewSite,
            "maxNs=i" => \$maxNs
            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
-
-my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
-
-
-# https://genome-preview.soe.ucsc.edu/cgi-bin/hubApi/getData/sequence?genome=camFer1;chrom=KB016485;start=316036;end=318886
 
 ######
 

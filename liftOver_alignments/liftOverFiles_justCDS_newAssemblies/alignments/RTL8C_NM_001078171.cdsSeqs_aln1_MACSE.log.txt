@@ -1,0 +1,13 @@
+50	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+compute kmer dist 
+build UPGMA done 
++++++++++++++++++++++++++++++++++++++++++++++++++start refining the alignment
+.........................................+.................................................+.....-.
+Refine 2 cut : sum of pair========= 1 => -553934.3
+.....+...........................................................................................-.
+Refine 2 cut : sum of pair========= 2 => -553941.3
+......---------------------------------------------------------------------------------------------
+Refine 2 cut : sum of pair========= 3 => -553941.3
+true
+RTL8C_NM_001078171.cdsSeqs_aln1_NT.fa

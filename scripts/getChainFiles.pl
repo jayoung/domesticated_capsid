@@ -7,7 +7,8 @@ use strict;
 ### script to download chain files (for liftOver) for hg38 versus placental mammals, using the same assemblies used by the 100-way alignment
 
 ### this has a list of the assemblies we expect to see
-my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
+my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.newerAssemblies.txt";
+#my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
 
 ## specify any assemblies we DON'T want chain files for here
 my %assembliesToIgnore;

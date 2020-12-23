@@ -1,0 +1,42 @@
+51	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+Start building smaller alignments 30
+compute kmer dist 
+build UPGMA done 
++++++++++++++++++++++++++++++start refining the alignment
+++.++..+..............................+..+...+..++......+..
+Refine 2 cut : sum of pair========= 1 => -685802.0
++.............................++..+.........+............-.
+Refine 2 cut : sum of pair========= 2 => -686108.0
+-...............-........................-..-..-....-....--
+Refine 2 cut : sum of pair========= 3 => -686108.0
+compute kmer dist 
+build UPGMA done 
+++++++++++++++++++++start refining the alignment
+++.++.+..+.+.+.++..++.+.+..++..++++......
+Refine 2 cut : sum of pair========= 1 => -176656.97
+.+..+.+....+.....+.........+...+.......-.
+Refine 2 cut : sum of pair========= 2 => -177629.97
++...+............+....++...++......+.....
+Refine 2 cut : sum of pair========= 3 => -178150.97
+....-......................+.............
+Refine 2 cut : sum of pair========= 4 => -178166.97
+.......................+...............-.
+Refine 2 cut : sum of pair========= 5 => -178171.97
+............-...+..............+.....++..
+Refine 2 cut : sum of pair========= 6 => -178677.97
+.+.+................+....+.++.......+....
+Refine 2 cut : sum of pair========= 7 => -178971.97
+....................+..................-.
+Refine 2 cut : sum of pair========= 8 => -178979.97
+.....................--------------------
+Refine 2 cut : sum of pair========= 9 => -178979.97
++Start refining the whole alignment of reliable sequences 51
+............................................+.+.....+..+.++......+.+.+++.....+.+.......+++++...+.+...
+Refine 2 cut : sum of pair========= 1 => -1377853.5
+.................+.....+........................+..........+..+..+.....+.+.........................-.
+Refine 2 cut : sum of pair========= 2 => -1379689.5
+..............................-...............-..-.......-...--....-.-.-.........--............-.-.--
+Refine 2 cut : sum of pair========= 3 => -1379689.5
+true
+PNMA3_NM_013364.cdsSeqs_aln1_NT.fa

@@ -27,7 +27,7 @@ GetOptions("suffix=s" => \$outfileSuffix,
            "baseDir=s" => \$baseDir,
            "accsFile=s" => \$accsFile,
            "orderBySpecies=i" => \$orderBySpecies,
-           "assemblyListFile=s" => \$assemblyListFile
+           "assemblies=s" => \$assemblyListFile,
            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 

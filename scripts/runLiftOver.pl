@@ -2,6 +2,7 @@
 
 use warnings;
 use strict;
+use Getopt::Long;
 
 
 ### script to download chain files (for liftOver) for hg38 versus placental mammals, using the same assemblies used by the 100-way alignment
@@ -21,7 +22,9 @@ use strict;
 
 ## I use downloaded chain files. I also tried using a remote chain file (e.g. http://hgdownload.cse.ucsc.edu/goldenPath/hg38/liftOver/hg38ToSusScr3.over.chain.gz), but it failed to find the lifted over region, despite the fact it succeeded with the same chain file stored locally. It was also slow.
 
-my $bedInputFile = "allRefSeqs.hg38.justCDS.bed";
+my $baseDir = "/fh/fast/malik_h/user/jayoung/miscMalikLab/domesticated_capsid";
+
+my $bedInputFile = "liftOver_alignments/allRefSeqs.hg38.justCDS.bed";
 
 ### this has a list of the assemblies we expect to see
 my $assemblyListFile = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/conservation_tracks/README.placentalMammals.txt";
@@ -32,24 +35,34 @@ $assembliesToIgnore{'hg38'}=1;  ## meaningless to chain against itself
 
 my $chainFilesDir = "/fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles";
 
-my $liftOverExecutable = "./liftOver";
+my $liftOverExecutable = "$baseDir/liftOver_alignments/liftOver";
 
 my $liftOverOptions = "-minMatch=0.1";
+
+
+GetOptions("baseDir=s" => \$baseDir,
+           "bed=s" => \$bedInputFile,
+           "assemblies=s" => \$assemblyListFile,
+           "options=s" => \$liftOverOptions,
+           "exe=s" => \$liftOverExecutable
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
 ######
 
 ## check that liftOver is in my path (need to have loaded Kent_tools module)
 if (!-e $liftOverExecutable) { die "\n\nterminating - listOver executable specified in script does not exist $liftOverExecutable\n\n"; }
-## old, when I was using the scicomp module:
+
+## old, when I was using the scicomp module for liftOver:
 #my $whichLiftOver = `which liftOver`;
 #if ($whichLiftOver eq "") {
 #    die "\n\nterminating - please run this command before running runLiftOver.pl :\n\nmodule load Kent_tools\n\n";
 #}
 
 ## check input files exist
+if (!-e $baseDir) { die "\n\nterminating - base dir does not exist $baseDir\n\n"; }
 if (!-e $assemblyListFile) { die "\n\nterminating - assembly list file does not exist $assemblyListFile\n\n"; }
 if (!-e $chainFilesDir) { die "\n\nterminating - chain files dir does not exist $chainFilesDir\n\n"; }
-if (!-e $bedInputFile) { die "\n\nterminating - bed input file does not exist $bedInputFile\n\n"; }
+if (!-e "$baseDir/$bedInputFile") { die "\n\nterminating - bed input file does not exist $baseDir/$bedInputFile\n\n"; }
 
 open (ASSEMBLIES, "< $assemblyListFile");
 my @filesGot;
@@ -67,6 +80,7 @@ while (<ASSEMBLIES>) {
     }
     
     my $outStem = $bedInputFile; 
+    if ($outStem =~ m/\//) { $outStem = (split /\//, $outStem)[-1]; }
     $outStem =~ s/\.bed$//;
     $outStem =~ s/\.hg38$//;
     
@@ -78,7 +92,7 @@ while (<ASSEMBLIES>) {
         next;
     }
     
-    my $liftOverCommand = "$liftOverExecutable $liftOverOptions $bedInputFile $chainFilesDir/$chainFile $outMapped $outUnmapped";
+    my $liftOverCommand = "$liftOverExecutable $liftOverOptions $baseDir/$bedInputFile $chainFilesDir/$chainFile $outMapped $outUnmapped";
     print "    running liftOver command:\n$liftOverCommand \n";
     system("$liftOverCommand");
 }

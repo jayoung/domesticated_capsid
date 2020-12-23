@@ -200,7 +200,7 @@ cd ../alignments/
 
 ## align with MACSE
 ../../../scripts/runMACSEsimpleInFrameAlignment.pl *cdsSeqs.fa
-    xxx running (using sbatch)
+    ran (using sbatch)
 ../../../scripts/reorderseqsMACSEbasedOnInputFile.bioperl --verbose=0 *aln1_NT.fa 
 ../../../scripts/checkAlignmentFrameshiftsStops.bioperl --MACSE=1 *aln1_NT.sorted.fa
 ../../../scripts/removegapsfromalignmentinframeonly.pl *.sorted.noPseuds.fa
@@ -218,11 +218,33 @@ then used R script to make a plot
 
 ###########
 
-xxx blast/blat back - is it going to correct location?
+###  xxx blast/blat the liftOver seqs to a reference human database - are they going to correct human gene, or to a paralog?
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/liftOverFiles_justCDS_newAssemblies/alignments
+
+../../../scripts/checkOrthologsBlastBackOK_sbatchWrapper.bioperl  *.cdsSeqs.fa 
+
+looks like probably quite a few non-orthologs
+
+I put the old alignments here: ../alignments_beforeBlastBack/
+
+mv */*goodOrthologs.fa .
+../../../scripts/runMACSEsimpleInFrameAlignment.pl *goodOrthologs.fa
+     xxxx running
+     
+
+
 
 xxx align paralogs with each other? ensure I don't have wrong orthologs
+e.g. ZCCHC12 and ZCCHC18 are primate-specific paralogs of one another according to Ensembl
+and there are various other duplications in that family e.g in carnivores
+
 
 xxx perhaps I want to use more recent genomes for some species?
+
+
+xxx model 0 paml:
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/liftOver_alignments/liftOverFiles_justCDS_newAssemblies/alignments
 
 ######### comparing multiz- and liftOver-based alignments
 
@@ -479,6 +501,8 @@ the unedited axt2phy.pl needs Bio/Graphics/Wiggle.pm, which I could not install,
 
 
 ##### github reminder: pushing edits back up to the github website:
+
+git status
 
 # subsequent updates:
 git add --verbose --all . 

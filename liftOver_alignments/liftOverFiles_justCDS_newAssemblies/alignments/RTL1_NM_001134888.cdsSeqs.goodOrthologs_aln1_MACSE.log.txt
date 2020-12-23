@@ -1,0 +1,6 @@
+50	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+compute kmer dist 
+build UPGMA done 
++++++++++++++++++++++++++++++++++++++++++++++++++start refining the alignment
++....+.+....+.+..++.++.....

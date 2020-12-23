@@ -1,0 +1,32 @@
+51	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+Start building smaller alignments 30
+compute kmer dist 
+build UPGMA done 
++++++++++++++++++++++++++++++start refining the alignment
+++.+.........++.++.+....+.+.....+...+.........+.........+..
+Refine 2 cut : sum of pair========= 1 => -275331.16
+........................+...........+....................-.
+Refine 2 cut : sum of pair========= 2 => -275528.56
+...+..................+......................+...+.......-.
+Refine 2 cut : sum of pair========= 3 => -275584.56
+...................+.....................................-.
+Refine 2 cut : sum of pair========= 4 => -275594.56
+.............--........-----..-..-....-..------------------
+Refine 2 cut : sum of pair========= 5 => -275594.56
+compute kmer dist 
+build UPGMA done 
+++++++++++++++++++++start refining the alignment
++...+................+..+........+.......
+Refine 2 cut : sum of pair========= 1 => -156231.0
+.--.......................-............--
+Refine 2 cut : sum of pair========= 2 => -156231.0
++Start refining the whole alignment of reliable sequences 51
++..+.......+......+................................++.+..+++..+......+....................+..........
+Refine 2 cut : sum of pair========= 1 => -861084.5
+.........-..........-.........................................................+......................
+Refine 2 cut : sum of pair========= 2 => -861099.5
+................................................................................-..---..-...-.-------
+Refine 2 cut : sum of pair========= 3 => -861099.5
+true
+LDOC1_NM_012317.cdsSeqs.goodOrthologs_aln1_NT.fa

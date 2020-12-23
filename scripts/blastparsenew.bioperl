@@ -1,0 +1,172 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SearchIO;
+use Bio::SearchIO::Writer::HSPTableWriter;
+
+#set signif
+my $signif = "1e-5";
+
+#set 0 or 1 for the two header lines
+my $wantheader = 1;
+#my $wantheader = 0;
+
+#### if yes, all output goes in a single file. If no, goes in one file per input 
+my $singleOutputFile = "no";
+#my $singleOutputFile = "yes";
+
+my $singleOutputFileName = "";
+#my $singleOutputFileName = "zz_allProcessedBlasts.txt";
+
+my $addOriginalOrderField = "yes";
+
+if (@ARGV==0) {die "\n\nterminating - please specify some files to work on \n\n";}
+
+my @files = @ARGV;
+
+#### print out the settings
+#print "\nsignif = $signif\nwantheader $wantheader\n";
+#print "singleOutputFile $singleOutputFile\n";
+if ($singleOutputFile eq "yes") {
+    #print "singleOutputFileName $singleOutputFileName\n";
+}
+if ($addOriginalOrderField eq "yes") { 
+    #print "adding result counter to each output line\n";
+}
+
+if ($singleOutputFile eq "yes") {
+    if (-e $singleOutputFileName) {
+        die "\n\nterminating - $singleOutputFileName exists already\n\n";
+    }
+    ### create it
+    system("touch $singleOutputFileName");
+}
+
+foreach my $file (@files){
+    if (!-e $file) {
+        die "\n\nterminating - file $file does not exist\n\n";
+    }
+    if ($file =~ m/procnew$|procnew\.txt$/) {
+        print "file $file looks like it's already processed\n";
+        next;
+    }
+    if ($file eq "error.log") {next;}
+    #print "file is $file\n";
+    my $resultsfile = "$file.procnew.txt";
+    #check to see if resultsfile exists already
+    if (-e $resultsfile) {
+        #print "$resultsfile exists already\n\n";
+        next;
+    }
+     
+    my $shortfilename = $file;
+    $shortfilename =~ s/\.blastnNT//;
+    $shortfilename =~ s/\.blastncelscaffs//;
+    $shortfilename =~ s/\.blast.+?$//;
+    #print "output file is $resultsfile\n";
+    #first, check to see if there were no hits
+    open  (QUERYFILE, "<$file");
+    #my $tagnohits = 0;
+    my $tagnohits = 1;
+    while ( <QUERYFILE> ) {
+        #if (m/No hits found/){
+        if (m/Sequences producing significant alignments/){
+            $tagnohits = 0;
+        }
+    }
+    close QUERYFILE;
+    #print "tagnohits is $tagnohits\n";
+    
+    if ($tagnohits eq 0){
+        #print "there were hits\n";
+        #alter these parameters...
+         my $blastObj = new Bio::SearchIO( -file   => $file,
+                                           -format => 'blast',
+                                           -signif => $signif,
+                                            );
+         my $writer = Bio::SearchIO::Writer::HSPTableWriter->new(
+                          -columns => [qw(query_name
+                                          query_length
+                                          hit_name
+                                          hit_length
+                                          expect
+                                          score
+                                          bits
+                                          rank
+                                          frac_identical_query
+                                          frac_conserved_query
+                                          length_aln_query
+                                          length_aln_hit
+                                          gaps_query
+                                          gaps_hit
+                                          start_query
+                                          end_query
+                                          start_hit
+                                          end_hit
+                                          strand_query
+                                          strand_hit
+                                          frame_hit
+                                          hit_description )] );
+
+        #print "then make the table\n";
+        open (OUTFILE, ">$resultsfile");
+        my $firstHeader1line = "yes";
+        my $firstHeader2line = "yes";
+        
+        my $resultCounter = 1;
+        
+        while ( my $result = $blastObj->next_result() ) {
+            my $string = $writer->to_string($result,1);
+            my @lines = split /\n/, $string;
+            foreach my $line (@lines) {
+                ## if we want to skip the headers:
+                if (($wantheader == 0) & (($line =~ m/^QUERY/)||($line =~ m/^-/))) { 
+                    next;
+                }
+                ## next two lines are for the situation where we've already seen a header, and don't want to print a second header in the output file
+                if ( $firstHeader1line eq "no" & $line =~ m/^QUERY/ ) { next; }
+                if ( $firstHeader2line eq "no" & $line =~ m/^---/ ) { next; }
+                if (($addOriginalOrderField eq "yes") & ($firstHeader2line eq "no")){ 
+                    $line .= "\t$resultCounter";
+                    $resultCounter++;
+                }
+                ## next two lines detect that we HAVE found our first header
+                if ( $firstHeader1line eq "yes" & $line =~ m/^QUERY/ ) { 
+                    $firstHeader1line="no";
+                    if ($addOriginalOrderField eq "yes") { $line .= "\tORIG_ORDER"; }
+                }
+                if ( $firstHeader2line eq "yes" & $line =~ m/^---/ ) { 
+                    $firstHeader2line="no";
+                    if ($addOriginalOrderField eq "yes") { $line .= "\t------"; }
+                }
+                #print OUTFILE $writer ->to_string($result,1);
+                $line =~ s/\tlcl\|/\t/;
+                print OUTFILE "$line\n";
+            }
+        }
+        #comment out next line if you don't want headers in the output...
+        #print OUTFILE  $blastObj->table_labels();
+        #print OUTFILE  $blastObj->table();
+        close OUTFILE;
+    } else {
+        open (OUTFILE, ">$resultsfile");
+        print OUTFILE "$shortfilename\tno_hits_in_blast\n";
+        close OUTFILE;
+    }
+    
+    if (-z $resultsfile) {
+        open (OUTFILE, ">$resultsfile");
+        print OUTFILE "$shortfilename\tno_hits_better_than_$signif\n";
+        close OUTFILE;
+    }
+    if ( $singleOutputFile eq "yes") {
+        system("cat $resultsfile >> $singleOutputFileName");
+        unlink $resultsfile;
+    }
+    
+    print "\n"
+}
+
+if ($singleOutputFile eq "yes") { close OUTFILE; }
+

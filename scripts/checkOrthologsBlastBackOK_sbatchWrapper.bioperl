@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+
+###### sbatch wrapper to pp_checkOrthologsBlastBackOK.bioperl
+
+my $baseDir = "/fh/fast/malik_h/user/jayoung/miscMalikLab/domesticated_capsid";
+my $numThreads = 1;
+
+##################
+
+foreach my $file (@ARGV) {
+    if (!-e $file) {
+        die "\n\nterminating - file $file does not exist\n\n";
+    }
+    
+    my $command = "$baseDir/scripts/checkOrthologsBlastBackOK.bioperl $file";
+    $command = "sbatch --cpus-per-task=$numThreads --job-name=checkOrthologs --wrap=\"$command\"";
+    print "Running command $command\n";
+    system($command);
+}

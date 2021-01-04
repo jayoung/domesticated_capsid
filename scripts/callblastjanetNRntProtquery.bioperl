@@ -1,0 +1,61 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Bio::Seq;
+
+#this takes a fasta file with multiple seqs as input, searches each one
+#against the specified database if there's
+#no blast output already existing
+
+#set up the blast parameters
+
+foreach my $file (@ARGV){
+    if (!-e $file) { die "\n\nterminating - file $file does not exist\n\n"; }
+    print "\n#### working on file $file\n\n";
+    open (WARNINGS, ">$file.NRwarnings");
+    my $seqfile = Bio::SeqIO->new(-file => "$file", '-format' => 'Fasta');
+    while (my $thisseq = $seqfile->next_seq() ) {
+        my $headerofthisseqlong = $thisseq->display_id();
+        my $headerofthisseq = $headerofthisseqlong;
+        if ($headerofthisseqlong =~ m/gi\|/){
+            $headerofthisseq = (split /\|/,$headerofthisseqlong)[3]; #splits accession number out of a gi|| type header
+            $thisseq->display_id($headerofthisseq);
+        } 
+        print "    working on sequence $headerofthisseq\n\n";
+        my $tempSeqOUT = Bio::SeqIO->new(-file => "> tempseq.fasta", 
+                                         -format=> "fasta");
+        $tempSeqOUT->write_seq($thisseq);
+        my $outfile = "$headerofthisseq.tblastnNR";
+        my $tryagain = 0;
+        DO_BLAST_LOOP: {
+            if (open (TEST, "< $outfile")) {
+                print "file $outfile exists already\n";
+                close TEST;
+            } else {
+                print "now blast it\n";
+                system ("tblastn -remote -db 'nr' -query tempseq.fasta -num_descriptions 500 -num_alignments 500 -out $outfile");
+            }
+            ### check that it worked
+            open (TEST2, "< $outfile");
+            my $blastsucceed = 0;
+            while ( <TEST2> ) {
+                if (m/Effective\ssearch\sspace\sused/){$blastsucceed = 1;}
+            }
+            close TEST2;
+            if ($blastsucceed == 0) {
+                print "BLAST failed... try again\n";
+                $tryagain++;
+                if ($tryagain == 2) {
+                    print "giving up\n";
+                    print WARNINGS "$headerofthisseq NR blast failed twice\n";
+                    last DO_BLAST_LOOP;
+                }
+                system ("rm $outfile");
+                redo DO_BLAST_LOOP;
+            }
+        } ## end of DO_BLAST_LOOP
+        system ("rm tempseq.fasta");
+    } ## end of next_seq loop
+} ## end of each file loop

@@ -1,0 +1,141 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::AlignIO;
+use Bio::SeqIO;
+use Getopt::Long;
+
+#this script takes an alignment and trims all sequences based on positions w.r.t a reference sequence. 
+# usage: trimalignment_userefseqcoords_multi.bioperl coordsfile.txt seqfilename(s)
+# coords file has three columns: start end refseqname
+# and the coords refer to the UNALIGNED ref seq
+
+#bioperl automatically throws away any seq that's entirely gaps in that slice of the alignment
+
+#note: this script will throw up a lot of warnings if seqs contain * or ?
+#example warnings:
+#MSG: In sequence pika_Contig398-2709-1 residue count gives end value 287.  
+#Overriding value [286] with value 287 for Bio::LocatableSeq::end().
+
+my $coordSystem = "regular";
+#my $coordSystem = "codons";
+
+my $joinString = "";
+#my $joinString = "NNNNNN";            ## 6bp 
+#my $joinString = "xxxxxx";            ## 6aa 
+#my $joinString = "NNNNNNNNNNNNNNN";  ## 15bp
+
+my $removeEmptySeqs = 1;
+
+## get any non-default options from commandline
+GetOptions("removeEmpty=i" => \$removeEmptySeqs,
+           "join=s" => \$joinString,
+           "coords=s" => \$coordSystem
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+###############
+
+if (@ARGV < 2) {
+    die "\n\nterminating - please specify (a) coords file (b) seq file(s)\n\n";
+}
+
+print "\n#### Settings:\n";
+print "    Joining sequence chunks together with this string: $joinString\n";
+
+if (($coordSystem ne "regular") & ($coordSystem ne "codons")) {
+    die "\n\nterminating - you specified an unrecognized coord system - should be regular or codons\n\n";
+}
+if ($coordSystem eq "codons") {
+    print "    Coordinates are in amino acids, for a nucleotide alignment. Converting coordinates\n";
+}
+
+my $coords = shift @ARGV;
+if (!-e $coords) { die "\n\nterminating - cannot open coords file $coords\n\n"; }
+print "\n#### getting coordinates from file $coords\n";
+open (COORDS, "< $coords");
+my $refSeqName;
+my @starts;
+my @ends;
+while (<COORDS>) {
+    my $line = $_; chomp $line; my @f = split /\t/, $line;
+    my $start = $f[0]; my $end = $f[1];
+    if ($end < $start) {die "\n\nterminating - start is after end in line $line\n\n";}
+    
+    if ($coordSystem eq "codons") {
+        print "    AA coords: $start - $end\n";
+        $start = (($start - 1) * 3) + 1;
+        $end = $end*3;
+        print "    NT coords: $start - $end\n\n";
+    }
+    push @starts, $start;
+    push @ends, $end;
+    $refSeqName = $f[2];
+}
+close COORDS;
+my $numChunks = @starts;
+if ($numChunks == 0) {
+    die "\n\nTerminating - did not find any coordinates in file $coords\n\n";
+}
+
+foreach my $infile (@ARGV) {
+    if (!-e $infile ) { die "\n\nterminating - couldn't open file $infile\n\n";}
+    print "#### working on file $infile\n";
+    my $outfile = $infile; 
+    $outfile =~ s/\.fasta$//;$outfile =~ s/\.fa$//;
+    $outfile .= ".trimmulti.fa";
+
+    ## convert unaligned coords to coords in the alignment
+    my $in  = Bio::AlignIO->new(-file   => $infile, -format => 'fasta');
+    my @alignedStarts; my @alignedEnds;
+    while (my $aln = $in->next_aln()) {
+        my @refseqs = $aln->each_seq_with_id($refSeqName);
+        my $numSeqs = @refseqs;
+        if ($numSeqs < 1) {
+            die "\n\nterminating - couldn't find reference sequence $refSeqName in file $infile\n\n";
+        }
+        if ($numSeqs > 1) {
+            die "\n\nterminating - found more than one reference sequence $refSeqName in file $infile\n\n";
+        }
+        my $refseq = $refseqs[0];
+        
+        foreach my $trimstart (@starts) {
+            my $newtrimstart = $aln->column_from_residue_number($refSeqName,$trimstart);
+            push @alignedStarts, $newtrimstart;
+            print "        unaligned start is $trimstart aligned is $newtrimstart\n";
+        }
+        foreach my $trimend (@ends) {
+            my $newtrimend = $aln->column_from_residue_number($refSeqName,$trimend);
+            push @alignedEnds, $newtrimend;
+            print "        unaligned end is $trimend aligned is $newtrimend\n";
+        }
+    }
+    ## now get those slices from each sequence in the alignment file (treating it as a simple seq file)
+    my $in2 = Bio::SeqIO->new(-file => "< $infile", -format => 'fasta');
+    my $out = Bio::SeqIO->new(-file => ">$outfile", -format => 'fasta');
+    while (my $seq=$in2->next_seq()) {
+        my $newseq = "";
+        for (my $i=0;$i<$numChunks;$i++) {
+            my $thisstart = $alignedStarts[$i];
+            my $thisend = $alignedEnds[$i];
+            my $seqchunk = $seq->subseq($thisstart,$thisend);
+            if ($i != 0) { $newseq .= $joinString; }
+            $newseq .= $seqchunk;
+        }
+        
+        if ($removeEmptySeqs == 1) {
+            my $testForEmptySeqs = $newseq;
+            $testForEmptySeqs =~ s/-//g;
+            if (length ($testForEmptySeqs) == 0) {
+                print "skipping an empty seq " . $seq->display_id . "\n";
+                next;
+            }
+        }
+        
+        my $newSeqObj = Bio::Seq->new(-seq=>$newseq, -display_id=>$seq->display_id);
+        $out -> write_seq($newSeqObj);
+    } 
+}
+
+print "\n#### Done\n\n";

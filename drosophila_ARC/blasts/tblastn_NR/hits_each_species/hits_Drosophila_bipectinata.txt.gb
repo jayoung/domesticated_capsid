@@ -1,0 +1,170 @@
+LOCUS       XM_017238549             804 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila bipectinata activity-regulated
+            cytoskeleton-associated protein (LOC108123423), mRNA.
+ACCESSION   XM_017238549
+VERSION     XM_017238549.1
+DBLINK      BioProject: PRJNA325516
+KEYWORDS    RefSeq.
+SOURCE      Drosophila bipectinata
+  ORGANISM  Drosophila bipectinata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016088983.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila bipectinata Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..804
+                     /organism="Drosophila bipectinata"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14024-0381.19"
+                     /db_xref="taxon:42026"
+                     /chromosome="Unknown"
+     gene            1..804
+                     /gene="LOC108123423"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108123423"
+     CDS             118..702
+                     /gene="LOC108123423"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton-associated
+                     protein"
+                     /protein_id="XP_017094038.1"
+                     /db_xref="GeneID:108123423"
+                     /translation="MTQMSDEQFRILIETIRALAPIKEEEPVSKGSFSNCPVRFSGQR
+                     DHDAVDEFINAVETYKEVEGISDKDALKGLPLLFNNIAVMWWKGVRRDARTWEDAMQL
+                     LRDHFSPTKPSYQLYMEIFETKQVHGEVIDSFICKQRALLAKLPEGRHDEETELDFIY
+                     GLLQPKYRESIPRHEIKTFRELLERGRTVERTKH"
+ORIGIN      
+        1 ttgccattcg actggctccc ctttttctgt aaacgtcggc caactgtttg tatcggcgaa
+       61 tatatttccg gcgtttgttt attattttca agaatcaaaa cataaacagt tgacacaatg
+      121 actcagatgt ccgatgaaca gtttcgcatt ctcatagaga ccatccgggc cctggccccg
+      181 atcaaagaag aggaaccggt gtcgaagggc agcttcagta actgcccggt tcggttcagt
+      241 ggccaacggg atcacgatgc cgtggacgag tttatcaatg ctgtggaaac ctacaaggag
+      301 gtggagggca tcagtgacaa agatgccttg aagggcctgc ccttgctgtt caacaacatt
+      361 gctgtgatgt ggtggaaggg tgtccgtcgc gatgccagga catgggagga tgctatgcag
+      421 ctgctgcggg accatttctc acccaccaaa ccgtcgtacc agctgtacat ggagatattc
+      481 gagactaagc aggtacacgg cgaggtgatc gattccttca tttgcaagca acgggctctg
+      541 ctggccaagt tgccggaggg acgacacgac gaggagactg agctggactt tatctatgga
+      601 ctgttgcaac ccaagtaccg ggaaagcatt ccacgacatg aaataaagac ctttagggag
+      661 ctacttgaac gtggcagaac cgtggagcga acgaagcatt aaatgtaaaa ttagttaata
+      721 gaaataaata tattacttaa tattttgtta gcttgttatt tacatgacat tataaaatta
+      781 tttattaaaa gacattaaaa cata
+//
+
+LOCUS       XM_017238833            2514 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila bipectinata uncharacterized LOC108123591
+            (LOC108123591), mRNA.
+ACCESSION   XM_017238833
+VERSION     XM_017238833.1
+DBLINK      BioProject: PRJNA325516
+KEYWORDS    RefSeq.
+SOURCE      Drosophila bipectinata
+  ORGANISM  Drosophila bipectinata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016088983.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila bipectinata Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2514
+                     /organism="Drosophila bipectinata"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14024-0381.19"
+                     /db_xref="taxon:42026"
+                     /chromosome="Unknown"
+     gene            1..2514
+                     /gene="LOC108123591"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108123591"
+     CDS             134..892
+                     /gene="LOC108123591"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108123591"
+                     /protein_id="XP_017094322.1"
+                     /db_xref="GeneID:108123591"
+                     /translation="MAQPIQMTNEQLKALIEAVRISAAGAAAAAGGAENPIATAKGSF
+                     SACQHKFGGARDYDEVEEFITNIVTYKELENITDENALKGLSLLFYGLASIWWQGVRK
+                     EANTWNDAIGLIREHFSPTKPAYQVYMEFFQSKQEDHDPIDTFVVHKRALLAQLPNGR
+                     HDEETELDLLYGLLNIKYRKHIARTSVQTFKDLLEQGRVIEHNNQEDTDLANSKNVRG
+                     SRRTTRCTHCNFRGHTYENCRKRAQKRQEENNEE"
+ORIGIN      
+        1 ggacccaacc agttcacgac aaagcggcag cattcgctac aactggcttt gcccgcctca
+       61 aagcaactca aatagtttta caaactaaca acgtgttacc accgtctacc taatcccgtt
+      121 tccaacctca aagatggcac aacccatcca gatgaccaac gaacagttga aggcactgat
+      181 cgaagcagtc cgtatcagcg ccgccggagc agcagcagcc gctggaggag ctgaaaatcc
+      241 catcgctacg gcaaagggca gcttctccgc ctgccagcac aaatttggcg gagcccgcga
+      301 ctacgatgag gtggaagagt tcattacgaa cattgtgacc tacaaggagc tagagaacat
+      361 cactgacgag aatgccctca aggggctctc gctcctattc tacggactgg cctctatctg
+      421 gtggcagggc gttcgcaagg aggcaaacac ctggaacgac gccattgggc tcatccgtga
+      481 gcacttctcg cccacaaagc ccgcctacca ggtctacatg gagttcttcc agtccaagca
+      541 agaagatcac gatcccattg atacctttgt ggtgcacaag cgggcccttc tggcccagct
+      601 tcccaacgga cgccacgacg aggagaccga gctggatctg ctttacggcc ttctcaacat
+      661 taaataccgt aagcacattg cccgcacgtc cgttcagacc ttcaaggatc tgctcgagca
+      721 gggcagggtc atcgagcaca ataaccagga ggatacggat cttgccaatt cgaagaacgt
+      781 cagaggcagc cgtcgcacca cccgctgtac acactgcaac ttccggggtc atacttacga
+      841 gaactgccgc aagcgtgccc agaagcggca ggaggagaac aatgaagaat agacgacaac
+      901 atcatcaaaa atctggaggg agagcagcga aaaccaaatt acatcatcgg tggctctcac
+      961 ttcaaaaaac acttctcaga acttttcgcg gccacacccg ccgtcaacgt cagcgagagc
+     1021 ccaactggag gatgagcgag caagatgagg aaccaaatcg acagcaacag caacaccaaa
+     1081 agtcacggca gcaacgtctg ccgcatccgt cgaagattcc acaacaagac tgcaaactta
+     1141 atctccacac actcactggc gaatggcgtg ccggtaagca gcggttagcg tctgcccaca
+     1201 aatcaaatcc cacgccgttt ccgtcaatag cttccagtgg aaacggcttc acccaaaatc
+     1261 actttcacgc cgccatgcgg ctttccttgg caaagaacgc caacatttgc gctcacaatt
+     1321 tttacaattg tatttttgaa ttgaatttta caagaacaag caatgtgccc gagatctgct
+     1381 gaccagggga cggttgagga tcaaggattt cgtccaaaag tttggagcat cttgacggtg
+     1441 gagtgtgaaa tttatgggac acaagacgga tcgtttatcc aaggcgaaag ctttgggtaa
+     1501 tcgcatctat cttttcctgc aaattttcat ttctgccgtt aagactccga atggatgttt
+     1561 cttgatcccc aatcgtcccc aaggtccagc agttctcaaa accgcagcct ccactttgtg
+     1621 ccgttcagcg gaaggtcaac gattaaaagg caactgaatt tgataatttt tgcattctaa
+     1681 ccaatgctga gatcatccaa ttcattgccg taatactgtc gttgagtttt ccgactgatt
+     1741 ctggtccttt ttgaaggcag caaaaaaccc cccgtccggt gatcgccctc ttagatcctt
+     1801 ttgcacgtga cattgacagc cccaaagggc tggaacatcc attttcatgt ttggggcctc
+     1861 ggtcttgaac tgtttttggg ggttccgaac cctttgaaat gtctctggtg cgagtggagc
+     1921 tacagggggc gtgaaccggg caaaaactaa atttcctacg gaaatttaaa aaccaaccaa
+     1981 ccaatttttg actttgtcaa aatagttcga aacacacggc actacgatgg ctcctgaaac
+     2041 gccatccgtg cggttggcac gtcaaattgt cccattcggg atcacgggtg ttgggctgta
+     2101 ctcattttca cccctgcgat cccgcgacaa gcttgaggca cgccaaaaac catcacaaac
+     2161 caacacaact acaacgggct ggtcgtcgtc gaggtcgagc ccctccagcc gactgcgact
+     2221 cacccgcccc tttgttaaat ttggccttct gcgcagaaca aataggcgcg agtgtcatca
+     2281 atctgtcttt tcgaagctac atacatcgaa gaatggtggc cctggctgaa cttgcgatgt
+     2341 gcgccatcaa ctggagcttt ggccacaagc accccacaag tttggcccgc atactccact
+     2401 gaaaagaaaa aaaaatgtgg gggcctatga gtgacctcag aaggctggat tagacaaaac
+     2461 aaacaattta aacaagactg aatccaaata aaaccatcaa ctcaaaacct aaaa
+//
+

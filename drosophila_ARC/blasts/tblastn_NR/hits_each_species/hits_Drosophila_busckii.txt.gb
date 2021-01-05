@@ -1,0 +1,203 @@
+LOCUS       XM_017982701            2526 bp    mRNA    linear   INV 08-APR-2020
+DEFINITION  PREDICTED: Drosophila busckii activity-regulated cytoskeleton
+            associated protein 1 (LOC108596684), mRNA.
+ACCESSION   XM_017982701
+VERSION     XM_017982701.1
+DBLINK      BioProject: PRJNA622241
+KEYWORDS    RefSeq.
+SOURCE      Drosophila busckii
+  ORGANISM  Drosophila busckii
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046605.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila busckii Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2526
+                     /organism="Drosophila busckii"
+                     /mol_type="mRNA"
+                     /strain="San Diego stock center, stock number
+                     13000-0081.31"
+                     /db_xref="taxon:30019"
+                     /chromosome="2R"
+                     /sex="pooled male and female"
+                     /tissue_type="embryos and whole fly"
+                     /dev_stage="late stage 16 embryos and adult females"
+     gene            1..2526
+                     /gene="LOC108596684"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108596684"
+     CDS             134..883
+                     /gene="LOC108596684"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1"
+                     /protein_id="XP_017838190.1"
+                     /db_xref="GeneID:108596684"
+                     /translation="MAQTIQMTSEQLRELIEAVRVSATSAAGAAAASAEGSTSKTKGS
+                     FSACTHRFGGARSHDVVEEFITNVVTYKELEDISDENALKGISLLFYGIASTWWQGVR
+                     KEAKTWNDAIGLIREHFSPAKPAYQVYTEFFECKQDEAVAIDTFVVEKRALLAQLPED
+                     RHDEETELDFLYGLLNIKYRKHIPRVGVKTFRDLLEQGRVIEHNNQEDEATPKGPLRG
+                     ARQTERCTYCNFRGHTNETCRKRKNQAGTNE"
+ORIGIN      
+        1 caaacagaat tttagtctct acgaccaatt caaccaaaag cagcagcatt cgccagcgtt
+       61 ggctttgtta gctgtacaaa ttaagcaaca ttacttaacc tcaaaagatt gcgtgccttt
+      121 actaaaataa aacatggcgc aaaccataca aatgaccagc gagcaactgc gtgagctcat
+      181 tgaggcagtg cgcgtgtcgg ccaccagcgc tgctggcgca gctgctgcca gtgcagaggg
+      241 ctctacgtcc aagacaaagg gcagcttcag cgcttgcaca catcgctttg gtggcgctcg
+      301 cagtcacgat gtggtggagg agttcataac caatgtggtg acatacaaag agctggagga
+      361 cataagcgac gagaacgcac ttaagggcat atcgctgctg ttctacggca ttgcatccac
+      421 ttggtggcag ggcgtgcgca aggaagccaa gacctggaat gatgccatcg ggctcatacg
+      481 cgagcacttt tcgccagcca agccggcata ccaggtctac acagagttct ttgaatgcaa
+      541 acaggacgaa gccgtggcaa tagacacctt tgtggtggag aaacgcgcgc tgctcgcaca
+      601 attgccagag gatcgccacg acgaagaaac cgaactggac tttctgtatg gcctgctgaa
+      661 catcaaatac cgcaaacaca ttccacgtgt gggcgtcaaa acattccgcg atctgcttga
+      721 gcagggacgt gtcatcgaac acaacaacca ggaggatgaa gcaacgccca agggcccgct
+      781 acgtggtgca cgtcaaacag aacgctgcac ctactgcaac ttccgtggac acaccaatga
+      841 aacctgccgc aagcgtaaaa accaggcggg aactaatgag taaaaggcaa atcacacgca
+      901 aaccaccact ggcgtgacat catccaacag caacagagca acaaaagcta caacaacagc
+      961 acactgatgt catagccaca acaacaacaa aagctctctt cgccgcgctg gctacacatt
+     1021 ggataaaaga gcaagagttg aagcagcttt ttatcgccca tgctactcac atgctcaaca
+     1081 accaagtgaa ttgccggcaa gcgttgcagc gctttcaaca acaacaacaa caacaacaac
+     1141 aataataact acgccgccgc agcggctaaa cacttttctg gctacgaacg ccagcgtcga
+     1201 attgaaaatt tcaattcacc ttgaatattg caactacaaa tgaactctcg agcggcagga
+     1261 cgggttaggg agtgggtgca cgcatttcgc tcctaggcca aagtgttgcg cccttgctac
+     1321 ccgcacaact ggctaacggt tattgggcgt tactgggctt ctaggctgta gtttctaagg
+     1381 gggtctacag ttctggttgt ttggtgcgtt ggatgccgct agcttcgttg tgtgtggtca
+     1441 agggtgcagc acttcaggct gtgatgagtg ttgcgtgcgc ttgctcgctc tctttgcttc
+     1501 tgctgctcaa aaaacccgct gccttaggct tgtgcccgac gctgcgtggc tgtgatatat
+     1561 acgtggaact caagtgtgtt ggcaggcgca gcttttctag cctcggctgg cgaggctgtc
+     1621 tcttgttcag cgcttgttgt cttcgtttgt gttgcagctg cgctttgtct ggtcctttcc
+     1681 taaggcagca aacccaaagc ccctgtcaaa cggcccgttg gcttcagttt cttatgcgtg
+     1741 tttcaagtta ggcgcgaggc ttcagtttgt gcccagtgga catgctcacg gcatgtggta
+     1801 agtgtgtctt gatgcagtgg tagtgtatct tgatgcactg ccgcatgttt gtgggtatgg
+     1861 acattgtgta taggctgaag ttaagcgtcg ggagtgattc ttgcgcatta gggacagctg
+     1921 ctggcgtttc gttggcacct cacacatttt gattaaatca aacaaacaaa aactgacttt
+     1981 ttaagtcaac ttttaattga accactttgc actacaatgg ctatgctgtc gccattcgtg
+     2041 caatggcacg ctaagtccta ctctttcccg tgactgctcc ttgaagcttt cactttgaaa
+     2101 agtatgcatt aggcacgcca gctacctctc tcgctgcttg gaactcgtcg ttgctcaact
+     2161 gctccaaaaa gcagcggctc ttccaagcac tcacttatta attgtaaatc gcagactctt
+     2221 gtgcaaacac cttggatgcc attaacgcag aaaccaataa ctggaaacca aagttaagca
+     2281 gtgtgcacgc atctggagca ttgacgcact caagctgccg caacttaaag tttccagttt
+     2341 catataaaat gcaaaagcgt tttctttttt ttttccggca tttgcacttt tataggcgtc
+     2401 caaggctgac cacaagagcc tgcgataagc tttgttaaac aaatatatgt aagactgaat
+     2461 tttgaaaaca catataatta caaaaattgc gtaaaaagaa atacataata cgcacaaaaa
+     2521 ccaaaa
+//
+
+LOCUS       XM_017982702            1858 bp    mRNA    linear   INV 08-APR-2020
+DEFINITION  PREDICTED: Drosophila busckii activity-regulated cytoskeleton
+            associated protein 2 (LOC108596686), mRNA.
+ACCESSION   XM_017982702
+VERSION     XM_017982702.2
+DBLINK      BioProject: PRJNA622241
+KEYWORDS    RefSeq.
+SOURCE      Drosophila busckii
+  ORGANISM  Drosophila busckii
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046605.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 8, 2020 this sequence version replaced XM_017982702.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila busckii Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1858
+                     /organism="Drosophila busckii"
+                     /mol_type="mRNA"
+                     /strain="San Diego stock center, stock number
+                     13000-0081.31"
+                     /db_xref="taxon:30019"
+                     /chromosome="2R"
+                     /sex="pooled male and female"
+                     /tissue_type="embryos and whole fly"
+                     /dev_stage="late stage 16 embryos and adult females"
+     gene            1..1858
+                     /gene="LOC108596686"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 3 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:108596686"
+     CDS             116..697
+                     /gene="LOC108596686"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_017838191.1"
+                     /db_xref="GeneID:108596686"
+                     /translation="MTQLSDEQFRILIETIKSLAPEPEAAPQSKGSFSNCGARFSGQR
+                     DHDAVDEFITAVETYKEVESISDSDALKGISLLFNGIAITWWKGVRREAQTWADCLKL
+                     LRDHFSPTKPSYQIYMEIFETKQMSSEVIHEFICKKRALLAKLPEGRHDEETELDFIY
+                     GLMQQKYREQIPRHEVKNFRELLDRGRNVERTS"
+ORIGIN      
+        1 gaattcgata gcaaagtaaa aacagagagc aatcgctaaa ctttaaagag cacgctttgg
+       61 aaataaaaag ctttcgctct tctctctgct gatttaaccg tgccgcctgc gcaaaatgac
+      121 gcaattgtcg gatgaacagt ttcgcattct gatagaaact atcaaatcgt tggcacctga
+      181 accggaggcg gcgccgcagt cgaagggcag ctttagcaat tgcggtgcac gctttagtgg
+      241 ccagcgggat catgatgcag tggatgagtt cataacagca gtggagacat ataaggaagt
+      301 ggaaagcatt agcgatagcg atgctctcaa aggcatctca ctgctgttta atggcattgc
+      361 tataacctgg tggaagggcg tgcgccgtga ggcacagacc tgggcggatt gtcttaagct
+      421 gctgcgagat cacttctcgc ccaccaaacc atcataccag atttatatgg aaattttcga
+      481 aacaaaacaa atgtcaagtg aggtgataca tgagtttata tgcaaaaaac gcgctttgct
+      541 agccaaactg ccagagggac gccacgacga ggaaacggag ctggacttta tctatggttt
+      601 aatgcagcaa aagtacagag agcagatacc cagacatgaa gtcaaaaact ttcgtgaact
+      661 actcgaccgt ggccgcaacg tagagcgtac cagttagaca ttgtatgtag attaagactt
+      721 aaaataaaat tttaaattta acagcatgta tattttaaaa caattgtgcc tgaactgaat
+      781 atattaagaa aaactttaat aatgtataag taaggagcgc ctataaattg tatttataaa
+      841 ctgtataaac gattagttcg aattagtttg ctagtttaag ataattgtta ttgttttttg
+      901 gcttctgaag cataaattgg tgcacggaac ccaatgaagt ttcttttttt atatgacaat
+      961 ttgcattacg ccaaatcata attggactgg cttatgtttc agaaatcatt ttgaagattt
+     1021 cacaaacgct gaaatttttc taacaataaa acaacttgat agattttggt ttttgtgcgt
+     1081 attatgtatt tctttttacg caatttttgt aattatatgt gttttcaaaa ttcagtctta
+     1141 catatatttg tttaacaaag cttatcgcag gctcttgtgg tcagccttgg acgcctataa
+     1201 aagtgcaaat gccggaaaaa aaaaagaaaa cgcttttgca ttttatatga aactggaaac
+     1261 tttaagttgc ggcagcttga gtgcgtcaat gctccagatg cgtgcacact gcttaacttt
+     1321 ggtttccagt tattggtttc tgcgttaatg gcatccaagg tgtttgcaca agagtctgcg
+     1381 atttacaatt aataagtgag tgcttggaag agccgctgct ttttggagca gttgagcaac
+     1441 gacgagttcc aagcagcgag agaggtagct ggcgtgccta atgcatactt ttcaaagtga
+     1501 aagcttcaag gagcagtcac gggaaagagt aggacttagc gtgccattgc acgaatggcg
+     1561 acagcatagc cattgtagtg caaagtggtt caattaaaag ttgacttaaa aagtcagttt
+     1621 ttgtttgttt gatttaatca aaatgtgtga ggtgccaacg aaacgccagc agctgtccct
+     1681 aatgcgcaag aatcactccc gacgcttaac ttcagcctat acacaatgtc catacccaca
+     1741 aacatgcggc agtgcatcaa gatacactac cactgcatca agacacactt accacatgcc
+     1801 gtgagcatgt ccactgggca caaactgaag cctcgcgcct aacttgaaac acgcataa
+//
+

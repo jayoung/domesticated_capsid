@@ -1,0 +1,4 @@
+Seq	Warnings
+AB455904	no CDS
+AK388355	no CDS
+XR_005245663	no CDS

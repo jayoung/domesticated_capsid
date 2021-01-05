@@ -1,0 +1,70 @@
+LOCUS       XM_018504733             438 bp    mRNA    linear   INV 23-SEP-2016
+DEFINITION  PREDICTED: Trachymyrmex cornetzi uncharacterized LOC108759350
+            (LOC108759350), mRNA.
+ACCESSION   XM_018504733
+VERSION     XM_018504733.1
+DBLINK      BioProject: PRJNA343972
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Trachymyrmex cornetzi
+  ORGANISM  Trachymyrmex cornetzi
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Trachymyrmex.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017296422.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Trachymyrmex cornetzi Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 43% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..438
+                     /organism="Trachymyrmex cornetzi"
+                     /mol_type="mRNA"
+                     /isolate="Tcor2-1"
+                     /isolation_source="Nest"
+                     /db_xref="taxon:471704"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body"
+                     /country="Panama: Gamboa"
+                     /collection_date="2011"
+     gene            1..438
+                     /gene="LOC108759350"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:108759350"
+     CDS             1..438
+                     /gene="LOC108759350"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108759350"
+                     /protein_id="XP_018360235.1"
+                     /db_xref="GeneID:108759350"
+                     /translation="MSTNAKTQDKKVKMADGQTRVTPLTNEQFAMLIQQIQISAANAP
+                     VANIVQPQGNFSRCTSRFDGNKSSDVEAFIDAISTYKECTNISNENALKGLLILLTDL
+                     AATWWQGVKGTVNTWDTAIEILRQAYGPKKAAHRVYKELFSCE"
+ORIGIN      
+        1 atgagcacga acgcaaagac tcaggacaaa aaggtaaaaa tggcggatgg acaaacacgg
+       61 gtaacaccat taacgaacga acagttcgct atgctcatac aacagataca gatatctgct
+      121 gcgaacgcgc cggtcgcaaa catcgtgcaa ccacaaggca atttctcgcg atgtacctcc
+      181 cgcttcgatg gaaacaaatc gtccgatgta gaggctttta tcgacgcgat cagtacgtac
+      241 aaagagtgta ctaacatatc caatgaaaac gcgctgaaag gattactgat ccttctcaca
+      301 gatctcgccg cgacatggtg gcagggcgtt aaaggcaccg tcaatacgtg ggataccgca
+      361 atagaaatat tgagacaagc gtacggcccg aaaaaagcag ctcatcgcgt atacaaagaa
+      421 cttttttcgt gcgagtaa
+//
+

@@ -1,0 +1,764 @@
+LOCUS       XM_013341280            3046 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106139784
+            (LOC106139784), mRNA.
+ACCESSION   XM_013341280
+VERSION     XM_013341280.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013535936.1) and transcript sequence (GDGN01005130.1) annotated
+            using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            assembly gap :: added 826 transcript bases to patch genome assembly
+                            gap
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-2220              LACK01030258.1     7945-10164
+            2221-3046           GDGN01005130.1     1806-2631
+FEATURES             Location/Qualifiers
+     source          1..3046
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /lat_lon="40.11 N 88.26 W"
+     gene            1..3046
+                     /gene="LOC106139784"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: added 826 bases not found in
+                     genome assembly; Derived by automated computational
+                     analysis using gene prediction method: Gnomon. Supporting
+                     evidence includes similarity to: 100% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106139784"
+     CDS             333..2198
+                     /gene="LOC106139784"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106139784"
+                     /protein_id="XP_013196734.1"
+                     /db_xref="GeneID:106139784"
+                     /translation="MVLTRSRAESSSAGAAQANVVASPPPTPEAVQQPAPAPEAVPLP
+                     PLAPIMITTEQLRFLMERVNGPPTVSSSLHGNFAKCTARFDGEKSSNVESFVDAIEVY
+                     KDCVGVSDENALRGLPMLLTGLAATWWQGVKDHTPTWSAAIEALKQTFGPRLPPHKIY
+                     RKIFEREQRSNEATDLFICHIRALMSQLPLHSLSMTVQLDMTYGLLHRRIREKVSRLE
+                     FSTFAELITMARRVEDILDESRTSTSDLKPLCSTAKPTTVPISPTASQSTVSYKNKAR
+                     PHCNYCKKYGHLKYACEKLAKQKLGTDGEPRVSTITCFGCGAPGVIRSNCSTCKKTEP
+                     VPSVSTSFQSVSANSVNIDSRVRPLLEIEIYGERGKVLIDTGAKHCIGSVSLRAHLVK
+                     YGHKFENVFTELKYADGRAVAQIVERTQVRVRVRDVSLDVMFIMLPNATESLLGMNFI
+                     QDAGMVLDFSRGIWFMNHDRVSQPIVFEPNGVRSYEPLHCSSVGLHEDEGFHLGKDER
+                     QQLSNLLNVNEDIFTPGGGPTQFAVHHIDTGDASALTRYVGKSPVIAHQRHRGRLAKS
+                     QSGRPCNLEGEDIAGNIVGPSGETSRHPAPPSSIPRRSQRPRRGPPVRLIEQVSL"
+ORIGIN      
+        1 acgtgaacag ttaacgtacc taaatactct tttgtgttga gactttacct acctgcagtg
+       61 aacaaaaact taccaaaaag ttttagtgta cccaaaaaaa gaaaaccgtt tgggaaccta
+      121 tcgcgacagt gttactgttt tgttttgcga tacatgtgta ggtactacaa tacttacgac
+      181 ttttttttac gcggcctgac tttttaagac tttttataca actattgtgt gtgttggaca
+      241 ttatttataa agactggtga acgttgtgat agtgcgtctg gactttcgtg aactcttatt
+      301 tcgacataca cgtattgctt catcgtgtta ccatggtgct tacgagatct cgcgcagaga
+      361 gttcgtcggc gggcgcggcc caagctaatg tggtggcgtc gccgccgccc actccggagg
+      421 ctgtacaaca acctgcacct gcgccagagg ctgttccatt gcctccgctt gctccgatca
+      481 tgataacaac cgagcagctg agatttttaa tggaaagggt aaatggccca ccaactgtaa
+      541 gtagttcctt acatggtaat ttcgcaaaat gcacagcacg attcgacggc gagaagtcta
+      601 gcaacgtgga atcttttgta gacgccatag aggtctataa agattgtgtt ggagtaagcg
+      661 acgaaaacgc cttgcgtggc ttgcctatgt tactcaccgg gttggctgcg acatggtggc
+      721 agggtgtgaa ggatcatacc ccaacctggt ctgccgccat cgaagcactc aaacagacgt
+      781 ttggaccaag gttgcccccg cacaaaattt atagaaaaat atttgaaagg gaacagcgta
+      841 gtaacgaagc tacagacctt ttcatatgcc acatcagggc attaatgtca cagttacccc
+      901 ttcattccct gtcgatgacc gtgcaattag atatgacgta cggtttgcta catcgacgta
+      961 ttcgtgaaaa ggtttcgcgt ttggaatttt ctaccttcgc tgagcttatt actatggccc
+     1021 gtcgtgttga agatattttg gatgaaagcc gaacatcgac cagcgatctt aaaccgttat
+     1081 gttcgacggc aaagcctact actgtaccca tttctccgac ggcttcgcag tcgacagtat
+     1141 cttataagaa taaagctcgg ccacactgta attactgtaa aaagtatggt catctgaaat
+     1201 atgcctgtga aaagttagcc aaacagaaac ttggcactga tggagaacca cgcgtctcaa
+     1261 ctatcacgtg tttcgggtgc ggtgcgcctg gcgtgatccg atccaactgc tcgacttgta
+     1321 aaaagacaga accggttccg tccgtatcaa cttcttttca atctgtttct gcaaatagtg
+     1381 ttaatataga ttcgcgagtg cgacctttgt tagaaataga aatttatggt gaacgtggta
+     1441 aagtgcttat agacacaggt gccaaacatt gtataggcag tgttagtctt agagctcatt
+     1501 tagttaagta tggccataag tttgaaaatg tatttactga gcttaaatac gcggacgggc
+     1561 gggcagttgc gcaaattgtt gaacgtacgc aagttagggt tagggtacgc gatgtctctt
+     1621 tagatgttat gtttataatg ttgcccaatg ctactgaaag tttgttggga atgaatttta
+     1681 ttcaggacgc tggcatggta ttagattttt ctcgcggtat atggtttatg aaccacgata
+     1741 gggtctctca gcccatcgtc tttgaaccta atggtgtaag gtcatacgaa cctttgcatt
+     1801 gctcgtctgt gggtcttcac gaggatgaag gattccactt aggtaaggac gaacgacagc
+     1861 agctgtccaa ccttctgaat gtcaatgagg acattttcac tccaggggga ggacccactc
+     1921 agtttgctgt tcaccacatt gataccggag atgccagcgc cttaacgcgt tacgtgggta
+     1981 aatctcctgt tattgcgcat cagcgccatc gcggtagact agccaagtca cagtcgggtc
+     2041 gaccatgtaa cttggagggg gaggatatag cgggcaacat tgtaggccct tccggggaga
+     2101 catcgcgtca ccctgcgccc ccctcgtcca taccacgccg ttcccagcgc ccgcgtcgag
+     2161 gaccgcccgt gcgcctcatt gaacaagtca gtctttaaac aacgcgcgga ccggtgcggt
+     2221 atgcacctct tattagcgag cgagttttgt tatttctttt tataagttac tgaagtaaag
+     2281 ttgttatccc gtagttggct tttacttctc aatctcgcca gcgctatatt ggcgctccaa
+     2341 cgtgtgggcc gtgtgctctt ttagtgattc gcgtgtgttg tttgttgttc acgtgttcta
+     2401 cgacggcaag acgccgtttg tcacgtagtc acgaagactc aaaagctgga catagtttcg
+     2461 cgacagaagt gtctgtatat tccgcgaaca gcataattta tttaggtttt gtatctaaac
+     2521 tgttttgtgt acatatcgtg acagcgtgtc tgtttgttcc cacgatagtg gacagtttac
+     2581 gaacctaaat actcttttgt gttgagactt tacctacctg cagtgaacaa aaacttacca
+     2641 aaaagtttta gtgtacccaa aaaaaaaaaa aaaccgtttg ggaacctatc gcgacagtgt
+     2701 ttctgttttg ttttgcgata catgtgtagg taatacaata gttacgactt tttttttacg
+     2761 cggcctgact ttttaagact ttttatacaa ctattgtgtg tgttggacat atatttataa
+     2821 agactggtaa acgttgtgat agtgcgtctg gactttcgtg aactcttatt tcgacataca
+     2881 cgtattgctt catcgtgtta ccatggtgct tacgagatct cgcgcagaga gtccgtcggc
+     2941 gggcgctgcc caagctaatg tggtggcgtc gccgccgccc actccggagg ctgtacaaca
+     3001 acctgcacct gcgccggagg atgttccatc gcctccgctt gctccg
+//
+
+LOCUS       XM_013341415            3484 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106139907
+            (LOC106139907), partial mRNA.
+ACCESSION   XM_013341415
+VERSION     XM_013341415.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013536018.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..3484
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /strain="UIUC subculture of SPIRL-1966"
+                     /isolation_source="larvae reared on standard wheat bran
+                     diet at 28C and photoperiod of 16:8 (L:D) h"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /dev_stage="larva"
+                     /country="USA: Urbana, Illinois"
+                     /lat_lon="40.11 N 88.26 W"
+                     /collection_date="2010"
+     gene            1..>3484
+                     /gene="LOC106139907"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:106139907"
+     CDS             1..>3484
+                     /gene="LOC106139907"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106139907"
+                     /protein_id="XP_013196869.1"
+                     /db_xref="GeneID:106139907"
+                     /translation="MMKEFARTQAELNKTLIEAIHSRGDGTAATKEEPVVSPTLRPEY
+                     HNAPRPNVNFTAAPGGNFSRCTARFNGSSGDPEVLEAFIEALEVYKECADVSDDHALR
+                     GLSIVLEGAALVWWRGARADVKTWPEALGRLRAAYGTPKPAYKLFREIFATEQSDSER
+                     AESFVCRLRAIMCQFPYKLPDAAQVDIVYGLLHRRVRKRLTRESVNNLEQLLQKCRSV
+                     EDAIIEVCMPHAHVSNSTSFKKDSLSVGSDNTIGTAARQPTAATRSSRTRCSLCRIRG
+                     HSANECRSKLDKSNYVPNKNDTTSIRCYGCGKPGVIRSKCDVCMVGNRVGKSDSKVSV
+                     NAYKHEQSFNTVGLSGTSFNKHILRNSNNVINSINSDSSWELVGMSKQINESSVCSVA
+                     AIKPATTFDSSQPTVNIGILGHRGVAIVDTGATHCIASPTLHEIMVRCGVKFKEVYPT
+                     IRLADGSCQRRRILCAEVDVEIGDRRLRTDFMVIPEADTKTLLGLDFISRAGMILNIA
+                     TGTWCFADTPSKVYDFANRCMLDTPRVDGKVRMAQSHENCGRSALRPVEPMGSNMNRA
+                     LPVSDGSPAHRLDKQSRLKLLVGSSGGPAPRVTEYARTAPLVGNDEEPDTPEDYYDFR
+                     ALADCDNARLALRDDINDRGPATEYAVHKIKVKEGQEPIACPPFRLSPSRREALKKEL
+                     DQLLADDVIEECESPWASNVVLVAKKDGTYRVCIDYRKLNAVTEPDRYPLPRIEDVLH
+                     AAKTSGYMSTLDLKSGYFQVAVHKEDRDKTAFTTPHGTFRFKHMPMGLRNFGATFQRL
+                     IDRFKSNLKRVSLMAYLDNLVLLSPRSFERHLADLEAVFDRLAMFRLRVNRAKSHFAR
+                     SSVKFLGYVITPGGLQVDPEKTEAITRMPVPRDIKQLKCFLQTSNCSETSHDHQPLRW
+                     LMSLRSPSGRLARWALTLQEYNLKIEYVPGRSNAVADTLSRLTSNWFRRFVPKYAEVS
+                     RPLTVLLKKDATWRWEAEQQGAFDKIKNLLTSAPILRQADETLPFVLSTDSSGYCLGA
+                     VLLQGEGSDERYGLEESDEDEASLVVPVHERAQVLANFHDAPTAGHLGVERTLSRLRL
+                     RFYWPGMRAYVTKYVKECVPCQRCKIDNKKPAGLLQHLLCPEGLRFYLWTYLVPWWNP
+                     LDVIDRSSSSKTLGR"
+ORIGIN      
+        1 atgatgaagg agttcgcccg cacccaagcg gagctgaaca agaccctgat cgaagcaatt
+       61 cattctcgcg gtgatggtac cgccgcgacc aaggaggaac cggtcgtatc gccgactctg
+      121 cgaccggagt accacaacgc accgcgccct aatgtgaact tcaccgcggc gcctggcggt
+      181 aatttttccc gctgcacggc gcgtttcaac ggaagttctg gcgatccaga agtgttagaa
+      241 gccttcatag aggcgttgga ggtgtataag gagtgcgcgg acgtgtcgga tgaccacgcg
+      301 ctgcgcggcc tgtccatcgt gctggaagga gccgcactgg tctggtggag aggcgcacgg
+      361 gcggacgtca agacctggcc cgaggcgctg ggaagacttc gtgctgccta cggaacaccg
+      421 aagcccgcat acaaactatt tcgcgaaata tttgctacgg agcaaagtga tagtgaacgt
+      481 gcggaaagtt tcgtatgccg tttgagagct ataatgtgtc agtttcctta caagctaccg
+      541 gacgccgctc aggtagatat agtttacggg ctgttgcaca ggcgagtgcg taagcgcctg
+      601 acccgggaaa gtgtaaacaa tttagaacag ttgttacaaa agtgtaggag tgtcgaagac
+      661 gccatcatag aggtatgcat gccgcacgcg cacgtaagta attccacttc ttttaaaaag
+      721 gatagtctga gcgtaggcag cgataatact ataggcacgg ccgcgcgtca accgacggcc
+      781 gcgacgcgtt cgtctagaac gcgatgctct ctgtgtagga tccgcggaca ttcagctaac
+      841 gagtgtaggt ctaagcttga taagtccaat tacgtaccta ataagaacga tacgacatcg
+      901 attcgctgtt acggctgtgg taagcctggc gttataaggt cgaagtgtga tgtttgtatg
+      961 gttggtaatc gcgtaggtaa atccgatagc aaagttagtg ttaacgcgta taagcatgaa
+     1021 caaagtttta atactgttgg tcttagtggt acatcattta ataaacacat tttgagaaac
+     1081 tctaataacg ttatcaatag tattaacagc gatagtagtt gggagttagt aggtatgtca
+     1141 aaacagatta atgagagtag cgtatgtagt gtcgccgcca tcaagcccgc tacgacgttc
+     1201 gattcgtcgc aaccgacggt caacataggt atactaggtc ataggggcgt agccatagtg
+     1261 gacacgggtg cgacgcactg tattgcgagc cccaccctgc atgaaataat ggtacgctgt
+     1321 ggtgttaagt tcaaggaggt gtatcccacc atacgtctgg ctgacggttc ctgccaaaga
+     1381 agacgtattc tttgtgctga agtggacgtc gagattggtg accgtagact gcgcactgac
+     1441 ttcatggtca tcccagaagc cgacactaag acattgttgg gactagattt tatctctaga
+     1501 gcaggtatga tattgaatat agctactggt acttggtgtt tcgcggacac cccgagcaag
+     1561 gtatatgatt tcgcgaatag atgtatgctg gatacgcccc gcgtggacgg gaaagttagg
+     1621 atggcacaat cacacgagaa ttgcggacgt agtgcgctgc gacccgtgga gccgatgggc
+     1681 agtaatatga accgcgcgct accggtgagt gatgggtccc ccgcacatcg attagataag
+     1741 caatcccgac tcaaacttct agtgggaagc tctggaggcc ccgcgccgcg agtgaccgag
+     1801 tatgctcgca ccgcgccgct ggtgggtaac gatgaagagc ccgatactcc cgaagattat
+     1861 tatgattttc gcgcgcttgc tgattgtgac aacgcacgcc tcgcattacg cgacgacatt
+     1921 aatgatagag gccctgcaac ggaatacgca gttcacaaaa taaaagtgaa ggaggggcaa
+     1981 gagcctattg catgccctcc gttcagattg tctccaagcc gtcgagaggc actcaagaag
+     2041 gagctggatc agttgttggc tgatgacgtc atcgaagagt gcgagtctcc ttgggcttcg
+     2101 aacgttgtgc tagtagctaa gaaagatggc acttatcggg tatgtatcga ctaccgaaaa
+     2161 ctgaacgctg tgacagagcc ggacagatac ccacttccac ggatcgagga tgtgttgcac
+     2221 gcggctaaga ccagtgggta catgagtacc cttgatttga aatctggcta ctttcaggtg
+     2281 gctgtccaca aggaagaccg agacaaaaca gcgttcacta caccgcatgg tacgttccgt
+     2341 tttaaacata tgccgatggg gctacgtaat tttggcgcta cttttcaacg tcttatcgat
+     2401 aggttcaagt caaacctgaa gagagtctcg ctaatggcgt atttggataa cctcgtgttg
+     2461 ctgtcaccac gatccttcga gaggcatttg gcagacttgg aagccgtctt cgatcggttg
+     2521 gccatgttca gattgagagt taaccgagca aagagccatt ttgcacggag ttccgtgaag
+     2581 tttctaggct atgtcatcac tccaggtggc ctccaggtgg acccggaaaa gacggaagct
+     2641 ataacgagga tgccagtccc acgagatatc aaacagctga agtgcttctt acagacgtct
+     2701 aactgttccg agacctctca cgatcaccag cctttgaggt ggctgatgag cttgagatca
+     2761 cctagtggtc gtctcgctag atgggcgtta acgctacaag aatacaacct gaagattgag
+     2821 tacgtgccgg gacgctcgaa tgcggtagcc gacacgctct ccagattgac atctaactgg
+     2881 ttccgcaggt ttgtgcctaa gtacgcggag gtttcgagac ctctaacagt actgttaaag
+     2941 aaagacgcca cctggcgatg ggaagcggag caacaaggag cgtttgacaa gattaagaac
+     3001 ctcctgacct ctgccccgat ccttcggcaa gccgacgaga cacttccttt tgtgctaagc
+     3061 actgacagta gcggttactg cctcggagct gttttgctcc agggggaggg ttcggacgag
+     3121 cggtatggat tggaagaaag cgacgaggac gaagcgagtc tggttgttcc agtgcatgag
+     3181 agagctcagg tcctcgccaa cttccatgac gcacccaccg ctggacattt aggcgtagaa
+     3241 cgcacgctga gtcgtctccg gttacggttt tattggccag gaatgcgtgc ttatgttacg
+     3301 aaatatgtaa aggagtgtgt gccttgtcaa aggtgtaaga ttgacaacaa gaaaccagct
+     3361 gggttgttgc aacacctgct atgtccagaa ggtttgaggt tttatctgtg gacctatttg
+     3421 gtcccttggt ggaatcccct cgacgtaata gatagatcct catcatcgaa gacgttgggt
+     3481 cgag
+//
+
+LOCUS       XM_013342496             628 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106140850
+            (LOC106140850), partial mRNA.
+ACCESSION   XM_013342496
+VERSION     XM_013342496.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013536773.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 78% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on both ends.
+FEATURES             Location/Qualifiers
+     source          1..628
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /strain="UIUC subculture of SPIRL-1966"
+                     /isolation_source="larvae reared on standard wheat bran
+                     diet at 28C and photoperiod of 16:8 (L:D) h"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /dev_stage="larva"
+                     /country="USA: Urbana, Illinois"
+                     /lat_lon="40.11 N 88.26 W"
+                     /collection_date="2010"
+     gene            <1..>628
+                     /gene="LOC106140850"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:106140850"
+     CDS             <1..>628
+                     /gene="LOC106140850"
+                     /codon_start=3
+                     /product="uncharacterized protein LOC106140850"
+                     /protein_id="XP_013197950.1"
+                     /db_xref="GeneID:106140850"
+                     /translation="QGTLARCTSIFAGKPQESVEAFIDAVEAYSDCAQVANANIIKGL
+                     SFLFKDEAATWWQGIKNSSKEENTDIFISRIRALLARLPKGDLSVSAQLDITYGLLHS
+                     RIRKRIRREEFNNFADLLRLARTTEDSFDEARRPSSGPAIPPPPSSDTAPARPSARPP
+                     PPSLAPVRQPPASAVPTATQTQESAAATKNIPANVCLLQTFRTYQGPES"
+ORIGIN      
+        1 gtcaaggaac cctagcgcgc tgcacatcta tattcgcggg caaacctcaa gaaagcgttg
+       61 aggcattcat agacgctgtc gaagcctaca gcgattgtgc ccaagtcgcg aatgctaata
+      121 tcataaaagg gctatcgttc cttttcaaag acgaagctgc cacttggtgg caaggaatca
+      181 aaaactcatc aaaggaagaa aatacggaca tattcatatc acgtattcgt gcccttctcg
+      241 cccggctgcc gaaaggcgac ctgtctgtgt ccgcgcaact agacataaca tacgggttgc
+      301 tccacagccg tattaggaaa agaatacgaa gagaagaatt taataatttt gccgatttgc
+      361 tccgcctggc gcgaaccacc gaggattcat ttgacgaggc ccggaggcct agttcaggtc
+      421 ccgccatccc tcctcccccg tcttctgata ccgcacccgc gcgcccctcg gcgcggcctc
+      481 cacctccttc tttagctccg gtgcgacaac cacctgcgtc agctgtccca acggcgacgc
+      541 aaacgcagga gtccgccgcc gccactaaga acatcccggc caacgtgtgt ttactgcaaa
+      601 cgtttcggac ttaccaggga ccagagtc
+//
+
+LOCUS       XM_013342603             779 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106140950
+            (LOC106140950), partial mRNA.
+ACCESSION   XM_013342603
+VERSION     XM_013342603.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013536909.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..779
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /strain="UIUC subculture of SPIRL-1966"
+                     /isolation_source="larvae reared on standard wheat bran
+                     diet at 28C and photoperiod of 16:8 (L:D) h"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /dev_stage="larva"
+                     /country="USA: Urbana, Illinois"
+                     /lat_lon="40.11 N 88.26 W"
+                     /collection_date="2010"
+     gene            1..>779
+                     /gene="LOC106140950"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:106140950"
+     CDS             1..>779
+                     /gene="LOC106140950"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106140950"
+                     /protein_id="XP_013198057.1"
+                     /db_xref="GeneID:106140950"
+                     /translation="MPRTRREEAAQATDEVAPDFDDAMGTDAAVFSSGQLASMMAAIQ
+                     RSQTEAFERLLERVIRQPPSPTPASTPAFAAGSGTFTHCTARFSGDAGDSVEAFIDAI
+                     QSYKDCANVSEENALRGLSMVLTHNAAVWYQGIKKEITTWDGVIELLQNTYGDKRPPH
+                     RIYRELFDQKQGDQNTDVFVARCRALLAKIPVGDISERAQVDMVYGLLDTRIRKRLRR
+                     EEFENFSGMLRLARSIEIEEEVETQTHQQSGPPLRGRPRPTA"
+ORIGIN      
+        1 atgccacgta cacgcaggga ggaagcagcg caagctactg acgaagtcgc cccggacttc
+       61 gatgatgcaa tgggcaccga cgccgcagtt ttttcgtcgg gacaactcgc ctccatgatg
+      121 gcggccatcc aaaggtccca aactgaagcc ttcgagcgcc tgctggagag agtaattcgc
+      181 cagccgccat ccccaactcc cgcgtctaca ccagcattcg ccgccggcag cggcactttt
+      241 acgcattgca ccgccagatt cagcggtgac gccggcgact ccgtggaagc attcattgac
+      301 gccattcaaa gttacaagga ctgcgctaac gtgtccgagg aaaacgccct cagggggctc
+      361 tcaatggtgc tcactcacaa cgcggcagta tggtaccaag ggatcaaaaa agaaatcaca
+      421 acatgggacg gggtcattga actcctacaa aatacttacg gcgataaacg acctccacac
+      481 cgcatctaca gagagctgtt cgaccagaaa caaggcgacc agaataccga cgtgtttgtc
+      541 gcgagatgcc gtgcacttct tgcaaagatt cccgtcggcg atatttccga aagagcgcaa
+      601 gtcgacatgg tttacggctt actcgataca agaatacgta aacgcttacg aagagaagag
+      661 ttcgaaaatt tctccggcat gcttcgtctc gcccggtcta ttgaaatcga ggaggaggtg
+      721 gagacgcaga cccatcagca gtccggtccg ccgctaagag gacgaccgag accgacggc
+//
+
+LOCUS       XM_013343163             809 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106141517
+            (LOC106141517), partial mRNA.
+ACCESSION   XM_013343163
+VERSION     XM_013343163.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013538175.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 65% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..809
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /strain="UIUC subculture of SPIRL-1966"
+                     /isolation_source="larvae reared on standard wheat bran
+                     diet at 28C and photoperiod of 16:8 (L:D) h"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /dev_stage="larva"
+                     /country="USA: Urbana, Illinois"
+                     /lat_lon="40.11 N 88.26 W"
+                     /collection_date="2010"
+     gene            1..>809
+                     /gene="LOC106141517"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 26% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106141517"
+     CDS             1..>809
+                     /gene="LOC106141517"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106141517"
+                     /protein_id="XP_013198617.1"
+                     /db_xref="GeneID:106141517"
+                     /translation="MVLTRSCAESPSAGAAQANVVASPPPTPEAVRPPAPAPEAVPLP
+                     PLAPIMITTEQLRFLMERVNGPPTVNSSLHGNFAKCTARFDGEKSSNVESFVDAIEVY
+                     KDCVGVSDENALRGLPMLLTGLAATWWQGVKDHTPTCSLHGNFAKCTARFDGEKSSNV
+                     ESFVDAIEVYKDCVGVSDENALRGLPMLLTGLAATWWQGVKDHTPTWSAAIEALKQTF
+                     GPRLPPHKIYRKIFEREQRSNEATYLFICHIRALMSQLPLHSLSMTVQLDMT"
+ORIGIN      
+        1 atggtgctta cgagatcttg cgcagagagt ccgtcagcgg gcgctgctca agctaatgtg
+       61 gtggcgtcgc cgccgcccac tccggaggct gtacgaccac ctgcacctgc gccggaggct
+      121 gttccattgc ctccgcttgc tccgatcatg ataacaaccg agcagctgag atttttaatg
+      181 gaaagggtaa atggcccacc aactgtaaat agttccttac atggtaattt cgcaaaatgc
+      241 acagcacgat tcgacggcga gaagtctagc aacgtggaat cttttgtaga cgccatagag
+      301 gtctataaag attgtgttgg agtaagcgac gaaaacgcct tgcgtggctt gcctatgtta
+      361 ctcaccgggt tggctgcgac atggtggcag ggtgtgaagg atcatacccc aacctgttcc
+      421 ttacatggta atttcgcaaa atgcacagca cgattcgacg gcgagaagtc tagcaacgtg
+      481 gaatcttttg tagacgccat agaggtctat aaagattgtg ttggagtaag cgacgaaaac
+      541 gccttgcgtg gcttgcctat gttactcacc gggttggctg cgacatggtg gcagggtgtg
+      601 aaggatcata ccccaacctg gtctgccgcc atcgaagcac tcaaacagac gtttggacca
+      661 aggttgcccc cacacaaaat ttatagaaaa atatttgaaa gggaacagcg tagtaacgaa
+      721 gctacatacc tttttatatg tcacatcagg gcattaatgt cacagttacc ccttcattcg
+      781 ctgtcgatga ccgtgcaatt agatatgac
+//
+
+LOCUS       XM_013343342            8649 bp    mRNA    linear   INV 06-AUG-2015
+DEFINITION  PREDICTED: Amyelois transitella uncharacterized LOC106141703
+            (LOC106141703), mRNA.
+ACCESSION   XM_013343342
+VERSION     XM_013343342.1
+DBLINK      BioProject: PRJNA292025
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Amyelois transitella
+  ORGANISM  Amyelois transitella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Phycitinae; Amyelois.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013535332.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Amyelois transitella Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 57% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..8649
+                     /organism="Amyelois transitella"
+                     /mol_type="mRNA"
+                     /strain="UIUC subculture of SPIRL-1966"
+                     /isolation_source="larvae reared on standard wheat bran
+                     diet at 28C and photoperiod of 16:8 (L:D) h"
+                     /db_xref="taxon:680683"
+                     /chromosome="Unknown"
+                     /dev_stage="larva"
+                     /country="USA: Urbana, Illinois"
+                     /lat_lon="40.11 N 88.26 W"
+                     /collection_date="2010"
+     gene            1..8649
+                     /gene="LOC106141703"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 2% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106141703"
+     CDS             1..8649
+                     /gene="LOC106141703"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106141703"
+                     /protein_id="XP_013198796.1"
+                     /db_xref="GeneID:106141703"
+                     /translation="MMTRRREEAMRTRSADPPSPEDRAAANQDSDSDFAAAVDHPGGS
+                     TATDAYTARAPESSGGYDPDRLIARMMKEFARTQAELNKTLIEAIHSRGDGTAATKEE
+                     PVVSPTLRPEYHNAPRPNVNFTATPGGNFSRCTARFNGSSGDPEVLEAFIEALEVYKE
+                     CADVSDDHALRGLSIVLEGAALVWWRGARADVTTWPEALGRLRAAYGTPKPAYKLFRE
+                     IFATEQSDSERAESFVCRLRAIMCQFPYKLPDAAQVDIVYGLLHRRVRKRLTRESVNN
+                     LEQLLQKCRSVEDAIIEVCMPHAHVSNSTSFKKDSLSVGSDNTIGTAARQPTAATRSS
+                     RTRCSLCRIRGHSANECRSKLDKSNYVPNKNDTTSIRCYGCGKPGVIRSKCDVCMVGN
+                     RVGKSDSKVSVNAYKHEQSFNTVGLSGTSFNKHILRNSNNVINSVNSDSSWELVGMSK
+                     QINESSVCSVAAIKPATTFDSSQPTVNIGILGHRGVAIVDTGATHCIASPTLHEIMVR
+                     CGVKFEEVYPTIRLADGSCQRRRILCAEVDVEIGDRRLRTDFMVIPEADTKTLLGLDF
+                     ISRAGMILNIATGTWCFADTPSKVYDFANRCMLDTPRVDGNVSMARSHENYERSALRP
+                     VEPTGSDMNPAPRVSECPRTAPLVGDDRGPAPRLGEYPRTAPLVGDYKGPAPRVGEYP
+                     RAASLVGDDGGPTPLVGEDPRAVPLVGSDGCPMPGVSEYARTAPLVGNDEEPDTPEDY
+                     YDFRALADCDNASLALRDEECSRLSVSERYALNNFIERRRAQFNDRGPATEYAVHKIK
+                     VKEGQEPIACPPFRLSPSRREALKKELDQLLADDVIEECESPWASNVVLVAKKDGTYR
+                     VCIDYRKLNAVTEPDRYPLPRIEDVLHAAKTSKYMSTLDLKSGYFQVAVHEEDRDKTA
+                     FTTPHGTFRFKRMPMGLRNSGATFQRLIDRFKSNLKGVSLMAYLDDLVLLSAGPFERH
+                     LADLEAVFDRLAMFGLRVNRAKSHFARSSVKFLGHVITPGGLQVDPDKTAAITSMPVP
+                     RDIKQLKCFLQTSNWFRRFVPKYAEVSRPLTVLLKKDATWRWEAEQQGAFDKIKNLLT
+                     SAPILRQADETLPFVLSTDSSGYCLGAVLLQGEGSDERPVEYASRLLTSAERNYSTTE
+                     REALAVVWAVTKFRGYIEGSEIIVRSDHQPLRWLMSLRSPSGRLARWALTLQEYNLKI
+                     EYVPGRSNAVADTLSRLVDTQTADHDIGLAVVDVSARSPADIRANQMKDPEICKIIED
+                     MESDASSRGRPWADRGYVISEGVLYRYGLEESDEDEASLVVPVHERAQVLANFHDAPT
+                     AGHLGVERTLSRLRLRFYWPGMRAYVTKYVKECVPCQRYKIDNKKPAGLLQTPAMSRR
+                     FEVLSVDLFGPLVESPRGNRWILIIEDVGSRWVELFALQAATSFECAKTLVNEVFLRY
+                     GVPRRLISDNGVQFVSEVMQQACHVMGIDQVLTPFYHPEANPIERKNRDLKPQLAILV
+                     GNDHSEWDVHLAAVRFAMNSAVTASTGYSPAYLTFGRELRAPSDASTDLRAIVDSDNF
+                     VPNITPYLKALAGKLAEARDVHEKAQAIQKRNADLGRRSPPAHKVGDLVLLKTQGAND
+                     AGRGQSAKFIPRRDGPYRVKAVVSDTTYILENLQDGRDMEGPDSEYTIFVGRWSECEL
+                     QERDRAAERYTKQKNPDSLVHTPRLGLQRRQVQCRRKDGRFVEPIFCGKAIQHMGAFR
+                     ICVMKDDCILGDWFPWRPRADGLLVRTRRLQRLPQGGGKDCDLIEEVRPGVLEPTAHW
+                     TPGPWGSCRVTIEQTATPPPANDDSDDDADDNDAIYDDDDDDEQADEDDKENAQASCG
+                     GGLQRREATCVRADGSFLHTSHCAHATLPTLVQPCEVPCPRDCEVGEWGEWGACQPTD
+                     GCPLYPVQQLTTAGYSVRRRRVITAASGGGAPCPPLEEKRTCSTPRCASWKALPWGPC
+                     ILNRPHTSCGPGKRTRELRCVGHDGKEAQRAWCSGTAAPTRMERCHIACAGDCVVSSW
+                     GSWSPCSGSCAVATNPPPTRTRRRHILAHATPSGWPCPAEDQLVQTEPCNNHACATYS
+                     WLATPWGPCERRRQDYISNTNYTDLQDGEPFNFNDEDEPCVEEGEMTRDVMCVQNNAD
+                     VVREALCAPLHRPSSRRACTLRCVRGCRVEAWGPWSPCPNTCAPEKQIRVRAVHGGPN
+                     CGPREQSRPCPAARSCRPRDAAWAGGEWGVCRLPPDRRCGAGYRLRSIWCGSESHRVE
+                     AGACAGLRVPQSVVPCSVPCDRIPFYTCHVICSDPLKYLDASHPDIPSCVCKNVSLEL
+                     LPADSDCILPPGLECGEGRSLRAARCMVEGRDVPMDVCKKYHPLTGPNRVREASTDGF
+                     SYDEEFPNLLRGPCSVSCARDCVAGPWGQWGPCDTEVGSRSAFRYRTREVIEIGSVGG
+                     RECGATLQRATCNESLPRWAVGEWSVCAPFRALCGRALVNRTVSCVDEEGVKLSKTKC
+                     LGSGAGPMPPKEMECRAPCPGDCVLSSWSEWSPCERSQSGSGRRDRTRVVLRPALEGG
+                     EPCGALVAAENCFPRAYRWHVAPWDDCQPLGGSPCGEGIKRRAVRCIRDDGAFVNNSF
+                     CPNGSPEDESMSWCYVPCGVDCEVGEWGPWDTSACSCGDASTARHMRRTRPHLTTAVW
+                     RGRACPPTEQRAPCPREPCLRLVARPTLGCHVQTASREEADGACGWGVKISHARCELS
+                     SVGEMSSTYLDPWRCAVALPGRIVGPPLHFQEEEACQVDCDCESSLGAPGPWGAWGPC
+                     RGGARSRTRQLLLPARRACRTPNRLVTIEWANCTGSADEIQDLLAVERGEDKPRRAWL
+                     EKDVYHDGYIEGSTSVLAVVWTATIVLSFYGAFMLYRGFIRCLRSRKMKTITKV"
+ORIGIN      
+        1 atgatgacga gaaggcgcga ggaagcgatg cggacgcgta gtgccgatcc gcccagtcct
+       61 gaagacaggg cagcagcgaa ccaggacagc gattcggatt ttgccgcggc ggttgaccat
+      121 cccgggggca gcacagccac ggatgcttac accgcccgcg caccggagtc gtccggtggt
+      181 tatgacccgg atcggctcat agcaaggatg atgaaggagt tcgcccgcac ccaagcggag
+      241 ctgaacaaga ccctgatcga agcaattcat tctcgcggtg atggtaccgc cgcgaccaag
+      301 gaggaaccgg tcgtatcgcc gactctgcga ccggagtacc acaacgcacc gcgccctaat
+      361 gtgaacttca ccgcgacgcc tggcggtaat ttttcccgct gcacggcgcg tttcaacgga
+      421 agttctggcg atccagaagt gttagaagcc ttcatagagg cgttggaggt gtataaggag
+      481 tgcgcggacg tgtcggatga ccacgcgctg cgcggcctgt ccatcgtgct ggaaggagcc
+      541 gcactggtct ggtggagagg cgcacgggcg gacgtcacga cctggcccga ggcgctggga
+      601 agacttcgtg ctgcctacgg aacaccgaag cccgcataca aactatttcg cgaaatattt
+      661 gctacggagc aaagtgatag tgaacgtgcg gaaagtttcg tatgccgttt gagagctata
+      721 atgtgtcagt ttccttacaa gctaccggac gccgctcagg tagatatagt ttacgggctg
+      781 ttgcacaggc gagtgcgtaa gcgcctgacc cgggaaagtg taaacaattt agaacagttg
+      841 ttacaaaagt gtaggagtgt cgaagacgcc atcatagagg tatgcatgcc gcacgcgcac
+      901 gtaagtaatt ccacttcttt taaaaaggat agtctgagcg taggcagcga taatactata
+      961 ggcacggccg cgcgtcaacc gacggccgcg acgcgttcgt ctagaacgcg atgctctctg
+     1021 tgtaggatcc gcggacattc agctaacgag tgtaggtcta agcttgataa gtccaattac
+     1081 gtacctaata agaacgatac gacatcgatt cgctgttacg gctgtggtaa gcctggcgtt
+     1141 ataaggtcga agtgtgatgt ttgtatggtt ggtaatcgcg taggtaaatc cgatagcaaa
+     1201 gttagtgtta acgcgtataa gcatgaacaa agttttaata ctgttggtct tagtggtaca
+     1261 tcatttaata aacacatttt gagaaactct aataacgtta tcaatagtgt taacagcgat
+     1321 agtagttggg agttagtagg tatgtcaaaa cagattaatg agagtagcgt atgtagtgtc
+     1381 gccgccatca agcccgctac gacgttcgat tcgtcgcaac cgacggttaa cataggtata
+     1441 ctaggtcata ggggcgtagc catagtggac acgggcgcga cgcactgtat tgcgagcccc
+     1501 accctgcacg aaataatggt acgctgtggt gttaagttcg aggaggtgta tcccaccata
+     1561 cgtctggctg acggttcctg ccaaagaaga cgtattcttt gtgctgaagt ggacgtcgag
+     1621 attggtgacc gtagactgcg cactgacttc atggtcattc ctgaagccga cactaagaca
+     1681 ttgttgggac tagattttat ctctagagca ggtatgatat taaatatagc tactggtact
+     1741 tggtgtttcg cggatacccc gagcaaggta tatgatttcg cgaatagatg tatgctggat
+     1801 acgccccgcg tggacgggaa cgttagcatg gcacgatcac acgagaatta cgaacgtagt
+     1861 gcgctgcgac ccgtggagcc gacgggcagt gatatgaacc ccgcgccgcg agtgagcgag
+     1921 tgccctcgca ccgcgccgct ggtgggcgac gatagaggcc ccgcgccgcg actaggtgag
+     1981 tatcctcgca ccgcgccgct ggtgggcgac tataaaggcc ccgcgccgcg agtgggcgag
+     2041 taccctcgcg ccgcgtcgct ggtaggtgac gatggaggcc ccacgccgtt ggtgggcgag
+     2101 gaccctcgcg ccgtgccgtt ggtgggcagc gatggatgtc ccatgccggg agtgagcgag
+     2161 tatgctcgca ccgcgccgct ggtgggtaac gatgaagagc ccgacacccc tgaagattat
+     2221 tatgattttc gcgcgcttgc tgattgtgac aacgcaagtc tcgcgttacg cgacgaggaa
+     2281 tgctcgcgac tgtcggtgag tgaaagatat gcactcaaca atttcataga aaggaggagg
+     2341 gcgcagttta atgatagagg ccctgcaacg gaatacgcag ttcacaaaat aaaagtgaag
+     2401 gaggggcaag agcctatcgc atgccctccg ttcagattgt ctccaagccg tcgagaggca
+     2461 ctcaagaagg agctagatca gttgttggct gatgacgtca tcgaagagtg cgagtctcct
+     2521 tgggcttcga acgttgtgct agtagctaag aaagatggca cttatcgggt atgtatcgac
+     2581 taccgaaaac tgaacgctgt gacagagccg gacaggtacc cacttccacg gatcgaggat
+     2641 gtgctgcacg cggctaagac cagtaagtac atgagtaccc ttgatttgaa atctggctac
+     2701 tttcaggtgg ctgtccacga ggaggaccga gacaaaacag cgttcactac accgcatggt
+     2761 acgttccgtt ttaaacgtat gccgatgggg ctacgtaatt ctggcgctac ttttcaacgt
+     2821 cttatcgata ggttcaagtc aaacctgaag ggagtctcgc tcatggcgta tttggatgac
+     2881 ctcgtgttgc tgtcagcagg acccttcgag aggcacttgg cagacttgga agccgtcttc
+     2941 gatcggttgg ccatgttcgg attgagagtt aaccgagcaa agagccattt tgcacggagt
+     3001 tccgtgaagt ttctaggcca tgtcatcact ccaggtggtc tccaggtgga cccggataag
+     3061 acggcagcta taacgagcat gccagtccca cgagatatca aacagctgaa gtgcttctta
+     3121 cagacatcta actggttccg caggtttgtg cctaagtacg cggaggtttc gagacctcta
+     3181 acagtactgt taaagaaaga cgccacctgg cgatgggaag cggagcaaca aggagcgttt
+     3241 gacaagatta agaacctcct gacctctgcc ccgatccttc ggcaagccga cgagacactt
+     3301 ccttttgtgc taagcactga cagtagcggt tactgcctcg gagctgtttt gctccagggg
+     3361 gagggttcgg acgagcggcc agtcgaatac gccagtcgcc tacttacgag tgccgagcgg
+     3421 aactactcga ctacggaacg tgaggcactg gcagtggtat gggctgtgac gaagttcaga
+     3481 ggatatattg agggttcaga gatcattgtg cgatcagatc accagccttt gaggtggctg
+     3541 atgagcttga gatcacctag tggtcgtctc gctagatggg cgttaacgct acaagaatac
+     3601 aacctgaaga ttgagtacgt gccgggacgc tcgaatgcgg tagccgacac gctctccaga
+     3661 ttggtagata cccagactgc ggatcacgac attggcctgg ccgtggtgga tgtctctgca
+     3721 aggagtcctg cagacatccg agcaaatcaa atgaaggacc cagagatttg caaaattata
+     3781 gaagacatgg aatctgacgc atcatccagg gggagacctt gggctgatcg aggttatgtg
+     3841 atctctgagg gagtcctgta caggtatgga ttggaagaaa gcgacgagga tgaagcgagt
+     3901 ctggttgttc cagtgcatga gagagctcag gtcctcgcca acttccatga cgcacccacc
+     3961 gctggacatt taggcgtaga acgcacgctg agtcgtctcc ggttacggtt ttattggcca
+     4021 ggaatgcgtg cttatgttac gaaatatgta aaggagtgtg tgccttgtca aaggtataag
+     4081 attgacaaca agaaaccagc tgggttgttg caaacgcctg ctatgtccag aaggtttgag
+     4141 gttctatctg tggacctatt tggtcccttg gtggaatccc ctcgaggtaa tagatggatc
+     4201 ctcatcatcg aagacgttgg gtcgaggtgg gtagaattgt ttgcacttca agccgcgacg
+     4261 agcttcgagt gtgctaaaac acttgttaac gaggtgtttc taaggtatgg tgtacctagg
+     4321 cgccttatca gcgataatgg agtccagttc gtcagcgagg tgatgcagca ggcatgtcat
+     4381 gtcatgggga ttgaccaggt actgacaccg ttttaccacc cggaggccaa ccccattgaa
+     4441 cggaagaaca gagacttgaa gcctcagctg gcgattctcg tagggaatga tcactccgag
+     4501 tgggatgttc atctggctgc ggtcagattc gcgatgaact ctgcggttac agcgagtaca
+     4561 ggttactcgc ctgcatacct taccttcgga agggagttgc gggcgccgag cgacgcttcc
+     4621 actgatttga gggctatagt ggactccgat aacttcgtcc ctaatataac gccttacctt
+     4681 aaggctttgg caggtaagtt ggctgaagcg agagacgtcc acgagaaagc acaagcgatc
+     4741 caaaagcgaa acgctgatct ggggcgccgc tcaccacccg ctcacaaggt gggagacctt
+     4801 gttttgctca aaactcaagg ggcgaatgac gcagggcgcg gacagtccgc caagtttatt
+     4861 ccacgtagag atgggccgta cagggttaag gccgtggtaa gtgacactac atacatactg
+     4921 gagaatttgc aggatggtag ggatatggag ggtcctgact ccgagtatac tatcttcgtg
+     4981 ggtcgctggt ctgaatgcga acttcaggag agggaccgtg cggcggaaag atacaccaag
+     5041 cagaagaacc cggactccct agtgcacacc ccgcgcctcg ggctccaacg gcggcaggtg
+     5101 caatgtcgac ggaaagatgg ccgcttcgtc gaacctatat tctgtggcaa agctatacag
+     5161 cacatgggcg cattcaggat atgcgtgatg aaggatgact gcatcctcgg ggactggttt
+     5221 ccatggcgac ccagggccga cggcttgctg gtgcgcactc gaaggctgca gcggctacca
+     5281 caaggaggcg gaaaggattg cgacttgata gaagaagtga gacccggggt gttggagccc
+     5341 actgcgcatt ggacccccgg cccttggggc tcgtgtcgtg tcaccatcga gcaaaccgct
+     5401 accccgcccc ctgcaaatga tgacagcgac gatgatgctg acgataacga tgctatctat
+     5461 gatgacgatg atgatgatga acaagcagat gaagatgata aagagaacgc ccaagccagc
+     5521 tgtggaggag gactacaaag acgcgaagcc acgtgtgtgc gagctgacgg cagtttcttg
+     5581 catacgtctc attgtgcgca tgcgactctt cctacactag tccagccttg tgaggtgcca
+     5641 tgtccgcggg attgtgaagt gggcgagtgg ggtgaatggg gtgcctgcca gcccaccgac
+     5701 ggctgtccgc tttatcctgt ccagcaactt accactgctg gctacagcgt acgccggcgc
+     5761 cgcgtgatca ccgcggcgtc tgggggcgga gctccctgcc cccctctgga agaaaagagg
+     5821 acttgttcca cccctcggtg cgcctcgtgg aaagccttgc cttggggccc gtgcatcttg
+     5881 aatcgaccac ataccagttg cggccctggg aaacgcactc gtgagctaag atgtgtggga
+     5941 catgatggga aagaggctca gcgtgcttgg tgtagtggta ctgcggctcc aacccgcatg
+     6001 gaaagatgcc acatcgcctg cgccggcgac tgcgtggtgt cttcttgggg aagttggtcg
+     6061 ccttgctcgg gttcctgtgc tgtggccacc aatccaccac ccaccaggac aagaaggagg
+     6121 catatcctgg ctcacgctac tcctagcggt tggccctgtc cggcggaaga ccagcttgtc
+     6181 caaaccgaac cttgcaacaa ccacgcgtgc gccacttact cctggctcgc cactccctgg
+     6241 ggaccctgcg agcggcggcg gcaggattac atttcaaaca ccaactatac ggatttgcaa
+     6301 gatggagaac cattcaactt caatgacgaa gatgagccgt gtgtggaaga aggtgagatg
+     6361 acacgcgacg tgatgtgtgt gcagaacaac gctgacgtgg tcagagaagc actgtgtgcc
+     6421 cccctccatc ggccgtcatc gcgtcgcgcg tgtacattgc gatgcgtacg cggctgccgc
+     6481 gtggaagctt ggggtccttg gtcgccgtgc ccgaatactt gtgcgcccga aaaacagata
+     6541 cgtgtacgcg ccgtccacgg cgggccgaac tgcgggccgc gcgagcagtc tcggccgtgc
+     6601 ccggcggcgc gctcgtgccg gccgcgcgac gccgcgtggg ccggcggcga gtggggcgtg
+     6661 tgccgcctgc cgcccgaccg ccgctgcggc gcgggctacc ggctgcgcag tatctggtgc
+     6721 gggtcggagt ctcaccgtgt ggaggccggc gcgtgcgcag gactgcgagt gcctcaaagc
+     6781 gtggtcccgt gttcggtgcc gtgcgaccgc atccccttct acacctgcca cgtcatctgt
+     6841 tcggacccgc tcaagtactt ggatgcgtct cacccagata ttccaagctg cgtttgcaaa
+     6901 aacgtgtctt tggaacttct tcctgccgat tctgactgca tcctaccacc aggactggag
+     6961 tgtggagaag gcagatcttt gagagcagcg cgctgtatgg tcgaaggtcg agacgtgccg
+     7021 atggatgttt gcaagaaata tcatcctctt actggaccta atcgcgtgcg ggaagcatca
+     7081 acggacggct tctcctatga cgaggagttc ccgaatttgc tgcgcgggcc ctgcagcgtg
+     7141 agctgcgcac gagactgcgt ggccggaccc tggggccagt gggggccctg cgacaccgag
+     7201 gtcgggtccc gatccgcttt ccggtaccgg accagggaag tgatagaaat cggttcggtc
+     7261 ggcgggcgcg agtgtggcgc caccttgcag cgcgccacgt gcaacgagtc cttgccgcgc
+     7321 tgggccgtcg gcgagtggag cgtgtgcgca cccttccgcg cgctgtgcgg ccgggccctc
+     7381 gtcaacagga ctgtctcttg cgtggacgaa gaaggcgtaa agctgtccaa gacgaagtgc
+     7441 ctgggcagcg gcgcggggcc gatgccgccc aaggagatgg agtgccgcgc gccctgcccc
+     7501 ggggactgcg tgctcagctc ctggtccgag tggagcccct gcgagcggtc gcaatccggc
+     7561 agcggtcgtc gtgaccgcac ccgcgtggtg ctccggccgg cgctggaggg cggcgagccg
+     7621 tgcggcgctc tcgtggcggc cgagaactgc ttcccacgcg cctacaggtg gcacgtcgcg
+     7681 ccctgggacg actgccagcc gctaggaggg tccccttgcg gcgaaggcat caagcggaga
+     7741 gctgttcggt gtatacgaga tgatggcgct tttgtcaaca attcgttctg cccaaacgga
+     7801 agtccagaag atgagagtat gtcctggtgt tatgtgccgt gtggagtgga ctgcgaggtg
+     7861 ggggagtggg gcccgtggga cacctccgcg tgctcgtgcg gcgacgcgtc cacggcgaga
+     7921 cacatgcgac ggactaggcc acacctgaca acggcggtgt ggcggggccg cgcctgcccg
+     7981 cccacagagc agcgcgcgcc gtgcccgcgg gagccctgcc tcagactcgt ggcgagacct
+     8041 actctgggct gccatgtaca gactgcatca cgcgaagaag cggacggcgc atgcggctgg
+     8101 ggcgtgaaga tctcgcacgc tcgctgcgaa ctctccagcg tcggcgaaat gtcctccact
+     8161 tacctggacc cgtggcgctg cgccgtagcc ctccccggca ggattgtagg cccgcccttg
+     8221 catttccagg aggaagaagc gtgtcaagtg gactgtgact gcgagtcgtc cctgggggcg
+     8281 ccggggccct ggggcgcgtg ggggccctgc cgcggcggcg cgcgctcccg gacccgccag
+     8341 ctgctgctgc ccgccaggcg agcgtgccgg acccccaata gattggtgac catcgaatgg
+     8401 gcgaactgta ctggttctgc tgacgagatc caagacttgt tggctgttga acgcggagaa
+     8461 gacaagccgc gccgcgcctg gctcgagaag gatgtgtacc atgacgggta catcgagggt
+     8521 agcacctcgg tgctggcagt agtatggaca gctaccatcg tcctcagctt ctacggggct
+     8581 ttcatgctct acagaggatt tatcaggtgt ctcagaagca gaaaaatgaa gaccatcacc
+     8641 aaagtgtaa
+//
+

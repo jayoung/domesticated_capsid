@@ -1,0 +1,477 @@
+LOCUS       XM_034248701             929 bp    mRNA    linear   INV 09-MAY-2020
+DEFINITION  PREDICTED: Drosophila albomicans activity-regulated cytoskeleton
+            associated protein 1-like (LOC117568227), mRNA.
+ACCESSION   XM_034248701
+VERSION     XM_034248701.1
+DBLINK      BioProject: PRJNA630751
+KEYWORDS    RefSeq.
+SOURCE      Drosophila albomicans
+  ORGANISM  Drosophila albomicans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_047629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila albomicans Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..929
+                     /organism="Drosophila albomicans"
+                     /mol_type="mRNA"
+                     /strain="15112-1751.03"
+                     /db_xref="taxon:7291"
+                     /chromosome="3"
+                     /sex="female"
+                     /tissue_type="Whole Adult"
+                     /country="Taiwan: Nankang"
+     gene            1..929
+                     /gene="LOC117568227"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117568227"
+     CDS             51..845
+                     /gene="LOC117568227"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034104592.1"
+                     /db_xref="GeneID:117568227"
+                     /translation="MTQTIQMTNEQLRQLIETVKSSAVSAADNAVFTSGDASMAKTKG
+                     SFSNCTHRFGGNRSRDEVEEFITNVVTFKELEMISDENAMKGISLLFYGIASTWWQGV
+                     RKEAKTWNDAIGLIREHFSPAKPAYQVYMDFFAKKQFDGIAIDTFVVEKRALLAQLPE
+                     DQHNEETELDFLYGLLNIKYRKHITRQSVKTFRDLLELGRVIEHNSQEDQAEARAAVP
+                     LRCARHVERCTHCNFRGHRLENCRKRQAQTANVAEGAKRLREDITA"
+ORIGIN      
+        1 caaataaggt aaagcattaa cttcgctaat aaccacattt gaagcacaat atgacacaga
+       61 caatacaaat gacaaatgaa caacttcgtc aactcattga gactgtgaaa tcgtctgcag
+      121 taagtgcagc tgacaatgct gtgttcacaa gtggagatgc ctccatggca aagacaaagg
+      181 gcagcttcag caattgcaca catcgatttg gcggcaatcg aagccgcgat gaggtggagg
+      241 aattcataac gaatgttgtc accttcaagg aattggaaat gatcagcgat gagaacgcca
+      301 tgaagggcat ctcactgctc ttctatggca ttgcttccac ttggtggcaa ggtgttcgga
+      361 aggaggcaaa gacctggaat gatgctattg gtctcattcg cgagcacttc tcgcctgcca
+      421 agcccgcata ccaggtctac atggatttct ttgcaaagaa acagtttgat ggcattgcca
+      481 ttgacacttt tgtggtcgag aagcgtgcac tgctcgctca gctgccagaa gatcaacaca
+      541 atgaagagac agaactggac tttctatatg gtctgttgaa tatcaagtat cgcaaacaca
+      601 ttactcggca aagtgtgaag acatttcggg atcttcttga attgggtcgt gttatagagc
+      661 acaatagtca ggaagatcag gctgaagcaa gggctgcagt tccattgcgt tgtgctcgtc
+      721 atgttgagcg ctgcactcac tgtaatttcc gtggtcaccg gcttgagaat tgccgcaagc
+      781 gtcaagctca aactgcgaat gttgcagaag gtgcaaaaag gctacgagaa gacattacag
+      841 cttaacactg accgtagagg caacactata gtacacttct ctttcaatat gtacatataa
+      901 ttaatacgaa tatatggaat tattacgta
+//
+
+LOCUS       XM_034255437            2326 bp    mRNA    linear   INV 09-MAY-2020
+DEFINITION  PREDICTED: Drosophila albomicans activity-regulated cytoskeleton
+            associated protein 1-like (LOC117572561), mRNA.
+ACCESSION   XM_034255437
+VERSION     XM_034255437.1
+DBLINK      BioProject: PRJNA630751
+KEYWORDS    RefSeq.
+SOURCE      Drosophila albomicans
+  ORGANISM  Drosophila albomicans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_047629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila albomicans Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2326
+                     /organism="Drosophila albomicans"
+                     /mol_type="mRNA"
+                     /strain="15112-1751.03"
+                     /db_xref="taxon:7291"
+                     /chromosome="3"
+                     /sex="female"
+                     /tissue_type="Whole Adult"
+                     /country="Taiwan: Nankang"
+     gene            1..2326
+                     /gene="LOC117572561"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117572561"
+     CDS             15..770
+                     /gene="LOC117572561"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034111328.1"
+                     /db_xref="GeneID:117572561"
+                     /translation="MAQTIQMTNEQLQALIEAVRASAVSAAGNAVAAGESSTSKTKGS
+                     FSNCTHRFGGARSHDEVEEFITNIVTYKELESISDENALKGISLLFYGIASTWWQGVR
+                     KEAKTWNDAIGLIREHFSPTKPAYQVYMEFFEKKQEDSVAIDTFVVEKRALLAQLPEG
+                     RHNEETELDFLYGLLNIKYRKHIPRQSITTFRDLLEQGRIIEHNNQEDEAVSKGPLRG
+                     ARRVDRCTYCNFRGHTFENCRKRRQAQNEGNDD"
+ORIGIN      
+        1 tatctaaata caaaatggcg cagactattc agatgactaa cgagcaacta caagctctca
+       61 tcgaagcagt gcgtgcgtcg gctgtcagcg cagctggcaa cgctgtcgct gctggtgaat
+      121 cttcaacatc caagacgaag ggcagcttca gcaattgcac acatcgattt ggcggtgctc
+      181 gcagtcatga cgaggtcgag gagttcatca ccaacattgt cacctacaag gagttggaga
+      241 gcatcagcga tgagaacgcc ctcaaaggca tctccctgct cttctatggc atcgcttcca
+      301 cttggtggca aggtgttcgg aaggaggcaa agacctggaa tgacgctatt ggtctaatcc
+      361 gtgaacactt ctctcccact aagcctgcct accaggtcta catggagttc tttgagaaga
+      421 aacaggagga ttcggttgcc attgacacct ttgtggtcga gaaacgtgca ctgctcgctc
+      481 agctgccaga aggccgccac aatgaagaaa ccgaactgga cttcctctac ggcctcttga
+      541 atatcaagta ccgcaaacac attccccgtc agagcatcac aacgttccgt gatcttcttg
+      601 aacaaggccg catcatcgag cataacaacc aagaagatga agccgtatcc aagggtccac
+      661 tacgcggtgc tcgccgtgtt gatcgttgca cttactgcaa tttccgtgga cacacgttcg
+      721 agaactgccg caaacgtcga caggcacaga acgagggcaa cgacgattaa aagactactc
+      781 acacgcaact cttcaaatcg tgacatcatc ggcaaattaa aaataacaac tggttgcgca
+      841 gggcgcacat ctaatacgct gacgtcacga tccaacaaaa agaaatacag caagacttcg
+      901 ccacgctggt cacacattga caagaacgag aaggaggatg acagcttcta cacaagttca
+      961 tttcactctc tcattcatcg ccaagtggcg tgccggcaag ctaagccaag cttaacacaa
+     1021 caacaacaac aaaacttcac gctgcgcctg cggctatttt tggctatgaa cgctaactct
+     1081 agaatggttt tcgtgatatt atcacaacaa tgtttatgca ccaaggtaaa gcttatttac
+     1141 cttagacgga ttgatgggaa cttgaagggg ggagaggcgc acggatttcg ctcctaggcc
+     1201 aaagctttgc gtattgatgc ggcccaatag atcagcgacg ttctgaagtg tattgcactc
+     1261 ggctgttgtt cttcggaact gcagccgaag gctttactcg acggacttcg ttgaatctgc
+     1321 tgagtttgta tcagcgcaga gcttttggct tgggtgtttc gtgcggctct cccctctcca
+     1381 cttttttgtc aaaaaccgct gccttgacct agtgtttgtg caggggcggg tgaaacgtgt
+     1441 actaggctat caaggtgagg gttctcccaa caacttgtcg cttagtttgc gttttatcgg
+     1501 caactctgta cggatcctta atcaatgtgg caaaaaaccc cccgccgtca gtcattgatg
+     1561 ccgttccttt tgtgcgactt atatccatgg cggagctcca ggctgtgcac agtgcgtagt
+     1621 aagaagcaat gttgaaatgt gtttcgatgc atttcagcgt tgttgctctg cggtggcaac
+     1681 tgtgtccggc ctgaagctgt tgccaaatgg ttgtgcgtct ttcgcgatag gaactgttat
+     1741 tgattggctg ttggcaaaac caaaattctc tctatgagag aactttgaac aaatcaaaca
+     1801 atttaatgac attttatgtc aatatttgca aagtacattt gcacaccgat ggctatgttg
+     1861 tcgccattcg tgcaattggc acgctaaatt gtccttggct gaaaagctgc tcttaggagc
+     1921 acttcgatga cagacaagtt ctaggcacgc catcaatttt cattcacaca aaagggttct
+     1981 tggattcgtc gccgcccagc agctccagca tgtggcgact gccctgaacc caccacgttt
+     2041 gtaaatgcaa tctcttgtgc agaattaata ggcgcgtagt accatcaaca tctacatcgg
+     2101 tatatattgg cccttattgt ttagcgggcc agaatacgga gcactggcca ctcactcgct
+     2161 gcaacaaact tggacccgca ctccccgatg atatgacagt gcgcttactt ggccattgtg
+     2221 atcatcatta tactgggggc ctatggatga ccacaagagg ttgtgatgac caaacaaaac
+     2281 aagaaaaaaa tcaagactga acccagaaaa aatcaacaat caaata
+//
+
+LOCUS       XM_034255438            2782 bp    mRNA    linear   INV 09-MAY-2020
+DEFINITION  PREDICTED: Drosophila albomicans activity-regulated cytoskeleton
+            associated protein 1-like (LOC117572562), transcript variant X1,
+            mRNA.
+ACCESSION   XM_034255438
+VERSION     XM_034255438.1
+DBLINK      BioProject: PRJNA630751
+KEYWORDS    RefSeq.
+SOURCE      Drosophila albomicans
+  ORGANISM  Drosophila albomicans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_047629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila albomicans Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2782
+                     /organism="Drosophila albomicans"
+                     /mol_type="mRNA"
+                     /strain="15112-1751.03"
+                     /db_xref="taxon:7291"
+                     /chromosome="3"
+                     /sex="female"
+                     /tissue_type="Whole Adult"
+                     /country="Taiwan: Nankang"
+     gene            1..2782
+                     /gene="LOC117572562"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117572562"
+     CDS             143..898
+                     /gene="LOC117572562"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034111329.1"
+                     /db_xref="GeneID:117572562"
+                     /translation="MAQTIQMTNEQLQALIEAVRASAVSAAGNAVAAGESSTSKTKGS
+                     FSNCTHRFGGARSHDEVEEFITNIVTYKELESISDENALKGISLLFYGIASTWWQGVR
+                     KEAKTWNDAIGLIREHFSPTKPAYQVYMEFFEKKQEDSVAIDTFVVEKRALLAQLPEG
+                     RHNEETELDFLYGLLNIKYRKHIPRQSITTFRDLLEQGRIIEHNNQEDEAVSKGPLRG
+                     ARRVDRCTYCNFRGHTFENCRKRRQAQNEGNDD"
+ORIGIN      
+        1 gaatttcagt catcaacgac cacaccaagt gaaagcagta acattcgcca gctttggctt
+       61 tgttctctgc atttcccaca caattcaact acattcaaag ctaatccaca acaacgcgtg
+      121 tatcttttaa actaaataca aaatggcgca gactattcag atgactaacg agcaactaca
+      181 agctctcatc gaagcagtgc gtgcgtcggc tgtcagcgca gctggcaacg ctgtcgctgc
+      241 tggtgaatct tcaacatcca agacgaaggg cagcttcagc aattgcacac atcgatttgg
+      301 cggtgctcgc agtcatgacg aggtcgagga gttcatcacc aacattgtca cctacaagga
+      361 gttggagagc atcagcgatg agaacgccct caaaggcatc tccctgctct tctatggcat
+      421 cgcttccact tggtggcaag gtgttcggaa ggaggcaaag acctggaatg acgctattgg
+      481 tctaatccgt gaacacttct ctcccactaa gcctgcctac caggtctaca tggagttctt
+      541 tgagaagaaa caggaggatt cggttgccat tgacaccttt gtggtcgaga aacgtgcact
+      601 gctcgctcag ctgccagaag gccgccacaa tgaagaaacc gaactggact tcctctacgg
+      661 cctcttgaat atcaagtacc gcaaacacat tccccgtcag agcattacaa cgttccgcga
+      721 tcttcttgaa caagggcgca tcatcgagca taacaaccaa gaagatgaag cagtatccaa
+      781 gggtccacta cgcggtgctc gccgtgttga tcgttgcact tactgcaatt tccgtggaca
+      841 cacgttcgag aactgccgca aacgtcgaca ggcacagaac gagggaaatg atgattagaa
+      901 gactacaccc acgtaactct tcaaatcgtg acatcaccgg atattgacaa caacatctgg
+      961 atgcgcagag cgcatatctg atacgctgac gtcacgatcc aacaaaaagt aatatagcaa
+     1021 cacttcgcca cgctggccac acattgacaa gaacgagaag gaagtcagca gttttttcat
+     1081 aagttcattt cactctcatt caccgacaag tgacgtgccg gcaagctaag caaagcttac
+     1141 aatcaacata agaacaacaa aacttcacgc tgcgcctgcg gctatttttg gctatgaacg
+     1201 ctacgaatca ctttcgtgat atttgtgcaa ccaagaacaa attattttgt acattgtaca
+     1261 agcaaactgg taaactttgt ttaccggagt gatgggaaaa tgaagggggg agaggcgcac
+     1321 ggaattccct ccaaggtcga agctctgcgt gttgatgtga tcccagcaga tcagcgacgt
+     1381 tctgaagtgt attgcactcg gctgttgttc ttcggaactg cagccaaagg ctttactcga
+     1441 cggacgtcgt tgaatctgct gagtttgtat cagcgcagag cttttggctt gggtgtttcg
+     1501 tgcatccctt ccgtctccac tttcttgtca ctcaaaaacc gctgccttgg cctagtgtta
+     1561 gtgcaggggc gggtgaaacg tgtacgaggc tatcaagttg agggttctcc caacaacttg
+     1621 tcgctttatt tgcgtttcat cggcaactct gtgcggatcc ttagtcaatg tagcaaaaaa
+     1681 agcccctgga cccccgccga cagccagtta gttcagttcc tcctgtgtgg tgtaagacct
+     1741 cggatcatga catttattct ggatgtgtgc actgagtata acagacagca acatttgttg
+     1801 ttgtctgcaa tggcagccgt atacagagca gagaaagcag caacattgca gtgtgtttcg
+     1861 atgcactgca gcgttgttgc ttttagttgc ctgttgtaca caagaggcag caatattgca
+     1921 gtgtatttcg atgcactgca gggttgttgc cttatgttaa cggttgtaca aagagcgcag
+     1981 taagcatcaa cattgcaatt tgcagtgttg ctgttttgcg attccggctg tacacaagcg
+     2041 ctgtttttgt tgcattgcag tatcagaaga tattgcaatg tagcattagc gattcgcttg
+     2101 ttcacaagtt gacaatggct aaatgtggag ttttgccacg aagcgtttgg aatgtgtcac
+     2161 ggtggtttct gtgcccagcc tgaatgtttg tcacgtggtt ttacactgtc tcgcgatagg
+     2221 aactgttgcc gattggctgt tagcaaaatc aaagaaaaaa tgaatctttc tcataagaaa
+     2281 ttttaaatca acattgttat caagtaaatt gcacaacaat ggctatgttg tcgccattcg
+     2341 tgcaattggc acgcttaatt gttcttggct acaaagctgc tcttaggagc actttagagc
+     2401 caggcaagct ataggcacgc catccatttt catccacact taaaggttct tggattcgtc
+     2461 gccgcccagc agctccagca tgtggcgact gctctgaacc caccacgttt gtaaatgcca
+     2521 tctcctgtgc agaattaata ggcgcatagt accatcaaca tctacatcgg tatatattgg
+     2581 cccttgttgt ttggcgggcc agaatacgga gcactggcca ctcactcgct gcaacaaact
+     2641 tggacccgca ctccccgatt atatgacagt gcgcttactt ggccaatgcc atcatcgtta
+     2701 tactgggggc ctatggatga ccacaagagc ttgtgataat caagcacaac taaatttgta
+     2761 aagactgaac ttagaaaaaa aa
+//
+
+LOCUS       XM_034255439            2775 bp    mRNA    linear   INV 09-MAY-2020
+DEFINITION  PREDICTED: Drosophila albomicans activity-regulated cytoskeleton
+            associated protein 1-like (LOC117572562), transcript variant X2,
+            mRNA.
+ACCESSION   XM_034255439
+VERSION     XM_034255439.1
+DBLINK      BioProject: PRJNA630751
+KEYWORDS    RefSeq.
+SOURCE      Drosophila albomicans
+  ORGANISM  Drosophila albomicans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_047629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila albomicans Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2775
+                     /organism="Drosophila albomicans"
+                     /mol_type="mRNA"
+                     /strain="15112-1751.03"
+                     /db_xref="taxon:7291"
+                     /chromosome="3"
+                     /sex="female"
+                     /tissue_type="Whole Adult"
+                     /country="Taiwan: Nankang"
+     gene            1..2775
+                     /gene="LOC117572562"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 13 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:117572562"
+     CDS             136..891
+                     /gene="LOC117572562"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034111330.1"
+                     /db_xref="GeneID:117572562"
+                     /translation="MAQTIQMTNEQLQALIEAVRASAVSAAGNAVAAGESSTSKTKGS
+                     FSNCTHRFGGARSHDEVEEFITNIVTYKELESISDENALKGISLLFYGIASTWWQGVR
+                     KEAKTWNDAIGLIREHFSPTKPAYQVYMEFFEKKQEDSVAIDTFVVEKRALLAQLPEG
+                     RHNEETELDFLYGLLNIKYRKHIPRQSITTFRDLLEQGRIIEHNNQEDEAVSKGPLRG
+                     ARRVDRCTYCNFRGHTFENCRKRRQAQNEGNDD"
+ORIGIN      
+        1 agtcatcaac gaccacacca agtgaaagca gtaacattcg ccagctttgg ctttgttctc
+       61 tgcatttccc acacaattca actacattca aagctaatcc acaacaacgc gtgtatcttt
+      121 taaactaaat acaaaatggc gcagactatt cagatgacta acgagcaact acaagctctc
+      181 atcgaagcag tgcgtgcgtc ggctgtcagc gcagctggca acgctgtcgc tgctggtgaa
+      241 tcttcaacat ccaagacgaa gggcagcttc agcaattgca cacatcgatt tggcggtgct
+      301 cgcagtcatg acgaggtcga ggagttcatc accaacattg tcacctacaa ggagttggag
+      361 agcatcagcg atgagaacgc cctcaaaggc atctccctgc tcttctatgg catcgcttcc
+      421 acttggtggc aaggtgttcg gaaggaggca aagacctgga atgacgctat tggtctaatc
+      481 cgtgaacact tctctcccac taagcctgcc taccaggtct acatggagtt ctttgagaag
+      541 aaacaggagg attcggttgc cattgacacc tttgtggtcg agaaacgtgc actgctcgct
+      601 cagctgccag aaggccgcca caatgaagaa accgaactgg acttcctcta cggcctcttg
+      661 aatatcaagt accgcaaaca cattccccgt cagagcatta caacgttccg cgatcttctt
+      721 gaacaagggc gcatcatcga gcataacaac caagaagatg aagcagtatc caagggtcca
+      781 ctacgcggtg ctcgccgtgt tgatcgttgc acttactgca atttccgtgg acacacgttc
+      841 gagaactgcc gcaaacgtcg acaggcacag aacgagggaa atgatgatta gaagactaca
+      901 cccacgtaac tcttcaaatc gtgacatcac cggatattga caacaacatc tggatgcgca
+      961 gagcgcatat ctgatacgct gacgtcacga tccaacaaaa agtaatatag caacacttcg
+     1021 ccacgctggc cacacattga caagaacgag aaggaagtca gcagtttttt cataagttca
+     1081 tttcactctc attcaccgac aagtgacgtg ccggcaagct aagcaaagct tacaatcaac
+     1141 ataagaacaa caaaacttca cgctgcgcct gcggctattt ttggctatga acgctacgaa
+     1201 tcactttcgt gatatttgtg caaccaagaa caaattattt tgtacattgt acaagcaaac
+     1261 tggtaaactt tgtttaccgg agtgatggga aaatgaaggg gggagaggcg cacggaattc
+     1321 cctccaaggt cgaagctctg cgtgttgatg tgatcccagc agatcagcga cgttctgaag
+     1381 tgtattgcac tcggctgttg ttcttcggaa ctgcagccaa aggctttact cgacggacgt
+     1441 cgttgaatct gctgagtttg tatcagcgca gagcttttgg cttgggtgtt tcgtgcatcc
+     1501 cttccgtctc cactttcttg tcactcaaaa accgctgcct tggcctagtg ttagtgcagg
+     1561 ggcgggtgaa acgtgtacga ggctatcaag ttgagggttc tcccaacaac ttgtcgcttt
+     1621 atttgcgttt catcggcaac tctgtgcgga tccttagtca atgtagcaaa aaaagcccct
+     1681 ggacccccgc cgacagccag ttagttcagt tcctcctgtg tggtgtaaga cctcggatca
+     1741 tgacatttat tctggatgtg tgcactgagt ataacagaca gcaacatttg ttgttgtctg
+     1801 caatggcagc cgtatacaga gcagagaaag cagcaacatt gcagtgtgtt tcgatgcact
+     1861 gcagcgttgt tgcttttagt tgcctgttgt acacaagagg cagcaatatt gcagtgtatt
+     1921 tcgatgcact gcagggttgt tgccttatgt taacggttgt acaaagagcg cagtaagcat
+     1981 caacattgca atttgcagtg ttgctgtttt gcgattccgg ctgtacacaa gcgctgtttt
+     2041 tgttgcattg cagtatcaga agatattgca atgtagcatt agcgattcgc ttgttcacaa
+     2101 gttgacaatg gctaaatgtg gagttttgcc acgaagcgtt tggaatgtgt cacggtggtt
+     2161 tctgtgccca gcctgaatgt ttgtcacgtg gttttacact gtctcgcgat aggaactgtt
+     2221 gccgattggc tgttagcaaa atcaaagaaa aaatgaatct ttctcataag aaattttaaa
+     2281 tcaacattgt tatcaagtaa attgcacaac aatggctatg ttgtcgccat tcgtgcaatt
+     2341 ggcacgctta attgttcttg gctacaaagc tgctcttagg agcactttag agccaggcaa
+     2401 gctataggca cgccatccat tttcatccac acttaaaggt tcttggattc gtcgccgccc
+     2461 agcagctcca gcatgtggcg actgctctga acccaccacg tttgtaaatg ccatctcctg
+     2521 tgcagaatta ataggcgcat agtaccatca acatctacat cggtatatat tggcccttgt
+     2581 tgtttggcgg gccagaatac ggagcactgg ccactcactc gctgcaacaa acttggaccc
+     2641 gcactccccg attatatgac agtgcgctta cttggccaat gccatcatcg ttatactggg
+     2701 ggcctatgga tgaccacaag agcttgtgat aatcaagcac aactaaattt gtaaagactg
+     2761 aacttagaaa aaaaa
+//
+
+LOCUS       XM_034255440             900 bp    mRNA    linear   INV 09-MAY-2020
+DEFINITION  PREDICTED: Drosophila albomicans activity-regulated cytoskeleton
+            associated protein 2 (LOC117572563), mRNA.
+ACCESSION   XM_034255440
+VERSION     XM_034255440.1
+DBLINK      BioProject: PRJNA630751
+KEYWORDS    RefSeq.
+SOURCE      Drosophila albomicans
+  ORGANISM  Drosophila albomicans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_047629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila albomicans Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..900
+                     /organism="Drosophila albomicans"
+                     /mol_type="mRNA"
+                     /strain="15112-1751.03"
+                     /db_xref="taxon:7291"
+                     /chromosome="3"
+                     /sex="female"
+                     /tissue_type="Whole Adult"
+                     /country="Taiwan: Nankang"
+     gene            1..900
+                     /gene="LOC117572563"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117572563"
+     CDS             88..678
+                     /gene="LOC117572563"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_034111331.1"
+                     /db_xref="GeneID:117572563"
+                     /translation="MTQMSDEQFQILIETIKSLAPQKTEQEEPQSKGSFSNCPVRFSG
+                     QRDHDAVDEFITAVETYKEVEGISDKDALKGISLLFSNIAITWWKGVRREATTWDDAL
+                     QLLRDHFSPTKPSYQIYMEIFETKQGSTEAIDTFICKQRALLAKLPEGRHNEETELDF
+                     IYGLMLQKYRERIPRHEVKSFRELLERGRNVERTRQ"
+ORIGIN      
+        1 ataactgaca gccgcgaaac ggttgttgca ttccaggttg ttgatgaagt tggtgttggt
+       61 gttggtgtga agtctaagtt caataaaatg acgcagatgt cggacgagca gtttcaaata
+      121 ctcatcgaaa caatcaaatc attggcacct caaaagactg agcaggagga acctcaatcc
+      181 aagggaagct tcagcaattg cccagttcga ttcagtggac aacgagatca cgacgctgtc
+      241 gatgaattta taacagcggt tgagacatac aaggaggttg agggaatcag cgataaagat
+      301 gccttgaagg gcatctcact acttttcagc aacattgcaa tcacctggtg gaagggcgtg
+      361 cgtcgtgaag caacgacgtg ggatgatgca ctgcagctcc tgcgtgatca cttttcgccc
+      421 acaaagccat cttatcaaat ctatatggag atcttcgaga caaaacaagg atccaccgag
+      481 gcgatcgata cgtttatctg caagcaacgc gctctgttag ccaaattacc agagggacga
+      541 cacaacgaag agacggaact tgacttcatt tatggactta tgctgcagaa gtacagagag
+      601 cgtattcctc gccatgaagt taaatcgttt cgcgaactcc tcgagcgtgg tcgcaacgta
+      661 gagcgtacaa gacaataaac tttagattct ttctgaacct aacaaacaat ggctatgatt
+      721 ttgttaagtt gtattacatg tagttagtct tttttgttat ttaaataaac ttacatatat
+      781 gcataagacg aaaaaatatt tgttttattt cctaagaaag cgtgtcgcaa cggacatttt
+      841 agattcgttc ttagccaaaa aatgtatgac tagaagtgga agtatcatat gtcaaatata
+//
+

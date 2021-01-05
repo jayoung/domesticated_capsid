@@ -1,0 +1,93 @@
+LOCUS       XM_034391483            1583 bp    mRNA    linear   INV 14-MAY-2020
+DEFINITION  PREDICTED: Thrips palmi uncharacterized LOC117649074
+            (LOC117649074), mRNA.
+ACCESSION   XM_034391483
+VERSION     XM_034391483.1
+DBLINK      BioProject: PRJNA632616
+KEYWORDS    RefSeq.
+SOURCE      Thrips palmi
+  ORGANISM  Thrips palmi
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Paraneoptera; Thysanoptera; Terebrantia;
+            Thripoidea; Thripidae; Thrips.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023144631.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Thrips palmi Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1583
+                     /organism="Thrips palmi"
+                     /mol_type="mRNA"
+                     /isolate="BJ-2018"
+                     /host="cucumber"
+                     /db_xref="taxon:161013"
+                     /chromosome="Unknown"
+                     /tissue_type="total insect"
+                     /country="China: Beijing"
+                     /collection_date="2018-07"
+                     /note="reared population for 20 generations"
+     gene            1..1583
+                     /gene="LOC117649074"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117649074"
+     CDS             35..1444
+                     /gene="LOC117649074"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC117649074"
+                     /protein_id="XP_034247374.1"
+                     /db_xref="GeneID:117649074"
+                     /translation="MAKWVGELSKEELNFELLYRSHPVDYKGTTAAKMRDILLGLLEK
+                     EKDGPLEDGVTATVEEELAIAELKLQTAELSLSMVTGGEGDARASKLRAGLSHLNRRI
+                     SRLLPMAVGEERERVKDALVQLKDLVAKFRDLGEGSVFNATVVMSVSAKKERSEKDDK
+                     KNKEKKKNKKSKAKAKVKVESESSSEENTDKTDSSSEEETKKTPKFARSLDVHKWGLK
+                     FNGLGEGTSVLSFIADVEEKASWKGIDVNHLVAGASEFFEGQAKTWFRGIRSKIDSWS
+                     ELKIALRKQYLPLNYYETLWEEIRSRKQGSNELMGTYVANMIGMFGWLELGEKVSDET
+                     KLAIIQRNLAPFYLEKLALTPVRSLEELKTLGKQLEFSKQRVEGYDAGKSKSKPIAPE
+                     FAYKQPTVRKPVVNEVNPVKKMICWKCRGEGHSFSTCTKEQKGTFCYKCGKQEVTTKT
+                     CPKCSKPSPKGKPEQKSGE"
+ORIGIN      
+        1 tcttgtttgc ggatacatcg tttagtgagt agacatggcg aagtgggtgg gggaactgtc
+       61 gaaggaggag ttgaactttg agttgttgta taggagtcac ccagttgatt acaaaggcac
+      121 taccgcggct aagatgaggg acattttgct agggttgctg gagaaggaga aggatgggcc
+      181 gttggaagac ggagtgaccg ctactgttga ggaggagttg gctatagcgg agttgaagct
+      241 tcagacggcc gagttgtcac tttcgatggt tactggaggg gaaggtgatg ccagagcttc
+      301 aaagttaagg gcgggtttgt cccatttaaa caggcgtatc tcccgtctcc taccaatggc
+      361 tgtcggagaa gagagggaga gagtaaagga cgcgcttgtt caactcaaag atttagttgc
+      421 taaattccga gatttgggag aaggcagcgt tttcaacgcg actgtagtga tgtccgtttc
+      481 tgccaagaag gagcgtagtg agaaagacga taagaaaaat aaggaaaaga agaagaataa
+      541 gaagagtaaa gcgaaggcca aggttaaagt agagtcggag agttctagtg aggagaacac
+      601 cgacaagact gatagtagct cagaagagga gactaagaaa actcctaaat ttgctagatc
+      661 cctagatgtg cataaatggg gtcttaagtt taacggcctt ggtgagggaa ctagtgtctt
+      721 gtcatttata gctgacgttg aggagaaggc tagctggaag ggcatagatg ttaatcatct
+      781 tgtggccggt gcttccgagt tctttgaggg tcaggcgaaa acctggttca gaggtattag
+      841 gtctaaaata gatagctggt cagagctgaa aattgctctg aggaagcaat atcttcctct
+      901 taactactac gagactctct gggaagagat caggagtagg aagcaaggta gcaatgagtt
+      961 gatgggcact tacgtggcga acatgattgg catgtttgga tggcttgagc taggagagaa
+     1021 agtctcagac gagactaaac tggcgatcat ccaaagaaat ctcgctcctt tctacttaga
+     1081 gaagttggcg ttgacgccgg tgcgttcctt agaggagctt aagactctgg ggaagcagct
+     1141 agaattcagc aagcaacggg tggaaggtta tgacgcggga aagagtaaga gtaagccaat
+     1201 cgctccggag ttcgcgtaca aacagcccac agttcggaag cctgttgtaa atgaagtaaa
+     1261 ccctgtaaag aagatgattt gttggaagtg tcgtggagaa ggacactcct tctcgacctg
+     1321 caccaaggaa cagaaaggaa ccttctgtta caaatgtggt aagcaggaag tgactaccaa
+     1381 gacctgcccg aagtgttcta agccttcccc taaggggaag cctgaacaga aatcggggga
+     1441 ataagtcggg gttcctacag ggaccgtgta ggaggctcca gatggaggaa ggtccctaga
+     1501 cggggttcta accccacttt ccagaaaggg agttctggtg cttatgtgtt agagttgaag
+     1561 ttaaatgaag aagataatag agt
+//
+

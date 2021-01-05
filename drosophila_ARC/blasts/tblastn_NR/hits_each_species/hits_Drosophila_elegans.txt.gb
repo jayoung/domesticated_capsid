@@ -1,0 +1,170 @@
+LOCUS       XM_017277467             783 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila elegans activity-regulated
+            cytoskeleton-associated protein (LOC108149702), mRNA.
+ACCESSION   XM_017277467
+VERSION     XM_017277467.1
+DBLINK      BioProject: PRJNA325515
+KEYWORDS    RefSeq.
+SOURCE      Drosophila elegans
+  ORGANISM  Drosophila elegans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016083857.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila elegans Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..783
+                     /organism="Drosophila elegans"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14027-0461.03"
+                     /db_xref="taxon:30023"
+                     /chromosome="Unknown"
+     gene            1..783
+                     /gene="LOC108149702"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108149702"
+     CDS             124..708
+                     /gene="LOC108149702"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton-associated
+                     protein"
+                     /protein_id="XP_017132956.1"
+                     /db_xref="GeneID:108149702"
+                     /translation="MTQMSDEQFRILIETIRSLAPIKDEEPPSKGSFSNCTVRFSGQR
+                     DHDAVDEFINAVEAYKEVEGISDKDALKGLPLLFSNIAVYWWKGVRRDAKTWPEALQL
+                     LRDHFSPTKPSYQLYMEIFETKQAHDEVIDSFVCKQRALLAKLPEGRHDEETELDFIY
+                     GLMQPKYRESIPRHEIKTFRELLDRGRTVERTKH"
+ORIGIN      
+        1 atttacgcca gttgctcttc tacaatcaaa tcgtttgcta caaaatcatt tcgaagcggg
+       61 taaatttccg gtgtttgttt acttttcgtg gaaccaaaac aaacccgtaa ataaggcgac
+      121 aaaatgacgc agatgtccga cgaacagttt cgcatactca tcgaaaccat tcgatccctg
+      181 gcgccgatca aagacgagga gccgccatcc aaggggagct tcagcaactg tacggtccgc
+      241 ttcagtggcc agcgggatca cgatgccgtg gacgagttca tcaacgcggt ggaggcgtac
+      301 aaggaggtgg agggcatcag cgacaaggat gcgttgaagg ggctgcccct gctgttcagc
+      361 aatatagccg tgtactggtg gaagggtgtg cgccgggatg ccaagacctg gccggaggcc
+      421 ctgcaactgc tgcgggacca cttctcgccc accaaaccct cctaccagct ctacatggag
+      481 atcttcgaga cgaaacaggc ccacgacgag gtgatcgact ccttcgtctg caagcagcga
+      541 gccctgctgg ccaagttgcc ggagggacga cacgacgagg agacggagct ggacttcatc
+      601 tacggcctga tgcagcccaa gtaccgcgag agcattcccc ggcacgagat caagaccttc
+      661 cgcgaactac tcgaccgggg gcgcactgtg gagcgcacca agcactgatg tcggacataa
+      721 gttagttagt tttatactta taggtaaata aagaagggct gaaatcaatt gaatcttaca
+      781 aaa
+//
+
+LOCUS       XM_017277670            2466 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila elegans uncharacterized LOC108149804
+            (LOC108149804), mRNA.
+ACCESSION   XM_017277670
+VERSION     XM_017277670.1
+DBLINK      BioProject: PRJNA325515
+KEYWORDS    RefSeq.
+SOURCE      Drosophila elegans
+  ORGANISM  Drosophila elegans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016083857.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila elegans Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2466
+                     /organism="Drosophila elegans"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14027-0461.03"
+                     /db_xref="taxon:30023"
+                     /chromosome="Unknown"
+     gene            1..2466
+                     /gene="LOC108149804"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108149804"
+     CDS             134..904
+                     /gene="LOC108149804"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108149804"
+                     /protein_id="XP_017133159.1"
+                     /db_xref="GeneID:108149804"
+                     /translation="MAQTFNMTSEQLHELIEAVRVSAASAAGNAAAAGAAGAQGAKGK
+                     GSFSACTHSFGGTRDYDVVEEFITNIVTYKELEDISDENALKGISLLFYGLASTWWQG
+                     VRKEAATWNDAIGLIREHFSPTKPAYQVYMEFFQKKQEDHDPIDTFVVHKRALLAQLP
+                     ANRHDEQTELDLLYGLLNIKYRKHIARQSVQSFKELLEQGRIIEHNNQEDEELTAATK
+                     NVRGSRRTNRCTYCHFRGHTFDNCRKRQKDRQEENHDE"
+ORIGIN      
+        1 gagagctcct cagttcgcaa catcggccgc attcgctaca ctggctttgt ctgccgacca
+       61 gaaactcaca gagcaaaata cctaaaacgt gttgtcgccc acttggttcc actccaacct
+      121 caaatagccg aaaatggcgc agacctttaa catgaccagc gagcagctgc atgagctgat
+      181 cgaagcggtg cgggtgtccg ccgcaagtgc cgccggaaac gcggccgcgg ccggagcagc
+      241 aggcgcccag ggagccaagg gcaagggcag cttctccgcc tgcacacaca gcttcggcgg
+      301 aacccgcgat tacgacgtgg tcgaggagtt catcaccaat atcgtgacgt acaaggagct
+      361 ggaggacatt agcgacgaga acgccctcaa gggcatctcg ctgctgttct acggcctggc
+      421 ctccacctgg tggcagggcg tccgcaagga ggccgccacg tggaacgacg ccatcggcct
+      481 catccgcgaa cacttctcgc ccactaagcc cgcctaccag gtctacatgg agttcttcca
+      541 gaagaagcag gaggaccacg accccatcga caccttcgtg gtgcacaagc gagcgctgct
+      601 cgcccagctg ccggccaatc ggcacgacga gcagaccgaa ctggacctgc tctacggcct
+      661 gctaaacatc aagtaccgca agcacatcgc ccgccagagc gtccagtcct tcaaggagct
+      721 gctcgagcag ggccgcatca tcgagcacaa caaccaggag gacgaggagc tgaccgccgc
+      781 cacaaagaat gtgcgtggct cccgtcgcac caaccgctgc acctactgcc acttccgggg
+      841 ccacaccttc gacaactgcc gcaagcggca gaaggatcgg caggaggaga accacgacga
+      901 gtaggcgatc aagacaccac ccacaaatca cagaggggca ccaacggcca ccaaatgaca
+      961 tcaccggtgg ccccgcctcc cactccccca cccccaaaca ttccagaact tttcgtagcc
+     1021 acactggccg accaacgtca gcgagagccc accaaccgga gagagaggga gcagcaacat
+     1081 gtacgacagc aacaccagca gcagcagcaa catcagcagc agcaacagca acatgtacag
+     1141 cagcaacata ccaatctctt cacactcact ggcaaatggc gtgccggtaa gcctcgatca
+     1201 gcatctgaac cacaaaaaat cacgctgttt ccattacttc cacccgaaaa cggctctact
+     1261 ttcttattac ttcacgctgc cctgcggctc ttttggcaaa gaacgccaac catccaacca
+     1321 gcaattcaac caattgcaac attgattttg aactcacaac ttgtacaagc tatgctgcga
+     1381 gaattattag gcggcggcga ctgaggatca ggcatttcgt ccacaaaatc gcttatttgc
+     1441 aatgaatgaa tgtgaaattc gagccaaggt ttcgaatttt atgttttgac attgcgactg
+     1501 cgaatggatg ttgcttgatc ttcagtcgcc gcccactgcc caatgattct cacaaccgcc
+     1561 ggctccactt tgtgccgctc agtgaaagat aagtagcgat gtgttggcca cgaggagggg
+     1621 tgatcgttat gttgaaaaat gtggtgatca ccgctttagt gaccattttc ccttaatctt
+     1681 tcgactgatc caggtccttt gtgaagctgg caaaaaaccc cccgtccggt gatcgcccgc
+     1741 ttagatcctt ttgcatgtga catcgacagc cccgaggggc ggcgccgccc acttccggct
+     1801 gcagcttcgg ctactttcgg tggtgggtgt cgtataaccc cccgcgatgt ctctggtgcg
+     1861 agtggagcta cagcgggcgc gaaccgggca aaaactaaat ttctacggaa atttaaaaaa
+     1921 ccaaccaact ttttttgact tttgtcaaaa tacttcgtta acacatagca ctacgatggc
+     1981 tcccgaatcg ccatccgtgc ggttggcacg tcaaattgtc ccattcggga tcacgggtgt
+     2041 agggctgttt atcatttcac ccctgcgatt ccgcgacaag cttgaggcac gccagtaccc
+     2101 atcacaaaaa ccacaacgaa cccgggctgg gactcgtcgc tgccgcgccc ctccagccgg
+     2161 caaagactct ccccgccccc ccatgcaaaa ccagcttctt gtgcagatga cataggcgcg
+     2221 cacagccatc cgacccggga tttgcccgga ccatggtggc cagactcgca gcgtgcgcca
+     2281 tcaaacggag acgtggccac aagcacatca agagtcctgc ccgcaatcct cacaacgtaa
+     2341 ccaagagtgg gggcctatta atgaccgcaa gaggctgctg tgaaacgcat aaagtaacca
+     2401 atcaacttgt aagactgaaa ccagaaaaca aatacaaact acaaaacaac aaaacctaaa
+     2461 aaacta
+//
+

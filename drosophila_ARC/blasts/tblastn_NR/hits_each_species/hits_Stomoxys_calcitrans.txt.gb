@@ -1,0 +1,818 @@
+LOCUS       XM_013244281            2286 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106081992
+            (LOC106081992), transcript variant X1, mRNA.
+ACCESSION   XM_013244281
+VERSION     XM_013244281.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013171984.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2286
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2286
+                     /gene="LOC106081992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 2 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:106081992"
+     CDS             15..1886
+                     /gene="LOC106081992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106081992 isoform X1"
+                     /protein_id="XP_013099735.1"
+                     /db_xref="GeneID:106081992"
+                     /translation="MKLLTGTKSGYHTSFETHTHKQAEMEDRTTNNFDLLIKNLLGKF
+                     NTLLDCPARFRGCYGGQSIQRFIEYIKSYKRVKSISDEQALQELGYLLTEHAHLWWLR
+                     RKCHFTTWSEALTALQNQYAKQRPAYLIYKDLFEHKFEDYTAEEDFIDDKYELLTELP
+                     DPMQSEKNKLDMIFALLPHSIQSKLEYANIINVAELKEQILKSKNRQCSKVMDSKEKE
+                     CTSNAPQYPINGKRKNNFDEQHGVMATSASNHVETLCLPSTSTILNDKDPVIKVRRTE
+                     DLMPPIKVEASDDTNVEHQEEFISTATVLPGGTRENPNFQIDMDIMNQINNIIDESEL
+                     NCDSLCDTTVQISSIMSIKDSPTTTIGFLLNGETTIQAEVSKKPHPAVCADATSTRKR
+                     KLRCSYCRSYGHGFQNCMKRLKHIELKLLQKSQEPQEAQNCMKRLKHSELKLLLKSQE
+                     PQEDTSKDKDSKRGDDTVTIVNITNDNDNSNASTNDVSNASTNASITTTSTASPLVHH
+                     NAFATVTTTAQQNMVTCVTTSTPTVSHSISIGQVSTTFSHQHITTTATSSNPSSPAAA
+                     LTTKLIAPINGPCPSKQMAAKFRNLNQPSPKCHQCGTVGFYKSICPNCSPIYNSQKL"
+ORIGIN      
+        1 aaatctttta aaaaatgaaa ttattaactg gaacaaaatc tggatatcat acaagttttg
+       61 aaacacatac acacaaacaa gcagaaatgg aagatcgtac aacaaacaat ttcgatcttc
+      121 taatcaaaaa tctcttgggc aaattcaata cattgctcga ttgtcccgca agatttcgcg
+      181 gctgctatgg tggacaaagt atacagcgtt tcattgaata tataaaatct tataaaagag
+      241 ttaaatctat aagcgatgag caggcattac aagaattggg ctatctatta acggaacatg
+      301 cccatttatg gtggttaaga aggaagtgtc attttacaac atggtccgaa gcactgaccg
+      361 ccttacaaaa tcagtatgct aaacagagac cggcctattt aatatacaag gatctttttg
+      421 agcataaatt tgaagactat acggcagagg aggacttcat cgatgacaag tatgagcttt
+      481 tgactgaatt gccagatccc atgcaaagtg aaaaaaataa attagacatg atctttgcct
+      541 tattacctca tagtatacag tcgaaattgg aatatgccaa tataatcaat gtagcagaat
+      601 taaaagagca aattttaaaa tccaaaaata gacaatgtag caaagtgatg gacagcaagg
+      661 agaaagagtg taccagcaat gccccgcaat acccaattaa tggcaaaaga aaaaacaatt
+      721 tcgatgaaca gcacggggtt atggcaacaa gtgcctcaaa tcatgttgaa acactatgct
+      781 tgccctccac cagcaccata ctcaacgata aggatccagt tatcaaggtt agacgaaccg
+      841 aagacctaat gccacccatt aaagttgaag caagcgacga caccaatgtg gagcatcaag
+      901 aggaattcat aagtacagcc acagttttgc ccggaggcac tcgggagaac ccgaattttc
+      961 aaattgatat ggatataatg aatcagataa ataatattat agatgagtct gaactgaatt
+     1021 gtgatagtct ttgtgatacc acagtgcaaa tatcatccat aatgtctatc aaagatagcc
+     1081 ccacaacaac gataggtttt cttcttaatg gagaaacaac aatccaagcc gaagtcagta
+     1141 aaaagcccca cccagctgtg tgtgccgatg caacttctac acgaaaacgt aaattacgtt
+     1201 gcagttattg tcgaagttat ggtcatggtt ttcagaactg tatgaaaagg ttaaaacata
+     1261 tagagttaaa acttttacaa aaatctcaag agccacagga agctcagaat tgtatgaaaa
+     1321 ggttaaagca ttcagaatta aagcttttac taaaatctca agagccacag gaagatacat
+     1381 ctaaagataa agattctaaa aggggcgacg acactgtgac cattgtaaat attaccaatg
+     1441 ataatgataa ttccaatgct tccacaaatg atgtttccaa tgcttccaca aatgcttcca
+     1501 ttactaccac tagcacagca tcacctctag ttcatcacaa tgcatttgcg acagtaacaa
+     1561 caacagctca acagaatatg gtaacctgtg taacaacttc aacgcccacc gttagtcata
+     1621 gcatttccat aggccaagtt tcgacaacat ttagtcatca acatatcaca actacagcaa
+     1681 cctcatcaaa tccctccagt ccagcagcag cacttacaac aaaactaata gcaccgatca
+     1741 acggaccatg tcctagtaaa caaatggctg ccaagtttcg aaatttaaat cagccttcgc
+     1801 ctaagtgtca tcagtgtggt accgtgggtt tctacaaaag tatttgtcct aattgtagtc
+     1861 ctatatataa ttcacaaaaa ctttagtcca taaaagtcat ggagaatagt ctataaagca
+     1921 aaagtgatgt gaataaattg caaagcatta taaaccatag aaatccaagc taagaaaact
+     1981 aaaaagaaga ggttgccaat tatagatatt aacttgaaaa atttagaata agtggaaaag
+     2041 aggataatgt tttccttcct caaaataagc cttagtaagc agctagtttt ggataacagt
+     2101 ttttgaatgt caaaatacta agagtctaaa tcgttttcgg gagtgcgatt tagaatgagt
+     2161 ccctgctcgg gcgccattcg aagcgtggtt tggtatggcc ggctgagggt ttacttttaa
+     2221 ggacgcacaa accttaaaaa aagcagtaat tgtgtaattt ggtgaataaa gtcaattgta
+     2281 atctta
+//
+
+LOCUS       XM_013244282            2401 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106081992
+            (LOC106081992), transcript variant X2, mRNA.
+ACCESSION   XM_013244282
+VERSION     XM_013244282.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013171984.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2401
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2401
+                     /gene="LOC106081992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 6 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:106081992"
+     CDS             202..2001
+                     /gene="LOC106081992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106081992 isoform X2"
+                     /protein_id="XP_013099736.1"
+                     /db_xref="GeneID:106081992"
+                     /translation="MEDRTTNNFDLLIKNLLGKFNTLLDCPARFRGCYGGQSIQRFIE
+                     YIKSYKRVKSISDEQALQELGYLLTEHAHLWWLRRKCHFTTWSEALTALQNQYAKQRP
+                     AYLIYKDLFEHKFEDYTAEEDFIDDKYELLTELPDPMQSEKNKLDMIFALLPHSIQSK
+                     LEYANIINVAELKEQILKSKNRQCSKVMDSKEKECTSNAPQYPINGKRKNNFDEQHGV
+                     MATSASNHVETLCLPSTSTILNDKDPVIKVRRTEDLMPPIKVEASDDTNVEHQEEFIS
+                     TATVLPGGTRENPNFQIDMDIMNQINNIIDESELNCDSLCDTTVQISSIMSIKDSPTT
+                     TIGFLLNGETTIQAEVSKKPHPAVCADATSTRKRKLRCSYCRSYGHGFQNCMKRLKHI
+                     ELKLLQKSQEPQEAQNCMKRLKHSELKLLLKSQEPQEDTSKDKDSKRGDDTVTIVNIT
+                     NDNDNSNASTNDVSNASTNASITTTSTASPLVHHNAFATVTTTAQQNMVTCVTTSTPT
+                     VSHSISIGQVSTTFSHQHITTTATSSNPSSPAAALTTKLIAPINGPCPSKQMAAKFRN
+                     LNQPSPKCHQCGTVGFYKSICPNCSPIYNSQKL"
+ORIGIN      
+        1 aaaatgtcag ctgttctgtt attgacactt cgggcattag cataaaacca aatgccagat
+       61 gctatttgta attatttttt gttcaaagtt tgtaattaag ataattgtaa attgtgaact
+      121 tatgcatgga aatctacgtc ttataaatac caaggattgc ttcttttttt tagcacagca
+      181 catacacaca aacaagcaga aatggaagat cgtacaacaa acaatttcga tcttctaatc
+      241 aaaaatctct tgggcaaatt caatacattg ctcgattgtc ccgcaagatt tcgcggctgc
+      301 tatggtggac aaagtataca gcgtttcatt gaatatataa aatcttataa aagagttaaa
+      361 tctataagcg atgagcaggc attacaagaa ttgggctatc tattaacgga acatgcccat
+      421 ttatggtggt taagaaggaa gtgtcatttt acaacatggt ccgaagcact gaccgcctta
+      481 caaaatcagt atgctaaaca gagaccggcc tatttaatat acaaggatct ttttgagcat
+      541 aaatttgaag actatacggc agaggaggac ttcatcgatg acaagtatga gcttttgact
+      601 gaattgccag atcccatgca aagtgaaaaa aataaattag acatgatctt tgccttatta
+      661 cctcatagta tacagtcgaa attggaatat gccaatataa tcaatgtagc agaattaaaa
+      721 gagcaaattt taaaatccaa aaatagacaa tgtagcaaag tgatggacag caaggagaaa
+      781 gagtgtacca gcaatgcccc gcaataccca attaatggca aaagaaaaaa caatttcgat
+      841 gaacagcacg gggttatggc aacaagtgcc tcaaatcatg ttgaaacact atgcttgccc
+      901 tccaccagca ccatactcaa cgataaggat ccagttatca aggttagacg aaccgaagac
+      961 ctaatgccac ccattaaagt tgaagcaagc gacgacacca atgtggagca tcaagaggaa
+     1021 ttcataagta cagccacagt tttgcccgga ggcactcggg agaacccgaa ttttcaaatt
+     1081 gatatggata taatgaatca gataaataat attatagatg agtctgaact gaattgtgat
+     1141 agtctttgtg ataccacagt gcaaatatca tccataatgt ctatcaaaga tagccccaca
+     1201 acaacgatag gttttcttct taatggagaa acaacaatcc aagccgaagt cagtaaaaag
+     1261 ccccacccag ctgtgtgtgc cgatgcaact tctacacgaa aacgtaaatt acgttgcagt
+     1321 tattgtcgaa gttatggtca tggttttcag aactgtatga aaaggttaaa acatatagag
+     1381 ttaaaacttt tacaaaaatc tcaagagcca caggaagctc agaattgtat gaaaaggtta
+     1441 aagcattcag aattaaagct tttactaaaa tctcaagagc cacaggaaga tacatctaaa
+     1501 gataaagatt ctaaaagggg cgacgacact gtgaccattg taaatattac caatgataat
+     1561 gataattcca atgcttccac aaatgatgtt tccaatgctt ccacaaatgc ttccattact
+     1621 accactagca cagcatcacc tctagttcat cacaatgcat ttgcgacagt aacaacaaca
+     1681 gctcaacaga atatggtaac ctgtgtaaca acttcaacgc ccaccgttag tcatagcatt
+     1741 tccataggcc aagtttcgac aacatttagt catcaacata tcacaactac agcaacctca
+     1801 tcaaatccct ccagtccagc agcagcactt acaacaaaac taatagcacc gatcaacgga
+     1861 ccatgtccta gtaaacaaat ggctgccaag tttcgaaatt taaatcagcc ttcgcctaag
+     1921 tgtcatcagt gtggtaccgt gggtttctac aaaagtattt gtcctaattg tagtcctata
+     1981 tataattcac aaaaacttta gtccataaaa gtcatggaga atagtctata aagcaaaagt
+     2041 gatgtgaata aattgcaaag cattataaac catagaaatc caagctaaga aaactaaaaa
+     2101 gaagaggttg ccaattatag atattaactt gaaaaattta gaataagtgg aaaagaggat
+     2161 aatgttttcc ttcctcaaaa taagccttag taagcagcta gttttggata acagtttttg
+     2221 aatgtcaaaa tactaagagt ctaaatcgtt ttcgggagtg cgatttagaa tgagtccctg
+     2281 ctcgggcgcc attcgaagcg tggtttggta tggccggctg agggtttact tttaaggacg
+     2341 cacaaacctt aaaaaaagca gtaattgtgt aatttggtga ataaagtcaa ttgtaatctt
+     2401 a
+//
+
+LOCUS       XM_013244283            2328 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106081992
+            (LOC106081992), transcript variant X3, mRNA.
+ACCESSION   XM_013244283
+VERSION     XM_013244283.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013171984.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2328
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2328
+                     /gene="LOC106081992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 2 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:106081992"
+     CDS             129..1928
+                     /gene="LOC106081992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106081992 isoform X2"
+                     /protein_id="XP_013099737.1"
+                     /db_xref="GeneID:106081992"
+                     /translation="MEDRTTNNFDLLIKNLLGKFNTLLDCPARFRGCYGGQSIQRFIE
+                     YIKSYKRVKSISDEQALQELGYLLTEHAHLWWLRRKCHFTTWSEALTALQNQYAKQRP
+                     AYLIYKDLFEHKFEDYTAEEDFIDDKYELLTELPDPMQSEKNKLDMIFALLPHSIQSK
+                     LEYANIINVAELKEQILKSKNRQCSKVMDSKEKECTSNAPQYPINGKRKNNFDEQHGV
+                     MATSASNHVETLCLPSTSTILNDKDPVIKVRRTEDLMPPIKVEASDDTNVEHQEEFIS
+                     TATVLPGGTRENPNFQIDMDIMNQINNIIDESELNCDSLCDTTVQISSIMSIKDSPTT
+                     TIGFLLNGETTIQAEVSKKPHPAVCADATSTRKRKLRCSYCRSYGHGFQNCMKRLKHI
+                     ELKLLQKSQEPQEAQNCMKRLKHSELKLLLKSQEPQEDTSKDKDSKRGDDTVTIVNIT
+                     NDNDNSNASTNDVSNASTNASITTTSTASPLVHHNAFATVTTTAQQNMVTCVTTSTPT
+                     VSHSISIGQVSTTFSHQHITTTATSSNPSSPAAALTTKLIAPINGPCPSKQMAAKFRN
+                     LNQPSPKCHQCGTVGFYKSICPNCSPIYNSQKL"
+ORIGIN      
+        1 ataaatataa aatcgtgtag tgggtgcttg tttttacatt ccaaatacga aatatgtata
+       61 gttgccggct cgtgtgttag agtattcaaa acacaataac gtaagcacat acacacaaac
+      121 aagcagaaat ggaagatcgt acaacaaaca atttcgatct tctaatcaaa aatctcttgg
+      181 gcaaattcaa tacattgctc gattgtcccg caagatttcg cggctgctat ggtggacaaa
+      241 gtatacagcg tttcattgaa tatataaaat cttataaaag agttaaatct ataagcgatg
+      301 agcaggcatt acaagaattg ggctatctat taacggaaca tgcccattta tggtggttaa
+      361 gaaggaagtg tcattttaca acatggtccg aagcactgac cgccttacaa aatcagtatg
+      421 ctaaacagag accggcctat ttaatataca aggatctttt tgagcataaa tttgaagact
+      481 atacggcaga ggaggacttc atcgatgaca agtatgagct tttgactgaa ttgccagatc
+      541 ccatgcaaag tgaaaaaaat aaattagaca tgatctttgc cttattacct catagtatac
+      601 agtcgaaatt ggaatatgcc aatataatca atgtagcaga attaaaagag caaattttaa
+      661 aatccaaaaa tagacaatgt agcaaagtga tggacagcaa ggagaaagag tgtaccagca
+      721 atgccccgca atacccaatt aatggcaaaa gaaaaaacaa tttcgatgaa cagcacgggg
+      781 ttatggcaac aagtgcctca aatcatgttg aaacactatg cttgccctcc accagcacca
+      841 tactcaacga taaggatcca gttatcaagg ttagacgaac cgaagaccta atgccaccca
+      901 ttaaagttga agcaagcgac gacaccaatg tggagcatca agaggaattc ataagtacag
+      961 ccacagtttt gcccggaggc actcgggaga acccgaattt tcaaattgat atggatataa
+     1021 tgaatcagat aaataatatt atagatgagt ctgaactgaa ttgtgatagt ctttgtgata
+     1081 ccacagtgca aatatcatcc ataatgtcta tcaaagatag ccccacaaca acgataggtt
+     1141 ttcttcttaa tggagaaaca acaatccaag ccgaagtcag taaaaagccc cacccagctg
+     1201 tgtgtgccga tgcaacttct acacgaaaac gtaaattacg ttgcagttat tgtcgaagtt
+     1261 atggtcatgg ttttcagaac tgtatgaaaa ggttaaaaca tatagagtta aaacttttac
+     1321 aaaaatctca agagccacag gaagctcaga attgtatgaa aaggttaaag cattcagaat
+     1381 taaagctttt actaaaatct caagagccac aggaagatac atctaaagat aaagattcta
+     1441 aaaggggcga cgacactgtg accattgtaa atattaccaa tgataatgat aattccaatg
+     1501 cttccacaaa tgatgtttcc aatgcttcca caaatgcttc cattactacc actagcacag
+     1561 catcacctct agttcatcac aatgcatttg cgacagtaac aacaacagct caacagaata
+     1621 tggtaacctg tgtaacaact tcaacgccca ccgttagtca tagcatttcc ataggccaag
+     1681 tttcgacaac atttagtcat caacatatca caactacagc aacctcatca aatccctcca
+     1741 gtccagcagc agcacttaca acaaaactaa tagcaccgat caacggacca tgtcctagta
+     1801 aacaaatggc tgccaagttt cgaaatttaa atcagccttc gcctaagtgt catcagtgtg
+     1861 gtaccgtggg tttctacaaa agtatttgtc ctaattgtag tcctatatat aattcacaaa
+     1921 aactttagtc cataaaagtc atggagaata gtctataaag caaaagtgat gtgaataaat
+     1981 tgcaaagcat tataaaccat agaaatccaa gctaagaaaa ctaaaaagaa gaggttgcca
+     2041 attatagata ttaacttgaa aaatttagaa taagtggaaa agaggataat gttttccttc
+     2101 ctcaaaataa gccttagtaa gcagctagtt ttggataaca gtttttgaat gtcaaaatac
+     2161 taagagtcta aatcgttttc gggagtgcga tttagaatga gtccctgctc gggcgccatt
+     2221 cgaagcgtgg tttggtatgg ccggctgagg gtttactttt aaggacgcac aaaccttaaa
+     2281 aaaagcagta attgtgtaat ttggtgaata aagtcaattg taatctta
+//
+
+LOCUS       XM_013244284            2450 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106081992
+            (LOC106081992), transcript variant X4, mRNA.
+ACCESSION   XM_013244284
+VERSION     XM_013244284.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013171984.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2450
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2450
+                     /gene="LOC106081992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 1 sample with support for all annotated introns"
+                     /db_xref="GeneID:106081992"
+     CDS             251..2050
+                     /gene="LOC106081992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106081992 isoform X2"
+                     /protein_id="XP_013099738.1"
+                     /db_xref="GeneID:106081992"
+                     /translation="MEDRTTNNFDLLIKNLLGKFNTLLDCPARFRGCYGGQSIQRFIE
+                     YIKSYKRVKSISDEQALQELGYLLTEHAHLWWLRRKCHFTTWSEALTALQNQYAKQRP
+                     AYLIYKDLFEHKFEDYTAEEDFIDDKYELLTELPDPMQSEKNKLDMIFALLPHSIQSK
+                     LEYANIINVAELKEQILKSKNRQCSKVMDSKEKECTSNAPQYPINGKRKNNFDEQHGV
+                     MATSASNHVETLCLPSTSTILNDKDPVIKVRRTEDLMPPIKVEASDDTNVEHQEEFIS
+                     TATVLPGGTRENPNFQIDMDIMNQINNIIDESELNCDSLCDTTVQISSIMSIKDSPTT
+                     TIGFLLNGETTIQAEVSKKPHPAVCADATSTRKRKLRCSYCRSYGHGFQNCMKRLKHI
+                     ELKLLQKSQEPQEAQNCMKRLKHSELKLLLKSQEPQEDTSKDKDSKRGDDTVTIVNIT
+                     NDNDNSNASTNDVSNASTNASITTTSTASPLVHHNAFATVTTTAQQNMVTCVTTSTPT
+                     VSHSISIGQVSTTFSHQHITTTATSSNPSSPAAALTTKLIAPINGPCPSKQMAAKFRN
+                     LNQPSPKCHQCGTVGFYKSICPNCSPIYNSQKL"
+ORIGIN      
+        1 tgatatcagc tctaatatta aaattttcaa agagatgttc tcaaacggca gattttgtac
+       61 tagtcttttt tgaatctatc ccactgtgca acagttgtcc gtggcattag ttggggataa
+      121 ttggcataag tcaagaagta aattttctga ttcatttcca tgtgaataac gctcggtcag
+      181 ctttccgagc tgaaaggcat aactgcaaaa ccccatatag tataaatcac atacacacaa
+      241 acaagcagaa atggaagatc gtacaacaaa caatttcgat cttctaatca aaaatctctt
+      301 gggcaaattc aatacattgc tcgattgtcc cgcaagattt cgcggctgct atggtggaca
+      361 aagtatacag cgtttcattg aatatataaa atcttataaa agagttaaat ctataagcga
+      421 tgagcaggca ttacaagaat tgggctatct attaacggaa catgcccatt tatggtggtt
+      481 aagaaggaag tgtcatttta caacatggtc cgaagcactg accgccttac aaaatcagta
+      541 tgctaaacag agaccggcct atttaatata caaggatctt tttgagcata aatttgaaga
+      601 ctatacggca gaggaggact tcatcgatga caagtatgag cttttgactg aattgccaga
+      661 tcccatgcaa agtgaaaaaa ataaattaga catgatcttt gccttattac ctcatagtat
+      721 acagtcgaaa ttggaatatg ccaatataat caatgtagca gaattaaaag agcaaatttt
+      781 aaaatccaaa aatagacaat gtagcaaagt gatggacagc aaggagaaag agtgtaccag
+      841 caatgccccg caatacccaa ttaatggcaa aagaaaaaac aatttcgatg aacagcacgg
+      901 ggttatggca acaagtgcct caaatcatgt tgaaacacta tgcttgccct ccaccagcac
+      961 catactcaac gataaggatc cagttatcaa ggttagacga accgaagacc taatgccacc
+     1021 cattaaagtt gaagcaagcg acgacaccaa tgtggagcat caagaggaat tcataagtac
+     1081 agccacagtt ttgcccggag gcactcggga gaacccgaat tttcaaattg atatggatat
+     1141 aatgaatcag ataaataata ttatagatga gtctgaactg aattgtgata gtctttgtga
+     1201 taccacagtg caaatatcat ccataatgtc tatcaaagat agccccacaa caacgatagg
+     1261 ttttcttctt aatggagaaa caacaatcca agccgaagtc agtaaaaagc cccacccagc
+     1321 tgtgtgtgcc gatgcaactt ctacacgaaa acgtaaatta cgttgcagtt attgtcgaag
+     1381 ttatggtcat ggttttcaga actgtatgaa aaggttaaaa catatagagt taaaactttt
+     1441 acaaaaatct caagagccac aggaagctca gaattgtatg aaaaggttaa agcattcaga
+     1501 attaaagctt ttactaaaat ctcaagagcc acaggaagat acatctaaag ataaagattc
+     1561 taaaaggggc gacgacactg tgaccattgt aaatattacc aatgataatg ataattccaa
+     1621 tgcttccaca aatgatgttt ccaatgcttc cacaaatgct tccattacta ccactagcac
+     1681 agcatcacct ctagttcatc acaatgcatt tgcgacagta acaacaacag ctcaacagaa
+     1741 tatggtaacc tgtgtaacaa cttcaacgcc caccgttagt catagcattt ccataggcca
+     1801 agtttcgaca acatttagtc atcaacatat cacaactaca gcaacctcat caaatccctc
+     1861 cagtccagca gcagcactta caacaaaact aatagcaccg atcaacggac catgtcctag
+     1921 taaacaaatg gctgccaagt ttcgaaattt aaatcagcct tcgcctaagt gtcatcagtg
+     1981 tggtaccgtg ggtttctaca aaagtatttg tcctaattgt agtcctatat ataattcaca
+     2041 aaaactttag tccataaaag tcatggagaa tagtctataa agcaaaagtg atgtgaataa
+     2101 attgcaaagc attataaacc atagaaatcc aagctaagaa aactaaaaag aagaggttgc
+     2161 caattataga tattaacttg aaaaatttag aataagtgga aaagaggata atgttttcct
+     2221 tcctcaaaat aagccttagt aagcagctag ttttggataa cagtttttga atgtcaaaat
+     2281 actaagagtc taaatcgttt tcgggagtgc gatttagaat gagtccctgc tcgggcgcca
+     2341 ttcgaagcgt ggtttggtat ggccggctga gggtttactt ttaaggacgc acaaacctta
+     2401 aaaaaagcag taattgtgta atttggtgaa taaagtcaat tgtaatctta
+//
+
+LOCUS       XM_013244289            1673 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106081996
+            (LOC106081996), mRNA.
+ACCESSION   XM_013244289
+VERSION     XM_013244289.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013171984.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1673
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..1673
+                     /gene="LOC106081996"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 5 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:106081996"
+     CDS             15..1481
+                     /gene="LOC106081996"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106081996"
+                     /protein_id="XP_013099743.1"
+                     /db_xref="GeneID:106081996"
+                     /translation="MAEITTTDSSALLNRYVRNFNTLLQCPARFAGGKDGQNVQQFIE
+                     HIKYYKGLKCVTDEQALQELHHLLEEPAATWWLQKKQNCTSWSEALKTLEKQYSKPRS
+                     AHMIWKDLFRLPYQAYGTVDEFLNEKSGLLNELPEPHLNEQNKLAIISGLLPSNMQTS
+                     NALSNISTIEELKEYVLRYKQKHSAAIPLLKEVKMEPVDTERTDINTNTQNGCKTVSE
+                     QANYFNNNLQITSDKGDSHNDNPFNMSKQIVRCKFCRRKGHIWQLCNMLSSQKLQAMD
+                     ELCNPSILQELQEYLQKYRNSTTVNDNIPVAEKDNIEKITTTNLKTQFCESIANVEED
+                     RSNTLTKIENSTISEMVDSDIMEQINRIIEESEKYCPTIENNLQISSVMSVADIYSAH
+                     SNTRELQVNNSKLLISSVMSKVEMNTSEKSLDVNALTEMSSTLPQVQDQPIQKKKIRC
+                     TFCRKNGHLWETCFKIPMQIANLLNEIKSAEGTVGADE"
+ORIGIN      
+        1 gtacaattag aataatggca gaaattacaa ccactgattc gagtgcatta ttgaacagat
+       61 acgtaagaaa ttttaatacc ttactacaat gtccagcgcg atttgctggg ggcaaagatg
+      121 gacaaaatgt acaacaattt attgagcata taaaatatta taaaggcctc aagtgtgtta
+      181 cagatgaaca ggccttgcaa gaactgcatc atttgctaga ggaaccagct gcgacatggt
+      241 ggttacagaa aaaacaaaat tgtacatctt ggtctgaagc attaaagaca ttggaaaagc
+      301 aatattctaa gcccagatca gcacacatga tatggaaaga tttgtttaga cttccgtatc
+      361 aggcatatgg tacagtggac gaatttctta atgagaaaag tggactttta aatgaactgc
+      421 cagaaccaca tttgaatgaa caaaataaat tagcaattat cagtgggctg ttaccgagta
+      481 atatgcaaac ctcgaatgca ctatccaata tttctaccat agaagaatta aaggaatatg
+      541 tattgagata taagcaaaag cattctgccg ccataccact cttgaaagaa gtcaaaatgg
+      601 aaccagtaga cacagagaga acagatataa acacaaacac tcaaaatgga tgtaaaacag
+      661 ttagtgagca ggcaaactac ttcaataata atcttcagat aacctcagat aaaggcgaca
+      721 gccataatga taatccattc aatatgtcaa agcaaatagt gcgttgtaaa ttttgtagaa
+      781 gaaagggtca catttggcaa ttatgcaaca tgctttcatc acaaaaattg caagcgatgg
+      841 atgaattatg taatccttca atattgcaag aattgcagga gtatctacag aagtaccgca
+      901 actcaactac tgttaacgac aacattccag ttgctgaaaa ggacaatatc gaaaaaatta
+      961 ccacaactaa tttaaaaact caattttgcg aaagcattgc aaacgttgag gaagaccgga
+     1021 gcaatacact aaccaaaata gaaaattcta caatttcaga aatggttgat tctgatatta
+     1081 tggaacaaat aaatcgcatc attgaggaat cagaaaagta ttgccctacc atagaaaaca
+     1141 atcttcagat atcttcggtt atgtcagtcg cagacattta ttctgcccat agtaatacac
+     1201 gggaacttca agtaaataat tccaaactct tgatatcgtc tgttatgtca aaagtagaaa
+     1261 tgaatacaag tgaaaaaagt ttagatgtca atgctctaac tgaaatgagt tctacattgc
+     1321 cacaagttca agatcaacct attcaaaaaa agaaaatacg ttgcacattt tgtagaaaga
+     1381 atggtcattt atgggaaact tgttttaaaa ttcctatgca gatcgccaat ttattaaatg
+     1441 aaataaaatc agctgaaggt acggttggtg ctgatgaata attattggga gcagcaactg
+     1501 caagcattga agatcatcaa ccaacatgtg cacaacaatc tattataact gcaagcacta
+     1561 tagggtatca agcaacagat gaaaatgttt caaaatcgga ggaaactgaa aataatacca
+     1621 ccaattccac ccatagcaaa gaaaatattg aaactgcttc taaaaatcta taa
+//
+
+LOCUS       XM_013245047             861 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106082500
+            (LOC106082500), mRNA.
+ACCESSION   XM_013245047
+VERSION     XM_013245047.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013172006.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..861
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..861
+                     /gene="LOC106082500"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 16 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106082500"
+     CDS             146..745
+                     /gene="LOC106082500"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106082500"
+                     /protein_id="XP_013100501.1"
+                     /db_xref="GeneID:106082500"
+                     /translation="MTTTQMSDEQFRILIETIRSLAPEQRDKVAEEVKSKGSFANCPT
+                     RFSGQRDHDAVEVFIDAVETYKEVEQISDKDALKGLSLLFNGLATTWWKGVRREAKTW
+                     DEAMVLLREHFSPTKPAYQIYLEIFETKQGDSEQIDPFICNKRALLAKLPEGRHDEEC
+                     ELDFIYGLLSLKYRQQIPRHEIKSFRDLLDKGRTIERRH"
+ORIGIN      
+        1 agtaaatttc ataatgagaa aaagagagca ttattttaaa aacgatgtgt tgccattccg
+       61 cgagttttag ttactacgtt gcaaacgtct accgcggacc gcagttgcgc tcaagtgggt
+      121 ctcaatacaa gaacaaaaac aaacaatgac tactacacaa atgtccgatg agcagtttcg
+      181 tattttgatc gaaacaatac gctctctggc cccagaacaa cgcgacaaag tagctgaaga
+      241 agtcaaatca aagggaagtt ttgccaattg tccaactcga ttttcgggac aacgagatca
+      301 tgatgctgtt gaggtattca tagatgctgt ggaaacctat aaggaagttg aacaaatctc
+      361 cgacaaagat gctttgaaag gcttgtcatt actttttaat ggtttggcca ccacttggtg
+      421 gaagggcgtg cgaagagaag ccaaaacatg ggatgaagcc atggtcctgc taagggagca
+      481 tttctcaccc accaagccag cttatcaaat ctatttggag atatttgaga ccaagcaagg
+      541 tgatagtgaa caaattgacc catttatatg taataaacgt gctttgctgg ccaaattgcc
+      601 cgaggggcgt catgacgaag agtgcgaatt ggattttatc tatggtctgc tgagtttgaa
+      661 ataccggcaa caaataccaa gacatgaaat taaatcattt cgcgacttgc tggacaaggg
+      721 cagaactata gaaagacgtc attaaatcta agatttacaa tgttacatta aattttaagt
+      781 attgtgttca atataacaaa aatagttttt aaaacatttt attaataatg aaaaaaaaaa
+      841 taagaaaacg tttccattaa a
+//
+
+LOCUS       XM_013245059            2828 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106082504
+            (LOC106082504), mRNA.
+ACCESSION   XM_013245059
+VERSION     XM_013245059.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013172006.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2828
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2828
+                     /gene="LOC106082504"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 6 ESTs, 18 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:106082504"
+     CDS             191..928
+                     /gene="LOC106082504"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106082504"
+                     /protein_id="XP_013100513.1"
+                     /db_xref="GeneID:106082504"
+                     /translation="MAQMVQMTTEQLQQLIEAVRVSAAANGAAAGEAAAVKSKGSFSN
+                     CSSRFGGQRDHEAVEEFITSIVTYKEIECISDEDALKGISLLFYGLASTWWQGVRKEA
+                     KTWNDVLALIRDHFSPTKPAYQIYMEIFDKKQDESTAIDTFVCQKRALLAQLPDGRHD
+                     EETEIDLIYGLLNIKYRKHIARHDFKTFRELLEKGRIIEHNMMEDQAEQSGPVRGARG
+                     TKRCTYCNFRGHKSEECRKRKSANNDD"
+ORIGIN      
+        1 ctcgaggcta aacaagtcag tctatctacg accagcaaac attacccaat gttcaattgg
+       61 aggcaacggt aaagctacag agttttaaag tgtaacattc gccagcaaaa agcacaaagt
+      121 ggctttgtta taaactacaa ctactccgtc gttatccaac atctaataac aaaaagaaca
+      181 acaaatcaaa atggctcaaa tggttcaaat gaccaccgaa caactgcaac aactcatcga
+      241 agccgtacgc gtatcggctg ctgccaatgg cgctgccgcc ggtgaagccg ctgcggtgaa
+      301 atccaagggc agtttcagca attgttcctc ccgtttcggt ggccaaagag atcatgaagc
+      361 cgttgaggag ttcatcacct ccattgtgac gtacaaagaa atcgaatgta tcagtgacga
+      421 agacgccttg aagggcattt ctttgctttt ctatggattg gcctccacct ggtggcaggg
+      481 agtgcgtaaa gaagccaaga cctggaacga tgttctggcc ttgattcgtg accatttctc
+      541 tcccaccaag ccagcttatc aaatctatat ggagattttc gacaagaaac aggatgagag
+      601 cacagccatc gatacatttg tgtgccagaa gagggcgcta ttggctcaat tgcctgacgg
+      661 tagacatgat gaggaaaccg aaatcgattt aatctatggc ctactcaaca ttaaatatcg
+      721 taagcacatt gcacgccatg acttcaagac attccgcgaa ttgctggaga agggtcgtat
+      781 catcgaacac aacatgatgg aagaccaagc agaacaatcc ggtcctgtcc gtggcgccag
+      841 aggcacaaaa cgttgtactt attgcaattt ccgaggacac aagtcggaag aatgtcgcaa
+      901 acgcaagtct gcgaacaacg acgactaaac tacaaaactc caaccaaaag aaaagatgat
+      961 gtcaccaacg ccgccactga aatccccaac aactagctta taattagaca cacgcacaca
+     1021 tagtgaatgg tcagcagtaa gttcagtagg agagaagagt gtagtgacat cataaaatac
+     1081 tcaaaaaaaa tgcaggcaga gtgcagagtg ttcttcatct cctcgctctg gcagagaact
+     1141 ttacctgtgt tttctcattt tcattttcaa aattaaaatt aacaaatttc tcccataggt
+     1201 ttctctgtgg tatggcctaa gagttttcca tgacgaatct ggtgtgtttt agtgtttcat
+     1261 gtatgtggtt gatgtgaaat atttaaatcg cttgatgggt tatggaagac tttttttgtc
+     1321 atgcaaggag ttcaccttat aattttgcaa ggctttacac gccttctcac gctgtgttgc
+     1381 acaaaccggc tctacaggct atgaacgcct ggccccccat atctacttaa tcgcataatt
+     1441 ggattttatc taatttgatt gaacatttgt accacaacac aattataagc cggatatctt
+     1501 taatatccaa gcccgagtgc ttccaaggct tttggttgac agttacttgc tttttagaat
+     1561 ctctatgtat ggcgttccag gctgtgggca gttgtaggcg caaaggcagg aagaaattct
+     1621 ttgtctttgt tagccttaga ctgcttaggc tgaagaacat catggatcaa gttttaaaag
+     1681 ctaacctaac tgttgaccac aaagcccgaa gaagtgctaa ccccgttgta ttcaggtgcc
+     1741 atttgcgtta gaattaggaa aattaattca ttcaaaattc tgattgtttt taaaattttt
+     1801 gcaggttcat tttttccccc tggaattaaa tgaatttgca ataattttta taatagttaa
+     1861 ttttttgttt gaagaaattt tcccttattc tgcgcatttt tcacctgaat gcgacaaaaa
+     1921 acccccccgc tgctttgaaa tattttaaaa atattctggg atatgataaa cgcagtgaat
+     1981 tgaagttttc tcttttttaa ggaggccatc tcttgaagtt gcagctgttc caaaccctcg
+     2041 ggtgaggttc ggcttcaatg gagggagttg ggcaaaattt aaaaggttta cctcaaaact
+     2101 cactgaggtg ttaagcagtt taaatttttt gaaataattt aaagtagcaa aaaaattaat
+     2161 ttcgcattgg cgaaattttt gaactttatc aaaaagctaa cttttgacaa gttaacaatt
+     2221 ttattgaaaa ttgtactaca atggctatgc tgtcgccatt cgtacaatgg tcacgccaac
+     2281 gcgagaccct aagatttgct ctacaaaact taaaacttcg ataatggcac ggccaaaacc
+     2341 caacagctaa gagatacgcc aaggctaatc aataacctcc taatttgcca tggcttctct
+     2401 agctgccttc ttacacaact agagttaatg ttttttataa atttaaaaaa acgaatttca
+     2461 gaagtagcca cacaataatt tgttacaaac aacaaaaatg taaaaatcaa acaaatgatg
+     2521 cgtcaactgg aggttttaat ggcccagggg gtgaaagatc atatgaaatc agccaatgcc
+     2581 agtggcaacc actccattgg agcgacattg gtcttcatgt gtttcatagc ctctataaaa
+     2641 taatttattt gatttgtttt ttaacccttg ctactctttc gaatttttac cgaaaatctt
+     2701 ttaatttatt ttttcaaaac tctagtatga ttttgtttaa actcgagcat tgttttagat
+     2761 gaattactgt ttgatgatgg aaagactgct gttatattag atttaagtgt ttttttacaa
+     2821 aaaaaaaa
+//
+
+LOCUS       XM_013245311            2442 bp    mRNA    linear   INV 29-JUL-2015
+DEFINITION  PREDICTED: Stomoxys calcitrans uncharacterized LOC106082661
+            (LOC106082661), mRNA.
+ACCESSION   XM_013245311
+VERSION     XM_013245311.1
+DBLINK      BioProject: PRJNA288986
+KEYWORDS    RefSeq.
+SOURCE      Stomoxys calcitrans (stable fly)
+  ORGANISM  Stomoxys calcitrans
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Muscoidea; Muscidae; Stomoxys.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013172013.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Stomoxys calcitrans Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2442
+                     /organism="Stomoxys calcitrans"
+                     /mol_type="mRNA"
+                     /isolation_source="pooled sample from approximately 10
+                     individuals of F7 generation from inbred line"
+                     /db_xref="taxon:35570"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /collected_by="Pia Olafson"
+                     /breed="8C7A2A5H3J4"
+     gene            1..2442
+                     /gene="LOC106082661"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106082661"
+     CDS             163..981
+                     /gene="LOC106082661"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106082661"
+                     /protein_id="XP_013100765.1"
+                     /db_xref="GeneID:106082661"
+                     /translation="MAENKNSTTEDNACNNRTKAFVLLKEMANKHQVDKSLTSEDKVD
+                     NSMHDEKKFLLDLIAQLQDTIDSQSQAQKNTMAGCKVRFSGQQHSEAVEEFINGIQTY
+                     KLLQQIDDEDALKGISLLFTGLAAIWWQGVHKEVNTWSNCLELIQEHFAPKKPPHQLY
+                     VEIFQEAQDEKTSMHMFIIRKRALFAQLPEGRHSEEIQIDMMYGLLNFKYRQHMRRDE
+                     IHSFQDLFQKGRDIEQINMEKTKPKRCSFCNYRGHTAEECRKRQQKHVGEKKKV"
+ORIGIN      
+        1 acaacgcctc agtcttagaa cgaccataca atggaaagtg caacaaaccg cgtctggggc
+       61 ggctatcaag cgaaaaactt tggaaatttt taatatttca agtcttaaac ataaccgaaa
+      121 ttggcacagg ctataaagga tatttttcag tttgtgagag aaatggcaga aaacaaaaat
+      181 tctacaacag aagataacgc ctgcaacaat agaaccaagg cttttgtgct actaaaggaa
+      241 atggcgaaca aacatcaagt tgacaaatcc ctaacatcag aagataaggt tgacaacagc
+      301 atgcatgacg aaaaaaaatt cctgctcgat ttaatagctc aacttcaaga caccattgac
+      361 tcgcaatcac aggcacaaaa aaataccatg gccgggtgta aggtgagatt ttcaggccaa
+      421 caacattcgg aagctgtaga ggaattcatc aatggcattc aaacatacaa gttgttacaa
+      481 caaatcgacg atgaggatgc cttaaaaggc atatccttgc tattcaccgg tttggccgcc
+      541 atatggtggc agggagtgca caaggaggtg aacacctggt ccaattgttt ggaacttatt
+      601 caggaacatt ttgctcccaa gaagccgcca catcagttgt acgtagaaat ctttcaggag
+      661 gcacaagatg agaagacctc catgcatatg ttcatcataa gaaaaagagc tttatttgcc
+      721 caactacccg aaggacgtca cagtgaggaa atacaaatcg acatgatgta tgggctgtta
+      781 aactttaaat atcgtcagca tatgagacgc gatgaaattc atagtttcca ggaccttttt
+      841 caaaaaggcc gggacattga acaaatcaat atggagaaga caaaacctaa acgttgtagt
+      901 ttctgcaact atcgaggtca tacagcggag gaatgccgaa aacgtcagca aaaacatgtg
+      961 ggggagaaaa aaaaggtgta aaaggtaaaa ccatttcttt attttttgaa tttttgaaat
+     1021 aaatttgaaa tgattaaatt tgtataacgg aaaaaagttt taaaattact tataaaatag
+     1081 ctgccactca cctatcacag agttgttaaa gccctacaag cctaaggggt ctttacactt
+     1141 tagtatatat ttgaagtaac atttctgcca aattcaaaaa cataaaaacg acactttttt
+     1201 ccgtaataat aataataaaa aacaatagtt attctcatga gaaaaaaaac acattttgaa
+     1261 ctattcggtt aagtgaattc aacagctaaa ctcagtaaga cagtgtcact caaacaaata
+     1321 gctttcgttt agttgataag tcaaacacag ctgattttat tgtagaaaaa taactgattc
+     1381 tgatgaatct ataaccccgt ttacactgct aatcaaatcc cataagctca ctgttaaaaa
+     1441 aaaaaaaaag agttaaaaaa aatataagaa aaagcataac aagtccattt tttataaaaa
+     1501 aaaaccttac gaatgtatta acatttttca aaatttaaaa cgccacgtcc tttttttgct
+     1561 attactttgg catcataagt ttgcacttta aacaaaaaag aaaaaaaaaa caacgactat
+     1621 ataagtcata cattaaccag gatcaacttc caagaaatac ccattaggtt aaactaatag
+     1681 gcatgtcaaa ttcgatgaaa aagagcgtaa aaacattaat acaaaatcaa tagagagtaa
+     1741 aaatagtaaa aattattttt ttttattttt taaagaaatt gaaaaaaaaa actaatttga
+     1801 aattttattt gcctttaagg ccaagatcaa ttttattaat ttccttctag catagatcaa
+     1861 tttatacatt tatttaacaa tataattttc acaatatttt tttgaacaat attccaagct
+     1921 gcttgttctt ctcgtgatca aaaatttttc catgtagacc ctgtttaaaa tatagtaatt
+     1981 tacataaatt agcttaaaat tgaaataatt tcgctttaca cttgcagatc aattgagggt
+     2041 tttttttgaa gaagttgaca aactcaaatg tcataacatt gaagtttgac aacaccttga
+     2101 aaagctacca aagataaatc tgtaagtgta aatgccccct ctctttcaag ccctactttg
+     2161 taataaaacc taccttgtaa tcaattgtta agagtctctt aaaaaaatat ctacagatta
+     2221 attaaacttt ttttaaaaaa atattaaaag cagctgctca tttatcttct aaccaaggtc
+     2281 aaggtttaac cttaaaatat aataatttac caaaattaat taaaaattct tataatttcg
+     2341 tttaacactt ataggttaat tgaaggtttt tgcttttgaa ggatgttgcc aagcccaaat
+     2401 gtcaaaacat tggagtatgg caacaccttc aaaaacaacc aa
+//
+

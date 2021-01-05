@@ -1,0 +1,110 @@
+LOCUS       XM_023862984            2110 bp    mRNA    linear   INV 22-APR-2020
+DEFINITION  PREDICTED: Cryptotermes secundus uncharacterized LOC111870582
+            (LOC111870582), mRNA.
+ACCESSION   XM_023862984
+VERSION     XM_023862984.2
+DBLINK      BioProject: PRJNA432597
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Cryptotermes secundus
+  ORGANISM  Cryptotermes secundus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Polyneoptera; Dictyoptera; Blattodea;
+            Blattoidea; Termitoidae; Kalotermitidae; Cryptotermitinae;
+            Cryptotermes.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019720605.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 22, 2020 this sequence version replaced XM_023862984.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Cryptotermes secundus Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 29% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2110
+                     /organism="Cryptotermes secundus"
+                     /mol_type="mRNA"
+                     /isolation_source="Pool of workers"
+                     /db_xref="taxon:105785"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /country="Australia"
+                     /collection_date="2012"
+     gene            1..2110
+                     /gene="LOC111870582"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 77% coverage of the
+                     annotated genomic feature by RNAseq alignments, including
+                     13 samples with support for all annotated introns"
+                     /db_xref="GeneID:111870582"
+     CDS             1..1536
+                     /gene="LOC111870582"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC111870582"
+                     /protein_id="XP_023718752.1"
+                     /db_xref="GeneID:111870582"
+                     /translation="MTSYSTAWIRKLRKSDLEWELARINLSTEGAREELRRRLTEYVR
+                     AHPEQYIRVNWIFQLDEVTLKAELEDCGLDVTGSKEDLTLRLFQYVRDHPEEFLKFPS
+                     DLGEISQGVEGRRPLPLDTVWKLGLKFTPDDSVHTFFERLGELKLAYDVSDESMVRAV
+                     PVLLKGQAVLWFRNNQSTWDTWEDFLINFKDRYLPAEIDDVLTEEIRVRTQGADESVA
+                     DYVTAIRTLMRRLTKAPTPAEQLRLLMKNLRPEVRLYIRDCDVNSFAELLAMGKQYEQ
+                     YKREKERFRPPPDIAQALIPEVAYRPKKSGTVKKLTLLNSATKPDSKGKDRQAGRQTS
+                     TPLASRTKTCWNCNKPGHFFSQCKQSKRTFCHICGRPDTIAATCGCQRPRTTGRNRSQ
+                     QDSAASSPQRVGTLSRKTREYHRRDGDATGQHHNDWNLYLREFAYALNTAVHSATDYT
+                     PAYLNLDRELKLPSVMDASEGSPELDPTLPQEWAEKISALRDIYLLVRDNLEEAYEKA
+                     SRR"
+ORIGIN      
+        1 atgacgtcat atagtacggc gtggattcgt aagctacgga aatcagattt ggaatgggaa
+       61 ctggcccgta taaacctgtc aacagaaggc gctcgggaag aattacgaag gaggcttacc
+      121 gagtatgtaa gggcccatcc cgaacagtat attagggtaa attggatttt tcagttggac
+      181 gaagttacat tgaaagccga gctggaggat tgcgggttgg atgtaactgg gtctaaagag
+      241 gatttaacac tccgcttatt ccagtatgtt cgcgaccatc cagaggagtt tttaaaattt
+      301 ccttccgatt taggggaaat aagtcagggg gttgaaggcc gcagacctct cccattagac
+      361 accgtctgga aattgggctt gaaatttacg ccggacgata gtgtgcatac cttctttgaa
+      421 aggctgggag aattgaaatt agcatatgac gtcagtgatg aatctatggt acgcgcggta
+      481 cccgtgctac tgaaaggtca agctgtattg tggtttcgaa ataatcagag tacttgggat
+      541 acctgggaag atttccttat taattttaag gataggtatc tccccgcaga gatagatgat
+      601 gtccttacgg aggaaattcg ggtgaggacc caaggggccg acgaatcagt cgctgattat
+      661 gtaaccgcca ttaggacgtt aatgagacgc ctcactaaag cgccgacccc tgcagaacaa
+      721 ctgcgattgt tgatgaagaa tctccgtcca gaagtgcgat tgtatatacg agattgtgac
+      781 gtaaattcgt ttgcggaact attggctatg ggtaaacagt atgaacagta taagcgggaa
+      841 aaggaaaggt ttaggcctcc gcccgatatc gctcaagctt tgatccccga agtagcgtac
+      901 cgacctaaga agtcgggaac agtgaaaaaa ctgacgcttt tgaattcggc tacgaagcct
+      961 gattcgaaag gcaaagacag gcaggctggg aggcagactt ccactccact ggccagccgg
+     1021 actaagacgt gttggaattg taataaacct ggccatttct tttcgcagtg taagcagagt
+     1081 aagaggacat tctgtcatat atgtgggagg ccggacacaa tagcggcgac gtgtggctgt
+     1141 caaaggccga ggacaactgg gaggaacaga agtcaacagg attcagctgc gtcctctccg
+     1201 cagcgggtgg ggactctgtc ccgaaagaca agggagtatc acagaaggga cggggacgct
+     1261 acaggacaac atcacaacga ctggaatctc tatttacgag aatttgcgta tgccctgaat
+     1321 accgccgtgc attcggcaac ggactatacg ccggcctacc tgaacctgga cagagagctg
+     1381 aaactgccta gcgtgatgga cgcttcggaa ggatctccgg agctggaccc tactcttcca
+     1441 caggaatggg ctgaaaaaat ttcggcgctt cgagacatat atctcttggt acgagataac
+     1501 ttagaagaag cgtatgagaa agcgagtcgc cgataaaact tgcgacgtag ggactcggta
+     1561 tttaaggtag gagattccgt actaagaaaa aactatgcct cgcgctcagc gggcgaaaag
+     1621 gttaccgccg gtttattgcc taagtatctt ggtccttata cagttaaaag acgaatttcg
+     1681 gccgtaacgt atgggctaga atccagaaat ggcaaggcct taggccgatg gcgtattaaa
+     1741 gacttaaagc cctaccatgg tagattatag gatgaccgcg ggctttgtca gaaatcctgt
+     1801 gagtaagaag tcagagaact gaccctcgta aaaggaagag aaaggagggg gatatgtcga
+     1861 cacgctcgcg cgcaggggga acccatatgg gagtattgtt gcaggagtag tggtgaacgt
+     1921 agagggtaga aagtagagac taaagagtgg tgttgaacgt agtgggtaga aagtagagag
+     1981 taaagagtag tgttgaatgt agagggtaga aagtagagag aacagaggtg ccgtagctac
+     2041 cgcaattgta acgggaaccc gctaagaaat gtattgtgac atgttgaccc ctacctcccc
+     2101 atctgcacgt
+//
+

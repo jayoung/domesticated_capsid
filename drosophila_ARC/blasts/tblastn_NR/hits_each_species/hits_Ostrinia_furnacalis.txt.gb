@@ -1,0 +1,2166 @@
+LOCUS       XM_028302645            2793 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114351431
+            (LOC114351431), mRNA.
+ACCESSION   XM_028302645
+VERSION     XM_028302645.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021131376.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2793
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2793
+                     /gene="LOC114351431"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 14 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114351431"
+     CDS             198..2756
+                     /gene="LOC114351431"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114351431"
+                     /protein_id="XP_028158446.1"
+                     /db_xref="GeneID:114351431"
+                     /translation="MASATRSKCGVAGNRDDHDDHSAATASAAASDQGVAQHGADRRA
+                     TAAPTAPGGSAAGPFMTESQVSSLLSAFARSQQEANRILFENLLTTLSTTSTTSTGPA
+                     VPPQSPPMSTSESQFRGGSFAKCTARFDGRADDADKLEAFLDAVTTYKECLSVSDEHA
+                     LRGLPILLVDDAAVWWRGVKNSVYTWDDAVARLRGMYGAARPAYKILREIFAQEQGQQ
+                     RCDVFISKMRALIAKLPYELNECLQIDIVYGLLDRRVRKRVTRESVVSLDVLVDRARD
+                     IEESIAEVTQGDSGKGPRGTISTYSIQKTVSSSPLTDNTPTHSPSSSNDAKTQGRNRL
+                     RCSFCNVFGHQIDNCRNRERNNKTSTSKDNSERNFNNNSSRNNSTIRCYGCGQQGVIK
+                     SKCETCSPKSQSEFHTLVSRRTICNNCKPPVTLLSSRNKTKTRNSSRKIPVIQGENGN
+                     VLTIQGGNRSSSVTQGGNRNFSDTQGGNRNFSGILQGGKCDFSGMQGNASEMCHSGNC
+                     VQDRCKMPISPDVLRNFREIADFEAKASFSGTSEFNTAQVEGEPHDLCFLPSLTLYTA
+                     GVDFDQFKPTIRIQILGHSGVAVMDTGATDCLASPTLYRKLVASGVRFAETQRLIGLA
+                     DGTRQVHDVLTGDVAVVLQGRKIFTTFLVIPGAATRTLLGRDFIRDAGILINIQQAAW
+                     SFADTPDRRYAFVQDRVLTPTADAELKRVEETTKLKLRTESRCYCLGVALKQGEGPDE
+                     RLIEYPSRLLAATERKYADESRRPPPDYKVGDLVLLKTQGLNDADRGQTPKFNPRRDG
+                     PYKVSRVLSDSTYLLEGEPGAKLGKCYASQLTPFVGHIHPPVREKRRRGRPRNF"
+ORIGIN      
+        1 tttgccacga aaagttttgt ttagtcgtaa gcttgagttc aataaatgat tattgtgaaa
+       61 ccacgattaa aatggcgccc aacgtggggc cttaacctac gaacagtacc ggcaaagtac
+      121 ctaccgtgag tgcagcgtgt cgaaacctgt ttttaccggc gtgaaaacag tgcaatctcg
+      181 aactgtaacg agttacgatg gcttccgcga cgcgatccaa gtgtggggtc gcaggcaacc
+      241 gcgacgacca cgatgaccac tcggcggcaa cggcatcggc agccgcgagc gaccaggggg
+      301 tcgctcagca cggcgccgac cggcgagcga cagcggctcc gaccgcgccc ggcggcagcg
+      361 ccgcgggccc gttcatgacc gagtcgcagg tgtcctccct cctgtcggcc ttcgcacggt
+      421 cccaacagga ggccaaccgc atcctcttcg agaacctact gacgacgctg agcaccacga
+      481 gcacgacgag cacggggccg gcagtaccgc cccagtcgcc accgatgtcg acatccgagt
+      541 cgcagttccg aggcgggtcg ttcgcaaaat gcacggcacg cttcgatggg cgagcggacg
+      601 atgccgacaa gttggaagca tttctggacg ccgtcactac atacaaggag tgcctgagcg
+      661 tgagcgacga gcacgcgctg cgcggcctcc ccatcctgct ggtggatgat gcagctgtgt
+      721 ggtggcgagg ggtcaagaac tccgtctaca cctgggacga cgcggtcgcg cgcctacgag
+      781 gcatgtacgg cgccgcacga ccggcctaca aaatccttcg cgaaatattc gcgcaagagc
+      841 aaggacagca acgatgcgac gtgtttatct cgaagatgag agcgttgata gctaaacttc
+      901 catacgaact gaacgagtgt ctacagattg acattgttta cggtctactt gaccgacgag
+      961 tgcgtaaacg cgtaacccgc gaaagtgttg tgtcgttaga cgtgttggtg gatagggccc
+     1021 gcgatatcga agagtctatc gccgaggtaa cgcaagggga ctcaggtaaa ggtccacgcg
+     1081 gcaccataag tacctattcc atccagaaaa ccgtaagtag ttctccgcta actgataaca
+     1141 cacctacaca ctcgccctct agttcaaatg acgcaaaaac acagggacgt aatcgtttac
+     1201 gttgttcttt ttgtaatgta tttggtcatc aaatagataa ttgtcgtaac cgtgagcgaa
+     1261 ataacaaaac ttccacgagc aaagacaact ccgaacgtaa ttttaataat aatagttcgc
+     1321 gtaataatag tacaatacgg tgttatggat gtggccagca aggcgtaatc aaatcgaagt
+     1381 gtgagacgtg tagtccgaag tctcaatcgg aattccacac tttagtgtcc cgtcgtacta
+     1441 tttgcaataa ttgtaaaccc cccgtaacat tattatcatc acgtaacaag acgaaaactc
+     1501 gtaactcatc acgtaaaatt cccgtcatac agggtgaaaa cgggaatgtt ttgacaatac
+     1561 agggtggtaa ccgtagttca tctgtaacac agggtggcaa ccggaatttt tcggacacac
+     1621 agggtggtaa ccggaacttt tctggcatat tacagggtgg caaatgcgac ttttctggga
+     1681 tgcagggtaa cgcatccgaa atgtgtcaca gtggtaattg tgtgcaagat agatgtaaaa
+     1741 tgcctatctc acccgatgtt ttacgcaatt ttcgagaaat tgccgatttt gaggcgaaag
+     1801 ccagtttttc aggtaccagt gagtttaata ccgcccaggt ggagggcgag cctcacgatt
+     1861 tatgtttcct ccctagtctg actctttata cagcgggagt tgacttcgac cagtttaagc
+     1921 cgacgatcag aatccagata ttgggtcata gcggtgttgc tgtcatggac acaggggcta
+     1981 cggactgcct agccagtccg acgttgtacc ggaagttggt ggcaagtggc gtacgcttcg
+     2041 cggagacgca gcgattgatc gggttagcag atggaacacg acaggtacac gacgtcctta
+     2101 caggtgatgt cgctgtcgtc ctgcaaggtc gaaagatatt tactacattc ctggtgatcc
+     2161 ctggggccgc tacgaggacg cttctaggac gtgatttcat cagagacgca ggtattctca
+     2221 tcaatatcca gcaggcagcg tggagttttg ccgacacacc agaccggcgg tatgcttttg
+     2281 tacaggatcg tgtacttacc cctaccgccg acgccgagct gaagcgtgtc gaggaaacca
+     2341 cgaagctgaa gctgaggacc gagagcagat gttattgcct tggggtagct ttgaagcagg
+     2401 gggaggggcc ggacgagcga cttattgagt accctagccg cctcctggct gccaccgaga
+     2461 ggaaatacgc cgacgaaagt cgtcggccgc cgccagacta taaggtgggc gatttggtct
+     2521 tgctgaagac ccagggtttg aacgacgctg atcgaggtca aacccctaaa tttaacccta
+     2581 ggcgtgacgg cccgtataag gtatcgaggg tcttgagtga cagcacttac ctcctggagg
+     2641 gagagcctgg agcgaagtta gggaagtgtt atgcctcaca acttactcca tttgttggtc
+     2701 acatccatcc gcctgttagg gaaaagcgta ggcgaggtag gccgcgtaac ttttaagcta
+     2761 gtccagaccg cgttgcgtcg tctgaactag agg
+//
+
+LOCUS       XM_028302702             756 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 2-like (LOC114351463), mRNA.
+ACCESSION   XM_028302702
+VERSION     XM_028302702.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021131384.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..756
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..756
+                     /gene="LOC114351463"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:114351463"
+     CDS             1..756
+                     /gene="LOC114351463"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028158503.1"
+                     /db_xref="GeneID:114351463"
+                     /translation="MSNVSFTDDQFRDLIGVLASRNFAPLSPSKPGSFALCTAHFDGT
+                     RDAALVEAFLSTITTFKKIEFVSDSNAIEGLTLLLTGEASIWWLGVKDDITSWSEAIT
+                     LLRTTFAPKRPAYKIYEEIVCIKQSQPRGTELFVAKKRALMAELPKPALTVSQCLDLL
+                     YASLHVDIRDKIPRDSVSSFDEFLRKARQIEEVLIEQKNTVPSTSSGKRIRCTFCRVF
+                     GHSEENCRKKETYTEKTQDSASAAVPYKSITPT"
+ORIGIN      
+        1 atgtcgaacg ttagttttac ggacgaccaa ttccgcgacc ttattggagt attagcgagc
+       61 aggaacttcg ctccactctc accgtctaag cctggtagtt tcgcgctttg cacagcccac
+      121 tttgatggaa ctcgcgatgc agcattagtt gaagcgttcc tatcaactat cacgacgttc
+      181 aaaaagatag aatttgtcag tgatagtaac gccattgaag ggctaacact cctgctgacc
+      241 ggagaagctt ccatatggtg gctgggtgtc aaggacgaca ttacctcatg gtctgaggcc
+      301 ataacactac ttcgtaccac attcgcgccc aagagaccag catataagat atatgaagaa
+      361 attgtatgta tcaagcagtc gcaaccaagg ggcacagaac ttttcgttgc caagaagcgc
+      421 gcacttatgg ccgaattgcc gaagcctgca cttactgtaa gtcaatgttt ggatcttctg
+      481 tacgcttcat tgcacgtgga catcagggac aagatacccc gagacagcgt cagcagtttc
+      541 gacgagtttc ttaggaaggc tcgccaaatt gaagaagtac tgatcgaaca aaagaatacc
+      601 gttccttcca cttcatcagg caaaagaata cggtgcacat tctgccgtgt tttcgggcac
+      661 agtgaagaaa actgcaggaa gaaggaaacg tataccgaga aaacacagga ctccgccagt
+      721 gctgctgtcc catataaatc cataacgcct acataa
+//
+
+LOCUS       XM_028304668            5035 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis mitogen-activated protein kinase
+            kinase kinase 15 (LOC114352906), transcript variant X1, mRNA.
+ACCESSION   XM_028304668
+VERSION     XM_028304668.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021131714.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5035
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..5035
+                     /gene="LOC114352906"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 8 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114352906"
+     CDS             280..4995
+                     /gene="LOC114352906"
+                     /codon_start=1
+                     /product="mitogen-activated protein kinase kinase kinase
+                     15 isoform X1"
+                     /protein_id="XP_028160469.1"
+                     /db_xref="GeneID:114352906"
+                     /translation="MPRYFKVEEDYDNNAASTPSRHVPTTTSTPITANDLTAMMLFLQ
+                     QSQAENFERMLSRVLELLECRSPSSQPAPAHAASGTFASCKATYSGAPTEFLNGFIDA
+                     LEAFKDSANVSDANALRGLSMLLTHDTATWWQGVKSTITSWTNALQHLRSVFGNSSPP
+                     HRIYRELFSKPQKLRERSELYIAKARSHLARLPHEDLSEKVQLDMVYGLLHVRVRERL
+                     RREEVDKFETLLRKTREIEEVAEKNTRAAAPASAYNQRQRAPPTSPRACIDASYQPST
+                     TSASATGVTTPPRPATCDEPGEVRSICESIGSDGSSATVQAGAANQRPRMDIACVLDV
+                     NQSTNLSHRRRALEEVRLASDLVNANLHHIHFEKLDFGETSVLDTFYNADVALVDLSL
+                     QVQQSSLLYHLGVRESFDMKENVLLFNDIDPDSTLRLKMSLPNFLFVSYKLTDAGTCV
+                     TTNPAAAKFKGEESADPKQHLTLRLRNILQDVEVQTKAHLQEKFLSDLRKAREIYSGQ
+                     ELSNVLHAMRRRLDDPAVLSGDTILNMLISYREIQDYDAIVQVVDDLKTIMNRKNYVN
+                     MPIIRFMYAFAMNRRNKEGDRENALKVCVKALEKKENRFPDMLCLCGRIYKDKFVESQ
+                     HLDTESLQNAIHWYRQGFEVQPNEYAGINLATLLVIAGNDFKNSQELQHIGMVLNHLI
+                     GKKGSLSSLKDYWDVATFFEISVLAQDYVKAIQAAEVMFKLKPPNWYLKSTIGNIELI
+                     DRFRKKSEETSPEQQVFSFWMEFFVEATKSCSENIIRFPVLILETTKEYIPSYVNVNM
+                     GAEEKSVEILNLCMDSMRGTCRQVHRWLFTSDMIRTYSLYKRDERCLFLYVSENSDDF
+                     QIFLPSEGCRQRLHDLLGEMTADHEKVTDLDTSVMQDQLKFEYELDDCNKRVVLGKGT
+                     YGVVYAARDLNTQVRIAVKEIPEKNLGDVQPLHEEIMLHSQLRHRNIVQYLGSISENN
+                     YFKIFMEQVPGGSLSALLRSKWGPLKENEATIAYYTKQILEGLKYLHDQKIVHRDIKG
+                     DNVLVNTYSGVVKISDFGTSKRLAGLCPSTETFAGTLQYMAPEVIDKGQRGYGAPADI
+                     WSLGCTVVEMATGNPPFIELGSPQAALFKVGYYKTHPEIPNELSQRAKNFILRCFIPE
+                     PEQRATAAELLEDPFLCEKKKQPSRLGSSMDYSRSISVPADKARPQLAQKKISEPSLP
+                     GNLPSSPEIEVKTIRSNPTITRTASSMLSPILIYPPDLSTSSTMPNTPSTDEMDSSDT
+                     ILNRRSSSGGLLSPEVDMTSVPRSSIDVEHDGFYLLKKDSQRRLTLSRVLEQDSEKIC
+                     SKWMLSVQQDFGNTLLTMHHLETLRLALKDYIMDQNRSVIEQAITTLKEELDFDSKAI
+                     NELHAAIYMFQEAVNAVLRMHSIKPHWMFALDNLVRNAVQAAITVLSPELGANLAGQE
+                     SRRGANSGCAAADVATPSAVSTANSRDHQLHQLRQENHKLHQELIDSYQQYQALLRQI
+                     LEEQRMQTQVMRDLVDRRPRSESPAEIDEEQYSILREWACPRGVPDSAARALAAHEYT
+                     LGDLLAHARREDIARLQLK"
+ORIGIN      
+        1 ttttatattg tcagtctgta tctctgtatt gtccttttgg ttattaaata gtaatattat
+       61 tatgttttgc tgtagtacta gtgcagtaat agttaattag ttgattgtga atttcaaagt
+      121 gatacatgtt ttccgaacat aagtgcttat acgtcgtgta catcatttga aaaactcaaa
+      181 ccctgggaag agcccaacac tgaattggcc tgcgataaac ttgcagccca attttaagaa
+      241 tacaagctct gtgtctgtta attataaaat tagaagaaaa tgccacgcta tttcaaagtg
+      301 gaagaggatt acgacaacaa cgccgcaagc acgccgagcc gacatgtgcc aacgacgacg
+      361 tcgacaccta tcaccgcgaa cgacctcacc gccatgatgt tgttcctgca acagtcgcag
+      421 gcagaaaact ttgagcgcat gctatcaaga gtgcttgaac tgctcgagtg tcgctcgcca
+      481 tcttcacagc ccgcgccggc tcacgccgca tctggaacgt tcgcctcgtg taaagcaacc
+      541 tacagcggag cgcccaccga gttcctcaac ggttttatag acgctttgga ggcatttaaa
+      601 gacagcgcta acgtaagtga tgctaacgcc ttacgtggtt tgtcgatgtt actcacacac
+      661 gatacagcca cgtggtggca gggagttaag tccacgatca cctcgtggac taatgccctt
+      721 cagcacctcc gcagcgtttt cggcaacagc agtcctccac ataggattta cagagagtta
+      781 ttctcgaagc cgcaaaaact ccgggagaga agtgagctgt acatagccaa agcacgctct
+      841 catctagcgc gcctcccgca tgaagacctc agcgagaaag tacaactcga catggtttac
+      901 ggcctacttc atgttagagt gcgagaacgt ttacggagag aagaagttga taaatttgaa
+      961 acgctactaa gaaaaacacg tgaaatagaa gaggttgctg agaaaaatac acgtgccgct
+     1021 gcgcccgcga gtgcttacaa tcagcgacaa cgcgcgccac caacgtctcc gcgcgcatgt
+     1081 attgatgctt cataccagcc gtccacgaca tcagcaagcg cgacaggcgt gacaacgccg
+     1141 ccacgacccg ccacgtgcga tgagccgggt gaagtgagaa gcatttgtga gagcattgga
+     1201 agcgatggct ccagtgcaac tgtgcaggct ggggccgcca accagaggcc ccggatggat
+     1261 attgcttgtg ttcttgacgt gaatcaatca acaaatcttt cacacagaag aagagcactt
+     1321 gaagaagtgc gtctagcttc tgaccttgtg aatgctaacc tgcaccatat tcattttgag
+     1381 aaacttgact ttggtgagac aagcgtcctc gacacattct acaatgcgga cgttgcgctg
+     1441 gtggacctca gtctgcaagt gcaacagagt tcgttgctgt accatctggg agtgcgcgag
+     1501 agttttgaca tgaaggaaaa tgtgctgctg ttcaatgata ttgatccaga ctccacattg
+     1561 cggctaaaga tgtcgctgcc caacttcttg tttgtttcgt acaagttgac cgacgccggc
+     1621 acttgcgtga cgaccaaccc cgcggcggct aagttcaaag gcgaagaatc ggccgaccca
+     1681 aagcaacatc tgacgttgag gctgagaaac atactgcaag atgtcgaagt tcaaactaaa
+     1741 gcccatctcc aagagaaatt cctgtctgat cttcgcaaag cacgcgaaat atacagcggg
+     1801 caagaactat ctaacgtctt acacgctatg cgtcgacgcc tagacgaccc ggccgtgcta
+     1861 tccggggata cgatactgaa catgttgata tcctaccggg agatacagga ttacgatgcg
+     1921 attgtacaag tcgtggacga tctgaaaacg attatgaaca ggaagaatta tgtgaacatg
+     1981 cctataatta ggttcatgta cgcgttcgct atgaataggc ggaacaaaga aggcgacaga
+     2041 gagaacgcat tgaaagtatg cgtcaaggcg ttagaaaaga aggaaaatcg gttcccagac
+     2101 atgttgtgcc tgtgtggacg tatctacaaa gacaagttcg ttgaatctca acatctagac
+     2161 acggaaagct tacagaatgc tatacattgg tacagacaag gttttgaagt gcagccaaat
+     2221 gaatatgcag gcattaattt ggcgacacta ttagttatag ctgggaacga cttcaaaaat
+     2281 tcacaagagc tgcagcatat aggtatggtc ctaaaccatc taataggcaa gaagggcagt
+     2341 ctatcctcac tgaaagacta ctgggatgtg gccaccttct tcgagatatc agttctagct
+     2401 caggactacg tgaaagcaat acaggctgcc gaggttatgt tcaaattgaa accacctaat
+     2461 tggtatttga agtcaacgat aggaaacatc gagctgattg accggtttag aaaaaaaagc
+     2521 gaagagacat ccccagaaca gcaagtgttc tcattttgga tggaattctt cgtggaagca
+     2581 accaaaagtt gtagcgagaa catcatcagg tttcctgtgc taatattaga aacgactaag
+     2641 gaatacatac catcgtacgt gaacgtcaat atgggcgccg aagagaagtc ggtggagatt
+     2701 ctgaacctct gcatggattc tatgagaggc acgtgccgcc aggtgcaccg gtggttgttt
+     2761 acctctgaca tgatcaggac ttacagttta tacaaacgcg acgagcgatg cctcttccta
+     2821 tacgtgagcg agaactcaga cgacttccaa atattcctcc cttccgaagg gtgcaggcag
+     2881 cgacttcacg atttgttggg ggaaatgacc gcagaccacg agaaagtcac cgatttggac
+     2941 accagtgtca tgcaggatca gttgaagttt gaatacgagt tggacgattg caacaaacgc
+     3001 gtggtgcttg gtaaaggcac gtacggcgtt gtatacgcgg ccagagatct caacacgcaa
+     3061 gtccgtatcg cagtcaagga gattcctgag aagaatcttg gtgatgtcca gcctttacat
+     3121 gaggaaatca tgctgcattc acagctgagg cacaggaata tcgttcagta ccttggatca
+     3181 atctctgaga ataactactt caagattttc atggagcaag tgcctggagg ttctttgtcc
+     3241 gctcttttaa ggtccaaatg gggtccgttg aaagaaaacg aagccacaat cgcttattat
+     3301 accaaacaga tccttgaagg tctaaaatac ctccacgacc aaaaaatcgt ccaccgcgac
+     3361 ataaagggcg acaacgttct cgtgaacaca tacagtggtg tggtgaagat atccgacttc
+     3421 gggacgtcaa agcgactggc cgggctgtgc ccttcgactg aaacattcgc ggggacattg
+     3481 caatatatgg ccccggaggt catagataag gggcagaggg ggtacggagc gcctgctgac
+     3541 atttggtctt tgggatgcac cgtagtagaa atggcaacag gcaacccacc gttcatcgaa
+     3601 ttaggatcac cacaggcggc gttgtttaag gtcggatact ataaaacgca cccagagatt
+     3661 ccaaatgagc tgtcgcagag agcgaaaaat ttcatcttac gctgtttcat acctgaaccg
+     3721 gagcagcgag ctaccgctgc tgaattgctt gaagacccat ttttgtgcga aaagaagaag
+     3781 caacccagtc gtctcggcag tagcatggac tacagccgga gtatatctgt ccccgccgac
+     3841 aaagccagac cccagctagc tcagaagaag atatctgagc cttctttacc tggaaacctg
+     3901 cctagctccc ctgagattga ggtgaaaacg atccggtcta acccgacgat tacacggacg
+     3961 gcttcgtcga tgctctcacc gatactgata tacccaccgg acttgtctac tagcagtact
+     4021 atgccaaata ctccgtccac cgatgagatg gatagtagcg atactatcct caacaggcgg
+     4081 agttcttcgg gaggtctgct gtcacctgag gtggacatga caagcgtacc tcgttcatca
+     4141 atagacgtag agcacgatgg attttatcta ttgaaaaaag actcacaacg ccgtctcact
+     4201 ctttcacgag tgttggagca ggacagtgaa aaaatctgct caaaatggat gttgagtgta
+     4261 caacaggact ttggtaacac tcttcttacg atgcatcacc tagaaaccct ccgcctagcg
+     4321 ctcaaggact acataatgga ccagaacaga agcgtcatag aacaagccat cacaaccttg
+     4381 aaggaggaac tggacttcga ctccaaggcc ataaacgagc ttcatgccgc catctatatg
+     4441 ttccaagagg cagtgaatgc ggtgctgagg atgcacagca taaagcccca ttggatgttt
+     4501 gcgctggata acttagtgag aaatgctgtg caagctgcta ttactgtgtt gtcgccagag
+     4561 ctaggcgcca acttggcggg acaagagtct cggcgcggcg ccaacagcgg ctgcgcggcg
+     4621 gccgacgtgg ccactccttc agccgtgtcc accgccaact cccgcgacca ccagctacac
+     4681 cagctgcgcc aggagaacca caagttacac caagagctga tagacagcta tcagcagtac
+     4741 caggcgttgc ttagacaaat acttgaagag cagcgaatgc agactcaagt tatgcgagat
+     4801 ctcgtggaca ggaggccgag gagtgaaagt cctgcagaga tagacgagga acagtacagc
+     4861 atcctccgcg agtgggcgtg ccctagaggc gtgcccgact cggcggcgcg cgcgctcgcg
+     4921 gcgcacgagt acacgctcgg cgacctgctg gcgcacgcgc ggagggagga catcgcccgg
+     4981 ctccagctca agtaagtggc ggtgtctcgg gtccatctta agtaagtgac ggtat
+//
+
+LOCUS       XM_028304669            5106 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis mitogen-activated protein kinase
+            kinase kinase 15 (LOC114352906), transcript variant X2, mRNA.
+ACCESSION   XM_028304669
+VERSION     XM_028304669.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021131714.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5106
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..5106
+                     /gene="LOC114352906"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 5 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114352906"
+     CDS             281..4996
+                     /gene="LOC114352906"
+                     /codon_start=1
+                     /product="mitogen-activated protein kinase kinase kinase
+                     15 isoform X2"
+                     /protein_id="XP_028160470.1"
+                     /db_xref="GeneID:114352906"
+                     /translation="MPRYFKVEEDYDNNAASTPSRHVPTTTSTPITANDLTAMMLFLQ
+                     QSQAENFERMLSRVLELLECRSPSSQPAPAHAASGTFASCKATYSGAPTEFLNGFIDA
+                     LEAFKDSANVSDANALRGLSMLLTHDTATWWQGVKSTITSWTNALQHLRSVFGNSSPP
+                     HRIYRELFSKPQKLRERSELYIAKARSHLARLPHEDLSEKVQLDMVYGLLHVRVRERL
+                     RREEVDKFETLLRKTREIEEVAEKNTRAAAPASAYNQRQRAPPTSPRACIDASYQPST
+                     TSASATGVTTPPRPATCDEPGEVRSICESIGSDGSSATVQAGAANQRPRMDIACVLDV
+                     NQSTNLSHRRRALEEVRLASDLVNANLHHIHFEKLDFGETSVLDTFYNADVALVDLSL
+                     QVQQSSLLYHLGVRESFDMKENVLLFNDIDPDSTLRLKMSLPNFLFVSYKLTDAGTCV
+                     TTNPAAAKFKGEESADPKQHLTLRLRNILQDVEVQTKAHLQEKFLSDLRKAREIYSGQ
+                     ELSNVLHAMRRRLDDPAVLSGDTILNMLISYREIQDYDAIVQVVDDLKTIMNRKNYVN
+                     MPIIRFMYAFAMNRRNKEGDRENALKVCVKALEKKENRFPDMLCLCGRIYKDKFVESQ
+                     HLDTESLQNAIHWYRQGFEVQPNEYAGINLATLLVIAGNDFKNSQELQHIGMVLNHLI
+                     GKKGSLSSLKDYWDVATFFEISVLAQDYVKAIQAAEVMFKLKPPNWYLKSTIGNIELI
+                     DRFRKKSEETSPEQQVFSFWMEFFVEATKSCSENIIRFPVLILETTKEYIPSYVNVNM
+                     GAEEKSVEILNLCMDSMRGTCRQVHRWLFTSDMIRTYSLYKRDERCLFLYVSENSDDF
+                     QIFLPSEGCRQRLHDLLGEMTADHEKVTDLDTSVMQDQLKFEYELDDCNKRVVLGKGT
+                     YGVVYAARDLNTQVRIAVKEIPEKNLGDVQPLHEEIMLHSQLRHRNIVQYLGSISENN
+                     YFKIFMEQVPGGSLSALLRSKWGPLKENEATIAYYTKQILEGLKYLHDQKIVHRDIKG
+                     DNVLVNTYSGVVKISDFGTSKRLAGLCPSTETFAGTLQYMAPEVIDKGQRGYGAPADI
+                     WSLGCTVVEMATGNPPFIELGSPQAALFKVGYYKTHPEIPNELSQRAKNFILRCFIPE
+                     PEQRATAAELLEDPFLCEKKKQPSRLGSSMDYSRSISVPADKARPQLAQKKISEPSLP
+                     GNLPSSPEIEVKTIRSNPTITRTASSMLSPILIYPPDLSTSSTMPNTPSTDEMDSSDT
+                     ILNRRSSSGGLLSPEVDMTSVPRSSIDVEHDGFYLLKKDSQRRLTLSRVLEQDSEKIC
+                     SKWMLSVQQDFGNTLLTMHHLETLRLALKDYIMDQNRSVIEQAITTLKEELDFDSKAI
+                     NELHAAIYMFQEAVNAVLRMHSIKPHWMFALDNLVRNAVQAAITVLSPELGANLAGQE
+                     SRRGANSGCAAADVATPSAVSTANSRDHQLHQLRQENHKLHQELIDSYQQYQALLRQI
+                     LEEQRMQTQVMRDLVDRRPRSESPAEIDEEQYSILREWACPRGVPDSAARALAAHEYT
+                     LGDLLAHARREDIARLQLK"
+ORIGIN      
+        1 tttttatatt gtcagtctgt atctctgtat tgtccttttg gttattaaat agtaatatta
+       61 ttatgttttg ctgtagtact agtgcagtaa tagttaatta gttgattgtg aatttcaaag
+      121 tgatacatgt tttccgaaca taagtgctta tacgtcgtgt acatcatttg aaaaactcaa
+      181 accctgggaa gagcccaaca ctgaattggc ctgcgataaa cttgcagccc aattttaaga
+      241 atacaagctc tgtgtctgtt aattataaaa ttagaagaaa atgccacgct atttcaaagt
+      301 ggaagaggat tacgacaaca acgccgcaag cacgccgagc cgacatgtgc caacgacgac
+      361 gtcgacacct atcaccgcga acgacctcac cgccatgatg ttgttcctgc aacagtcgca
+      421 ggcagaaaac tttgagcgca tgctatcaag agtgcttgaa ctgctcgagt gtcgctcgcc
+      481 atcttcacag cccgcgccgg ctcacgccgc atctggaacg ttcgcctcgt gtaaagcaac
+      541 ctacagcgga gcgcccaccg agttcctcaa cggttttata gacgctttgg aggcatttaa
+      601 agacagcgct aacgtaagtg atgctaacgc cttacgtggt ttgtcgatgt tactcacaca
+      661 cgatacagcc acgtggtggc agggagttaa gtccacgatc acctcgtgga ctaatgccct
+      721 tcagcacctc cgcagcgttt tcggcaacag cagtcctcca cataggattt acagagagtt
+      781 attctcgaag ccgcaaaaac tccgggagag aagtgagctg tacatagcca aagcacgctc
+      841 tcatctagcg cgcctcccgc atgaagacct cagcgagaaa gtacaactcg acatggttta
+      901 cggcctactt catgttagag tgcgagaacg tttacggaga gaagaagttg ataaatttga
+      961 aacgctacta agaaaaacac gtgaaataga agaggttgct gagaaaaata cacgtgccgc
+     1021 tgcgcccgcg agtgcttaca atcagcgaca acgcgcgcca ccaacgtctc cgcgcgcatg
+     1081 tattgatgct tcataccagc cgtccacgac atcagcaagc gcgacaggcg tgacaacgcc
+     1141 gccacgaccc gccacgtgcg atgagccggg tgaagtgaga agcatttgtg agagcattgg
+     1201 aagcgatggc tccagtgcaa ctgtgcaggc tggggccgcc aaccagaggc cccggatgga
+     1261 tattgcttgt gttcttgacg tgaatcaatc aacaaatctt tcacacagaa gaagagcact
+     1321 tgaagaagtg cgtctagctt ctgaccttgt gaatgctaac ctgcaccata ttcattttga
+     1381 gaaacttgac tttggtgaga caagcgtcct cgacacattc tacaatgcgg acgttgcgct
+     1441 ggtggacctc agtctgcaag tgcaacagag ttcgttgctg taccatctgg gagtgcgcga
+     1501 gagttttgac atgaaggaaa atgtgctgct gttcaatgat attgatccag actccacatt
+     1561 gcggctaaag atgtcgctgc ccaacttctt gtttgtttcg tacaagttga ccgacgccgg
+     1621 cacttgcgtg acgaccaacc ccgcggcggc taagttcaaa ggcgaagaat cggccgaccc
+     1681 aaagcaacat ctgacgttga ggctgagaaa catactgcaa gatgtcgaag ttcaaactaa
+     1741 agcccatctc caagagaaat tcctgtctga tcttcgcaaa gcacgcgaaa tatacagcgg
+     1801 gcaagaacta tctaacgtct tacacgctat gcgtcgacgc ctagacgacc cggccgtgct
+     1861 atccggggat acgatactga acatgttgat atcctaccgg gagatacagg attacgatgc
+     1921 gattgtacaa gtcgtggacg atctgaaaac gattatgaac aggaagaatt atgtgaacat
+     1981 gcctataatt aggttcatgt acgcgttcgc tatgaatagg cggaacaaag aaggcgacag
+     2041 agagaacgca ttgaaagtat gcgtcaaggc gttagaaaag aaggaaaatc ggttcccaga
+     2101 catgttgtgc ctgtgtggac gtatctacaa agacaagttc gttgaatctc aacatctaga
+     2161 cacggaaagc ttacagaatg ctatacattg gtacagacaa ggttttgaag tgcagccaaa
+     2221 tgaatatgca ggcattaatt tggcgacact attagttata gctgggaacg acttcaaaaa
+     2281 ttcacaagag ctgcagcata taggtatggt cctaaaccat ctaataggca agaagggcag
+     2341 tctatcctca ctgaaagact actgggatgt ggccaccttc ttcgagatat cagttctagc
+     2401 tcaggactac gtgaaagcaa tacaggctgc cgaggttatg ttcaaattga aaccacctaa
+     2461 ttggtatttg aagtcaacga taggaaacat cgagctgatt gaccggttta gaaaaaaaag
+     2521 cgaagagaca tccccagaac agcaagtgtt ctcattttgg atggaattct tcgtggaagc
+     2581 aaccaaaagt tgtagcgaga acatcatcag gtttcctgtg ctaatattag aaacgactaa
+     2641 ggaatacata ccatcgtacg tgaacgtcaa tatgggcgcc gaagagaagt cggtggagat
+     2701 tctgaacctc tgcatggatt ctatgagagg cacgtgccgc caggtgcacc ggtggttgtt
+     2761 tacctctgac atgatcagga cttacagttt atacaaacgc gacgagcgat gcctcttcct
+     2821 atacgtgagc gagaactcag acgacttcca aatattcctc ccttccgaag ggtgcaggca
+     2881 gcgacttcac gatttgttgg gggaaatgac cgcagaccac gagaaagtca ccgatttgga
+     2941 caccagtgtc atgcaggatc agttgaagtt tgaatacgag ttggacgatt gcaacaaacg
+     3001 cgtggtgctt ggtaaaggca cgtacggcgt tgtatacgcg gccagagatc tcaacacgca
+     3061 agtccgtatc gcagtcaagg agattcctga gaagaatctt ggtgatgtcc agcctttaca
+     3121 tgaggaaatc atgctgcatt cacagctgag gcacaggaat atcgttcagt accttggatc
+     3181 aatctctgag aataactact tcaagatttt catggagcaa gtgcctggag gttctttgtc
+     3241 cgctctttta aggtccaaat ggggtccgtt gaaagaaaac gaagccacaa tcgcttatta
+     3301 taccaaacag atccttgaag gtctaaaata cctccacgac caaaaaatcg tccaccgcga
+     3361 cataaagggc gacaacgttc tcgtgaacac atacagtggt gtggtgaaga tatccgactt
+     3421 cgggacgtca aagcgactgg ccgggctgtg cccttcgact gaaacattcg cggggacatt
+     3481 gcaatatatg gccccggagg tcatagataa ggggcagagg gggtacggag cgcctgctga
+     3541 catttggtct ttgggatgca ccgtagtaga aatggcaaca ggcaacccac cgttcatcga
+     3601 attaggatca ccacaggcgg cgttgtttaa ggtcggatac tataaaacgc acccagagat
+     3661 tccaaatgag ctgtcgcaga gagcgaaaaa tttcatctta cgctgtttca tacctgaacc
+     3721 ggagcagcga gctaccgctg ctgaattgct tgaagaccca tttttgtgcg aaaagaagaa
+     3781 gcaacccagt cgtctcggca gtagcatgga ctacagccgg agtatatctg tccccgccga
+     3841 caaagccaga ccccagctag ctcagaagaa gatatctgag ccttctttac ctggaaacct
+     3901 gcctagctcc cctgagattg aggtgaaaac gatccggtct aacccgacga ttacacggac
+     3961 ggcttcgtcg atgctctcac cgatactgat atacccaccg gacttgtcta ctagcagtac
+     4021 tatgccaaat actccgtcca ccgatgagat ggatagtagc gatactatcc tcaacaggcg
+     4081 gagttcttcg ggaggtctgc tgtcacctga ggtggacatg acaagcgtac ctcgttcatc
+     4141 aatagacgta gagcacgatg gattttatct attgaaaaaa gactcacaac gccgtctcac
+     4201 tctttcacga gtgttggagc aggacagtga aaaaatctgc tcaaaatgga tgttgagtgt
+     4261 acaacaggac tttggtaaca ctcttcttac gatgcatcac ctagaaaccc tccgcctagc
+     4321 gctcaaggac tacataatgg accagaacag aagcgtcata gaacaagcca tcacaacctt
+     4381 gaaggaggaa ctggacttcg actccaaggc cataaacgag cttcatgccg ccatctatat
+     4441 gttccaagag gcagtgaatg cggtgctgag gatgcacagc ataaagcccc attggatgtt
+     4501 tgcgctggat aacttagtga gaaatgctgt gcaagctgct attactgtgt tgtcgccaga
+     4561 gctaggcgcc aacttggcgg gacaagagtc tcggcgcggc gccaacagcg gctgcgcggc
+     4621 ggccgacgtg gccactcctt cagccgtgtc caccgccaac tcccgcgacc accagctaca
+     4681 ccagctgcgc caggagaacc acaagttaca ccaagagctg atagacagct atcagcagta
+     4741 ccaggcgttg cttagacaaa tacttgaaga gcagcgaatg cagactcaag ttatgcgaga
+     4801 tctcgtggac aggaggccga ggagtgaaag tcctgcagag atagacgagg aacagtacag
+     4861 catcctccgc gagtgggcgt gccctagagg cgtgcccgac tcggcggcgc gcgcgctcgc
+     4921 ggcgcacgag tacacgctcg gcgacctgct ggcgcacgcg cggagggagg acatcgcccg
+     4981 gctccagctc aagtaagtgg cggtgtctca ggtccatctt aagtgagtga cggtatatcc
+     5041 tcaagtgaga gtccccaaga gacaggcgaa gagcagtaca acatcctccg ggacgccttt
+     5101 aaggct
+//
+
+LOCUS       XM_028304670            4940 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis mitogen-activated protein kinase
+            kinase kinase 15 (LOC114352906), transcript variant X3, mRNA.
+ACCESSION   XM_028304670
+VERSION     XM_028304670.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021131714.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4940
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..4940
+                     /gene="LOC114352906"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 8 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114352906"
+     CDS             280..4899
+                     /gene="LOC114352906"
+                     /codon_start=1
+                     /product="mitogen-activated protein kinase kinase kinase
+                     15 isoform X3"
+                     /protein_id="XP_028160471.1"
+                     /db_xref="GeneID:114352906"
+                     /translation="MPRYFKVEEDYDNNAASTPSRHVPTTTSTPITANDLTAMMLFLQ
+                     QSQAENFERMLSRVLELLECRSPSSQPAPAHAASGTFASCKATYSGAPTEFLNGFIDA
+                     LEAFKDSANVSDANALRGLSMLLTHDTATWWQGVKSTITSWTNALQHLRSVFGNSSPP
+                     HRIYRELFSKPQKLRERSELYIAKARSHLARLPHEDLSEKVQLDMVYGLLHVRVRERL
+                     RREEVDKFETLLRKTREIEEVAEKNTRAAAPASAYNQRQRAPPTSPRACIDASYQPST
+                     TSASATGVTTPPRPATCDEPGEVRSICESIGSDGSSATVQAGAANQRPRMDIACVLDV
+                     NQSTNLSHRRRALEEVRLASDLVNANLHHIHFEKLDFGETSVLDTFYNADVALVDLSL
+                     QVQQSSLLYHLGVRESFDMKENVLLFNDIDPDSTLRLKMSLPNFLFVSYKLTDAGTCV
+                     TTNPAAAKFKGEESADPKQHLTLRLRNILQDVEVQTKAHLQEKFLSDLRKAREIYSGQ
+                     ELSNVLHAMRRRLDDPAVLSGDTILNMLISYREIQDYDAIVQVVDDLKTIMNRKNYVN
+                     MPIIRFMYAFAMNRRNKEGDRENALKVCVKALEKKENRFPDMLCLCGRIYKDKFVESQ
+                     HLDTESLQNAIHWYRQGFEVQPNEYAGINLATLLVIAGNDFKNSQELQHIGMVLNHLI
+                     GKKGSLSSLKDYWDVATFFEISVLAQDYVKAIQAAEVMFKLKPPNWYLKSTIGNIELI
+                     DRFRKKSEETSPEQQVFSFWMEFFVEATKSCSENIIRFPVLILETTKEYIPSYVNVNM
+                     GAEEKSVEILNLCMDSMRGTCRQVHRWLFTSDMIRTYSLYKRDERCLFLYVSENSDDF
+                     QIFLPSEGCRQRLHDLLGEMTADHEKVTDLDTSVMQDQLKFEYELDDCNKRVVLGKGT
+                     YGVVYAARDLNTQVRIAVKEIPEKNLGDVQPLHEEIMLHSQLRHRNIVQYLGSISENN
+                     YFKIFMEQVPGGSLSALLRSKWGPLKENEATIAYYTKQILEGLKYLHDQKIVHRDIKG
+                     DNVLVNTYSGVVKISDFGTSKRLAGLCPSTETFAGTLQYMAPEVIDKGQRGYGAPADI
+                     WSLGCTVVEMATGNPPFIELGSPQAALFKVGYYKTHPEIPNELSQRAKNFILRCFIPE
+                     PEQRATAAELLEDPFLCEKKKQPSRLGSSMDYSRSISVPADKARPQLAQKKISEPSLP
+                     GNLPSSPEIDTMPNTPSTDEMDSSDTILNRRSSSGGLLSPEVDMTSVPRSSIDVEHDG
+                     FYLLKKDSQRRLTLSRVLEQDSEKICSKWMLSVQQDFGNTLLTMHHLETLRLALKDYI
+                     MDQNRSVIEQAITTLKEELDFDSKAINELHAAIYMFQEAVNAVLRMHSIKPHWMFALD
+                     NLVRNAVQAAITVLSPELGANLAGQESRRGANSGCAAADVATPSAVSTANSRDHQLHQ
+                     LRQENHKLHQELIDSYQQYQALLRQILEEQRMQTQVMRDLVDRRPRSESPAEIDEEQY
+                     SILREWACPRGVPDSAARALAAHEYTLGDLLAHARREDIARLQLK"
+ORIGIN      
+        1 ttttatattg tcagtctgta tctctgtatt gtccttttgg ttattaaata gtaatattat
+       61 tatgttttgc tgtagtacta gtgcagtaat agttaattag ttgattgtga atttcaaagt
+      121 gatacatgtt ttccgaacat aagtgcttat acgtcgtgta catcatttga aaaactcaaa
+      181 ccctgggaag agcccaacac tgaattggcc tgcgataaac ttgcagccca attttaagaa
+      241 tacaagctct gtgtctgtta attataaaat tagaagaaaa tgccacgcta tttcaaagtg
+      301 gaagaggatt acgacaacaa cgccgcaagc acgccgagcc gacatgtgcc aacgacgacg
+      361 tcgacaccta tcaccgcgaa cgacctcacc gccatgatgt tgttcctgca acagtcgcag
+      421 gcagaaaact ttgagcgcat gctatcaaga gtgcttgaac tgctcgagtg tcgctcgcca
+      481 tcttcacagc ccgcgccggc tcacgccgca tctggaacgt tcgcctcgtg taaagcaacc
+      541 tacagcggag cgcccaccga gttcctcaac ggttttatag acgctttgga ggcatttaaa
+      601 gacagcgcta acgtaagtga tgctaacgcc ttacgtggtt tgtcgatgtt actcacacac
+      661 gatacagcca cgtggtggca gggagttaag tccacgatca cctcgtggac taatgccctt
+      721 cagcacctcc gcagcgtttt cggcaacagc agtcctccac ataggattta cagagagtta
+      781 ttctcgaagc cgcaaaaact ccgggagaga agtgagctgt acatagccaa agcacgctct
+      841 catctagcgc gcctcccgca tgaagacctc agcgagaaag tacaactcga catggtttac
+      901 ggcctacttc atgttagagt gcgagaacgt ttacggagag aagaagttga taaatttgaa
+      961 acgctactaa gaaaaacacg tgaaatagaa gaggttgctg agaaaaatac acgtgccgct
+     1021 gcgcccgcga gtgcttacaa tcagcgacaa cgcgcgccac caacgtctcc gcgcgcatgt
+     1081 attgatgctt cataccagcc gtccacgaca tcagcaagcg cgacaggcgt gacaacgccg
+     1141 ccacgacccg ccacgtgcga tgagccgggt gaagtgagaa gcatttgtga gagcattgga
+     1201 agcgatggct ccagtgcaac tgtgcaggct ggggccgcca accagaggcc ccggatggat
+     1261 attgcttgtg ttcttgacgt gaatcaatca acaaatcttt cacacagaag aagagcactt
+     1321 gaagaagtgc gtctagcttc tgaccttgtg aatgctaacc tgcaccatat tcattttgag
+     1381 aaacttgact ttggtgagac aagcgtcctc gacacattct acaatgcgga cgttgcgctg
+     1441 gtggacctca gtctgcaagt gcaacagagt tcgttgctgt accatctggg agtgcgcgag
+     1501 agttttgaca tgaaggaaaa tgtgctgctg ttcaatgata ttgatccaga ctccacattg
+     1561 cggctaaaga tgtcgctgcc caacttcttg tttgtttcgt acaagttgac cgacgccggc
+     1621 acttgcgtga cgaccaaccc cgcggcggct aagttcaaag gcgaagaatc ggccgaccca
+     1681 aagcaacatc tgacgttgag gctgagaaac atactgcaag atgtcgaagt tcaaactaaa
+     1741 gcccatctcc aagagaaatt cctgtctgat cttcgcaaag cacgcgaaat atacagcggg
+     1801 caagaactat ctaacgtctt acacgctatg cgtcgacgcc tagacgaccc ggccgtgcta
+     1861 tccggggata cgatactgaa catgttgata tcctaccggg agatacagga ttacgatgcg
+     1921 attgtacaag tcgtggacga tctgaaaacg attatgaaca ggaagaatta tgtgaacatg
+     1981 cctataatta ggttcatgta cgcgttcgct atgaataggc ggaacaaaga aggcgacaga
+     2041 gagaacgcat tgaaagtatg cgtcaaggcg ttagaaaaga aggaaaatcg gttcccagac
+     2101 atgttgtgcc tgtgtggacg tatctacaaa gacaagttcg ttgaatctca acatctagac
+     2161 acggaaagct tacagaatgc tatacattgg tacagacaag gttttgaagt gcagccaaat
+     2221 gaatatgcag gcattaattt ggcgacacta ttagttatag ctgggaacga cttcaaaaat
+     2281 tcacaagagc tgcagcatat aggtatggtc ctaaaccatc taataggcaa gaagggcagt
+     2341 ctatcctcac tgaaagacta ctgggatgtg gccaccttct tcgagatatc agttctagct
+     2401 caggactacg tgaaagcaat acaggctgcc gaggttatgt tcaaattgaa accacctaat
+     2461 tggtatttga agtcaacgat aggaaacatc gagctgattg accggtttag aaaaaaaagc
+     2521 gaagagacat ccccagaaca gcaagtgttc tcattttgga tggaattctt cgtggaagca
+     2581 accaaaagtt gtagcgagaa catcatcagg tttcctgtgc taatattaga aacgactaag
+     2641 gaatacatac catcgtacgt gaacgtcaat atgggcgccg aagagaagtc ggtggagatt
+     2701 ctgaacctct gcatggattc tatgagaggc acgtgccgcc aggtgcaccg gtggttgttt
+     2761 acctctgaca tgatcaggac ttacagttta tacaaacgcg acgagcgatg cctcttccta
+     2821 tacgtgagcg agaactcaga cgacttccaa atattcctcc cttccgaagg gtgcaggcag
+     2881 cgacttcacg atttgttggg ggaaatgacc gcagaccacg agaaagtcac cgatttggac
+     2941 accagtgtca tgcaggatca gttgaagttt gaatacgagt tggacgattg caacaaacgc
+     3001 gtggtgcttg gtaaaggcac gtacggcgtt gtatacgcgg ccagagatct caacacgcaa
+     3061 gtccgtatcg cagtcaagga gattcctgag aagaatcttg gtgatgtcca gcctttacat
+     3121 gaggaaatca tgctgcattc acagctgagg cacaggaata tcgttcagta ccttggatca
+     3181 atctctgaga ataactactt caagattttc atggagcaag tgcctggagg ttctttgtcc
+     3241 gctcttttaa ggtccaaatg gggtccgttg aaagaaaacg aagccacaat cgcttattat
+     3301 accaaacaga tccttgaagg tctaaaatac ctccacgacc aaaaaatcgt ccaccgcgac
+     3361 ataaagggcg acaacgttct cgtgaacaca tacagtggtg tggtgaagat atccgacttc
+     3421 gggacgtcaa agcgactggc cgggctgtgc ccttcgactg aaacattcgc ggggacattg
+     3481 caatatatgg ccccggaggt catagataag gggcagaggg ggtacggagc gcctgctgac
+     3541 atttggtctt tgggatgcac cgtagtagaa atggcaacag gcaacccacc gttcatcgaa
+     3601 ttaggatcac cacaggcggc gttgtttaag gtcggatact ataaaacgca cccagagatt
+     3661 ccaaatgagc tgtcgcagag agcgaaaaat ttcatcttac gctgtttcat acctgaaccg
+     3721 gagcagcgag ctaccgctgc tgaattgctt gaagacccat ttttgtgcga aaagaagaag
+     3781 caacccagtc gtctcggcag tagcatggac tacagccgga gtatatctgt ccccgccgac
+     3841 aaagccagac cccagctagc tcagaagaag atatctgagc cttctttacc tggaaacctg
+     3901 cctagctccc ctgagattga tactatgcca aatactccgt ccaccgatga gatggatagt
+     3961 agcgatacta tcctcaacag gcggagttct tcgggaggtc tgctgtcacc tgaggtggac
+     4021 atgacaagcg tacctcgttc atcaatagac gtagagcacg atggatttta tctattgaaa
+     4081 aaagactcac aacgccgtct cactctttca cgagtgttgg agcaggacag tgaaaaaatc
+     4141 tgctcaaaat ggatgttgag tgtacaacag gactttggta acactcttct tacgatgcat
+     4201 cacctagaaa ccctccgcct agcgctcaag gactacataa tggaccagaa cagaagcgtc
+     4261 atagaacaag ccatcacaac cttgaaggag gaactggact tcgactccaa ggccataaac
+     4321 gagcttcatg ccgccatcta tatgttccaa gaggcagtga atgcggtgct gaggatgcac
+     4381 agcataaagc cccattggat gtttgcgctg gataacttag tgagaaatgc tgtgcaagct
+     4441 gctattactg tgttgtcgcc agagctaggc gccaacttgg cgggacaaga gtctcggcgc
+     4501 ggcgccaaca gcggctgcgc ggcggccgac gtggccactc cttcagccgt gtccaccgcc
+     4561 aactcccgcg accaccagct acaccagctg cgccaggaga accacaagtt acaccaagag
+     4621 ctgatagaca gctatcagca gtaccaggcg ttgcttagac aaatacttga agagcagcga
+     4681 atgcagactc aagttatgcg agatctcgtg gacaggaggc cgaggagtga aagtcctgca
+     4741 gagatagacg aggaacagta cagcatcctc cgcgagtggg cgtgccctag aggcgtgccc
+     4801 gactcggcgg cgcgcgcgct cgcggcgcac gagtacacgc tcggcgacct gctggcgcac
+     4861 gcgcggaggg aggacatcgc ccggctccag ctcaagtaag tggcggtgtc tcgggtccat
+     4921 cttaagtaag tgacggtata
+//
+
+LOCUS       XM_028305484            2560 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114353454
+            (LOC114353454), partial mRNA.
+ACCESSION   XM_028305484
+VERSION     XM_028305484.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130421.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 1% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 5' end.
+FEATURES             Location/Qualifiers
+     source          1..2560
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            <1..2560
+                     /gene="LOC114353454"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 99% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114353454"
+     CDS             <1..1263
+                     /gene="LOC114353454"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114353454"
+                     /protein_id="XP_028161285.1"
+                     /db_xref="GeneID:114353454"
+                     /translation="LXEALDGVPLLLKGEAAIWWQGVKTQVTTWEQFGIRLRHAFAPK
+                     KPAYILYQEIVGEKQRDDVTTEKFVAHKRMLFAQLPSPQHTEEQQLDMIFGQINLKLR
+                     EKIPRGSVHSFDELLAAAREVEELMADVSLTKDILVPPPQRNIKKRCEFCHFVGHTIQ
+                     DCRKLQRPNSEDEEDGNTSSPTLTQAPEVIATQVKSLSPSSPRFSCYGCGAPGVVRSK
+                     CPTCTRSKTQNQDIGLYAIDIRIATTPKPEMFDNMKIVKETACTKLNHGLTANFVLEK
+                     TDTRLLYMNTDVLGVVHEQGEGKETPVVMETIDKQSHCRPEYQNEDLVLSDLHSAVKE
+                     SRRITGKNTPRCERSYEFTRQPGPAFCMTSSHKALGKHQRWNKRNFRRWSKKTKDEPV
+                     VHRRGRGRHKNVIQIFSSGRLRDLRGMV"
+ORIGIN      
+        1 cttnaggaag ctcttgatgg agtcccacta ttactcaagg gtgaggctgc catctggtgg
+       61 caaggagtca aaacacaagt gactacctgg gagcaattcg ggattcgatt acgccatgca
+      121 tttgcaccaa agaaacctgc gtacatcctg taccaagaaa tagtcggtga aaaacagcgc
+      181 gatgacgtca caactgaaaa atttgtagct cacaaaagaa tgttgttcgc gcagctgcct
+      241 tcaccacaac acacagagga acaacaactc gatatgattt tcggacaaat aaacctcaaa
+      301 ctcagggaaa agatacccag aggttccgta cattcctttg acgaattgtt ggccgccgca
+      361 agggaagtag aagaactcat ggctgatgtg agcttgacca aggatatact ggtcccgcca
+      421 ccacaacgta atatcaagaa acggtgtgag ttctgccatt ttgtgggcca cacaatccaa
+      481 gattgtagga aactccaacg tccaaatagt gaggatgaag aagatggaaa tacttcatcg
+      541 cctacactga cgcaagcacc cgaagtcatt gccactcaag tcaaatccct cagtccttca
+      601 tctccacgct tttcatgcta cggttgcggt gcgccaggag tcgtcaggag caaatgtcca
+      661 acatgcacaa gatcaaaaac acaaaatcaa gatatcggac tttatgccat tgacatacgt
+      721 atagccacaa caccgaaacc agagatgttt gacaacatga agatcgtcaa ggagactgct
+      781 tgtacgaaac tgaatcatgg attgactgca aactttgtgt tagaaaagac agatacaaga
+      841 ctcctttaca tgaatacaga tgttttggga gtagttcatg agcaggggga ggggaaagaa
+      901 acccctgttg ttatggaaac aattgacaaa cagtctcatt gtcgtccaga ataccaaaat
+      961 gaagatttgg tactaagtga tctacattcc gcagtcaagg aatcgcgaag aatcacaggc
+     1021 aaaaacactc caagatgcga acgttcttat gaatttacca gacaacctgg acctgcgttc
+     1081 tgtatgacat cttcacataa agccctgggc aaacatcaaa gatggaacaa acgaaacttc
+     1141 agaagatggt ctaagaagac gaaagatgaa ccagttgttc accgacgagg ccgtggacgt
+     1201 cacaagaacg taatccagat cttctcgtcg ggacgacttc gtgatctgag ggggatggtg
+     1261 taacaacgtc acatttatca atcaatacta ctagcgccat ctcgtggtgt tcgcctgcat
+     1321 taccaagcca ccgcggatca ccgtgcttat tgcaagatct attcagtcta ggaaatgttt
+     1381 gcgccgctcg ccgctagatg ccactagcac attgagagtc gatttctaca ccgcggtgtc
+     1441 cagatttttt ttcccttaaa gaccttccga cgattatgtt gaataaagta agttttgtga
+     1501 ggcgtaagta ataagccaag gttgcatccg actgtgacgt tctttagggg aatcacagat
+     1561 tgggacttcc gaacgcctaa ttacaaattg ccagcgattc tcccgcgtct gtgtccaacg
+     1621 tccttgcggg aattggtcta cggacgggag acgcccgcac ttcatttttg tatctgcccc
+     1681 gtactttgaa ataaaagtac cccatttttg catcaacgcg gtgttgttat ttggagccct
+     1741 tcaccccgct tgtcagccga aaaactcaac cctacaaaac tggcgaccaa cggtgggcct
+     1801 gacaagcacc agcccaaata catcaccaag ttcggccgtg tcaccaccta tccagtaagc
+     1861 agcaaccaaa gcaagaagat gacagtaagc ttaacgaatg agcagttcca agcactactt
+     1921 gcaaaacttt caatgagccg ccgaggaagc ttcgctcaat gcacggcaag ttatgaaggt
+     1981 gagaagaacc ccgaaacggt tgaagcattt ttagcggcag taagcatatt caagaagata
+     2041 gaaaatatcc cagaccagga agctcttgat ggagtcccac tattactcaa gggtgaggct
+     2101 gccatctggt ggcaaggagt caaaacacaa gtgactacct gggagcaatt cgggattcga
+     2161 ttacgccatg catttgcacc aaagaaacct gcgtacatcc tgtaccaaga aatagtcggt
+     2221 gaaaaacagc gcgatgacgt cacaactgaa aaatttgtag ctcacaaaag aatgttgttc
+     2281 gcgcagctgc cttcaccaca acacacagag gaacaacaac tcgatatgat tttcggacaa
+     2341 ataaacctca aactcaggga aaagataccc agaggttccg tacattcctt tgacgaattg
+     2401 ttggccgccg caagggaagt agaagaactc atggctgatg tgagcttgac caaggatata
+     2461 ctggtcccgc caccacaacg taatatcaag aaacggtgtg agttctgcca ttttgtgggc
+     2521 cacacaatcc aagattgtag gaaactccaa cgtccaaata
+//
+
+LOCUS       XM_028305492            2116 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis probable cytochrome P450 301a1,
+            mitochondrial (LOC114353464), mRNA.
+ACCESSION   XM_028305492
+VERSION     XM_028305492.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130421.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 39% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2116
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2116
+                     /gene="LOC114353464"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 25 Proteins, and 65% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114353464"
+     CDS             1..1842
+                     /gene="LOC114353464"
+                     /codon_start=1
+                     /product="probable cytochrome P450 301a1, mitochondrial"
+                     /protein_id="XP_028161293.1"
+                     /db_xref="GeneID:114353464"
+                     /translation="MTVSLTNEQFQALLAKLSMSRRGSFAQCTASYEGEKNPETVEAF
+                     LAAVSIFKKIENIPDQEALDGVPLLLKGEAAIWWQGVKTQVTTWEQFGIRLRHAFAPK
+                     KPAYILYQEIVGEKQRDDVTTEKFVAHKRMLFAQLPSPQHTEEQQLDMIFGQINLKLR
+                     EKIPRGSVHSFDELLAAAREVEELMADVSLTKDILVPPPQRNIKKRCEFCHFVGHTIQ
+                     DCRKLQRPNSEDEEDGNTSSPTLTHGEQWRKFRSKVQRPILQPQTVKKYVGPIEMVTE
+                     DFIKYMEGARDELGDLPHQFDNDIHRWSLECIGRVALDVRLGCLSSDLSSNPEPQRII
+                     DAAKYALRNVAVLELKAPYWRYFPTPLWTKYVNNMNFFVELCSRYINEALERLKTKKV
+                     TSEDDLSLLERVLKSEGDPKIATIMALDLILVGIDTISMAVCSILYQAALRTKQQEKM
+                     AEEIRTVLPDPSKPLTYADLDKLHYTKAFVREVFRMYSTVIGNGRTLQEDDVICGYHI
+                     PKGVQVVFPTIVTGNMEQFVADPQEFRPERWLESGRLHPFASLPYGFGARICLGRRFA
+                     DLEIQVLLAKLLRRYRLEYHHEPLEYAVTFMYAPDGPLRLRMLERDA"
+ORIGIN      
+        1 atgacagtaa gcttaacgaa tgagcagttc caagcactac ttgcaaaact ttcaatgagc
+       61 cgccgaggaa gcttcgctca atgcacggca agttatgaag gtgagaagaa ccccgaaacg
+      121 gttgaagcat ttttagcggc agtaagcata ttcaagaaga tagaaaatat cccagaccag
+      181 gaagctcttg atggagtccc actattactc aagggtgagg ctgccatctg gtggcaagga
+      241 gtcaaaacac aagtgactac ctgggagcaa ttcgggattc gattacgcca tgcatttgca
+      301 ccaaagaaac ctgcgtacat cctgtaccaa gaaatagtcg gtgaaaaaca gcgcgatgac
+      361 gtcacaactg aaaaatttgt agctcacaaa agaatgttgt tcgcgcagct gccttcacca
+      421 caacacacag aggaacaaca actcgatatg attttcggac aaataaacct caaactcagg
+      481 gaaaagatac ccagaggttc cgtacattcc tttgacgaat tgttggccgc cgcaagggaa
+      541 gtagaagaac tcatggctga tgtgagcttg accaaggata tactggtccc gccaccacaa
+      601 cgtaatatca agaaacggtg tgagttctgc cattttgtgg gccacacaat ccaagattgt
+      661 aggaaactcc aacgtccaaa tagtgaggat gaagaagatg gaaatacttc atcgcctaca
+      721 ctgacacacg gcgagcaatg gcgcaagttt cgctcgaagg tccagaggcc gatcttgcag
+      781 cctcagacgg tgaagaaata cgtgggcccc atcgagatgg tcaccgaaga cttcatcaag
+      841 tatatggaag gcgcgcggga cgagctcggt gatttaccac accagttcga caatgacatc
+      901 caccggtggt cgttggagtg catcggtcgc gtagccttag acgtgcggct cggctgcctc
+      961 tcctcagacc tgtccagcaa cccggagccc cagaggatca tcgatgccgc caaatacgcg
+     1021 ctgaggaacg tagcggtgct ggagttgaag gcaccatact ggcggtactt ccctacgccg
+     1081 ctctggacca aatacgttaa caacatgaac ttctttgtag aactttgttc ccggtacatc
+     1141 aacgaagctc tagaaaggct gaagaccaag aaggtgacgt cagaggacga cctgtctctc
+     1201 ctggagcgcg tgctcaagag cgagggcgac cctaagatcg ccaccatcat ggcgctggac
+     1261 ctcatcctcg tggggattga cacgatatca atggcggtct gctctatcct ctaccaagcg
+     1321 gcgttgcgga cgaaacaaca ggagaaaatg gcggaagaaa tccgaacagt tctgccggac
+     1381 ccgagcaaac ctctcacgta cgcagacctg gacaaactgc actacactaa ggcttttgtt
+     1441 agggaagttt ttagaatgta ttctacagtt attggaaatg gaaggacatt acaggaagac
+     1501 gatgtcattt gtggatatca tattccaaaa ggagtgcaag tggtatttcc gaccatagtg
+     1561 acgggcaaca tggagcagtt cgtggccgac cctcaagagt tccgtccgga gcggtggctg
+     1621 gagtccggcc ggctgcatcc cttcgcctcg ctgccgtacg ggttcggtgc ccggatatgc
+     1681 ctgggcaggc gcttcgctga tctggagata caagtgctgt tggctaagtt gctgaggcga
+     1741 taccggctgg agtaccatca cgagccttta gaatacgcag tcaccttcat gtacgcgccc
+     1801 gatggcccgc tgcgtctacg catgttggag agagatgcgt agatcacttt actaaggccc
+     1861 gtattcacaa acgatgcttg tttaagtgaa gcagaacgca cagcgttgaa tagccgctct
+     1921 gtgattggtt catgtgtcac cctgtgcgtc cacgcgcact gtgagacttc atagtaatgt
+     1981 ttgtgtatgg agagtcgggc atagggcact tagctaagcg cgccaaccaa gcgtcgaagg
+     2041 cagtgtcacc ttgttggtgg agtatacaaa gtaatttcga aacttcgctc attttttaat
+     2101 gaggcatgtg tcagaa
+//
+
+LOCUS       XM_028305754            2261 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 2-like (LOC114353683), mRNA.
+ACCESSION   XM_028305754
+VERSION     XM_028305754.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021132019.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2261
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2261
+                     /gene="LOC114353683"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 11 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114353683"
+     CDS             299..1156
+                     /gene="LOC114353683"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028161555.1"
+                     /db_xref="GeneID:114353683"
+                     /translation="MPPKRNAAKTARNEGSNSDADYTDTEVNRTVVSSPNVTMSEEML
+                     QKLVSSITRSQAESSRTLIESILTGYRGQHSHSSSPQPDTPGYPQRPGNFAKCTARFD
+                     GRSKNSDELEAFIDAIEVYRECTNVSEEHALRGLPMLLVGEAAVWWQGVKSSVTSWTG
+                     ALQRLRGMFGVPRPAYKIFRDIFSAEQSDERADVFVNKVRALLSKLPYVVPEAMKLDI
+                     VYGLLDRRIRKRVPRDAVDGLEQLICKVRLVEESLAEVSSRVDNNNSASPVNPPTARC
+                     RSTAGGPEC"
+ORIGIN      
+        1 tcgacattat tgccagtccg cccatggccg cgacgcgcgc tattttactc tcccagtatt
+       61 ttggtgttta gatattgttt tgactgatat aaaccaagtt tcatgtacat ttcgttgtgt
+      121 taaattgaca atatacttgt tgatgatcga attgtgccta cgaacttatt tcacgacccc
+      181 gagaccaact taacaagtat tacagtgacg cccaacttgc ggggcacatt caacacaagt
+      241 gtaaacaacg aaagcctttc gacatttact tgaagaaccc actttctatc gtctcaacat
+      301 gccaccgaag aggaatgccg cgaagaccgc gagaaacgag ggatcgaact cggacgcaga
+      361 ctacactgac accgaagtga accggacagt ggtgtcctca ccgaacgtca ccatgtcgga
+      421 ggaaatgctc cagaaacttg tctccagcat caccaggagc caagcggaat ccagccgtac
+      481 gctgatagag agcatcctga ctggttacag aggccaacat tcgcactcat catcaccaca
+      541 acccgacacg ccaggttacc cacagcgccc gggtaacttc gcgaagtgca cagcgcgctt
+      601 cgacggaagg tcaaagaact cggacgagct cgaagcattc attgatgcca tcgaagtgta
+      661 ccgcgagtgc accaacgtca gtgaggagca cgccctgcgt gggctaccga tgctgctggt
+      721 cggcgaggcc gccgtgtggt ggcaaggcgt gaagtcgtcg gtgacgtcat ggaccggagc
+      781 cctacagcga cttcgaggga tgttcggcgt gccgcgaccc gcgtataaaa tatttcgcga
+      841 catattttcc gccgaacaaa gtgacgaacg agccgatgtg tttgtgaaca aagtgcgcgc
+      901 cttattatca aagttaccgt acgtagtgcc cgaagcaatg aagctagaca ttgtttatgg
+      961 acttttagat cgtagaataa gaaaacgagt gcctcgtgac gctgtggacg ggctggaaca
+     1021 gctgatatgt aaagtcaggt tggtggaaga gtcgctggca gaggtgagtt ctcgcgttga
+     1081 taataacaat agcgcgagcc ccgttaaccc accaactgcg cgatgccgat cgaccgcggg
+     1141 cgggcccgag tgttaacccg tcgcatgccg taaacgaccc cccgaattca tttagtcgtg
+     1201 aatgtcgtga tgaagttttt ctcgattcgt gtagtgaatc catgtcgatg aataacccgc
+     1261 gagttttaaa tgcgaagtat agggatagtg aggggaaaag gcgcgttcga cccaggtgta
+     1321 gttactgcaa acttttcggc catactaaag ataactgccg caataaagaa attaaaagtg
+     1381 acgtaactac acttgagtcg ggtgatagta atgtcctacg ttgttacgga tgcggtcagc
+     1441 tgggagtagt tagatcaaag ggcgataatt gtaaaggtgc acccagttcg agtagtacga
+     1501 gtaaatcgga ctttagtacg gcctatgtca tagacagcga tgacgatcca aggccgctga
+     1561 tagaaattca ggtcgtaaac cgaacgggag tggcgattat tgacacgggg gccacacact
+     1621 ctatcgcaag ccccgtgctg tataatatgt tacgcgaggc aggtgttaca tttagggagt
+     1681 ccaaacgtat cgtagggctt gcaaatggat cgcaacacct acagacgacg ctcgaaggag
+     1741 aggtcaatgt caccttgaaa ggtcgtataa tacctaccgc gttcttggtg ctaccacacg
+     1801 cgcgaacaag aaccctatta ggtagagatt ttattaccaa agctggtatc ctgctggact
+     1861 tatcgcagag cagctggtgt ttcaacgatg ggccgcggcg ttggcatccg ttcatcacca
+     1921 gcttcgaatt atctaccacc ggcaaggcag agctgatgaa ggtagaagca gcagaccggg
+     1981 tactccaggg gcagctgagt acctgtatag tgcacggagc ccgcggcact caacgtgtta
+     2041 acggtcggag cgacccgaaa ccccctacga tatcgcctcc cgatgtttat tgccccgggg
+     2101 caggttcaat gcagggggag gctcccggaa acccacttca tccatgttgt gccaatgttg
+     2161 atttagcttc ttttagtaag aaccaaatcg agtacccaga gtcacgtgac atgctgccat
+     2221 ccgacgttcc gtctaggggg aggagagggc cctacaaggg g
+//
+
+LOCUS       XM_028306207            2043 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114353992
+            (LOC114353992), transcript variant X1, mRNA.
+ACCESSION   XM_028306207
+VERSION     XM_028306207.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130424.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2043
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2043
+                     /gene="LOC114353992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 11 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114353992"
+     CDS             235..2022
+                     /gene="LOC114353992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114353992 isoform X1"
+                     /protein_id="XP_028162008.1"
+                     /db_xref="GeneID:114353992"
+                     /translation="MVLTRSRTNSPAQRPGTSTETPAAAEVEMMESPRESTEVRDAPG
+                     PVMAPAQPVPVVMTDSQLALLLSQIGSRAAPVPAMQSNFAACTHRFDGKKNVIPFLEA
+                     IEIYKESVAMTDAMAMRGLPMLLTDFAAEWWQGVKHSVTTWSEALALLRNTYGPRLPP
+                     HMIYKELFRREQGDENTDVFVCKSRALLSQLPANTIPEDPVQLDMVYGLLHRRIRRQV
+                     ARTSFSSFQQLLELARVVEELEEECPAVTKTEVTSSEMPTRSESLPQDRTTDRDATTN
+                     RKARLRCNYCKQFGHMKDECQKGQRKKQNEQFETEQEERPESTKPTVTCFGCGLPGVI
+                     RSNCPNCKSTKSDCNVNLPAFAAFSPKLIDVCMRPKLGIEILGLHGSALVDTGAKQSV
+                     ASDSLYRVLVEKGQKFDTVKLFISLADGSKQCRIVKTAKVNVKVHAIVVPTLFIVIPG
+                     ATDSLLGMDFIQDSGMILNFTQNCYSFRSHPMSYQLRYETEDPVGACAAVSPAVDLRG
+                     KEGELLQAADRELLKKLRCDKGIFKRGGAPTTSAVQHKGTGENVPVTIPPYHVSPVKK
+                     RSGRRIGDMLSPLKVQYPSRIKEILQQKM"
+ORIGIN      
+        1 cctattgact taaattgggt gtgaacacaa ttcctacagc tttgaagtga ctttgaacag
+       61 tatacgtgaa agtgagaact gtgtacgcgt gtattttgac gttcgtatct ggagttgttg
+      121 atatcggttc tatccgccga tattcgttcc caacagctca tgttaccata cgaatatacc
+      181 gtgctgcact aaccacgtct ggactgctgt atttagtgaa agttacgcat aataatggtc
+      241 ctaacaagat cgcgtacaaa tagcccggcg caaaggcctg ggacgtccac ggagacacca
+      301 gctgcggctg aggtggagat gatggaatca ccaagggagt ctacagaggt gcgtgacgca
+      361 cctggtccag tgatggctcc tgcacaaccg gtgcctgtcg ttatgacgga tagtcaattg
+      421 gcgttgttgc tgtcccagat tggaagcaga gctgcacctg tacctgcaat gcagtctaac
+      481 tttgctgcgt gcacacaccg atttgatggc aagaaaaatg tcatcccgtt cttagaagcc
+      541 atcgagatct acaaggaaag tgttgctatg actgatgcta tggcgatgcg tggactgccg
+      601 atgttgctga cggacttcgc tgcggagtgg tggcaaggtg taaagcattc agttacgaca
+      661 tggagtgagg cactagcatt attgaggaat acctatggac caagattgcc cccacacatg
+      721 atatataagg aattgttccg gagagaacag ggtgatgaaa acacagatgt ttttgtgtgc
+      781 aagtcaagag cactactatc acagttgcct gctaatacta taccagagga ccctgtgcag
+      841 ttggatatgg tctacgggct gctgcaccgc cgtattcgga gacaagttgc caggacaagc
+      901 ttctcatcct tccagcagtt gttggagtta gcacgtgtgg tggaggagtt ggaagaggag
+      961 tgcccagctg ttaccaaaac tgaggttact tcgtctgaga tgccaactag gagtgaatct
+     1021 cttcctcagg accgaaccac agatagagat gctactacaa ataggaaggc taggctccgt
+     1081 tgtaactatt gtaagcaatt cggccatatg aaagatgagt gccagaaagg ccaacggaag
+     1141 aagcaaaatg agcaatttga gacagagcaa gaggagagac cagaatctac gaagccaact
+     1201 gtcacctgtt ttggttgtgg tttacccgga gtaattagat ctaattgtcc aaattgtaaa
+     1261 agtactaaat ctgactgtaa tgttaattta ccagcatttg ctgcatttag tcctaaactt
+     1321 attgatgttt gtatgagacc taagctaggt attgaaattt tgggattgca tggttctgcc
+     1381 ttggtggaca ctggggcaaa gcaatcagta gcaagtgata gtttgtatag agtgttggtg
+     1441 gaaaaaggcc aaaagtttga tacagttaaa ttgtttatta gtttagccga tggctctaaa
+     1501 caatgtagaa ttgttaaaac tgcaaaagta aatgtaaaag ttcatgcaat tgtagtacct
+     1561 accttattta ttgtaatacc aggtgctaca gactctctac tcggtatgga ttttattcag
+     1621 gattctggca tgatactgaa ctttacacag aattgttatt cttttagatc tcatcctatg
+     1681 tcttaccagc tgaggtatga aactgaggac cctgttgggg cctgtgctgc ggtttcacct
+     1741 gctgttgacc tccgcggcaa ggaaggtgag ttgttgcagg ctgctgaccg ggagttgttg
+     1801 aagaagctcc ggtgtgacaa gggcatcttc aagcgagggg gagcccccac gacatctgct
+     1861 gtccagcata aaggtacagg tgagaatgtc cctgtaacca taccacctta ccatgtttct
+     1921 ccggtaaaga agaggtcagg aagaaggatc ggagacatgt tatctccgct aaaggtacag
+     1981 tacccatcca ggattaagga aattttgcag cagaaaatgt gaacgaatga aggccctagc
+     2041 caa
+//
+
+LOCUS       XM_028306213            2043 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114353992
+            (LOC114353992), transcript variant X2, mRNA.
+ACCESSION   XM_028306213
+VERSION     XM_028306213.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130424.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2043
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2043
+                     /gene="LOC114353992"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114353992"
+     CDS             235..2022
+                     /gene="LOC114353992"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114353992 isoform X2"
+                     /protein_id="XP_028162014.1"
+                     /db_xref="GeneID:114353992"
+                     /translation="MVLTRSRTNSPAQRPETSTETPAAAEVEMMESPRESTEVRDAPG
+                     PVMAPAQPVPVVMTDSQLALLLSQIGSRAAPVPAMQSNFAACTHRFDGKKNVIPFLEA
+                     IEIYKESVAMTDAMAMRGLPMLLTDFAAEWWQGVKHSVTTWSEALALLRNTYGPRLPP
+                     HMIYKELFRREQGDENTDVFVCKSRALLSQLPANTIPEDPVQLDMVYGLLHRRIRRQV
+                     ARTSFSSFQQLLELARVVEELEEECPAVTKTEVTSSEMPTRSESLPQDRTTDRDATTN
+                     RKARLRCNYCKQFGHMKDECQKGQRKKQNEQFETEQEERPESTKPTVTCFGCGLPGVI
+                     RSNCPNCKSTKSDCNVNLPAFAAFSPKLIDVCMRPKLGIEILGLHGSALVDTGAKQSV
+                     ASDSLYRVLVEKGQKFDTVKLFISLADGSKQCRIVKTAKVNVKVHAIVVPTLFIVIPG
+                     ATDSLLGMDFIQDSGMILNFTQNCYSFRSHPMSYQLRYETEDPVGACAAVSPAVDLRG
+                     KEGELLQAADRELLKKLRCDKGIFKRGGAPTTSAVQHKGTGENVPVTIPPYHVSPVKK
+                     RSGRRIGDMLSPLKVQYPSRIKEILQQKM"
+ORIGIN      
+        1 cctattgact taaattgggt gtgaacacaa ttcctacagc tttgaagtga ctttgaacag
+       61 tatacgtgaa agtgagaact gtgtacgcgt gtattttgac gttcgtatct ggagttgttg
+      121 atatcggttc tatccgccga tattcgttcc caacagctca tgttaccata cgaatatacc
+      181 gtgctgcact aaccacgtct ggactgctgt atttagtgaa agttacgcat aataatggtc
+      241 ctaacgagat cgcgtacaaa tagcccggcg caaaggcctg agacgtccac ggagacacca
+      301 gctgcggctg aggtggagat gatggaatca ccaagggagt ctacagaggt gcgtgacgca
+      361 cctggtccag tgatggctcc tgcacaaccg gtgcctgtcg ttatgacgga tagtcaattg
+      421 gcgttgttgc tgtcccagat tggaagcaga gctgcacctg tacctgcaat gcagtctaac
+      481 tttgctgcgt gcacacaccg atttgatggc aagaaaaatg tcatcccgtt cttagaagcc
+      541 atcgagatct acaaggaaag tgttgctatg actgatgcta tggcgatgcg tggactgccg
+      601 atgttgctga cggacttcgc tgcggagtgg tggcaaggtg taaagcattc agttacgaca
+      661 tggagtgagg cactagcatt attgaggaat acctatggac caagattgcc cccacacatg
+      721 atatataagg aattgttccg gagagaacag ggtgatgaaa acacagatgt ttttgtgtgc
+      781 aagtcaagag cactactatc acagttgcct gctaatacta taccagagga ccctgtgcag
+      841 ttggatatgg tctacgggct gctgcaccgc cgtattcgga gacaagttgc caggacaagc
+      901 ttctcatcct tccagcagtt gttggagtta gcacgtgtgg tggaggagtt ggaagaggag
+      961 tgcccagctg ttaccaaaac tgaggttact tcgtctgaga tgccaactag gagtgaatct
+     1021 cttcctcagg accgaaccac agatagagat gctactacaa ataggaaggc taggctccgt
+     1081 tgtaactatt gtaagcaatt cggccatatg aaagatgagt gccagaaagg ccaacggaag
+     1141 aagcaaaatg agcaatttga gacagagcaa gaggagagac cagaatctac gaagccaact
+     1201 gtcacctgtt ttggttgtgg tttacccgga gtaattagat ctaattgtcc aaattgtaaa
+     1261 agtactaaat ctgactgtaa tgttaattta ccagcatttg ctgcatttag tcctaaactt
+     1321 attgatgttt gtatgagacc taagctaggt attgaaattt tgggattgca tggttctgcc
+     1381 ttggtggaca ctggggcaaa gcaatcagta gcaagtgata gtttgtatag agtgttggtg
+     1441 gaaaaaggcc aaaagtttga tacagttaaa ttgtttatta gtttagccga tggctctaaa
+     1501 caatgtagaa ttgttaaaac tgcaaaagta aatgtaaaag ttcatgcaat tgtagtacct
+     1561 accttattta ttgtaatacc aggtgctaca gactctctac tcggtatgga ttttattcag
+     1621 gattctggca tgatactgaa ctttacacag aattgttatt cttttagatc tcatcctatg
+     1681 tcttaccagc tgaggtatga aactgaggac cctgttgggg cctgtgctgc ggtttcacct
+     1741 gctgttgacc tccgcggcaa ggaaggtgag ttgttgcagg ctgctgaccg ggagttgttg
+     1801 aagaagctcc ggtgtgacaa gggcatcttc aagcgagggg gagcccccac gacatctgct
+     1861 gtccagcata aaggtacagg tgagaatgtc cctgtaacca taccacctta ccatgtttct
+     1921 ccggtaaaga agaggtcagg aagaaggatc ggagacatgt tatctccgct aaaggtacag
+     1981 tacccatcca ggattaagga aattttgcag cagaaaatgt gaacgaatga aggccctagc
+     2041 caa
+//
+
+LOCUS       XM_028308675            1592 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 1-like (LOC114355704), mRNA.
+ACCESSION   XM_028308675
+VERSION     XM_028308675.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021132730.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 11% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1592
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..1592
+                     /gene="LOC114355704"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 92% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114355704"
+     CDS             540..1592
+                     /gene="LOC114355704"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_028164476.1"
+                     /db_xref="GeneID:114355704"
+                     /translation="MPRPVTRRNTNRRQTDFFDVEDDGRDNNVARTPTPTPAPTPITV
+                     DDLTAMMVSLQQSQAENFERLLSRVLECRSPSSHPAPAHAAQCSSTPPPAQLASGTFA
+                     TCKSTYSGAPTESLDGFIDALESFKDCANISDANALRGLSILLTHDAATWWQGVKSTI
+                     TSWSKALQHLRSAFGDSRPPHRIYRDLFSKPQQLRERTELYVAKARAQLARLPKEDLS
+                     AKVQLDMIYGLLHVRVRERLRREEVETFETLLRKAREIEEVAEENTCDAAPASAYNQR
+                     KRAPPLASPRTCIDASARSPSPTHTNSSTTAASXGVVRANCAKCSTQFNAISCEYHKA
+                     SPTSLSNRESPVQFAP"
+ORIGIN      
+        1 gcgcgcctaa taacgccagc tatcgccaat ccaggtagtc tggccgattc gcctcgttcc
+       61 cgccgcgctc actctcgttc gcgccatatg cgacaaccaa ccaacgaaca ccactccagt
+      121 tcgcgcccta agcgtcggcc aatcaaacgg cccaaaagat accacgacta ggggctgcgg
+      181 tgtttctatt gtttttattg ctttgtattg tattagtttg tattgttttt gccttactgc
+      241 gtcttcgcag taacaagcca gttgattgtg agcttcgaag cgaaatacac acttgccaac
+      301 atactcctgc gtcgtgttct tcattttaaa aagaacccaa accctgagaa gagcccaaca
+      361 ctgaagagtc tcacgctaaa ttggcgccca acgtggggca ctttgaagaa cgctgccacg
+      421 ctaaattggc agcccaacgt gagtcaagtt gaagaacgct gccacgcaca aactggcagc
+      481 tcaacgacga gcaagttaaa agaacacgac ctccgtggta tttataaaat tttaagaaaa
+      541 tgccacgccc tgtgacacgc cgcaacacaa atcgccgcca gaccgacttt ttcgacgtgg
+      601 aagacgatgg acgcgacaac aacgttgcaa gaacgccgac gccaacgcca gcgccgacgc
+      661 ccatcaccgt ggacgatctc accgccatga tggtgtccct gcaacagtcg caagcagaaa
+      721 actttgagcg cctgctatca agagtgctcg agtgccgctc gccatcttca catcccgcgc
+      781 cggctcacgc cgcgcagtgc tcttccacgc cgccgcccgc tcaacttgca tctggaacgt
+      841 tcgccacgtg caaatcgacc tacagcggag cgcccaccga gtccctcgac ggttttatcg
+      901 atgctttgga gtcatttaaa gattgcgcaa atatcagtga tgctaacgcc ttacgtggtt
+      961 tgtcgatact tctcacacac gacgcagcca cgtggtggca gggagttaag tccacgatca
+     1021 cctcgtggag caaagccctg cagcatctcc gcagcgcctt cggcgacagt agacctccac
+     1081 acaggattta cagagacttg ttctcgaagc cgcaacaact ccgggagaga actgagcttt
+     1141 atgtagccaa agcacgcgct cagctagcac gcctcccgaa agaagacctc agcgcaaagg
+     1201 tgcaactcga catgatttac ggccttctcc atgtgcgagt tcgggaacgt ttacgaagag
+     1261 aagaagtgga aacattcgaa acgctgctac gaaaagcacg cgaaatagaa gaggttgctg
+     1321 aggaaaacac atgtgacgct gcgcccgcga gtgcctacaa tcagcgaaaa cgcgcgcctc
+     1381 cactcgcgtc tccgcgcacg tgcatcgatg cctcagcccg ttcaccgtca cccacgcaca
+     1441 cgaattcgtc cacgaccgca gccagcngag gagtcgtacg ggccaactgt gcaaagtgta
+     1501 gtacgcagtt caacgccata tcgtgtgaat atcataaggc gtcgccaacc tccctctcca
+     1561 atcgtgagtc gcccgtacag ttcgcgccct aa
+//
+
+LOCUS       XM_028312437             555 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 2-like (LOC114358464), mRNA.
+ACCESSION   XM_028312437
+VERSION     XM_028312437.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021134197.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..555
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..555
+                     /gene="LOC114358464"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:114358464"
+     CDS             1..555
+                     /gene="LOC114358464"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028168238.1"
+                     /db_xref="GeneID:114358464"
+                     /translation="MPPKRNAARTARNEGSDSDADYTDTXGLPMLLVGEAAVWWQGVK
+                     SSVTSWTEALQRLRGMFGVPRPAYKIFRDIFSAEQSDERADVFVNKVRALLSKLPYVV
+                     PEAMKLDIVYGLLDRRIRKRVPRDTVDGLEQLISKVRLVEESLAEGGREYCILAGGTR
+                     RRVSRPTADPVRRRWTAETARSEA"
+ORIGIN      
+        1 atgccaccga agaggaatgc cgcgaggacc gcgagaaacg agggatcgga ctcggacgca
+       61 gactacactg acaccgangg gctaccgatg ctgctggtcg gcgaggccgc cgtgtggtgg
+      121 caaggcgtga agtcgtcggt gacgtcatgg accgaagccc tacagcgact tcgaggaatg
+      181 ttcggcgtgc cgcgacctgc gtataaaata tttcgcgaca tattttccgc cgaacaaagt
+      241 gacgaacgag ccgatgtgtt tgtgaataaa gtgcgcgcct tattgtcaaa gttaccgtac
+      301 gtagtacccg aagcgatgaa gctagacatt gtttatggac ttttagatcg tagaataaga
+      361 aaacgagtgc ctcgtgacac tgtggacggg ctggaacagc tgataagtaa agtcaggttg
+      421 gtagaagagt cgctggcaga gggaggccgc gagtactgca tactggccgg aggaacacgc
+      481 aggagggtat cgcgtcccac agctgacccc gtccgtaggc gatggaccgc cgaaacggct
+      541 cggtcagagg catag
+//
+
+LOCUS       XM_028312725            2964 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114358696
+            (LOC114358696), transcript variant X1, mRNA.
+ACCESSION   XM_028312725
+VERSION     XM_028312725.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021134341.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2964
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2964
+                     /gene="LOC114358696"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 9 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114358696"
+     CDS             322..2775
+                     /gene="LOC114358696"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114358696 isoform X1"
+                     /protein_id="XP_028168526.1"
+                     /db_xref="GeneID:114358696"
+                     /translation="MVLTRSRANSMNRSASTTATSADVASPPLPRQDYSPPGAAAATL
+                     EGMHEPSYGATTTVAAPPAAAAGSVTLTNEQFEFLISRLTRDPVSTTPYSGNFAKCTA
+                     RFDGEKSSDVRTFIDAITTYKECVGMEEGIALRGLPILLTGLAATWWLGVKSTVHSWA
+                     QAVELLQQTFGPRLPPYKLYRQIFSREQGNNESTDVFVCNLRALFAQLPPRSLSEEVQ
+                     LDMVYGLLHQRIREKVPRTMFCTFGELLSETRRVEDLVDEIRPTVSISRPSSSSTSAT
+                     HPDLPPLTESKRRPHCAYCKQYGHLKEDCRRLATRQHSTDTSDRSQRPGPKPGPSSAL
+                     TSPPISCFGCGTPGVVRSKCAKCSSSVPKSVKSETVFQSIDVTKGLDSRMRPVIDIKV
+                     FGEIGQVLVDTGAKHSIGSKSLRNHLTNNGQCFESILVELKFADGRICTNYVDVATVN
+                     VTVLNIVLPVKFVMLPDATESLLGMNFIKDIGMILDFNEGTYSIRNVRTIFPMIFEKN
+                     TTSQQVCSSSLGLREDEGTNLGPGDRSRLSELLSVNEDIFKPGGGPTSLAVHRIDTGN
+                     ALPISGPPYRVSPAKKEIIRAEIDKMLELEIIEEAESEWASPVVLVPKKNGETRFCVD
+                     YRKLNAVTRTDKYPLPLIDDILATAKSNCVMSTIDLKAGYWQVEVAPADKNRRTGPIY
+                     NEGDLVLIESHRLSQAAKGFTSKFAPRREGPYRISKVVSPTTYEIVDRDSNPRGKYHA
+                     SLLTPYVGDSNTAIVHGRKRGRPRRKVPVAKPSSMSSDGLEGEDIARDVLLRTRSAVS
+                     PVTATSPLRRSPRLRTPRS"
+ORIGIN      
+        1 tttttgtaca taaacataaa cattaagtga aactgtgagt ctgtgaaaca aacaatgctt
+       61 gcttgcaagt ttccgcgcgt aagtacctcg tacgtcggtc gacgctaggt tcgtccggta
+      121 caggcgtgac tgtgacgtca cgcgagtcat cgtcgcgcaa cccgctcgct caggcgcgct
+      181 tcgtccggta caggcgtgat tgtgcatgtt aaccgtcgac gtcttcggcc gccgcgagtg
+      241 attttgagcg cgttttggac aagttaactc gcagtgacta tttgattgga taaacttata
+      301 aagttaaaca atttaaaagt aatggtgcta acgcgttcgc gtgcaaacag tatgaatcga
+      361 agtgcttcta ctaccgccac gtcggcggat gtggcttcgc caccgctgcc tcggcaggac
+      421 tatagtccgc caggcgctgc tgccgcgacg ttggagggca tgcacgagcc ttcttatggg
+      481 gcaaccacta ctgttgccgc gcctcctgct gctgctgcgg ggtcagtgac cctaaccaac
+      541 gagcagttcg agttcctaat cagtaggttg acgcgtgatc ctgtgagtac aacaccttat
+      601 tctggcaatt ttgcgaagtg tactgcgcgg tttgacggag aaaagtcaag cgacgtgcgc
+      661 acgtttattg atgccattac cacatacaaa gagtgtgtag gtatggagga gggcatagct
+      721 ctcagaggcc tgcctatatt gttaaccggc ctagctgcga catggtggct tggtgtgaaa
+      781 tccactgtac attcgtgggc acaagcagta gagctgcttc agcaaacttt tggtccacgc
+      841 ttacctccat acaaattata caggcagata tttagcagag aacaaggcaa taatgaatcg
+      901 acggatgttt ttgtttgtaa ccttcgggcg ctgttcgctc agttgccgcc acgttcgttg
+      961 agcgaagagg tacaacttga tatggtctat ggattgttgc atcaacgcat tagggagaag
+     1021 gttcctcgta ccatgttttg cacatttggc gaattattaa gcgaaacccg ccgagtagag
+     1081 gaccttgtag atgagattcg tccaacagtc tcaattagta gaccatcatc atcatccaca
+     1141 tcagcaacac atcctgactt gcctcctttg acggaaagca aacgccgtcc acactgtgcg
+     1201 tattgcaagc aatacggtca cttgaaggag gattgtcgac ggcttgccac acggcagcac
+     1261 tctaccgaca cttcggacag gagtcaacga cccggcccta aacctgggcc gtcctcagcg
+     1321 ctgacgtcgc cgcctatttc gtgtttcggg tgcggcactc ccggtgtagt gcgttcaaag
+     1381 tgtgctaagt gctcaagttc agtgcctaaa tcagtgaaat cagagacagt ttttcaatct
+     1441 attgatgtta caaaaggtct tgattcacgc atgcgacctg taattgacat taaagtgttc
+     1501 ggtgaaatag gacaagtact tgtagataca ggtgctaaac attcaatcgg tagtaaaagc
+     1561 ctaagaaatc acttaacaaa taatggtcaa tgttttgaaa gcattctagt tgaactaaaa
+     1621 tttgccgatg ggcgtatttg tactaattat gttgatgtgg ccacggtcaa cgttacagtg
+     1681 ttaaacatag tactcccagt gaaatttgtg atgttgcctg atgcaactga gagtttgcta
+     1741 ggtatgaact ttattaaaga cattggcatg atacttgact tcaatgaggg tacgtattct
+     1801 attcggaatg tacgtacaat ttttccgatg atatttgaga aaaatacaac atctcaacag
+     1861 gtatgcagct cgtcgttagg tcttcgcgag gatgagggca ctaatttggg tccgggtgac
+     1921 cggagcagat tatctgaact ccttagtgtc aatgaagata tcttcaaacc agggggagga
+     1981 ccgacgagtt tagctgttca tcgcatagat acaggaaatg cgcttcctat ttcaggcccg
+     2041 ccttatagag tatcacctgc taagaaggag ataatacggg ctgaaattga caaaatgctg
+     2101 gaactggaaa ttatagagga agcagagtcc gaatgggctt ctccggtggt actagtgccg
+     2161 aaaaagaacg gcgagactcg attttgcgtc gattacagaa aattaaatgc ggtgactcgt
+     2221 actgataaat atccgcttcc cttaatcgac gacattttag ctactgccaa gagcaattgc
+     2281 gtcatgtcca ccattgattt aaaagctgga tattggcagg tagaagtagc tcctgcggat
+     2341 aagaaccgac gaactggacc catctacaac gaaggagacc tcgttcttat agaaagtcat
+     2401 cgccttagtc aggcagcaaa aggatttacg agtaaatttg ctcctaggcg cgaaggtccc
+     2461 tatcgtattt caaaagtagt ttcacctacc acctatgaaa ttgtagatag agatagtaac
+     2521 cctcgaggga agtatcatgc cagtctactc acaccttatg tcggtgattc gaataccgca
+     2581 atcgtgcacg gccgtaagag gggaagaccg cggcgtaaag taccggttgc caagccatcc
+     2641 tcgatgtctt ctgatggctt ggagggggag gatatagcgc gcgatgtttt actgcgaacc
+     2701 aggagtgctg tgtctcccgt gactgccact agcccgctcc gccgctcgcc ccgcctacgc
+     2761 acaccgcgct cataaactcc ggcgcccctc gtcggccagt ccgtctcaga aaggcaaacg
+     2821 gtgcgcgcgt cacgagccgc ggggccggcg cgttttgttt ctcactgttt tcttttgtct
+     2881 tttctgcttt gtaatttgta aaatctactt gtgtgtcacg tttataagat tgtctttagt
+     2941 gaataaacca tttaaaccta ctta
+//
+
+LOCUS       XM_028312726            2964 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114358696
+            (LOC114358696), transcript variant X2, mRNA.
+ACCESSION   XM_028312726
+VERSION     XM_028312726.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021134341.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2964
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2964
+                     /gene="LOC114358696"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114358696"
+     CDS             322..2775
+                     /gene="LOC114358696"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114358696 isoform X2"
+                     /protein_id="XP_028168527.1"
+                     /db_xref="GeneID:114358696"
+                     /translation="MVLTRSRANSMNRSASTTATSADVASPPLPRQDYSPPGAAAATL
+                     EGMHEPSYGATTTVAAPPAAAAGSVTLTNEQFEFLISRLTRDPVSTTPYSGNFAKCTA
+                     RFDGEKSSDVRTFIDAITTYKECVGMEEGIALRGLPILLTGLAATWWLGVKSTVHSWA
+                     QAVELLQQTFGPRLPPYKLYRQIFSREQGNNESTDVFVCNLRALFAQLPPRSLSEEVQ
+                     LDMVYGLLHQRIREKVPRTMFCTFGELLSETRRVEDLVDEIRPTVSISRPSSSSTSAT
+                     HPDLPPLTESKRRPHCAYCKQYGHLKEDCRRLATRQHSTDTSDRSQRPGPKPGPSSAL
+                     TSPPISCFGCGTPGVVRSKCAKCSSSVPKSVKSETVFQSIDVTKGLDSRMRPVIDIKV
+                     FGEIGQVLVDTGAKHSIGSKSLRNHLTNNGQCFESILVELKFADGRICTNYVDVATVN
+                     VTVLNIVLPVKFVMLPDATESLLGMNFIKDIGMILDFNEGTYSIRNVRTIFPMIFEKN
+                     TTSQQVCSSSLGLREDEGTNLGPGDRSRLSELLSVNEDIFKPGGGPTSLAVHRIDTGN
+                     ALPISGPPYRVSPAKKEIIRAEIDKMLELEIIEEAESEWASPVVLVPKKNGETRFCVD
+                     YRKLNAVTRTDKYPLPLIDDILATAKSNCVMSTIDLKAGYWQVEVAPADKNRRTGPIY
+                     NEGDLVLIESHRLSQAAKGFTSKFAPRREGPYRISKVVSPTTYEIVDRDSNPRGKYHA
+                     SLLTPYVGDSNTAIVHGRKRGRPRRKVPVAKPSSMSSDGLEGEDIARDVLLRTRSAVS
+                     PVTATSPLRRSPRLRTPRS"
+ORIGIN      
+        1 tttttgtaca taaacataaa cattaagtga aactgtgagt ctgtgaaaca aacaatgctt
+       61 gcttgcaagt ttccgcgcgt aagtacctcg tacgtcggtc gacgctaggt tcgtccggta
+      121 caggcgtgac tgtgacgtca cgcgagtcat cgtcgcgcaa cccgctcgct caggcgcgct
+      181 tcgtccggta caggcgtgat tgtgcatgtt aaccgtcgac gtcttcggcc gccgcgagtg
+      241 attttgagcg cgttttggac aagttaactc gcagtgacta tttgattgga taaacttata
+      301 aagttaaaca atttaaaagt aatggtgcta acgcgttcgc gtgcaaacag tatgaatcga
+      361 agtgcttcta ctaccgccac gtcggcggat gtggcttcgc caccgctgcc tcggcaggac
+      421 tatagtccgc caggcgctgc tgccgcgacg ttggagggca tgcacgagcc ttcttatggg
+      481 gcaaccacta ctgttgccgc gcctcctgct gctgctgcgg ggtcagtgac cctaaccaac
+      541 gagcagttcg agttcctaat cagtaggttg acgcgtgatc ctgtgagtac aacaccttat
+      601 tctggcaatt ttgcgaagtg tactgcgcgg tttgacggag aaaagtcaag cgacgtgcgc
+      661 acgtttattg atgccattac cacatacaaa gagtgtgtag gtatggagga gggcatagct
+      721 ctcagaggcc tgcctatatt gttaaccggc ctagctgcga catggtggct tggtgtgaaa
+      781 tccactgtac attcgtgggc acaagcagta gagctgcttc agcaaacttt tggtccacgc
+      841 ttacctccat acaaattata caggcagata tttagcagag aacaaggcaa taatgaatcg
+      901 acggatgttt ttgtttgtaa ccttcgggcg ctgttcgctc agttgccgcc acgttcgttg
+      961 agcgaagagg tacaacttga tatggtctat ggattgttgc atcaacgcat tagggagaag
+     1021 gttcctcgta ccatgttttg cacatttggc gaattattaa gcgaaacccg ccgagtagag
+     1081 gaccttgtag atgagattcg tccaacagtc tcaattagta gaccatcatc atcatccaca
+     1141 tcagcaacac atcctgactt gcctcctttg acggaaagca aacgccgtcc acactgtgcg
+     1201 tattgcaagc aatacggtca cttgaaggag gattgtcgac ggcttgccac acggcagcac
+     1261 tctaccgaca cttcggacag gagtcaacga cccggcccta aacctgggcc gtcctcagcg
+     1321 ctgacgtcgc cgcctatttc gtgtttcggg tgcggcactc ccggtgtagt gcgttcaaag
+     1381 tgtgctaagt gctcaagttc agtgcctaaa tcagtgaaat cagagacagt ttttcaatct
+     1441 attgatgtta caaaaggtct tgattcacgc atgcgacctg taattgacat taaagtgttc
+     1501 ggtgaaatag gacaagtact tgtagataca ggtgctaaac attcaatcgg tagtaaaagc
+     1561 ctaagaaatc acttaacaaa taatggtcaa tgttttgaaa gcattctagt tgaactaaaa
+     1621 tttgccgatg ggcgtatttg tactaattat gttgatgtgg ccacggtcaa cgttacagtg
+     1681 ttaaacatag tactcccagt gaaatttgtg atgttgcctg atgcaactga gagtttgcta
+     1741 ggtatgaact ttattaaaga cattggcatg atacttgact tcaatgaggg tacgtattct
+     1801 attcggaatg tacgtacaat ttttccgatg atatttgaga aaaatacaac atctcaacag
+     1861 gtatgcagct cgtcgttagg tcttcgcgag gatgagggca ctaatttggg tccgggtgac
+     1921 cggagcagat tatctgaact ccttagtgtc aatgaagata tcttcaaacc agggggagga
+     1981 ccgacgagtt tagctgttca tcgcatagat acaggaaatg cgcttcctat ttcaggcccg
+     2041 ccttatagag tatcacctgc taagaaggag ataatacggg ctgaaattga caaaatgctg
+     2101 gaactggaaa ttatagagga agcagagtcc gaatgggctt ctccggtggt actagtgccg
+     2161 aaaaagaacg gcgagactcg attttgcgtc gattacagaa aattaaatgc ggtgactcgt
+     2221 actgataaat atccgcttcc cttaatcgac gacattttag ctactgccaa gagcaattgc
+     2281 gtcatgtcca ccattgattt aaaagctgga tattggcagg tagaagtagc tcctgcggat
+     2341 aagaaccgac gaactggacc catctacaac gaaggagacc tcgttcttat agaaagtcat
+     2401 cgccttagtc aggcagcaaa aggatttacg agtaaatttg ctcctaggcg cgaaggtccc
+     2461 tatcgtattt caaaagtagt ttcacctacc acctatgaaa ttgtagatag agatagtaac
+     2521 cctcgaggga agtatcatgc cagtctactc acaccttatg tcggtgattc gaataccgca
+     2581 atcgtgcacg gccgtaagag gggaagaccg cggcgtaaag taccggttgc caagccatcc
+     2641 tcgatgtctt ctgatggctt ggagggggag gatatagcgc gcgatgtttt actgcgaacc
+     2701 aggagtgctg tgtctcccgt gactgccact agcccgctcc gccgctcgcc ccgcctacgc
+     2761 acaccgcgct cataaactcc ggcgcccctc gtcggccagt ccgtctcaga aaggcaaacg
+     2821 gtgcgcgcgt cacgagccgc ggggccggcg cgttttgttt ctcactgttt tcttttgtct
+     2881 tttctgcttt gtaatttgta aaatctactt gtgtgtcacg tttataagat tgtctttagt
+     2941 gaataaacca tttaaaccta ctta
+//
+
+LOCUS       XM_028313470             960 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 2-like (LOC114359186), mRNA.
+ACCESSION   XM_028313470
+VERSION     XM_028313470.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021134484.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..960
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..960
+                     /gene="LOC114359186"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:114359186"
+     CDS             1..960
+                     /gene="LOC114359186"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028169271.1"
+                     /db_xref="GeneID:114359186"
+                     /translation="MHRRSRNACDRENAAPNPAFPSPLSPTPPTQDRDEHHEVPTSRD
+                     TTYVPASHFSTENVASIIESLQRSQTEAFKDLLLSVTRINTSTPAPGEGTLARCKSQF
+                     SGHPNESVEAFIDAVEAYSDCAQVSSTNIVRGLAFLFSGDAATWWLGIKNTITSWDEA
+                     KENLISAFAFGDRRPPHRIYLQLFASPQMHNENTDTFIARSRSLLSKISDRDVSEKAR
+                     LDMVYGLLHTKIRQRLRREEFATFQDLLRHARNIEDSQGEADTSRGTPTPRTAPRAST
+                     TYAGPRAPTYTAPESAIRAPQPPPAAAASRYPAPAAAATRAPL"
+ORIGIN      
+        1 atgcatagaa gaagccgaaa cgcgtgtgac agagagaatg cggcgccgaa tcccgcattt
+       61 cccagccctc tgtcgcccac gccgccgacg caggatcgcg atgaacacca tgaagttcca
+      121 acaagccgcg atacgaccta cgttcccgct tctcactttt ctactgaaaa cgtagccagc
+      181 ataatagaat cattgcaaag atcgcagacg gaagcattca aagacctcct gttatctgtg
+      241 acacgaatta acacgtcgac accggcccca ggggaaggca ccctggcccg ctgtaagtca
+      301 caattttccg gccacccgaa cgaatcggta gaagcgttta tagacgccgt cgaggcgtac
+      361 agcgactgtg ctcaagtgtc cagcactaac atcgttcgcg gcctcgcatt tctcttcagt
+      421 ggtgatgctg ctacgtggtg gcttggcatc aagaacacca tcacatcgtg ggacgaggcc
+      481 aaagagaacc tgataagtgc cttcgccttc ggtgaccgcc gccccccaca ccgcatttac
+      541 ctacagctat tcgcgagccc gcagatgcac aatgaaaaca cggacacatt catagcgcgc
+      601 agccgttccc ttctatcgaa aatatcggat agagacgtct cggagaaggc caggctagac
+      661 atggtgtacg gcctcctaca cactaaaatc cggcaaagat tacgccgtga agaatttgcc
+      721 acttttcaag acctattacg tcatgcgcgc aatatagaag acagtcaggg cgaggcagat
+      781 acgtcgagag gtactccgac gccgcgcacg gcaccccgcg cgagcacaac atacgccggt
+      841 ccccgagcgc ccacttatac ggcgccggaa tccgccatac gtgccccgca accgccgcct
+      901 gccgccgccg ccagccgcta tccggccccc gcagccgccg ccacccgggc gccgctatag
+//
+
+LOCUS       XM_028319934            3653 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114363967
+            (LOC114363967), mRNA.
+ACCESSION   XM_028319934
+VERSION     XM_028319934.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130643.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3653
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..3653
+                     /gene="LOC114363967"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 6 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114363967"
+     CDS             349..2073
+                     /gene="LOC114363967"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114363967"
+                     /protein_id="XP_028175735.1"
+                     /db_xref="GeneID:114363967"
+                     /translation="MNLSEAQFERLLKTLGEPRSMSTLAQCSARYGGSRKSTDVETFL
+                     AAVNVYKKLEHIQDEDALTGLPLLLTDDAATWWQGVKTQVRTWVDFETRLRHTFAPKK
+                     LPYIIYQEIVRVSQVHQSTASFIAEKRALIAQLPESHKLVEDQLIDLVYGQLRLDIRE
+                     KIAREHVTTFDDLLEKTREVESHMLEKANLTQRPLEDPPIKPKRCNFCRIPGHTAETC
+                     RKKAKAEQSDAVKPSPTTDIKPEKPRLSCYGCGEPGVVRSRCTKCSSQRRTSSNDASF
+                     CGVKIGEMNPRPVVRIQIGHIKGTAQIDTGARSNVASYSLYQQLRKNGYIFEEKEMSI
+                     TLADGIPKRQTALTVRAPIAIFGRVIPSSFVVLPQATNNLTLLGVGFIVDAMLILNIP
+                     QRTCRFMDDPSTAYDLEEESIQEIVLEKLKEEFALPRIISPMATTPKSGQSPQPSKVI
+                     PEVASGLTVVPVSGMNAEEDVQPREAVVPSEDIPEVHETANIANMHTPPRSYGPLIPV
+                     DLSTPPNKKPKLMFDGHSPVIDALYYDAQTSLAEYDEVTDLSPELTLLFEPKNHSPST
+                     DASCEKEQ"
+ORIGIN      
+        1 ttattaagta ttgttcatat gtacatgccg atcctaactt tacttatttt tatattagct
+       61 tagtaacttg agaggttgtc tgctttaatt gtgtaattta gtcataggtt tgttggcaat
+      121 aaacacgaga taaagcccta taaaattggt tttggtcatt tctctctgta ggttaggttc
+      181 ccctcttaca atctggcgcc caacgtgggg ccctttaata aaccgggtcc cattgaggca
+      241 cgaaccactt ataatttaag accaaaacca cacagacaac ctactctctc agtcccgcga
+      301 gctaggatta ctatagctaa tcgtcatcat aaacacagga tcggagacat gaatctatca
+      361 gaggcacaat tcgagagatt actgaagacg ttaggagaac cacgcagtat gagcacattg
+      421 gctcagtgct ctgcacgcta tggaggaagc agaaaatcca ccgatgtgga gactttcttg
+      481 gcggccgtga acgtgtataa aaagttagag cacatacaag atgaggatgc actcactggc
+      541 ttaccgttac ttttgacgga tgatgccgcg acgtggtggc aaggggtgaa gactcaagtc
+      601 aggacatggg ttgactttga gacaaggttg agacatacgt ttgcccccaa gaaactgccg
+      661 tacatcatct atcaagagat cgtgcgggtc agtcaggttc accagagcac agcgtcattt
+      721 attgctgaaa aacgtgcgct tatcgctcag ctacccgaat ctcacaaatt ggtcgaggat
+      781 caactcatag accttgtata cggacagtta agactagaca tacgtgagaa aatagctcgg
+      841 gaacacgtga cgactttcga cgacttgctt gagaaaacaa gagaggtaga aagtcacatg
+      901 ctagaaaagg cgaatctgac gcagcgccct ttagaagacc cccctataaa acccaagcga
+      961 tgcaactttt gccgtattcc tggacacaca gcggagacct gcagaaagaa ggctaaagca
+     1021 gagcagagcg acgcagtgaa gcctagccca actacggaca taaaaccaga aaaacctagg
+     1081 ctttcttgtt atggttgtgg agagcctggt gtggtccgta gtcgatgcac aaagtgctca
+     1141 tctcaacgac gaacaagctc gaacgatgcc agtttctgcg gagtaaaaat cggagagatg
+     1201 aacccaagac ccgtggtcag aatacagatt ggacacataa agggtactgc tcaaattgac
+     1261 acaggtgcca ggtcaaatgt cgcttcgtac tcactctacc agcaactccg gaagaatgga
+     1321 tacatcttcg aggagaagga aatgagcata accctcgctg atggcatccc caagaggcag
+     1381 accgccctca ctgtcagagc tcccatcgca atatttggtc gagtgatccc atcatctttc
+     1441 gtggtactgc cgcaggccac caacaaccta actctgctgg gagtaggttt tatagtagat
+     1501 gcaatgctca tcttgaatat accacaaagg acctgccgtt ttatggatga cccctctact
+     1561 gcctatgatt tagaggagga gtctatccag gagatcgtcc tagagaagct gaaggaggaa
+     1621 tttgcccttc cgcgaataat ttcccctatg gcaaccactc caaaatctgg acagtcacct
+     1681 caaccttcca aggtgattcc ggaagttgca agcgggctta cagtggtgcc agtatcaggg
+     1741 atgaatgctg aggaagatgt tcagccaagg gaagccgtgg ttccatcaga ggatattccg
+     1801 gaggtgcacg aaacggccaa tatcgccaac atgcatacac caccgcggtc atacggccct
+     1861 ttgataccgg tggacctgtc cacacccccg aataagaagc cgaaactgat gttcgatgga
+     1921 cactcacccg tcattgacgc gctatattat gacgcacaaa ctagtctggc tgaatatgat
+     1981 gaggtaacgg acctttcccc tgagctaacc ctccttttcg aacccaagaa tcacagcccg
+     2041 tcaactgatg cgtcatgtga gaaagaacaa taacatcgca aaaaacccaa tgaccccatt
+     2101 gctcctgacc attgcctggg cctgtaccac tcgtcagcgc tccgcctgtc ccaaagcgct
+     2161 gagacagcgc cccacctgct ccagagcgct gagacagcgc tcctgccccg agccgtctcc
+     2221 gcagtgccat gcgtaagcgt ggtcaaccag aggccgtgcc atgcgtgagc gtggtcggct
+     2281 gaagaagatg acctcccgag ccaccccggc gtgccatgcg tgagcatggt cagccagcct
+     2341 acggtggtgc ttcaagccac ctccgccgtg ccatgcgtga gcgtgggcgg ccgaagaaga
+     2401 tgacctccca gccgtcatcc acgccaatcc tggctctctc gtcgggacgt cttcggagcc
+     2461 agagggggag tctgtaacac gacgcgcccc tttgtttact tcgagcgacc agcgccgagc
+     2521 ctgccactac gtcacagcga ggtctacgcg cgcgcgcagc cggtttactg ccctgccccg
+     2581 agaccccgct cgccgcaacg ggtatataag gcggacgagc cagcccagcg gccagttcat
+     2641 ttcgcgacgc gccgcgcttc cgtaccacgg aacacgatac gcccgaagtg aacgcacaca
+     2701 cgcaccgcga gtatacggtc tgcttacgta acacggaact gaccggactc tcgcgttgtg
+     2761 acgtcacatg cacgcctccc gtgcttatag ctagatttac atgaactaat taattgttgc
+     2821 ctcgcattag cttagataat aatatttcac gctttgctat taattagaat tctgcacatt
+     2881 gtttacattc atgcttagct caaatgcaca atccgatcct gtctttatga ctttattatt
+     2941 tttcacgctt cttgctataa aattattaag aaaatgctat tgtactaaat atggccctaa
+     3001 tgcatacgcc gatcctagat ttccgcttta attagtttac tcatactttt gatataaact
+     3061 ttattgatta aacgtaattg tttagtttcc tataaagtgt ggccctgatt catataccaa
+     3121 tccttgtttt atgctttgca catgcttttg tattgaactt tagtaattag acgcaattgt
+     3181 ttagttagta attaagttta gatcaaatgc atataccgat ccttgttttg tgttctaatt
+     3241 gaattgctca cgctttagtt ataaagttta ttaagtaaat acaattgtat agcttgctat
+     3301 tggatccggc tcaaatgcat ataccgatcc tcatttttgc ttctaatgtt aaaattacgc
+     3361 tttgccataa gattaattag tcaatgcaat tagtattgtt tatcattaag tattggccat
+     3421 atgtacatac cgatcctcaa ttttgatttg aacactataa tcatgctttg ccataagatt
+     3481 gattagtcaa tgcaattaat attgcttatt aataagtatt gttcatatgt acatgccgat
+     3541 cctaacttta cttattttta tattagctta gtaacttgag aggttgtctg ctttaattgt
+     3601 gtaatttagt cataggtttg ttggcaataa acacgagata aagccctata aaa
+//
+
+LOCUS       XM_028319971            2269 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114363995
+            (LOC114363995), mRNA.
+ACCESSION   XM_028319971
+VERSION     XM_028319971.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021137579.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2269
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..2269
+                     /gene="LOC114363995"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 8 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:114363995"
+     CDS             113..2149
+                     /gene="LOC114363995"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114363995"
+                     /protein_id="XP_028175772.1"
+                     /db_xref="GeneID:114363995"
+                     /translation="MNLSEAQFERLLMRLGESRSTSTLAQCSARYGGSRKSTDVETFL
+                     AAVNVYKKLERIQDDDALTGLPLLLTGDAATWWQGVKAQVGTWADFEARLRHTFAPKK
+                     LPYVVYQEIVKVSQTNQTTESFIAEKRALIAQLPESHILVEDQLIDLVYGQIRFDIRE
+                     KVVREHVHTFDELLEKAREVERHVNEKTKLSERPSGTPGKPKRCSFCRLAGHTIEVCR
+                     KKAKADQAEAGTSKEPDVKASTHVTKFSCYGCGEPGVIRSRCPKCSTRRPATTTDHAS
+                     FCGIKIGEMDLRPVVKIQIGHIKGTAQIDTGARSNVASYSLYRQLQKNGYFFKDQEMS
+                     ITLADGIPKHQTVRTVRAPITIFGRVVPSTFVILPQATRNITLLGVGFIMDAMLMLNI
+                     PQMTCRFLDDPSTAYDLEEEDIHQVIIDKLQDEFNLPPMISPIARTPEFPKSPQPPTP
+                     ALNKDPEPARPVTAKEGSEHSEPIEATTPLQIAHEVPETANIINASTPPRQVYGPLIP
+                     IDLSTPPNKRPRLMFDGHSPVLDALYFDAKNSLTTYDDETELSPDLEKLFESSDIASI
+                     NLLSDTEHQQLEDLLRRNEDAFTTNDPNAPDQCLGLYHASALRPFLSPESAPLPSPAA
+                     PLRKRGRPKKVAPQAAPAAPLHQRGRPKKPMPPAAPAAPLRRRGRPKKMTSQTN"
+ORIGIN      
+        1 ggcacgaacc acttataatt taagaccaaa accacacaga caacctactc tctcagtccc
+       61 gcgagctagg gttactatag ttaatcatca tcataaacac aggatcggag acatgaattt
+      121 atcagaggcg caattcgagc gattgctgat gaggttggga gaatcccgta gcacgagcac
+      181 gttggctcag tgctcagcac gctacggagg aagcagaaag tccaccgatg tggagacatt
+      241 cttggcagcc gttaatgtat acaagaagtt agagcgtata caggatgatg atgctctcac
+      301 cggcttgcct ttacttttaa cgggtgacgc tgcgacatgg tggcaagggg taaaagctca
+      361 ggtcgggaca tgggctgatt ttgaggcgag gctcagacac acttttgctc ccaagaaatt
+      421 gccgtacgta gtctaccagg agattgtgaa ggtcagccag acaaaccaaa cgaccgagag
+      481 ctttatagca gaaaaaagag ccctgatcgc acagctgcct gaaagccaca tattggtgga
+      541 agaccagctc atcgacttgg tgtatgggca gataaggttt gacatccggg aaaaggttgt
+      601 gcgagagcat gtccacacgt ttgacgaact gctggagaaa gccagagaag tggagagaca
+      661 tgtgaatgag aagaccaagc tttccgaacg accaagtggt acgccaggca aaccaaagag
+      721 gtgtagtttt tgccgtttgg ccggacatac catcgaggtc tgcagaaaaa aggcgaaggc
+      781 agatcaggca gaggctggaa ctagcaagga accagacgtc aaggcctcga cgcatgtgac
+      841 gaagttctcc tgctacggct gtggagaacc tggcgtgatc cgtagccggt gtccaaagtg
+      901 ctcaacgcgg aggccagcca ccaccacaga ccatgctagc ttctgcggca ttaaaatagg
+      961 agagatggac ctaagacctg tggtcaaaat ccaaatcggt catatcaagg gaacagccca
+     1021 aattgacacg ggagccaggt caaatgttgc ctcatactcc ttgtaccgtc aactccagaa
+     1081 aaatgggtac tttttcaaag atcaggagat gagcatcacc ctcgctgacg gtatccccaa
+     1141 gcaccagacg gtccgaacag ttagggctcc catcaccata tttggaagag ttgtgccctc
+     1201 cactttcgtg attttacccc aggctacgcg caacatcaca ctgttggggg tcggattcat
+     1261 catggacgcg atgctaatgt tgaacatccc tcagatgact tgccgattcc tggatgaccc
+     1321 ctcgactgct tacgaccttg aggaggaaga catccatcaa gtaatcatcg acaaattaca
+     1381 ggatgaattc aacttaccac cgatgatatc ccctattgcc agaacgcctg aattcccaaa
+     1441 gtcgccacag ccacccacac ccgccttgaa caaggatcca gagccagcga ggcctgtgac
+     1501 agcgaaagaa ggcagtgagc actctgagcc tattgaagcc acaacaccat tgcaaattgc
+     1561 tcatgaggtg ccagagactg ccaacattat caatgcgtcc actccaccaa gacaggtata
+     1621 tggaccattg ataccaatcg atctgtctac cccaccgaat aagcgaccac gactcatgtt
+     1681 tgacggacat tcacccgtac tagatgcgct ttattttgac gcgaaaaata gcctcactac
+     1741 gtacgacgat gaaaccgaat tgtcccccga cttagaaaag ttattcgagt ccagtgatat
+     1801 cgcgtcaatt aacttgttga gtgatacgga acaccagcag ttagaagatc tcctcagaag
+     1861 gaatgaagac gccttcacta ctaacgaccc caatgctcct gaccagtgcc tgggcctgta
+     1921 ccacgcatca gcgctccgcc cgttcctgag ccctgagtca gcgcccctgc ccagtccagc
+     1981 cgcgcctctc cgcaagcgtg gtcggcctaa gaaggtggcg cctcaggccg cgccagccgc
+     2041 gccactccat cagcgcggtc ggcccaaaaa gccgatgcct ccagccgccc ccgccgcgcc
+     2101 attgcgtagg cgtggacggc cgaaaaagat gacatcccaa accaattaga tgacagcaag
+     2161 ccgccaccca caccagtcct ggctctctcg tcgggacgtc ttcggagcca gagggggagt
+     2221 ctgtaacacg acgcgcccct ttgtttactt cgagcgacca gcgccgagc
+//
+
+LOCUS       XM_028320476            1424 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis uncharacterized LOC114364355
+            (LOC114364355), mRNA.
+ACCESSION   XM_028320476
+VERSION     XM_028320476.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021137626.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1424
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..1424
+                     /gene="LOC114364355"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 19 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114364355"
+     CDS             678..1406
+                     /gene="LOC114364355"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114364355"
+                     /protein_id="XP_028176277.1"
+                     /db_xref="GeneID:114364355"
+                     /translation="MVVTLAYEQFQLLLAEISPGRQGNFTHCNSHFHGERNTEVVEEF
+                     LAAVNLYKCIENIPDQEALDGVPLLLKGAAAVWWQIVKLQVTTWKQFGIALRHAFVPT
+                     IPTCLNYQQVVVHEQGEGKETPVVMETIDKQCHCRPEYQNEDLVLTDIHSVVKESRGI
+                     TGKFSPSCNYPRKTNRQPGPTFCMTSSHKVLGKHQGWNKRNIRRWSKKTKDEPVVHRR
+                     GRGRHKNVIQIFSSGRLRDLRGRL"
+ORIGIN      
+        1 aacaatatcg catttatcaa tcaatactac tagcgccatc tcgtggtgtt cgcctgcatt
+       61 accaagcctc cgcggatcac cgtgcttatt gcaagatgta tccagtttag gaagtgttta
+      121 cgccgctcgc cgctagatga cactagcaca ttgagagtcg atttctacac cgcggtgtcc
+      181 agattttttt tcccttaaag accttccgac gattatgttg aatatagtaa gaagtaagaa
+      241 gaaagtaagc aagtaaagta ataacctgag gttgcatccg actgtgacgt tctttagggg
+      301 aatcgcagat tgggacttcc gaaggcgcat tacgaatatt tgccccgcga ctccgcgtct
+      361 gtctccaacg tcctgattgg aattggttga cggacggagc acgcacgcgc actatttttg
+      421 tataatacgc tggtactgcg aagtaaaagt acactttttg ctacaccctg gccttcttat
+      481 ttggaccctg cacctcaagc ttgtcagccg agacttcaca ccttttatac tggcgtccca
+      541 acggtgggcc tgacaagcac tagtcctacc tgcatctgca cactggcgat tcaacggtca
+      601 ctctgagaag cacaagtcat catacctgta tcttcacact ggcgaccagc ggtagacctg
+      661 ataggcagca gtccaagatg gtggtgacct tagcatatga acagttccag ctgctactcg
+      721 cggaaatttc accgggtcgg caaggaaatt tcactcattg caattcccac tttcacggtg
+      781 agagaaacac tgaagtggtc gaagaatttt tagctgcagt gaacctatac aagtgcattg
+      841 aaaacatccc agaccaggaa gctcttgatg gcgtcccact tctattgaaa ggtgcggcag
+      901 ccgtctggtg gcaaatagtc aagttgcaag tgacaacctg gaagcagttc gggatagcat
+      961 tgcgtcatgc attcgtacct acgataccaa cctgccttaa ctaccagcaa gtggtggttc
+     1021 atgagcaggg ggaggggaag gaaacccctg ttgttatgga aacaattgac aaacagtgtc
+     1081 attgtcgtcc ggaataccaa aatgaagatt tggtgctaac agatatacat tcagtagtca
+     1141 aggaatcgag aggaatcaca ggcaaattct ctccaagctg caattaccct cgtaagacta
+     1201 acagacaacc tggacctacg ttctgtatga catcttcaca taaagtcctg ggcaaacatc
+     1261 aaggatggaa caaacgaaac atcagaagat ggtctaagaa gacgaaagat gaaccagttg
+     1321 ttcaccgacg aggccgtgga cgtcacaaga acgtaatcca gatcttctcg tcgggacgac
+     1381 ttcgtgatct gagggggagg ttgtaacaac gtcacattta tcaa
+//
+
+LOCUS       XM_028322886            1361 bp    mRNA    linear   INV 12-MAR-2019
+DEFINITION  PREDICTED: Ostrinia furnacalis activity-regulated cytoskeleton
+            associated protein 2-like (LOC114366100), partial mRNA.
+ACCESSION   XM_028322886
+VERSION     XM_028322886.1
+DBLINK      BioProject: PRJNA525080
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Ostrinia furnacalis (Asian corn borer)
+  ORGANISM  Ostrinia furnacalis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Crambidae; Pyraustinae; Ostrinia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021130774.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ostrinia furnacalis Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 3% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..1361
+                     /organism="Ostrinia furnacalis"
+                     /mol_type="mRNA"
+                     /isolate="ACB-3"
+                     /db_xref="taxon:93504"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Pupae"
+                     /country="China: Beijing"
+                     /collection_date="2015-04-09"
+     gene            1..>1361
+                     /gene="LOC114366100"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 97% coverage of the
+                     annotated genomic feature by RNAseq alignments, including
+                     21 samples with support for all annotated introns"
+                     /db_xref="GeneID:114366100"
+     CDS             390..>1361
+                     /gene="LOC114366100"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028178687.1"
+                     /db_xref="GeneID:114366100"
+                     /translation="MPMELRNAKVLPTEDIMSDDTSEPEYYDQAEPRAMSAPAPVPAG
+                     APGGAGGASTSATTETVLAGFMESFVRMQAETNRTLVETLRAFSDCSRNPPTSTPTPD
+                     IRPPSAYSSAVTGNFAKCTARFDGRSRDAEVLEAFIDAVQVYKECAGVSDEHALRGLP
+                     ILLEGDAAVWWRGARASVHTWPDAVARLRAMYGMQQPPYKVLREIVNTEQKDSERAEV
+                     FVCKVRSMFAKLPYAVPMCMQLDLIYGLLHRRVRKRLPRGDVNDIDIVIEKVRAIEDS
+                     IVELNLSTYAANPIISTTKSASQNLSRSSHAAPRDRGHQLESESLSSD"
+ORIGIN      
+        1 ggcgaaacga agtcgaataa tcgcgctacg accgcgcgag ctctaggaca ctcgtggtat
+       61 tccgcggcac ttcgtactcg ctcggctctc cacgccgccc gcgccccgcg gtcggcagtc
+      121 gcaggctatc acgcgccgat tacgcgtcgt tttcgcgaat aattaatatc ttccgtgtcc
+      181 cacacctctt cttctgtgct gatgattgtt attagttaga actttagatt aataaagtga
+      241 atacaaccat cacagtggct gcccaactcg tggcttcgaa ttcaccttga gattttcgag
+      301 aagtttcgtc gcgagtgccg cgatagactt acctataacc tatgtttcga tacgtgaaaa
+      361 caacataagt tacgtgacga actgttacca tgccgatgga actacggaac gcgaaagtac
+      421 taccgactga agatattatg agcgacgaca cgagcgagcc tgaatactac gaccaggcgg
+      481 agccgcgcgc catgagcgcc cccgcccccg tccccgccgg agcgcctggc ggcgccggcg
+      541 gcgcttctac gagtgcgacc acggagaccg tgttagccgg tttcatggag tccttcgtca
+      601 gaatgcaagc ggaaaccaac agaaccctag tggaaaccct gagggctttc agcgactgct
+      661 ccaggaaccc accgacatcg acgccaacgc ccgacatccg tccgcctagc gcctactcgt
+      721 ccgcggtcac cggcaacttc gccaagtgca ctgcacgttt tgacgggagg tcgcgcgacg
+      781 cggaggtact ggaggcgttc atcgacgcag tgcaggtgta caaggagtgc gcgggcgtca
+      841 gcgacgagca cgcgctgcgc ggcctgccca tactgctgga gggcgacgcg gccgtgtggt
+      901 ggcgcggcgc tcgcgccagc gtgcacacct ggccggacgc cgtggcgcga cttcgcgcca
+      961 tgtacggcat gcagcagccg ccatacaaag tactacgtga gatcgtcaac acggaacaga
+     1021 aagactctga acgtgcagaa gtgtttgtgt gtaaagtgcg gtctatgttt gctaaattac
+     1081 catacgcagt gccgatgtgt atgcaattag atctaattta cggcctttta catcgacgtg
+     1141 tgagaaagcg actacctaga ggtgatgtta acgatattga tattgtgata gaaaaggtaa
+     1201 gggccataga agattctatt gtcgaattaa atcttagtac gtacgccgcg aacccgatca
+     1261 tttctacgac gaaatcggca agtcaaaact tgtcgcgatc atcgcacgcc gcgccgcgcg
+     1321 accggggtca tcaacttgag tcagagagct tgagttctga c
+//
+

@@ -1,0 +1,121 @@
+LOCUS       XM_014614272            2631 bp    mRNA    linear   INV 12-NOV-2015
+DEFINITION  PREDICTED: Dinoponera quadriceps uncharacterized LOC106741871
+            (LOC106741871), mRNA.
+ACCESSION   XM_014614272
+VERSION     XM_014614272.1
+DBLINK      BioProject: PRJNA301625
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Dinoponera quadriceps
+  ORGANISM  Dinoponera quadriceps
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Ponerinae; Ponerini; Dinoponera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_014554790.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Dinoponera quadriceps Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 47% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2631
+                     /organism="Dinoponera quadriceps"
+                     /mol_type="mRNA"
+                     /isolate="SergipeBrazil2010"
+                     /isolation_source="soil"
+                     /db_xref="taxon:609295"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /country="Brazil: Sergipe"
+                     /lat_lon="11.01 S 37.12 W"
+                     /collection_date="2010"
+     gene            1..2631
+                     /gene="LOC106741871"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 3% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106741871"
+     CDS             1..2631
+                     /gene="LOC106741871"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106741871"
+                     /protein_id="XP_014469758.1"
+                     /db_xref="GeneID:106741871"
+                     /translation="MRKWGCAFYGRDSLTFLERVEELNEGYGFSERDLLRGLPELLRG
+                     DSLLWYRNNRTTWQTWDDFEQDLREQYLPPRYQALLKKEINKRLQKPGELYAHFETEL
+                     LTKMRRAGYYADEERLLQLYDNLQPDYKLYIRIADVRSIRDLRQRAMEYEAINRKRQE
+                     SCARTLPPRPAAIDATAYERSMCCWRCKQRGHTRLQCRRPARKFCSQCDRDGVLTCEC
+                     HPVPGNGQEASAASSDDRPVQSTSLTDHDRTPVHQEAPPLHHTIRLADGATIQPTKAI
+                     CLPIRIGTQTLNHRCYVVPSLESDILIGIDLWARLQIPLPPPPKGYSDAIPALCPVSA
+                     GLRSRTPDEETTLKEFLASELAAFERIRGPTDLVEHRIRLKDPRPIKQRYRPRNPAMQ
+                     QIIDDEVSQMEAEGIIEPSDNAWSSPVVTVKKRDGAPRFCIDFRRLNDVTERDAYPLP
+                     HIAATLDKLRGAHYLTTLDLKSGYWQIPLAPESKALTAFTVPGRGLMQFRVMPFGLHS
+                     APATFQRLLDRVLGPALEPHVFVYLDDIIIVSATFSEHLRHLSKVFRRLRAARLRINP
+                     DKCRFGVESLKYLGHVVDREGLRTDPDKVAAITNWLTPATLRQVRQFLGLASWYRRFV
+                     AGFSKRVAPLTRLTRKGVKWAWGEAEEATFQDIKRALVTTSVLACPDFIRSFVIQTDA
+                     SNHGLGVILTQHFPEGERVIAYGSRTLSNAEKNYSATELECLAVVWGIRRMRGYLEGY
+                     HFTVITDHQSLRWLQRLESPTGRLARWLFDLQQYSFEIRYRRGCANKVADALSRRSAV
+                     CALRDIRCPCFKKLHKGIRTDPTAWPDYTIQQGRVYRHLLHELDFRDTPPTNNEKSAS
+                     NATNGIKSCSNSTTTQQRDI"
+ORIGIN      
+        1 atgcgcaagt ggggttgcgc cttttacggc cgcgattccc tgacatttct cgaacgagtg
+       61 gaggaactca atgagggata cgggttctcc gaaagagatc tcctccgggg attgcctgag
+      121 ctgctccgcg gagacagtct cttgtggtat cgcaacaacc ggaccacatg gcagacctgg
+      181 gacgattttg aacaagatct ccgagagcaa tacctacctc caagatatca ggcgctccta
+      241 aagaaggaga ttaacaaacg tctccagaaa cccggagagc tctatgcgca ctttgagacc
+      301 gagcttctga cgaaaatgcg ccgagccgga tactacgcgg acgaggaacg tctcctgcag
+      361 ctttatgaca acctccagcc ggactataag ctgtacatcc ggatcgccga cgttcggtcg
+      421 atcagggacc ttcgccaaag agcgatggag tacgaggcca tcaaccggaa gcgccaggaa
+      481 agttgcgccc ggactctgcc gccccgaccc gctgccatcg atgccaccgc gtacgagcgg
+      541 agcatgtgtt gctggcgctg caaacaacgt gggcacacgc gcctccaatg ccggaggccg
+      601 gccaggaagt tctgctccca gtgcgacagg gacggcgtgc tgacgtgcga atgccacccg
+      661 gtcccgggaa acggccaaga ggccagcgcc gcgtccagcg acgaccggcc cgtacaatcc
+      721 acatcactta ccgaccacga ccgcacgcca gtacaccagg aggctcctcc gcttcaccat
+      781 accatccggt tggccgacgg ggccaccatt cagcccacca aggcgatttg tctccctata
+      841 cggatcggga cgcaaacctt gaaccaccga tgttacgtgg taccgagtct cgaaagcgac
+      901 atcctcatcg gcatcgactt gtgggccagg ctgcagatac cgctgccgcc gccaccgaag
+      961 ggatattcag acgcgattcc ggcattatgc ccggtctctg ccgggttgag atcgcgtacg
+     1021 cccgacgagg aaaccaccct caaggagttc ctcgcctccg aactcgccgc gttcgagcga
+     1081 atacgcggac ccacggacct cgtggaacac cgaatccgat taaaggatcc acggccgatt
+     1141 aaacaacgat atcgtccgcg caacccggcg atgcagcaga tcatcgacga cgaggtaagc
+     1201 cagatggagg ccgaaggcat tatcgaacct tccgataacg cctggagctc acccgtcgtc
+     1261 accgtgaaga agcgtgatgg agcgccacga ttctgcatcg acttccgccg gcttaatgac
+     1321 gtcactgagc gcgatgccta tccactgccg catatagccg ccaccttaga taaactccgc
+     1381 ggagcgcact atcttactac gctagattta aaaagtggat attggcaaat cccgctcgcc
+     1441 ccggaaagca aagcgttgac cgcattcacg gtgcccgggc gtggcctgat gcagttccgg
+     1501 gtgatgccct tcggactgca ctccgcgccc gccacgttcc agcgacttct cgaccgcgta
+     1561 ctaggaccag cgttggagcc acatgtcttc gtatacctag acgatattat tatagtaagc
+     1621 gctacgtttt cggaacacct ccgacatctc tcaaaggtat tccgccgcct ccgcgccgct
+     1681 cgcctacgaa taaaccccga caaatgccga tttggagtcg agagcctcaa atatctgggg
+     1741 cacgtggttg atcgggaagg ccttcgaaca gaccccgaca aggtcgctgc catcaccaac
+     1801 tggctaacac cggccactct acgacaagtc cgccagttcc taggacttgc ctcgtggtac
+     1861 cgacggttcg tggccggatt ttccaaacga gtcgcgcctc tgacgcgcct cacccgcaag
+     1921 ggagtcaagt gggcctgggg cgaagccgag gaagccacct tccaagacat caagcgagct
+     1981 ctcgtcacca cgtcggtact ggcatgccca gacttcatac gtagcttcgt catccaaaca
+     2041 gacgcgagta accacggcct cggagtaatc ctaacgcaac acttcccgga aggagaacgt
+     2101 gtcattgcgt acggaagccg cacgctctcc aacgctgaga aaaactatag cgccaccgaa
+     2161 ttagagtgcc tggccgtggt atggggaata cggcgaatga gagggtacct tgaagggtac
+     2221 cacttcaccg tgatcaccga ccaccaatcg ttgcgatggc ttcagcgact ggagtcaccc
+     2281 accggccgac tcgcgcgatg gctgtttgat ttgcaacaat acagcttcga gatccgctat
+     2341 cgcagaggtt gcgccaacaa agtggccgac gcactctccc gccgatccgc cgtatgcgct
+     2401 ctccgagaca tccgctgccc gtgcttcaaa aaactccaca aaggcattcg aaccgatccg
+     2461 acggcgtggc cagactatac gatacaacag gggcgggtat atcggcacct ccttcacgag
+     2521 cttgatttcc gggacacccc gccaacgaac aatgaaaaga gtgcgtccaa cgcgaccaac
+     2581 ggaatcaaat cctgcagcaa ctccacgacg acccaacagc gggacatcta g
+//
+

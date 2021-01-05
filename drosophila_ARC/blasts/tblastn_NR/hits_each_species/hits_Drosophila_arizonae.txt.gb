@@ -1,0 +1,253 @@
+LOCUS       XM_018009727             934 bp    mRNA    linear   INV 29-AUG-2016
+DEFINITION  PREDICTED: Drosophila arizonae uncharacterized LOC108615312
+            (LOC108615312), mRNA.
+ACCESSION   XM_018009727
+VERSION     XM_018009727.1
+DBLINK      BioProject: PRJNA339865
+KEYWORDS    RefSeq.
+SOURCE      Drosophila arizonae
+  ORGANISM  Drosophila arizonae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017127685.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila arizonae Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..934
+                     /organism="Drosophila arizonae"
+                     /mol_type="mRNA"
+                     /isolate="ariz_Son04"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7263"
+                     /chromosome="5"
+                     /map="unlocalized"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Guaymas, Sonora"
+                     /collection_date="Jan-2004"
+                     /collected_by="Luciano Matzkin"
+     gene            1..934
+                     /gene="LOC108615312"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 6 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:108615312"
+     CDS             16..840
+                     /gene="LOC108615312"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108615312"
+                     /protein_id="XP_017865216.1"
+                     /db_xref="GeneID:108615312"
+                     /translation="MAQTIQMTNEQLRELIETVRASAVAAAGVAAESGGAVSVTKSKG
+                     SFSACTHRFNGARNHDDVEEFITNIVTYKELEDISDENALKGISLLFYGIASTWWQGV
+                     RKEAKCWNDAIDLIREHFSPTKPAYQVYMEFFQNKQENSVPMDTFVVEKRALLAQLEN
+                     NRHDEETELDFLYGLLNIKYRKYIPRQNISTFRDLLEQARIIEHNTQEESDGQPPRKR
+                     PYSEISSTGYIPGRGRGGTRGHGRGRGRGRGRGRGRDFAAQPNGEEDVPMATEQQS"
+ORIGIN      
+        1 taatgtgtct ataacatggc tcaaacaata caaatgacca atgagcagct gcgggagctc
+       61 atcgaaacgg tgcgcgcttc tgctgtggca gctgctgggg ttgccgccga atctggtgga
+      121 gctgtctccg tgaccaagtc gaagggcagt ttcagcgcct gcacgcacag gtttaacggt
+      181 gcacgaaacc acgacgacgt cgaggagttt atcacaaata ttgtaacata caaagagctc
+      241 gaagacatca gcgatgagaa tgctttgaaa ggcatttcgt tgctctttta cggcattgca
+      301 tctacctggt ggcagggtgt acgcaaagag gcaaagtgct ggaacgatgc aatcgacctc
+      361 attcgcgaac acttttcacc caccaagccg gcttatcaag tctacatgga gttctttcag
+      421 aataaacagg agaatagcgt acccatggat accttcgttg tcgagaaacg tgcgctgctc
+      481 gctcaattgg aaaataatcg tcacgacgaa gagacggaac tggatttcct gtacggtctg
+      541 ttaaacatta agtaccgcaa atacattcct cgccagaata tttcaacatt ccgcgatctg
+      601 ttggaacagg cgcgcattat cgagcataac actcaggagg aatccgatgg ccagccccca
+      661 cggaagcgtc cttactcaga aatttcgtca actggttaca tccctggtcg aggtagaggt
+      721 ggaacccgag gacatggcag aggccgaggc cgaggcagag gtagaggtag aggccgggac
+      781 tttgctgctc agccgaatgg agaagaggac gtgccaatgg ccactgaaca gcaaagctaa
+      841 acacatagcc gaatattatt tagtcacaca tgcattgaat cattcttcac atttaaaaag
+      901 taaacaaact taaataaatg aggtgtgcag tcgc
+//
+
+LOCUS       XM_018009729            1992 bp    mRNA    linear   INV 29-AUG-2016
+DEFINITION  PREDICTED: Drosophila arizonae uncharacterized LOC108615315
+            (LOC108615315), mRNA.
+ACCESSION   XM_018009729
+VERSION     XM_018009729.1
+DBLINK      BioProject: PRJNA339865
+KEYWORDS    RefSeq.
+SOURCE      Drosophila arizonae
+  ORGANISM  Drosophila arizonae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017127685.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila arizonae Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1992
+                     /organism="Drosophila arizonae"
+                     /mol_type="mRNA"
+                     /isolate="ariz_Son04"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7263"
+                     /chromosome="5"
+                     /map="unlocalized"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Guaymas, Sonora"
+                     /collection_date="Jan-2004"
+                     /collected_by="Luciano Matzkin"
+     gene            1..1992
+                     /gene="LOC108615315"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 ESTs, 4 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:108615315"
+     CDS             97..852
+                     /gene="LOC108615315"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108615315"
+                     /protein_id="XP_017865218.1"
+                     /db_xref="GeneID:108615315"
+                     /translation="MATTIQMTNEQLHALIEAVRSSAVNAAGNAAAATSEASKTKGSF
+                     SACTHKFGGTRSHDEVEEFITNIVTYKELEDISDENALKGISLLFCGIASTWWQGVRK
+                     EAKCWNDAISLIREHFSPTKPAYQVYMEFFEKKQPDSVAIDTFVVEKRALLAQLPEGR
+                     HNEETELDFLYGLLNIKYRKHIPRQNISTFRDLLEQGRIIEHNDLEQVEAQPKGPLRG
+                     ANRVERCTYCNFRGHTFEVCRKRQTRDQTNAAN"
+ORIGIN      
+        1 aaggagcagc aacattcgcc gagacttatt ggctttgttc gctgtcgcaa tttgcttttt
+       61 catcaacaac aacaaggtgt gtgataatcg ttagcaatgg cgacaactat ccagatgacc
+      121 aatgagcaac ttcacgcgct catcgaggct gttcgttcgt cggcggttaa cgcagccggc
+      181 aatgccgctg ctgctactag cgaagcctca aagacaaaag gaagtttcag cgcctgtacg
+      241 cacaaattcg gcggtactcg cagccacgac gaggtcgagg agttcatcac aaatattgtc
+      301 acctacaagg aactggagga catcagcgat gagaatgcct tgaagggcat atccctgctt
+      361 ttctgtggca ttgcatccac ctggtggcag ggcgtacgca aggaggcaaa gtgctggaac
+      421 gatgccatca gccttattcg cgagcacttt tcgcccacta agccggctta ccaggtctac
+      481 atggagttct tcgagaagaa gcagcccgac tccgttgcca tcgacacctt cgtggtcgag
+      541 aaacgtgcgc tgctcgccca actgccggag ggacggcaca acgaagaaac cgaactggac
+      601 tttctctatg gcctgctcaa catcaagtac cgcaagcaca ttcctcgcca aaatatctca
+      661 acattccgcg atctgctcga gcagggccgc atcattgaac acaacgacct ggagcaggtt
+      721 gaggcgcaac caaagggacc gctacgcggc gctaatcgcg ttgaacgctg cacctactgc
+      781 aatttccgcg gtcacacgtt cgaggtctgt cgcaagcggc agacgcggga tcagacgaat
+      841 gcggcgaact aaacatcaca cacacgcaca cgcaataaac gggacatgac atcatcgaca
+      901 tctacaacaa cagcaacatg cgcagggcgc atatttggat gcctacgtca atgtctctct
+      961 ctcaccaatt ctctcacatc aaaactcact ttgtcagctg gcctcacatg gacacgagga
+     1021 gagtggaaaa tgacaacatc gaagaacaac agttgcgcac tcagaaagct ctagcagctt
+     1081 tttgcctatg tcagtttctg actctcactc agcatcaagt ggcgtgccgg ccagcaaagc
+     1141 agagctaaaa taacggcatt tcgatgtcgc atacacttca cgccgaaact tcggctcaat
+     1201 ttggctgtga acgccagctt aaatgatttt tcgtgattac taatcacaac tggaactcta
+     1261 ctacaagcgg tgaacttgtt caccaaccct cgagcggcag gaattgaaga acaggttagc
+     1321 gcacgcattt cgcccctagg ctaagtcgtt gagcggcgtg tggcgcagcc aagcagcgac
+     1381 gcttgctcgt gcattgctta tctctgcaga gttcttcgga actgtgcagt cgatgagctt
+     1441 tgtgcgcggc cagcgtcgtt gcctgtgcta cgtttgcgtc ggctcaacaa ctcgggccgt
+     1501 gatgggtgtt tcgtgtgctt tgcttttccc cttttcttgt cgctcaaaac ccgctgtctt
+     1561 gacctagtgt ctgcgcaacg tagctgtggt gccgtacgct gcgttcaagc agagggcgtg
+     1621 aagcttcgct ggcttcggcc agtggatcta tgcgctgctc acttgtcgct tagttcgaaa
+     1681 ctacagctgc tttcgcgtcg atccttcttc aatgcagcaa aaaaaaaaac acgtccatgg
+     1741 gaagacaacg cagtggcttt tgtgtgtcgc aagcttcgag gagcaactcc acgccgctgc
+     1801 tcagctctgg cagcgcgctg cggtttactt agggtgcgtt gctgtagttc gcttcggcgc
+     1861 gctgcagcag ctcgctttgg tgaactgtag cgctgctgct aactgggttc ggcttgaagt
+     1921 tgtggccttt gctggttgct tctgcacgac agccgctgct gaggcttggt catgggcaaa
+     1981 ctttcatttt ct
+//
+
+LOCUS       XM_018009735             610 bp    mRNA    linear   INV 29-AUG-2016
+DEFINITION  PREDICTED: Drosophila arizonae uncharacterized LOC108615318
+            (LOC108615318), mRNA.
+ACCESSION   XM_018009735
+VERSION     XM_018009735.1
+DBLINK      BioProject: PRJNA339865
+KEYWORDS    RefSeq.
+SOURCE      Drosophila arizonae
+  ORGANISM  Drosophila arizonae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017127685.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila arizonae Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..610
+                     /organism="Drosophila arizonae"
+                     /mol_type="mRNA"
+                     /isolate="ariz_Son04"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7263"
+                     /chromosome="5"
+                     /map="unlocalized"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Guaymas, Sonora"
+                     /collection_date="Jan-2004"
+                     /collected_by="Luciano Matzkin"
+     gene            1..610
+                     /gene="LOC108615318"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108615318"
+     CDS             11..592
+                     /gene="LOC108615318"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108615318"
+                     /protein_id="XP_017865224.1"
+                     /db_xref="GeneID:108615318"
+                     /translation="MTLLSDEQFRILIDTIKSLAPQKDDDHQSKGSFSNCAVRFSGQR
+                     DHDAVDEFITAVETYKEMEGISDKDALKGISLLFNGVAVMWWKGVRRDAHTWQDALKL
+                     LRDHFSPTKPSYQIYMEIFEMKQEDGEVIDQFICKQRALLAKLPEGRHNEETELDFIY
+                     GLMHQKYRSHIPRHEIKSFRELLERGRMIERTK"
+ORIGIN      
+        1 accacagaaa atgacgctgc tgtcggacga acagtttcgc atactcatcg acacaatcaa
+       61 atccctggcg ccgcagaaag atgatgatca ccaatcgaag ggcagcttca gcaactgcgc
+      121 ggtgcggttt agcgggcagc gagaccacga cgccgtcgat gagttcataa cagccgtaga
+      181 aacctacaag gagatggagg gcattagtga caaagacgca ctgaagggta tttcgctgct
+      241 cttcaatggc gttgctgtca tgtggtggaa gggtgtgcga cgagatgccc acacatggca
+      301 agacgcactg aaactgcttc gcgatcactt ctcgccgaca aaaccctcct atcagatcta
+      361 catggagatc tttgaaatga agcaggaaga cggcgaagta atcgaccagt tcatatgcaa
+      421 gcagcgtgcg ctgctggcca agctgccgga gggtcgtcac aacgaggaga cagagttgga
+      481 tttcatctat ggcctgatgc atcaaaagta cagaagtcat ataccacgtc acgagatcaa
+      541 gtcgttcaga gagctgctcg aacgcggccg catgatagaa cgcacgaaat agaattaact
+      601 atttatccat
+//
+

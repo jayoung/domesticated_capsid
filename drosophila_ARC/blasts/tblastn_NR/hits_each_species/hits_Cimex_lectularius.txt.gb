@@ -1,0 +1,97 @@
+LOCUS       XM_014404419            1443 bp    mRNA    linear   INV 28-FEB-2018
+DEFINITION  PREDICTED: Cimex lectularius uncharacterized LOC106672755
+            (LOC106672755), mRNA.
+ACCESSION   XM_014404419
+VERSION     XM_014404419.2
+DBLINK      BioProject: PRJNA298750
+KEYWORDS    RefSeq.
+SOURCE      Cimex lectularius (bed bug)
+  ORGANISM  Cimex lectularius
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Paraneoptera; Hemiptera; Heteroptera;
+            Panheteroptera; Cimicomorpha; Cimicidae; Cimex.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019394216.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Feb 28, 2018 this sequence version replaced XM_014404419.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Cimex lectularius Annotation Release
+                                           101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1443
+                     /organism="Cimex lectularius"
+                     /mol_type="mRNA"
+                     /strain="Harlan"
+                     /isolate="CLEC.00"
+                     /isolation_source="isolated after 5 generations of single
+                     pair matings of specimens derived from the Fort Dix colony
+                     established and maintained in culture in Harold Harlan's
+                     lab since 1973"
+                     /db_xref="taxon:79782"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="Whole organism"
+                     /country="USA: New Jersey"
+     gene            1..1443
+                     /gene="LOC106672755"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106672755"
+     CDS             13..1425
+                     /gene="LOC106672755"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106672755"
+                     /protein_id="XP_014259905.1"
+                     /db_xref="GeneID:106672755"
+                     /translation="MKMDVNRLNRDELEYELSIRGAFSEHSDVDELRKRVRRLLKLEA
+                     EGRLASPIHLPSNTGEELNICSGKIETLRPKIEEFLKGNTADFRKIDAKLQHVTNRLS
+                     RLSSGSDEEKRTKSRLLDECLEWMEDVSSAVGPPQKVVEEEDLLTGQFKPDKHSATSQ
+                     RPEDEGAEGESGKEEFTTQWTPEEPRSARVLFETPVEPSVVLRKTQIPPKDWKIHFSG
+                     ENDELSLHAFLETVEELMLSRNVSERDLFDSAFDLFRGKALVWYRAVRREVGTWKELV
+                     AELRAEYEPADYHFRLWDEIRRRTQGPTESIGFYVAVMKNYFHRLPQLPSQSEMLQVV
+                     RGNLQPYYLERLSLQNIESLNELVAVGRKLEETRRRISAQRPPPLPRDSLEPDLAYTP
+                     PRRRQEVNIQAIEEPVCPLNNPPKPEFRCWNCDGNGHAFRRCPDPKRQFCTGCGRKEM
+                     FKSQCPTCRSVPGNGQASQA"
+ORIGIN      
+        1 tctctacaca acatgaaaat ggacgtaaat agattgaacc gagacgagtt ggaatacgaa
+       61 ctgtctatcc ggggggcctt ttcggagcat tcagatgtag atgagttgcg taaaagggta
+      121 cggaggcttc ttaagttgga agctgaaggc agactggcct cacccataca ccttccctcg
+      181 aatacgggag aagaactgaa catatgttcg ggaaaaattg agacccttag accaaaaatc
+      241 gaggagttct taaagggtaa tacagcggac ttcaggaaaa tagatgccaa gttacagcac
+      301 gtgaccaatc gtttgtcacg gctttcttcc ggatccgatg aggagaaacg aacgaagtca
+      361 aggctgttgg atgagtgttt ggagtggatg gaggatgttt cctctgcggt tggaccaccc
+      421 cagaaggttg tcgaggaaga agatctactt acaggacagt tcaaaccgga taaacattca
+      481 gctacctccc agagaccaga ggatgagggt gctgaaggag aatcaggaaa agaggaattc
+      541 acaactcaat ggaccccgga ggaacctcga tcggccaggg tcttgttcga gactccggtc
+      601 gagccctctg tagtacttcg gaagacacaa attcctccca aagattggaa aattcatttt
+      661 tctggagaga acgatgaact cagtctccat gcatttcttg aaacagtcga agaactaatg
+      721 ctctcgagga acgtgagtga aagagacctc ttcgattcgg ccttcgatct attccgggga
+      781 aaagcattgg tttggtacag agctgtaagg agagaagtcg gtacttggaa agaactagtc
+      841 gccgagttac gagcggagta cgaaccagcg gactaccatt tccgattgtg ggatgaaatc
+      901 cgtcggagga cccaagggcc aacggaatct attggttttt atgtggcggt aatgaaaaat
+      961 tatttccatc gcctccctca gcttccctct cagtcggaaa tgttacaggt tgtgcgaggg
+     1021 aatcttcagc cctattacct ggaacgattg agcctccaga acattgaaag cttgaatgag
+     1081 ttagtggccg taggcaggaa actagaagaa actaggagaa ggatctcggc ccaacggcca
+     1141 ccccccttgc cgagagattc gttggaaccc gacctggcat acacgccccc ccgtcgaagg
+     1201 caagaagtca acatccaagc tattgaggaa cctgtctgcc ccctcaataa cccgccgaag
+     1261 ccggagttcc gatgttggaa ctgcgatggc aacggtcatg cgttcaggcg ttgcccagac
+     1321 cccaagagac agttttgcac cggctgcggc cgtaaagaga tgtttaagtc acaatgccca
+     1381 acctgccgtt cagtcccggg aaacggtcag gcgagtcaag cctaagggga cgaggcttgg
+     1441 ctc
+//
+

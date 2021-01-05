@@ -1,0 +1,263 @@
+LOCUS       XM_034621608             834 bp    mRNA    linear   INV 20-MAY-2020
+DEFINITION  PREDICTED: Drosophila innubila activity-regulated cytoskeleton
+            associated protein 1-like (LOC117784015), mRNA.
+ACCESSION   XM_034621608
+VERSION     XM_034621608.1
+DBLINK      BioProject: PRJNA630747
+KEYWORDS    RefSeq.
+SOURCE      Drosophila innubila
+  ORGANISM  Drosophila innubila
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022995374.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila innubila Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..834
+                     /organism="Drosophila innubila"
+                     /mol_type="mRNA"
+                     /isolate="TH190305"
+                     /db_xref="taxon:198719"
+                     /chromosome="2R"
+                     /map="unlocalized"
+                     /sex="female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: AZ"
+     gene            1..834
+                     /gene="LOC117784015"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117784015"
+     CDS             39..824
+                     /gene="LOC117784015"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034477499.1"
+                     /db_xref="GeneID:117784015"
+                     /translation="MALTIQMTNEQLRELIATVRSIAESAAGNSVVASGDASSAKTKG
+                     SFSNCTHRFGGARSHDKVEEFITNVVTYKELEEISDENALKGISLLFFGIASTWWQGV
+                     RKEAKTWNDAIGLIREHFSPTKPAYQVYMEFFEKKQEDAVAVDTFVVEKRALLAQLPE
+                     GRHNEETELDFLYGLLNIKYRKHILRQSVKTFRELLELSRIIEHNSQENEFKATDPPC
+                     GACRMKDCTHCWRYCAKIDTFIPFDAIELGTHYLVANKQLKKL"
+ORIGIN      
+        1 gagttgaaac attctgcatt tgatttcaca ccggcaaaat ggctctaaca attcaaatga
+       61 cgaatgaaca acttcgtgag ctaatcgcaa cagtgagatc tattgccgag agtgctgctg
+      121 gcaattctgt tgtcgccagt ggagacgcct ccagtgccaa gacaaaggga agcttcagca
+      181 attgcacaca cagattcggc ggtgctcgca gtcatgacaa agtcgaggag ttcattacta
+      241 acgtggtcac ctacaaggag ctggaagaga tcagcgatga gaacgccctc aagggcattt
+      301 cgctgctctt ctttggcatc gcctccacct ggtggcaggg cgttcgcaag gaggccaaga
+      361 cctggaacga cgccatcggt ctcatccgcg aacatttttc gcccacaaag cccgcctacc
+      421 aggtgtacat ggagttcttt gagaagaagc aggaggatgc cgtggccgtt gacacatttg
+      481 tggtggagaa gcgggcgctg ctcgctcagc tgcccgaggg tcgccacaat gaggagactg
+      541 agctggactt tctctatggt ctattgaata ttaagtaccg caaacatatt ttaaggcaaa
+      601 gtgtgaaaac attccgggaa ttactcgaac tgagtcgtat cattgaacac aatagccagg
+      661 agaatgagtt taaagctacg gatccgcctt gtggagcttg tcgaatgaag gattgtaccc
+      721 actgttggcg ttattgcgcc aaaattgaca cttttattcc ttttgacgca attgaacttg
+      781 gaactcatta cttagttgca aacaaacaac ttaaaaagct ataaatagta aaat
+//
+
+LOCUS       XM_034623702            2540 bp    mRNA    linear   INV 20-MAY-2020
+DEFINITION  PREDICTED: Drosophila innubila activity-regulated cytoskeleton
+            associated protein 1-like (LOC117785605), mRNA.
+ACCESSION   XM_034623702
+VERSION     XM_034623702.1
+DBLINK      BioProject: PRJNA630747
+KEYWORDS    RefSeq.
+SOURCE      Drosophila innubila
+  ORGANISM  Drosophila innubila
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022995374.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila innubila Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2540
+                     /organism="Drosophila innubila"
+                     /mol_type="mRNA"
+                     /isolate="TH190305"
+                     /db_xref="taxon:198719"
+                     /chromosome="2R"
+                     /map="unlocalized"
+                     /sex="female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: AZ"
+     gene            1..2540
+                     /gene="LOC117785605"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117785605"
+     CDS             140..898
+                     /gene="LOC117785605"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_034479593.1"
+                     /db_xref="GeneID:117785605"
+                     /translation="MAQTIQMTNEQLHALIEAVRQSAVSAAGTASAARESSTAKTKGS
+                     FSNCTHRFGGARSHDEVEEFITNVVTYKELEEISDENALKGISLLFYGIASTWWQGVR
+                     KEAKTWNDAIGLIREHFSPTKPAYQVYMEFFEKKQEDAVAIDTFVVEKRALLAQLPEG
+                     RHNEETELDFLYGLLNIKYRKHIPRQSIQTFRDLLEQGRIIEHNNQEDEAGSKGPQRG
+                     ARRVDRCTYCNFRGHTFENCRKRRQQRDAGNEED"
+ORIGIN      
+        1 gaacttcagt cctctacgac cgcatcaagt gtaagcagta gcattcgcca cccattggct
+       61 ttgttctctg cctcccacac acaattcaac taaacaatca acaacaacaa cgcgtgtgcc
+      121 tttctcaaat tcaaacaaaa tggcacaaac tattcagatg accaatgagc aactgcatgc
+      181 gctcatcgaa gccgtgcgtc agtccgctgt cagcgcagct ggcaccgctt ccgccgccag
+      241 ggaatcttcg actgccaaga caaagggcag cttcagcaat tgcacacaca gattcggcgg
+      301 tgctcgcagt catgacgagg tcgaggagtt cattaccaac gtagtcacct acaaggagct
+      361 ggaagagatc agcgatgaga acgccctcaa gggcatttcg ctgctcttct atggcatcgc
+      421 ctccacctgg tggcagggcg ttcgcaagga ggccaagacc tggaacgacg ccatcggtct
+      481 catccgcgaa cacttctcgc ccacaaagcc cgcctaccag gtgtacatgg agttctttga
+      541 gaagaagcag gaggatgccg tggccattga cacatttgtg gtggagaagc gggcgctgct
+      601 cgctcagctg cccgagggtc gccacaatga ggagactgaa ctggacttcc tgtacggcct
+      661 gctgaatatc aagtaccgca agcacattcc ccgccagagc attcagacat tccgcgatct
+      721 actcgaacag ggacgcatca tcgagcacaa caaccaggag gatgaggcgg gctccaaggg
+      781 tccgcaacgt ggcgcccgcc gtgttgaccg ttgcacctac tgcaatttcc ggggtcacac
+      841 gttcgagaac tgtcgcaaac gccgtcagca gagggatgcg ggaaacgagg aggattaaaa
+      901 ggccacacac acgcaattcc atagatcgtg acgtcatcgt catctacaac aacatcaact
+      961 gcgtgcgcag ggcgcacatt tgattcgctg acgtcacgat cccaacaaca acaacaacta
+     1021 tcaaaactca ctttgtcacg tcgctcacac attgacaaga acgagaaggg aagacgacta
+     1081 cgacgcagaa agcagcacca attagctttt agttaagttc acttcactct ctcattctcc
+     1141 gccaagtggc gtgccggcaa gcagagcaga gcttttcaac aacaaatcaa taatttaact
+     1201 ttacgctgcg actgcggcta tttttggcta tgaacgccaa ctctggaatc attttcgtga
+     1261 aaatttttca caccgagaaa ctctcaaccg gtaaactaag tttaccaaag ctcgagcgac
+     1321 aggaaacgga gagagggaac tggcgcacga atttcgctcc tagaccaaag ctctgcgttt
+     1381 cgatgcggcg cggcagagca acgacgcatt gtcgtgtgca gcactcggct gtggttcttc
+     1441 gggactgcag ccgatgtgtt gtgtgcgtca ggtgtcgttg ccgctgctgc gtctgcgtcg
+     1501 gcgcagagct ttcggttgtg atgagtgttt cgtgcgtctc tctttttccc atttccttgt
+     1561 cgctcaaaac ccgctgtctt gatctagtgt cggtgcagtg cggctgcaat gtacacgaag
+     1621 tgagcaaact tcggctgcat tgctcggttc gcttcggctt gctgagcttt gcagccgatc
+     1681 acttgtcacc taagtttgcg ttgcatcggc aactgtgcgg atccttaatc aatgcagcaa
+     1741 aaacaaaaaa ccgccgacag tcattgatgc agttgctctt gtgcgatgta agttcgtggc
+     1801 gcagctccag gttgtgtaca gagcgcagca ggtagcttcg ttgcagtgtg tttcgatgca
+     1861 ctgcagcgtt gttgtccgtt gttgctcctg tgcccggcct gaagttgctg ccacctggac
+     1921 gtgcgtctct cgcgatagga gctgcatcga ttggctgttg gcaaaaccca aaattgtctc
+     1981 aggacaactt tgaacaaaat caaacaaaaa tcgttttttt ttaaacgtaa tcgggcaata
+     2041 cattgcacta caatggctat gttgtcgcca ttcgtgcaat tggcacgcta aattgtcctc
+     2101 ggctatgtgg ctgttccttg gagcaccact gtgccggtca agcattaggc acgccaacac
+     2161 atttcataca cacactcaag ggttttcgga ttcgtcgctt ctcagccgct ccagcttgtg
+     2221 gcgactgtcc taaacccacc ccattgtaaa tccaacctct tgtgcagaat ccataggcgc
+     2281 gtagtaccaa tcacatcggt atccattggc catggttgct cagcgtgcca gcatttggag
+     2341 cattggcctc acaagcgcta caacaaccat ggcccgcatt ccccgatgac atcccagtga
+     2401 gcagcctttg ccattggcat gatcattatg ctgggggctt atggatgacc acaataggtt
+     2461 gcgataggaa accagaaatt ataaagactg actcagaaaa caatccacca aaatacagaa
+     2521 ctcaaaacta aaaaactaaa
+//
+
+LOCUS       XM_034623703             897 bp    mRNA    linear   INV 20-MAY-2020
+DEFINITION  PREDICTED: Drosophila innubila activity-regulated cytoskeleton
+            associated protein 2 (LOC117785606), mRNA.
+ACCESSION   XM_034623703
+VERSION     XM_034623703.1
+DBLINK      BioProject: PRJNA630747
+KEYWORDS    RefSeq.
+SOURCE      Drosophila innubila
+  ORGANISM  Drosophila innubila
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022995374.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila innubila Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..897
+                     /organism="Drosophila innubila"
+                     /mol_type="mRNA"
+                     /isolate="TH190305"
+                     /db_xref="taxon:198719"
+                     /chromosome="2R"
+                     /map="unlocalized"
+                     /sex="female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: AZ"
+     gene            1..897
+                     /gene="LOC117785606"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117785606"
+     CDS             68..658
+                     /gene="LOC117785606"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_034479594.1"
+                     /db_xref="GeneID:117785606"
+                     /translation="MTQLSDEQFRILIETIKSLAPQQEEQAEQKSKGSFSNCPVRFSG
+                     QRDHDAVDEFITAVETYKEVEGISDKDALKGISLLFNNIAVMWWKGVRRDAKTWEEAL
+                     QLLRDHFSPTKPSYQIYMEIFETKQMTGEVIDAFICKQRALLAKLPAGRHDEETELDF
+                     IYGLMLQKYREHIPRHEIKTFRDLLDRARNVERTRH"
+ORIGIN      
+        1 aagctgtccg tagcgaggca gttgagtttg tcgcagtgtg tttgtttatt tatattcaag
+       61 tcgagaaatg actcagctat cggatgaaca gtttcgcata ctcatcgaaa ctataaaatc
+      121 tttggcacca cagcaagagg agcaagcgga gcagaaatcg aagggcagct tcagcaattg
+      181 cccggttcgg tttagtgggc agcgtgatca tgacgccgtt gatgagttta taacggcggt
+      241 ggagacgtac aaagaggtgg aggggatcag cgataaagac gccttgaagg gcatttcgct
+      301 gctattcaac aacattgccg ttatgtggtg gaagggggtg cgacgcgatg caaaaacctg
+      361 ggaagaagct ctacaattgc tacgggatca cttctcaccc acaaagccat cctatcaaat
+      421 ctacatggag atctttgaaa caaaacaaat gaccggcgaa gtgatcgatg catttatttg
+      481 taaacaacgc gctcttttag ccaaattacc agcgggacga catgatgagg aaacggagtt
+      541 ggatttcata tatggcctga tgctacagaa gtatagagaa cacataccac gacacgaaat
+      601 caaaacattt cgcgatctct tagatcgcgc tcgaaacgtg gaacgtacaa gacattaaag
+      661 tttaataata atataaattt aagaatcttt ctgaatctaa caaacaatgg ctttgaatta
+      721 tttaagaagt tgtacatgta gttaatctga aattttttat tcaaaactgc ctttatcaaa
+      781 atttcatagt gttacgaata tttcgctatt gactgactgc aggaaatcta aagaaatgta
+      841 gaaatataga aaacttcata tagtttaaga tagtttaaat aaaagacaaa atttcaa
+//
+

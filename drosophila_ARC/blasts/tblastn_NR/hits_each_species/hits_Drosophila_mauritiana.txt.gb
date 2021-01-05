@@ -1,0 +1,176 @@
+LOCUS       XM_033297672            2383 bp    mRNA    linear   INV 08-APR-2020
+DEFINITION  PREDICTED: Drosophila mauritiana activity-regulated cytoskeleton
+            associated protein 1 (LOC117136670), mRNA.
+ACCESSION   XM_033297672
+VERSION     XM_033297672.1
+DBLINK      BioProject: PRJNA12217
+KEYWORDS    RefSeq.
+SOURCE      Drosophila mauritiana
+  ORGANISM  Drosophila mauritiana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046668.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila mauritiana Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2383
+                     /organism="Drosophila mauritiana"
+                     /mol_type="mRNA"
+                     /strain="mau12"
+                     /db_xref="taxon:7226"
+                     /chromosome="2R"
+                     /sex="male"
+                     /tissue_type="Whole Body"
+                     /dev_stage="adult"
+     gene            1..2383
+                     /gene="LOC117136670"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117136670"
+     CDS             96..860
+                     /gene="LOC117136670"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1"
+                     /protein_id="XP_033153563.1"
+                     /db_xref="GeneID:117136670"
+                     /translation="MAQLTQMTNEQLRELIEAVRAAAVGAAGSAAAAGGADASRGKGN
+                     FSACTHSFGGTRDHDVVEEFIGNIETYKDVEGISDENALKGISLLFYGMASTWWQGVR
+                     KEATTWKEAIALIREHFSPTKPAYQIYTEFFQNKQEDHDPIDTFVIQKRALLAQLPNG
+                     RHDEETELDLLFGLLNIKYRKHISRQGVHTFKDLLEQGRIIEHNNQEDEEQVAATKNT
+                     RGSKRITRCTYCSFRGHTFDNCRKRQKDRQEDQNEK"
+ORIGIN      
+        1 ctcagttcaa atcaccggcc gcattcgcta cactggcttt gtccgccgac tgaaccaaga
+       61 ttaatttgat cgcctaacct cacactgcag caaaaatggc ccagcttaca cagatgacca
+      121 acgagcagct acgcgaactg atcgaagcgg taagagcggc tgccgtgggc gccgctggaa
+      181 gtgcagcagc agccggagga gcagatgcca gcagaggcaa gggcaacttc tccgcctgta
+      241 cacacagctt cggcggaacc cgcgaccacg acgtggtcga agagttcatc ggcaacatcg
+      301 agacatacaa ggatgtggag gggatcagcg acgagaacgc cctgaagggc atctcgctgc
+      361 tgttctacgg tatggccagc acctggtggc aaggcgtccg caaggaggcc accacgtgga
+      421 aggaagccat cgccctcatc cgcgaacact tctcgcccac caagcccgcc taccagatct
+      481 acacggagtt cttccaaaac aagcaggagg accatgaccc cattgacacc ttcgtcatcc
+      541 agaagcgagc gctgctggcc cagctgccca acggtcgcca cgacgaggag acggaactgg
+      601 atcttctgtt cggtctgctg aacatcaaat accgcaagca catctcccgc cagggtgtcc
+      661 ataccttcaa ggatctcctg gaacagggcc gcatcatcga gcacaacaac caggaggacg
+      721 aggaacaggt cgccgcaaca aagaacaccc gtggctccaa gcgcatcacc cgatgcacct
+      781 actgcagctt ccggggccac accttcgaca actgccgcaa gcgccagaag gatcggcagg
+      841 aggatcagaa cgagaagtag gcgacataaa caacaccaag aggcagcagc caccgtcatc
+      901 catgacctca tcgctgctgc cgcccatcca aacagaactt ttcgtagcct cgccagccga
+      961 tcgacgtcag agagagagcc caacaaccgg agagctggag atggggagca gccacatcag
+     1021 cagcagcaac agccacatct cttcatactc ttcatactca ctggcaatcg gcgtgccggt
+     1081 aagcctcgac tagcatctga aatccgcaaa tccacgctgt ttgtattgct cttcgcaatg
+     1141 cctcgaaaac ggctctattt tcataatatt tcacgccgac ttgcggctaa tttggcacag
+     1201 aacgccagca tttggaaagc aataattttt attgcaacat tgaaccttta tttgcaacta
+     1261 gaaacttgat ttcgagaatc atcgggcggg gcggctgagg atcaggcatt tcgtccgtaa
+     1321 gatcggttat ttgcaatgga ggaatatgat attcgaacca gatggcgaag tgcctcggca
+     1381 tggagctcct attttcttcg aatctaatat tttgacattg cgagtccgaa atggatgttg
+     1441 cctgatctcc agccgcctcg cacaaccgtt gattctcaca accgccggct ccactttgtg
+     1501 ccggtcagcg gagaaaaagc gattagctgg ctaacaaaag agatgatcac tgtgttgaga
+     1561 gacatggcaa tcatcgcttt tgtaaccatt tatttgctga tttttcgtct gatcctggtc
+     1621 ctttgtgaag ctggcaaaaa accccccgtc cgatgaatgc ccacttagat ccttttgcag
+     1681 gaggatttcg acggtcccga aggcgggcgc cacccgattc cggtagcggc ttcggctgct
+     1741 tccggtttcc ggtgtcgcaa cccttcgcgt tgtcccccgt gcgagtggag ctacagtggg
+     1801 cgtgaaccgg gcaaaaccta aatttcttcg gaaatttaaa aaaccaacaa attttttgac
+     1861 ttttgtcaag acaattcgaa ctcacattgc actacgatgg ctaacgattc gccatccgtg
+     1921 cggttggcaa gctaaaactg tctcttcgag atcacgggcc tagggctgtt taacattcga
+     1981 cccaaacgat ttcgcgacag gcttcggcac gccagtatcc atcacaaaac acacaaaagc
+     2041 caggggctgg gacgcgtcac tgccgtgctc ctccagccgg cacagtcact ccccgccccc
+     2101 aaatcaagca aaaccggccg cttgtgcaga tgacataggt gcgaccagcc atccgaccac
+     2161 ccggaaccct tccggaccat ggtgaccaga cgacttgcac cgtgcgccat caacaggagt
+     2221 cttggccaca agcacagcaa tagtttggcc cgtttcccac acagaaacca aaagtggggg
+     2281 cctatggaag accacaagtg gctgcgtgga tctgctaaaa atataaaact gtaaacctaa
+     2341 agactgaaac cagaaaacaa ccattaaact cagaaacgga aaa
+//
+
+LOCUS       XM_033299749             725 bp    mRNA    linear   INV 08-APR-2020
+DEFINITION  PREDICTED: Drosophila mauritiana activity-regulated cytoskeleton
+            associated protein 2 (LOC117137976), mRNA.
+ACCESSION   XM_033299749
+VERSION     XM_033299749.1
+DBLINK      BioProject: PRJNA12217
+KEYWORDS    RefSeq.
+SOURCE      Drosophila mauritiana
+  ORGANISM  Drosophila mauritiana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046668.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila mauritiana Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..725
+                     /organism="Drosophila mauritiana"
+                     /mol_type="mRNA"
+                     /strain="mau12"
+                     /db_xref="taxon:7226"
+                     /chromosome="2R"
+                     /sex="male"
+                     /tissue_type="Whole Body"
+                     /dev_stage="adult"
+     gene            1..725
+                     /gene="LOC117137976"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117137976"
+     CDS             110..691
+                     /gene="LOC117137976"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_033155640.1"
+                     /db_xref="GeneID:117137976"
+                     /translation="MTQMSDEQFRIFIETIKSLGPIKEEPPSKGSFSNCTVRFSGQRD
+                     HDAVDEFINAVETYKEVEGISDKDALKGLPLLFKSIAVVWWKGVRRDAKTWSDALQLL
+                     RDHFSPTKPSYQIYMEIFETKQSYDEVIDSFICKQRALLAKLPEGRHDEETELDFIYG
+                     LMLSKYRESIPRHEVKTFRELLDRGRTVERTRH"
+ORIGIN      
+        1 ccccagccgt caaacgattg gggcttgaaa gcggaattga gctggtctat ttcgggcgct
+       61 agctcactta ttttttaaac ccaaacaaac ccaagaaacc ggcaacaaaa tgacgcaaat
+      121 gtccgacgaa cagtttcgca tattcatcga aaccatcaaa tctctggggc caatcaaaga
+      181 ggagccgcca tccaagggta gcttcagcaa ctgcacggtg agattcagtg gccagcggga
+      241 tcacgatgcc gtggacgagt tcatcaatgc cgtggagacg tacaaggagg tggagggcat
+      301 cagtgacaag gatgcgctga agggtctgcc gctgctcttc aagagcattg cggtggtgtg
+      361 gtggaagggt gtgcgccggg atgccaagac ctggtcggat gccctccagc tgctgcgcga
+      421 tcacttctcg cccaccaaac cctcctacca gatctacatg gagatcttcg agacaaagca
+      481 gtcctacgac gaggtgatcg actcattcat ctgcaagcag cgagcgctcc tggccaagtt
+      541 gccggaggga cgacacgacg aggaaacgga actggacttc atttacgggc tgatgctgtc
+      601 caagtatcgg gagagcatac cccggcacga ggtcaaaacc ttccgggagc tactcgatcg
+      661 ggggcgaact gtggagcgca caaggcactg aagttagtta agttagttgt ataactataa
+      721 ataaa
+//
+

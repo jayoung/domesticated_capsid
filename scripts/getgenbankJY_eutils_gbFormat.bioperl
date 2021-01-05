@@ -3,6 +3,7 @@
 use warnings;
 use strict;
 use Bio::DB::EUtilities;
+use Getopt::Long;
 
 ##### this version of the script I will NOT edit the output format. Useful when other scripts depend on it. see getgenbankJY_eutils.bioperl for a more flexible version of the script
 
@@ -23,6 +24,23 @@ my $returntype = "gb";
 #my $chunksize = 500;
 my $chunksize = 100;
 
+my $useAPIkey = 1;
+my $APIkeyFile = "/home/jayoung/NCBIapiKey.txt";
+
+## get any non-default options from commandline
+GetOptions("db=s" => \$database,
+           "outfmt=s" => \$returntype,
+           "chunksize=i" => \$chunksize,
+           "useAPIkey=i" => \$useAPIkey,
+           "APIkeyFile" => \$APIkeyFile
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+
+########################### NOTES:
+#### see http://www.bioperl.org/wiki/HOWTO:EUtilities_Web_Service
+#### and http://www.bioperl.org/wiki/HOWTO:EUtilities_Cookbook
+#### see also get_seqs.bioperl
 
 ########################### script starts here - do not edit below this line
 
@@ -31,6 +49,19 @@ print "\n\nStarting.  Querying the $database database.  Returning sequences in $
 print "\n\nWARNING - if you are expecting to download large sequences, check output sequence size, as sometimes sequence retrieval fails without error partway through download\n\n";
 
 if (@ARGV == 0) { die "\n\nterminating - please specify file(s) containing accession(s), one per line\n\n"; }
+
+my $APIkey = "";
+if ($useAPIkey == 1) {
+    if (!-e $APIkeyFile) {
+        die "\n\nterminating - you specified to use this API key file but it does not exist: $APIkeyFile\n\n";
+    }
+    print "\n\nUsing API key from file $APIkeyFile\n\n";
+    open (API, "< $APIkeyFile");
+    while (<API>) {
+        $APIkey = $_; chomp $APIkey; 
+    } 
+    close API;
+}
 
 print "\n";
 foreach my $file (@ARGV){
@@ -54,9 +85,13 @@ foreach my $file (@ARGV){
         }
         if ($acc =~ m/\t/) {$acc = (split /\t/, $acc)[0];} ## take first field on line
         if ($acc =~ m/\s/) {$acc = (split /\s/, $acc)[0];} ## take first field on line
-        push @accs, $acc;}
+        push @accs, $acc;
+    }
     close IN;
     my $num = @accs;
+    if ($num == 0) {
+        die "\n\nterminating - file $file did not contain any accessions\n\n";
+    }
     #print "getting these accs\n";
     #foreach my $acc (@accs) {  print "    $acc\n";}
     #die;
@@ -71,11 +106,22 @@ foreach my $file (@ARGV){
         #print "start $retstart end $end slice @accslice\n";
        # print "start $retstart end $end\n";
         
-        my $factory = Bio::DB::EUtilities->new(-eutil   => 'efetch',
+        my $factory;
+        if ($useAPIkey==0) {
+            $factory = Bio::DB::EUtilities->new(-eutil   => 'efetch',
                                                -db      => "$database",
                                                -id      => \@accslice,
                                                -email   => 'jayoung@fhcrc.org',
                                                -rettype => "$returntype" );
+        } else {
+            $factory = Bio::DB::EUtilities->new(-eutil   => 'efetch',
+                                               -db      => "$database",
+                                               -id      => \@accslice,
+                                               -email   => 'jayoung@fhcrc.org',
+                                               -api_key => $APIkey,
+                                               -rettype => "$returntype" );
+        }
+        
         eval { 
             ### this seems to fail if number of seqs was too high.
             my @results = $factory->get_Response->content;

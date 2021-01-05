@@ -1,0 +1,71 @@
+LOCUS       XM_038105824             546 bp    mRNA    linear   INV 11-DEC-2020
+DEFINITION  PREDICTED: Plutella xylostella activity-regulated cytoskeleton
+            associated protein 2-like (LOC119690528), mRNA.
+ACCESSION   XM_038105824
+VERSION     XM_038105824.1
+DBLINK      BioProject: PRJNA682186
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Plutella xylostella (diamondback moth)
+  ORGANISM  Plutella xylostella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Yponomeutoidea; Plutellidae; Plutella.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_024010782.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Plutella xylostella Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..546
+                     /organism="Plutella xylostella"
+                     /mol_type="mRNA"
+                     /isolation_source="Laboratory colony"
+                     /db_xref="taxon:51655"
+                     /chromosome="Unknown"
+     gene            1..546
+                     /gene="LOC119690528"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:119690528"
+     CDS             1..546
+                     /gene="LOC119690528"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037961752.1"
+                     /db_xref="GeneID:119690528"
+                     /translation="MAQKADEKPKSSISMSDTQFKELLTTVMTGISSASPTRTSKTFT
+                     SCTARFSGIRESSQVESFLAAVNTFKEVEKLDDALALAGLPLILTDDAAIWWQGSKDN
+                     VLTWKDFTDRLRSTFAPKKMAYKIYQEIIEIKQDSQTPTEIFVAEKRALLAQLPKPTH
+                     SDQQQIDLVFGQIRFEIREKI"
+ORIGIN      
+        1 atggctcaga aagccgatga aaagccaaaa tcgagcatta gcatgtcaga tactcagttt
+       61 aaagaactcc taactactgt gatgaccggc atttcaagcg ccagtcctac cagaacatcg
+      121 aagaccttca cgagttgcac tgccaggttt tcaggaataa gagaatcatc ccaggttgag
+      181 tcatttttgg ccgccgtcaa cactttcaaa gaagtagaaa agttggatga tgcacttgcg
+      241 ctggcaggcc tcccacttat attgactgac gatgcagcaa tttggtggca aggtagtaaa
+      301 gataacgtcc taacatggaa agatttcacg gatcgtttac gtagcacatt tgcgccaaag
+      361 aagatggcct ataagatcta ccaagagatc atcgaaatca agcaggactc gcaaacgcct
+      421 acagaaatct ttgtagcaga aaaacgtgca ttgttagcac agttaccaaa accgacccat
+      481 tccgatcaac aacaaattga tttggtattt ggacagatac ggttcgagat tcgtgaaaag
+      541 atataa
+//
+

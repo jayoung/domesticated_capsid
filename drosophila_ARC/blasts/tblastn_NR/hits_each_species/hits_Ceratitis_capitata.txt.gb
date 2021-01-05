@@ -1,0 +1,553 @@
+LOCUS       XM_004521932            2672 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101450039
+            (LOC101450039), mRNA.
+ACCESSION   XM_004521932
+VERSION     XM_004521932.3
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019376378.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_004521932.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2672
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..2672
+                     /gene="LOC101450039"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 ESTs, 8 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:101450039"
+     CDS             125..880
+                     /gene="LOC101450039"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101450039"
+                     /protein_id="XP_004521989.1"
+                     /db_xref="GeneID:101450039"
+                     /translation="MSQSEDIATDRLQSLIDTLRKASTTVHTKGSFSNCSSHFRGQRD
+                     HGAVEEFIHSIETYKEIEAISDEDALKGLSLLLHGMASTWWQGVRKEAKTWTDAIGLI
+                     REYFSPAKPPYQIYLEIFSRKQDERTAIDVFIYQKRALLAQLPAGRHDECAELDLIYG
+                     LLNIKYRRHIQRQDVQTFRQLLEQGRIIEHNNLEYDTQQLIQATKRQKRCSFCNFRGH
+                     NYEECRKRRNEGQGNKSRDGKSDAAASETKDEQ"
+ORIGIN      
+        1 gaacgtcgca atcaaaatca gtctcgtacg accgaagcgt ttgaatagtt ttaataaatt
+       61 cgccaataga aattggcttt tgtattatcg tattaatagt aaagtaattt tagtttttcg
+      121 caaaatgtca cagtccgaag acatagccac cgaccggctg caatccttaa tcgacaccct
+      181 gcgtaaagcc agcaccactg tccacacgaa aggctcgttc agcaactgca gcagccactt
+      241 ccgtgggcaa cgcgatcacg gggccgtcga agagtttata cattccatcg agacgtataa
+      301 agagatcgaa gcgatcagcg atgaagatgc gctcaaaggt ctatcgctac tgttacacgg
+      361 catggcctcc acgtggtggc agggtgtacg taaagaggcc aaaacctgga cggatgctat
+      421 tgggctaata cgagaatact tctcgcccgc caagccgccg tatcaaattt atctggaaat
+      481 cttcagccgc aaacaagatg aacgtacagc cattgatgtc ttcatctatc aaaagcgtgc
+      541 gctactcgct caactgccgg cgggacgaca cgacgagtgt gctgaattgg acttgattta
+      601 cggtttgctg aatattaaat accgccgaca catacaacga caagatgtgc agacattccg
+      661 tcaactgctg gaacagggac gtatcatcga acacaacaac ttggagtatg atacgcagca
+      721 actaatacag gcgacgaaac gtcaaaaacg ctgcagtttc tgtaatttcc gcggtcacaa
+      781 ctatgaggaa tgtcgaaagc gccgaaatga agggcaaggg aataaaagta gagacgggaa
+      841 aagtgatgca gcggcaagtg agacgaaaga tgagcaatga gctggtgctc gtcagccagc
+      901 ttgcagtagc tgaattcata caacaactgc ccctccacaa accagcaacc aagggtttgc
+      961 caaccaacct caaccaaagc agtgatcgtc gagcacgaga cgcacgttaa tttatataat
+     1021 aagacagttt agtgaaatat aatttgtaaa tccacacgca cacatgcaca caagccgcac
+     1081 cgcaaccaac cgacgggatg ttcattagtg tcctgaaatc tattgcaatt ttgtttaagt
+     1141 tgtaagggca gcgccgattg ttgttcaggc tgcctttatg agctcgcaaa ttgcaataga
+     1201 agagcggatc acaatgacac ttccaacact accgataccc acccccactc caaattcatt
+     1261 caacgcaaac gctatactac attccggcct acacggccca agttggctga acccacgcca
+     1321 gctcttattt aagaatgaaa aaaaacttct ggttatcacc aaaaaaaaaa aaccagaagt
+     1381 ttacccacac acgagtcact ctcggcacca gcgctgattt gttattgtcc cagtagctct
+     1441 ttccatttcc attccgactt cggggatagc ataaaaaatg tctagctttg cttttttgta
+     1501 agtttcgcgc aagctcggtt actaaacagg tatttgaaat cttctcgcag atctcgactg
+     1561 cttgatttac aaccgatcta agtatgttca actgggagtc ggaaatggtg tatggagtgc
+     1621 gctcaagtgg acggtaacat gattccagtg ctgcttgctg aacagtgact gcaaatgcgt
+     1681 tgcactccat tgctgatttt taaagttcaa agggtcaacg aggagggtgt tcacaaatag
+     1741 tgcgttctcg ctgctattgt gaactgtaga ctccactgtt ataccttgag ccttgaaggt
+     1801 ccgcaagtga gtgccgcaaa tcgtgttgtt gcctgtgaaa ttgttgtacg agattttgtg
+     1861 atttcttgcc gttaaaaatg tgtgtatttg agttgatgtt gcattgtctt tgacgtacat
+     1921 tcgttcactc tctcgcacgc ttagccttaa ctacatgtgt tttccttcgg gagcacattt
+     1981 catatataca cctgagcgcg tggttgagtc tcctcggttg ccatcactgg cactgtaata
+     2041 tcaactcgtc tacatacata tatttatcgg tagtagagcc tcggaatctt cgtgcaacaa
+     2101 ttctcatatg cgacaaccac aacgacgggc acttgaacgt gcgcccccct ctcctcattt
+     2161 tatttgtaca acgatggctc attcgtcgcc attcgtactg ttggcacgcc aaactgacgc
+     2221 acagctaaat tgttgttgca cgttggattt gtggcacgtc aacccagtct acactctttc
+     2281 cttggttcat gattcatcac agcattcgct ttggctttac gctccagaaa tgttgtgatt
+     2341 gtcctgaacc cagtattcat tcgtcattcc catgtactat tcccacatta tttgatggcg
+     2401 ccatctaagc ctgacattgg tcttggccac ttggttgttt cacatcggat gcgagcgcca
+     2461 atcaaagagt ctggagcaac tggcccgcac atctacatac gttcatacgg tgtgtaggta
+     2521 tcgatgacgg acgcttcgta gccacaccag tttataagct ttcttttggc atcgagtaat
+     2581 gtgggaattc gcatggcaat ggcttttgaa tgcataaaac tctaaaatct atatcaaatc
+     2641 tctactgaaa ccataccaaa tctaaaaaaa aa
+//
+
+LOCUS       XM_004521936             924 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101450764
+            (LOC101450764), mRNA.
+ACCESSION   XM_004521936
+VERSION     XM_004521936.3
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019378535.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_004521936.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..924
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..924
+                     /gene="LOC101450764"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:101450764"
+     CDS             204..842
+                     /gene="LOC101450764"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101450764"
+                     /protein_id="XP_004521993.1"
+                     /db_xref="GeneID:101450764"
+                     /translation="MSTGRMSDEQFQRLLETIRALGPQHTEQQQQQQQQQQANKSKSS
+                     FGNCKVRFYGQRDNDAVEEFINAIETYKDMEDITDQDALKGLPLLFQGIASTWWKGVR
+                     RDAKSWTDALQLLRDHFSPTKPPYQIYVEIFDSKQGGNMPIDTFVCQKRALIAKLPEG
+                     RHDVETELDFVYGLLDSKYQQQIPRHEVKTYRELLEKGRNVERHMRNGGGNR"
+ORIGIN      
+        1 tgacgagcca accgactggc ggagcttttc gcacgcagac aaccagtaaa gagaacgctc
+       61 gccaaaaacg cgatgccaaa aaggaaaaca gtcaactctt agctgtgcca gcacaagcta
+      121 ccgcggtttg tcgctcgctc gttgtgctcc aacgcaataa atagaccaga cgcagacgag
+      181 aaaacacaaa gacctacgcc gaaatgtcga ctggtcgtat gtctgatgag caatttcaac
+      241 gactgctcga aacaatacgc gctttggggc cacaacacac cgaacaacaa caacagcagc
+      301 agcagcaaca acaagcaaac aaatccaaaa gcagctttgg caattgcaag gtacgtttct
+      361 atggacaacg tgacaacgat gccgttgaag agttcatcaa tgccattgaa acctataagg
+      421 atatggaaga tattaccgat caagatgcac tgaaaggtct accactactc tttcaaggta
+      481 ttgcatccac atggtggaaa ggtgtacgtc gtgatgcgaa gtcttggaca gatgcgttgc
+      541 aattgctgcg tgatcacttt tctcctacaa aaccacccta tcaaatatat gtggagattt
+      601 ttgattccaa acaaggcggc aacatgccaa ttgatacttt tgtttgtcag aagcgtgcgc
+      661 tgatagccaa attgccggag ggtcgtcatg atgtggagac agaattggat tttgtttacg
+      721 gtctgttaga ttcgaaatat caacaacaaa taccgcgtca tgaagtgaaa acttatcgcg
+      781 agctgttgga gaaaggtcgc aatgtggagc ggcatatgcg gaacggtggc ggcaatagat
+      841 gaacagttgt gatgccgatg ttgcactaaa ataattttag ttttaattca cttaggctat
+      901 ttagtggtaa gaattttttt taat
+//
+
+LOCUS       XM_004521940             832 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101451679
+            (LOC101451679), mRNA.
+ACCESSION   XM_004521940
+VERSION     XM_004521940.3
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019376378.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_004521940.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..832
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..832
+                     /gene="LOC101451679"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 6 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:101451679"
+     CDS             98..760
+                     /gene="LOC101451679"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101451679"
+                     /protein_id="XP_004521997.1"
+                     /db_xref="GeneID:101451679"
+                     /translation="MSQQSTIHLTTEQLQAMLDSVRQAAVAAANCAAPATVKMRGTFM
+                     YCNSRLGDQHNHEYVEEFIQSVLAYKDMESISDEDALKSIAILFYSEAALWWQGVRGA
+                     KQVHTWNDAIALIREHFAPTKPAYELYMDLFDEKQDDDTKISTFICVNRALLAQLPEG
+                     RHDEETELDMVYGLLHIKYRREILRQDVKTFEDLLERGRIVEHNWSQTERMKCKKKHA
+                     EN"
+ORIGIN      
+        1 ttgggtattg tacaaagtgc agtctctcgc gtggagctgc caccagtact cacacaacgt
+       61 cacgcagcac ttatacacgc acaacgctct tgtcgcaatg tcacaacaat ccaccatcca
+      121 cttgaccacc gaacaactgc aggcaatgct cgactcggtg cgccaagccg ccgtagcagc
+      181 agccaattgc gccgcaccag caacagtgaa gatgcgtggt accttcatgt attgcaacag
+      241 tcggcttggt gatcaacata atcatgaata tgtcgaggag ttcatacaat ccgtattggc
+      301 ttataaagat atggaatcca taagtgatga ggatgcgctc aaaagtattg ctatactctt
+      361 ctacagtgag gcggcgctat ggtggcaggg tgtacgtggt gctaagcagg tgcacacttg
+      421 gaatgatgct atcgctttga tacgtgaaca tttcgcgccc acgaagccgg cctatgaact
+      481 ctacatggat ctatttgatg agaagcagga tgatgatacc aaaattagca ctttcatttg
+      541 tgtaaatcgt gcgctactcg cacaactacc cgaaggacga cacgatgagg agacggagtt
+      601 ggatatggtc tacggtttgc ttcatatcaa atatcggagg gaaatattgc ggcaagatgt
+      661 gaaaacattc gaagatttgc ttgagagagg gcgtatcgtt gagcataatt ggagtcagac
+      721 agagagaatg aaatgtaaaa agaaacacgc ggagaattag atgagtgaag agttcgaaag
+      781 aactctacac taccccttct ccttcaaata tatataatta tgttttacta aa
+//
+
+LOCUS       XM_004521941            1087 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101451854
+            (LOC101451854), mRNA.
+ACCESSION   XM_004521941
+VERSION     XM_004521941.3
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019378535.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_004521941.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1087
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..1087
+                     /gene="LOC101451854"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 7 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:101451854"
+     CDS             169..975
+                     /gene="LOC101451854"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101451854"
+                     /protein_id="XP_004521998.1"
+                     /db_xref="GeneID:101451854"
+                     /translation="MAQPVVQMTAEQLQSLIESVRTAAVTGIINTTPPTTIQGKGSFT
+                     NCTSRFGGQRQQEAVEEFITSIVTYKELETISDADALKGLSLLFYGIASTWWQGVRKE
+                     AKTWCDAITLIREHFSPTKPAYQVYLELFERKQDNFTPIDTFICHKRALLAQLPEGRH
+                     SEEIELDLIYGLLNIKYRKNILRQDLKTFRELVEKGRVIEQNNLESEVRVPCSQRASK
+                     RSHPIDYTEVLHPRKVNRYRFQRNVQNNTNMPQAPPLTTQPLGNAVSSRQ"
+ORIGIN      
+        1 gcaacgagca gacacaccat cgtccaaaat tatcattgta aacattcgcg ttattgcaaa
+       61 aaaaaaaaac atacatatac atcaaattgg aaaaattaaa taaatttacc agcatttaaa
+      121 tcattttcac cactcgccca taaagttacc ttttctccat ccaacatcat ggctcaaccg
+      181 gtcgtccaaa tgaccgctga acaactacaa tcactgatcg aatcggtgcg cacggccgcc
+      241 gttacaggca ttatcaatac cacaccgcca accaccattc aaggcaaagg ctcgttcacc
+      301 aactgcacca gtcgtttcgg tggccaacgc cagcaggaag ccgttgagga gttcatcacc
+      361 tcgattgtga catataaaga acttgagacg atcagcgatg cggatgcgtt gaaaggttta
+      421 tcactgcttt tctacggcat agcctccact tggtggcagg gtgtgcgcaa agaagccaaa
+      481 acttggtgtg atgccattac actgatacgc gaacactttt cacccaccaa gccggcttat
+      541 caggtttact tggagttatt tgagcggaag caggataact ttacgccgat tgatacattt
+      601 atctgtcaca agcgtgcact actcgcccag ttacctgagg gtcgtcacag tgaggaaatt
+      661 gaattggatt tgatttatgg tttgctgaat atcaaatatc gtaaaaatat tctgagacaa
+      721 gatttgaaga cattccgcga attggtggag aagggtcgtg ttattgaaca aaataatttg
+      781 gaatcagaag tgagggttcc ttgttcacag cgggcttcga aacgttcaca cccaatcgac
+      841 tacactgaag tgttgcaccc aagaaaggtg aatagatata gatttcagcg gaatgtgcaa
+      901 aataatacta acatgccaca agcaccaccg ctgacaacgc agccactagg caacgctgtc
+      961 tcctcacgtc aatgaggaaa ttccatgaaa aaattgttta tttgtaaaat acatatgtgt
+     1021 gtatgtatgt atgtatgtaa ttaactcaat gataacaatt gttaatagca tttctctcta
+     1081 aataata
+//
+
+LOCUS       XM_012300086            2972 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101450402
+            (LOC101450402), mRNA.
+ACCESSION   XM_012300086
+VERSION     XM_012300086.2
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019376378.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_012300086.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2972
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..2972
+                     /gene="LOC101450402"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 8 ESTs, 8 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:101450402"
+     CDS             219..959
+                     /gene="LOC101450402"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101450402"
+                     /protein_id="XP_012155476.1"
+                     /db_xref="GeneID:101450402"
+                     /translation="MAQTVVQMTAEQLQSLIESVRLAAVAGASSAAPATIHTKGSFTN
+                     CTSRFGGQRDHEAVEEFITSIVTYKEIESISDEDALKGLSLLFYGLASTWWQGVRKEA
+                     KTWGDAIALIRDHFSPTKPAYQIYLEIFEQKQEDSVPIDTFVCQKRALLAQLPEGRHD
+                     EETELDLVYGLLDIKYRKNILRQDLKSFRELLEKGRIIEHNNLESEAVQGGPVRGMKR
+                     TKRCTHCNFRGHTFEECRKRKTASAGDD"
+ORIGIN      
+        1 cgaagctaaa ttcagtctct tacgaccata gcaagtgaaa aagtttaaaa tttgtagcag
+       61 gaagacattc gccaacaaca aattggcttt gatcgctgct acccaacaat aaaataaaac
+      121 actgaaaaac aacaataaca aatataagat taaaagtgcg tgtgtcagtc ttaagttctt
+      181 aactacaaag ttcacattca actcaacaca acaacaaaat ggcacaaacc gtcgtccaaa
+      241 tgaccgccga acagttgcag tcactcatcg aatcggttcg cttggctgcc gtcgctggtg
+      301 ccagcagcgc tgcaccagcc accattcata ccaagggttc tttcaccaac tgcaccagcc
+      361 gtttcggtgg tcaacgcgac catgaggcgg tcgaggagtt catcacctcg attgtgacat
+      421 acaaagaaat cgagtcgatt agcgatgagg atgccctcaa gggtctatct ttactgttct
+      481 atggattggc gtccacttgg tggcaaggcg tgcgtaaaga agcgaagact tggggcgatg
+      541 ccattgccct gatacgcgat cacttctcac ccaccaagcc ggcgtatcag atttatttgg
+      601 aaatctttga gcagaagcag gaggactctg tgccaattga cactttcgtt tgccagaaac
+      661 gtgcgctcct agcacaattg cctgagggac gtcacgatga ggagaccgaa ttggatttgg
+      721 tttatggttt gttggatatc aaatatcgta agaatattct acgtcaagat ttgaaatcat
+      781 tccgtgaatt gctggagaag ggacgtatca tcgaacacaa caacctggag tcggaggcag
+      841 tgcaaggtgg tccggtgcgt ggcatgaaac gcaccaaacg ctgcactcac tgcaacttcc
+      901 gcggccacac gttcgaggag tgccgcaaac gcaaaacggc ttccgccggt gatgattaaa
+      961 tgtaggcacc atacacctct tcagcagcta aaaccagcga tgcacaaaac catatccgat
+     1021 gactacacac aatgcacctg acaaaaacac agcacaccac atcacaaaga acaaacgtcg
+     1081 gacgatgatg tcatcagaca gtgacgactt cgcccgtgca gcttacgtcg cagtcaaatt
+     1141 actaaagcaa aactttcgct ctcaactacg aaacagcaaa gcagcgtcga actttggtcc
+     1201 ctttggcgta acgcggcaac agcagcaaca acactactag gttttagtat tagcacaaac
+     1261 atacatacat acaagcatac atacacacat tattatcgtg gctctgagtt gctcaaagtt
+     1321 ctcttcaaat ctaaaggaaa ttcgttttct aatagtggcg aagagagcgg cgggcgcttg
+     1381 gagccacata ccacaaacgc tgtgccaagc acggctactc atggctgcga acgccataca
+     1441 acaaccaatc ttctaaaaga ctaaatctta atgaagagca aagtactatt tgaatttgaa
+     1501 accaactcca gttcttcaga actgacaatc gagccacgat tcagatcagc caagcgtcag
+     1561 taatactagg cgctcttagc ttcgcttagc atttcttgca acaaacaagt ttctttcttc
+     1621 catcgatgtg agtagtgatt tcctgctctg ctggtctcga ggtgagagtt acgtttgctt
+     1681 gactaagcag ttgagattct tacggggctc tcagttgctc tgcaggctat tacgtgtctc
+     1741 ctacctttgg ctgtgagtgc aagttttcat tgcttttcgg tggaagagag atatgtttgt
+     1801 tttgttgttt gaatttctaa ggtctgaagc tgattgcgct ttttatgaac ttgactgtga
+     1861 agatgagtgg ctcaaaaccc cgctgcattc gtctgcggac ggctgtggtt caagcgctgt
+     1921 agagtgactg tttaattggt gcatttttct gcattttccg catatgaagg gggcatgttg
+     1981 atgtctggtg ggtacttttc gcggcgtctc ggcgttgtgc caagcgttca tcagctcaat
+     2041 ttgccgctgg cagtttgtgg caaatgcaga accgttccaa tttaactcaa actatgaata
+     2101 tggcttttga gctcggtcag ccgctctcga atttggcaac aacttaaaaa aaccgttgca
+     2161 tttggaggtg ctgtctgaca ttttgtatac cgaattgata ccgtttggct atgcgttcgg
+     2221 caatgcgggt ttgacgggct catcttttgc tgcttccgtt cattgtattt cccctcgggg
+     2281 acttgctttg tgcgtgtggg cgtcaggagg tgcttccgtt gaattcattt ttctctcgtt
+     2341 tagccgacat atcagtgcgg tttgcaatca tgttgtcggt aactccaaat gtggcaaaac
+     2401 cacaacaaac aaaaaatcgc gtttaagcac acttttggac taaattgtac aacgatggct
+     2461 atgcgttcgc cattcgtaca attggcacgc cgaattgacg agtcgcagtg taaattcctt
+     2521 tgaattactc cgcgacgtca agcttttggc tcgccaacaa aaatgcattc ctgcattcac
+     2581 tcacactttc cagctgagat cagacgctcg tttttcctcc gaaacgaagt gttgacctcg
+     2641 gctctcataa tgaaaaacag catttctcat gtgttatgtg ttatttcatg ctcgcagtat
+     2701 tgaaattgag acatcaaagc gtgtgtacca ccaatcgaac ttcacacgag agcgccataa
+     2761 ttgcggagga cttggccgaa aaaacgtctg aagtgaaact ggtggcatca ccggctaata
+     2821 gtttggcaaa gttactggaa aatgagtttg agatattaat ttcacctgag gaatgctgcc
+     2881 ttactttaca ctttatacgg tttaagtaac taattctttg taactagcag taagcattgg
+     2941 aagaggaagt aaaaattaaa aaaaaaaaaa aa
+//
+
+LOCUS       XM_012300087            2954 bp    mRNA    linear   INV 18-DEC-2017
+DEFINITION  PREDICTED: Ceratitis capitata uncharacterized LOC101450586
+            (LOC101450586), mRNA.
+ACCESSION   XM_012300087
+VERSION     XM_012300087.2
+DBLINK      BioProject: PRJNA201381
+KEYWORDS    RefSeq.
+SOURCE      Ceratitis capitata (Mediterranean fruit fly)
+  ORGANISM  Ceratitis capitata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Ceratitis; Ceratitis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019378535.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 21, 2017 this sequence version replaced XM_012300087.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ceratitis capitata Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2954
+                     /organism="Ceratitis capitata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7213"
+                     /chromosome="Unknown"
+     gene            1..2954
+                     /gene="LOC101450586"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 ESTs, 8 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:101450586"
+     CDS             217..957
+                     /gene="LOC101450586"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC101450586"
+                     /protein_id="XP_012155477.1"
+                     /db_xref="GeneID:101450586"
+                     /translation="MAQTVVQMTAEQLQSLIESVRLAAVAGASSAAPATIHTKGSFTN
+                     CTSRFGGQRDHEAVEEFITSIVTYKEIESISDEDALKGLSLLFYGLASTWWQGVRKEA
+                     KTWGDAIALIRDHFSPTKPAYQIYLEIFEQKQEDSVPIDTFVCQKRALLAQLPEGRHD
+                     EETELDLVYGLLDIKYRKNILRQDLKSFRELLEKGRIIEHNNLESEAVQGGPVRGMKR
+                     TKRCTHCNFRGHTFEECRKRKTATAGDD"
+ORIGIN      
+        1 aagctaaatt cagtctctta cgaccatagc aagtgaaaaa gtttaaaatt tgtagcagga
+       61 agacattcgc caacaacaaa ttggctttga tcgctgctac ccaacaataa aataaaacac
+      121 tgaaaaacaa caataacaaa tataagatta aaagtgcgtg tgtcagtctt aagttcttaa
+      181 ctacaaagtt cacattcaac tcaacacaac aacaaaatgg cacaaaccgt cgtccaaatg
+      241 accgccgaac agttgcagtc actcatcgaa tcggttcgct tggctgccgt cgctggtgcc
+      301 agcagcgctg caccagccac cattcatacc aagggttctt tcaccaactg caccagccgt
+      361 ttcggtggtc aacgcgacca tgaggcggtc gaggagttca tcacctcgat tgtgacgtac
+      421 aaagaaatcg agtcgattag cgatgaggat gccctcaagg gtctatcttt actgttctat
+      481 ggattggcgt ccacttggtg gcaaggcgtg cgtaaagaag cgaagacttg gggcgatgcc
+      541 attgccctga tacgcgatca cttctcaccc accaagccgg cgtatcagat ttatttggaa
+      601 atctttgagc agaagcagga ggactctgtg ccaattgaca ctttcgtttg ccagaaacgt
+      661 gcgctcctag cacaattgcc tgagggacgt cacgatgagg agaccgaatt ggatttggtt
+      721 tatggtttgt tggatatcaa atatcgtaag aatattctac gtcaagattt gaaatcattc
+      781 cgtgaattgc tggagaaggg acgtatcatc gaacacaaca acctggagtc ggaggcagtg
+      841 caaggtggtc cggtgcgtgg catgaaacgc accaaacgct gcactcactg caacttccgc
+      901 ggccacacgt tcgaggagtg ccgcaaacgc aaaacggcta ccgccggtga tgattaaatg
+      961 caggcatctc ttcagcagct aaaaccggcg atgcacaaaa ccatatccga tgacgacaca
+     1021 caacgcacct gacaaaagca cagcacacca catcacaaag aacaaacgtc ggacgatgat
+     1081 gtcatcacac agtgacgact tcgcccgtgc agcttacgtc gcagtcaaat tactaaagca
+     1141 aaactttcgc tctcaactac gaaacagcaa agcagcgtcg aactttggtc cctttggcgt
+     1201 aacgcggcaa cagcagcaac aacactacta ggttttagta ttagcacaaa catacataca
+     1261 tacaagcata catacacaca ttattatcgt ggctctgagt tgctcaaagt tctcttcaaa
+     1321 tctaaaggaa attcgttttc taatagtggc gaagagagcg gcgggcgctt ggagccacat
+     1381 accacaaacg ctgtgccaag cacggctact catggctgcg aacgccatac aacaaccaat
+     1441 cttctaaaag actaaatctt aatgaagagc aaagtactat ttgaatttga aaccaactcc
+     1501 agttcttcag aactgacaat cgagccacga ttcagatcag ccaagcgtca gtaatactag
+     1561 gcgctcttag cttcgcttag catttcttgc aacaaacaag tttctttctt ccatcgatgt
+     1621 gagtagtgat ttcctgctct gctggtctcg aggtgagagt tacgtttgct tgactaagca
+     1681 gttgagattc ttacggggct ctcagttgct ctgcaggcta ttacgtgtct cctacctttg
+     1741 gctgtgagtg caagttttaa ttgctcttcg gtggaagaga gatatgtttg ttttgttgtt
+     1801 tgaatttcta aggtctgaag ctgattgcgc tttttatgaa cttgactgtg aagatgagtg
+     1861 gctcaaaacc ccgctgcatt cgtctgcgga cggctgtggt tcaagcgctg tagagtgact
+     1921 gtttaattgg tgcatttttc tgcattttcc gcatatgaag ggggcatgtt gatgtctggt
+     1981 gggtactttt cgcggcgtct cggcgttgtg ccaagcgttc atcagctcaa tttgccgctg
+     2041 gcagtttgtg gcaaatgcag aaccgttcca atttaactca aactatgaat atggcttttg
+     2101 agctcggtca gccgctctcg aatttggcaa caacttaaaa aaaccgttgc atttggaggt
+     2161 gctgtctgac attttgtata ccgaattgat accgtttggc tatgcgttcg gcaatgcggg
+     2221 tttgacgggc tcatcttttg ctgcttccgt tcattgtatt tcccctcggg gacttgcttt
+     2281 gtgagtgtgg gcgtcaggag gtgcttccgt tgaattcatt tttctctcgt ttagccgaca
+     2341 tatcagtgcg gtttgcaatc atgttgtcgg taactccaaa tgtggcaaaa ccacaacaaa
+     2401 caaaaaatcg cgtttaagca cacttttgga ctaaattgta caacgatggc tatgcgttcg
+     2461 tcattcgtac aattggcacg ccgaattgac gagtcgcagt gtaaattcct ttgaattact
+     2521 ccgcgacgtc aagcttttgg ctcgccaaca aaaatgcatt cctgcattca ctcacacttt
+     2581 ccagctgaga tcagacgctc gtttttcctc cgaaacgaag tgttgacctc ggctctcata
+     2641 atgaaaaaga gcatttctca tgtgttattt catgctcgca gtattgaaat tgagacatca
+     2701 aagcgtgtgt accaccaatc gaacttctca cgagagcgcc ataattgcgg aggacttggc
+     2761 cgaaaattcg tctgaagtga aactgatggc atcaccggct aataaattgg caaagttact
+     2821 tggaaatgag tttgagatat taatttcacc tgagaaatgc tgccttactt tacactttat
+     2881 acggtttaag taactaattc tttgtaacta gcagtaagca ttggaagagg aagcaaaaat
+     2941 taaaaaaaaa aaaa
+//
+

@@ -1,0 +1,655 @@
+LOCUS       XM_024087342            2366 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112049463
+            (LOC112049463), mRNA.
+ACCESSION   XM_024087342
+VERSION     XM_024087342.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019862975.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2366
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..2366
+                     /gene="LOC112049463"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112049463"
+     CDS             158..2083
+                     /gene="LOC112049463"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112049463"
+                     /protein_id="XP_023943110.1"
+                     /db_xref="GeneID:112049463"
+                     /translation="MMTDQQLQMILQHVARAQSVSVPSPTPTTSGNFTKCTSRFDGSK
+                     TSDVLSFLDSIEIFKDCVAMDDKIAVRGLPMLLTGIAATWWQGVKQTVTSWEEAVQLL
+                     KQTFGPRLPPHRIYRELFKQEQREESTDIYICKARALLAQLPSDMLSEEVQLDMVYGL
+                     LHRRIREKVARSSFTSFMELVREARRIEDLFDESRRPEFRGHAKEVPQELTSKVPLSS
+                     ETSSPPANRKKTNEKCFYCKKYGHHKDSCLRLKKKEETKTVEGFRPNNSTASITCFGC
+                     GAPGVIRSNCVVCKEGRAASTPSSSTVSSSTSAFQSMTIDTVCCLNPPMRPIFDIEIF
+                     DKVGTAILDTGAKQSVASISLTRHLRANGQVFGSVEANLKFADGSTRVETVETANVNV
+                     ILQGVSVKTLFVVLPDAQDSLLGMNFVRDTGLAVNFATNRYTLCETGGNVEYDLRYEI
+                     ENRDIVSSTIGLRGCEGTFLSPNDRENLASLLKTNEDIFSVGGDPTPFAVHQIDTGDA
+                     APISTPPYRVTPGKRKIVRNEIDPGDDIWKGTTDKGRRNGPNYEEGDLVLVDSHPVSK
+                     KNKVFAQKFAPRREGPYRIGKALSPTTYEVLGKNDVVKGKYHASLLTPYEGNEPIVEC
+                     RKRGRPRKSKTKPGFSD"
+ORIGIN      
+        1 gagggttgat gacgcgcgat cgggactcga aaggtcatct tctgtcgagt ccatcgccga
+       61 ggctggcgtg tcgcatgcca gtagggatgt gccgcaagct acattcgacg caccaccatc
+      121 gcctggtggg tgcgcgtcgt catcgccggc gcccattatg atgactgacc aacaactaca
+      181 aatgatactt cagcacgtgg cgcgtgctca gagtgtgagt gtgccttcgc cgacacctac
+      241 gacttcgggg aattttacta agtgtacatc acgttttgat ggctcaaaaa ccagtgacgt
+      301 gttatcgttt ctagactcga tcgagatatt caaagactgt gtggcaatgg atgacaagat
+      361 cgctgtacgc ggattgccga tgctcctgac cggcatcgca gcgacgtggt ggcaaggagt
+      421 caaacagaca gtgacctcat gggaagaggc agttcagctt ctaaaacaga catttgggcc
+      481 tcgtctccca cctcaccgta tatacaggga actatttaag caagagcaac gggaagagtc
+      541 cacggacata tacatatgca aagcgcgcgc tcttctagca cagttaccca gtgatatgct
+      601 aagtgaagag gtacagctcg atatggtgta tggactattg cataggcgca ttcgggaaaa
+      661 agtggcccgt agttctttca ccagcttcat ggaactggtc agggaagcga gacgcattga
+      721 agacctattc gatgagagtc gacgtccaga attcagaggg catgccaaag aggtgccgca
+      781 ggagttgact tcgaaagttc ctttgtcatc agaaacttca tcaccgccag caaatcgcaa
+      841 aaagacaaac gaaaagtgct tttattgcaa gaagtatgga caccataagg attcttgtct
+      901 tcggttaaag aagaaagagg aaaccaagac ggtggaagga tttcgtccaa ataacagtac
+      961 agcatcgatt acctgttttg gttgcggcgc tccaggagtg ataagatcga actgcgtagt
+     1021 ctgcaaagag ggacgcgcgg cgtccacacc ttcgtcttcc acagtttcgt cctccacttc
+     1081 ggcgtttcag tcaatgacta tcgatactgt gtgttgtctt aatccgccaa tgaggccaat
+     1141 tttcgatata gaaatttttg ataaagtagg taccgctata ttagataccg gagcaaaaca
+     1201 atccgtggcc agtatcagct taacgagaca tttgcgcgca aacggacaag tttttggttc
+     1261 tgtcgaggcc aatttaaagt tcgctgacgg atcaacacgt gtagaaaccg tggagacggc
+     1321 taatgtaaac gtgatattac agggagtttc cgtcaaaact ttatttgtag ttttacctga
+     1381 cgctcaggat tcgttgttag gtatgaactt cgttcgagac actggcttgg cagtaaattt
+     1441 tgctacaaat cggtatactt tgtgcgaaac gggaggtaat gttgaatatg acctacggta
+     1501 tgaaattgaa aaccgggaca tagttagctc cacaattggt ctccgtgggt gcgagggtac
+     1561 atttctttcg cctaatgaca gggaaaactt ggcctcgctg cttaaaacta atgaggatat
+     1621 tttcagtgta gggggagacc ctactccttt tgctgttcac caaattgaca ctggcgatgc
+     1681 agcgcccata tctacgccac cctatcgggt gacgccgggg aaaagaaaga tagttcgaaa
+     1741 cgaaattgat ccgggagatg atatttggaa aggaacgact gataagggcc gtcgtaacgg
+     1801 acctaattat gaggaaggtg atctggtcct cgttgatagt catccggtca gcaaaaagaa
+     1861 taaagttttc gctcagaaat ttgctcctcg acgagagggt ccgtatcgaa ttggaaaagc
+     1921 attgtcccca accacctatg aggtgctggg taagaatgat gtggtaaaag gaaagtacca
+     1981 cgcaagcctt cttacaccgt atgagggtaa tgagccaatt gtggaatgca ggaaacgggg
+     2041 tagacccaga aaatctaaaa ctaagccagg gttctcggac taagtccagt gtatagcagt
+     2101 tccaagtcac ctccgggccg tagttgtgac ttggaggggg aggttatagc gcatcactat
+     2161 aaacgtttcc caacactatt aaccgcggcg cccgcgcgcc gcgcataggc agagttagtc
+     2221 gtccacaacg ttgaatagcg aacggacgca ctcgtgtcga gtgcgcaatt tacgtaattt
+     2281 atgtaacaaa cccagtttct tcatttgtaa aaccacaagt acttaaataa agtgtatgat
+     2341 tagtgtacgt gtttggcaat agtagt
+//
+
+LOCUS       XM_024087904             756 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112049862
+            (LOC112049862), mRNA.
+ACCESSION   XM_024087904
+VERSION     XM_024087904.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019862994.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..756
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..756
+                     /gene="LOC112049862"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:112049862"
+     CDS             1..756
+                     /gene="LOC112049862"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112049862"
+                     /protein_id="XP_023943672.1"
+                     /db_xref="GeneID:112049862"
+                     /translation="MPPRKDRARKSDDESADESMATGSTVVTMTEQQLETIMTNIAKS
+                     QAETSRLLIENILATQRTGSGTSSPMMAPPAKLGSFAKCTARFHGTIMGSADEADVLE
+                     AFIDAVETYKECTNVSDDLALKGLPMLLTGNAAVWWRGVKDSTPTWNDALLRLRGVYG
+                     VPQPGYKIFREVFSQVHTSERADIFVSRIRALLSKLPYVLQENVKIDIVFGLLDRRIR
+                     KRVPRESVESIDRLMEKARLVEESLAETEMWIL"
+ORIGIN      
+        1 atgccgccac gaaaggatag agcgaggaag agcgacgacg aaagtgccga cgaatcaatg
+       61 gcaacgggtt ctacagttgt gacgatgacg gagcaacagc tggaaactat tatgacaaat
+      121 atagccaaaa gccaagcgga gacgagccga cttttgatag agaatattct ggcaacacaa
+      181 cgtaccggct caggcacgag ttcgccgatg atggcaccgc ctgcaaagct gggaagtttt
+      241 gcgaagtgca ccgcacgctt ccatggcaca attatgggtt ctgcagatga ggccgacgtg
+      301 ttagaagctt tcatcgacgc cgttgaaacc tataaggagt gcacgaacgt gagcgatgat
+      361 cttgcactta aagggttgcc tatgcttctc accggcaacg cagcggtttg gtggcgaggt
+      421 gtgaaggaca gcactccaac gtggaacgac gcgcttctac gactacgagg cgtgtacggt
+      481 gttccgcaac ccggatacaa aatatttcgc gaagtgtttt cccaagtgca tacaagtgaa
+      541 cgcgcggata tttttgtatc tcgtattagg gcgttattaa gtaaattacc gtacgttcta
+      601 caagaaaatg tgaaaataga cattgtgttc ggtttattag atcggcggat aaggaagcgc
+      661 gtgcctcgcg aatccgtgga gagcatagac aggttaatgg agaaggccag gttagttgag
+      721 gaatcattgg cggagaccga gatgtggatt ttgtaa
+//
+
+LOCUS       XM_024094489            3273 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112054640
+            (LOC112054640), mRNA.
+ACCESSION   XM_024094489
+VERSION     XM_024094489.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019863389.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 6% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..3273
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..3273
+                     /gene="LOC112054640"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 90% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112054640"
+     CDS             1..3273
+                     /gene="LOC112054640"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112054640"
+                     /protein_id="XP_023950257.1"
+                     /db_xref="GeneID:112054640"
+                     /translation="MNHVIFFFCGERDHLKVEEFVTAVEIYKKVEKITDEDALIGFPL
+                     LLKDTASTWWTGIQAGIKTWPKAISALRSAFAPKRQPYEIYVELFADIQGYKEPIDTF
+                     LCRKRALLGMLPTKRHREEEQLDLIYGLLKVELKKEIARSDITTFAELLEKARHLESL
+                     ENVTSKNPSVFNEKPATNRCLFCGRRGHKIEVCRKRSAQMTEHKQSSATILKPSNPVT
+                     EKQEPIKSAINCYGCGTPGVFRSNCEKCKLKESPPKPVSFFTIETNLEDHVKIPTIEI
+                     NIYGQHGYAFIDTAARTSIASNYLYQLMLENGAKFREQVINISLADGTVKQQNLLITA
+                     VEVTLGKRTIPITLSVLPDAKDNRTLLGIDFLDSAGIILNLPQRFWTFADMPDERFDF
+                     LHLKNEKIKILKKAKKISFKEEELSEFLQWSKELHMISPIQASPSPIHDEGSPPKRPR
+                     WQLIKLDTPPRPVHPREPADQESELDPRVNYLPINPMSLYSLNLLLQPNEAQLLTNEE
+                     KTQLNSLLVEFNDIFNEKGSPTNYTEHRIETGNCQPIAVKPYRLSPARQQQLKHKLDE
+                     MISNDIIEECNSPWSAPVILVPKGQNDVRVCIDYRQLNEVTKPDRYPLPRIDDLLHQA
+                     KAMPYMSTIDLQSGYWQIKVHADDQAKTAFISKYGIYKFKRMPFGLRNAPATFQRLMD
+                     KFVHGLKAQCVLCYLDDLIIRSETFSQHLIDLNEVFAKLRDFNLRANRKKCQFGCSKI
+                     KYLGHLIVPEGIKTDMDKISAIANRPEPRNLKQLISFLQTASWYRRFIQNFAEIARPL
+                     TNLTKKKVKWQWCDDEQKSYESLKRLLTTAPILKQADYESPFTIKTDASNYAIGAALV
+                     QGEGSEEHPIEYASRLLTPAECNYTVTEKEALAIVWAISRFRGYIEGTKFLTITDHQP
+                     LKWLLNLKSPTGRLARWALQLQPYNFEIKYSPGKTNVLADNLSRPPCNDHNEACEICK
+                     IEIDLPKENKHNIRNEQMKDEGLALIIKALEDKTESEEYIQWSKRGYLLHNGILYRFT
+                     PDQEDENAKLLVPYSKVRLFAKNWRRTLTPREEQFGFRSEQQAQRSSLGRRVLHLRDK
+                     QS"
+ORIGIN      
+        1 atgaatcatg tcattttttt tttttgtggc gaacgagacc atctcaaagt agaagaattt
+       61 gtcacggctg tagaaatcta caaaaaagtt gaaaaaatca ccgacgagga tgcattgatt
+      121 ggattccctc tattattaaa agacaccgca agcacttggt ggacgggaat tcaagcgggg
+      181 attaaaactt ggccaaaagc tatttctgcg cttaggtcag cttttgcccc aaaacgtcaa
+      241 ccatacgaaa tatatgtgga actctttgct gatatacaag gctacaagga gcccatagat
+      301 actttcctgt gccggaaaag ggccctttta ggaatgttac cgactaagcg gcacagagaa
+      361 gaagaacaat tggatctcat ttacggtcta ttaaaagtag aattaaaaaa agagattgca
+      421 cgctccgaca tcaccacgtt cgcagagtta ttggagaagg ctcgtcactt ggaatctctg
+      481 gagaatgtta catcaaaaaa cccttcagtg ttcaacgaga agcctgctac caatagatgc
+      541 ctattttgcg gtagaagggg acataaaatt gaagtatgtc ggaaacggtc agcccaaatg
+      601 accgaacata agcaatcaag tgctacaata ttaaagccca gcaacccagt caccgaaaag
+      661 caagagccaa taaaaagtgc tattaattgt tatggctgtg gaacacccgg ggtttttaga
+      721 agcaattgtg aaaaatgcaa attgaaagaa tcgccaccaa aaccggtatc gttcttcacg
+      781 atagaaacaa atctagaaga tcacgttaag atacccacaa tagaaataaa tatttatgga
+      841 caacatggtt atgcatttat agacaccgct gcaagaacta gcatcgcgag taactacttg
+      901 taccaattaa tgttggagaa tggtgctaaa tttcgtgagc aagtaatcaa tatttcgcta
+      961 gcggatggga cggtaaaaca gcaaaatctg ctaattactg ccgtagaagt tacgctaggt
+     1021 aaacgcacta tacctataac actaagcgtc ttaccggatg ctaaagacaa ccgcacactg
+     1081 ctaggtatag acttcttaga ttcggcaggc atcattttaa atttgccaca gcgtttttgg
+     1141 actttcgccg atatgccaga cgaaagattt gatttcctgc atcttaaaaa tgaaaaaatt
+     1201 aaaatattga agaaagcgaa gaaaataagt tttaaagagg aagagctctc agaatttctg
+     1261 caatggtcaa aggagctaca catgatttct ccaatacaag cgtctccatc gccaatacat
+     1321 gatgaaggtt cgccaccaaa gagaccacgt tggcaattaa tcaagcttga cacgccacca
+     1381 cgaccagtcc atcctcgtga accagcagac caggaatctg aattggatcc tcgtgtaaat
+     1441 tatttaccaa taaatcctat gtcactatat tcattgaatt tgttattaca acctaatgaa
+     1501 gcccaattat taacaaatga agagaaaaca caattaaatt cattattagt tgagtttaac
+     1561 gatattttta acgaaaaagg tagtcctact aattatacag agcatagaat cgaaactggt
+     1621 aactgtcaac ctatagcagt taaaccatat cgattatctc cagctagaca acaacagctt
+     1681 aagcataaat tagatgagat gataagtaat gatattatag aagaatgcaa ctctccatgg
+     1741 tccgctccag tcattttagt tccaaaagga caaaacgatg taagggtatg cattgactac
+     1801 agacaattaa atgaagtcac taaacctgat cggtatccac taccgcgaat agacgatctg
+     1861 ttacatcaag ctaaggcgat gccatacatg tcaaccatag atcttcaatc aggctattgg
+     1921 caaataaagg tacatgcaga tgatcaggct aaaacggcat ttatttcaaa atacggaata
+     1981 tacaagttca agcgtatgcc atttggtcta cgaaatgcac ctgcaacatt tcaacgatta
+     2041 atggacaaat ttgttcacgg cttaaaggcc caatgtgttt tgtgctactt agacgattta
+     2101 ataattagat cagaaacatt ctcgcagcat ttaattgatc ttaatgaagt cttcgcaaaa
+     2161 ctaagagact tcaatctaag agctaataga aagaaatgtc aatttgggtg ttctaaaatc
+     2221 aaatacttag gacatctcat agtacctgaa ggtataaaaa cagacatgga taaaatatca
+     2281 gcaatagcaa acaggccaga accaagaaat cttaaacaat taatatcttt tctgcaaaca
+     2341 gcatcctggt atagacgatt tatacaaaat tttgcagaaa ttgcaagacc attaacaaat
+     2401 ttaacaaaaa agaaagttaa atggcaatgg tgtgacgacg aacaaaaatc ttatgagtca
+     2461 ttaaaacgtt tactaactac ggcacctata cttaaacaag cggattatga atcaccgttt
+     2521 acaatcaaaa cagacgcaag caattacgct atcggagcag ctttagtcca gggggaggga
+     2581 tctgaagaac atccaatcga atatgctagc cgccttctta caccggctga gtgtaactac
+     2641 acggtaactg aaaaagaggc attagcaatt gtatgggcta tttctcgctt tagaggttat
+     2701 atagaaggca caaaattctt aacaattacc gatcaccaac cattgaagtg gttgttaaac
+     2761 ttaaagtcac caacaggtag actggcacga tgggcactac aactacagcc ctataatttt
+     2821 gaaatcaaat acagtccagg gaaaacaaat gtattagcag ataacttgtc aagacctcca
+     2881 tgtaatgatc acaacgaagc atgtgaaatt tgtaaaattg aaatcgactt accaaaggaa
+     2941 aataaacata atatacgaaa cgaacaaatg aaagacgaag gcttagctct cattataaaa
+     3001 gcactggaag acaaaacgga atctgaagaa tacatccaat ggtcaaaaag aggatacctg
+     3061 cttcacaatg gtattcttta ccgatttact ccagatcaag aagacgaaaa cgctaaactg
+     3121 ttagtaccgt attcgaaggt gcgactcttt gcgaagaact ggcgccgcac gctgactccc
+     3181 agagaagagc agttcgggtt ccgatccgaa caacaggcac aacgctccag tttaggccgg
+     3241 agagtcctgc atcttcgtga taagcagtcc taa
+//
+
+LOCUS       XM_024095249             654 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112055228
+            (LOC112055228), mRNA.
+ACCESSION   XM_024095249
+VERSION     XM_024095249.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019863484.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..654
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..654
+                     /gene="LOC112055228"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:112055228"
+     CDS             1..654
+                     /gene="LOC112055228"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112055228"
+                     /protein_id="XP_023951017.1"
+                     /db_xref="GeneID:112055228"
+                     /translation="MSLSSNDIEVKNENTQTRRRSSGPSYKVKTSSRPSYDGTRSTEA
+                     VESFLTSARVFKNIEKINDEHALDGLPLLLKSEACTWWQGIKSNVRSWEDFEAQLRHA
+                     FAPLKPAYLIYQEIMNNKQEASMATEIFLSKKRLLFALLPEPKHSETQQIDMLFGLLH
+                     INIREKIPRDSIKSFEERIKMQGENAEKTVFTLPENGELLIGKSQMGEEGKKYKRIG"
+ORIGIN      
+        1 atgtccttat caagcaacga catcgaagtg aaaaacgaaa atacccaaac tagacgtcga
+       61 agctctggac cctcgtataa agtcaaaaca tcgtcaagac cgtcgtacga tggaacaaga
+      121 agcacagaag cggttgaaag ctttttgaca tccgctagag tgttcaaaaa tatagaaaag
+      181 ataaatgacg aacacgctct cgatggattg ccgttattat tgaaaagcga agcttgcact
+      241 tggtggcagg gcataaaatc caacgttcgt tcatgggaag attttgaagc acaacttcgc
+      301 catgcatttg cgccgttgaa gcctgcttat ttaatttacc aagaaatcat gaataacaaa
+      361 caagaagcaa gtatggcaac agaaattttc ctaagtaaaa aacgcttact ctttgcgctg
+      421 ttgccagaac cgaagcactc tgaaacacaa cagatcgaca tgttgtttgg acttcttcac
+      481 atcaatatcc gtgaaaagat acctcgagac tccattaaaa gctttgaaga acgtattaaa
+      541 atgcagggcg aaaacgcgga gaagacggta ttcacattac cagaaaatgg tgaattgcta
+      601 atcggaaaga gccaaatggg agaggaaggc aagaaatata agaggatcgg gtga
+//
+
+LOCUS       XM_024097845            1074 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112057356
+            (LOC112057356), partial mRNA.
+ACCESSION   XM_024097845
+VERSION     XM_024097845.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019865034.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 33% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..1074
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..>1074
+                     /gene="LOC112057356"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 76% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112057356"
+     CDS             328..>1074
+                     /gene="LOC112057356"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112057356"
+                     /protein_id="XP_023953613.1"
+                     /db_xref="GeneID:112057356"
+                     /translation="MPQTRSQTGLSEDQESISDMSAADVVPGAGASRASSQPTQVVMT
+                     DQQLSRLLQQVLRAQSVDAPPSSPSCVSTGNFAKCTARFDGTKDSDVLAFIDAIETYK
+                     DCVCMEDRIAIRGLPMLLGGIAATWWQGVKQSVHTWTEATDLLKKTFGPRLPPHRIYR
+                     ELFSREQGEEPFILRTDASAFAVGAGLPHKSPDELRAAQLTDSEIKIIIQDFENDAAR
+                     LPKVAANRVKRQQDSREAVADKHCRKEPSYQ"
+ORIGIN      
+        1 tatatctagt tacttcttat atctgtggct tcaaacgtgt tgcaacatag acaatattgg
+       61 tagagtaagt tcgtcgaacg gcgaaataga ctattttcac aaactttata aatacctaat
+      121 aagtttggac aatgccgttt tatacttcaa ttattattat tattaattaa ttggaaagta
+      181 atttgccaaa taacaattta aaaacaaata acaattatta ttctagtgtt aaccctaaaa
+      241 tggtcgcgga cctaaaagac gattaaagac ttggtaaatt cagtgtttga ttgagtaggt
+      301 tttgtgtgtt agaacatttt attcataatg ccccaaacac gtagtcaaac aggacttagt
+      361 gaggatcagg agtctatttc cgatatgtcg gccgcagacg tggtacctgg cgctggcgcg
+      421 agccgcgcct cctctcaacc tactcaggtc gtaatgaccg atcaacagtt gtcgcgtcta
+      481 ctgcagcagg tgttgcgtgc tcagagtgtg gatgcaccac catcttcacc gtcatgtgta
+      541 tcaacgggga attttgctaa atgcacagcg cgttttgatg gcactaaaga tagtgatgtg
+      601 ctggcattta tcgatgctat tgaaacatac aaggactgcg tttgtatgga ggatcgaatt
+      661 gctatacgcg gactgccgat gcttcttggt ggcatcgcgg ctacttggtg gcaaggcgtg
+      721 aagcaatctg tgcatacctg gacagaagcg acagacttac tgaaaaagac attcggccct
+      781 cgcctacctc cacatcgaat atatagggag ttgttcagtc gtgaacaagg cgaagagcct
+      841 tttattctcc gaacggacgc gagtgccttt gctgtgggtg ccggcttgcc tcacaagtcg
+      901 cctgatgaac ttagagccgc ccagctcaca gattcggaaa ttaagataat tattcaggat
+      961 tttgaaaatg atgctgctcg tctgccaaag gtagcagcta atcgagtgaa gaggcaacag
+     1021 gacagtcgcg aggctgtagc tgataaacat tgtcgtaaag agccttccta ccag
+//
+
+LOCUS       XM_024097937            2482 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112057462
+            (LOC112057462), partial mRNA.
+ACCESSION   XM_024097937
+VERSION     XM_024097937.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019865629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 17% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..2482
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..>2482
+                     /gene="LOC112057462"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 86% coverage of the annotated
+                     genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112057462"
+     CDS             497..>2482
+                     /gene="LOC112057462"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112057462"
+                     /protein_id="XP_023953705.1"
+                     /db_xref="GeneID:112057462"
+                     /translation="MEKARLVEESLAEVSTVTIQHSNPKIPDVQLNPSNSHVPIVNPS
+                     TADVTENTYETNLKNSGSDSEFNLMDKPNETVKVKRARPRCGFCKFFGHKTSDCRNRP
+                     RIDSQSDCQTPDRLEDTKRADMRCYGCGQLGTIRSKCDKCRKSSTSNVQFHSLEVGGA
+                     DSSQPVVTVEIATHKGTATLDTGATHSIASPGLYKLLVQEGVEFTETHCTIGLADGTQ
+                     QVRTALTCDTVVSLGTRDIPTSFIVFPDADNRTLLLSRGTWSFKDKPQKKYFFTKVND
+                     LQSADDAELMKVYASQFSLRDDEGTKLSGNQKVQLDSLLIRKVYRNATDGPANDHMKV
+                     SESNASPPYLLSQNRKINDTRSRPSCLEQSGCDLCLIEVDLSSRSSRDIRENQPKDPT
+                     LHKIVEDLEKTDDPLRGRRYSDRGYVMSDSILYKVETWKSAGLKKTPAMTRRSKVSAK
+                     KRQVAQKISADEGRRPAPEYAVGKLVILKTQGAQRGQAPKLLPWRDGTYRIKEVVSPT
+                     TYLLETVRDHTTIGKYHTSQLTAFIGDVLPPFKEKREKGRPRLGXLIPWRDGPYRIKE
+                     VVSPTTYLLETVRNHTTIVSRPVSWSSGGTSVWRPPGAVGALSGESEGSYGLSALTLA
+                     VAAAGAPVAVGAQAVRVRRARAVRRDAQVRAAAAGAAR"
+ORIGIN      
+        1 gttcgccgac gatggcaccg cctgcaaagc tgggaagttt tgcgaagtgc accgcacgct
+       61 tcgatggcac aattatgggt tctgcagatg aggccgacgt gttggaagct ttcattgacg
+      121 ccgttgaaac ctataaggag tgcacgaacg tgagcgatga tcatgcactt aaagggttgc
+      181 ctatgcttct caccggcaac gcagcggttt ggtggcgagg tgtgaaggac agcactccaa
+      241 cgtggaacga cgcgcttcta cgactacgag gcgtgtacgg tgttccgcga cccggataca
+      301 aaatattccg cgaagtgttt tcccaagtgc atacaagtga acgcgcggat atttttgtat
+      361 ctcgtattag ggcgttatta agtaaattac cgtacgttct acaagaaaat gtgaagatag
+      421 acattgtgtt ggtttattag atcggcggat aaggaagcgc gtgcctcgcg aatccgtgga
+      481 gagcatagac aggttaatgg agaaggccag gttagttgag gaatcattgg cggaggtaag
+      541 tacagttacc attcaacatt ccaaccccaa aattcccgat gtccaactta acccttcaaa
+      601 tagccacgtg cccattgtta acccttccac tgctgacgtg accgaaaata cgtacgaaac
+      661 gaatttaaaa aactctggta gtgattcaga atttaattta atggataaac ctaatgaaac
+      721 cgttaaagtt aaacgcgcga gaccgagatg tggattttgt aaattcttcg gccacaaaac
+      781 tagtgattgc cgaaaccggc cgcgaatcga tagtcaatcg gactgtcaga ctccggatag
+      841 actggaggac accaagaggg ccgacatgcg ctgctatggc tgcggtcagc ttgggacgat
+      901 caggtcgaag tgcgacaagt gtagaaagtc atcgaccagt aatgtgcagt ttcacagttt
+      961 agaagtaggc ggcgcagata gctcgcaacc cgtagtaact gtagagatcg ctacacataa
+     1021 aggtacggct accttggaca ctggcgctac acactccatt gccagccctg gtctgtataa
+     1081 gttgttagtg caggaaggag tagagtttac cgaaactcac tgcaccatag gattagccga
+     1141 tggtacacag caggtgagaa cagcattaac ttgtgacacc gttgtcagtc taggtacacg
+     1201 ggatatacct acatcgttca tcgtattccc agatgctgat aataggactt tgcttctatc
+     1261 tcgaggtacc tggagtttca aggacaaacc ccagaagaaa tatttcttta cgaaggtcaa
+     1321 cgacttgcag tctgctgatg atgcagagct gatgaaagtc tatgcttcgc aattttccct
+     1381 gcgtgatgat gaaggtacga agctatcagg taatcagaag gtgcagctgg actcgttgct
+     1441 gataaggaag gtctatcgca acgctacgga tggcccagcg aacgatcaca tgaaggtgag
+     1501 tgaatcgaac gcttcacccc cgtacctgct ctcgcagaat aggaagatta atgatacgcg
+     1561 atctcgtcca tcgtgcttgg agcaatccgg atgtgacctc tgtctcatcg aagtcgattt
+     1621 gtcttcgaga agttctcgtg atattcggga gaaccaaccc aaagacccta cgcttcataa
+     1681 gatcgttgaa gatttggaga agaccgacga tccgttaagg gggaggcgtt attctgaccg
+     1741 aggttatgtt atgtccgaca gtattctgta caaggtagag acgtggaaat ccgctggact
+     1801 gaagaagacg ccagcgatga cccgacgatc caaagtttcg gcaaagaagc ggcaagtagc
+     1861 ccagaagata agtgctgatg aaggccgacg tccagctcca gagtatgcgg taggtaaatt
+     1921 ggtgatttta aagacccaag gagcccaaag agggcaggcg ccaaagctgt taccctggcg
+     1981 agacggcacc tataggatta aagaagttgt gagtcccacg acgtacttat tggaaacggt
+     2041 cagggaccac acgactatag gtaagtatca tacgtctcag ctgaccgcat tcataggcga
+     2101 cgtactgccg cccttcaagg agaaaaggga aaagggaagg ccgagattag gaaanctgat
+     2161 accctggaga gacggcccct ataggattaa agaagttgtg agtcccacga catacttatt
+     2221 ggaaacggtc aggaaccaca cgactatagt ttcaaggccg gtgtcctggt cgtctggcgg
+     2281 gacatcggtg tggcgacccc ccggcgcagt cggcgcactg tcaggggaaa gcgaagggtc
+     2341 ctacggtctg agtgcactca cgctcgcagt cgccgcggcc ggcgcgccgg tagccgtggg
+     2401 cgcacaggca gtgcgcgtgc ggcgcgcccg cgcggtacgc cgtgacgcac aggtgcgcgc
+     2461 agccgccgcc ggcgccgcac gg
+//
+
+LOCUS       XM_024097939             366 bp    mRNA    linear   INV 17-FEB-2018
+DEFINITION  PREDICTED: Bicyclus anynana uncharacterized LOC112057463
+            (LOC112057463), mRNA.
+ACCESSION   XM_024097939
+VERSION     XM_024097939.1
+DBLINK      BioProject: PRJNA434100
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bicyclus anynana (squinting bush brown)
+  ORGANISM  Bicyclus anynana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Mycalesina;
+            Bicyclus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019865629.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bicyclus anynana Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..366
+                     /organism="Bicyclus anynana"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:110368"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /dev_stage="Larva"
+     gene            1..366
+                     /gene="LOC112057463"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:112057463"
+     CDS             1..366
+                     /gene="LOC112057463"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112057463"
+                     /protein_id="XP_023953707.1"
+                     /db_xref="GeneID:112057463"
+                     /translation="MGSADEADVLEAFIDAVETYKECTNVSDDHALKGLPMLLTGNAA
+                     VWWRGVKDSTPTWNDALLRLRGVYGVPRPGYKIFREVFSQVHTSERADIFVSRIRALL
+                     SKLPYVLQENVKIDIVLVY"
+ORIGIN      
+        1 atgggttctg cagatgaggc cgacgtgttg gaagctttca ttgacgccgt tgaaacctat
+       61 aaggagtgca cgaacgtgag cgatgatcat gcacttaaag ggttgcctat gcttctcacc
+      121 ggcaacgcag cggtttggtg gcgaggtgtg aaggacagca ctccaacgtg gaacgacgcg
+      181 cttctacgac tacgaggcgt gtacggtgtt ccgcgacccg gatacaaaat attccgcgaa
+      241 gtgttttccc aagtgcatac aagtgaacgc gcggatattt ttgtatctcg tattagggcg
+      301 ttattaagta aattaccgta cgttctacaa gaaaatgtga agatagacat tgtgttggtt
+      361 tattag
+//
+

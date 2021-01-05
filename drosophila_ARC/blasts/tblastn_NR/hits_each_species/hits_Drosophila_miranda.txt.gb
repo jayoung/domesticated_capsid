@@ -1,0 +1,389 @@
+LOCUS       XM_017290516             738 bp    mRNA    linear   INV 14-APR-2020
+DEFINITION  PREDICTED: Drosophila miranda activity-regulated cytoskeleton
+            associated protein 2 (LOC108158281), mRNA.
+ACCESSION   XM_017290516
+VERSION     XM_017290516.2
+DBLINK      BioProject: PRJNA623594
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Drosophila miranda
+  ORGANISM  Drosophila miranda
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022881603.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 14, 2020 this sequence version replaced XM_017290516.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila miranda Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            frameshifts          :: corrected 2 indels
+            internal stop codons :: corrected 1 genomic stop codons
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-255               QNQS02000073.1     21824928-21825182   c
+            256-256             "N"                1-1
+            257-282             QNQS02000073.1     21824902-21824927   c
+            283-283             "N"                1-1
+            284-681             QNQS02000073.1     21824504-21824901   c
+            682-738             QNQS02000073.1     21824388-21824444   c
+FEATURES             Location/Qualifiers
+     source          1..738
+                     /organism="Drosophila miranda"
+                     /mol_type="mRNA"
+                     /strain="MSH22"
+                     /db_xref="taxon:7229"
+                     /chromosome="Y"
+                     /map="unlocalized"
+                     /sex="male"
+                     /tissue_type="Whole body"
+     gene            1..738
+                     /gene="LOC108158281"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 2 bases in 2 codons;
+                     Derived by automated computational analysis using gene
+                     prediction method: Gnomon. Supporting evidence includes
+                     similarity to: 1 Protein, and 96% coverage of the
+                     annotated genomic feature by RNAseq alignments, including
+                     10 samples with support for all annotated introns"
+                     /db_xref="GeneID:108158281"
+     CDS             97..645
+                     /gene="LOC108158281"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 2 bases in 2 codons;
+                     substituted 1 base at 1 genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:178..180,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: activity-regulated
+                     cytoskeleton associated protein 2"
+                     /protein_id="XP_017146005.2"
+                     /db_xref="GeneID:108158281"
+                     /translation="MTQMSDEQFRILIETIRSLAHIKEDEPXSKGSFSNCPVRFSGQR
+                     DHDAVDEFIXDRDALKGLXLLFNNIAVVWWKGVRRDAKTWKDAMQLLRDHFSPTKPSY
+                     QIYMEIFETKQGGGEAIDSFICKQRALLAKLPDGRHDEETELDFIYGLMQSKYRESIP
+                     RHEIKTFRDLLDRGRTVERTRH"
+ORIGIN      
+        1 agagttgcgg tgtccgcagc aactcacaac gttccccctc gtttattatt agttttctgt
+       61 cgaatcgggg cggaaaatat taaatttggg gacaaaatga cgcagatgtc ggatgaacaa
+      121 ttccgcatac tcatcgaaac aatacgctcc ctggcgcaca tcaaagaaga tgagccgtaa
+      181 tcgaagggaa gcttcagcaa ctgccccgtc cgcttcagtg ggcagcgtga tcacgatgcc
+      241 gtggatgagt ttatanacga tcgggacgcc ctgaaggggc tgncgttgct attcaacaac
+      301 atcgccgttg tctggtggaa gggggtgcgt cgagatgcga aaacctggaa ggatgccatg
+      361 cagcttttgc gagaccactt ttcgcccacc aagccctcct atcaaatcta catggagatc
+      421 tttgagacga agcaaggggg aggtgaagcc atcgattcgt ttatttgcaa gcaacgcgcg
+      481 cttttggcca agctacccga cggccgccac gacgaggaaa cagagctgga cttcatctat
+      541 ggcttaatgc agtccaagta cagggagagt attccaaggc atgaaattaa gacttttcgg
+      601 gatttgttgg accggggacg cactgtggag cgcactagac actaaagaat cttgtagata
+      661 gttgtaaata gtaaaactaa aattcaggag aaaccctttc gccgcccgct cgttggtgcc
+      721 tggacgcccg gactatcc
+//
+
+LOCUS       XM_017295023            2534 bp    mRNA    linear   INV 14-APR-2020
+DEFINITION  PREDICTED: Drosophila miranda activity-regulated cytoskeleton
+            associated protein 1 (LOC108160802), mRNA.
+ACCESSION   XM_017295023
+VERSION     XM_017295023.2
+DBLINK      BioProject: PRJNA623594
+KEYWORDS    RefSeq.
+SOURCE      Drosophila miranda
+  ORGANISM  Drosophila miranda
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046676.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 14, 2020 this sequence version replaced XM_017295023.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila miranda Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2534
+                     /organism="Drosophila miranda"
+                     /mol_type="mRNA"
+                     /strain="MSH22"
+                     /db_xref="taxon:7229"
+                     /chromosome="3"
+                     /sex="male"
+                     /tissue_type="Whole body"
+     gene            1..2534
+                     /gene="LOC108160802"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108160802"
+     CDS             146..898
+                     /gene="LOC108160802"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1"
+                     /protein_id="XP_017150512.1"
+                     /db_xref="GeneID:108160802"
+                     /translation="MAQTIQMTQEQLQELIAAVRASSVGGVAAGAEGAGPKANGSFAA
+                     CNQRFGGTRDYEEVEMFISNIVTYKELEGISDENALKGMSLLFYGMASTWWQGVRKEV
+                     VTWNDVIGLIREHFSPTKPAYQVYMEIFQNKQQDFDPIDSFLVHKRALLAQLPADRHN
+                     EETEMDFLYGLLNIKYRKHITRQSVKTFKELLEQGRIIEHNTQEDEDLAATKNTRGSR
+                     RTTRCTFCNFRGHTFEACRKRKKTRDEEHDEE"
+ORIGIN      
+        1 atttagtcat cacggcaaca ttcgcttcag ccccactggc tttgtgcgcc gttcctcgca
+       61 actcaacaaa aaaataaatt aatagccaac gtgttttggc ctaattcctc accaaagtaa
+      121 cgtgcaatag aacacacaga tcgaaatggc gcaaactata cagatgaccc aggaacagct
+      181 acaagagctc atcgcagccg tgcgcgcttc cagcgtgggt ggcgttgccg ccggagcaga
+      241 gggagctgga cccaaggcca acggcagctt cgctgcctgc aaccaacgct ttggcggaac
+      301 acgcgattac gaggaggtcg agatgttcat ttccaacatt gtcacctaca aagagctgga
+      361 gggcatcagc gacgagaacg ctctgaaggg gatgtccctg ttgttctacg gaatggcgtc
+      421 cacctggtgg cagggcgtgc gaaaggaggt tgtcacctgg aacgacgtca tcgggctgat
+      481 ccgcgagcac ttctcgccca ctaagcccgc ctaccaggtg tacatggaga tcttccagaa
+      541 caagcagcag gattttgatc ccatcgattc cttcctggtc cacaagcgcg ccctgcttgc
+      601 ccagctgcca gccgatcgcc acaacgagga gaccgagatg gacttcttat atggcctgct
+      661 gaacatcaag taccgcaaac acatcacccg ccagagcgtg aagacgttca aggaactgct
+      721 tgagcagggc cgcatcatcg aacacaacac ccaggaggac gaagatctgg cggcgaccaa
+      781 gaacacacgc ggctcccgcc gcaccacccg ctgcaccttc tgcaacttca ggggacacac
+      841 gttcgaggct tgtcgcaagc gcaagaagac tcgcgacgag gagcacgacg aggaataagc
+      901 caagcaacaa atgcattatt gtgggggcga cgacggcatg aacatcatca caggcagcag
+      961 cattcggccc ccacccccgc acaccagaga acttttcacc gccacgctgg ccgccctgcg
+     1021 ctctgagagt gccatcatgg cccaacatca gtgatagcga aggaaaagaa gaagtttcaa
+     1081 aagtagagaa agctctttac caattcaact ctttcactat cacacataca caaacacaca
+     1141 cacacacaca cacacactct caatcaaacg gcgtgccggt aagcagagga aagcttctct
+     1201 ccctctctct aaacaattcc gctatttttg tgaggggttg gctctcttag cgattgcggc
+     1261 cgacaactgg tggccactgc aattccttcg agggcttttc cccgatcatg gatggcgctg
+     1321 ccctagaact ttcactttca cgctgccctg cggctatttt ggcgccgaac gccaactctt
+     1381 gaactctcga aatttatttc gaacactcgt tttttaaacc acaaactaga acaactatcg
+     1441 agcgctgcca ggggagtatg ggagaggatc acgcatttcg tctggagttt ggatgctttg
+     1501 aatcgcagat gtaattcatg gccaaacgct ggttggatgt ccaaggcgaa agccctgagc
+     1561 atctacacct ggctttagct ctgcaattgc aacgcgaccg aagccccgaa tagatgttgc
+     1621 gcgatccgat cttgtccccc tctggtagac ctcaacaacc gccgccttga ccttgtgcct
+     1681 gtcagcgaag aggtaacgta tacgtggcgc aaatggtgac caatgtattc accacactgc
+     1741 agtggtcacc gttttagccg ttgtttgcgt tgctttgggt ctgtgcttgg tccttggtga
+     1801 aggtggcaaa aaaccccccg ccctgtgaat gctcgcttag atccttttgc acgtggctgt
+     1861 cgctagccca gggcagcaac tccgtgctga acgtggcctc ggctacgtct ggtatgtggt
+     1921 tgttgccaaa ggcgatgctt ctggtgcgat aggagcttac agcgggcacg atctgggcaa
+     1981 aaccacaaat ttctccagaa atttgaaacc aaatcaattt tttgacattg tcagaatatg
+     2041 atcaactttg taaatcgcac tacgatggct cccgattcgc cattcgtgcg gttggcacgc
+     2101 caaattgcca aattcgggac tacgggttct gggctctaac ccctgtgatc ccgcggcaag
+     2161 catttaggca cgtcattccc attcacacac acacgcgaac tgggtctcgt cgttaccgcg
+     2221 tatctccggc cggcaccgac tctcccagtt ccacaatcct tggaaaccag acacttgtgc
+     2281 agaatccaca ggcgcgaagt gaccatatgg tggccaaact tgtgggcgcg ccaattttcg
+     2341 gggcattgcc tcaagcgctc cacgagacta gctcgcattc ttcaaggaat tttaatttca
+     2401 atggcattaa acttgtacca aaagctgggg gcctgttgac gaccacaagt gtctgattcg
+     2461 aaagcaagaa aatataaatt gtaaaacaca agactgaaac cagaaaacac taaactcaaa
+     2521 actacaaaac caca
+//
+
+LOCUS       XM_033391646            1125 bp    mRNA    linear   INV 14-APR-2020
+DEFINITION  PREDICTED: Drosophila miranda activity-regulated cytoskeleton
+            associated protein 2 (LOC117188178), mRNA.
+ACCESSION   XM_033391646
+VERSION     XM_033391646.1
+DBLINK      BioProject: PRJNA623594
+KEYWORDS    RefSeq.
+SOURCE      Drosophila miranda
+  ORGANISM  Drosophila miranda
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046676.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila miranda Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1125
+                     /organism="Drosophila miranda"
+                     /mol_type="mRNA"
+                     /strain="MSH22"
+                     /db_xref="taxon:7229"
+                     /chromosome="3"
+                     /sex="male"
+                     /tissue_type="Whole body"
+     gene            1..1125
+                     /gene="LOC117188178"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 16 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:117188178"
+     CDS             147..731
+                     /gene="LOC117188178"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_033247537.1"
+                     /db_xref="GeneID:117188178"
+                     /translation="MTQMSDEQFRILIETIRSLATIKEDEPQSKGSFSNCPVRFSGQR
+                     DHDAVDEFITAVETYKEVEGISDRDALKGLPLLFNNIAVVWWKGVRRDAKTWQDAMQL
+                     LRDHFSPTKPSYQIYMEIFETKQGGGEAIDSFICKQRALLAKLPDGRHDEETELDFIY
+                     GLMQSKYRESIPRHEIKTFRDLLDRGRTVERTRH"
+ORIGIN      
+        1 ttcacaagag aaaagactaa gttggcaaaa acaaaaccac agccagtcgc tccaccgacg
+       61 gattttattc gctcccattt ccgccgtcta tttattagtt agttttctgt cgaatcgggg
+      121 cggaaaatat taaatttggg gacaaaatga cgcagatgtc ggatgaacaa ttccgcatac
+      181 tcatcgaaac aatacgctcc ctggcgacca tcaaagaaga tgagccgcaa tcgaagggaa
+      241 gcttcagcaa ctgccccgtc cgcttcagtg ggcagcgtga tcacgatgcc gtggatgagt
+      301 ttataacggc ggtggagacg tacaaggagg tggagggtat cagcgatcgg gacgccctga
+      361 aggggctgcc gttgctattt aacaacatcg ccgttgtctg gtggaagggg gtgcgtcgag
+      421 atgcgaaaac ctggcaggat gccatgcagc ttctgcgaga ccacttttcg cccaccaagc
+      481 cctcctatca aatctacatg gagatctttg agacgaagca agggggaggt gaagccatcg
+      541 attcgtttat ttgcaagcaa cgcgcgcttt tggccaagct acccgacggc cggcacgacg
+      601 aggaaacaga gctggacttc atctatggct taatgcagtc caagtacagg gagagtattc
+      661 caaggcatga aattaagact tttcgggatt tgttggaccg gggacgcact gtggagcgca
+      721 ctagacacta aagaatcttg tagatagttg taaatagtaa aactaaaatt caggagaaac
+      781 cctttcgccg cccgctcgtt ggtgcctgga cgcacggact atccaaagct tctccaacta
+      841 aattctaaaa aagtgccgta tacattgacc tcagcccgat ttagcgtaag caagccagtt
+      901 ggttcgcaat agataatcgc catgaggaaa gggtagaaat tctttaaatt gatgattgat
+      961 cacttcgatc gaaaccttat ctacgacaag atcgttcctg caaagaagaa acaaaagtgg
+     1021 gcatcctcaa gtctgacatc gcttgaccag gtcaatgttg accttaaatg atagaatttt
+     1081 gtatatgttg ttaaagcaaa ttgcctcaaa atatacacgc tttga
+//
+
+LOCUS       XM_033396234            2523 bp    mRNA    linear   INV 14-APR-2020
+DEFINITION  PREDICTED: Drosophila miranda activity-regulated cytoskeleton
+            associated protein 1-like (LOC117191332), mRNA.
+ACCESSION   XM_033396234
+VERSION     XM_033396234.1
+DBLINK      BioProject: PRJNA623594
+KEYWORDS    RefSeq.
+SOURCE      Drosophila miranda
+  ORGANISM  Drosophila miranda
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022881603.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila miranda Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2523
+                     /organism="Drosophila miranda"
+                     /mol_type="mRNA"
+                     /strain="MSH22"
+                     /db_xref="taxon:7229"
+                     /chromosome="Y"
+                     /map="unlocalized"
+                     /sex="male"
+                     /tissue_type="Whole body"
+     gene            1..2523
+                     /gene="LOC117191332"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117191332"
+     CDS             138..890
+                     /gene="LOC117191332"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_033252125.1"
+                     /db_xref="GeneID:117191332"
+                     /translation="MAQTIQMTQEQLQELIAAVRASSVGGVAAGAEGAIPKANGSFAA
+                     CNHRFGGTRDYDEVETFISNIVTYIELECISDENALKGVSLLFYGMASTWWQGVRKEV
+                     VTWNDVIGLIREQFSPTKPAYQVYMDIFQLKQEDFDPIDSFLVHKRALLAQLPADRHN
+                     EETEMDFLYGLLNIKYRKHITRQSVKMFKELLEQGRIIEHNTQEDEDLAATKNTRGSR
+                     RTTRCTYCNFRGHTFEVCRKRKKTRDEEHDEE"
+ORIGIN      
+        1 tttagtcatc ccggcaacat tcgcttcagc cccactggct ttgtgcgccg ttcatcgcaa
+       61 ctcaacaaca aaattaatta ataaccaacg tgttttggcc taattcctca ccaaagtaac
+      121 gtgcaaaaca gatcgaaatg gcgcaaacta tacagatgac ccaggaacag ctacaagagc
+      181 tcatcgcagc cgtgcgcgct tccagcgtgg gtggcgttgc agccggagca gagggagcta
+      241 tacccaaggc caacggcagc ttcgctgcct gcaaccatcg ctttggcgga acacgcgatt
+      301 acgatgaggt cgagacgttc atttccaaca ttgtcaccta catagagctg gagtgcatca
+      361 gcgacgagaa cgctctgaag ggggtgtccc tgttgttcta cggaatggcg tccacctggt
+      421 ggcagggcgt gcgaaaggag gttgtcacct ggaacgacgt catcgggctg atccgcgagc
+      481 agttctcgcc caccaagccc gcctaccagg tgtacatgga catcttccag ctgaagcagg
+      541 aggattttga tcccatcgat tccttcctgg tccacaagcg cgccctgctt gcccagctgc
+      601 cagccgatcg ccacaacgag gagaccgaga tggacttcct atatggcctg ctgaacatca
+      661 agtaccgcaa acacatcacc cgccagagcg tgaagatgtt caaggaactg ctggagcagg
+      721 gccgcatcat cgaacacaac acccaggagg acgaagatct ggcggccacc aagaacaccc
+      781 gtggctcccg ccgcactacc cgctgcacct actgcaactt caggggacac acgttcgagg
+      841 tttgtcgcaa gcgcaagaag actcgcgacg aggaacacga cgaggaataa gccaagcaac
+      901 acatgcatta ttgtgggggc gacgacggca tgaacatcat caccggcagc agcattccgc
+      961 ccccaccccc gcacaccaga gaacttttca ccgcctcgct ggccgctctg cgctctgaga
+     1021 gtgccatcat gacccaacat cggtgatagc gaaggaaaag aagtttcaaa agtagagaaa
+     1081 gctctttacc aattcaactc tttcactatc acacatacac aaacacacac acacacactc
+     1141 tcaatcaaac ggcgtgccgg taagcagagg aaagcttctc tccctctctc taaacaattc
+     1201 cgctattttt gtgaggggtt ggctctttta gcgattgcgg ccgacaactg gtggccactg
+     1261 caattccttc gagggctttt cccctatcat ggatggcgct tccctagaac tttcactttc
+     1321 acgctgccct gcggctattt tggcgccgaa cgccaactct tgaactctcg aaatttattt
+     1381 cgaacactcg ttttttaaac cacaaactag gacaactatc gagcgctgcc aggggaggat
+     1441 gggagaggat cacgcatttc ttctggagtt tggaagcttt gaatcgcaga tgtaattcat
+     1501 ggccaaacgc tggttggatg tccaaggcca acgccctgag tatctacacc tggctttagc
+     1561 tctgcaattg caacgcgacc gaagccccga atagatgttg cgcgatccga tcttgtcccc
+     1621 ctctggtaga cctcaacaac cgcttccttg accttgtgcc tgtcagcgaa gaggtaacgt
+     1681 atacgtggcg caaatggtga ccaatgtatt caccacactg ctgtggtcac cgttttagcc
+     1741 gttgtttgcg ttgctttggg tctgtgcttg gtctttggtg aaggtggcaa aaaacccccc
+     1801 gctctgtgaa tgctcgctta gatccttttg cacgtggctg tcgctagccc agggcagcaa
+     1861 ctccgtgctg aacgtggcct cggctacgtc tggtatgtgg ttgttgccaa aggcgatgct
+     1921 tctggtgcga ggagagctta cagcgggcac aatctgggca aaaccacaaa tttctccaga
+     1981 aatttgaaat caaatcaatt ttttgacatt gtcagaatat gatcaacttt gtacatcgca
+     2041 ctacgatggc tcccgattcg ccatttgtgc ggttggcacg ccaaattgcc aaattgccaa
+     2101 attcgggatt acgggttctg ggctctaacc cctgtgatcc cgcggcaagc atttaggcac
+     2161 gtcattccca ttcacacaca cgcgaaatgg gtctcgtcga taccgcgtat ctccggccgg
+     2221 caccgactct cccagtttca caatccttga aaaccagaca cttgtgaaga atccacaggc
+     2281 gcgaagtgac aatatggtag ccaaacttgt gggcgcgcca atgggcattg cctcaagcgc
+     2341 tccacgagac tagctcgcat tcctcaaggg acgggaattg ttaatttcaa tggcattaaa
+     2401 cttgtaccaa aagctggggg cctgttgacg accacaagtg tctgattcga aagcaagaaa
+     2461 atataaattg taaaacacaa gactgaaacc agaaaacact aaactcaaaa ctacaaaacc
+     2521 aca
+//
+

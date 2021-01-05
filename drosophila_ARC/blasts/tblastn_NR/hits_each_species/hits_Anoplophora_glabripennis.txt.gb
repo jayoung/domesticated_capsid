@@ -1,0 +1,117 @@
+LOCUS       XM_018705467            2872 bp    mRNA    linear   INV 10-JAN-2018
+DEFINITION  PREDICTED: Anoplophora glabripennis uncharacterized LOC108903332
+            (LOC108903332), mRNA.
+ACCESSION   XM_018705467
+VERSION     XM_018705467.2
+DBLINK      BioProject: PRJNA348318
+KEYWORDS    RefSeq.
+SOURCE      Anoplophora glabripennis (Asian longhorned beetle)
+  ORGANISM  Anoplophora glabripennis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Coleoptera; Polyphaga;
+            Cucujiformia; Chrysomeloidea; Cerambycidae; Lamiinae; Lamiini;
+            Anoplophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019416259.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Jan 10, 2018 this sequence version replaced XM_018705467.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Anoplophora glabripennis Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2872
+                     /organism="Anoplophora glabripennis"
+                     /mol_type="mRNA"
+                     /isolate="ALB-LARVAE"
+                     /isolation_source="'mixed' research colony (originating
+                     from wild-collected US specimens from several localities)"
+                     /db_xref="taxon:217634"
+                     /chromosome="Unknown"
+                     /country="USA: Otis Air National Guard Base, MA"
+                     /collection_date="Aug-2011"
+     gene            1..2872
+                     /gene="LOC108903332"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108903332"
+     CDS             114..1523
+                     /gene="LOC108903332"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108903332"
+                     /protein_id="XP_018560983.1"
+                     /db_xref="GeneID:108903332"
+                     /translation="MSITLSDEQFKHLLDRLQISGSSSGNFTKCSSRFSGSKVSDVNA
+                     FIDAVEIYKDCTHVSDENALRGLPMLLDDFAARWWHGVKSTITTWDAAVDLLKRTYGP
+                     VKPPYRVYRELFASEQDLITPTDIFICKARGILSQLPANTLSESIQLDMVYGLLNRRM
+                     KEKIPRNKVETFTELLEKSRLAEEIFNETIYFEQNKTNTKKLRCTYCRTVGHSKGECD
+                     KLSTRPIVDTVPSTIESPVEFCMLNTDIKSNSIALRPRPIMYINILGLQGTGIIDTAA
+                     KESIAGQSLYNVMVAKGQTFKQDKIYVGLADGSTKLENVLITYVDVKIQGRVIPTRFI
+                     ILTDAVNNSTLLGINFIQDARISVDVSNRMWSFSDAPFVKYELHFETNQANEDTKVYY
+                     SDFLRSDEGSMLPSTVKEKFNAQLTENRPFFPFVAEPTPYGVYYKNTEDIGSAMLDDR
+                     NVQRKPNKVSRRYTKKKRN"
+ORIGIN      
+        1 tattgtaaaa acagtttaag taggacattg atagtgagtg tattttagtt acaacttgtt
+       61 cagtggaatt gtacgttgtc atttatactg ttaactcaga aaaataatcc aatatgtcta
+      121 ttacgttaag cgatgaacag tttaaacatt tgttggatag acttcaaata agtggctcga
+      181 gtagtgggaa ttttaccaag tgttcttcac gtttcagtgg ttcaaaagtc tctgatgtta
+      241 acgcatttat cgatgctgtt gaaatttaca aagattgcac ccatgtgtcg gatgagaacg
+      301 cacttcgtgg tttaccaatg ttgctggatg attttgctgc aagatggtgg cacggtgtga
+      361 aatcaactat aacaacttgg gacgctgctg ttgatctttt aaaacgcacg tatggacctg
+      421 ttaagcctcc gtatcgcgta tacagagaac tttttgcatc tgaacaagat ttgataacac
+      481 caactgatat atttatttgt aaagcacgtg gcattttatc acaactgcca gctaataccc
+      541 tgtcagaaag tattcagcta gatatggtgt atggtttatt gaacagaaga atgaaagaga
+      601 aaattcctag aaataaagtt gaaacattca ctgaactttt ggaaaaatca cgccttgctg
+      661 aagaaatttt caatgaaact atttatttcg aacaaaataa aacaaataca aagaaactac
+      721 gttgtactta ttgccgaact gtaggtcatt cgaaaggaga atgtgataag ttgtccacac
+      781 gtcctattgt ggatactgtg ccatctacta tcgaatctcc agtagaattt tgtatgctga
+      841 acacagatat aaaaagcaat tcaatagcac ttagacctag acccataatg tacattaata
+      901 tccttggtct tcaaggtact ggtattatag atactgctgc taaagagagt attgcaggtc
+      961 aatcattgta taatgttatg gttgctaaag gacaaacgtt caaacaagat aaaatttatg
+     1021 ttgggttggc tgatggtagt actaaattag aaaatgtcct aattacttat gtagatgtaa
+     1081 agattcaagg tcgtgtaata ccaacaaggt ttattatttt aactgacgct gttaacaata
+     1141 gtacattgtt aggaattaat tttatacaag atgctagaat aagtgttgat gtctctaatc
+     1201 gcatgtggtc attttctgat gcaccgtttg tcaaatatga actgcatttt gagacaaatc
+     1261 aagcaaatga agatactaaa gtttattatt ctgactttct acgttccgat gaaggtagta
+     1321 tgttaccatc tacagtaaaa gaaaaattca atgcccaatt gacagaaaat cgtcctttct
+     1381 ttccttttgt tgcagaacca acaccttatg gagtatatta caagaacact gaagatattg
+     1441 gttccgccat gttagatgac cgtaacgtac aaagaaaacc taataaagtt tctcgacgat
+     1501 atactaaaaa aaagcgtaat tgaagagagt gagccgtgac tatgtgacga ttgtaaacat
+     1561 ttaaacgcca taagagttaa tgactctatc tctatctcta tctctatctc tatctctatc
+     1621 tatatctcta tctctatctc tatctacatc accatcctct atctttatct caatctctat
+     1681 atctatttaa tttttatata tcattcttag atttgaaata caattaccac caattctatg
+     1741 tacatcttcc ggattgtaat aaaacaattt agaatttatc gctacttatg tttacctttt
+     1801 gccctgtggt cagaaccggc caagttttag tgttaatgga ttgcattcgt cttaggctaa
+     1861 gtcaagtatt aatacccgtc tatgtagacc atttaattgt gctgtcagac agtgctattt
+     1921 cgcctttgaa tgacttaaac ttggtgtgta ctagccttag acaatttaag ttgtgtgcta
+     1981 actgggagaa atatttcgtg tacccaaaat tatcatagtg acaacttcaa atatactagt
+     2041 tccgagtaac attaagaaag tacaattttt ttcacaaagt tgcccaaagt tggtataaga
+     2101 gatttattgt gaacttcgca gatatttctt gtcaattgag tgaccttact aggaagaatg
+     2161 ctccatagat ctagtcaact caaagagaag ctgtcagttt attgaagaac ctacgtatgt
+     2221 aaaaaaaaac aattaatttc tacgtacgta gaactgatac gagtaactat actgcagtgg
+     2281 ttggactgtc acagggggtg aatgatgaag aacatttgac ggaacaggct agtcgacttc
+     2341 tgtcaaagac taactgtaac tatacatcta cggaatgaga ggctttaact actaactggt
+     2401 cactaattaa atgtagaggt tatgatatgg tttaccgatt actgtcacta caaattatca
+     2461 actattggga tggctgctga aatcagttac tggagactta ccagatgaac tattcttcta
+     2521 ctgatacaca aattccaaga tgtgtctaat acttcaaaat tgtgtctatg gactggatcc
+     2581 taaagcatcc gagtatatct cttggaatgt accacttctt gaccctcaca ccttatactg
+     2641 aactctgaga aggtgaactc aagttgaaat taagacatga gaattcaaag aatatgaaga
+     2701 ctgccttatt tggttctacg tcggcggtgt aaagtgtaac cagataggaa tactatgtaa
+     2761 taatggactg gcccaagcac ttattccttg tgttaaattg attgtcgatt gttagtaata
+     2821 tttaaatgct ttatgtatat tccaaatacc tcaatatatt aatttgtcgt aa
+//
+

@@ -1,0 +1,259 @@
+LOCUS       XM_034336311             678 bp    mRNA    linear   INV 13-MAY-2020
+DEFINITION  PREDICTED: Osmia lignaria activity-regulated cytoskeleton
+            associated protein 2-like (LOC117609696), mRNA.
+ACCESSION   XM_034336311
+VERSION     XM_034336311.1
+DBLINK      BioProject: PRJNA631044
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Osmia lignaria (orchard mason bee)
+  ORGANISM  Osmia lignaria
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Megachilidae; Megachilinae; Osmia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023009276.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Osmia lignaria Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 41% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..678
+                     /organism="Osmia lignaria"
+                     /mol_type="mRNA"
+                     /isolate="UT-Olig-1"
+                     /isolation_source="UT nest trap"
+                     /db_xref="taxon:473952"
+                     /chromosome="Unknown"
+                     /tissue_type="Flight muscle"
+                     /dev_stage="adult"
+                     /country="USA: Utah"
+                     /collection_date="05-May-2019"
+                     /collected_by="Dacotah Melicher"
+     gene            1..678
+                     /gene="LOC117609696"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 24% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117609696"
+     CDS             1..678
+                     /gene="LOC117609696"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_034192202.1"
+                     /db_xref="GeneID:117609696"
+                     /translation="MATNLTPNELALNHDPSSSPTNLQMSTSQLSEILESIQRTRPVE
+                     EGSFAKCSGRFDGIQCYAKVVEFITTTSIYKDIEHISDENAPRGLPLLLQGHAATWWR
+                     GVQTTVRTWREAVDLIRATFVPRRPAYQVYTEVFRTAQDPKVPTDLFISKKRALLAEL
+                     PELPTESVQIDMLYGLLRFHLRERISGESITSFTDLVNRAREIEKLEKEAQQQNLEER
+                     PVKKDQR"
+ORIGIN      
+        1 atggctacaa atctgacgcc caacgagctg gccctgaacc acgacccatc ctcctcaccg
+       61 acgaacctcc agatgtccac ctcccagctt tccgaaattc tggaatccat ccaacggaca
+      121 cgcccggtag aggaaggaag cttcgcgaaa tgttcagggc gctttgatgg aatccaatgc
+      181 tacgcaaagg tcgttgaatt tataacaacg acctccatct acaaagacat tgagcatatc
+      241 tccgacgaaa acgctccccg tggactaccc ctgctcctgc aaggacacgc agccacgtgg
+      301 tggagaggcg tccaaaccac ggtacgaacc tggagagaag ctgtggatct gatacgcgct
+      361 accttcgtgc cccgaagacc cgcgtatcag gtgtacaccg aggtatttcg caccgcccaa
+      421 gatccaaagg tgcccaccga tctcttcatc agcaagaaaa gagcccttct tgcggaatta
+      481 ccagagctgc ccacggaaag cgtccaaata gatatgctgt acggccttct acgctttcac
+      541 ctacgggaac ggatttcggg ggaatccatc acgtctttca ccgacctcgt gaaccgcgca
+      601 agggaaattg aaaagctgga aaaagaggcc cagcagcaaa atctagagga acgacccgtg
+      661 aagaaggatc aacgatga
+//
+
+LOCUS       XM_034339071            5094 bp    mRNA    linear   INV 13-MAY-2020
+DEFINITION  PREDICTED: Osmia lignaria uncharacterized LOC117611144
+            (LOC117611144), mRNA.
+ACCESSION   XM_034339071
+VERSION     XM_034339071.1
+DBLINK      BioProject: PRJNA631044
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Osmia lignaria (orchard mason bee)
+  ORGANISM  Osmia lignaria
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Megachilidae; Megachilinae; Osmia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023009305.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Osmia lignaria Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 88% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..5094
+                     /organism="Osmia lignaria"
+                     /mol_type="mRNA"
+                     /isolate="UT-Olig-1"
+                     /isolation_source="UT nest trap"
+                     /db_xref="taxon:473952"
+                     /chromosome="Unknown"
+                     /tissue_type="Flight muscle"
+                     /dev_stage="adult"
+                     /country="USA: Utah"
+                     /collection_date="05-May-2019"
+                     /collected_by="Dacotah Melicher"
+     gene            1..5094
+                     /gene="LOC117611144"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 10% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:117611144"
+     CDS             1..5094
+                     /gene="LOC117611144"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC117611144"
+                     /protein_id="XP_034194962.1"
+                     /db_xref="GeneID:117611144"
+                     /translation="MAGIAWVYRLKKDQVVSELRRLNLPTLGTWVQLRTSLADYVREH
+                     QDEFADKPEDEPGYKEEADQTRDYHEFHAEMAREWLRTHLGNRPATATSTPNRRDDTN
+                     AEMTAFPAGPSAPPEPAARHHEDRAKTMEIMRKWNCHFDGRDPYAFLEQLEELQEAYG
+                     LTDHQMRSGFTQLLRGEAQKWYRNTAVKIRSWQDLQEQLRRFFVPAGEKRRLDQQIAS
+                     RKQGPDEPLRTFINEITTLMRRRGAYTEVELLDAIYFNMKPAFRLYINRALIKDVSEL
+                     ITRAETVTESMTAEQGTTRRSEEQRTTRPEPRPRTPNPTRGSKVATDYNRETHCWRCG
+                     QTGHDRFKCPNSAVRFCSYCGKVGEMTRTCLCARQGNAERGRTDPAPVNQPTNTDQRG
+                     SETNLPRKKNQEKKEKPNQPGEDRKTVHCQIAENPRPTAVANDRIIITVRVGQCYVEA
+                     LLDTGAAASYISDETAEICKQAGWEIEDHQLSSSLANGQEMKIYASYRGQGLFNGMRR
+                     KHRFYVMPNLAYPMLIGMDLLRRLGLQVWLGEQRVDRKDAQNQPTSLPVPCTIKAPIG
+                     LAELTPDDQEQLDQFLRREKRAFEGIQGPTPLIEHEIRLEETTPIKQRYRPRNPAMQK
+                     LIDEEVEKMLTDGVIQPSSSPWSSPIVMVKKKDGKYRFCVDFRKLNQVTRKDAYPLPH
+                     VNATLDKLRGARYLSTIDLKNGYWQVPLSPESRPLTAFTAPGRGLMEFVVMPFGLHSA
+                     PSTFQRLLDRVIPPEMAPHAFAYLDDIVIVTSTFEEHLRVLTEVFRRLRAAKLRPNWE
+                     KCHMARNSLKYLGHIVDNEGLRTDPEKVSAVAELPPPANIKDLRRFLGLLSWYRRFVP
+                     DVSKEAAPLTTLLRKDVRWTWGKKQQQAFDELKKRLIDSPVLAMPDWNKTFILQTDAS
+                     TEGLGAVLTQEDDQGERVIAYASRTLNNAEKNYSATELECLAVKWGIWKMRHYLEGYH
+                     FIVVTDHQSLKWLEKIDSPSGRLARWALELGQWDFEIRYRRGPENTVADALSRRPQPV
+                     CGIQQPAQGNWYNRKYQEVENNPEDHPEYRIDNGILYRNILHTLDFNEIEPDQQWKIC
+                     VPENQKTRVLREAHDIPTAGHLGVAKTLARLAHSYYWPGMLREATKYVRDCTRCQEYK
+                     VNQQATPGNMYATNVQQPWEMVSADLVGPLPRSKTGNTSLLVIQDRFTKWIELRPLRR
+                     ATGPAVAKALRELVILRHGTPRAVTTDNGKQFVGKEFEKTLTESGIKHRRTPPYAPQC
+                     NPVERANRVIKTMISQDLGKTQKAWDEHLPEIAFAYNTARHDSTGYTPAYLNTGRELT
+                     PPGSLQQENQRRTTTPWATRLKNLRDAQELARTRLAQEFQRQQRHYNQRRRNWQPKIG
+                     ERVWKRTHILSSKADARNAKLSKKYDGPFRVHKRVSPVIFDLRDRQGKRVDHVHVRDL
+                     KPVTGTRNTELRKATTQPSGSSEPTRNVNAQGRDVTGPLPAGHGPAAIKGQQQRQRAQ
+                     TRDGCKTAGRGDFGSYTPPKPAGKGRAQPANPNATGVEKIHTPKDATECLVRGANPQS
+                     NQTGPGPDTGQATARHRANTGETQAASAGPGRPATGNIVGRPQHGQKARGSRWADDHP
+                     GARKPAAGNQGTGQDDGGSRGRRSMGQPLPTGCNDAGPDADPGHRVHNRPTRDKGGDN
+                     VHPGRRDGCPIVHGSEATPPHEKRPTLDH"
+ORIGIN      
+        1 atggccggta tcgcttgggt atatcgcctg aagaaggacc aagtagtcag cgaattgcgt
+       61 agactaaacc tgcctacgct gggaacgtgg gtccagctac ggaccagcct ggcagactac
+      121 gtccgagaac accaggacga gtttgcagac aaaccagaag acgagccggg atacaaggag
+      181 gaagccgacc agacccgaga ctaccacgaa ttccacgcgg agatggcccg agaatggctc
+      241 cggacacacc tggggaaccg tccagccacg gccacatcaa cacccaaccg tagagacgat
+      301 acgaacgccg agatgacggc atttccggca ggtccatccg ctccaccaga accagccgcc
+      361 cgacatcacg aggaccgggc aaaaacaatg gagattatgc gaaaatggaa ctgccatttc
+      421 gacggacgag acccgtacgc gttcctggag caattagaag aactacagga agcatacggc
+      481 ctaaccgacc accagatgcg ctcgggcttc actcagctat tacgaggcga agcccaaaaa
+      541 tggtacagaa atacagccgt caaaatacgc tcgtggcagg acctccagga acagctacga
+      601 agattcttcg taccagccgg agagaaaagg cgattggacc agcaaatcgc cagccggaag
+      661 caaggtccag acgagccgct aaggaccttc attaacgaga taactacgtt aatgcgccgc
+      721 agaggtgcat acaccgaggt agagctgctg gacgcaatct acttcaatat gaagccagcg
+      781 ttccggctct acatcaaccg ggcgctaatt aaagacgtaa gcgagctgat caccagggcg
+      841 gaaacggtaa ccgaaagtat gaccgcagaa cagggcacca ccagaagaag cgaagaacaa
+      901 cgcacgacca ggcccgaacc acgaccgaga acaccaaacc cgaccagagg cagcaaagtc
+      961 gcgaccgact acaaccggga gacgcactgc tggcgatgcg gccagacagg acacgaccgc
+     1021 ttcaaatgcc cgaactcggc ggtcagattc tgctcctact gcgggaaagt aggcgagatg
+     1081 acacgaacct gcctatgtgc aaggcaggga aacgccgaga ggggccggac agacccggcc
+     1141 ccagtaaacc agccaacaaa cacagaccag cgcggaagcg agacaaacct tccacgcaag
+     1201 aagaaccagg agaagaagga aaagccgaac cagccaggag aagaccggaa gaccgtccat
+     1261 tgccagatcg ccgagaaccc tcggccaacg gccgttgcaa acgaccggat catcatcacc
+     1321 gtccgagtag gacaatgtta cgtggaagcc ctactcgaca caggagccgc cgcgtcgtac
+     1381 atcagcgacg agacggccga aatctgcaag caagcaggat gggagataga agatcaccag
+     1441 ctatcctcct ccttagccaa tggtcaagaa atgaaaatct acgccagcta tagggggcag
+     1501 ggactgttca acggcatgcg tagaaaacac cgcttctacg tcatgccaaa tttggcctat
+     1561 cctatgctaa ttggcatgga cctattacgc aggcttggcc tgcaagtctg gctaggagag
+     1621 caacgcgtgg acaggaaaga cgcccagaac cagccgacaa gtctacctgt cccgtgtacg
+     1681 ataaaagcgc caattggcct ggcagagctc acaccagatg accaggagca gctcgaccaa
+     1741 ttcctaaggc gcgagaagag agcgttcgag gggatacaag ggcccacccc gctaatcgag
+     1801 cacgagatcc ggctcgaaga aacgacgccg ataaaacaac ggtaccgacc acgcaacccg
+     1861 gccatgcaga aactgatcga cgaggaagtc gaaaagatgc tgacagacgg ggtaatacag
+     1921 ccgtctagca gcccatggag ttcacccatc gtcatggtga agaagaagga cgggaaatac
+     1981 cgtttctgcg tggacttccg gaaattaaac caggtcacgc gcaaagacgc gtatccgctg
+     2041 ccgcacgtca atgcgacact cgacaaattg cggggagcaa gatacctctc cacaatagac
+     2101 ctgaagaacg gctactggca agttccgtta tcaccggaaa gcagaccact aaccgctttc
+     2161 acagcaccag gacgaggact aatggaattc gtcgtcatgc catttggact gcactcggca
+     2221 ccgtcaacat tccagagact cctggaccga gtgattccac cagaaatggc gccgcacgcc
+     2281 ttcgcttacc tagacgacat cgtcatagtc acttccacgt tcgaggaaca cctacgggtc
+     2341 ctgaccgagg tcttccggcg acttcgggcg gcgaaactac gcccgaattg ggaaaagtgc
+     2401 cacatggcac gaaacagtct aaaatatctt ggacacatcg tggacaacga aggcctgcgg
+     2461 acagacccgg aaaaagtatc agccgtagcg gaattaccgc cgccagccaa catcaaggac
+     2521 ctgaggcgat ttttgggcct cctatcctgg tacagacgct ttgtaccgga cgtctcaaaa
+     2581 gaggcggccc cactgacaac cctcctacgc aaagacgtac ggtggacgtg gggcaagaaa
+     2641 caacaacagg cgttcgacga gctaaagaag cgcctcatcg attcaccagt cctggctatg
+     2701 ccggactgga ataaaacgtt catcctacag accgacgcga gcacggaagg cctgggagcc
+     2761 gtgctcacac aagaagacga ccagggcgaa cgagtcatcg cctacgccag ccggaccctg
+     2821 aacaatgccg agaaaaacta ctcggccacc gaactcgaat gtcttgcagt gaaatggggc
+     2881 atctggaaga tgcgccacta cctggaggga taccatttca tcgtggtcac tgaccaccaa
+     2941 tccctaaaat ggctagagaa aatcgacagc ccgtcaggac gactcgcacg atgggcatta
+     3001 gaactcggcc aatgggactt cgaaatccgc taccgacgag gtccagagaa cacggtcgcc
+     3061 gacgccctgt cacggcgacc gcaaccagtc tgcggcatcc agcaaccagc acaaggaaac
+     3121 tggtacaaca ggaagtacca ggaagtcgaa aacaacccag aggaccaccc ggagtacagg
+     3181 atcgataacg gcatcctgta caggaacatc ctacacacat tggacttcaa cgagattgaa
+     3241 ccggaccaac aatggaagat ctgcgtaccg gaaaaccaga aaaccagggt cctgagagag
+     3301 gcacacgata tcccgaccgc cggacacctt ggcgtggcca aaacgcttgc acgcctggcc
+     3361 cattcatatt actggccagg gatgctacgc gaagccacaa aatacgtcag ggactgtaca
+     3421 agatgccagg aatacaaagt aaaccagcag gccaccccag gaaacatgta cgcaaccaac
+     3481 gtacagcagc catgggaaat ggtttccgca gacctcgtcg ggcctctccc gaggtcaaag
+     3541 accggaaaca cgtcactact ggtaatccag gaccggttca cgaagtggat agaactccga
+     3601 ccgcttcgac gagcgaccgg accagccgtc gcaaaggctc taagagaatt ggtcatccta
+     3661 cgccacggaa caccgcgtgc cgtaaccacc gacaacggca agcagtttgt cggaaaagag
+     3721 ttcgaaaaaa ctcttaccga aagcggcatt aagcaccggc gcacaccacc gtacgcgccg
+     3781 cagtgcaacc ccgtggagcg agccaacagg gtaataaaaa cgatgatcag ccaggacctg
+     3841 ggaaagacgc aaaaagcgtg ggatgaacat ctcccagaaa tcgcatttgc gtacaacacg
+     3901 gcacgacacg actccaccgg atacacaccg gcatacctca acaccggtag agaactaaca
+     3961 cctccaggaa gcctccaaca ggagaaccag cgaaggacaa ccaccccatg ggcaacacgt
+     4021 ctcaaaaatt tgagagacgc ccaggaactc gcccggactc gactcgccca ggagttccaa
+     4081 cgccagcaac gccactacaa ccaacggcgg cgcaactggc agccgaaaat cggcgaacgc
+     4141 gtgtggaaac gcacacatat cctgtccagc aaagccgacg cgaggaatgc gaaactctcg
+     4201 aagaaatacg acggaccctt cagggtccac aagcgagtct caccggtaat tttcgaccta
+     4261 agggaccgcc aaggaaaacg cgtggaccac gtccacgtca gagacctaaa accggtgacc
+     4321 ggcacaagga acacggagct gcgcaaagct actacgcagc caagcggcag cagcgagcca
+     4381 acgcgcaacg tcaacgcgca ggggcgcgac gtcacaggcc ccctccccgc cggacacgga
+     4441 ccagcggcta taaaaggcca gcagcagcgg cagagagctc agactcgaga tggctgcaag
+     4501 acagctggaa gaggagattt cggcagctat acgccgccta aacctgcagg aaaaggcaga
+     4561 gcacaacccg ctaaccctaa cgccacagga gtggaaaaaa ttcatacgcc taaggatgcc
+     4621 acggagtgcc tggtgcgagg cgccaacccg cagagcaacc agaccggccc gggtccagac
+     4681 accggccagg cgaccgcccg tcaccgggct aacaccggcg aaacacaggc cgcttccgct
+     4741 ggccccggga gaccggccac cgggaacatc gttggccgtc cgcaacacgg ccaaaaggct
+     4801 cgcggaagcc gctgggctga cgaccacccc ggagctcgga aacccgccgc cggcaaccag
+     4861 ggaaccggcc aagatgacgg cggaagccgt ggccgacgca gcatgggcca gccgctgcca
+     4921 acgggctgca acgatgccgg acccgacgcc gaccctggtc accgcgtgca caatagacca
+     4981 accagggaca aaggaggtga taacgtacac cctggcagac gggacggatg tccaattgta
+     5041 cacgggagtg aggcgacacc gcctcacgaa aaacggccga cgctggacca ttaa
+//
+

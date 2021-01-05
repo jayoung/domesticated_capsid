@@ -1,0 +1,180 @@
+LOCUS       XM_030520642            2652 bp    mRNA    linear   INV 24-AUG-2019
+DEFINITION  PREDICTED: Scaptodrosophila lebanonensis activity-regulated
+            cytoskeleton associated protein 1 (LOC115625551), mRNA.
+ACCESSION   XM_030520642
+VERSION     XM_030520642.1
+DBLINK      BioProject: PRJNA501994
+KEYWORDS    RefSeq.
+SOURCE      Scaptodrosophila lebanonensis
+  ORGANISM  Scaptodrosophila lebanonensis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Scaptodrosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022060529.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Scaptodrosophila lebanonensis
+                                           Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2652
+                     /organism="Scaptodrosophila lebanonensis"
+                     /mol_type="mRNA"
+                     /strain="11010-0011.00,11010-0021.00"
+                     /db_xref="taxon:7225"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+     gene            1..2652
+                     /gene="LOC115625551"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:115625551"
+     CDS             152..898
+                     /gene="LOC115625551"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1"
+                     /protein_id="XP_030376502.1"
+                     /db_xref="GeneID:115625551"
+                     /translation="MPQTIQMTNEQLRELIDAVRATAVSAAGNAAAGTIEATKSKGNF
+                     SACTTRFGGAREHDQVEEFITSIVTYKEVEDISDESALKGLPLLLYGIASTWWQGVRK
+                     EAKTWNDAIALIRENFSPAKPAYQVYMEFFEKKQEDNVAIDTFVVQKRALLAQLPENR
+                     HDEETELDFLYGLLNIKYRKQIPRQDIKTFRSLLEQGRIIEHNNQEDEAAATGPLRGA
+                     KGTKRCTYCNFRGHTFEQCRKRKQSADIAE"
+ORIGIN      
+        1 acgaccagca attgtgaaaa cagctacatt cgccaaacgt attggctttg caagctgtcc
+       61 aagcacaaat tgcaataaaa gcaaaaacat ttatatacta cgtgtttgct atttattcca
+      121 agtccaaacg acgataccag attaaacaaa tatgccacaa accattcaaa tgacgaatga
+      181 acagctccgt gagctcatcg acgcagttcg tgcgaccgcc gtgagtgctg ccggaaatgc
+      241 tgctgccggc acaatcgagg ctaccaaatc aaagggtaac ttcagtgcgt gcacgacacg
+      301 gtttggggga gcgcgtgaac acgatcaggt cgaggagttc atcacaagta ttgtcaccta
+      361 caaggaggtg gaagacatat ccgacgagag cgcactgaaa ggactgccac tactgctcta
+      421 tggcatcgcg tcgacctggt ggcagggtgt tcggaaagag gccaaaacgt ggaatgatgc
+      481 tattgctctc atacgtgaga atttttcgcc cgcaaaaccc gcctaccagg tctatatgga
+      541 gttctttgag aagaaacagg aggacaatgt tgccattgac acgtttgtgg tgcaaaaacg
+      601 tgcgctgctc gctcaactgc ccgagaatcg tcacgacgag gagaccgagc tggacttttt
+      661 atatggcctg ctgaacataa aataccgcaa gcaaattccc cgccaagaca tcaaaacctt
+      721 ccgcagtctg ctcgaacagg gtcgcattat agagcataat aatcaggagg atgaggcagc
+      781 cgccacaggt ccgttgcgtg gcgccaaagg cacgaaacgc tgcacctact gtaatttccg
+      841 tggccacaca tttgagcagt gtcggaagcg taagcagtcc gccgatatcg cagaataaaa
+      901 agcacaaaca acacacaaca ctttccggca tgagcaacaa caccagcaac ttcaaagtgc
+      961 gcagggcgca caatgaactt attcaatgtc catgccaaat aacaacaacc acattagtaa
+     1021 aacagcttac tccgccgcgc tggccatcat attggtgaga acgacgctat ttacaacagc
+     1081 aacatcaaca gaaacgggaa catcgacgac aagagagcaa caatatcaac accagcaacc
+     1141 gcagcataaa gctttcaaag cttttagtta agttctcatt tctcatttgc tcactaagtg
+     1201 aggcgccggc aagcagagca agactgactc attttcgata gccgcatcat cctgttgtgc
+     1261 tggttgcatg cacttggagg ccctttcaac ttgttgcttt gggtggcttt gtgcgtgttt
+     1321 caagccacag gtttttgtgg cttatcattg caattttcag tcacgctgca catgcggcta
+     1381 acaatttggc tacgaacgcc atttcacaaa atttgaaacc ttattcaaag atactcgtcc
+     1441 tttttgcaaa ctcttaaact tagagtttac cattgacact cgagcggtac aagacatggg
+     1501 cgacgccaac gcacacattt cgccacaaaa gccaagtgac tgatctagtg cgctgctgca
+     1561 agcagtggcg tcggccaggc gttacaattt tgtgcaattc ctttgggttg catgggaaag
+     1621 tacgtatggc cggcacagcg gctctgctgc cctgcattga gagcagcact ttttggccag
+     1681 ggtgttgagt acgagggcgt tgttcatgtc cctgtatcgt tcaaaatctt gtcttagcct
+     1741 tgtgcctgta tgggcagatg cagcgtgtac gtatggcggt caagttaaag cactgcttct
+     1801 ctggtcccga cctaaggaca atgctttgat ttgtcgctta tgtttgcgca tgtgtttgcc
+     1861 attccatgcg ggtcctttgc caaggcgaaa aaaacccccc cgctcggtgt ttacgtgctg
+     1921 atccttttgt gcgtcgcaaa cataaggctg ggctccaagt tgtgtgcagc ttgtcaggca
+     1981 acacctttgc tgagcgttgg acacctcttg tgggtgcttt cagtgctggc tttggtgaag
+     2041 cgccgcttgc taaatataat ttgaagtgct gctttgcgtg tgcgacttgc acaataggaa
+     2101 ctgcgcggag gtgctgggct aaacaaattt cttcggaaat ttgaaaaaac caactttttt
+     2161 gactttttgt caaacaaaca caacatatgt tgctctacga tggctatgtt gtcgccattc
+     2221 gagcaattgg cgcgcctaat tgccagtatg ggcgttatgc ccttctgctt tgcaagcttt
+     2281 aggcaccatt atttatcaca aacacacccg cggcccaagg ttcgtcgctt catcgcccct
+     2341 ccagcgaacg gcgactgcct tgggccccaa ctataaactc aactttctgt gtggaatcca
+     2401 taggcgcgta atgttatcca tgagtttgat tgatgctgac tttgtacatg gtgctggaat
+     2461 gtggagaacc agcctcgagc cttgatacaa attcagcccg cttttcccac tagcctgctt
+     2521 atgcgtttta gtgtatgcaa tcgggaaata gtgggggcct atcgaaacca cagaaagttg
+     2581 cggttgaaaa caaaaattaa tacaaaatac aacaatacaa gtaccaaata caaaccctag
+     2641 ttcaaaactg aa
+//
+
+LOCUS       XM_030531493             804 bp    mRNA    linear   INV 24-AUG-2019
+DEFINITION  PREDICTED: Scaptodrosophila lebanonensis activity-regulated
+            cytoskeleton associated protein 2 (LOC115633973), mRNA.
+ACCESSION   XM_030531493
+VERSION     XM_030531493.1
+DBLINK      BioProject: PRJNA501994
+KEYWORDS    RefSeq.
+SOURCE      Scaptodrosophila lebanonensis
+  ORGANISM  Scaptodrosophila lebanonensis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Scaptodrosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022060529.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Scaptodrosophila lebanonensis
+                                           Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..804
+                     /organism="Scaptodrosophila lebanonensis"
+                     /mol_type="mRNA"
+                     /strain="11010-0011.00,11010-0021.00"
+                     /db_xref="taxon:7225"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+     gene            1..804
+                     /gene="LOC115633973"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:115633973"
+     CDS             140..724
+                     /gene="LOC115633973"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_030387353.1"
+                     /db_xref="GeneID:115633973"
+                     /translation="MAQLSEEQFRILIETIRALAPPKPEEPQSKGSFSNCTVRFSGQR
+                     DNDAVDEFITAIETYKDVEGISDRDALKGISLLFNNIAITWWKGVRREAKTWQDALTL
+                     LRDHFSPTKPSYQIYMEIFETKQSNHEVIDAFVCNKRALLAKLPDGRHDEETELDFVY
+                     GLMLSKYRDHIPRHEIKTFRELLERGRSLERTRH"
+ORIGIN      
+        1 agggagattg catgcgtatg catgtacgga catacatata ttagattgta ccaggcacta
+       61 ttttgtttat ttgctttgaa gtaagactca attttgttta ttgagttgag aaatcttttt
+      121 ccgcgggact ataaaccaaa tggctcagct atcggaggag cagtttcgca tactcatcga
+      181 aactatacgt gctctcgccc ctccgaaacc agaagagccg caatcgaagg gtagctttag
+      241 caactgtacg gtgcggttca gtggtcaacg agacaatgac gcagttgatg agtttattac
+      301 agcaattgaa acgtacaagg atgtcgaagg aatcagcgat cgcgacgcgc ttaaaggcat
+      361 ctcattactg tttaataata tcgcgattac ctggtggaaa ggtgtgagac gagaggcaaa
+      421 gacatggcag gatgcgttaa cgctattacg cgatcatttt tcgcctacaa agccatctta
+      481 tcaaatatat atggagattt ttgaaacaaa acagtcaaac cacgaagtca tcgatgcatt
+      541 tgtttgcaac aaaagggcgc tactggccaa attgccagat ggccggcatg acgaggaaac
+      601 tgaactggat tttgtttacg gcctgatgtt gtccaagtat agagaccata tacctcgcca
+      661 tgaaatcaaa acttttcggg aactgctgga acgcggtcgc agcttggaac gcacaagaca
+      721 ctaattcaat tgtttataat tatgtaaact ttgtaagtta gattataaaa tatgtaaata
+      781 tacaaatata tgtataaaag taaa
+//
+

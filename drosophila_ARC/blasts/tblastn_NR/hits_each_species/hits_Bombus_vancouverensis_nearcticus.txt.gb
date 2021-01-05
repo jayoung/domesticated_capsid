@@ -1,0 +1,91 @@
+LOCUS       XM_033328451             915 bp    mRNA    linear   INV 12-APR-2020
+DEFINITION  PREDICTED: Bombus vancouverensis nearcticus activity-regulated
+            cytoskeleton associated protein 2-like (LOC117153933), mRNA.
+ACCESSION   XM_033328451
+VERSION     XM_033328451.1
+DBLINK      BioProject: PRJNA623917
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombus vancouverensis nearcticus
+  ORGANISM  Bombus vancouverensis nearcticus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Apidae; Bombus; Pyrobombus; Bombus vancouverensis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022881772.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombus vancouverensis nearcticus
+                                           Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 50% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..915
+                     /organism="Bombus vancouverensis nearcticus"
+                     /mol_type="mRNA"
+                     /isolate="JDL1245"
+                     /isolation_source="worker"
+                     /sub_species="nearcticus"
+                     /db_xref="taxon:2705178"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /tissue_type="muscle"
+                     /dev_stage="adult"
+                     /country="USA: California, Tulare County, Sequoia National
+                     Park"
+                     /lat_lon="36.59 N 118.74 W"
+                     /altitude="2214 m"
+                     /collection_date="17-Jul-2015"
+                     /collected_by="Jeff Lozier"
+                     /identified_by="Jeff Lozier"
+     gene            1..915
+                     /gene="LOC117153933"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:117153933"
+     CDS             1..915
+                     /gene="LOC117153933"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_033184342.1"
+                     /db_xref="GeneID:117153933"
+                     /translation="MDVEEQMEQDSASQVFASFAEPFKSFGEANLGVATNRDMQEDQL
+                     SRFMTRAMTLQPSTAPKVGSFVGYTARFNGDAHDVDNFILNITLYKDIEGIKDETALQ
+                     ELSLLLEGEAAIWWANMKKDVHIWSEALKLLQRKFSIKRQPYEIYHQIFSVKQDDHIP
+                     TEMFIKQKRALFDELPRTHSEEVQIDMIYSLLKSKVRKKIPRETIVTFDQLICAARRV
+                     EYSRYKRRLQRFERYGFNSLISAGKPTKFCTHYREFDESGRSREVDCYKYKSRRRRRV
+                     DRHREYILPTPNTSRTPLDDFNLSSYHL"
+ORIGIN      
+        1 atggatgttg aggagcaaat ggaacaggat tctgcttcgc aggtatttgc tagtttcgcg
+       61 gagccattta agagttttgg cgaggcaaat ttgggcgtag ccacgaaccg cgatatgcaa
+      121 gaggaccagc tatcccgttt catgaccaga gccatgacac tacaaccatc gacagcgcca
+      181 aaagtcggta gtttcgtagg ttatacagca cggttcaatg gagatgcaca cgacgtggac
+      241 aacttcatct taaatatcac gctgtataag gatatagagg gaatcaaaga tgaaacagct
+      301 ttgcaagaac tatctctttt actggaagga gaagccgcta tatggtgggc caatatgaaa
+      361 aaggatgttc acatatggtc cgaagcttta aaactattac aacgaaagtt ctcgatcaaa
+      421 agacaaccat acgagatata ccaccaaata ttctccgtaa aacaggatga tcatattcca
+      481 acagaaatgt tcattaaaca aaaacgggct cttttcgacg aacttcctcg aacccactcc
+      541 gaagaagttc agatcgatat gatctattca ttactgaagt cgaaagtccg gaagaaaata
+      601 ccaagagaga cgatagttac tttcgatcag ctgatctgcg cagctcgtcg cgtggaatat
+      661 tcgagatata aaaggagact gcaacgattt gagagatacg gctttaattc attaatatcc
+      721 gctgggaaac caacaaaatt ctgcacacac tacagagaat ttgacgaaag tgggagaagt
+      781 cgcgaagtgg actgttataa atacaaaagt aggcgacgta gacgtgtcga ccgtcacagg
+      841 gaatatatcc tgccgacacc aaacacttcc cgtactccgt tagatgattt taacctcagc
+      901 tcataccatt tatag
+//
+

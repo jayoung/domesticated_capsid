@@ -1,0 +1,261 @@
+LOCUS       XM_033358093             312 bp    mRNA    linear   INV 13-APR-2020
+DEFINITION  PREDICTED: Belonocnema treatae activity-regulated cytoskeleton
+            associated protein 1-like (LOC117171048), mRNA.
+ACCESSION   XM_033358093
+VERSION     XM_033358093.1
+DBLINK      BioProject: PRJNA623416
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Belonocnema treatae
+  ORGANISM  Belonocnema treatae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita;
+            Parasitoida; Cynipoidea; Cynipidae; Cynipinae; Cynipini;
+            Belonocnema.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046660.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Belonocnema treatae Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..312
+                     /organism="Belonocnema treatae"
+                     /mol_type="mRNA"
+                     /isolate="2016_QV_RU_SX_M_011"
+                     /host="Quercus virginiana"
+                     /db_xref="taxon:1159321"
+                     /chromosome="4"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="Sexual adult"
+                     /country="USA: Houston"
+                     /collection_date="2017"
+     gene            1..312
+                     /gene="LOC117171048"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:117171048"
+     CDS             1..312
+                     /gene="LOC117171048"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_033213984.1"
+                     /db_xref="GeneID:117171048"
+                     /translation="MAITFTPEQFQEFLQNIKASLRFEGAQPAAQPSAAAPHQGNFSK
+                     CVSRFDGSKDTDVNAFIDAIQIYKECTNISDENALKGIPMLLNGFAATGWKGVKSSVN
+                     T"
+ORIGIN      
+        1 atggctataa cattcacgcc cgagcaattc caagaattcc tccaaaatat caaagcatcg
+       61 cttcgattcg aaggtgcaca gccagcagca cagcctagcg ctgctgcacc tcatcagggt
+      121 aatttctcca agtgtgtatc acgattcgac ggcagtaaag ataccgacgt gaacgcgttc
+      181 atcgatgcga tacaaatata caaagaatgt acaaacatat cggatgaaaa tgctctcaaa
+      241 ggcataccga tgcttcttaa cggattcgcg gctactgggt ggaaaggcgt aaaaagttcg
+      301 gtaaatacgt ga
+//
+
+LOCUS       XM_033366935            1824 bp    mRNA    linear   INV 13-APR-2020
+DEFINITION  PREDICTED: Belonocnema treatae uncharacterized LOC117176682
+            (LOC117176682), mRNA.
+ACCESSION   XM_033366935
+VERSION     XM_033366935.1
+DBLINK      BioProject: PRJNA623416
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Belonocnema treatae
+  ORGANISM  Belonocnema treatae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita;
+            Parasitoida; Cynipoidea; Cynipidae; Cynipinae; Cynipini;
+            Belonocnema.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046663.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Belonocnema treatae Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1824
+                     /organism="Belonocnema treatae"
+                     /mol_type="mRNA"
+                     /isolate="2016_QV_RU_SX_M_011"
+                     /host="Quercus virginiana"
+                     /db_xref="taxon:1159321"
+                     /chromosome="7"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="Sexual adult"
+                     /country="USA: Houston"
+                     /collection_date="2017"
+     gene            1..1824
+                     /gene="LOC117176682"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:117176682"
+     CDS             1..1824
+                     /gene="LOC117176682"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC117176682"
+                     /protein_id="XP_033222826.1"
+                     /db_xref="GeneID:117176682"
+                     /translation="MAITFTPEQFQELLQNIKASLRFEGAHPAAQPGAATPHQGNFSK
+                     CLSRFDGNKDTEVNAFIDAIQIYKECTNISDENALKGITMLFNGFAATWCQGVKSSLN
+                     TREEVKTLLKSTFSVKQSAYRVYRELFAGEQDEHISTDLFICKARALLAHLPENTVTE
+                     AVQVDMIYGLLLHRIRKEVPREKVNNLKKLIELARKVEENHMESLEKKATTSNSISSK
+                     PNSKKCKFCKVFGHATDECRRFKKKLEKESDSVKNENISDAKSSENTKLATQPSTNPT
+                     IKCFGCDTPGYVRRNCPKCNKNAEIKTASTNLESCTLDCTEKETRTRSRPKVPIKILG
+                     SHGTGFLDSCAGNSVSGYSLYQLLIKKGQEFEKVSVKVGFADGEKSNREILIAELKVT
+                     LMDKEIPTTVIIFPEAQNSVTLLGIDFLEDAEIIINAPQRVWKFLGDSTEHELQYGNI
+                     SATMDNVQVSFVNTMRSDEGSSLTEDQRIEIEKFLSDNEDVFAVGGEPTPYAEHRIDT
+                     GDHIPVATPPNKMSTQKKELLYKELTSMQENDIEECESPWAAQVVLIPKKDSGVRVCL
+                     DYRRLNAITTSDKYPMSRIEEFLHNAKRTYYMYTIDLRNGY"
+ORIGIN      
+        1 atggctataa cattcacgcc cgagcaattc caagaattgc tccaaaatat caaagcatcg
+       61 cttcgattcg aaggcgcaca tccagcagca cagcctggcg ctgctacacc tcatcagggt
+      121 aatttctcca agtgtttatc acgattcgac ggcaataaag ataccgaagt gaacgcgttt
+      181 atcgatgcga tacaaatata caaagaatgt acaaacatat cggatgaaaa tgctctcaaa
+      241 ggcataacga tgctttttaa cggattcgcg gctacttggt gccaaggcgt aaaaagttcg
+      301 ttaaatacgc gggaagaagt aaaaacgctg ttgaaatcca ctttcagcgt aaaacagtcc
+      361 gcttatcgcg tctatcgtga actttttgcc ggggagcaag acgaacacat ttcaacggat
+      421 ttattcattt gcaaagctcg cgcgttgtta gctcatttac cggaaaatac tgtgacagaa
+      481 gcagttcaag tcgatatgat ttacgggttg cttttacatc gtattcgaaa agaagtacct
+      541 cgggaaaagg taaataattt aaaaaaatta attgaactcg cccgaaaagt ggaagaaaac
+      601 cacatggagt cactcgagaa gaaagctact acgtcgaatt ctatttcttc aaagccaaac
+      661 tcgaaaaagt gcaaattttg taaagtattt ggccacgcaa cggatgagtg tagacgtttc
+      721 aagaagaaac tcgaaaagga gagtgattcg gtaaaaaatg aaaatatatc ggacgcgaaa
+      781 tcttcggaaa atactaaact ggcgacgcag ccttcgacaa acccaactat caagtgtttc
+      841 ggatgtgaca caccagggta tgtgagaaga aattgcccaa agtgtaataa gaatgcagaa
+      901 attaaaacgg cctctacaaa tttagaatcc tgtactctcg attgcacgga aaaggaaaca
+      961 aggacacgct ctaggcccaa ggttcctatt aaaattctag gatcgcatgg aaccggattt
+     1021 ctcgattctt gtgccggaaa tagtgtatca ggatatagct tgtatcaatt acttatcaaa
+     1081 aaaggacaag aatttgagaa agtatcagtg aaggtgggat tcgctgacgg agaaaaaagt
+     1141 aatagagaaa tacttatcgc cgaattaaag gttacactga tggataaaga aataccgaca
+     1201 acagtcatca tttttccgga agcacagaac tcagtgactt tgctaggaat agattttctt
+     1261 gaggatgctg aaataattat aaatgcacct caacgagttt ggaaattttt aggagattca
+     1321 accgaacatg agttacagta cggaaacatc tcagctacaa tggataacgt acaggtgagt
+     1381 tttgtaaaca ctatgcgcag tgatgaagga agtagcctca ctgaagatca acgtatagaa
+     1441 atcgaaaaat ttctgtctga taacgaagac gtctttgcag tagggggaga accaacccct
+     1501 tatgcagaac atcgaataga tacaggagat catatacctg tcgctacacc acctaataaa
+     1561 atgtctacgc aaaagaaaga gctcctatac aaagaattga catccatgca ggaaaatgat
+     1621 atcgaagaat gtgagtcacc atgggctgct caggttgtct taattcccaa aaaagactct
+     1681 ggagtcagag tttgtttaga ctaccgcaga ctaaatgcaa tcacgacgag tgacaagtac
+     1741 cccatgtcaa gaatagaaga gtttctacac aatgctaaaa ggacatatta tatgtacaca
+     1801 attgatctac gaaacggata ctga
+//
+
+LOCUS       XM_033370104             783 bp    mRNA    linear   INV 13-APR-2020
+DEFINITION  PREDICTED: Belonocnema treatae activity-regulated
+            cytoskeleton-associated protein-like (LOC117178678), mRNA.
+ACCESSION   XM_033370104
+VERSION     XM_033370104.1
+DBLINK      BioProject: PRJNA623416
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Belonocnema treatae
+  ORGANISM  Belonocnema treatae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita;
+            Parasitoida; Cynipoidea; Cynipidae; Cynipinae; Cynipini;
+            Belonocnema.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_046664.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Belonocnema treatae Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..783
+                     /organism="Belonocnema treatae"
+                     /mol_type="mRNA"
+                     /isolate="2016_QV_RU_SX_M_011"
+                     /host="Quercus virginiana"
+                     /db_xref="taxon:1159321"
+                     /chromosome="8"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="Sexual adult"
+                     /country="USA: Houston"
+                     /collection_date="2017"
+     gene            1..783
+                     /gene="LOC117178678"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 6 Proteins"
+                     /db_xref="GeneID:117178678"
+     CDS             1..783
+                     /gene="LOC117178678"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton-associated
+                     protein-like"
+                     /protein_id="XP_033225995.1"
+                     /db_xref="GeneID:117178678"
+                     /translation="MAVPATSPTAIEWRSIIRAFRTPDVSVPMFAGLDHEDPETFLNQ
+                     CERYFAEAAIEPLLWSRMVTKCLTDRAAKWYEVYRGLSLPWAKFRTLTTQHFAGVSAR
+                     NKLHIKLYANKQEEKEAVGVFLQKKYLLALRMLPTASEEQIIGLLMESLKPSIRKVLR
+                     AATMSSFEDLIERALQAESDEADETSKKPTAARTAVATIQPAAPASATTAPRPRLQCH
+                     HCTGEHYVRSCPHLKTFPGNGPVRAAEAGAPSAHGTPGTPQS"
+ORIGIN      
+        1 atggccgtgc cagcgacatc acctaccgcc atcgagtggc gatccatcat ccgggccttc
+       61 aggacgcccg acgtttcagt tccaatgttc gctggacttg atcacgagga tccggagacg
+      121 ttcctcaacc agtgcgaaag gtatttcgca gaagcagcca tcgaaccact tctttggtca
+      181 cggatggtga ccaagtgcct cactgaccga gcagcaaaat ggtacgaggt gtaccgtggg
+      241 ctctcactgc catgggccaa attccggacg ctcaccacgc agcacttcgc cggagtatca
+      301 gcgcggaaca agctgcatat aaagctatat gcgaacaagc aagaggagaa ggaggctgtc
+      361 ggtgtcttcc tccagaaaaa gtacctgctg gccctgcgca tgctgccaac cgccagcgag
+      421 gagcagataa tcggcttgct catggagtcg ctcaagccga gcatcaggaa agtgttgcgg
+      481 gccgcaacaa tgtcctcctt cgaggatctg atcgagaggg ctctacaagc ggagtctgac
+      541 gaggccgacg agacatcgaa gaagcccaca gccgccagaa ccgctgtggc aaccatccag
+      601 ccagccgccc ctgccagcgc cacgactgcg ccacgtccac gtctgcagtg ccatcactgc
+      661 accggagaac actacgttcg cagctgccct catctcaaga cgtttccggg aaacggacca
+      721 gttcgggcgg cggaagccgg cgctccctcc gcccatggca ccccaggcac accccagtcc
+      781 tga
+//
+

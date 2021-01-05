@@ -1,0 +1,177 @@
+LOCUS       XM_013291827             839 bp    mRNA    linear   INV 31-JUL-2015
+DEFINITION  PREDICTED: Papilio polytes uncharacterized LOC106110115
+            (LOC106110115), partial mRNA.
+ACCESSION   XM_013291827
+VERSION     XM_013291827.1
+DBLINK      BioProject: PRJNA291535
+KEYWORDS    RefSeq.
+SOURCE      Papilio polytes (common Mormon)
+  ORGANISM  Papilio polytes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Papilionidae; Papilioninae; Papilio.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013528358.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Papilio polytes Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: incomplete on both ends.
+FEATURES             Location/Qualifiers
+     source          1..839
+                     /organism="Papilio polytes"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:76194"
+                     /chromosome="Unknown"
+     gene            <1..>839
+                     /gene="LOC106110115"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106110115"
+     CDS             <1..>839
+                     /gene="LOC106110115"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106110115"
+                     /protein_id="XP_013147281.1"
+                     /db_xref="GeneID:106110115"
+                     /translation="STHIQNSGNFAKCNTRFDGLKTSDVLAFIDAIEIYKTCVNMSDD
+                     VALRGLPMLLTGLAATWWQGVKNSTPSWQAALESLRQTFGPRLPAHKIFRLIFEREQQ
+                     INETTDLFICHIRALFAQLPPHSLSEDVQLEMTYGLLHKRIREKVPRSCFTSFAELIA
+                     QARRIEDILNESRPLQTKSDVKPTLSTLPSNNTQPCYTPSPVHNKRPQCSYCKRYGHV
+                     KEACQKLAGKPLEVKEGVLEKKTPAVTCFGCGTPGRIRSNCPTCKEKKSLEPVTSSFQ
+                     SVSA"
+ORIGIN      
+        1 agtactcaca tacagaattc tggcaacttt gccaagtgta atacaagatt tgatggcctt
+       61 aaaactagcg acgtcttagc tttcatcgat gcgatcgaaa tctacaagac atgtgttaac
+      121 atgagcgacg acgtagcgct gcgtggattg cccatgttac taacgggact ggccgctacg
+      181 tggtggcaag gtgttaaaaa tagtaccccg tcatggcaag cagcgttaga atcgctaagg
+      241 caaactttcg ggcctaggct gcccgcacac aaaatcttta ggttaatctt tgagcgcgaa
+      301 caacagatta acgaaacaac agatttattt atttgccata taagagcatt gttcgcgcaa
+      361 cttccgccac attctctatc ggaagatgta caacttgaga tgacgtatgg tttattacat
+      421 aaacgaatac gcgagaaagt acctcgttct tgttttacct cgtttgcgga acttatagcc
+      481 caagcgagac gtatagagga catcctaaat gagtctcgcc cattacaaac aaaatcagac
+      541 gtcaaaccta cgttaagcac gttgccgtcg aataatacac agccatgtta cactccgtcg
+      601 cctgtacaca ataaacgacc tcagtgtagt tattgcaagc gttatggcca tgttaaggaa
+      661 gcgtgccaga aattggcggg aaaaccttta gaagtcaaag agggcgtatt agagaagaag
+      721 acaccggcag ttacttgctt cggttgcggg acacccggac gtatccgttc gaactgcccg
+      781 acgtgtaagg agaagaagtc gttagaaccc gtaaccagtt cgttccaatc tgtttccgc
+//
+
+LOCUS       XM_013294105            2579 bp    mRNA    linear   INV 31-JUL-2015
+DEFINITION  PREDICTED: Papilio polytes uncharacterized LOC106111906
+            (LOC106111906), mRNA.
+ACCESSION   XM_013294105
+VERSION     XM_013294105.1
+DBLINK      BioProject: PRJNA291535
+KEYWORDS    RefSeq.
+SOURCE      Papilio polytes (common Mormon)
+  ORGANISM  Papilio polytes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Papilionidae; Papilioninae; Papilio.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_013525058.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Papilio polytes Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2579
+                     /organism="Papilio polytes"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:76194"
+                     /chromosome="Unknown"
+     gene            1..2579
+                     /gene="LOC106111906"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:106111906"
+     CDS             653..2365
+                     /gene="LOC106111906"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC106111906"
+                     /protein_id="XP_013149559.1"
+                     /db_xref="GeneID:106111906"
+                     /translation="MSGKSGLAKLQSSSFVITRAGRSTTIKKQNTNAEMLSPEQFTQL
+                     LERLPVAAQPHKGSFITCKYFFNGEKDAEVVEAFLSAINIFKRSADIGDKTALSELPI
+                     ILKGEAGVWWLGVKNDVTTWSDFESQLREYFAPTREPYQIYLDITQEKQGKEDSTDDF
+                     IRHKRMLFSQLPSPGHSETQQLDMIYGLLRLDIRDKVSRAAVDNFKDLTKAAKAAELV
+                     LQEKDAVVVTHNGKKSSESSRNATNPTRLDPRKGKCRFCRNYGHLAENCRKRLRLNED
+                     KEGNVTEASTSVAVTQAPSLSAPKFSCYGCGAPGVVRANCSTCHANKNKRPQVDIGFC
+                     SIDSVIDARDRPVIFVEIGGVNGSVFLDSCAKSSVASYSLYCQLRTKGFTFREYDVGV
+                     TLAVGDPKRRKVLVTEAPVKVNDRIVMTTFLFFPDSHSSRTLLGVGFIQDAHIEISLP
+                     QSTWHFTDDPTQVFELYPESFVDHHRKTSLAALTPDDSPSCSPSFREETSTSQSYGPL
+                     IGIDAPSPPKKRLEPIYLANHSPILDALYEDARICLQNYDTEDELDDVDDALFPSITF
+                     HRSM"
+ORIGIN      
+        1 caagataaat taagactact cgcgccatcg tatgccgagt agtaaaatcg tgcatgcggc
+       61 gccttaatgc attgatgcaa ctgaacaatt acgccgcttg tcactagatg gcgccgtggt
+      121 tcacttatat gccactatcg atgtacatag atggtttcgt gacctcggcc gccgtgacca
+      181 acttttggtg agcttgaagg gagctcgtga agagcttggt gtgcttggtt actcgtggtg
+      241 tgcttacgct aggcactctt ggtgcttcaa ccattgcttg aacactcaag ggtcctcgga
+      301 aaagcattaa ctcgccttgc ataactgcgc ctcacctaag ttgggtcatt tatgtaagcg
+      361 gtgatcagcc cacgtaacgc tcgccccgca ccccccgcgc tacaagtggc gcccaacgtt
+      421 tggccagtct gcgtgacgtc atcgtggtgc tacgaagact gctacgggtc tcgtgacgtc
+      481 atcttacgtg ctacgagttt gctacgaacg tgctacgaat ttttaacgtt ttcgtggtgc
+      541 aacgggactt gtgtcgtcgt cgaggtgcta cgaagcctgt gacgtcataa gcgtgctacg
+      601 attttcgtcg cgtcatcgtc acaatcaacg caacgctaga cgacctacat ttatgagcgg
+      661 aaaaagcgga ttagcgaagt tacaaagttc gtcttttgtt attacacgcg caggacgttc
+      721 tacaaccatt aagaagcaaa atacaaacgc cgagatgtta tcaccggaac aatttacgca
+      781 gttgttagaa agactgcctg tagcagcgca acctcataaa gggtccttta tcacttgcaa
+      841 atacttcttc aatggtgaaa aagatgccga agtggtggaa gcgttcttgt cagcaatcaa
+      901 tatctttaaa cgttccgcag atattggcga taagactgca ctaagcgaac tcccgattat
+      961 cctaaaaggt gaagctggag tctggtggtt aggcgtgaag aatgatgtaa ctacgtggtc
+     1021 ggatttcgaa tctcaactgc gggaatactt tgcgcctacc cgcgaaccct accaaattta
+     1081 tctggacata acgcaggaga aacaaggcaa ggaagattct actgatgatt ttattaggca
+     1141 taagcggatg ttgttttctc aactccctag cccaggacac agcgaaactc agcagttaga
+     1201 tatgatttac ggcttgctgc gcttagacat aagggataag gtttcccggg ctgccgtaga
+     1261 taattttaag gatctgacga aggcggctaa agcggctgag cttgtcctac aggaaaagga
+     1321 cgccgttgtt gtcactcaca acggaaagaa gtcgtcagag tcgtctcgca acgctaccaa
+     1381 tcctactaga ctagatccaa ggaaaggtaa atgtaggttc tgccgtaatt atggtcactt
+     1441 ggctgaaaac tgccggaagc gtttgcgact aaacgaggac aaggaaggga atgtcacgga
+     1501 agcatctaca tctgtggcag ttacccaagc gccatcacta tctgcaccaa aattcagttg
+     1561 ctatggctgc ggagcccctg gtgtggtgag agccaactgt tcaacgtgcc acgcaaataa
+     1621 gaataaacgg cctcaagtgg acatcggatt ttgttcgata gatagtgtga tcgacgccag
+     1681 agacagacca gttatttttg ttgagattgg tggtgtaaat ggttctgtat tccttgacag
+     1741 ctgtgctaaa tccagcgttg cgtcgtactc attgtattgc caattgagaa cgaaaggatt
+     1801 cactttccga gagtatgatg ttggtgtaac attggctgtt ggcgacccga aacgtcggaa
+     1861 ggtgctggtc actgaggcac ctgtaaaagt taacgaccgt atcgtcatga caactttcct
+     1921 gttcttccct gactcacata gttccagaac actcctcggt gttggattta ttcaggatgc
+     1981 ccacatcgag ataagcctac cacagagtac atggcacttt actgatgatc caactcaagt
+     2041 tttcgagctg taccctgaaa gtttcgtcga tcaccatagg aaaacgtcat tggctgcatt
+     2101 aacgccggat gactctccat catgttcacc atcgtttcgg gaggaaacta gcacatcgca
+     2161 atcatacggt cctctgattg ggattgatgc tccgtcgcct cccaagaaaa gacttgaacc
+     2221 tatataccta gcaaatcatt ctccaatatt ggacgccttg tacgaagatg caaggatatg
+     2281 tcttcaaaat tatgacacgg aggacgagct agatgacgtt gacgatgcgc tctttccgtc
+     2341 tattaccttt catcggtcga tgtaacaata ttaaacgacc ttttagccaa aaatcaagac
+     2401 atctgcataa ctaacggagg actagtccag aatttctgac acgcaatgga aacgggagat
+     2461 cacgaactga tttctctgcc gtattgtttg tcgctgttaa agtttgaaat ttaaagagaa
+     2521 gcaggccgaa gaagtagtct gtctttaatg ccggctctcc acaagcaaca cgagctcgt
+//
+

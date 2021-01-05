@@ -1,0 +1,80 @@
+LOCUS       XM_023163567             834 bp    mRNA    linear   INV 01-DEC-2017
+DEFINITION  PREDICTED: Leptinotarsa decemlineata uncharacterized LOC111508140
+            (LOC111508140), mRNA.
+ACCESSION   XM_023163567
+VERSION     XM_023163567.1
+DBLINK      BioProject: PRJNA420356
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Leptinotarsa decemlineata (Colorado potato beetle)
+  ORGANISM  Leptinotarsa decemlineata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Coleoptera; Polyphaga;
+            Cucujiformia; Chrysomeloidea; Chrysomelidae; Chrysomelinae;
+            Doryphorini; Leptinotarsa.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019289472.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Leptinotarsa decemlineata Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..834
+                     /organism="Leptinotarsa decemlineata"
+                     /mol_type="mRNA"
+                     /strain="Imidocloprid resistant"
+                     /db_xref="taxon:7539"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /country="USA: Long Island, New York"
+                     /collection_date="2010"
+     gene            1..834
+                     /gene="LOC111508140"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:111508140"
+     CDS             1..834
+                     /gene="LOC111508140"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC111508140"
+                     /protein_id="XP_023019335.1"
+                     /db_xref="GeneID:111508140"
+                     /translation="MANVVLTNEQFAELMSRISLAGNTTQGVTTGGNFSKCLSRFDGS
+                     KDSDVNAFIDAVCIYEDCARVSDANALKGLPMLFDGFAAKWYQGVKTTVQTFDDALAL
+                     LTTFGPQKPPYRVYRELFATEQDLNTPIDIFICKLRSILAQLPSGTLTEEVQLDMIYG
+                     LLNRRIREKVPRDKVKTFSELLANSRLIEETFDRIDNVVTKDIKDTQRRIRCQYCKNI
+                     GHTYGTAELLRTTENLKHLPVSRIIPVTRTPLDLVHPILHQVVLLGVIPVLHYRAMDA
+                     V"
+ORIGIN      
+        1 atggcaaacg tagttttgac taacgaacaa ttcgcggaac tcatgtcgcg aatatcactg
+       61 gcaggtaaca ctacacaggg tgttactact ggcggtaatt tttcgaagtg cttatcacgt
+      121 tttgacggtt ctaaagactc tgacgtgaat gctttcattg atgctgtttg tatatatgaa
+      181 gattgtgctc gagtatccga cgcaaatgct ctcaaaggac ttccgatgtt attcgatggg
+      241 ttcgcggcaa agtggtatca aggcgtaaaa actacagtgc aaacatttga cgatgcgcta
+      301 gctctattga ccacattcgg tccacaaaaa ccaccatata gagtctatcg tgaactattc
+      361 gctaccgagc aagacctaaa tactccaata gacattttta tttgtaaact gcgttcaata
+      421 ctagcacagc ttccttctgg aactcttaca gaagaggttc aattggatat gatttatggg
+      481 ttattgaatc gtagaattag agagaaagtt ccacgtgata aagtaaaaac ttttagtgaa
+      541 cttttggcaa actcaaggtt gattgaagaa actttcgacc gtattgacaa tgtcgtgacg
+      601 aaagacatta aagatactca aagacgcatt cgctgccaat actgtaaaaa cataggccac
+      661 acctatggca cggcggaact tctcaggaca acggaaaacc ttaaacatct gcccgtgagc
+      721 agaataatac ctgtgactcg aacaccgctc gatttagttc atccaatcct acatcaggta
+      781 gtacttctcg gagtaatacc agttctccat tatcgtgcta tggatgcggt atga
+//
+

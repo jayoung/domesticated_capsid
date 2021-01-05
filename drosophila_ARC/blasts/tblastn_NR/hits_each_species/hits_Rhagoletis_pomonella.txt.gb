@@ -1,0 +1,1464 @@
+LOCUS       XM_036463916            1084 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 1-like (LOC118734193), mRNA.
+ACCESSION   XM_036463916
+VERSION     XM_036463916.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458556.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1084
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..1084
+                     /gene="LOC118734193"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:118734193"
+     CDS             140..796
+                     /gene="LOC118734193"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_036319809.1"
+                     /db_xref="GeneID:118734193"
+                     /translation="MSQSFVQLTTEQLQSLLDSVRLAAVAAANCAAPAIVKMKGTFVY
+                     CNSRLGDQHDYDYVQEFISAVLAYKDMESISDEDALKSIAILFYSEAAIWWQGVRKEV
+                     QTWNEAIALIREHYAPAKDAYQIYMEIFEEKQDDVIKMSTFVSRKRALLAQLPENRHD
+                     EETQLDMVYALLNIKYRRGLLRQDIRTFRELLGRGRIIEHNFSQSEKEEQNIKKHTKY
+                     "
+ORIGIN      
+        1 tttatttacg aaactaaact cagtctcatt cagcaaaaac caaattctca gcgcaagtgg
+       61 cgggaaaaca tacaagttgt acaccagcgc cagttagctg gacaaaggca agcggttctc
+      121 tggagattcc aaaaacaaca tgtcgcaatc cttcgtgcaa ctaaccaccg aacaactgca
+      181 gtcactgctc gattcggtac gtttagcagc cgttgccgcg gccaattgtg ccgccccagc
+      241 aatagtgaaa atgaagggca ccttcgtgta ttgcaatagt cgcctcggtg atcaacatga
+      301 ttatgattat gttcaggagt ttatatcagc ggtactcgcc tacaaagata tggaatcgat
+      361 cagcgacgag gacgcgctga aaagtattgc aattcttttc tacagtgagg cagcgatatg
+      421 gtggcaaggt gtgcgtaaag aggtacaaac ttggaatgag gccatcgcat tgattcgtga
+      481 acactatgcg cctgcaaagg acgcttacca aatttatatg gagattttcg aagaaaaaca
+      541 ggatgatgta atcaagatga gtacctttgt gagtcgaaag cgtgcactac tcgcacaatt
+      601 gccagagaat cgtcacgacg aggagacgca gttggacatg gtctatgctt tgctgaatat
+      661 caaatatcgc cgcgggttat tacgacagga tattcgtaca tttcgcgaat tgctcggacg
+      721 tggacgtatt attgaacaca actttagtca atccgaaaaa gaggagcaga atattaaaaa
+      781 acacacaaaa tactgaaaaa aatgttcctt acgggaatac ggttcggcaa ccaaattaga
+      841 ataaataatt ttttttttaa gaatttggac ttcgcttttg ttaaatcgat atatttctgt
+      901 tgaaaacaat cataatgtgg gtatcacttc attaaaaaag aaaaaacaaa tcgataaatt
+      961 tctcgatctc ataatcgata ttcctatcaa caaattaatc ggttttatca catatttttc
+     1021 ttttttgtgg cctttttgtt catcaatcgt tttcgtcaag ctcaactaat ggtaggacta
+     1081 aaag
+//
+
+LOCUS       XM_036463917            1075 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 1-like (LOC118734194), mRNA.
+ACCESSION   XM_036463917
+VERSION     XM_036463917.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458556.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1075
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..1075
+                     /gene="LOC118734194"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:118734194"
+     CDS             291..944
+                     /gene="LOC118734194"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_036319810.1"
+                     /db_xref="GeneID:118734194"
+                     /translation="MSQSFVQLTTEQLQSLLDSVRLAAVAAANCAAPATVKMKGTFVY
+                     CNSRLGDQHDYDYVQEFISAVLAYKDMESISDEDALKSIAILFYSEAAIWWQGVRKEV
+                     QTWNEAIALIREHYAPAKDAYQIYMEIFEEKQDDVTKMSTFVSRKRALLAQLPEHRHD
+                     EETQLDMIYPLLNIKYRRGLLRQDIRTFRELLERGRIIEHNFSQSEKEQNIKKHTKD"
+ORIGIN      
+        1 aacatacata tttacatttg catttgcaat gcatacagat ttgcagccag agcaagaatc
+       61 tcctaatttg atggagcttt tcttatacac tttgtgcgaa tgctcatact ttcgaagctg
+      121 gctcataaca agtttctgta tataaaagtt gtttatttac gaaactaaac tcagtctaat
+      181 tcagcaaaaa ccaaattctc agcgcaagta gcgggaaaac atacaagttg tacaccagcg
+      241 ccagttggct ggacaaacac tggcggttct ctggagattc caaaaacaac atgtcgcaat
+      301 ccttcgtgca actaaccacc gagcaactgc agtcactgct cgattcggtg cgtttagcag
+      361 ccgttgccgc ggccaattgt gccgccccag caacagtgaa aatgaagggc accttcgtgt
+      421 attgcaatag tcgcctcggt gatcaacatg attacgatta tgttcaggag tttatttcag
+      481 cggtactcgc ctacaaagat atggaatcga tcagcgacga ggacgcgctg aaaagtattg
+      541 caattctttt ctacagtgag gcagcgatat ggtggcaagg tgtgcgtaaa gaggtacaaa
+      601 cttggaatga ggccatcgca ttgattcgtg aacactatgc gcctgcaaag gacgcttacc
+      661 aaatttatat ggagattttc gaagaaaaac aggatgatgt aactaagatg agtacctttg
+      721 tgagtcgaaa gcgtgcacta ctcgcacaat tgccagagca tcgccacgac gaggagacgc
+      781 agttggacat gatctatcct ttgttgaata tcaaatatcg ccgcgggtta ttacgacagg
+      841 atattcgtac atttcgcgaa ttgctcgaac gtggacgtat tattgaacac aactttagtc
+      901 aatccgaaaa agagcagaat attaaaaaac acacaaaaga ctgaaataaa caaaattttc
+      961 cttatgggaa tacgattcgg caaccaaatt agaataaatg aatttttttc aaagaacttg
+     1021 gactttgctt ttgttaaatc gaaatatttc tgttgaaaat aattataatg tgtag
+//
+
+LOCUS       XM_036466116             888 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118736010), mRNA.
+ACCESSION   XM_036466116
+VERSION     XM_036466116.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458557.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..888
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..888
+                     /gene="LOC118736010"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:118736010"
+     CDS             1..888
+                     /gene="LOC118736010"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036322009.1"
+                     /db_xref="GeneID:118736010"
+                     /translation="MSYFLRSASKSDTLAPNLEASNSKEEREIIGEENKMATFSPDQF
+                     TQILAAIAGGNKCVSFTQCTARFRGQRDPSAVEEFIAAISVYKDIERISDADALRGMP
+                     LLLEEYAATWWIGVKGTVATFEEAVEIIRTTFSPPMPDWKIYIKIFEQKQQTREATDS
+                     FICKKRLLFSQLSDPISEAVQLNMTYGLLSIKIRERVRRDKVSTFDELISNCRDAEMI
+                     LAEAKQLTIASIDKNVSVEGPKRCSLCRLRGHTVDVCFKKKKEQQSQQAQQQPAIAAA
+                     TKVKKEKHFKCRLVGLEGP"
+ORIGIN      
+        1 atgtcttatt ttttacgaag cgcaagcaag agcgatacat tggcgcccaa cttagaggcc
+       61 agcaattcaa aagaagaacg cgaaatcata ggcgaagaaa acaaaatggc tacgttttcg
+      121 cctgatcaat tcacgcaaat tttggcagcg atcgcaggcg gcaataaatg cgtgtctttt
+      181 acccaatgca cagcacgttt ccgtggacaa cgcgatccat cggcagtgga agaattcatt
+      241 gcagcgatct cagtttacaa ggacatcgaa agaatttctg acgcagatgc cttgcgcggt
+      301 atgccacttc tgctggagga gtacgcagcg acctggtgga tcggtgtgaa gggcactgtc
+      361 gcgacctttg aggaagcagt tgagataatc cgcacaacat tttctccgcc aatgcccgat
+      421 tggaaaattt acataaaaat tttcgagcaa aagcaacaaa cgcgtgaagc taccgacagc
+      481 ttcatatgta agaagcgact actgttttcg cagttgagtg atcccataag cgaagcagtg
+      541 cagctcaata tgacgtacgg tctattgtct atcaagataa gagagcgagt gcgtcgcgat
+      601 aaagtttcga cgttcgacga attaatatca aattgtcggg atgcagaaat gattttggct
+      661 gaagcaaagc agcttacaat cgcatctatc gataaaaacg tatctgtgga agggccaaaa
+      721 aggtgctcgc tttgcaggtt acgcggccac actgtagatg tttgcttcaa aaagaaaaag
+      781 gagcaacagt cgcagcaggc ccaacaacaa ccagctatag cagcagcgac taaggtgaaa
+      841 aaggaaaagc attttaagtg ccgtttagta gggctcgaag gtccatga
+//
+
+LOCUS       XM_036466249            2553 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella uncharacterized LOC118736151
+            (LOC118736151), mRNA.
+ACCESSION   XM_036466249
+VERSION     XM_036466249.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458557.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2553
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..2553
+                     /gene="LOC118736151"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:118736151"
+     CDS             1..2553
+                     /gene="LOC118736151"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC118736151"
+                     /protein_id="XP_036322142.1"
+                     /db_xref="GeneID:118736151"
+                     /translation="MTTFTNEQFERLMQAVGQVNERPGSFSRCTARYTGERSSAKVEE
+                     FIAAIMTFKTVEKISDADAISGMPMVLEGDAAEWWRGVKSKANAFSDEIRMLREAFSP
+                     PKPSWRIYVEIFESKQQKNEVSRQRVQGFDDLLKEAREAELYLQERKTHAVNTDDTQK
+                     SSGPARCGFCRKKGHSSEMCFKKKNSEAQEAHAAKLAQAQSLRPKFACYGCNALGVTR
+                     ANCPNCIKTEVAKPNTVSFNSLNATNGQEIPSFNSLNSLSATIGREIPIANIQIFGVP
+                     GQAYFDSGTRTSVASANLKRIMDFKGYVFKSVRCEITLADGSTSLERCLSTVCKITID
+                     GRTLDIHFIVLPNAKNNRTLVGADFMEQAGIVLNMGQRYWYFENEPTEHFDFADPLPL
+                     ELNLVERVKVSDPISKRKQEDEWVKEAVQAKVYMSEFEYYGAEVPNTYSPHSIQDIFR
+                     DSIPPNEITPERSYETDGAELTETQKAQLNETLQAHPSIFGASHEPTPYAQHFIDTGN
+                     HEPVALPPYRLSFPKLQELKSEIHKMTENDIIEECDSAWSSPVVMVPKRDGSTRVCVD
+                     YRRLNAITKPDRYPLPRMDDLLHAAKSTKFMTTLDLQCGYFQIAVAEKDRDKTCLITP
+                     FGTYRFKRMPFGLRNAPETFQRLIDRFKTALPNIQILAYLDDNIICSHSFLNHLKDLH
+                     IVFEKLEKFKLGVNNAKCRFCCASVKYLGHVLTAEGIKVDPEKTMTIAERRAPRNIKE
+                     LVSFIQTCSWYRRFIDQYAKIAKPVTDLTKKNAVWQWREPQIEAFNKLKEMLVNPPIL
+                     KQAEDNVSFMIKTDASAYALGAVLLQGERDQEHPIEYASRLLTPAERNYSTT"
+ORIGIN      
+        1 atgactacgt tcacaaacga acaatttgag aggctgatgc aagcggtggg tcaagtaaat
+       61 gaaaggcctg gctcgtttag ccgctgcact gctcgttata ctggtgagcg cagctccgcg
+      121 aaagttgagg agtttattgc tgctattatg acttttaaaa cagtcgaaaa aataagcgat
+      181 gccgacgcaa taagcggtat gccaatggta ctcgagggcg acgcagcaga atggtggcgt
+      241 ggcgtgaagt caaaagccaa tgctttttct gacgaaatac gcatgctgcg tgaagcgttt
+      301 tcccctccga aaccatcttg gcgtatttat gttgagatat tcgaatcaaa acagcagaaa
+      361 aatgaggtaa gccgacagag agttcaaggt tttgatgact tgctaaagga agctagagaa
+      421 gctgaattat acctgcaaga acgcaaaacg catgctgtga acacggatga tactcaaaaa
+      481 tcgagtggtc cagcgcgttg cggattttgc cgcaaaaagg gacatagttc cgaaatgtgt
+      541 ttcaaaaaga aaaacagtga agcccaggaa gcgcatgccg caaagctagc gcaagcacaa
+      601 tccctaaggc ctaaattcgc ttgctatggt tgcaatgcgc tgggggtaac tcgcgcgaac
+      661 tgccccaatt gcattaaaac agaggtagcg aaaccaaaca cagtgagctt caattcatta
+      721 aatgctacaa atggtcaaga aatcccaagt ttcaactctt tgaattcatt gagtgctaca
+      781 attggtcgag aaataccaat tgctaatata caaatatttg gagtaccggg tcaagcatac
+      841 tttgactcag gaacgcgaac aagtgttgct agtgctaacc taaaacgcat aatggatttt
+      901 aaaggctatg tgttcaagag cgttagatgt gagataactc tggccgatgg cagtacctcc
+      961 ctcgaaaggt gcttgtcaac agtatgtaag ataaccatag atggacgcac tctggacata
+     1021 catttcattg ttttgccaaa tgcgaaaaat aatagaacct tggttggcgc agatttcatg
+     1081 gaacaggcag ggattgtttt gaatatgggt cagcgttatt ggtatttcga aaatgagcca
+     1141 acagagcact ttgattttgc cgatccgcta ccgcttgaat taaatctcgt tgagagagtg
+     1201 aaagtaagcg accctattag caaacgaaag caagaagatg aatgggtaaa ggaggcagtg
+     1261 caagcgaaag tttatatgtc cgaatttgaa tattatggag cagaagttcc gaatacctat
+     1321 tcgccgcatt cgattcagga catttttagg gattctattc caccaaacga gattacaccc
+     1381 gaaagaagtt atgaaactga tggggccgag ttaacagaaa ctcagaaagc acaacttaat
+     1441 gaaacattac aagcacatcc tagcattttt ggtgcatcac atgagcctac tccctatgct
+     1501 caacatttta tagacactgg taaccatgaa cccgttgcac ttccaccata tcggctatcc
+     1561 ttcccaaagc ttcaagagtt gaagagcgaa atacataaaa tgactgagaa cgatattatc
+     1621 gaagaatgtg attcagcgtg gtcatcaccg gttgttatgg taccaaaaag ggatggaagc
+     1681 acacgcgtct gtgtagatta ccggaggttg aacgcaataa cgaagcccga caggtatcca
+     1741 ctaccccgta tggacgactt gttacatgcc gctaaaagta ccaagttcat gacaactctg
+     1801 gatttacaat gtgggtattt tcaaatcgct gttgcggaaa aagaccgcga taagacatgt
+     1861 ctcattacgc cgtttggtac ctaccgcttc aagcgtatgc ctttcggcct tcggaacgct
+     1921 ccggaaacat ttcaacgctt gattgaccgt tttaagacag cgttaccaaa tattcaaatc
+     1981 cttgcgtatc ttgacgataa tattatttgc tcacattcat ttctaaatca tttaaaagac
+     2041 ctgcacatag tatttgagaa gcttgaaaag ttcaaactgg gcgttaacaa tgctaaatgc
+     2101 cgtttttgct gcgccagtgt gaagtacctt ggacatgttc tcacagccga gggtatcaaa
+     2161 gttgacccag agaaaacgat gacaattgca gaacgaaggg cgccccgaaa cattaaagaa
+     2221 ctggtgtctt ttattcaaac ttgctcgtgg taccggcgat ttattgatca gtacgcgaaa
+     2281 attgccaagc cggttacaga cctcaccaag aaaaatgctg tttggcaatg gcgcgaaccg
+     2341 cagattgaag cattcaataa actaaaagaa atgctggtga atccaccaat cctgaagcaa
+     2401 gccgaagata acgtatcctt tatgattaaa actgatgcaa gcgcgtatgc actaggagca
+     2461 gtactgctgc agggggagag agaccaggag catcctattg agtatgcaag ccgtttgttg
+     2521 actccagctg agcgtaacta ctcaacgacg taa
+//
+
+LOCUS       XM_036478599             753 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118745064), mRNA.
+ACCESSION   XM_036478599
+VERSION     XM_036478599.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458562.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..753
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..753
+                     /gene="LOC118745064"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:118745064"
+     CDS             1..753
+                     /gene="LOC118745064"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036334492.1"
+                     /db_xref="GeneID:118745064"
+                     /translation="MTTLTNEQFERLLQAVNNSNSRPGSFSNCSARFSGERSCTKVEE
+                     FTAAISTFKSVEKINDADAISGMPMILEGDAEEWWRGVKSKAKTFDDIVCMLREAFSP
+                     PRPSWRIYVEIFENKQQKNESTDTFIRKKPALFSQLTNVPAEADQIDILFGLLHVQIR
+                     DRVNRPKISNFEELLNEAREAELFWQERKQNAANDGQHSSVSAQARCGYCRKKGHSMD
+                     VYFKKKNEEAKEAHVANIAQAVALKPKFACYG"
+ORIGIN      
+        1 atgacgactt taacgaatga acagtttgag aggcttttgc aagccgtcaa taactccaac
+       61 tcacgacctg gctcgttcag taattgttct gctcgtttta gtggcgagcg tagttgcaca
+      121 aaagtagagg aattcactgc tgcaatttct acatttaagt cagtagagaa aataaacgat
+      181 gcagatgcga ttagcggtat gcctatgatc cttgagggtg atgcagaaga atggtggcgc
+      241 ggggtaaaat caaaagccaa aacttttgat gatattgtat gcatgctacg tgaagcattt
+      301 tcccctccaa ggccatcttg gcgcatatat gttgaaattt ttgagaataa acagcaaaaa
+      361 aatgagtcga cggacacttt tattaggaag aaacccgcac ttttctccca attaactaat
+      421 gtgccagccg aagctgacca aatagacatt ttgtttgggt tgttgcatgt gcaaatccga
+      481 gatagggtga accgtccgaa gatctctaat tttgaagagc tgctaaacga agctcgtgaa
+      541 gccgagctgt tttggcaaga acgcaagcag aatgctgcaa atgatggtca gcatagtagt
+      601 gtaagtgccc aagcgcgctg cgggtactgt cgtaagaaag gtcatagcat ggatgtatat
+      661 ttcaaaaaga aaaacgaaga ggccaaagaa gcgcacgttg cgaatatagc acaagcagta
+      721 gctctgaaac cgaagtttgc ttgctacggg tga
+//
+
+LOCUS       XM_036478891             630 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118745439), mRNA.
+ACCESSION   XM_036478891
+VERSION     XM_036478891.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458563.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..630
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..630
+                     /gene="LOC118745439"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:118745439"
+     CDS             1..630
+                     /gene="LOC118745439"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036334784.1"
+                     /db_xref="GeneID:118745439"
+                     /translation="MTQFTTEQFERLMQAVGHFNTRAGSFSNCTARYGGERESTKVEE
+                     FIAAVATFKAVEKINDADAIIGMPMILEGDAAEWWRGVQEKAKAFDDVVRMLREAFSP
+                     LKPSWRIYGDIFECKQQKNEPTDTFVRKKRALFSQLTNVPNEADQIDILFGMLHLQIR
+                     DRVSRKRINTFDDLLNEAREAELTLREHKTPTVNADKAVVSTSAMRFLS"
+ORIGIN      
+        1 atgactcagt ttactaccga acaattcgag cggcttatgc aagctgtcgg ccattttaat
+       61 acacgagctg gctcgttcag caattgtact gctcgttatg gtggtgaacg cgagtccaca
+      121 aaggttgagg agtttattgc tgctgtagcg acatttaaag ccgttgagaa aataaatgat
+      181 gccgacgcaa tcataggtat gccgatgatt cttgagggcg acgccgcaga atggtggcgt
+      241 ggtgtacaag aaaaagcaaa agcttttgac gatgttgtcc gaatgctccg agaagctttt
+      301 tcccctctga aaccatcatg gcgaatatac ggtgatattt ttgaatgtaa gcaacaaaaa
+      361 aatgaaccga cagacacttt tgttcgaaaa aagcgtgcac tgttttcaca actcacaaat
+      421 gtgccgaacg aagccgatca aatcgacatt ttgtttggaa tgctgcactt gcaaattcgg
+      481 gacagggtga gtcgtaagcg aattaataca ttcgatgatt tattgaacga agctcgcgaa
+      541 gccgagttga ccctgcgaga acacaaaacg ccgactgtga acgctgataa agctgttgtt
+      601 agcacaagtg cgatgcgatt tttgtcataa
+//
+
+LOCUS       XM_036479474             459 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118745799), mRNA.
+ACCESSION   XM_036479474
+VERSION     XM_036479474.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458563.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..459
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..459
+                     /gene="LOC118745799"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:118745799"
+     CDS             1..459
+                     /gene="LOC118745799"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036335367.1"
+                     /db_xref="GeneID:118745799"
+                     /translation="MYFSVVPNLVPQPTTDRTFILAPNLVAANKDNAETMATFSPEQF
+                     QQILAALTSDKKNGSFTGCTARFRGQRSPEAVEEFLAAITVYKDIEEVSDANALRGMS
+                     LLLEDYAATWWIGVKEKVATFSEAIDLIRTTFSPPTPDWKIQLYIPETAT"
+ORIGIN      
+        1 atgtacttct cagtggtccc caacctggtg ccacaaccaa cgacagatcg tacctttata
+       61 ttggcgccca acttagtggc cgcgaacaaa gataacgccg aaacaatggc aacgttttcg
+      121 cctgagcaat ttcaacaaat tttggcagcg ttaacgagtg acaaaaagaa tggctcgttt
+      181 actggatgca ctgcgcgttt ccgtggacaa cgaagccccg aggctgtgga agagttcctt
+      241 gcagctatta ccgtatataa agacatcgaa gaagtttccg acgcaaacgc attgcgtgga
+      301 atgtcactac ttttggaaga ctacgcagca acgtggtgga ttggagtgaa agagaaggtg
+      361 gcgacatttt ctgaagctat cgacttgatc cgcacgacat tttcaccgcc aactcccgat
+      421 tggaaaatac agctttatat tccagaaacg gctacttaa
+//
+
+LOCUS       XM_036483883             537 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118749111), mRNA.
+ACCESSION   XM_036483883
+VERSION     XM_036483883.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023458568.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..537
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..537
+                     /gene="LOC118749111"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:118749111"
+     CDS             1..537
+                     /gene="LOC118749111"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036339776.1"
+                     /db_xref="GeneID:118749111"
+                     /translation="MATFSPEGQRDPVAVEKFVAAITVYKDIEKIPDADALRGMPLLL
+                     EDYAATWWIGVKESVSTFTDAIELIRATFSPPTPDWKTYLSVFEHKQQVREASDSFIC
+                     KKRLLFSQLKDSEGVQLNMIYGLLSVKIRERVHRDAFSTFGELLSRCRDAELFLAESN
+                     QLPAALSEKAERAEGPKR"
+ORIGIN      
+        1 atggcgacat tctcgcccga aggacaacgg gatccagtag cggtagagaa atttgttgct
+       61 gctataacag tctacaaaga catcgagaaa attcctgatg ctgatgcgct acgcggtatg
+      121 ccacttttac tcgaggatta tgcagcgact tggtggatag gtgtgaaaga atccgtgtca
+      181 acattcaccg acgccataga gttaatacga gcgacatttt ctcctccaac gcctgattgg
+      241 aaaacttatt taagtgtttt tgaacataag caacaagtgc gcgaagcctc cgatagcttt
+      301 atttgcaaga agcggttgtt gttctcacaa ttgaaagaca gcgaaggggt gcaactcaat
+      361 atgatatacg gcctcctgtc agtgaagata agagagcgcg tgcatcgtga tgcattttcg
+      421 acgttcggtg aactcttatc acgttgccga gatgcggaat tgtttctggc tgaatccaat
+      481 caacttccgg cggcactatc tgagaaggcg gaacgagcgg aagggcccaa aaggtga
+//
+
+LOCUS       XM_036487467             525 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118752562), mRNA.
+ACCESSION   XM_036487467
+VERSION     XM_036487467.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023460210.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..525
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..525
+                     /gene="LOC118752562"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:118752562"
+     CDS             1..525
+                     /gene="LOC118752562"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036343360.1"
+                     /db_xref="GeneID:118752562"
+                     /translation="MSVEQRDPSAVEEFIAAISVYKDIERISDADALRGVPLLLEEYA
+                     ATWWIGVKDTVATFEEAVELIRTTFSPPMPDWKIYIKFFEQKQQTREATDSFICKKRL
+                     LFSQLSDPISEAVQLNMTYGLLSIKIRERERRDKVSTFDELISNCRDAEMILAEAKKL
+                     TIASTDKNKSVEGP"
+ORIGIN      
+        1 atgtccgtgg aacaacgcga tccatcggca gtggaagaat tcattgcagc tatctcagtt
+       61 tacaaggaca tcgaaagaat ttctgacgct gatgccttgc gcggtgtgcc acttctgctg
+      121 gaagagtacg cagcgacctg gtggatcggt gtgaaggaca ctgtcgcgac ctttgaggaa
+      181 gcagttgagc tgatccggac gacattttct ccgccaatgc ccgattggaa aatttacata
+      241 aaatttttcg agcaaaagca gcaaacgcgc gaagctaccg acagcttcat atgtaagaag
+      301 cggctactgt tttcgcagtt gagtgacccc ataagcgaag cagtacagct caatatgacg
+      361 tacggtctat tgtctatcaa gataagagag cgagagcgtc gcgataaagt ttccacgttc
+      421 gacgaattaa tatcaaattg tcgggatgca gaaatgattt tggctgaagc aaagaagctt
+      481 acaatcgcat ctaccgataa aaacaaatct gtggaagggc cctaa
+//
+
+LOCUS       XM_036487470             525 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118752567), mRNA.
+ACCESSION   XM_036487470
+VERSION     XM_036487470.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023460212.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..525
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..525
+                     /gene="LOC118752567"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:118752567"
+     CDS             1..525
+                     /gene="LOC118752567"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036343363.1"
+                     /db_xref="GeneID:118752567"
+                     /translation="MSVEQRDPSAVEEFIAAISVYKDIERISDADALRGVPLLLEEYA
+                     ATWWIGVKDTVATFEEAVELIRTTFSPPMPDWKIYIKFFEQKQQTREATDSFICKKRL
+                     LFSQLSDPISEAVQLNMTYGLLSIKIRERERRDKVSTFDELISNCRDAEMILAEAKKL
+                     TIASTDKNKSVEGP"
+ORIGIN      
+        1 atgtccgtgg aacaacgcga tccatcggca gtggaagaat tcattgcagc tatctcagtt
+       61 tacaaggaca tcgaaagaat ttctgacgct gatgccttgc gcggtgtgcc acttctgctg
+      121 gaagagtacg cagcgacctg gtggatcggt gtgaaggaca ctgtcgcgac ctttgaggaa
+      181 gcagttgagc tgatccggac gacattttct ccgccaatgc ccgattggaa aatttacata
+      241 aaatttttcg agcaaaagca gcaaacgcgc gaagctaccg acagcttcat atgtaagaag
+      301 cggctactgt tttcgcagtt gagtgacccc ataagcgaag cagtacagct caatatgacg
+      361 tacggtctat tgtctatcaa gataagagag cgagagcgtc gcgataaagt ttccacgttc
+      421 gacgaattaa tatcaaattg tcgggatgca gaaatgattt tggctgaagc aaagaagctt
+      481 acaatcgcat ctaccgataa aaacaaatct gtggaagggc cctaa
+//
+
+LOCUS       XM_036490036            2544 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 1-like (LOC118755183), mRNA.
+ACCESSION   XM_036490036
+VERSION     XM_036490036.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023464107.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2544
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..2544
+                     /gene="LOC118755183"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 8 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:118755183"
+     CDS             105..860
+                     /gene="LOC118755183"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_036345929.1"
+                     /db_xref="GeneID:118755183"
+                     /translation="MTDPTLTINHEQLKSLIESVRLNIQASANAAAPATVQTKGSFSN
+                     CSSHFRGQRDHEAVEEFINSIVTYKEIESISDEDALKGLSLLLQGLASTWWQGVRKEA
+                     KTWADAIALIRDHFSPTKPAYQIYLEIFGKRQDERVAIDTFICQKRALLAQLPEGRHD
+                     EETELDLVYGLLNIKYRKHIQRQDVRTFRELLEKGRIIEFNKLEIDVAQRGLKRTKRC
+                     SYCNFRGHSFEECRKRKASENKESKDSENKEEE"
+ORIGIN      
+        1 ttgcggataa atggattcgc cacaatccgt ggcttaataa tttgactcca aacgtaataa
+       61 catttaaagt ataaataagt aaataacgaa aacaagaaaa aacaatgaca gacccaactt
+      121 taactatcaa tcacgagcaa ctaaaatcac ttatagaatc tgtgcggtta aacattcaag
+      181 caagcgccaa cgctgccgct ccagccaccg tccaaaccaa gggcagtttc tcgaactgta
+      241 gcagccattt ccgtggccaa cgtgaccatg aggccgtcga agagttcatc aactccatcg
+      301 taacttataa agaaattgaa tctataagcg atgaagatgc gcttaaaggg ctctctttac
+      361 tactacaagg gcttgcgtcc acttggtggc aaggcgtgcg caaagaagcg aaaacttggg
+      421 cggacgccat tgcattgata cgcgatcact tctcgcccac caagccggcc taccaaatct
+      481 acttagagat ctttggaaaa cggcaagacg aacgcgtggc aatagacact ttcatctgcc
+      541 agaagcgcgc tctactcgca caactgcctg agggacgtca cgacgaggaa accgaattgg
+      601 atttggtcta tggcctgctg aacatcaaat atcgaaagca tattcagcgc caagatgttc
+      661 ggacgtttcg cgagttgctg gagaagggac gaataattga attcaataaa ttggaaattg
+      721 acgtcgctca gcgaggacta aaacgcacaa aacgctgcag ctactgtaat ttccgggggc
+      781 acagttttga agagtgccgc aagcgcaaag caagcgaaaa caaagaatcg aaggatagcg
+      841 aaaataaaga agaagagtga taaaaaatat ccgcttcaac gaaatgccta cagtacaaac
+      901 agacgcagca ggtccggaat ttactgaccg agactgatct tcgcacaact aaacaactcg
+      961 tcctcttcaa aatggagcag aaagcattcg tccagccagc agttcgctaa ccgccgcaac
+     1021 agaaatttat ttaaattaat taagttgtaa cagttttctt agcttaaata cgtattgtgt
+     1081 acaagttatt gtgtaagtta agtacattgc cgtaactcat tcagcctatc ccgacgtccg
+     1141 aggtgtttcg cacttcctgc aaatctaatt gacatttttt tcttagcagc gcaaagtatc
+     1201 caactgcatc tttcgagtgc tttgaatact ttgctcggct gcagcgatat ttctattgga
+     1261 agagcaggaa gaaaagagac acctgggata caccaacatc acattcgaac attcatccgc
+     1321 caacccagac acacgctgtg ccgagcacgg ctttagatgg ctacgcacgc cagcaatgga
+     1381 gtttcttcat tgccaatttg cattttttct tctgcagatc attggaattt tccaatgaaa
+     1441 atcaccagaa gaacatttgc aacgagtcac cacagcagat attggaattc gtctggctca
+     1501 acattttttg tttgcataaa tttctttcgc cgtgtcgtga ttcaaaatta ctacttttct
+     1561 tgggtccaat tttagtggcg tcgtggttgc acgtcaagca gctggcatcc tcagttgagg
+     1621 ctggcaactg cttgacgtgt aactacgtga tttggctttg gataattaag gaaaagtagt
+     1681 ttttttttat aatgttttcg aaactgacga acgaaatttt gtacgaaatg ttgggcttag
+     1741 aggcgaattc aatagctgta agtgactcat aatcggccgc atttgagttc ggacgctgtg
+     1801 gcctaaaagt tattcactac aacaaatccg cgagccaacc tttctaaagg caattctgga
+     1861 ttttctaaaa ttaaagatat cttcaagcat cggcgtctgc gcttccatgt ggccgcatct
+     1921 atccgtcgca catcagtaaa gctattgcct acagcgtgtg tgtgtatatt ttttcgtgcc
+     1981 tctacatttt ggacacgcct gtgccattgg gagactgtat ttctccagcg ctgcgttgta
+     2041 gtatgcgtct cttcggagtc acacactgcg cccgagcgcc cacttttgtt gtcccttttg
+     2101 gcacgggcat gtccaattgt ataggcaggg gggaagtaga tatgcacctt taggcagagc
+     2161 acttactatg cgacataaca tacatataca gaggcaactc aatgtgcgcc tcctccacaa
+     2221 gttcaataat tgtacaacga tggctatgcg gtcgccattc gtacagctgg cacgccaaac
+     2281 tgacgtcgtt ctgtttcaca gcggcgtcgg atgtgtggca cgctcgcgta ttaaaaatac
+     2341 gtttcctttg gttttcgatt cgtcacggca tttgcctccg gaaatgttgt gactgtcttg
+     2401 aacccactgt tcatcacagc tccgcatgta ctattccctc agtattcgat agcgcctgac
+     2461 ctgaccaatt tttcgtacac cgataacgcc aaccacacag tctggaggag ctggctccaa
+     2521 attcggttac gattggtcat cgaa
+//
+
+LOCUS       XM_036490037            2701 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 1-like (LOC118755184), mRNA.
+ACCESSION   XM_036490037
+VERSION     XM_036490037.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023464111.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2701
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..2701
+                     /gene="LOC118755184"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 8 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:118755184"
+     CDS             105..860
+                     /gene="LOC118755184"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_036345930.1"
+                     /db_xref="GeneID:118755184"
+                     /translation="MTDPTLTINHEQLKSLIESVRLNIQASANAAAPATVQTKGSFSN
+                     CSSHFRGQRDHEAVEEFINSIVTYKEIESISDEDALKGLSLLLQGLASTWWQGVRKEA
+                     KTWADAIALIRDHFSPTKPAYQIYLEIFGKRQDERVAIDTFICQKRALLAQLPEGRHD
+                     EETELDLVYGLLNIKYRKHIQRQDVRTFRELLEKGRIIEFNKLEIDVAQRGLKRTKRC
+                     SYCNFRGHSFEECRKRKASENKESKDSENKEEE"
+ORIGIN      
+        1 ttgcggataa atggattcgc cacaatccgt ggcttaataa tttgactcca aacgtaataa
+       61 catttaaagt ataaataagt aaataacgaa aacaagaaaa aacaatgaca gacccaactt
+      121 taactatcaa tcacgagcaa ctaaaatcac ttatagaatc tgtgcggtta aacattcaag
+      181 caagcgccaa cgctgccgct ccagccaccg tccaaaccaa gggcagtttc tcgaactgta
+      241 gcagccattt ccgtggccaa cgtgaccatg aggccgtcga agagttcatc aactccatcg
+      301 taacttataa agaaattgaa tctataagcg atgaagatgc gcttaaaggg ctctctttac
+      361 tactacaagg gcttgcgtcc acttggtggc aaggcgtgcg caaagaagcg aaaacttggg
+      421 cggacgccat tgcattgata cgcgatcact tctcgcccac caagccggcc taccaaatct
+      481 acttagagat ctttggaaaa cggcaagacg aacgcgtggc aatagacact ttcatctgcc
+      541 agaagcgcgc tctactcgca caactgcctg agggacgtca cgacgaggaa accgaattgg
+      601 atttggtcta tggcctgctg aacatcaaat atcgaaagca tattcagcgc caagatgttc
+      661 ggacgtttcg cgagttgctg gagaagggac gaataattga attcaataaa ttggaaattg
+      721 acgtcgctca gcgaggacta aaacgcacaa aacgctgcag ctactgtaat ttccgggggc
+      781 acagttttga agagtgccgc aagcgcaaag caagcgaaaa caaagaatcg aaggatagcg
+      841 aaaataaaga agaagagtga taaaaaatat ccgcttcaac gaaatgccta cagtacaaac
+      901 agacgcagca ggtccggaat ttactgaccg agactgatct tcgcacaact aaacaactcg
+      961 tcctcttcaa aatggagcag aaagcattcg tccagccagc agttcgctaa ccgccgcaac
+     1021 agaaatttat ttaaattaat taagttgtaa cagttttctt agcttaaata cgtattgtgt
+     1081 acaagttatt gtgtaagtta agtacattgc cgtaactcat tcagcctatc ccgacgtccg
+     1141 aggtgtttcg cacttcctgc aaatctaatt gacatttttt tcttagcagc gcaaagtatc
+     1201 caactgcatc tttcgagtgc tttgaatact ttgctcggct gcagcgatat ttctattgga
+     1261 agagcaggaa gaaaagagac acctgggata caccaacatc acattcgaac attcatccgc
+     1321 caacccagac acacgctgtg ccgagcacgg ctttagatgg ctacgcacgc cagcaatgga
+     1381 gtttcttcat tgccaatttg cattttttct tctgcagatc attggaattt tccaatgaaa
+     1441 atcaccagaa gaacatttgc aacgagtcac cacagcagat attggaattc gtctggctca
+     1501 acattttttg tttgcataaa tttctttcgc cgtgtcgtga ttcaaaatta ctacttttct
+     1561 tgggtccaat tttagtggcg tcgtggttgc acgtcaagca gctggcatcc tcagttgagg
+     1621 ctggcaactg cttgacgtgt aactacgtga tttggctttg gataattaag gaaaagtagt
+     1681 ttttttttat aatgttttcg aaactgacga acgaaatttt gtacgaaatg ttgggcttag
+     1741 acggcgaatt caatagctgt aagtgactca taatcggccg catttcagtg tggacgctgt
+     1801 ggcctaaaag ttattcacta caacaaatcc gcgagccaac ctttctacag gctattctgg
+     1861 attttgtaaa attaaagata tcttcaagca tcggcgtctg cgcttccatg tggccacatc
+     1921 tatccgtcgc acatcagtaa agccgtcgcc taaagcgtgt gtgtgtatat tttttcgtgc
+     1981 ctctacattg cggacacgcc tgtgccattg ggagactgta tttctccagc gctgcgttgt
+     2041 agtatgcgtc tcttcggagt cacacactgc gcccgagcgc ccacttttgt tgtccctttt
+     2101 ggcacgggca tgtccaattg tataggcagg ggggaagtag atgtgcacct ttaggcagag
+     2161 cacttactat gcgacataat atacatatac agaggcaact caatgtgcgc ctcctcctca
+     2221 agttcaataa ttgtacaacg atggctatgc ggtcgccatt cgtacagctg gcacgccaaa
+     2281 ctgacgtcgt tctgtttcac agcggcgtcg gatgtgtggc acgctcgcgt attaaaaata
+     2341 cgtttccttt ggttttcgat tcgtcacggc atttgcctcc ggaaatgttg tgactgtctt
+     2401 gaacccactg ttcatcacag ctccgcatgt actattccct cagtattcga tagcgcctga
+     2461 cctgaccaat ttttcgtaca ccgataacgc caaccacaca gtctggagga gctggctcca
+     2521 aattcggtta cgattggtca tcgaatatat attcaattta agaagcgaac atattggctt
+     2581 tgaatatttg gcatcgagta ctgggggaat tcgcatgggg agttctaatg aacaaatgaa
+     2641 atctataaac tatctaactc taccaacaac caaaccaaaa tgcaaaccta aaaaaaaaac
+     2701 a
+//
+
+LOCUS       XM_036490429            3546 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella uncharacterized LOC118755602
+            (LOC118755602), mRNA.
+ACCESSION   XM_036490429
+VERSION     XM_036490429.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023465318.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..3546
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..3546
+                     /gene="LOC118755602"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:118755602"
+     CDS             1..3546
+                     /gene="LOC118755602"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC118755602"
+                     /protein_id="XP_036346322.1"
+                     /db_xref="GeneID:118755602"
+                     /translation="METGASNVNPNANAGNANANVNIESARQIVNVPKQSANPTGNAP
+                     ASSNVMNSQRQANTNANVNANVGRTNNPSNVMLTENQFRQLLGNLHVNQDTRAIFSKC
+                     SVRFNGGRNTSKIEDFIATILVYKDAENISDELALLSLPLLLEGYASSWWQGVKEEAE
+                     TFNDAIDLLRKAFSPPKPDWRIFSEISQEKQKFTEPTDVFICRKRQLFAQLSEKLSEK
+                     TMINMIFSQLVLKIREKIPRESVGTFSELLDKAREAELLLGESKEVYKAVDLASNSTS
+                     KIPLRCSYCRKKNHSVENCFKKMESEKKTTEKMKETTLSCYGCGTPGYYRSNCPNCNQ
+                     KNPLRSPEKLDFNTIQTTVIGRNVPTVDININGLKGEAYLDTAARTSVASSKLYEKLK
+                     EKGVEFQKVFAEIKLADGIPRQQMVYSTIVDIIIGKRFKRIRFICLANAENNRTLLGI
+                     DFLEQAGIVMDLAQRTWHFKDDANTMFEFKMQSAEIKHSLSLSEANIRTHRENHNPIN
+                     DFMSWFENTNSSFESSYEYSPREIRDIFAGSIPENYEIPEQNDLFPPMKRVKKSNKAE
+                     GRVSCSIDINSVEIRLRPNEGAALAESERTRLQKLLEAHKEIFEETTVPIPHMEHHIK
+                     TEAHAPISSHPYRISPAMKNKLKIELEDMLKKGIIEESKSPWSFPVVLIPKKDGGVRF
+                     CVDYRRLNAITTTDTYPLPRMDDLLHAAKATPFMSTIDLKAGYWQIKMAPAAKPKTAF
+                     TTPFGIFVFNRMPFGLKNAPATFQRLIDKFRSELPHILILAYLDDIIICSNDFNSHMQ
+                     NLRQTLSKIKEYGFQLNRGKCVFCREEIKYLGHILTTKGLKVDNEKAHAVLKRPNPKN
+                     LKQLVSFLQTCSWYRRFIPNFADVAKPLSQLTKKNAKWRWSAEEQNAFDRLKDLLSSP
+                     PVLQQVDETKPFILKTDASDYALGAVLLQGENEEEHPIEYARRLLLAAERNYSTTERE
+                     ALAIVWALQKFRGYVEGSEITVLTDHQPLKWLFSLKTPTGRLARWALQLQMYNLKLGY
+                     TAGKQNVVADMLSRPPCCPENKSNVNSFEIDFPRKGAEEFRKEQLKDEELKYIIESFE
+                     KDDENVTRHTNRGYMMVNGVLHRFCSDEDSENGQLVVPKSLRETVLIKFHVDPTAGHY
+                     GIDRTTSRITPLYFWPGMRADISQYVKSCVECKKI"
+ORIGIN      
+        1 atggaaacag gtgcaagtaa tgttaacccc aatgccaatg ctggtaatgc caacgcgaat
+       61 gttaacatag aaagcgcaag gcaaattgtt aacgtgccta agcaaagcgc taatcccacc
+      121 ggaaatgcgc ctgcgagttc caatgttatg aacagccaaa ggcaagctaa cacgaacgcc
+      181 aatgttaatg ctaacgttgg ccgtactaat aatccatcga atgtaatgct aacagaaaat
+      241 cagttcaggc aattgctagg aaacctccat gtaaaccaag atactagggc tatttttagt
+      301 aaatgtagcg tacgttttaa tggtggaagg aacaccagca aaattgaaga tttcatagcg
+      361 accattttag tatacaaaga tgcggaaaac atatcggacg aactagcgct gttaagttta
+      421 cctcttctat tagaaggtta cgcatcgtca tggtggcaag gtgtgaagga ggaagcggaa
+      481 acatttaacg acgccattga tttgcttcgc aaagcgtttt ctccgccgaa acccgactgg
+      541 cgtatttttt cggagataag tcaggaaaaa caaaagttca cggagccaac cgacgtattc
+      601 atatgcagaa aaagacaatt attcgcccaa ctttctgaaa agctaagcga aaaaaccatg
+      661 atcaacatga tattttccca attagttcta aagatacgag agaaaattcc tcgtgaaagt
+      721 gtaggaacat ttagcgagct gttagacaaa gctcgcgaag cagagttgct acttggtgag
+      781 agcaaagaag tttataaagc tgttgactta gccagcaact cgactagcaa aattcccctt
+      841 cgttgttcct actgtagaaa gaaaaatcat tccgtggaaa actgttttaa gaaaatggaa
+      901 tctgaaaaga aaaccacaga gaaaatgaaa gaaaccactt taagctgtta tggttgcggt
+      961 acaccagggt actacaggtc gaattgtcca aactgcaatc agaaaaatcc gttacgtagc
+     1021 cccgagaaac tcgattttaa cactatacaa accaccgtaa taggtcgaaa tgtaccaact
+     1081 gttgacataa acattaatgg cttgaaaggt gaagcatatc tagatacagc tgctagaacg
+     1141 agcgttgcaa gtagtaaact ttacgagaag cttaaagaaa aaggtgttga atttcaaaag
+     1201 gtttttgcgg aaattaaatt agctgatggc attcctcgcc agcagatggt ttactctact
+     1261 atcgtcgata ttataattgg aaagcgattc aaacgtatac gttttatttg tttggcaaat
+     1321 gctgaaaaca atcgaacgct gttaggcatc gattttcttg agcaagctgg catagtaatg
+     1381 gaccttgcac aacgaacgtg gcattttaag gacgacgcta atactatgtt tgagtttaag
+     1441 atgcaatcag ctgaaattaa gcattcctta tcgctgtctg aggcaaacat acgaacccat
+     1501 agggaaaatc ataacccaat taatgatttt atgtcctggt tcgaaaacac aaatagcagt
+     1561 ttcgagtcat catatgaata ctcgccaaga gaaataaggg acatatttgc tgggagtata
+     1621 ccagaaaact atgagatacc ggaacaaaac gatttgtttc cacccatgaa gagagtaaaa
+     1681 aagagtaata aagctgaagg gagagtaagc tgctctatcg acataaattc ggtcgaaata
+     1741 agacttcgcc ccaatgaagg tgcagcctta gccgaaagcg aaagaacaag actacagaaa
+     1801 ttgctagaag cacacaaaga aatctttgaa gaaactacag taccaatacc gcacatggaa
+     1861 caccacataa agacggaggc gcatgcaccc atttcttcac atccctatcg aatttcacca
+     1921 gcaatgaaaa acaaattaaa aattgaactg gaagacatgc tgaaaaaggg cattattgaa
+     1981 gaaagcaaat ctccatggtc atttccggtt gtgttaatac cgaaaaaaga tggaggagtg
+     2041 aggttttgcg tagattatcg gcgtttgaat gccataacca caacagacac atacccacta
+     2101 ccacgaatgg atgacctgtt acatgcagca aaagccacac ctttcatgtc caccatcgat
+     2161 ctaaaagccg gatattggca aataaaaatg gcgcctgcag ctaagccgaa aactgcattc
+     2221 acaaccccgt ttggaatctt tgtttttaat cgaatgccgt tcggattgaa gaacgctccg
+     2281 gccacgttcc agcgcctgat cgataaattt cggtccgaat tgccacatat tttaatacta
+     2341 gcgtacctag atgacataat tatatgctca aacgatttta actctcatat gcaaaacttg
+     2401 cgacaaactc tttcaaaaat caaagaatat ggctttcagt tgaatagagg aaaatgtgtt
+     2461 ttctgtcgag aagagataaa gtatctcgga catattttaa ccacgaaagg acttaaggtt
+     2521 gataacgaaa aggcacatgc tgtcctcaag cgcccgaatc cgaaaaattt gaagcagctc
+     2581 gtatcattct tgcaaacgtg ctcttggtat agacggttta ttccaaactt tgctgatgtg
+     2641 gcaaaacctt tgtcacagct gacaaagaaa aatgcgaaat ggagatggtc cgcagaggag
+     2701 cagaatgcat tcgatagact taaagatctg ctttcttcgc cgccagttct acagcaagtt
+     2761 gatgaaacca agccgtttat cttaaaaacg gatgccagtg attatgcgct tggagctgtt
+     2821 ctcctgcagg gggagaatga ggaagaacat ccgattgaat acgcgaggcg ccttttgctg
+     2881 gcagcagaaa gaaactactc tacaacagaa cgtgaagcac tggccatagt ttgggctcta
+     2941 caaaagtttc gcggatatgt agaaggttca gaaattaccg tgttaactga ccatcaacca
+     3001 cttaaatggc tatttagtct aaaaacaccc acaggacgtc ttgctaggtg ggcgttgcaa
+     3061 cttcagatgt ataatttgaa gctggggtat acagcaggca agcaaaacgt tgtggcagat
+     3121 atgctgtctc gtccaccctg ttgccctgag aataagtcta atgttaactc ctttgagata
+     3181 gactttcctc gcaaaggcgc cgaggagttc agaaaggagc aattaaaaga cgaggaactg
+     3241 aaatacatca ttgagtcttt cgaaaaagat gacgaaaatg ttaccagaca tacaaaccga
+     3301 ggatatatga tggttaatgg tgtactacac cgattctgtt cagatgaaga ttcagaaaat
+     3361 ggtcaactag tagtacccaa aagtttaaga gaaacagttt taataaaatt tcacgtggat
+     3421 ccaactgcag gacattatgg aattgatcga actaccagcc gaatcactcc actttatttt
+     3481 tggccgggta tgcgcgcaga catttcccag tatgtgaagt cttgtgttga atgcaaaaaa
+     3541 atataa
+//
+
+LOCUS       XM_036491339             327 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118756587), mRNA.
+ACCESSION   XM_036491339
+VERSION     XM_036491339.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023469526.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..327
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..327
+                     /gene="LOC118756587"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:118756587"
+     CDS             1..327
+                     /gene="LOC118756587"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036347232.1"
+                     /db_xref="GeneID:118756587"
+                     /translation="MATFSPEPFSQILEAISSGGKNGSFTQCTSRFTGQWDPVAVEEF
+                     VAAITVFKDIEKIPDADALRGMPLLLEDYAATWWIGVKESVSTFTDAIELKRATFSPP
+                     TPDWKT"
+ORIGIN      
+        1 atggcgacat tctcgcccga accattttca caaatactgg aagcgatttc cagcggcggt
+       61 aaaaacggtt cttttacaca atgcacgtcg cgctttacag gacaatggga tccagtagcg
+      121 gtagaggaat ttgttgctgc tataacagtc ttcaaagaca tcgagaaaat tcctgatgct
+      181 gatgcgctac gcggtatgcc acttttactc gaggattatg cagcgacttg gtggataggt
+      241 gtgaaagaat ccgtgtcaac attcaccgac gccatagagt taaaacgagc gacattttct
+      301 cctccaacgc ctgattggaa aacttaa
+//
+
+LOCUS       XM_036491730             735 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC118757002), mRNA.
+ACCESSION   XM_036491730
+VERSION     XM_036491730.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023472150.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..735
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /isolate="Grant_MI"
+                     /host="apple trees"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+                     /sex="pooled male and female"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+                     /country="USA: Grant, Michigan"
+                     /collection_date="2010"
+     gene            1..735
+                     /gene="LOC118757002"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:118757002"
+     CDS             1..735
+                     /gene="LOC118757002"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_036347623.1"
+                     /db_xref="GeneID:118757002"
+                     /translation="MTFHLRNGKSYSSLAPNSVASNLADEPTSVHKMATFSLEQFSQI
+                     LEAISSGGKNGSFTQCTSRFRGQRDPVAVEEFVAAITVYKDIEKIPDADALRGMPLLL
+                     EDYAVTWWIGVKESVSTFADAIELLRATFSPPTPDWKTYLSVFEHKQQVREASDSIIC
+                     KKRLLFSQLKDTVSEGVQLNMIYGLLSVKIRERVHRDAFSTFDELLSRCRDAELFLAE
+                     SNQLPALTSTMPFPQKYLLKETMDQQ"
+ORIGIN      
+        1 atgacatttc atttaaggaa cggcaagtca tactcttcat tggcgcccaa ctcagtggcc
+       61 tcgaatctcg ccgacgaacc gacaagcgtg cacaaaatgg cgacattttc gctcgagcaa
+      121 ttctcccaaa tactagaagc gatttccagc ggcggtaaaa acggttcttt tacacaatgc
+      181 acgtcgcgct ttagaggaca acgggatcca gtagcggtag aggaatttgt tgctgctatt
+      241 acagtataca aagacatcga gaaaattcct gatgctgatg cgctacgcgg tatgccactt
+      301 ttactcgagg attatgctgt gacttggtgg ataggtgtga aagaatccgt gtcaacattc
+      361 gccgacgcca tagagttatt acgtgcgaca ttttctcctc caacgcctga ttggaaaact
+      421 tatttaagtg tttttgaaca taagcaacaa gtgcgcgaag cctctgatag cattatttgc
+      481 aagaagcggt tgttgttctc acaattgaaa gacaccgtca gcgaaggggt gcaactaaat
+      541 atgatatacg gcctcctgtc agtgaagata agagagcgcg tgcatcgtga tgcattttcg
+      601 acgttcgatg aactcctatc acgttgccga gatgcggaat tgtttctggc tgaatccaat
+      661 caacttccgg cgctaacatc gacgatgccg tttccccaga aatatctcct gaaagaaact
+      721 atggaccagc agtaa
+//
+
+LOCUS       XM_036492033            2122 bp    mRNA    linear   INV 06-OCT-2020
+DEFINITION  PREDICTED: Rhagoletis pomonella uncharacterized LOC118757308
+            (LOC118757308), mRNA.
+ACCESSION   XM_036492033
+VERSION     XM_036492033.1
+DBLINK      BioProject: PRJNA666774
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Rhagoletis pomonella (apple maggot)
+  ORGANISM  Rhagoletis pomonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Rhagoletis.
+REFERENCE   1  (bases 1 to 2122)
+  AUTHORS   Meyers,P.J., Powell,T.H., Walden,K.K., Shieferecke,A., Feder,J.L.,
+            Hahn,D.A., Robertson,H.M., Berlocher,S.H. and Ragland,G.J.
+  TITLE     Divergence of the diapause transcriptome in apple maggot flies:
+            winter regulation and post-winter transcriptional repression
+  JOURNAL   J. Exp. Biol. (2016) In press
+   PUBMED   27312473
+  REMARK    Publication Status: Available-Online prior to print
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023475010.1) and transcript sequence (GETQ01083417.1) annotated
+            using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rhagoletis pomonella Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            assembly gap :: added 1644 transcript bases to patch genome
+                            assembly gap
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-1644              GETQ01083417.1     1640-3283           c
+            1645-2122           JABWGP010097233.1  46-523
+FEATURES             Location/Qualifiers
+     source          1..2122
+                     /organism="Rhagoletis pomonella"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:28610"
+                     /chromosome="Unknown"
+     gene            1..2122
+                     /gene="LOC118757308"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: added 1644 bases not found in
+                     genome assembly; Derived by automated computational
+                     analysis using gene prediction method: Gnomon. Supporting
+                     evidence includes similarity to: 100% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:118757308"
+     CDS             967..1836
+                     /gene="LOC118757308"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: added 678 bases not found in
+                     genome assembly"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC118757308"
+                     /protein_id="XP_036347926.1"
+                     /db_xref="GeneID:118757308"
+                     /translation="MYLLQKKNHSAENCFKKIESEKRNSIKVKETNLNCYGCGTPGYY
+                     RSNCPTCNKKTVINSPQKLDFNTLQTTIIGRDVPTVNININGLNGEAFLDTAARTNVA
+                     SSQLFKKLREKGVEFQKVFAEIILADGIPRKDMVHSTIVDIVIGKRIKRIRFICLSTA
+                     QNNRTLLGIDFLEQAGIVMDLAQRTWHFKDDPRKVFDFKRSAAKVENYVSLTEANVEN
+                     HNAGGTALDAFMSWFEKSNSDDTESECPNDYSPEDIKKIFEDSLPTDYKTPEQKDFFP
+                     PLKKMKKEQESSR"
+ORIGIN      
+        1 gtcgttgttg ttgctttacc gccacacgag ttagcgggtt attctttgca tcgctattgt
+       61 tggttctttg ctgtgcacgt cgttgttgtt gctccccgct gcacgaggct acgggtgata
+      121 tcgctattag ttgctccttt gctgtgcaaa tcgttgttgt tgccttttcg ccgcaggagg
+      181 tagcgggtgg ctcttaaatc gctattgttg gttatttgct gggaaagtca ttgctgttgc
+      241 tcctcctctc atcttcgtgc ttgtagttgc tggactcctt ttgttgcttt ttggattgct
+      301 tttatatgat tagaagaagt ccaagactaa accaattccc aaacatgaat gacactgcaa
+      361 atgttaccct tacagaaaat caatttcgcc agctaatagg aaatctgcat gtaagccgag
+      421 aaagcagatc aacgtttagc aaatgtagcg cccgtttcaa tggtggccga aatactagta
+      481 aaattgaaga ttttattgcg actatcctgg tgtttaaaga agctgagaac ataactgatg
+      541 aacgagcact gattagttta ccattactgc ttgaaggcta tgcttcatcc tggtggcaag
+      601 gaataaaaaa tgagcctaga tcattcaacg aggctataga ccttcttcgc aaagcttttt
+      661 ctcccccaaa gccggattgg cgtatattcg ccgagaggaa aagcaaaggt tttccgagtc
+      721 aacagatgca ttcgtatgta gacaaaggca gctctttgct cagctaagag aaaggctaag
+      781 caagtcaacc atgttagaca tgatatattc tcaactttta ttaaagattc gagagaaggt
+      841 ttctcgagaa gacgtaaata cgtttcatga tctattagat aaagcaaggg aagctgaaat
+      901 gttgctagta gaaaataatg atgaaatcta caaaaccgtg gaagtttcgg agagatccac
+      961 cactcgatgt accttttgca gaaaaaaaat cactctgctg aaaattgttt taaaaagatt
+     1021 gagtcagaga aaagaaattc aataaaagtt aaagaaacaa acctaaattg ttatggttgt
+     1081 ggtactcccg gatattaccg atcaaattgt ccaacttgta acaagaaaac tgtaataaat
+     1141 agtccacaaa agcttgactt taatacgtta caaaccacta ttatagggag agatgtaccc
+     1201 accgtaaaca ttaatataaa tggcttaaat ggggaggcgt ttttggacac agctgcccgc
+     1261 acgaatgttg caagtagtca gttattcaaa aagcttagag aaaaaggagt tgagttccag
+     1321 aaagtgtttg cggaaatcat attagcagat ggcataccgc gaaaagatat ggtgcattcc
+     1381 actatcgtag atattgtaat cggaaaacgc ataaaacgca tacggttcat ctgtttgtca
+     1441 actgcacaaa acaatcgaac gctattaggg attgatttcc ttgaacaagc cggtatcgtt
+     1501 atggatctag ctcagcgaac atggcacttt aaagatgatc ctagaaaagt tttcgatttt
+     1561 aagagaagtg cagcaaaagt agaaaattac gtctcattga cagaagcgaa cgtggaaaac
+     1621 cataatgcag gaggtaccgc tctagatgct tttatgtcct ggtttgaaaa gtctaacagc
+     1681 gatgacactg aaagcgaatg tcctaacgac tattccccag aagacattaa aaaaatattc
+     1741 gaggatagtt taccaacgga ttacaaaacg ccagaacaaa aagatttctt tccgccattg
+     1801 aaaaaaatga aaaaagagca agaaagctca agatagggta acctgttcaa ttaatattcg
+     1861 ttcaattgaa atcaggctac gtggggatga agcattacac cttaatgaag aacaaaaaca
+     1921 tattctgcaa aaactactct ctgaacagaa aagtattttt aatcaagccg caatgccaat
+     1981 agctcatgtt gagcattaca tcaaaacgga agcacatgct ccgatctcgt cccagccgta
+     2041 tcgcatttcc ccagctatga aactaaaact taaagctgaa ttagacgaca tgttggaaaa
+     2101 gggcataatt aaggaaagcg aa
+//
+

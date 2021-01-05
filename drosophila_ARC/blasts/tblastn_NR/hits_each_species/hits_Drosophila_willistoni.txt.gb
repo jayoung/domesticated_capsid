@@ -1,0 +1,73 @@
+LOCUS       XM_015178887             731 bp    mRNA    linear   INV 04-DEC-2017
+DEFINITION  PREDICTED: Drosophila willistoni uncharacterized LOC26529093
+            (LOC26529093), mRNA.
+ACCESSION   XM_015178887
+VERSION     XM_015178887.2
+DBLINK      BioProject: PRJNA29997
+KEYWORDS    RefSeq.
+SOURCE      Drosophila willistoni
+  ORGANISM  Drosophila willistoni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_002032470.1) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Dec 4, 2017 this sequence version replaced XM_015178887.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila willistoni Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..731
+                     /organism="Drosophila willistoni"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7260"
+                     /chromosome="Unknown"
+     gene            1..731
+                     /gene="LOC26529093"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 ESTs, 3 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:26529093"
+     CDS             17..601
+                     /gene="LOC26529093"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC26529093"
+                     /protein_id="XP_015034373.1"
+                     /db_xref="GeneID:26529093"
+                     /translation="MTQMSDEQFRILIETIKALAPVKEEEPVSKGSFSNCPVRFSGQR
+                     DHDAVDEFITAVEAYKEVEGISDKDALKGLPLLFIGIAVMWWKGVRRDVHTWENAMQL
+                     IRDHFSPTKPSYQIYMEIFETKQGSAEVIDQFVCKQRALLAKLPEGRHDEATELDFVY
+                     GLLQPKYRESIPRHEIKAFRELLEKGRNVERTKH"
+ORIGIN      
+        1 tatttcgtgg ttcaagatga ctcagatgtc agatgaacag tttcgtatat taatcgaaac
+       61 tatcaaagcc ctggcccccg ttaaagaaga agaacccgtg tcgaagggga gttttagcaa
+      121 ttgtccggtt cgttttagtg gacaacgaga tcacgatgct gtcgatgaat tcatcacagc
+      181 tgtcgaggcc tacaaggagg tggagggcat tagtgataag gatgctttga agggtttacc
+      241 cctactcttc ataggcattg ctgtgatgtg gtggaaaggt gtgcgtcgcg atgtccacac
+      301 ttgggagaat gccatgcaac tgatacggga tcatttctca cccactaaac cctcgtatca
+      361 gatctatatg gaaatctttg aaactaagca agggagtgca gaggtcatcg atcaattcgt
+      421 gtgcaagcag cgagccttgt tggccaaatt gccagagggc aggcatgatg aggccaccga
+      481 attagatttc gtttatggtt tgctgcaacc caagtaccga gagagtattc ccagacatga
+      541 gattaaagca tttcgcgagc ttctcgaaaa gggaagaaat gttgagagaa ctaaacatta
+      601 ataggactag tttaatttta gtagatatga gttagaaata agttttaatt attagttaat
+      661 taaatttacc taaaactaga catcacttta agtaaccgtt aaatttataa ataaaataaa
+      721 gtaatgcaaa t
+//
+

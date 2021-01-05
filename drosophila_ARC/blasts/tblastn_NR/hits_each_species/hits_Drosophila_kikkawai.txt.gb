@@ -1,0 +1,168 @@
+LOCUS       XM_017166786             768 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila kikkawai uncharacterized LOC108074667
+            (LOC108074667), mRNA.
+ACCESSION   XM_017166786
+VERSION     XM_017166786.1
+DBLINK      BioProject: PRJNA325512
+KEYWORDS    RefSeq.
+SOURCE      Drosophila kikkawai
+  ORGANISM  Drosophila kikkawai
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016067343.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila kikkawai Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..768
+                     /organism="Drosophila kikkawai"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14028-0561.14"
+                     /db_xref="taxon:30033"
+                     /chromosome="Unknown"
+     gene            1..768
+                     /gene="LOC108074667"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108074667"
+     CDS             118..702
+                     /gene="LOC108074667"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108074667"
+                     /protein_id="XP_017022275.1"
+                     /db_xref="GeneID:108074667"
+                     /translation="MTQMSDEQFRVLIETIKALAPIKDEEPLSKGSFSNCPVRFSGQR
+                     DHDAVDEFINAVETYKEVEGISDKDALKGLPLLFNNIAVIWWKGVRRDAKTWPEALQL
+                     LRDHFSPTKPSYQLYMEIFEMKQGSAEAIDTFVCKQRALLAKLPEGRHDEETELDFIY
+                     GLMLPKYRESIPRHEIKTFRELLDRGRTLERTKH"
+ORIGIN      
+        1 tgtcgccaca gttgctcccc ttctgtcgac agattgggtt tcggtttgtt gtgggtctca
+       61 catccgcctt ttgtttactt ttctgggaac caagacacaa gaagaaaccc aaacaaaatg
+      121 acgcagatgt ccgacgaaca gtttcgcgta ctcatcgaaa ccatcaaagc gttggcaccg
+      181 atcaaagacg aggagccgct ctccaagggg agcttcagca attgcccggt gcgattcagt
+      241 ggccagcggg atcacgatgc cgtggacgag ttcatcaacg cggtggagac ctacaaggag
+      301 gtagagggta tcagcgacaa ggatgctctg aaaggccttc ccctgctgtt caacaacatc
+      361 gccgtgatct ggtggaaggg tgtgaggcga gatgccaaga cctggccgga agctcttcag
+      421 ctgctccgcg accacttttc acccaccaag ccctcctatc agctgtacat ggagatattt
+      481 gagatgaagc agggaagcgc cgaggcgata gataccttcg tctgcaagca acgagccctg
+      541 ctggccaagc tgccggaggg aaggcacgac gaggaaacgg agttggactt catatacggc
+      601 ctgatgctgc ccaagtaccg ggagagcatt ccgcggcacg aaattaagac tttccgggag
+      661 ctgctcgatc gcggacggac actggagcgg accaagcact gaaattagaa ttaaatagtt
+      721 tagctgtaaa tacaatatta aaatgataga aatattttga gtagaaaa
+//
+
+LOCUS       XM_017166919            2512 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila kikkawai uncharacterized LOC108074745
+            (LOC108074745), mRNA.
+ACCESSION   XM_017166919
+VERSION     XM_017166919.1
+DBLINK      BioProject: PRJNA325512
+KEYWORDS    RefSeq.
+SOURCE      Drosophila kikkawai
+  ORGANISM  Drosophila kikkawai
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016067343.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila kikkawai Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2512
+                     /organism="Drosophila kikkawai"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14028-0561.14"
+                     /db_xref="taxon:30033"
+                     /chromosome="Unknown"
+     gene            1..2512
+                     /gene="LOC108074745"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108074745"
+     CDS             137..904
+                     /gene="LOC108074745"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108074745"
+                     /protein_id="XP_017022408.1"
+                     /db_xref="GeneID:108074745"
+                     /translation="MAQTIQMTNEQLRELIEAVRASAVSAAGTAAAAAGGADGPNSKT
+                     KGSFSACTHRFGGTRSYDEVEEFITNIVTYKELENISDENALKGLSLLFYGLASTWWQ
+                     GVRKEATTWNDAIALIREHFSPTKPAYQVYMEFFEKKQEDFDPIDTFVVHKRALLAQL
+                     PNGRHDEETELDLAYGLLNIKYRKHISRQSVATFKDLLEQGRIIEHNNQEDEDLAANS
+                     KNARGSRRTTRCTYCNFRGHTFENCRKRTREQAENDD"
+ORIGIN      
+        1 tcactacaac cggccgcatt cgcttcacag gctttgcccg ccgaagactg caactcagca
+       61 aacccagaac aaacaacgtg ttacccgcca actaaatcca ctccaacctc aaacgcacac
+      121 acacacacac acagccatgg cccagactat tcagatgacc aacgagcagc tccgcgagct
+      181 gatcgaggct gtgcgggcat ctgccgtaag cgctgccgga accgcagcag ccgccgccgg
+      241 aggagccgat ggccccaact cgaagaccaa gggcagcttc tcggcgtgca cacaccgctt
+      301 cggcggcacc cgcagctacg acgaggtgga ggagttcatc accaacattg tgacctacaa
+      361 ggagctggag aacatcagcg atgagaacgc cctcaagggg ctctcactgc tcttctacgg
+      421 cctggcctcc acctggtggc agggcgtccg caaggaggcc accacctgga acgacgccat
+      481 cgccctcatc agggagcatt tctcgcccac caagcccgcc taccaggtct acatggagtt
+      541 cttcgagaag aagcaggagg actttgatcc catcgacaca tttgtggtcc acaagcgcgc
+      601 cctactggcc cagctgccca acggccgtca cgacgaggag acggaactgg acctggccta
+      661 cggcctgctg aacatcaagt accgcaagca catctcccgc cagagcgtcg ccaccttcaa
+      721 ggatctgctc gaacagggca ggatcattga gcacaacaac caggaggatg aggatctggc
+      781 ggccaactcg aagaacgccc gcggctcccg acgcaccacc cgctgcacct actgcaactt
+      841 ccggggtcac accttcgaga actgccgcaa gcggactcgg gagcaagccg agaacgacga
+      901 ttaagtggcc atacacacac cccaccaaag cggagagaag agttgtggcc ttctcttcgt
+      961 cattatcata gaacttttcg cagccacgct ggccgatcaa cgccagagag agcccaacat
+     1021 ccggagggag tgggagcggg agcagcaaca tgtacgacgc caacatctgc agcagcaaca
+     1081 acagcagcaa catgttcgac agcgacaacc gcagctgata caaaccaccc gcaaacgcac
+     1141 cttctactta ctcactggca actggcgcgc cggtaagcct cgactagctt ctgccaccca
+     1201 caaatccacg cagcttccac tactactcaa cctattttgg aagcggctcc atcatcacac
+     1261 aacgccacgc cgccctgcgg ctgacttggc acagaacgcc aactaccagc cagcaattat
+     1321 tttaattgca ccattgattt tgaactattt gaacaagcaa tgcaaccgag aatgtcaggc
+     1381 ggggggcggc tgaggatcag gcatttcgtc cagaaattcg gggactctca atctttgaca
+     1441 tcgaaattcg tgggcccata ggtgaggttt gttgctcgag gcgaaagctt cgggtgatta
+     1501 aatcgcacac tgcctgcgga tttcatgttc tttgattgag tcccccggat ggatgttgtc
+     1561 tgatcttcag tcgcccccct acccttgacc attctcacaa ccgccgcctc caccttgtgc
+     1621 cgttcagcgg aagatcaacg attggatgcc aggagcagtg atcactatat aatcaacagt
+     1681 gtagggatta acttcttcgg tgaccgtttt cggtgcattt ttcgcctgat tcgggtcctt
+     1741 tgtgaaggtg gcaaaaaacc ccccgcctga cgaccgcctg cttagatcct tttgtacgtg
+     1801 acatcgacag cctcgcggag tggtggcccc cggtttccgg ttggagcttc ggcccttccg
+     1861 gttccgggag cagctgcctc gcgcggtgtc tctggtgcga gtggagctac agtgggcgtg
+     1921 attcgggcaa aaacctaaat ttcctcggaa atttaaaaac caaacaattc aattttgacc
+     1981 tttgtcaaaa tacatctgga acacatcgca ctacgatggc tcccgattcg ccattcgtgc
+     2041 ggttggcacg tcaaaattgt cacccaatgg attacgggtg tagggctgta tatcatttca
+     2101 cccctgcgat cctgtgacaa gcgtgaggca cgccagcaaa cctccacgtc gcgccccaag
+     2161 gcgtggccac ccggggttga gactcgtcac tgtcgcgccc ctccagccgt caccgactct
+     2221 ctccgccccc cccacatgca atccggcctc cttgcgcaga tgacataggc gcgttaagcc
+     2281 atccgacccg ggcactcgaa taccggacaa tggtgaccag gcttgtgaag tgcgccgtca
+     2341 acaggagatt cggccacagg cacagcatga gcttcgcccg cactccccac gccccgaaac
+     2401 caactgtggg ggcctattaa tgaccgcaag aggctgcgag aaagcagaaa gcaattaaac
+     2461 aagaaagact gaactcagaa aaccattaaa catcaactca aaaccacaaa aa
+//
+

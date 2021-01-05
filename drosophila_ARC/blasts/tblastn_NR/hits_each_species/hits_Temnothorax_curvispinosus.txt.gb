@@ -1,0 +1,237 @@
+LOCUS       XM_025016654            4710 bp    mRNA    linear   INV 07-MAY-2018
+DEFINITION  PREDICTED: Temnothorax curvispinosus activity-regulated
+            cytoskeleton associated protein 1-like (LOC112454987), mRNA.
+ACCESSION   XM_025016654
+VERSION     XM_025016654.1
+DBLINK      BioProject: PRJNA453998
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Temnothorax curvispinosus
+  ORGANISM  Temnothorax curvispinosus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Temnothorax.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020215404.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Temnothorax curvispinosus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            internal stop codons :: corrected 1 genomic stop codon
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..4710
+                     /organism="Temnothorax curvispinosus"
+                     /mol_type="mRNA"
+                     /isolate="PA1"
+                     /isolation_source="worker from acorn nest"
+                     /db_xref="taxon:300111"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /country="USA: Pennsylvania"
+                     /collection_date="2017"
+     gene            1..4710
+                     /gene="LOC112454987"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 99% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112454987"
+     CDS             455..1459
+                     /gene="LOC112454987"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: substituted 1 base at 1
+                     genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:617..619,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: activity-regulated
+                     cytoskeleton associated protein 1-like"
+                     /protein_id="XP_024872422.1"
+                     /db_xref="GeneID:112454987"
+                     /translation="MGKKTSDVKAFIDAIVTYKDCTKISDKNALKELPILLTDLAATL
+                     WQGVKYTINAXDSALDLLKQTYGPKKPAYRIYKELFSREQKENTSTDIFICKARTLLS
+                     KRPYDTPLAESIQLDMVYGLLSYKIREEIPRDKVTSFSESVDLAREVEETRAKEDNKT
+                     SRKHENRPRCKYCKNFGHTVDKCRSLKKKPEDSLIASSKKNKTDADADDTQANQRPQP
+                     AITCFSCENLGYLRKDCPKCAKTDKNKKSVVKPEFCLMDASEVLTKYKSRPVLDVEIL
+                     GAKGTGLINTAAKMSVAGHSLYKILVEKGQKFKKTNLHIRLADGKRIDNQSRRPRREP
+                     "
+ORIGIN      
+        1 ttagtgtttt cgatctttcc gtccatacat ccgaactttc gtttcgagcg tctgaaacct
+       61 gagcgtccca ctacacgtaa actcgcttgt cacacgtcgg cccgatcgac gtacgcgaca
+      121 ttacaattgg cgcccaacta agaggccaag ttctgacgaa agctgtcgcc tcaagcaaag
+      181 acgtcgtctt cacgtgagcc agaacgaccg gtgacacgat cgcagacacg acagatgttg
+      241 atatcacgca aagttacaag aacagacgat gagactcaga agcaaaaaca ggaaaccaag
+      301 atggcggaag atcaacgtac acgtaacgcc gttacattaa cgaacgaaca cttcacgatg
+      361 gttctacaac agatacagat atctgccgca aacgtccccg caacaaacat cgcgcaaccg
+      421 caagacaatt tctcgcaatg tacctcgcgt tttaatggga aaaaaaacgt ctgacgtgaa
+      481 agctttcatc gacgcgatcg ttacgtacaa agattgcaca aaaatatccg acaaaaacgc
+      541 actaaaagaa ttgccgatcc tcctcacgga tctcgccgcg acgttgtggc aaggcgttaa
+      601 atacacgatt aatgcgtgag acagcgcgtt agatctacta aaacaaacgt acggacctaa
+      661 aaaaccggca tatcgtatat acaaggaact tttttctcgc gaacaaaaag agaacacatc
+      721 gacggacata ttcatatgta aagcgcgtac attactctcg aaacgtccat atgacactcc
+      781 gttagcggaa agcattcaat tagatatggt ttacggatta ttatcataca agattcggga
+      841 ggaaatacca cgcgataagg tcacttcgtt ctcagagtca gtagatctcg cgagggaagt
+      901 cgaagaaacc agggcgaaag aagacaataa aacgtcgcgc aaacacgaga accgcccgcg
+      961 ttgtaaatat tgtaaaaatt ttggacatac ggtagacaaa tgcagaagcc ttaaaaagaa
+     1021 acctgaggat agtttgatcg cgtcgagtaa gaagaacaaa acggacgctg acgcggacga
+     1081 cacacaagca aatcaacgtc cccaacccgc gataacttgt tttagttgcg aaaatctcgg
+     1141 ttacctccgt aaggactgtc cgaaatgcgc caagacggat aaaaacaaga aaagcgtggt
+     1201 gaaacccgaa ttctgcctga tggacgcgtc tgaagtactt acgaagtata agagccgacc
+     1261 ggttctcgac gtagaaattc taggagcgaa aggtacgggc ttaatcaaca ccgctgcaaa
+     1321 gatgagcgtc gctggacata gcctctacaa aatccttgtc gaaaagggac aaaaattcaa
+     1381 gaagacaaat ttacacatca ggttagcaga tggaaaacgt attgataacc aaagtcgacg
+     1441 tccacgtaga gaaccgtaag ataagtacca catttcttgt aatgccatat gcagagaata
+     1501 attatgttat tgggcatgga ttttattgag aaaacaaaga tcataataaa cgtgccgcaa
+     1561 cgcgtatagt atactttgca gacgaatacg aaccccacga gttgagtttc gaaagcacta
+     1621 acgaaatact taacactttg cagttgaatt acgccgacac gttaagagac gatgaaggcg
+     1681 aagctctttc gccggaccaa tataaaaggc tcgatgagat tttggctaaa tacaaagata
+     1741 tctttgcact agggggtaag caaatgccat atgctaaaca cgccataaat acaggtgacc
+     1801 atgcgccgat agccacgcca ccgtataaga tgttgtgccc caaaaaggaa attttgaaga
+     1861 aggaaataga ggtcatgctc aaggccgaca tcatcgaaga atgcgagtct ccacgggcag
+     1921 ccctggtagt actcgtaccc aaaaatgatg gtacgacgcg agtctgaatt gattatcgcc
+     1981 aagagaacgt tgtcacagag acaaatcctt acccgatgcc cttgatcgaa taactactac
+     2041 acagtgcaaa gagaacgctt tacatgtcaa ccatcgacct ccattcggga tactgacaag
+     2101 tagacgtgaa accggcggat cgagacaaaa ccgcgttcac aacaccgttc ggtacgttcc
+     2161 gcttcaaacg catgccgttc ggccttaaaa attctggtgc tacttttcag caaataatgg
+     2221 atcaattccg aagaggtttg aagaacatca cagtataata ctgatatact tagacgacat
+     2281 aatcgtaatt tcgacgaatt tcaaggaaca tctgaaggac ttacaaaaag ttttcgatcg
+     2341 tctatgcgaa tttaaattac gagctaagcg agagaagtgc aggtttgcat gctcacagat
+     2401 aaaatttcta ggacacataa tcaccgccga tggcatcagt ccagacgacg acaaagtagc
+     2461 ggccattctg aatctcgctc caccaagaaa cgtgaaacac ctacttaggt tcatacaaac
+     2521 cgcttcatgg ttccgtaggt tcattccaaa tttcgcggca atccaagcca ctgacatcgc
+     2581 taaccaagaa aaacgctgta tggatatggt ccaaagaaca ggaagacgcc ttcatagagt
+     2641 tgaagaaagt gctcacaaat gctctcatac tcagaaaagc ggacgataac ttgccattca
+     2701 tcatacggac aaacgccagc acctacgcaa taggggcaat tcttgcacaa agagaaggac
+     2761 ccgataaaaa tctcgtagaa tacaccagcc gcttattgac cccagcagaa cataactaca
+     2821 gtacgacaga acgcgaagcc cttgcaatcg tttgggccgt cttgaagttc agaggctatc
+     2881 tcgacggtgc tcaaattata ataggtacgg accaccaacc gctgaaatgg cttataagtc
+     2941 tgaagtctcc ttcggagcgg ttagctcgat aagcactgag tctccaggaa tacgatctca
+     3001 agatcacata ctccccggaa aaagtaaacg tcgttgctga tacgctttcc aggccaccgt
+     3061 gtacagatta taatgagaag gattgcggaa tatgtacagt tattgaccta ccttcaaata
+     3121 aaccagcaaa actaaagaaa aagcaactgt cggatccgga agttaagaag aacctttgaa
+     3181 tcaaaaaatg acgtcgacat cgcgaattgg acatcccgtg tcaaatgacg tcctgtatcg
+     3241 ttacacgtct gtcaaagata ctgaagaggc ccaatgagta gtaccgaaat gcgctattgg
+     3301 acgcatcttg tatgaaaatc acgacgcacc tatggcagga cactacggag tagataagac
+     3361 attaagacgt attttcgaca agtattactg gccaggaatg cgtagagacc gttaacgagc
+     3421 atgtcagaag gtgcgccaaa tacgaacaat acaagccgtc caatttgaaa cccgctggat
+     3481 tattgaggac acccgcggcg actagaagat ttgaggtact gggtacagat ttatccggac
+     3541 ttttacctat cactgtcgag gggtaccagt ggatattcat cgttgaagat gttgcaacaa
+     3601 gatggattga aatatttcca ctgagacgcg ctacggcgga agcttgtgcc aagactctga
+     3661 tcgacgaagt tatactcagg tatgggattc cccgtcgggt tatttctgac aacgggcctc
+     3721 aattcgtcgg agcagtgatg tagcaagtgt cttattgttt ggggttcaac caatcgttaa
+     3781 ctgcagtcta tcacccggaa gcaaattctg tggaacggaa gaacagagac ataaaggttc
+     3841 agctctccat cctcgtagaa aacgcacata ctaaatgggc cagcaaatta ccttcaatca
+     3901 gatacgccat gaactccagc acatctcaag caaccggaca taccccggct taccttacat
+     3961 tcgcgcgcga aatgcgttgt ccgggagacg tacagcgaga tttacgtgag atcgtaatcg
+     4021 gagaatgtgt cggaaattac gccctactta caaaaaggtg ccgatactat gaaggaagtt
+     4081 actgaaacgc acaaacgaga acaagacaga cataagacgt acgcagacga agccaggaga
+     4141 ccgtctatta agtttcatga aggggaccgg gttatggtca aaacgcaagt attaagcagt
+     4201 gcatctcgaa aagttacttc caaattcgcg ccaaagagag atgggcctta taaaattgcc
+     4261 aaatgcatat cacccactag ctaccaatta gcagataaca ataccgatag cctcctctca
+     4321 gtctatcacg cctctgatct agaaccttgg aggggagccg agtcaggaga ttccatttgc
+     4381 gggccgatta gggctatcag gaaacacgga cgaccgagga aggacacgat gaatttacct
+     4441 caagatgttg aatttttaac gagggcgcct gacagatcta aagggggagt ctgtaacgta
+     4501 acgggaccca taacacgttc gaagggcgcg gtcttagggc agcgttaacc ggcacgacgg
+     4561 cggcgctact agtaatgaga agagggatgg cccgtaggat ggcgtgaggt tggtacaaaa
+     4621 gaggatcgag acaagagcgc gagtcagtac gcgtcgaaaa ataaaacgaa atatagaggt
+     4681 tattttctaa atcttaaaaa ccagagtcag
+//
+
+LOCUS       XM_025037804             981 bp    mRNA    linear   INV 07-MAY-2018
+DEFINITION  PREDICTED: Temnothorax curvispinosus uncharacterized LOC112468573
+            (LOC112468573), mRNA.
+ACCESSION   XM_025037804
+VERSION     XM_025037804.1
+DBLINK      BioProject: PRJNA453998
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Temnothorax curvispinosus
+  ORGANISM  Temnothorax curvispinosus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Temnothorax.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020228422.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Temnothorax curvispinosus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 38% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..981
+                     /organism="Temnothorax curvispinosus"
+                     /mol_type="mRNA"
+                     /isolate="PA1"
+                     /isolation_source="worker from acorn nest"
+                     /db_xref="taxon:300111"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /country="USA: Pennsylvania"
+                     /collection_date="2017"
+     gene            1..981
+                     /gene="LOC112468573"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 61% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:112468573"
+     CDS             1..981
+                     /gene="LOC112468573"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC112468573"
+                     /protein_id="XP_024893572.1"
+                     /db_xref="GeneID:112468573"
+                     /translation="MDSVELSDEWILLANREQRMGELTRRGLSAEGTDTELALRLLRL
+                     LRRGGDSESASAVNHPVDTECLQVPAGNTHPDSPSADRIARLSGSPPDHDSLNGTLRD
+                     SGHNSAADAYNMMRKWNLKFSGARSEDAETFLLRVEEGRELIPVSDADILRCLPFFLS
+                     GIALHWFRGIRDSLTTWAAFREEWRTRFGDPDFQFALRDEIMRRTQGETEPVADFLTC
+                     LSSLYDRLSPPWREEEKVGYAHRHLLPRLQTLIPRDAVTNMKALERWATRAETSCRAA
+                     QTYRAPPPPEQSLFPDLAYRVAKGANRRSGGNSRDTVAALGTSTANSMLC"
+ORIGIN      
+        1 atggattctg tcgaacttag cgacgagtgg atcctcctcg cgaaccgtga acagcggatg
+       61 ggcgagttaa ctcgacgagg gttatccgcg gaagggaccg acactgaatt ggccctccgg
+      121 ttactacgtt tgttacgtcg cggcggagac tcggaaagcg cctccgcggt aaaccacccg
+      181 gtagatacag aatgcctaca ggttcccgcg gggaatacgc acccggatag tccgtccgcg
+      241 gataggatcg cgcgcctctc cggctccccg ccggaccacg acagcttaaa tgggaccctt
+      301 cgggactcgg gccataattc cgctgccgac gcctataaca tgatgcgtaa atggaatttg
+      361 aaattctcgg gcgcgcgcag cgaagatgcg gaaacgtttt tgttgcgcgt ggaggagggc
+      421 cgcgaattaa ttcccgtctc agatgcagac attttacgat gcctgccgtt cttcttatcg
+      481 ggtatcgcgc tgcattggtt ccgcgggatc agggatagcc tgactacctg ggccgcgttt
+      541 agggaggaat ggcgtacgcg cttcggggac cccgacttcc aattcgcgct tcgcgacgag
+      601 ataatgcggc gtacgcaggg ggagacagaa cccgtcgcgg actttttgac gtgcctcagc
+      661 tcgctatacg atcggctatc gccgccgtgg cgcgaagaag agaaggtcgg ctacgcgcac
+      721 cgacaccttc tacctcgatt acagactttg attcctcggg acgcggtaac taatatgaag
+      781 gcgctcgagc ggtgggccac gcgagccgag actagctgcc gcgccgcgca aacttatcgg
+      841 gcacctcccc cgccagagca atccttattt ccggatctcg catatcgggt agctaaaggc
+      901 gcgaatcgcc gttccggcgg aaattctcgc gataccgtgg ccgcgcttgg tacttctacc
+      961 gcaaattcga tgttatgttg a
+//
+

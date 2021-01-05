@@ -1,0 +1,26 @@
+TBLASTN 2.11.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: Nucleotide collection (nt)
+           65,715,181 sequences; 355,811,081,108 total letters
+
+
+
+  Database: Nucleotide collection (nt)
+    Posted date:  Dec 29, 2020 02:05 PM
+  Number of letters in database: 355,811,081,108
+  Number of sequences in database:  65,715,181
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

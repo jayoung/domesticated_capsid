@@ -1,0 +1,433 @@
+LOCUS       XM_018942351            1087 bp    mRNA    linear   INV 03-NOV-2016
+DEFINITION  PREDICTED: Bactrocera latifrons uncharacterized LOC108974491
+            (LOC108974491), mRNA.
+ACCESSION   XM_018942351
+VERSION     XM_018942351.1
+DBLINK      BioProject: PRJNA351211
+KEYWORDS    RefSeq.
+SOURCE      Bactrocera latifrons
+  ORGANISM  Bactrocera latifrons
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017537223.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Bactrocera latifrons Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1087
+                     /organism="Bactrocera latifrons"
+                     /mol_type="mRNA"
+                     /isolate="USDA-ARS-PBARC rearing strain"
+                     /isolation_source="USDA-ARS-PBARC rearing colony"
+                     /db_xref="taxon:174628"
+                     /chromosome="Unknown"
+                     /tissue_type="whole fly"
+                     /country="USA: USDA-ARS-PBARC, Hilo, Hawaii"
+                     /collection_date="2015"
+     gene            1..1087
+                     /gene="LOC108974491"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 13 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108974491"
+     CDS             103..756
+                     /gene="LOC108974491"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108974491"
+                     /protein_id="XP_018797896.1"
+                     /db_xref="GeneID:108974491"
+                     /translation="MTQHSTIELTTEQLQLMLDSVRSAAVAAANCAAPAIVMMRGTFM
+                     YCNSRLGDQHDSAYVEEFIQSVLAYKDMESISDEDALKSIAILFYGEAALWWLGVRGA
+                     KEVHTXDEAIALIREHFAPAKQAYQLYMEIFEEKQDDETTIGTFVCRKRALLAQLPER
+                     RHDEETELDMVYGLLNMKYRRQILRQDVKSFRDLLERGRAVEHNCKEADVKKRKNNS"
+ORIGIN      
+        1 gcagtgcgaa cttgtgccta caccaacacc acttattatg cctgctgagt taaaagctcc
+       61 ttacgccgtc atgatattgc gagacaacaa ccataacgaa aaatgacaca acactccacc
+      121 attgagctga cgaccgagca gctgcaatta atgctggayt cggtgcgttc tgcagccgtt
+      181 gcagcagcca attgtgccgc cccagccatc gtgatgatga ggggcacgtt catgtattgc
+      241 aatagtcgtc tgggcgatca acatgattct gcttatgtcg aggagtttat tcaatctgta
+      301 ttggcttaca aggatatgga atcgatcagt gatgaggacg cgcttaaaag tatcgccata
+      361 ctgttttacg gcgaggcagc tctatggtgg ctgggtgtgc gtggggcgaa ggaagtacat
+      421 acgtgrgacg aggcaatcgc tttgattcgt gagcacttcg cacccgccaa acaagcttat
+      481 caactttata tggagatctt tgaggaaaag caagatgacg aaacaaccat tggaacattt
+      541 gtctgtcgga agcgtgcgct actcgcacaa ctgcccgaga ggcgtcacga tgaagaaacc
+      601 gagttggata tggtctatgg tttgctgaat atgaagtatc ggcgtcaaat attacgtcag
+      661 gatgttaaaa gttttcgtga tttacttgag agaggaagag ccgttgagca taattgtaag
+      721 gaagccgatg tgaagaaacg taaaaataat tcctaaacgg aggwgtttga aaktctycat
+      781 cctracgtca gatcgcttac taataggtga ayggtacaat ccattctttg tattgtgatc
+      841 ttraaatacg aatccattaa aagtgcggaa agatggtaaa tttgctgttt ctaagttagc
+      901 ggaagcgaca agctagatct tggaaacatg tataccctta taaaattatt tataaactga
+      961 gatcagagtt cagagaacga tagagctccg ttataaaggg tagtttaaag tcataagtag
+     1021 gaaaggagtt aaagggatgt aagaaatgta tatataaaat gaataaagag aatgttttat
+     1081 aaagtaa
+//
+
+LOCUS       XM_018942421            2819 bp    mRNA    linear   INV 03-NOV-2016
+DEFINITION  PREDICTED: Bactrocera latifrons uncharacterized LOC108974527
+            (LOC108974527), mRNA.
+ACCESSION   XM_018942421
+VERSION     XM_018942421.1
+DBLINK      BioProject: PRJNA351211
+KEYWORDS    RefSeq.
+SOURCE      Bactrocera latifrons
+  ORGANISM  Bactrocera latifrons
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017537223.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Bactrocera latifrons Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2819
+                     /organism="Bactrocera latifrons"
+                     /mol_type="mRNA"
+                     /isolate="USDA-ARS-PBARC rearing strain"
+                     /isolation_source="USDA-ARS-PBARC rearing colony"
+                     /db_xref="taxon:174628"
+                     /chromosome="Unknown"
+                     /tissue_type="whole fly"
+                     /country="USA: USDA-ARS-PBARC, Hilo, Hawaii"
+                     /collection_date="2015"
+     gene            1..2819
+                     /gene="LOC108974527"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 20 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108974527"
+     CDS             190..930
+                     /gene="LOC108974527"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108974527"
+                     /protein_id="XP_018797966.1"
+                     /db_xref="GeneID:108974527"
+                     /translation="MSQPVVQMTAEQLQSLIESVRLAAVAGASAAAPATLHSKGSFTN
+                     CTSRFGGQRDHEAVEEFITSIVTYKEIESISDEDALKGLSLLFFGLASTWWQGVRKEA
+                     KTWGXAIALIRDHFSPTKPAYQIYLEIFENQQRDNVPIDTFVCQKRALLAQLPEGRHD
+                     EETELDLVYGLLNIKYRKNILRQDLKTFRELLEKGRIIEHNNLEVEAEQNGPMRGSKR
+                     TKRCTHCNFRGHTYEECRKRKSANEGNE"
+ORIGIN      
+        1 cttggtagac gaattcagtc tcttacgacc agcaagtgaa ttactatagt agcaggaaga
+       61 cattcgctaa cagcaattgg ctttgttcgc tgctattaac aacaaaacat taaacaacaa
+      121 caagtaagat ttgtgcgtga gtcattttaa cttctmgtct acgaagtcca catttttcca
+      181 aacaacaaaa tgtcacaacc cgtcgtgcaa atgacagccg aacagctgca gtcactgatc
+      241 gaatcggtgc gtttggcagc cgttgcaggg gccagcgctg ctgcacccgc cactctccac
+      301 agcaaaggca gtttcaccaa ctgtactagc cgttttggtg gccagcgcga tcacgaagcc
+      361 gttgaggagt tcataacttc cattgtgacc tacaaagaaa tcgaatcaat cagcgacgag
+      421 gatgcactaa aggggctgtc tttattgttc ttcggattgg cgtccacttg gtggcagggc
+      481 gtgcgtaaag aagcgaaaac ttggggagah gccatwgcgt tgattcgcga tcacttctca
+      541 cccaccaaac ccgcctacca gatttacctc gaaatcttcg agaatcagca acgcgacaat
+      601 gtgcccatcg acacatttgt ttgccagaag cgtgcgctac tcgcacaact gccagaggga
+      661 cgtcacgatg aggagaccga attggatttg gtttatggtt tgctgaacat caagtaccgt
+      721 aagaatatac tgcgtcagga ccttaaaaca ttccgtgaat tgttggagaa aggtcgtata
+      781 atcgaacaca ataacttgga ggttgaagca gagcaaaacg ggccaatgcg tggttcgaag
+      841 cgcaccaagc gttgtaccca ttgcaacttc cgtggtcaca cgtacgagga atgtcgcaaa
+      901 cggaaatctg cgaacgaagg caacgaataa gtaaaataac acattccact tcatcagctc
+      961 caataattac tcagacattc acgcatacaa caaatccaat gacgacaacc agcgcacaat
+     1021 accaaacaac cacaatgaaa caaataatgg ataatgatgt caccagccgg tgaagtctca
+     1081 gtccgagcag cttgcgtcgc aaccaaatca ctgaagcaaa actttcgctc tcatcaaagc
+     1141 tgaagctatg cagcagcgtc gaactttggt caatttggta tacagcggca acagcagcaa
+     1201 caatactact aagttttagt ataagtataa gcatacatac atacacacat atagttattg
+     1261 cgaactgagt tgctcacaca cacgcttctc ttcgattcta gtggacgttt tacattggag
+     1321 ggcaaagttt ttgtccaaag attgttaata cttccaaaag aggagaagaa ggcagtggct
+     1381 tctcagattc gtcaaaatca ttccgccgca cgctgtgtct aacacggctc ctcatggcta
+     1441 cgaacgccat taaatcacaa gtagtgaaay caagaatttt gaatcaaagt cggttcttcg
+     1501 gaaccaaaaa ccgagtcacg catctgatca gctatgcttc aataatattg ggagcagttt
+     1561 gcctcgcttg gaaattcagg caatgctcga gtttccttct tcaatcgaaa tttgcattgg
+     1621 cctattccct tgttttgttc gagtggaaat tcgtgtgcat gctgtaacga ctgtgatctc
+     1681 ctcggaatcc cagctgttca acatgcatta acgaattccg gctttttcaa acgagtgcct
+     1741 ttggtcattg ttttccgatc gaagaatgaa atatctcttt tgtttgtttg aatttctgag
+     1801 ttttgttgct gattgctcac tctatgaaca tggttgagaa gatgagtaac tcaaaatccc
+     1861 gttgtatttg tctgcggttg agtgtggtac aagcgtctac gaatgagagc ttgattggat
+     1921 caggcctata tatttgtttg atatggtttg gctcagattg gcatctggta gactcttggt
+     1981 ccggcatttc ggtgttgttc taagagttct atcgagtcgg tgtgttttaa tccatagtta
+     2041 caaatgttca acttttccaa ttttgcattc atcaagaact aggctttttg aactctctta
+     2101 ttcgctctca aatgcggcaa aaaaccaacc gttacacttg gaagtgctgt ctgacatttt
+     2161 gtattccgaa taaatatgtt gggctatacg atggatattg ctgtgtaggc ggttccaact
+     2221 gttgccattc gcacttcagt gtgtattcct tcgggtatat gcattgtatg cgagcggtaa
+     2281 ctgatggatc caatgacatg gctttgttct cgcatagtcc acatacgaat tcggcttgca
+     2341 agcgtgttga cagtaactct gagtgcgaca aaaataaaac ttgctctcga gcaaattttg
+     2401 ccatacatat atattttata tgtayattta atccgaattg taaagaaatt gtacaacgat
+     2461 ggctagactg tcgccattcg tacaattggc acgccaaatt gatgatttgc atgtcaagct
+     2521 agttgaaaaa acattgactk cagcttcaag cgttggctcg ccactcaaaa tgcattcatg
+     2581 catttgctca attaaaatgt ctagattgat ctctcattta cctccggaat gggaagatga
+     2641 tcttagccca tgtaaaaacc ccaaatattt ctcatgtaat gttgttawag gcagtatttg
+     2701 aataccgtca tcacgtgagt gggaactacc aaccaaccat ttgccgagaa cgccgcattt
+     2761 tggaggacct ggcaaataat ycggtttaaa tggggttggt ggtatcacct gctaataat
+//
+
+LOCUS       XM_018942423            1081 bp    mRNA    linear   INV 03-NOV-2016
+DEFINITION  PREDICTED: Bactrocera latifrons uncharacterized LOC108974528
+            (LOC108974528), mRNA.
+ACCESSION   XM_018942423
+VERSION     XM_018942423.1
+DBLINK      BioProject: PRJNA351211
+KEYWORDS    RefSeq.
+SOURCE      Bactrocera latifrons
+  ORGANISM  Bactrocera latifrons
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017537223.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Bactrocera latifrons Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1081
+                     /organism="Bactrocera latifrons"
+                     /mol_type="mRNA"
+                     /isolate="USDA-ARS-PBARC rearing strain"
+                     /isolation_source="USDA-ARS-PBARC rearing colony"
+                     /db_xref="taxon:174628"
+                     /chromosome="Unknown"
+                     /tissue_type="whole fly"
+                     /country="USA: USDA-ARS-PBARC, Hilo, Hawaii"
+                     /collection_date="2015"
+     gene            1..1081
+                     /gene="LOC108974528"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 14 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108974528"
+     CDS             291..914
+                     /gene="LOC108974528"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108974528"
+                     /protein_id="XP_018797968.1"
+                     /db_xref="GeneID:108974528"
+                     /translation="MSTGRMSDEQFQRLLETIRALGPQHTEQQQQQQANKAKSSFGNC
+                     NVRFHGQRDNDAVEEFVNAIETYKDMEGISDQDALKGLPLLFQGIASAWWKGVRRDAK
+                     SWQDALQLLRDHFSPTKPPYQIYVEIFESKQSDHTPIDTFVCQKRALIAKLPEGRHDV
+                     ETELDFIYGLLDTKYKQQIPRHEVKTYRELLEKGRNVERHNTEGRRN"
+ORIGIN      
+        1 cgatgactaa tgagcgaata caacgtagga cctacataca tattttcaat actgtaaaca
+       61 agttatttcg caacagatga ccccatgtat tactggagct tttcgctccc agtcagttgg
+      121 ctaagagaac catcaccgaa aagcgaatgt ttatgtcggc aaaatgaaac agtcttctct
+      181 tggctgcggc tgcggttgtc atcggttcgt ggtmgcgctt gtgccgccac atcgcgctcg
+      241 ccattataaa aacacaaagc gcttgattaa aagccaaaag ctacgcaaaa atgtcgactg
+      301 gtcgcatgtc cgatgagcaa tttcaacgat tactcgaaac tatacgagcg ctgggtccac
+      361 aacacaccga acagcagcag cagcaacaag ccaacaaggc gaaaagcagt tttggcaatt
+      421 gtaatgtacg cttccatggt cagcgtgaca acgatgccgt cgaggagttc gtcaacgcca
+      481 ttgaaaccta caaggacatg gagggcatta gcgatcaaga cgcgctaaaa ggtttgccgc
+      541 tcctctttca aggtattgct tccgcatggt ggaagggcgt acgacgcgat gcgaagtcgt
+      601 ggcaagatgc tcttcaactg ctccgcgacc acttttcacc gacgaaacca ccttatcaaa
+      661 tatacgtgga gattttcgaa tcaaaacagt ccgatcacac ccccattgac acctttgttt
+      721 gtcagaagcg cgctctgata gcgaagctgc cggaggggcg acacgatgtg gagactgagc
+      781 tagattttat ttatggtctg ctagatacaa aatataaaca gcaaataccg cgacatgaag
+      841 tcaaaacata tcgagagctt ttagagaagg gacgcaatgt ggagcgacac aacaccgaag
+      901 gtagacgcaa ctgatagcga tgctatggtt acagcagtaa attgtgattt gcagttgctc
+      961 ttcayagcga aagtgtacat tgtgttctca cttcttacta agtgaargaa ttatatttat
+     1021 tagtttgtat aataactgta agataataaa taaataaata agtaaataaa taataaatta
+     1081 t
+//
+
+LOCUS       XM_018942446             801 bp    mRNA    linear   INV 03-NOV-2016
+DEFINITION  PREDICTED: Bactrocera latifrons uncharacterized LOC108974542
+            (LOC108974542), mRNA.
+ACCESSION   XM_018942446
+VERSION     XM_018942446.1
+DBLINK      BioProject: PRJNA351211
+KEYWORDS    RefSeq.
+SOURCE      Bactrocera latifrons
+  ORGANISM  Bactrocera latifrons
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017537223.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Bactrocera latifrons Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..801
+                     /organism="Bactrocera latifrons"
+                     /mol_type="mRNA"
+                     /isolate="USDA-ARS-PBARC rearing strain"
+                     /isolation_source="USDA-ARS-PBARC rearing colony"
+                     /db_xref="taxon:174628"
+                     /chromosome="Unknown"
+                     /tissue_type="whole fly"
+                     /country="USA: USDA-ARS-PBARC, Hilo, Hawaii"
+                     /collection_date="2015"
+     gene            1..801
+                     /gene="LOC108974542"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 19 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108974542"
+     CDS             16..786
+                     /gene="LOC108974542"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108974542"
+                     /protein_id="XP_018797991.1"
+                     /db_xref="GeneID:108974542"
+                     /translation="MSQPVVQMTTEQLQSLIESVRLAAVAGASAXAPATAHSKGSFTN
+                     CTSRFGGQRDHEAVEEFITSIVTYKEIESISDEDALKGLSLLFFGLASTWWQGVRKEA
+                     KTWGDAIALIRDHFSPTKPAYQIYLEIFENQRRDNVPIDTFVCQKRALLAQLPEGRHD
+                     EETELDLVYGLLNIKYRKNILRQDLKSFRELLEKGRIIEHNSLESEVXQPRLMRGIKR
+                     VHQGSGSEMPHQRKTSKYRYRANIGNANTAAPPPQPTS"
+ORIGIN      
+        1 attccaccaa gtgaaatgtc gcaacccgtt gtacaaatga caaccgaaca gctgcagtca
+       61 ctgatcgaat cggtgcgttt ggcagccgtt gcaggtgcca gcgctgytgc acccgccact
+      121 gcccacagca aaggcagttt caccaactgt actagccgtt ttggtggcca gcgcgatcac
+      181 gaagccgttg aggagttcat aacttccatt gtgacctaca aagaaatcga atcaatcagc
+      241 gacgaggatg cactaaaggg gctgtcttta ttgttcttcg gattggcgtc cacttggtgg
+      301 cagggcgtgc gtaaagaagc gaaaacttgg ggagatgcca ttgcgttgat tcgcgatcac
+      361 ttctcaccca ccaaacctgc ctaccagatt tacctcgaaa tcttcgaaaa tcagcgtcgc
+      421 gacaacgtgc ccatcgacac atttgtttgc cagaagcgtg cgctgctcgc gcaactgcca
+      481 gaggggcgtc acgatgagga gaccgaattg gatttggttt atggtttgct gaacatcaag
+      541 taccgtaaga atatactgcg tcaggacctt aaatcattcc gtgaattgtt ggaaaagggg
+      601 cgtattattg aacacaatag tttggaatcg gaagtkkgtc agccccgtct gatgcggggc
+      661 attaagcgcg tccatcaagg ctcaggatcc gagatgccac accagaggaa gacgagtaaa
+      721 tacagatatc gagctaatat tggaaatgct aacacggcgg ccccaccgcc acagccgacc
+      781 tcgtaaaata ctgctctcaa g
+//
+
+LOCUS       XM_018942448            1837 bp    mRNA    linear   INV 03-NOV-2016
+DEFINITION  PREDICTED: Bactrocera latifrons uncharacterized LOC108974543
+            (LOC108974543), mRNA.
+ACCESSION   XM_018942448
+VERSION     XM_018942448.1
+DBLINK      BioProject: PRJNA351211
+KEYWORDS    RefSeq.
+SOURCE      Bactrocera latifrons
+  ORGANISM  Bactrocera latifrons
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Tephritoidea; Tephritidae; Bactrocera; Bactrocera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017537223.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Bactrocera latifrons Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1837
+                     /organism="Bactrocera latifrons"
+                     /mol_type="mRNA"
+                     /isolate="USDA-ARS-PBARC rearing strain"
+                     /isolation_source="USDA-ARS-PBARC rearing colony"
+                     /db_xref="taxon:174628"
+                     /chromosome="Unknown"
+                     /tissue_type="whole fly"
+                     /country="USA: USDA-ARS-PBARC, Hilo, Hawaii"
+                     /collection_date="2015"
+     gene            1..1837
+                     /gene="LOC108974543"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 16 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108974543"
+     CDS             126..893
+                     /gene="LOC108974543"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108974543"
+                     /protein_id="XP_018797993.1"
+                     /db_xref="GeneID:108974543"
+                     /translation="MENNNGHTVIQISIEQLNSLIDAAKTVSTVATTKGSLSNCNSHF
+                     RGQRDHEAVEEFITAIVTYKELQSISDEDALKGLSLLLHGMASTWWQGVRKEAKTWSD
+                     AITLIRQHFSPTKPAYQIYMDIFIRKQDERTPIDTFVCQKRALLAXLPENRHDEETEL
+                     DLVYGLLNIKYRRHIQRLDIKTFRELLEKGRIIEHNNLEYDTVQLLHATKRNKRCSHC
+                     NFRGHTYDECRKRKNESDGKTGEVRSSSSEANENENQ"
+ORIGIN      
+        1 caagcgcttg gatgctttaa gacattcgcc aacatacctt ggctttgtcc tcgccaatct
+       61 gccatatcga ccgcatatca taaattgtaa tagtgaaaaa tttaaagaaa taagcgaaat
+      121 ttakcatgga aaacaataat ggrcatacag tcatacaaat atctatcgaa caattaaatt
+      181 cacttatcga tgcagcaaaa accgtatcca ccgtggccac caccaagggc tcgttaagca
+      241 actgcaacag ccacttccgc ggacaacgcg atcacgaggc tgtcgaagag ttcatcaccg
+      301 cgattgtgac ctacaaagaa cttcagtcga tcagtgatga agatgcactc aaaggactat
+      361 cactgctgct gcacggtatg gcctccacat ggtggcaagg tgtacgtaaa gaagccaaaa
+      421 cgtggtccga tgctatcaca ctgatccgcc aacayttctc acccaccaaa ccagcctacc
+      481 aaatttacat ggacattttt atcagaaagc aggacgaacg cactcctatc gacacctttg
+      541 tctgtcagaa gcgtgcgctg cttgcacrgc taccggagaa tcgtcacgac gaggagaccg
+      601 aattggattt ggtttacggc ttattgaaca tcaaatatcg tcgtcatata caacgactgg
+      661 acatcaagac attccgggag ttattggaga agggtcgtat cattgaacac aataacttgg
+      721 agtacgacac cgtgcaattg ttgcatgcca ctaaacgaaa caaacgctgc agccactgta
+      781 acttccgtgg acatacttac gacgaatgcc gaaaacgtaa aaacgaaagc gacggcaaaa
+      841 ctggtgaagt cagaagcagt tccagtgaag cgaacgagaa cgagaaccaa taagcagctc
+      901 ttagtcaagc cgtaagacca cacagcacat attatatagt atataagtaa ttttkaatga
+      961 atttgtaact aacacacttg caacactcaa cactcatccc tcatccacat ccacatcgtc
+     1021 gtcacacaaa gtgtttacca attctctcga attgaatgga gatatttatt cggagggcaa
+     1081 agtattcaac gcagcagttg atgcgccatt tamtytktcc gtaaaactat gtgagattca
+     1141 aaagagagga atttggttac attttgaacc catcatcaat caacctaacg caaaagcgct
+     1201 taaacgcctt accttcacgg ctcaaattgg ccgacgarcg ccagcattga cctacgataa
+     1261 ttacgaactt ctggatactt gaattcggag aacgataytc agaggttcac tacaaatgag
+     1321 tcatcgtgag catcggccac agttcgtcat ttgtctgagt gagtattttt tactgcacaa
+     1381 ccttcttcca ttcggcaaac aaaattgcag ctttcacttt atatcgtttt ttggcgtcaa
+     1441 ctcagctgcg tgycaagcaa ttgcaatcgt tgttaaggtc gcagcggctc ggcatgtatc
+     1501 tgaggtgacg aagttttcta tgataaggaa aagttgttgt tttgtatgct gtaatcggaa
+     1561 aaagtaagaa ataattctct tgagaacagt gacaaatttc attggctaca tgctcttgcg
+     1621 actcacactt cgctgaattc agtagtckag gcctgtatct ctgcagatac ctgcgaagtc
+     1681 tcgttttggt atccttcggg tagcaggtgt tcgcaactga gtctagcgat cactaacgtt
+     1741 gcatattgct gtctacaatt ttacgctctt ttaccgttaa acgcatactg ctgatattgc
+     1801 agtgggattg gcgtttacat ggcctctctt gtataaa
+//
+

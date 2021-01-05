@@ -1,0 +1,338 @@
+LOCUS       XM_022968238             345 bp    mRNA    linear   INV 04-NOV-2017
+DEFINITION  PREDICTED: Spodoptera litura uncharacterized LOC111354701
+            (LOC111354701), mRNA.
+ACCESSION   XM_022968238
+VERSION     XM_022968238.1
+DBLINK      BioProject: PRJNA416314
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Spodoptera litura
+  ORGANISM  Spodoptera litura
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Amphipyrinae; Spodoptera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_036205.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Spodoptera litura Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..345
+                     /organism="Spodoptera litura"
+                     /mol_type="mRNA"
+                     /strain="Ishihara"
+                     /db_xref="taxon:69820"
+                     /chromosome="19"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="moths"
+     gene            1..345
+                     /gene="LOC111354701"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:111354701"
+     CDS             1..345
+                     /gene="LOC111354701"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC111354701"
+                     /protein_id="XP_022824006.1"
+                     /db_xref="GeneID:111354701"
+                     /translation="MRRAQETSFAKCTARFNGSSRNADDLEAFIEATEVYRDCTNVSD
+                     EHALRGLPMLLVVEAAVRRQGVKSSITSWTDALQRLRGMFGVPRPGYKILRDIFATEQ
+                     NSERADDVPIYL"
+ORIGIN      
+        1 atgcgccgcg cgcaggaaac ttccttcgcg aaatgcacgg cgcgatttaa cggatcatcg
+       61 aggaacgcgg atgatcttga agcatttatc gaggccaccg aagtctaccg cgactgcacc
+      121 aacgtcagcg acgagcacgc gctgcgcggc ctgccgatgc tgctggtggt agaggccgcc
+      181 gtcaggcgac aaggagtgaa gtcgtcgatt acgtcgtgga ccgacgccct acaacgactt
+      241 cgagggatgt ttggagtgcc gcgacccggt tataaaatac tccgagacat tttcgctacc
+      301 gaacaaaata gtgaaagggc cgacgacgta cctatttatt tgtaa
+//
+
+LOCUS       XM_022976063             552 bp    mRNA    linear   INV 04-NOV-2017
+DEFINITION  PREDICTED: Spodoptera litura uncharacterized LOC111360193
+            (LOC111360193), mRNA.
+ACCESSION   XM_022976063
+VERSION     XM_022976063.1
+DBLINK      BioProject: PRJNA416314
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Spodoptera litura
+  ORGANISM  Spodoptera litura
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Amphipyrinae; Spodoptera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_036216.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Spodoptera litura Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..552
+                     /organism="Spodoptera litura"
+                     /mol_type="mRNA"
+                     /strain="Ishihara"
+                     /db_xref="taxon:69820"
+                     /chromosome="30"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="moths"
+     gene            1..552
+                     /gene="LOC111360193"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:111360193"
+     CDS             1..552
+                     /gene="LOC111360193"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC111360193"
+                     /protein_id="XP_022831831.1"
+                     /db_xref="GeneID:111360193"
+                     /translation="MPPKRRTERDEGSDTDTDVELNRTVISSPNVTMSEDMLNALVSN
+                     ITRGQVEANRVLIESISAGNKNPLITSQPRAKVADAHTHAPRARNFAKCTARFNGSSK
+                     NADELEALIEAIEVYRNCTNVSNEHALRGLPMLLVGEAAVWWQGRSSVTSWTDALQRL
+                     RGMFGVPRPGYKILPRHFRYRTK"
+ORIGIN      
+        1 atgccgccga agagaagaac tgaaagagat gagggatcgg ataccgacac agatgtcgag
+       61 ttgaatagaa cagtgatttc gtcaccaaat gttacaatgt cggaggatat gctaaatgcc
+      121 cttgtctcca acatcactag aggtcaagtg gaagcgaata gagttctgat tgaaagtatt
+      181 tccgcgggaa acaaaaaccc gttgattacg tcacaaccgc gcgccaaagt cgccgacgca
+      241 cacacgcatg cgccacgcgc aagaaacttt gcgaaatgca cggcgcgatt taacggatca
+      301 tcgaagaacg cggatgagct cgaagcatta atcgaggcca tcgaagtcta ccgcaactgc
+      361 accaacgtca gcaacgagca cgcgctgcgc ggcctgccga tgctgctggt gggcgaggcc
+      421 gccgtctggt ggcaaggcag gtcgtcggtc acgtcgtgga ccgacgccct acaacgactt
+      481 cgagggatgt ttggagtgcc gcgacccggt tataaaatac tcccgagaca ttttcgctac
+      541 cgaacaaaat ag
+//
+
+LOCUS       XM_022979044            1775 bp    mRNA    linear   INV 04-NOV-2017
+DEFINITION  PREDICTED: Spodoptera litura nascent polypeptide-associated complex
+            subunit alpha, muscle-specific form-like (LOC111362371), mRNA.
+ACCESSION   XM_022979044
+VERSION     XM_022979044.1
+DBLINK      BioProject: PRJNA416314
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Spodoptera litura
+  ORGANISM  Spodoptera litura
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Amphipyrinae; Spodoptera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019224411.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Spodoptera litura Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 47% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1775
+                     /organism="Spodoptera litura"
+                     /mol_type="mRNA"
+                     /strain="Ishihara"
+                     /db_xref="taxon:69820"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="moths"
+     gene            1..1775
+                     /gene="LOC111362371"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 54% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:111362371"
+     CDS             63..1775
+                     /gene="LOC111362371"
+                     /codon_start=1
+                     /product="nascent polypeptide-associated complex subunit
+                     alpha, muscle-specific form-like"
+                     /protein_id="XP_022834812.1"
+                     /db_xref="GeneID:111362371"
+                     /translation="MAVTRSTAASLSRRDDANDGFPDLTRPNSPPSSISRAQDGDDTF
+                     APQAEAKTTFTNENVASIISSLQRSQTEAFKELLISVSRANTPNLDVLGQSTLARCRA
+                     TFAGNPKTSVEAFIDAIEAYSSCAQISDSNIIRGLAYLFKEEAATWLQGIQHSISTWY
+                     EAKHNLLCAYGDRRPPHRIYLEIFATPQGSENTDMFVARARALLARLPKGDVSESAEI
+                     DMIYGLLLNRIRRRLRREECHNFFELLLMARTIEDSFDGKPATVSTTPSISMQSTSRA
+                     STRDSTRGQQSAPTPPQRAPPDAPTAPILAAQQSAPTPPQRAPPDAPTAPILAAQQSA
+                     PTPPQRAPPDAPTAPILAAQQSAPTPPQRAPPDAPTAPILAAQQSAPTPPQRAPPDAP
+                     TAPILAAQQSAPTPPQRAPPDAPTAPILAAQQSAPTPPQRAPPDAPTAPILAAQQSAP
+                     TPPQRAPPDAPTAPILAAQQSAPTPPQRAPPDAPTAPILAAQQSAPTPPQHAPPDAPI
+                     APILAAPQSAPTPPQRAPPSAPTAPIVAAPRSAPTPPQRAPPAAPTAPILAAPQSTPA
+                     PEPD"
+ORIGIN      
+        1 taacgtgttt tttcgtgaaa caatagtgta cacgtgcccc cagtgaatat cctgcagaaa
+       61 tcatggctgt gacaaggagt acagcggcca gcttaagtcg gagagatgat gccaacgatg
+      121 gattccctga cctcacgcga ccaaactcgc cgccgtcgtc catttcacga gcacaagatg
+      181 gcgacgacac ctttgcgccg caagccgaag caaaaaccac gtttacgaat gaaaacgtgg
+      241 cctctattat atcgtctcta caacgctctc aaacagaggc attcaaagag ttacttatct
+      301 cggtatcgcg agcgaacact cccaatctag atgtactagg gcaaagcacc ctagctcgct
+      361 gcagagcaac ctttgccggc aatcctaaga cgtcggttga agcattcatt gacgccattg
+      421 aggcatatag tagctgcgcg caaatatcag actcaaacat aatacgtggt ttagcttatc
+      481 tttttaaaga agaagcggct acatggttgc aaggcataca acactctata tcaacgtggt
+      541 acgaagctaa acataatttg ctgtgtgcct acggagatcg ccggccgcct caccgcatct
+      601 acctagaaat ctttgcaacg ccacagggta gcgaaaacac ggacatgttt gtggcgcgcg
+      661 ctcgcgccct tttggctcgc cttcctaagg gcgacgtctc cgagtcggcc gaaatcgaca
+      721 tgatatacgg acttcttctt aatagaatta ggagaaggct acgcagggaa gaatgtcata
+      781 atttctttga gctactactc atggcccgta ccatcgaaga ttcttttgac ggaaaacctg
+      841 ccacagtgtc tacgacacca tcaatttcta tgcagtccac cagtcgcgcc tccacgcgtg
+      901 atagcacacg cgggcagcag agcgcgccca caccgccgca gcgcgcgccc ccggatgcgc
+      961 ctactgcgcc cattctcgcc gcgcagcaga gcgcgcccac accgccgcag cgcgcgcccc
+     1021 cggatgcgcc tactgcgccc attctcgccg cgcagcagag cgcgcccaca ccgccgcagc
+     1081 gcgcgccccc ggatgcgcct actgcgccca ttctcgccgc gcagcagagc gcgcccacac
+     1141 cgccgcagcg cgcgcccccg gatgcgccta ctgcgcccat tctcgccgcg cagcagagcg
+     1201 cgcccacacc gccgcagcgc gcgcccccgg atgcgcctac tgcgcccatt ctcgccgcgc
+     1261 agcagagcgc gcccacaccg ccgcagcgcg cgcccccgga tgcgcctact gcgcccattc
+     1321 tcgccgcgca gcagagcgcg cccacaccgc cgcagcgcgc gcccccggat gcgcctactg
+     1381 cgcccattct cgccgcgcag cagagcgcgc ccacaccgcc gcagcgcgcg cccccggatg
+     1441 cgcctactgc gcccattctc gccgcgcagc agagcgcgcc cacaccgccg cagcgcgcgc
+     1501 ccccggatgc gcctactgcg cccattctcg ccgcgcagca gagcgcgccc acaccgccgc
+     1561 agcacgcgcc cccggatgcg cctatcgcgc ccattctcgc tgcgccgcag agcgcgccca
+     1621 cgccgccgca gcgcgcgccc ccgtctgcgc ctaccgcgcc catagtcgcc gcgccgcgga
+     1681 gcgcacccac gccgccgcag cgcgcgcccc cggctgcacc tactgcgccc attctcgccg
+     1741 cacctcagag cacgcccgcg cccgagccgg actag
+//
+
+LOCUS       XM_022981121            1839 bp    mRNA    linear   INV 04-NOV-2017
+DEFINITION  PREDICTED: Spodoptera litura uncharacterized LOC111364267
+            (LOC111364267), partial mRNA.
+ACCESSION   XM_022981121
+VERSION     XM_022981121.1
+DBLINK      BioProject: PRJNA416314
+KEYWORDS    RefSeq.
+SOURCE      Spodoptera litura
+  ORGANISM  Spodoptera litura
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Amphipyrinae; Spodoptera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019226378.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Spodoptera litura Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: incomplete on both ends.
+FEATURES             Location/Qualifiers
+     source          1..1839
+                     /organism="Spodoptera litura"
+                     /mol_type="mRNA"
+                     /strain="Ishihara"
+                     /db_xref="taxon:69820"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /dev_stage="moths"
+     gene            <1..>1839
+                     /gene="LOC111364267"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:111364267"
+     CDS             <1..>1839
+                     /gene="LOC111364267"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC111364267"
+                     /protein_id="XP_022836889.1"
+                     /db_xref="GeneID:111364267"
+                     /translation="KKDTDAVEAFIAAATVYKTAEGISDVDALQGLPLLLTDEAAIWW
+                     QGVKSSVSQWEVFCEKLRHTFAPKKPAYMVCHQITHETQEGSITTEAFIAKKRAMFAL
+                     LPPPKLTETQQIDLIFALIRLEVRNRMPRDSVPTFDKLLETARGIEETLQEYAVSSKC
+                     SELSVNNNPQGKKPKQKCTFCKNPGHTADVCRKKKRAEGTLSVPVKEVSEIQTQAPSP
+                     SQPKFSCYGCGAPGVYRSSCTTCNKHAAPVKKEDVSFCAINVRAEEHERPVVFLDIEG
+                     IKGTAYIDTCAKMSVASYSLFLVLQKRGCKFKEQSVDLTLADGVKKTQIVLKCSVMVE
+                     LCGRKVLNPFIILPEAKENKTLLGVGFLQDAGIVINMPQFTWNFIDEPDMHYELYSEE
+                     FANFETTVIREMTEIPSPVSALSSTNSEDSTSIASVILTPPSTPPPTMVPALTGNTPA
+                     MSTPPGGQNGDYKLAPIDLAATPPCKKRPRLFDGYSPGFDDFMLRDAQISIHRADVEL
+                     SPQSAGLFNANNWDVRIDSIDVVSHITDTQHEQLNKLLQNNCHVFNTKSEPTKLIEHI
+                     IKTVDEKPISVPPYRLSPPRKETLQHEIKAMLAEGIIQPSTSPWAAP"
+ORIGIN      
+        1 aaaaaggata cggatgcagt tgaagcgttc atagccgcag caactgttta caaaacggca
+       61 gaagggatta gcgacgtcga cgcgttacaa ggtcttccac tactgcttac agacgaagcg
+      121 gcaatatggt ggcaaggagt gaaaagcagc gtatcgcagt gggaagtttt ttgtgaaaaa
+      181 ctgcgacaca cgtttgctcc caaaaaacct gcatacatgg tgtgtcatca aataacacat
+      241 gaaacacaag aaggcagtat aacaacagag gcatttatcg caaaaaagcg ggcaatgttt
+      301 gccttgctac caccaccaaa acttactgaa acgcaacaaa tagacctcat ctttgcgcta
+      361 attcgcctcg aagtgaggaa ccgaatgcca agagactcgg tgccaacatt cgataaacta
+      421 ttggaaacag cacgtggaat cgaggaaacg ttacaagaat atgcagtgag ctcaaaatgt
+      481 tcagaactca gcgtaaataa taatcctcaa ggcaagaaac ccaagcagaa gtgcactttc
+      541 tgcaaaaacc ccggtcatac agcggacgtg tgcaggaaga agaaacgggc tgagggcact
+      601 ctctccgtcc ctgtaaagga ggtgtcggaa attcaaactc aagcgccatc tccttctcag
+      661 ccaaagtttt catgctacgg atgcggcgca cccggagtat atcgtagtag ctgcactacg
+      721 tgcaacaagc acgcagcgcc agtcaagaag gaagacgtta gtttctgcgc aatcaacgtt
+      781 cgggcggagg aacatgaacg accagttgtg ttccttgata ttgaggggat taaaggaacc
+      841 gcctacattg acacatgcgc aaaaatgagt gttgccagct actcgctatt cttggtcctg
+      901 caaaaacgtg gatgcaagtt taaggaacaa tcagtagacc taacattagc tgacggcgtg
+      961 aaaaaaacac agatagtgtt gaaatgctcc gtgatggtgg aattatgcgg tcgaaaggtt
+     1021 ctaaacccat tcatcatatt accagaagca aaagagaaca aaactcttct tggtgttggt
+     1081 ttcctgcagg atgcgggcat cgtcataaat atgcctcaat tcacctggaa tttcattgat
+     1141 gaacccgaca tgcattatga gctgtactcg gaagagtttg ccaactttga gaccactgtc
+     1201 atcagagaaa tgacggaaat accaagtcca gtcagtgcct tatcatcaac caacagtgaa
+     1261 gattccacta gtattgcgtc ggtgatactc acccctccat caacaccccc gccaacaatg
+     1321 gtaccagccc ttaccggtaa tacaccagcg atgtcaacgc caccaggtgg gcaaaacggg
+     1381 gattataaac tggcacctat agacctggct gccacccccc catgtaaaaa aaggccacgc
+     1441 ctgtttgatg gatactcccc agggtttgac gacttcatgt tgcgggacgc gcagataagc
+     1501 attcaccgag cagatgtcga attgtcccca cagagtgcag gcttatttaa tgctaacaac
+     1561 tgggacgtgc gcattgactc cattgatgtg gtttcacata taacggatac ccaacacgag
+     1621 cagctgaata agctcttaca aaacaactgc cacgtcttta atacgaagag tgaacctaca
+     1681 aagttgatag aacatattat caagacagta gatgaaaagc caatctcagt cccgccgtac
+     1741 agactgtcgc caccccgtaa agaaacctta cagcacgaaa ttaaagcaat gctggcggaa
+     1801 gggatcattc aaccgtccac ttctccctgg gccgcacct
+//
+

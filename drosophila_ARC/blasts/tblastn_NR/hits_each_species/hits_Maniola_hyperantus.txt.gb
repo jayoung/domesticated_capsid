@@ -1,0 +1,218 @@
+LOCUS       XM_034984016            1906 bp    mRNA    linear   INV 08-JUN-2020
+DEFINITION  PREDICTED: Aphantopus hyperantus uncharacterized LOC117996003
+            (LOC117996003), partial mRNA.
+ACCESSION   XM_034984016
+VERSION     XM_034984016.1
+DBLINK      BioProject: PRJNA637620
+KEYWORDS    RefSeq; corrected model; includes ab initio.
+SOURCE      Maniola hyperantus (ringlet)
+  ORGANISM  Maniola hyperantus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Maniolina;
+            Maniola; Aphantopus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023269890.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Aphantopus hyperantus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio   :: 16% of CDS bases
+            frameshifts :: corrected 2 indels
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 5' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-400               CADCXM010000011.1  47024-47423         c
+            401-401             "N"                1-1
+            402-586             CADCXM010000011.1  46839-47023         c
+            587-1600            CADCXM010000011.1  45823-46836         c
+            1601-1906           CADCXM010000011.1  45404-45709         c
+FEATURES             Location/Qualifiers
+     source          1..1906
+                     /organism="Maniola hyperantus"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:2795564"
+                     /chromosome="Unknown"
+     gene            <1..1906
+                     /gene="LOC117996003"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon;
+                     deleted 2 bases in 1 codon; Derived by automated
+                     computational analysis using gene prediction method:
+                     Gnomon. Supporting evidence includes similarity to: 2
+                     Proteins, and 68% coverage of the annotated genomic
+                     feature by RNAseq alignments"
+                     /db_xref="GeneID:117996003"
+     CDS             <1..1906
+                     /gene="LOC117996003"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon;
+                     deleted 2 bases in 1 codon"
+                     /codon_start=2
+                     /product="LOW QUALITY PROTEIN: uncharacterized protein
+                     LOC117996003"
+                     /protein_id="XP_034839907.1"
+                     /db_xref="GeneID:117996003"
+                     /translation="SSSFLHRLRNPTLQIWRSNWWPVRRDCRQLMKNDEEVCDEAEHR
+                     QKATRKQNPGYIVTKYGRLTTTKSKNNPKMSVQLSNEQFERLLAKISTATSQPKPTQG
+                     SFTTCKYSYNGNKGSEVVEAFLSAINIFKRAXNINDQAALDQIPLLLKEDAGVWWQGA
+                     KATVQSWEEFEKRLRDNFAPKNEAYLIYTELCQKKQGPDESTEDFVRHKRLLFSQLPE
+                     PSHPETQQLDMIYGLLSLKIRDKVPRSGVNNFDDLLKEARATERLLSEQKKDENAPTE
+                     EAQSEGAGRQPNAGKSRCKYCKYSGHDIENCRIKQRKDKLNATETNRAKSSGSSTEAA
+                     TTQAPSPSAPKFSCYGCGTPGVVRSNCTTCHKGKSPMATKSTDIGFCAIGTTTDARDR
+                     PVIPIEVDGTKGIAFIDTCAKSSIASYELYCCLKSKGYHFTAVDVGVTLADGIPKKQN
+                     VMITKVPVKVNGRTVLTTFLVLPESRENRTLLGVGFIQDAHIVLDFTPVHMVVLEEPD
+                     NIFELYKESFLNYPNVTVSSVRMDLFDGYSPVLDALYEDAVESLRDYDDEPEPETEIF
+                     SINIERLESFLAKNEDVFKPNGKPATVTEHSIDTGNHDPLSVPPYRMSPMKSAILRKE
+                     IEKNAARRYY"
+ORIGIN      
+        1 ctcctcctct tttcttcatc gcctgagaaa ccccactcta caaatttggc gctccaactg
+       61 gtggccggtc cgacgcgact gcaggcaact tatgaagaac gacgaggaag tctgcgacga
+      121 agcggaacac aggcaaaagg caacgcggaa acagaatcct ggttatattg ttactaaata
+      181 cggaagacta actactacaa aaagtaaaaa caatccgaag atgtcagtcc aacttagtaa
+      241 cgaacaattc gaacgattgc ttgctaagat tagtaccgca acgtcacagc caaaaccgac
+      301 gcaaggcagc ttcactacct gcaagtactc atacaatggc aataaaggtt cagaagtcgt
+      361 agaagccttc ctgtccgcta ttaatatttt caaacgtgcc ngaaacatca atgatcaggc
+      421 agccttggac caaatccctc tgctactaaa agaggatgca ggtgtctggt ggcagggagc
+      481 caaggcaaca gtacaaagtt gggaggaatt tgaaaaacgc ctacgggata attttgcacc
+      541 caaaaatgaa gcctacctta tttataccga gttgtgccaa aaaaaacaag gtcccgatga
+      601 aagcacggag gatttcgtac gccacaagcg gttgctcttc agccagctcc cggaaccaag
+      661 ccatccagag acccaacagc tcgacatgat ctacgggctt ctgtcactga agattcgaga
+      721 caaggtccct cgttccggcg tcaataattt cgacgatctg ctcaaagagg ctcgcgcgac
+      781 cgaacgactt ctctctgaac aaaagaaaga cgagaacgca cctaccgaag aggcacaaag
+      841 tgaaggggca ggtagacaac ccaacgcggg aaaaagccgg tgcaaatact gcaagtatag
+      901 tgggcacgat atagaaaatt gtcgcattaa gcaaagaaag gataaactca atgcaactga
+      961 aacgaatcgt gcgaagtcga gtgggtcctc gaccgaagcg gcgaccacgc aagcgccatc
+     1021 gccttcagcg cccaaattta gctgctacgg ttgtggcact ccaggtgttg ttcgaagcaa
+     1081 ttgtaccacc tgccacaaag ggaaatcacc aatggctaca aaaagcacgg acatcggatt
+     1141 ttgcgctata ggtactacca cagatgccag agataggccc gtcataccca ttgaagttga
+     1201 tggaacaaaa ggtatagcct ttattgatac gtgcgccaaa agcagcatcg cctcgtacga
+     1261 attatactgc tgtcttaaaa gtaaaggtta ccactttact gctgtggatg ttggagtgac
+     1321 cctggctgat ggtataccta agaagcaaaa tgtcatgatt acaaaagtgc ccgtgaaagt
+     1381 taatggacgc actgtactga caacctttct cgtgctcccc gagtcacgtg aaaatcgaac
+     1441 actattggga gtaggcttta tccaagacgc gcacatagtg cttgatttta ccccagttca
+     1501 catggtggtt ttggaagagc cagacaacat cttcgaactc tacaaagaga gttttctgaa
+     1561 ctaccctaat gtcacggtgt cttctgtccg aatggaccta tttgatggtt attctcccgt
+     1621 actagatgct ctgtatgaag atgctgtgga aagcttgaga gactatgacg acgaacccga
+     1681 acccgaaacc gagatattct ccataaatat agaacgtcta gaaagttttc ttgccaagaa
+     1741 cgaagacgtg ttcaaaccca atgggaagcc agcaaccgtg accgagcaca gcatcgatac
+     1801 tggaaaccat gatccactct cagtccctcc atatagaatg tcaccgatga aaagtgccat
+     1861 tctgagaaag gaaatcgaaa aaaatgctgc aagaagatat tattga
+//
+
+LOCUS       XM_034984487            1908 bp    mRNA    linear   INV 08-JUN-2020
+DEFINITION  PREDICTED: Aphantopus hyperantus uncharacterized LOC117996427
+            (LOC117996427), mRNA.
+ACCESSION   XM_034984487
+VERSION     XM_034984487.1
+DBLINK      BioProject: PRJNA637620
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Maniola hyperantus (ringlet)
+  ORGANISM  Maniola hyperantus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Nymphalidae; Satyrinae; Satyrini; Maniolina;
+            Maniola; Aphantopus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_048538.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Aphantopus hyperantus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1908
+                     /organism="Maniola hyperantus"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:2795564"
+                     /chromosome="3"
+     gene            1..1908
+                     /gene="LOC117996427"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:117996427"
+     CDS             1..1908
+                     /gene="LOC117996427"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC117996427"
+                     /protein_id="XP_034840378.1"
+                     /db_xref="GeneID:117996427"
+                     /translation="MTTRSKTRTESKNEGMASPDDREQEVEDLIGSATRESPSALMIT
+                     ESQLAALIRGISGGNISTPPAPPPCGTFAKCSARFAGSLPRDPDVLEAFIDAVEVYKD
+                     CTNVSDEHALRGLPMLLTGEAAVWWQGVKATTTTWAAAIECLRGMFGAPRAPYKIFRD
+                     VFAAEQQDSERADVFVARTRAMLSKLPYNLEDHIQVDMCYGLLHKRVRKRLKREECVS
+                     TEGLLRRAREVEENIEELVNVSSKPVSKNSSHNNNMESLPSTSHADKVTIKPRQSRPK
+                     CSFCHIFGHVVSECRRLKDKEKEKSESSSKSDNSSALRCYGCGQLGVVRSRCTTCRAA
+                     SNNNKAGDKQVDFHSFSEVNEPTSAPARPVVRVSAAGRAGVAMLDTGATHCIASPGLH
+                     HILLDAGVQFYESQRSVRLADGTRRVSRIFTGDTELELGGRDLPITFMVLPDAADART
+                     LLGLDFITQAGIIVDAPQQVWYFSDSPSTKYDFVTYHLPSKNDDHSPSQNDELLALNN
+                     DQSVYLRDEEGTKLTSDQRSQLDQLLSKYADVFAADGPPTEYAMHCIKVKKGQQPIAS
+                     PPYRMSAGKKEILEKELQKLLEQDIIEECESPWAANVVLVGKKDGGVRLCVDYRFTKK
+                     HAFKSSNNNIT"
+ORIGIN      
+        1 atgacgacgc gcagcaagac ccggacggag tcgaaaaacg aagggatggc cagcccggat
+       61 gaccgggagc aagaagtaga agatctcatc ggaagcgcga cccgggagtc gccttctgca
+      121 ctgatgataa cggagagcca gctcgccgca ctcatccgag ggatctcggg tggaaatatc
+      181 agcacgccgc ccgcgccacc gccatgcggg acgttcgcga agtgttcggc tcgcttcgcg
+      241 gggagtttgc cgcgcgatcc cgacgtgcta gaagctttca tcgatgcagt cgaggtgtat
+      301 aaggactgca ctaacgtctc cgatgaacac gctctgcgag gcctacccat gcttctcact
+      361 ggtgaggcag ctgtctggtg gcaaggcgtg aaggcaacaa caaccacgtg ggccgctgcg
+      421 atagagtgtc tacgaggcat gttcggcgca ccacgagctc catacaagat cttccgtgac
+      481 gttttcgccg ccgagcaaca ggacagcgag cgtgccgacg tgttcgtcgc gcgcactcgt
+      541 gcgatgcttt cgaaacttcc gtacaacctc gaggaccaca tccaagtaga catgtgttat
+      601 ggacttttac ataaacgcgt gcgtaaacgg ttgaagcgtg aggaatgcgt aagtactgag
+      661 gggttgttac gtagggctag ggaagtcgaa gaaaacatag aagaattagt aaacgtaagt
+      721 agtaaacctg tttcaaagaa ctcttctcat aataataata tggaaagttt gcctagtact
+      781 agtcacgctg acaaggtaac tattaaacca cggcaaagtc gccccaagtg cagcttttgt
+      841 catatttttg ggcatgtagt gtcagaatgc cgtaggttaa aagacaaaga gaaagaaaaa
+      901 tctgaatcaa gctctaagag cgacaatagt agtgcgttgc ggtgttatgg atgtggccag
+      961 ctaggggtag tgagatctcg gtgcactacc tgcagggctg ccagtaacaa taataaagca
+     1021 ggcgataaac aagtggattt tcacagcttt tcagaagtca acgaacctac ttctgcaccg
+     1081 gctcgccccg tggtgcgggt gagcgccgcg ggccgagcag gcgtcgccat gctggatacc
+     1141 ggagcgacgc actgcatcgc cagcccggga ctgcatcaca tcctgctgga tgcaggggtg
+     1201 cagttctacg agtcgcaacg atcagtgaga ctcgctgatg ggactcgccg ggtgagtaga
+     1261 attttcaccg gtgacacaga actcgaattg ggaggccgcg atttgcccat tacctttatg
+     1321 gtactacctg atgctgccga tgctagaact ttactcggcc ttgactttat tactcaggca
+     1381 ggcataatag ttgatgcgcc tcaacaagtc tggtacttta gtgactctcc gagtaccaag
+     1441 tatgattttg ttacatacca cttaccatct aaaaacgatg accactcacc atcgcaaaat
+     1501 gatgaacttc tcgctttaaa taatgatcag tctgtctacc ttagagatga agagggtact
+     1561 aagcttacta gtgaccagag gtcccagctg gatcagctgc tgtccaagta tgccgacgtg
+     1621 ttcgcagctg atggcccgcc taccgagtac gctatgcact gcattaaggt gaagaagggt
+     1681 caacaaccta ttgcgtcacc accctataga atgtctgcag gtaagaagga gatattagaa
+     1741 aaggagctgc aaaagttact cgagcaggac ataatagaag aatgcgaatc accatgggct
+     1801 gcaaacgttg ttttagtagg aaagaaagat ggaggagtgc gcttatgcgt agactataga
+     1861 tttactaaaa agcatgcatt caaatcatca aacaacaata taacataa
+//
+

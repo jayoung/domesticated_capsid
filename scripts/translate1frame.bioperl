@@ -1,0 +1,77 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Bio::Seq;
+
+#for each file in ARGV, output translation in first reading frame
+
+if (@ARGV == 0) {die "\n\nterminating - please specify input files on command line, or specify \"fasta\" for all the .fasta files, or \"all\" for all the .alb.align files\n\n";}
+
+my @files = @ARGV;
+
+my $num = @files;
+print "found $num files\n";
+
+foreach my $file (@files) {
+    print "translating seqs in file $file\n";
+    if (!-e $file) {die "\nterminating - couldn't open $file\n\n";}
+    my $outfile = "$file".".peps.fa";
+    my $outseqio = new Bio::SeqIO(-file => ">$outfile", -format => 'Fasta');
+    my $inseqio = new Bio::SeqIO(-file => "<$file", -format => 'Fasta');
+    while (my $seq=$inseqio->next_seq()) {
+        my $seqname = $seq->id();
+        #print "seq $seqname\n";
+        my $description = $seq->description();
+        my $letters = $seq->seq();
+        my $frame1 = translate ($letters);
+        my $seqobj = Bio::Seq->new( -display_id => $seqname,
+                                    -seq => $frame1,
+                                    -descr => $description);
+        $outseqio->write_seq($seqobj);
+    }
+}
+
+
+
+#-------------------------
+
+sub translate {
+
+my %translate = (
+  "TTT" => "F",  "TTC" => "F",  "TTA" => "L",  "TTG" => "L",
+  "TCT" => "S",  "TCC" => "S",  "TCA" => "S",  "TCG" => "S",
+  "TAT" => "Y",  "TAC" => "Y",  "TAA" => "*",  "TAG" => "*",
+  "TGT" => "C",  "TGC" => "C",  "TGA" => "*",  "TGG" => "W",
+  "CTT" => "L",  "CTC" => "L",  "CTA" => "L",  "CTG" => "L",
+  "CCT" => "P",  "CCC" => "P",  "CCA" => "P",  "CCG" => "P",
+  "CAT" => "H",  "CAC" => "H",  "CAA" => "Q",  "CAG" => "Q",
+  "CGT" => "R",  "CGC" => "R",  "CGA" => "R",  "CGG" => "R",
+  "ATT" => "I",  "ATC" => "I",  "ATA" => "I",  "ATG" => "M",
+  "ACT" => "T",  "ACC" => "T",  "ACA" => "T",  "ACG" => "T",
+  "AAT" => "N",  "AAC" => "N",  "AAA" => "K",  "AAG" => "K",
+  "AGT" => "S",  "AGC" => "S",  "AGA" => "R",  "AGG" => "R",
+  "GTT" => "V",  "GTC" => "V",  "GTA" => "V",  "GTG" => "V",
+  "GCT" => "A",  "GCC" => "A",  "GCA" => "A",  "GCG" => "A",
+  "GAT" => "D",  "GAC" => "D",  "GAA" => "E",  "GAG" => "E",
+  "GGT" => "G",  "GGC" => "G",  "GGA" => "G",  "GGG" => "G",
+);
+
+my $inseq = $_[0];
+my $prot = "";
+while (length($inseq) > 2) {
+  my $codon = substr ($inseq,0,3);
+  $inseq = substr ($inseq,3);
+  $codon = "\U$codon";
+  if (length ($codon) < 3) {last;}
+  my $aminoacid = "dummy";
+  if ($codon =~ m/\?/) {$aminoacid = "?";}
+  if ($codon =~ m/\-/) {$aminoacid = "-";}
+  if ($aminoacid eq "dummy") {$aminoacid = $translate{$codon} || "?";}
+  $prot = "$prot"."$aminoacid";
+}
+
+return $prot;
+
+}

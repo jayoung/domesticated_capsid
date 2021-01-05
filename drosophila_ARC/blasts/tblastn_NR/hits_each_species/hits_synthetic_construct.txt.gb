@@ -1,0 +1,238 @@
+LOCUS       FJ633417                 613 bp    DNA     linear   SYN 24-JUL-2016
+DEFINITION  Synthetic construct Drosophila melanogaster clone BO15340 encodes
+            Arc2-RA.
+ACCESSION   FJ633417
+VERSION     FJ633417.1
+KEYWORDS    .
+SOURCE      synthetic construct
+  ORGANISM  synthetic construct
+            other sequences; artificial sequences.
+REFERENCE   1  (bases 1 to 613)
+  AUTHORS   Carlson,J., Booth,B., Frise,E., Park,S., Wan,K., Yu,C. and
+            Celniker,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-JAN-2009) Berkeley Drosophila Genome Project,
+            Lawrence Berkeley National Laboratory, One Cyclotron Road,
+            Berkeley, CA 94720, USA
+COMMENT     Sequence submitted by:
+            Berkeley Drosophila Genome Project
+            Lawrence Berkeley National Laboratory
+            Berkeley, CA 94720
+            This clone was constructed and sequenced as part of a
+            high-throughput process to generate expression-ready clones from
+            the Drosophila Gene Collection for use as a proteomics resource.
+            The clone has been full-length sequenced to verify fidelity in
+            translation, proper reading frame and presence of a recombination
+            site. For further information about this clone please visit our Web
+            site (http://www.fruitfly.org) or send email to cdna@fruitfly.org.
+            This clone is distributed from the Drosophila Genomic Resource
+            Center (http://dgrc.cgb.indiana.edu).
+FEATURES             Location/Qualifiers
+     source          1..613
+                     /organism="synthetic construct"
+                     /mol_type="other DNA"
+                     /db_xref="taxon:32630"
+                     /clone="BO15340"
+                     /focus
+     source          17..597
+                     /organism="Drosophila melanogaster"
+                     /mol_type="other DNA"
+                     /strain="y; cn bw sp"
+                     /db_xref="taxon:7227"
+                     /note="construct generated from ORF of Drosophila
+                     melanogaster clone SD11637 with stop codon removed"
+     misc_feature    <1..8
+                     /note="loxP site"
+     misc_feature    11..16
+                     /note="SalI site"
+     gene            17..>595
+                     /gene="Arc2"
+                     /note="ORF for Arc2-RA"
+                     /db_xref="FLYBASE:FBgn0033928"
+     CDS             17..>595
+                     /gene="Arc2"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Arc2-PA"
+                     /protein_id="ACL87676.1"
+                     /db_xref="FLYBASE:FBgn0033928"
+                     /translation="MTQMSDEQFRIFIETIKSLGPIKEEPPSKGSFSNCTVRFSGQRD
+                     HDAVDEFINAVETYKEVEGISDKDALKGLPLLFKSIAVVWWKGVRRDAKTWSDALQLL
+                     RDHFSPTKPSYQIYMEIFETKQSYDEVIDSFICKQRALLAKLPEGRHDEETELDFIYG
+                     LMQPKYRESIPRHEVKTFRELLDRGRTVERTRH"
+     misc_feature    598..603
+                     /note="HindIII site"
+ORIGIN      
+        1 gaagttatca gtcgacatga cgcagatgtc cgacgaacag tttcgcatat tcatagaaac
+       61 cattaaatcg ctggggccaa tcaaagagga accgccatcc aagggtagct ttagcaactg
+      121 cacggtgaga ttcagtggcc agcgggatca cgatgccgtg gacgagttca tcaatgccgt
+      181 ggagacgtat aaagaggtgg agggcatcag cgacaaagat gcgctaaagg gtttgccgct
+      241 gctcttcaag agcattgccg tggtgtggtg gaagggtgtg cgccgggatg ccaagacctg
+      301 gtcggatgcc ctgcagctgc tgcgcgatca cttctcgccc actaaacctt cctaccagat
+      361 atacatggag atcttcgaga cgaagcagtc ctacgacgag gtgatcgact cattcatctg
+      421 caagcagcga gcgctcctag ccaagttgcc ggagggacga cacgacgagg agacggagct
+      481 tgacttcatc tacgggctga tgcagcccaa gtaccgggag agcatacccc gacacgaggt
+      541 caaaaccttc cgggagctac tcgatcgggg gcgaactgtg gagcgcacaa ggcacgcaag
+      601 ctttctagac cat
+//
+
+LOCUS       FJ637898                 614 bp    DNA     linear   SYN 21-JAN-2009
+DEFINITION  Synthetic construct Drosophila melanogaster clone BS15240 encodes
+            Arc2-RA.
+ACCESSION   FJ637898
+VERSION     FJ637898.1
+KEYWORDS    .
+SOURCE      synthetic construct
+  ORGANISM  synthetic construct
+            other sequences; artificial sequences.
+REFERENCE   1  (bases 1 to 614)
+  AUTHORS   Carlson,J., Booth,B., Frise,E., Park,S., Wan,K., Yu,C. and
+            Celniker,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-JAN-2009) Berkeley Drosophila Genome Project,
+            Lawrence Berkeley National Laboratory, One Cyclotron Road,
+            Berkeley, CA 94720, USA
+COMMENT     Sequence submitted by:
+            Berkeley Drosophila Genome Project
+            Lawrence Berkeley National Laboratory
+            Berkeley, CA 94720
+            This clone was constructed and sequenced as part of a
+            high-throughput process to generate expression-ready clones from
+            the Drosophila Gene Collection for use as a proteomics resource.
+            The clone has been full-length sequenced to verify fidelity in
+            translation, proper reading frame and presence of a recombination
+            site. For further information about this clone please visit our Web
+            site (http://www.fruitfly.org) or send email to cdna@fruitfly.org.
+            This clone is distributed from the Drosophila Genomic Resource
+            Center (http://dgrc.cgb.indiana.edu).
+FEATURES             Location/Qualifiers
+     source          1..614
+                     /organism="synthetic construct"
+                     /mol_type="other DNA"
+                     /db_xref="taxon:32630"
+                     /clone="BS15240"
+                     /focus
+     source          17..598
+                     /organism="Drosophila melanogaster"
+                     /mol_type="other DNA"
+                     /strain="y; cn bw sp"
+                     /db_xref="taxon:7227"
+                     /note="construct generated from ORF of Drosophila
+                     melanogaster clone SD11637 with stop codon retained"
+     misc_feature    <1..8
+                     /note="loxP site"
+     misc_feature    11..16
+                     /note="SalI site"
+     gene            17..598
+                     /gene="Arc2"
+                     /note="ORF for Arc2-RA"
+                     /db_xref="FLYBASE:FBgn0033928"
+     CDS             17..598
+                     /gene="Arc2"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Arc2-PA"
+                     /protein_id="ACL92157.1"
+                     /db_xref="FLYBASE:FBgn0033928"
+                     /translation="MTQMSDEQFRIFIETIKSLGPIKEEPPSKGSFSNCTVRFSGQRD
+                     HDAVDEFINAVETYKEVEGISDKDALKGLPLLFKSIAVVWWKGVRRDAKTWSDALQLL
+                     RDHFSPTKPSYQIYMEIFETKQSYDEVIDSFICKQRALLAKLPEGRHDEETELDFIYG
+                     LMQPKYRESIPRHEVKTFRELLDRGRTVERTRH"
+     misc_feature    599..604
+                     /note="HindIII site"
+ORIGIN      
+        1 gaagttatca gtcgacatga cgcagatgtc cgacgaacag tttcgcatat tcatagaaac
+       61 cattaaatcg ctggggccaa tcaaagagga accgccatcc aagggtagct ttagcaactg
+      121 cacggtgaga ttcagtggcc agcgggatca cgatgccgtg gacgagttca tcaatgccgt
+      181 ggagacgtat aaagaggtgg agggcatcag cgacaaagat gcgctaaagg gtttgccgct
+      241 gctcttcaag agcattgccg tggtgtggtg gaagggtgtg cgccgggatg ccaagacctg
+      301 gtcggatgcc ctgcagctgc tgcgcgatca cttctcgccc actaaacctt cctaccagat
+      361 atacatggag atcttcgaga cgaagcagtc ctacgacgag gtgatcgact cattcatctg
+      421 caagcagcga gcgctcctag ccaagttgcc ggagggacga cacgacgagg agacggagct
+      481 tgacttcatc tacgggctga tgcagcccaa gtaccgggag agcatacccc gacacgaggt
+      541 caaaaccttc cgggagctac tcgatcgggg gcgaactgtg gagcgcacaa ggcactgaaa
+      601 gctttctaga ccat
+//
+
+LOCUS       KX805221                 797 bp    DNA     linear   SYN 21-SEP-2016
+DEFINITION  Synthetic construct clone BS09941 Arc1-PA (Arc1) gene, complete
+            cds.
+ACCESSION   KX805221
+VERSION     KX805221.1
+KEYWORDS    .
+SOURCE      synthetic construct
+  ORGANISM  synthetic construct
+            other sequences; artificial sequences.
+REFERENCE   1  (bases 1 to 797)
+  AUTHORS   Carlson,J., Booth,B., Frise,E., Park,S., Wan,K., Yu,C. and
+            Celniker,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-AUG-2016) Berkeley Drosophila Genome Project,
+            Lawrence Berkeley National Laboratory, One Cyclotron Road,
+            Berkeley, CA 94720, USA
+COMMENT     Sequence submitted by:
+            Berkeley Drosophila Genome Project
+            Lawrence Berkeley National Laboratory
+            Berkeley, CA 94720
+            This clone was constructed and sequenced as part of a
+            high-throughput process to generate expression-ready clones from
+            the Drosophila Gene Collection for use as a proteomics resource.
+            The clone has been full-length sequenced to verify fidelity in
+            translation, proper reading frame and presence of a recombination
+            site. For further information about this clone please visit our Web
+            site (http://www.fruitfly.org) or send email to cdna@fruitfly.org.
+            This clone is distributed from the Drosophila Genomic Resource
+            Center (http://dgrc.cgb.indiana.edu).
+FEATURES             Location/Qualifiers
+     source          1..797
+                     /organism="synthetic construct"
+                     /mol_type="other DNA"
+                     /db_xref="taxon:32630"
+                     /clone="BS09941"
+                     /focus
+     source          17..781
+                     /organism="Drosophila melanogaster"
+                     /mol_type="other DNA"
+                     /strain="y; cn bw sp"
+                     /db_xref="taxon:7227"
+                     /note="construct generated from ORF of Drosophila
+                     melanogaster clone LD41905 with stop codon retained"
+     misc_feature    <1..8
+                     /note="loxP site"
+     misc_feature    11..16
+                     /note="SalI site"
+     gene            17..781
+                     /gene="Arc1"
+                     /note="ORF for Arc1-RA"
+                     /db_xref="FLYBASE:FBgn0033926"
+     CDS             17..781
+                     /gene="Arc1"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Arc1-PA"
+                     /protein_id="AOQ14158.1"
+                     /db_xref="FLYBASE:FBgn0033926"
+                     /translation="MAQLTQMTNEQLRELIEAVRAAAVGAAGSAAAAGGADASRGKGN
+                     FSACTHSFGGTRDHDVVEEFIGNIETYKDVEGISDENALKGISLLFYGMASTWWQGVR
+                     KEATTWKEAIALIREHFSPTKPAYQIYMEFFQNKQDDHDPIDTFVIQKRALLAQLPSG
+                     RHDEETELDLLFGLLNIKYRKHISRHSVHTFKDLLEQGRIIEHNNQEDEEQLATAKNT
+                     RGSKRTTRCTYCSFRGHTFDNCRKRQKDRQEEQHEE"
+     misc_feature    782..787
+                     /note="HindIII site"
+ORIGIN      
+        1 gaagttatca gtcgacatgg cccagcttac acagatgacc aacgagcagc tccgcgagct
+       61 gatcgaagct gtaagagcgg ccgccgtggg cgccgccgga agtgcagcag cagccggagg
+      121 agcagacgcc agcagaggca aaggcaactt ctccgcttgc acacacagct tcggcggaac
+      181 ccgcgaccac gacgtggtcg aggagttcat cggcaacatc gagacataca aggatgtaga
+      241 aggtatcagc gacgagaacg ccctgaaggg catctcgctg ctgttctacg gtatggccag
+      301 cacctggtgg caaggcgtcc gcaaggaggc caccacgtgg aaggaagcca tcgctctcat
+      361 ccgcgaacac ttctcgccca ccaagcccgc ctaccagatc tacatggaat tcttccaaaa
+      421 caagcaggac gaccatgacc ccattgacac cttcgtcatc cagaagcgag cgctgctggc
+      481 ccagctgccc agcggtcgcc acgacgagga aacggaactg gatcttctgt tcggtctgct
+      541 gaacatcaag taccgcaagc acatctcccg ccacagtgtc cataccttca aggatctcct
+      601 ggaacagggc cgcatcatcg agcacaacaa ccaggaggac gaggaacagc ttgccacagc
+      661 aaagaacacc cgtggctcca agcgcaccac ccgctgcacc tactgcagtt tccgggggca
+      721 caccttcgac aactgccgta agcgccagaa ggatcggcag gaggagcagc acgaggagta
+      781 gaagctttct agaccat
+//
+

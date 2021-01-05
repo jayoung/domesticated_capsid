@@ -1,0 +1,416 @@
+LOCUS       XM_011162967             696 bp    mRNA    linear   INV 30-AUG-2018
+DEFINITION  PREDICTED: Solenopsis invicta activity-regulated cytoskeleton
+            associated protein 2-like (LOC105196836), mRNA.
+ACCESSION   XM_011162967
+VERSION     XM_011162967.1
+DBLINK      BioProject: PRJNA268798
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Solenopsis invicta (red fire ant)
+  ORGANISM  Solenopsis invicta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Solenopsis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020456447.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Solenopsis invicta Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..696
+                     /organism="Solenopsis invicta"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:13686"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /country="USA: Georgia"
+                     /genotype="Gp-9 big B"
+                     /note="a single focal male and 41 of his brothers"
+     gene            1..696
+                     /gene="LOC105196836"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:105196836"
+     CDS             1..696
+                     /gene="LOC105196836"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_011161269.1"
+                     /db_xref="GeneID:105196836"
+                     /translation="MPLRREMPIAFLERVDELQREFSDTQLLRGLPELLRGEALLWYR
+                     NNRDSWDDWQGFTGEFREYYLPQRYVGKLKRDIQAREQGTDEPYRKYATELLTMMRRA
+                     GGYDKEEQLDLLYENLQPRYKLHVRREDLRRTTDLLRQAEEFEEISAQCRDRGVAPKP
+                     TATNTAATMYGKNECCWRCKQRGHTRFDCRRIAKKFCSQCGKDGVYTRDCHPPPGNAT
+                     KAGEAPAAPQSSE"
+ORIGIN      
+        1 atgccacttc gaagggaaat gcccatcgcg ttccttgagc gagtcgacga gctacagcga
+       61 gagttctccg acacacagct gttgcgcggt ctccccgagc tgctacgcgg ggaagcgctc
+      121 ctgtggtacc gcaacaatcg cgactcctgg gacgactggc aggggttcac cggcgaattc
+      181 cgggaatatt acctaccgca gcgatacgtt ggcaaattaa aacgagatat tcaggcgcga
+      241 gaacaaggta ccgacgagcc ataccgcaag tacgcgaccg agctcctcac catgatgaga
+      301 cgcgccgggg ggtacgacaa ggaggagcag ctcgacctgc tgtacgagaa cctccaaccg
+      361 cgatacaagt tgcacgtccg ccgcgaagac ctccgccgaa ccaccgacct gctccgtcag
+      421 gcggaggaat tcgaggaaat cagcgcgcaa tgtcgcgacc gcggcgtcgc ccccaagcca
+      481 accgccacca acaccgccgc gactatgtac ggcaagaacg aatgttgctg gcgttgcaaa
+      541 cagcgcgggc atacccggtt tgactgccgt cgcatcgcga aaaaattctg ctcccaatgc
+      601 gggaaagacg gcgtctacac tcgcgactgc cacccgccgc cgggaaacgc caccaaggcc
+      661 ggggaggccc ctgccgcacc ccagtcctcc gagtga
+//
+
+LOCUS       XM_026140179            1761 bp    mRNA    linear   INV 30-AUG-2018
+DEFINITION  PREDICTED: Solenopsis invicta activity-regulated cytoskeleton
+            associated protein 1-like (LOC105198833), mRNA.
+ACCESSION   XM_026140179
+VERSION     XM_026140179.1
+DBLINK      BioProject: PRJNA268798
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Solenopsis invicta (red fire ant)
+  ORGANISM  Solenopsis invicta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Solenopsis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020521864.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Solenopsis invicta Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            internal stop codons :: corrected 1 genomic stop codon
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1761
+                     /organism="Solenopsis invicta"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:13686"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /country="USA: Georgia"
+                     /genotype="Gp-9 big B"
+                     /note="a single focal male and 41 of his brothers"
+     gene            1..1761
+                     /gene="LOC105198833"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 94% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:105198833"
+     CDS             455..1693
+                     /gene="LOC105198833"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: substituted 1 base at 1
+                     genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:773..775,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: activity-regulated
+                     cytoskeleton associated protein 1-like"
+                     /protein_id="XP_025995964.1"
+                     /db_xref="GeneID:105198833"
+                     /translation="MAEGTGTQQNAITLTNEQFALLLQQIQISATNVSAANIALPHGN
+                     FSRCTSRFDGKKTSDVEAFIDATVTYKDCTNVSDENALKGLPILLTDLAATWWQGVKS
+                     TVDTXDAAIDLLKLTYGPKKPAYRIYKELFAHEQEENTSTDIFICKARALLAKLAYDT
+                     LLTESVQLDMVYGLLLYKIRKEVPREKVTSFTELLELAREVEVNTAEENNKSSKQSTS
+                     SQSSNKQETRPRCKYCKNFGHTIDECTNLKKKNEDSLTTTSNKNKTNSGVDDTQITCF
+                     GCGNSGYLRKDCPKCNKTDKNKNTTKPDFCLIDASEIRTKYKNRPILNIEILGARGTG
+                     LIDTAAKMSVAGNSLYKILVQKKQKFEKSNLRIGLADRTISTAFLIIPYVENNYTLLG
+                     MDFIEKAKIVINIPQLAFCR"
+ORIGIN      
+        1 acccaggcgg cgctgacgcg agcgaggaag cagcgcgaga agacctcgcc taacttaaca
+       61 ctaccagtgt gtgaaccacc aaagaacatt ccgtctttca ttttgtacac gctctcagta
+      121 tttgcctaaa tacattttgc tcaatttaaa gtcagtggtt aaacattgtt gtcctcttcg
+      181 atctcaataa tagtaacttc gatagaactc accttactgg actggcgttg cgtcgactac
+      241 tcgacagcaa ccgaccacgt cacaattggc gcctaactaa cagatcaggt taacgacgaa
+      301 gccgacacat ctaaccaaga cgtcttctcc acgcaagccg ttacgaccga caacacggtc
+      361 acaaacgcga tcgcaatcgc tgataccgcg caggttagaa acgagcagga aaatcgagca
+      421 ataaagaggc aagaaaaaaa aacagcaaac caacatggcg gaaggtacag gtacgcaaca
+      481 gaacgctatc acactgacga acgaacagtt cgcccttctt ctacaacaga tacaaatatc
+      541 cgctacgaac gtctccgccg caaacatcgc gttaccgcac ggtaatttct cgcgatgtac
+      601 ttcgcgtttc gacggaaaaa agacgtccga cgtagaagct ttcatagacg cgacagttac
+      661 gtacaaagat tgcacaaacg tatctgacga aaacgctcta aagggtctac cgatcctcct
+      721 tacggatctc gccgccacat ggtggcaagg cgttaaatct acggtcgata cataggatgc
+      781 cgcgatagac ttattaaagc taacctacgg acctaaaaag ccggcatatc gaatttacaa
+      841 agaactcttc gcgcacgagc aagaagaaaa tacatcgacg gacatattta tatgtaaagc
+      901 gcgtgcactt ctcgctaaac ttgcctacga tacactatta acggaaagcg tccaattaga
+      961 tatggtttac ggattactat tatataaaat tcgaaaggaa gtaccacgcg aaaaagttac
+     1021 gtcattcacg gaattattag agctcgcaag agaagtcgaa gtaaatacgg ccgaggaaaa
+     1081 caacaaatcg tctaaacaat caacatcgtc ccagtcatcc aacaaacaag aaacgcgccc
+     1141 acgttgcaaa tattgtaaaa acttcggtca tacaatagac gagtgtacaa atcttaaaaa
+     1201 gaaaaacgag gatagcctaa ccacaacgag caataaaaat aaaacaaatt ccggtgtaga
+     1261 cgacacgcaa ataacttgtt tcggttgcgg aaattcggga taccttcgaa aagattgccc
+     1321 aaagtgcaat aaaacggaca aaaataaaaa cacgacaaag cccgattttt gtctcataga
+     1381 cgcgtccgaa atacgcacga aatataaaaa ccgaccaatt ctaaacatag aaatattagg
+     1441 agcgagaggt acaggtttaa tcgataccgc cgcaaagatg agcgtcgcag gaaatagcct
+     1501 ttacaaaatc ctcgtccaaa agaaacaaaa attcgaaaaa tcgaatttgc gcattggatt
+     1561 agcggaccgc acgataagta ctgcatttct cataataccg tatgtagaaa ataattacac
+     1621 attactcggc atggatttta tagaaaaagc aaaaatagta ataaatatac ctcaactggc
+     1681 attttgcaga taaccttgaa aagcacgaac taaatttcga agctccagat gaaacggccg
+     1741 acgtcttgca actaaatttc g
+//
+
+LOCUS       XM_026140299            2271 bp    mRNA    linear   INV 30-AUG-2018
+DEFINITION  PREDICTED: Solenopsis invicta uncharacterized LOC113005156
+            (LOC113005156), mRNA.
+ACCESSION   XM_026140299
+VERSION     XM_026140299.1
+DBLINK      BioProject: PRJNA268798
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Solenopsis invicta (red fire ant)
+  ORGANISM  Solenopsis invicta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Solenopsis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020521895.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Solenopsis invicta Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2271
+                     /organism="Solenopsis invicta"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:13686"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /country="USA: Georgia"
+                     /genotype="Gp-9 big B"
+                     /note="a single focal male and 41 of his brothers"
+     gene            1..2271
+                     /gene="LOC113005156"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins"
+                     /db_xref="GeneID:113005156"
+     CDS             1..2271
+                     /gene="LOC113005156"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113005156"
+                     /protein_id="XP_025996084.1"
+                     /db_xref="GeneID:113005156"
+                     /translation="MNSTRYDDEWIFTATLEQLIAALEEQGLSTEGSPSVLALRLLRH
+                     MRTTRVGESFGGADGAQGLPDYGHLNLPEEGVPRPDSPFEAAMRPLASVHASGGGGGR
+                     RPPGSSDAAAAYNIMRRWNLKFSGARGEDAETFLLRIKEGRELIPVDDADILRCLPFF
+                     LSGVALHWFRAKRAKLTTWGTFKAAWRARFGDPDFQFALRDEIMRRTQGERETVVDYL
+                     TCLNALFDRLSPPWGEEEKIGYAYGHMLPRLQTMVPRDSVTDLESLELLAARAESCCR
+                     AALSYRAPPPPERSIFPDLAYRPSKEEGRGGKSSDTLAALEISGLDESGGSSRAGRGK
+                     KAKARSEAATTAPSTTAVAGSSTATPSTSVPRSNPGKCWNCDLTGHFARDCKSAPRTH
+                     CYRCGKAGVTLHFVCNSFGARESCLSFIRVKISGNEIRALLDSGSSRTFLGPAAIELV
+                     QSLGYRFRRARDRRVTTATSQTTRVRGEVEVPLEIENRTRTLSAYALQTLALPCILGM
+                     DFLTAFGVMINFAGSTWGFADDITRQYPLEIETTSSLSAALAQGGAGLEQGTGEDPTE
+                     RGGSLRDSTPNEAAGIVVLTPREEGTSTARKRATPQGGLRELSAEESARLSEFLESEI
+                     SDVLAKLGATSLTEHRIDVGGHAPIKQRYYPVSPRVQEAIYAEVDSMLESGIIEPSNS
+                     AWSTPIVMIKKPNNTYRFCLDFRRLNEVSKKDAYPLPYMNAILDKLRPAGYISTIDLS
+                     QAYLQIPLEKDSKDKT"
+ORIGIN      
+        1 atgaattcga ctagatacga cgacgagtgg atttttaccg ccaccctcga acaactaatt
+       61 gccgcgctgg aagagcaggg gctctcaacc gagggttctc catccgtgct cgcgttgaga
+      121 ttattgcgcc acatgcggac gacgcgtgta ggcgaatcgt tcggtggcgc ggacggcgcg
+      181 caagggttac cggattacgg gcatttaaat ctccccgaag agggggtacc gcgaccagac
+      241 agtcccttcg aggccgcgat gaggccgctg gcgagcgttc acgcgtccgg gggaggcggg
+      301 ggacgtcgac caccgggatc gagcgacgcg gccgccgctt acaacatcat gcggcgttgg
+      361 aatctaaagt tttccggcgc gcggggggaa gacgcggaaa cctttttatt acgaattaag
+      421 gagggccgcg agttgatacc ggtcgacgat gcggacatat tgcgatgcct accgttcttc
+      481 ctatcgggtg tcgcgcttca ttggttccgt gctaagcgcg cgaaattgac gacgtggggt
+      541 acgttcaagg cggcgtggcg agcgcgattc ggggatcccg acttccagtt cgccttgcgg
+      601 gatgaaatta tgcggcgtac ccagggcgag cgcgaaacgg tcgtggacta cttaacgtgt
+      661 ctaaatgcgc tttttgaccg tctctcaccc ccgtggggtg aggaagagaa aatcggttac
+      721 gcatacggcc atatgttgcc gcgcttacag accatggtgc cgcgcgattc ggtcaccgat
+      781 ttagagtcgc tcgaattatt ggcggcgcgc gcggaaagtt gttgtcgggc agccttaagt
+      841 tatcgagcac ctccgccgcc ggagcgatca atatttcccg atctagctta tcgtccttca
+      901 aaagaggagg gccgcggagg aaaatcaagt gatactcttg cggcattaga gatatcgggc
+      961 ctagatgaaa gtggtggatc gtcgcgcgcg gggaggggga aaaaggcgaa ggctcgcagc
+     1021 gaagctgcga caaccgcgcc gtcaaccacc gccgtggctg gttcctcgac cgccaccccg
+     1081 tctacaagcg tgccccgtag caatcccggc aaatgttgga attgcgatct gacgggccac
+     1141 tttgcgcgtg actgcaaatc cgctccgcgc actcattgct atcggtgcgg caaggcggga
+     1201 gtgacgttgc atttcgtttg taattcgttc ggggcgaggg aatcatgcct ctcctttatt
+     1261 cgtgttaaaa tatcgggtaa tgagattcgc gctctattgg attccgggtc gagtcgtacg
+     1321 tttttaggtc cggccgctat tgaattagtg caatctttgg gatatcggtt tcgtcgggct
+     1381 agggaccgcc gcgtgacgac tgcgaccagt cagacgacgc gggtgagggg ggaggtagaa
+     1441 gtgcccctgg agattgagaa tcgcacgcgt actttaagcg cgtacgcgtt gcagacgtta
+     1501 gcgttaccgt gtatattggg tatggacttt ttgacagcct tcggtgttat gattaatttt
+     1561 gcgggaagta cctggggatt cgcggatgat atcacgcgac aatatcccct ggaaattgag
+     1621 accacgagct cgctgtcggc agcgctcgcg caaggaggtg ctgggctcga gcaggggacg
+     1681 ggggaagacc ccaccgagcg gggaggcagc ttacgagatt cgacgcctaa cgaagcggcc
+     1741 ggtatcgtgg tgctcacacc aagagaggag gggacgtcta ctgctcgcaa acgcgcaacg
+     1801 ccgcagggcg gattaaggga gctgtcggct gaggagagcg cgcggttatc ggaattttta
+     1861 gagtcggaga tatcggacgt tctcgcgaaa ctcggagcga cgtcgctgac ggaacaccgt
+     1921 atagatgtcg gcgggcacgc gcccattaaa cagcgttatt atcccgtgtc gcctagggta
+     1981 caagaagcga tctatgcgga ggtcgattcg atgcttgagt ccggtattat cgagccctcg
+     2041 aatagcgcat ggtcgacgcc catcgtcatg attaagaaac cgaacaacac gtatcgcttt
+     2101 tgtttagatt ttcgccggtt aaacgaagta tcgaagaaag acgcgtaccc cttaccatat
+     2161 atgaacgcga ttttggataa acttcgaccg gccggttaca tttcgaccat cgaccttagc
+     2221 caagcttact tacagattcc gttagagaaa gatagtaaag ataaaacata a
+//
+
+LOCUS       XM_026141814            2838 bp    mRNA    linear   INV 30-AUG-2018
+DEFINITION  PREDICTED: Solenopsis invicta uncharacterized LOC113005905
+            (LOC113005905), mRNA.
+ACCESSION   XM_026141814
+VERSION     XM_026141814.1
+DBLINK      BioProject: PRJNA268798
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Solenopsis invicta (red fire ant)
+  ORGANISM  Solenopsis invicta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Myrmicinae; Solenopsis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020522935.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Solenopsis invicta Annotation
+                                           Release 103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2838
+                     /organism="Solenopsis invicta"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:13686"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /country="USA: Georgia"
+                     /genotype="Gp-9 big B"
+                     /note="a single focal male and 41 of his brothers"
+     gene            1..2838
+                     /gene="LOC113005905"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:113005905"
+     CDS             1..2838
+                     /gene="LOC113005905"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113005905"
+                     /protein_id="XP_025997599.1"
+                     /db_xref="GeneID:113005905"
+                     /translation="MPRSWIYRVDRTALESHLETLRLDTTGNVDDLRRRLREYAIAHP
+                     EYQPANMPPPEDLAEIRIEIPDPPLAGGGHASDAKQMNQIRKWGCHFEGKDTIAFLER
+                     VDELQREYGFSDAQLLRGLPELLRGEALLWYRNNRDSWDDWQAFTGEFREYYLPRRYV
+                     AKLKRDIQARKQGTDEPYRKYATELLTMMRRAGGYEKEAQLDLLYENLQPRYKLYVRR
+                     DGLRRTTDLLRQAEEFEEISAQCRDRGVAPKPTATNTAATTYDKNECCWRLRERRRLH
+                     TRLPPAAGKRHQGRGGPCRTPVLRVIFKPRPHIYLSIDQHELEVLLDSGSEAFFVSAA
+                     TANRLQRQGREIRPVTGQVYVADGSSVPIGGCIMLPIVIDNRAISHEFQILPGLDTDV
+                     LFGVDIMARTQIAIPPPPKHAARARTPPHATLPIRPAAEGGEEQERLQAFLAEELPRF
+                     EAVHGPTDRLQHTIRVKNHPPIKQRYRPRNPVMQAIIDREVDEMLRNGIIKPSQSVWS
+                     SPIVIVRKKDGKPRFCIDFRRVNDVTERDAYPLPQIAATLDKLRGAQFLTTLDLESGY
+                     WQVPLSPESRPITAFTVPGRGLMQFRVMPFGLHSAPATFQRLLDGILGPELEPSVFVY
+                     LDDIIVVSRTFDEHLDTLREVFARLRSARLRLNPAKCRFCTTTIKYLGHVVDREGIRT
+                     DPEKIKTIVEWPVPHTVRQVRQFLGIASWYRRFIRDFATLAAPLTALTRKNAAWKWGA
+                     SEQEAFDALKRTLTTAPVLACPDFERQFVLQTDASTTGLGAVLTQYFPEGERVMAYAS
+                     RTLNSAEQNYSTTELECLAILWGIRRMRDYLEGYCFKVVTDHQSLRWIQKLDSPTGRL
+                     GRWAFELRQYDFDIQYRKGALNKVADALSRRHAVNVIAEPRCPWYQKWWGTARDTPHD
+                     APDFRIEDGKLYKHVLHTLDLSETPSDAQWK"
+ORIGIN      
+        1 atgccgagaa gctggatcta ccgagtagac cgtaccgcgc tagagtctca cctcgaaact
+       61 ctcaggctgg acacaaccgg gaacgtggac gatctccgcc gccgcttacg ggaatacgcg
+      121 atcgcgcatc ccgaatatca gcccgcaaac atgccgcccc cggaggacct cgccgagatc
+      181 cgcatcgaaa taccggatcc gccactcgcc ggcgggggac acgcgtccga cgccaagcaa
+      241 atgaaccaga tacggaagtg gggatgccac ttcgaaggga aagacaccat cgcgttcctt
+      301 gagcgggtcg acgaactaca acgagagtac gggttctccg acgcacagct attgcgcggt
+      361 ctccccgagc tgctgcgcgg ggaagcgctc ctgtggtacc gcaacaatcg cgactcctgg
+      421 gacgactggc aggcgttcac cggcgaattc cgggaatatt acttaccacg gcgatacgtc
+      481 gccaaattaa aacgggatat tcaggcacga aaacaaggta ccgacgagcc ataccgcaag
+      541 tacgcgacag agctcctcac catgatgaga cgcgccggag ggtacgaaaa ggaggcgcag
+      601 ctcgacctgc tgtacgaaaa cctccaaccg cgatacaagt tatacgtccg ccgcgacggc
+      661 ctccgccgaa caaccgacct gctccgtcag gcggaggagt tcgaggaaat cagcgcgcaa
+      721 tgtcgcgacc gcggcgtcgc ccccaagcca accgccacca ataccgccgc gaccacgtac
+      781 gacaagaacg aatgctgctg gcgtttgcgg gaaagacggc gtctacacac gcgactgcca
+      841 cccgccgccg ggaaacgcca ccagggccgg ggaggcccct gccgcacccc ggtcctccga
+      901 gtaatattca aaccgcgacc gcacatctac ctcagcatcg accagcacga gctcgaggtc
+      961 ctcctggact cgggctcaga ggccttcttc gtgagcgcgg ctaccgcgaa ccgtctgcaa
+     1021 cgccaagggc gagagatacg acccgtcacc ggccaggtct acgtggcgga cgggtcaagc
+     1081 gtaccgattg ggggatgcat aatgctaccg atcgtcatcg acaaccgagc aatttcgcac
+     1141 gagttccaaa tactacccgg actcgacacc gacgtactct tcggcgtcga tatcatggct
+     1201 cggacacaaa tcgccatccc gccgccaccg aaacacgccg caagggcacg cactcccccg
+     1261 cacgcaaccc taccgatacg acccgcggca gaagggggag aagaacagga acgcctgcaa
+     1321 gccttcctcg ccgaagaact cccacgattc gaagccgtac acggaccgac cgaccgcctg
+     1381 caacacacga tacgcgtcaa aaatcatccg ccgattaaac aacggtaccg ccctcggaat
+     1441 ccggtaatgc aggccatcat cgaccgcgag gtcgacgaaa tgctccggaa cggaatcatc
+     1501 aagccgtcgc aaagcgtgtg gagctcacct atcgtgatcg tgagaaagaa agacggcaaa
+     1561 ccacgttttt gcatcgactt ccgcagggtg aacgatgtga ccgaacgcga cgcgtatccg
+     1621 ttgccacaga tcgccgcgac gctggataaa cttcgcggcg cgcaattcct gaccacgctc
+     1681 gacctggaga gcggctactg gcaggtaccg ctatcaccgg aaagccgacc gattaccgcg
+     1741 ttcacggtac ccggacgcgg actaatgcag ttccgcgtaa tgcccttcgg actgcattcc
+     1801 gcgcccgcca cgttccagcg gttactggac ggcatactag gcccggagct agagcctagc
+     1861 gtgttcgtct acctagacga cattatcgtc gttagccgaa ccttcgacga gcacctcgac
+     1921 accctgcgag aagtctttgc gcgactaagg tccgcccgac tccgtcttaa ccccgcgaaa
+     1981 tgccggttct gtacgacgac aatcaagtat ctcggacacg tcgtggaccg cgagggcata
+     2041 cgaaccgacc cggaaaagat caagacgatt gtggagtggc cggtaccgca caccgtgcgg
+     2101 caagtacgcc aattcctcgg catcgcctcg tggtaccgac gattcatacg cgatttcgcg
+     2161 accctcgccg ccccgctaac cgcactcact cgcaaaaacg ccgcctggaa gtggggagcc
+     2221 tcggagcagg aggcatttga cgccctgaag agaacgctca cgaccgcgcc ggtattggcc
+     2281 tgcccggatt tcgagaggca attcgtctta caaacggacg cgagtacgac cggcctgggg
+     2341 gccgtactaa cacaatactt ccccgagggc gagcgcgtga tggcatatgc cagtcgtacc
+     2401 ctgaattccg ccgaacaaaa ctacagcacg acggagctgg agtgtctcgc gatactgtgg
+     2461 ggaatacgcc gaatgaggga ctacctcgag ggctattgct ttaaggtcgt gaccgaccac
+     2521 cagtcactac gctggataca aaaactcgat tcgcccaccg gccgactcgg acggtgggca
+     2581 ttcgagttac gccaatacga cttcgacatt cagtaccgca agggagcgtt gaacaaggta
+     2641 gccgatgcct tgtcccgccg acacgccgtc aacgtcatcg cggagccccg atgcccgtgg
+     2701 taccagaaat ggtggggaac cgcacgcgac acgccgcacg acgctcccga cttccgcatc
+     2761 gaagacggga aattgtacaa gcacgtgcta catactctcg acttgtccga aacgccgagc
+     2821 gacgcacaat ggaaatag
+//
+

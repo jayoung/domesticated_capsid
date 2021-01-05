@@ -1,0 +1,217 @@
+LOCUS       XM_012362680            1736 bp    mRNA    linear   INV 27-APR-2015
+DEFINITION  PREDICTED: Linepithema humile uncharacterized LOC105669623
+            (LOC105669623), mRNA.
+ACCESSION   XM_012362680
+VERSION     XM_012362680.1
+DBLINK      BioProject: PRJNA281950
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Linepithema humile (Argentine ant)
+  ORGANISM  Linepithema humile
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Dolichoderinae; Linepithema.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_012160602.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Linepithema humile Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 62% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1736
+                     /organism="Linepithema humile"
+                     /mol_type="mRNA"
+                     /isolation_source="queens and workers from a genetically
+                     bottlenecked supercolony"
+                     /db_xref="taxon:83485"
+                     /chromosome="Unknown"
+                     /country="USA: orchard in Santa Clara county, California"
+                     /lat_lon="37.2565 N 122.0153 W"
+     gene            1..1736
+                     /gene="LOC105669623"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 40% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:105669623"
+     CDS             75..1736
+                     /gene="LOC105669623"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC105669623"
+                     /protein_id="XP_012218103.1"
+                     /db_xref="GeneID:105669623"
+                     /translation="MAESQNTGNAITLTNEQFIALLQQIQISATNVPTANAALPQGNF
+                     SRCTSRFDGKKTSDVEAFIDAIVTYKECTNISDENALKGLPILLMDLAATWWQGVKST
+                     VNTWNAAIDLLKLTYGPKKPAYRIYKELFAREQEENTSTDVFICKARALLAKLPYNTP
+                     LTESIQLDMVYGLLSYKIRKEISREKITSFSELLDLAREVKETRAEENNDTSKQTISF
+                     RKHESRLRCKYCKSFGHTVDECMNLKKKQENSPTTTSKKDKTDSDTDDAQANSQRSRP
+                     TVTCFGCGNPGYLRKECPKCNKTDKSGKGIAKPDFCLVDTSPIHAKCKKRTILNIEIL
+                     GAKGTGLIDTAAKMSVAGYSLYKILIDKDQKFKETDAYIGLADGTRSREHVLLTEVDV
+                     HLMDRTISITFLIIPHAENNYTLLGMDFIEKAKIVINAPQRIWYFADENEPRELNFEA
+                     SEGTSDTVQLNYVETLRNNEAQVLSSNQRDKLNEFLSTNEDIFALGEEQTTYAEHAIE
+                     TGDNAPAAVPPYKMPRHKKEILEKELNAMLEADIIEECEFHGRPQ"
+ORIGIN      
+        1 cacgaacgca atcgtcgata ccacgtaggg taagctcaga caaaaaagca aagaagaaaa
+       61 gacaagaagc tacaatggcg gaaagtcaga acacaggtaa cgcaattacg ttaacaaacg
+      121 aacaattcat cgctcttcta caacagatac agatatctgc tacgaacgtc cccaccgcaa
+      181 atgccgcgct accgcaaggt aatttttcgc gatgcacttc tcgattcgat ggaaaaaaga
+      241 cgtccgatgt agaagctttt atcgatgcga tcgttacata caaagaatgc acaaatatat
+      301 ccgacgaaaa cgccctaaag ggactaccga tcctactcat ggatctcgcc gcgacgtggt
+      361 ggcagggtgt caaatctaca gtcaatacgt ggaatgccgc aatagatctg ctaaaactaa
+      421 catacggacc taagaaaccg gcataccgta tctacaaaga actcttcgcg cgggaacaag
+      481 aagaaaatac atcgacggac gtatttatat gtaaagcacg cgccctcctt gctaaacttc
+      541 cgtacaacac gccgttaacg gaaagcatcc aattagatat ggtctacgga ttattgtcat
+      601 acaagattcg aaaggagata tcacgtgaaa aaattacgtc attttcggaa ttattagatc
+      661 tcgcgaggga agtcaaagag actcgagccg aagaaaataa cgacacatct aaacaaacga
+      721 tatcgtttcg taaacatgaa tcccgtctac gatgtaaata ctgcaaaagt ttcggacata
+      781 cggtagacga atgcatgaat cttaaaaaga aacaagaaaa cagtccgacc acgactagca
+      841 aaaaagacaa aacggattcg gatacagacg atgcgcaagc gaatagccaa cgttctcggc
+      901 ctacagttac ttgtttcggt tgcgggaatc ccgggtatct ccgtaaagag tgccctaagt
+      961 gcaataagac ggataaaagc ggcaaaggca tagcgaagcc tgatttctgc ctcgtagaca
+     1021 catctccgat acatgcaaaa tgcaagaaac gaacgattct caacattgaa atattagggg
+     1081 cgaaaggcac tggtctgatc gatacagccg caaaaatgag tgtcgctggt tacagtctat
+     1141 ataaaattct aatcgacaaa gatcaaaaat tcaaagaaac agacgcatat atcggactgg
+     1201 cagacggtac gcgtagcagg gaacacgttt tattaacaga agttgacgtt catctaatgg
+     1261 atcgcacgat aagtatcaca ttccttataa taccgcacgc agaaaataat tacacactac
+     1321 tcggcatgga ctttatcgaa aaagcgaaaa ttgtaataaa tgctccacag cgtatctggt
+     1381 attttgcaga tgaaaacgaa ccgcgtgagc tgaactttga agcttcggaa ggaacatctg
+     1441 acactgtaca actgaattac gtcgagacac taagaaacaa cgaagcccaa gttctgtcct
+     1501 caaatcagcg tgataaactc aatgagtttt tgtctactaa cgaagacatc ttcgcactag
+     1561 gggaggagca gacaacgtac gctgaacacg ccattgaaac aggcgataac gcaccagcag
+     1621 ccgtaccacc gtataaaatg ccccgacata agaaagaaat attggaaaag gagcttaatg
+     1681 ctatgctaga agcagatatt atcgaagaat gcgaattcca tgggcggccc cagtag
+//
+
+LOCUS       XM_012379223            2679 bp    mRNA    linear   INV 27-APR-2015
+DEFINITION  PREDICTED: Linepithema humile uncharacterized protein K02A2.6-like
+            (LOC105679295), mRNA.
+ACCESSION   XM_012379223
+VERSION     XM_012379223.1
+DBLINK      BioProject: PRJNA281950
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Linepithema humile (Argentine ant)
+  ORGANISM  Linepithema humile
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Dolichoderinae; Linepithema.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_012160263.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Linepithema humile Annotation
+                                           Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 6.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2679
+                     /organism="Linepithema humile"
+                     /mol_type="mRNA"
+                     /isolation_source="queens and workers from a genetically
+                     bottlenecked supercolony"
+                     /db_xref="taxon:83485"
+                     /chromosome="Unknown"
+                     /country="USA: orchard in Santa Clara county, California"
+                     /lat_lon="37.2565 N 122.0153 W"
+     gene            1..2679
+                     /gene="LOC105679295"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins"
+                     /db_xref="GeneID:105679295"
+     CDS             1..2679
+                     /gene="LOC105679295"
+                     /codon_start=1
+                     /product="uncharacterized protein K02A2.6-like"
+                     /protein_id="XP_012234646.1"
+                     /db_xref="GeneID:105679295"
+                     /translation="MPKSNYSAKTDDEPVEELVVPPALSIIERAKLLNQMRKWGLHFD
+                     GKDPFSFLERVEELGQEYGFTNKQLLLGLPKALKGNALLWFRNHRASWNTWNDFRQDF
+                     KAFYLPPGYPRQLRREIQGRQQQPSEPFDAFAIALQTLMRRAGGYSEQEKLEQIYENM
+                     NPDLQLYIPLENIHTLSELHAKVANLEKIQQRQKERRPRFPERNNRNPVATATYNKDE
+                     CCWRCKQRGHTRWNCKHTPKKFCSQCGKDGIEGKTVWALLDSGSEASHLNSETAQLIK
+                     RKPTTTNEIIHLADGSEVTINQTVQLSLTIPGKTVRHEFAVLPSLSTPILIGTDLWTK
+                     LQINLPPPPAQPQDKHSSIGFVTAAPVPDTVKEPYRLKEFLSKELPKFERIKGPTDLI
+                     EHMIRLKPGPPIKQRYRPQNPAMQKIIDDEVQKMENEGVIEASTSAWSSPVVIVRKKD
+                     GTHRFCIDYRKLNDVSEKDAYPLPHITATLEKLRGARYLSTLDLKNGYWQVSLSKESR
+                     PVTAFTIPGRGLKQFRVMPFGLHSAPATFQRLLDTVIGPELEPHVLVYLDDIVVASRT
+                     FEEHLGHLAEVFRRLRKAKLRLNPEKCQFCRESLRYLGHIVDKEGIRTDPEKALTIAP
+                     VLACPDFAKPFVLQTDASTQGLGAVLTQNHEKGEQVIAYASRTLNPAEKNYSATELEC
+                     LAVVWGIRKMRDYLEGEPIINAVSRTTTCRWYNRIKAAVKNKPEELPDYKIINGQLFR
+                     HKIHDLNFHETPSTEQWKKCVPKNQRLSVLKRLHDDPTAGHLGITKTIARIAQIYYWP
+                     GMFREIAKYVRCCENCLAFKITQEKPAGNLHTAPVIAPWQQASVDLIGPLPRSKQGHT
+                     WLLTILDRFSKWIEMVPLRRATATNLARKVTTFNTV"
+ORIGIN      
+        1 atgccaaaga gcaattattc ggcaaaaacc gacgacgaac cagtggagga actggttgtc
+       61 ccaccggcat taagcataat agagcgagca aagctcctaa accaaatgag gaaatggggc
+      121 ctccattttg atggcaaaga tccattttcc ttcttggaac gggtagagga gctcggccag
+      181 gaatatggct tcacaaacaa gcagctactc ctcggcctac cgaaagcatt aaaaggcaat
+      241 gccttattat ggttcagaaa ccatagggcc tcgtggaaca catggaacga ctttcgccag
+      301 gactttaaag cattctacct gccaccagga tacccgcgac agctcagacg agagattcaa
+      361 ggcaggcagc agcaaccaag cgagccattt gacgctttcg caatagcatt gcaaacgctg
+      421 atgcgacgag ccggagggta ctcggagcaa gaaaaactag aacagatcta tgaaaacatg
+      481 aatccggatc tccagctata tattccacta gagaatatac acacgctgag cgaattacac
+      541 gcaaaggtcg cgaatctgga aaagattcaa caacgccaaa aagagcggcg accaaggttc
+      601 cccgagagga acaaccgaaa tccagtcgcc acagctacat acaacaaaga tgaatgctgc
+      661 tggcggtgta agcagcgagg gcatacccgc tggaactgca agcacacacc aaagaaattt
+      721 tgctcccaat gcgggaaaga tggaatcgaa ggaaaaaccg tttgggcttt gcttgactcc
+      781 ggatctgaag cctcacatct caatagcgag accgctcaac taataaaaag aaaaccgacc
+      841 acgacgaacg aaataattca cttagcggat ggttcagaag tgaccatcaa tcagactgtc
+      901 caactgtcac taacaatacc aggaaagaca gttcgtcatg aatttgcggt attaccatcg
+      961 ctaagtacgc ccattcttat tgggacagat ctttggacta aattacagat taatttaccg
+     1021 ccccctccgg ctcaaccaca agataaacat tcgtctattg gcttcgttac tgccgctccg
+     1081 gttcctgaca cagtaaaaga accatacagg ctaaaagaat ttctgagtaa agaattaccg
+     1141 aaattcgaaa ggattaaggg ccccacagat ctaatcgaac atatgattcg actaaagcca
+     1201 gggcctccaa taaagcagcg atatcgacca caaaatccgg ccatgcagaa aattattgac
+     1261 gacgaagtcc agaaaatgga aaacgaaggc gttattgagg catcaaccag tgcctggagt
+     1321 tctccggtag tcatagtcag gaaaaaagac ggaactcacc gattctgtat agattacaga
+     1381 aaattaaatg atgtttcaga aaaagacgcc tatccattgc cgcatataac tgctaccctc
+     1441 gagaaattaa gaggagcccg ctatctctca actttggatc tgaaaaatgg gtattggcag
+     1501 gtatccttat ctaaagaaag ccgaccagtt accgcattta ccatacctgg ccgaggactc
+     1561 aagcaatttc gggtaatgcc ttttggatta cactcggcac ccgcaacttt ccagaggcta
+     1621 ctcgacaccg ttataggacc agagctcgaa ccgcacgtgc tagtctacct ggacgacatc
+     1681 gtcgtcgcta gccgaacttt tgaggagcat ctgggtcact tagccgaagt attccgccga
+     1741 ttacgaaagg ctaaattacg actcaatcca gagaaatgcc aattctgccg tgaaagccta
+     1801 agataccttg gacatatagt tgacaaggaa ggcatccgca ccgatccaga aaaagctttg
+     1861 acgatagcac cggtgcttgc ctgtccagac ttcgcaaaac cttttgtgct gcaaaccgat
+     1921 gccagcactc aaggcttagg ggcagtactc acgcaaaacc atgagaaagg cgagcaagtt
+     1981 atagcgtatg caagccgaac acttaatccg gctgaaaaga attacagcgc taccgagctg
+     2041 gaatgccttg ctgtggtatg gggaattcgt aaaatgcgtg attacctcga aggagaacca
+     2101 ataataaatg ccgtcagtcg aaccaccact tgccgatggt acaatagaat caaggccgca
+     2161 gtaaaaaata aacctgaaga actacccgac tacaaaataa taaacgggca attatttcgg
+     2221 cacaaaattc atgatctaaa cttccatgaa acaccaagta ccgagcaatg gaagaagtgt
+     2281 gtaccgaaga atcagcgcct gtccgttcta aaacgtcttc atgacgatcc tacggcagga
+     2341 caccttggca tcaccaagac tatagcccga attgcgcaaa tctactactg gccgggtatg
+     2401 ttccgggaga tcgcgaaata tgtacgctgc tgcgagaatt gtttggcatt taaaataaca
+     2461 caggaaaaac cagccggaaa tttacacacc gctccagtaa tcgcaccctg gcaacaagct
+     2521 tccgtcgatt tgataggccc tttaccgcgt tccaagcaag gtcacacatg gcttttaacc
+     2581 atactagata gattcagtaa atggattgaa atggttccat tacgccgagc taccgcaacg
+     2641 aatcttgccc gtaaggtcac aacgtttaat accgtttaa
+//
+

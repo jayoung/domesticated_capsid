@@ -1,0 +1,351 @@
+LOCUS       XM_018103762            1803 bp    mRNA    linear   INV 16-AUG-2019
+DEFINITION  PREDICTED: Drosophila navojoa activity-regulated cytoskeleton
+            associated protein 1 (LOC108653359), transcript variant X1, mRNA.
+ACCESSION   XM_018103762
+VERSION     XM_018103762.2
+DBLINK      BioProject: PRJNA340011
+KEYWORDS    RefSeq.
+SOURCE      Drosophila navojoa
+  ORGANISM  Drosophila navojoa
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022045897.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Aug 16, 2019 this sequence version replaced XM_018103762.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila navojoa Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1803
+                     /organism="Drosophila navojoa"
+                     /mol_type="mRNA"
+                     /isolate="navoj_Jal97"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7232"
+                     /chromosome="Unknown"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Tomatlan, Jalisco"
+                     /collection_date="1997-03"
+     gene            1..1803
+                     /gene="LOC108653359"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108653359"
+     CDS             115..909
+                     /gene="LOC108653359"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1 isoform X1"
+                     /protein_id="XP_017959251.1"
+                     /db_xref="GeneID:108653359"
+                     /translation="MATNIQMTNEQLHALIEAVRSSAVSAAGNAAASASDASKTKGSF
+                     STCTHRFGGARSHDEVEEFITNIVTYKELEDISDENALKGISLLFYGIASTWWQGVRK
+                     EAKCWNDVISLIREHFSPTKPAYQVYMEFFEKKQSDSVAIDTFVVEKRALLAQLPEGR
+                     HNEETELDFLYGLLNIKYRKHIPRQSISTFRDLLEQGRIIEHNELEVVEAQPKGPLRG
+                     ANRVERCTYCNFRGHTFEVCRKRQARDHTSEVSRKRQAPDQTNEAN"
+ORIGIN      
+        1 aactacgacc agcacaagga gcagcagcat tcgccgtgac ttattggctt tgttcgctgt
+       61 cgcaatttac tttttcatca acaacaacaa caaagtgcgt gataatcgtt agcaatggcg
+      121 acaaatatcc agatgaccaa tgagcaactt catgcgctca tcgaggctgt acgctcgtcg
+      181 gcagttagcg cagctggcaa tgcggctgct tctgctagcg acgcgtcaaa gacaaaagga
+      241 agttttagca cctgtacgca tagattcggc ggtgctcgca gccacgacga agtcgaggag
+      301 ttcatcacaa atattgtcac ctacaaggaa ctggaggaca tcagcgatga gaatgccttg
+      361 aagggcatat ccctgctttt ctatggtatt gcatccacct ggtggcaggg cgtgcgcaag
+      421 gaggcaaagt gctggaacga tgtcatcagc cttattcgcg agcacttttc gcccactaag
+      481 ccggcttacc aggtctacat ggagttcttc gagaagaagc agtccgactc tgttgccatc
+      541 gacaccttcg tggtggaaaa acgtgcactg ctcgcccaat tgccggaggg acgacacaac
+      601 gaagaaaccg aattggactt tctctacggt ttgctcaaca tcaagtaccg caagcacatt
+      661 ccccgccaaa gtatctcaac attccgcgat ctgcttgagc agggccgcat cattgagcac
+      721 aacgaactgg aggtggttga ggcgcaacca aagggacctc tacgcggagc taatcgcgtt
+      781 gaacgctgca cctactgcaa cttccgcggt cacacgttcg aggtctgtcg caagcggcag
+      841 gcgcgggatc acacgtccga agtcagtcgc aagcggcagg cgccggatca gacgaatgag
+      901 gcgaactaaa catcacacgc acgcacacgc aatatacggg acatgacatc atcgacatct
+      961 acaataacaa cacttgcgca gggcgcatat ttggatgtcc acgtcaatgt ctctctctct
+     1021 ctctctctca ccatctctct cacatcaaaa ctcactttgt cggctggcct cacatggaca
+     1081 cgaggagagt ggaaaatgac aacatcgaag aagaacaata acaacacaca cacacagaaa
+     1141 gctctagcag ctttttgcct atgtcagttt cggactttcg ttcagcatca agtggcgcgc
+     1201 cggccagcaa agcagagcta aaatagcggc attctaatgt cgctagcact tcacgccgaa
+     1261 acttcggctc aatttggctg tgaacgccag cgtaaatgat ttttcgtgat tattattatt
+     1321 ataatcacaa attggactct actacaaccg gtgaacttgt tcaccaacct tcgagtggca
+     1381 ggatttggag aacgggttgg cgcacgcatt tcgcccctag gctaagtcgt tgattggcgt
+     1441 gtgacgtagc cgagcagcga cgcttgctcg tgcattgctt atctctgcag agttcttcgg
+     1501 aactgtgcag tcgatgagct ttgtgcgcgg ccagcttcgt tgcctgtgct ccgtttgcgt
+     1561 cgtctcagct tctcgggccg tgatgggtgt tgcgtgtgct ttgctctttc cccttttttt
+     1621 gtcgctcaaa acccgctgcc ttgacctagt gtctgcgcaa cgtagctgtg gtgccgtacg
+     1681 ctgcgttcaa gcagagggcg tgtgcttcgc tagcttcggc cagtggaccc acgcgctgct
+     1741 cacttgtcgc ttagttcgaa actgcagttg ctttcgcgtc gatccttagt caatgcagca
+     1801 aaa
+//
+
+LOCUS       XM_018103763            1763 bp    mRNA    linear   INV 16-AUG-2019
+DEFINITION  PREDICTED: Drosophila navojoa activity-regulated cytoskeleton
+            associated protein 1 (LOC108653359), transcript variant X3, mRNA.
+ACCESSION   XM_018103763
+VERSION     XM_018103763.2
+DBLINK      BioProject: PRJNA340011
+KEYWORDS    RefSeq.
+SOURCE      Drosophila navojoa
+  ORGANISM  Drosophila navojoa
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022045897.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Aug 16, 2019 this sequence version replaced XM_018103763.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila navojoa Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1763
+                     /organism="Drosophila navojoa"
+                     /mol_type="mRNA"
+                     /isolate="navoj_Jal97"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7232"
+                     /chromosome="Unknown"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Tomatlan, Jalisco"
+                     /collection_date="1997-03"
+     gene            1..1763
+                     /gene="LOC108653359"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 100 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:108653359"
+     CDS             114..869
+                     /gene="LOC108653359"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1 isoform X3"
+                     /protein_id="XP_017959252.1"
+                     /db_xref="GeneID:108653359"
+                     /translation="MATNIQMTNEQLHALIEAVRSSAVSAAGNAAASASDASKTKGSF
+                     STCTHRFGGARSHDEVEEFITNIVTYKELEDISDENALKGISLLFYGIASTWWQGVRK
+                     EAKCWNDVISLIREHFSPTKPAYQVYMEFFEKKQSDSVAIDTFVVEKRALLAQLPEGR
+                     HNEETELDFLYGLLNIKYRKHIPRQSISTFRDLLEQGRIIEHNELEVVEAQPKGPLRG
+                     ANRVERCTYCNFRGHTFEVCRKRQAPDQTNEAN"
+ORIGIN      
+        1 actacgacca gcacaaggag cagcagcatt cgccgtgact tattggcttt gttcgctgtc
+       61 gcaatttact ttttcatcaa caacaacaac aaagtgcgtg ataatcgtta gcaatggcga
+      121 caaatatcca gatgaccaat gagcaacttc atgcgctcat cgaggctgta cgctcgtcgg
+      181 cagttagcgc agctggcaat gcggctgctt ctgctagcga cgcgtcaaag acaaaaggaa
+      241 gttttagcac ctgtacgcat agattcggcg gtgctcgcag ccacgacgaa gtcgaggagt
+      301 tcatcacaaa tattgtcacc tacaaggaac tggaggacat cagcgatgag aatgccttga
+      361 agggcatatc cctgcttttc tatggtattg catccacctg gtggcagggc gtgcgcaagg
+      421 aggcaaagtg ctggaacgat gtcatcagcc ttattcgcga gcacttttcg cccactaagc
+      481 cggcttacca ggtctacatg gagttcttcg agaagaagca gtccgactct gttgccatcg
+      541 acaccttcgt ggtggaaaaa cgtgcactgc tcgcccaatt gccggaggga cgacacaacg
+      601 aagaaaccga attggacttt ctctacggtt tgctcaacat caagtaccgc aagcacattc
+      661 cccgccaaag tatctcaaca ttccgcgatc tgcttgagca gggccgcatc attgagcaca
+      721 acgaactgga ggtggttgag gcgcaaccaa agggacctct acgcggagct aatcgcgttg
+      781 aacgctgcac ctactgcaac ttccgcggtc acacgttcga ggtctgtcgc aagcggcagg
+      841 cgccggatca gacgaatgag gcgaactaaa catcacacgc acgcacacgc aatatacggg
+      901 acatgacatc atcgacatct acaataacaa cacttgcgca gggcgcatat ttggatgtcc
+      961 acgtcaatgt ctctctctct ctctctctca ccatctctct cacatcaaaa ctcactttgt
+     1021 cggctggcct cacatggaca cgaggagagt ggaaaatgac aacatcgaag aagaacaata
+     1081 acaacacaca cacacagaaa gctctagcag ctttttgcct atgtcagttt cggactttcg
+     1141 ttcagcatca agtggcgcgc cggccagcaa agcagagcta aaatagcggc attctaatgt
+     1201 cgctagcact tcacgccgaa acttcggctc aatttggctg tgaacgccag cgtaaatgat
+     1261 ttttcgtgat tattattatt ataatcacaa attggactct actacaaccg gtgaacttgt
+     1321 tcaccaacct tcgagtggca ggatttggag aacgggttgg cgcacgcatt tcgcccctag
+     1381 gctaagtcgt tgattggcgt gtgacgtagc cgagcagcga cgcttgctcg tgcattgctt
+     1441 atctctgcag agttcttcgg aactgtgcag tcgatgagct ttgtgcgcgg ccagcttcgt
+     1501 tgcctgtgct ccgtttgcgt cgtctcagct tctcgggccg tgatgggtgt tgcgtgtgct
+     1561 ttgctctttc cccttttttt gtcgctcaaa acccgctgcc ttgacctagt gtctgcgcaa
+     1621 cgtagctgtg gtgccgtacg ctgcgttcaa gcagagggcg tgtgcttcgc tagcttcggc
+     1681 cagtggaccc acgcgctgct cacttgtcgc ttagttcgaa actgcagttg ctttcgcgtc
+     1741 gatccttagt caatgcagca aaa
+//
+
+LOCUS       XM_018103765             726 bp    mRNA    linear   INV 16-AUG-2019
+DEFINITION  PREDICTED: Drosophila navojoa activity-regulated cytoskeleton
+            associated protein 2 (LOC108653362), mRNA.
+ACCESSION   XM_018103765
+VERSION     XM_018103765.2
+DBLINK      BioProject: PRJNA340011
+KEYWORDS    RefSeq.
+SOURCE      Drosophila navojoa
+  ORGANISM  Drosophila navojoa
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022045897.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Aug 16, 2019 this sequence version replaced XM_018103765.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila navojoa Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..726
+                     /organism="Drosophila navojoa"
+                     /mol_type="mRNA"
+                     /isolate="navoj_Jal97"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7232"
+                     /chromosome="Unknown"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Tomatlan, Jalisco"
+                     /collection_date="1997-03"
+     gene            1..726
+                     /gene="LOC108653362"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108653362"
+     CDS             72..647
+                     /gene="LOC108653362"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_017959254.1"
+                     /db_xref="GeneID:108653362"
+                     /translation="MTMLSDEQFRILIDTIKSLAPEKEQQSKGSFSNCVVRFSGQRDH
+                     DAVDEFITAVETYKEMEGISDKDALKGISLLFNGAAVMWWKGVRRDAHTWEDALKLLR
+                     DHFSPTKPSYQIYMEIFEMKQEDGEVIDQFICKQRALLAKLPEGRHNEETELDFIYGL
+                     MHQKYRSHIPRHEIKSFKELLERGRMVERTN"
+ORIGIN      
+        1 gttgatacgc tgactttaga gaagcagcaa ctgacttttg tttatttatt aataaccaaa
+       61 caccacagaa aatgacgatg ctgtcggacg aacagtttcg catactcatc gacactatca
+      121 aatctctggc gccggaaaag gagcagcaat cgaagggcag cttcagcaac tgcgtggtgc
+      181 ggtttagcgg gcagcgagac cacgacgccg tcgacgagtt cataacagct gtagaaacct
+      241 acaaggagat ggagggcatt agtgacaaag acgcactgaa gggaatttcg ctgctcttca
+      301 atggcgccgc cgttatgtgg tggaagggtg tgcgacggga tgcccacacg tgggaagacg
+      361 cactcaaact gctgcgcgat cacttctcgc ccacaaagcc ctcctatcag atctacatgg
+      421 agatcttcga aatgaagcag gaagacggcg aagtaatcga ccagttcata tgcaaacagc
+      481 gtgcgctgtt ggccaagctg ccggagggtc gtcacaacga ggagaccgag ttggatttca
+      541 tctacggcct gatgcatcaa aagtacagaa gtcacatacc acgtcacgag atcaagtcct
+      601 tcaaggagtt gctcgaacgt ggtcgcatgg tagaacgcac gaactagatg atatctatat
+      661 aactcatttt taaataaaat attgtaaatg ctagttaatc tgcagggtat tttcacttca
+      721 gtcata
+//
+
+LOCUS       XM_030383724             906 bp    mRNA    linear   INV 16-AUG-2019
+DEFINITION  PREDICTED: Drosophila navojoa activity-regulated cytoskeleton
+            associated protein 1 (LOC108653359), transcript variant X2, mRNA.
+ACCESSION   XM_030383724
+VERSION     XM_030383724.1
+DBLINK      BioProject: PRJNA340011
+KEYWORDS    RefSeq.
+SOURCE      Drosophila navojoa
+  ORGANISM  Drosophila navojoa
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022045897.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila navojoa Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..906
+                     /organism="Drosophila navojoa"
+                     /mol_type="mRNA"
+                     /isolate="navoj_Jal97"
+                     /isolation_source="banana trap"
+                     /db_xref="taxon:7232"
+                     /chromosome="Unknown"
+                     /tissue_type="whole organism"
+                     /country="Mexico: Tomatlan, Jalisco"
+                     /collection_date="1997-03"
+     gene            1..906
+                     /gene="LOC108653359"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 18 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:108653359"
+     CDS             115..891
+                     /gene="LOC108653359"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1 isoform X2"
+                     /protein_id="XP_030239584.1"
+                     /db_xref="GeneID:108653359"
+                     /translation="MATNIQMTNEQLHALIEAVRSSAVSAAGNAAASASDASKTKGSF
+                     STCTHRFGGARSHDEVEEFITNIVTYKELEDISDENALKGISLLFYGIASTWWQGVRK
+                     EAKCWNDVISLIREHFSPTKPAYQVYMEFFEKKQSDSVAIDTFVVEKRALLAQLPEGR
+                     HNEETELDFLYGLLNIKYRKHIPRQSISTFRDLLEQGRIIEHNELEVVEAQPKGPLRG
+                     ANRVERCTYCNFRGHTFEVCRKRQARDHTSEVKNYARNAK"
+ORIGIN      
+        1 aactacgacc agcacaagga gcagcagcat tcgccgtgac ttattggctt tgttcgctgt
+       61 cgcaatttac tttttcatca acaacaacaa caaagtgcgt gataatcgtt agcaatggcg
+      121 acaaatatcc agatgaccaa tgagcaactt catgcgctca tcgaggctgt acgctcgtcg
+      181 gcagttagcg cagctggcaa tgcggctgct tctgctagcg acgcgtcaaa gacaaaagga
+      241 agttttagca cctgtacgca tagattcggc ggtgctcgca gccacgacga agtcgaggag
+      301 ttcatcacaa atattgtcac ctacaaggaa ctggaggaca tcagcgatga gaatgccttg
+      361 aagggcatat ccctgctttt ctatggtatt gcatccacct ggtggcaggg cgtgcgcaag
+      421 gaggcaaagt gctggaacga tgtcatcagc cttattcgcg agcacttttc gcccactaag
+      481 ccggcttacc aggtctacat ggagttcttc gagaagaagc agtccgactc tgttgccatc
+      541 gacaccttcg tggtggaaaa acgtgcactg ctcgcccaat tgccggaggg acgacacaac
+      601 gaagaaaccg aattggactt tctctacggt ttgctcaaca tcaagtaccg caagcacatt
+      661 ccccgccaaa gtatctcaac attccgcgat ctgcttgagc agggccgcat cattgagcac
+      721 aacgaactgg aggtggttga ggcgcaacca aagggacctc tacgcggagc taatcgcgtt
+      781 gaacgctgca cctactgcaa cttccgcggt cacacgttcg aggtctgtcg caagcggcag
+      841 gcgcgggatc acacgtccga agtcaaaaat tacgcccgca atgctaagta gttggatgat
+      901 aatgcc
+//
+

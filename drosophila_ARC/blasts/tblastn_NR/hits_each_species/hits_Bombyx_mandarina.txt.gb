@@ -1,0 +1,1683 @@
+LOCUS       XM_028170513             654 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114240080), mRNA.
+ACCESSION   XM_028170513
+VERSION     XM_028170513.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011490.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..654
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..654
+                     /gene="LOC114240080"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:114240080"
+     CDS             1..654
+                     /gene="LOC114240080"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028026314.1"
+                     /db_xref="GeneID:114240080"
+                     /translation="MPPKKMPNSEERDARAASPPHAPSSDAPPASVCFRPEDITMLID
+                     TLQRTQLDAFRELLDSVRQSATPTFDHRPANNFSRCKSVFSGRADESVEGFIDAIESY
+                     RDAANVPDDVAVKGISMLLTHTAATWWQGIKHQVSTWEDVISNLRSAFGDRRPPHRIY
+                     VDLFADGQQPMEKTDLFVARVQTPGKRFGTLPEKKENFDPSWDLTLELTVHLVLIVY"
+ORIGIN      
+        1 atgccgccga agaagatgcc caactccgag gagcgcgacg cgagagccgc gtcgccaccc
+       61 cacgcgccgt cgagtgacgc gccgcccgcc agtgtttgct tccgcccgga agacatcacc
+      121 atgctgatcg acacccttca acgaacgcag ctagacgcgt tccgggagct gttagatagc
+      181 gtcaggcagt cggcgactcc tacattcgac catcggcccg ccaacaactt cagccgctgc
+      241 aaatctgtat tcagcggacg cgcagacgag tcagtagaag gttttatcga cgcaatagaa
+      301 tcgtacagag acgccgccaa tgttcccgat gacgtagccg taaaaggtat ttccatgttg
+      361 ctgacacaca ccgccgctac ctggtggcag ggtatcaagc atcaagtttc tacatgggaa
+      421 gacgtcatct caaatctacg aagtgctttt ggtgatcgcc gcccacccca cagaatttat
+      481 gtcgacctat tcgcagacgg ccagcagcct atggagaaaa ccgacctgtt tgtcgccagg
+      541 gtgcagaccc ctggcaagag gttcggcacc ctgcctgaaa aaaaggaaaa ctttgaccca
+      601 agttgggacc tcacgctgga gctaacggtt cacttggtgt taattgttta ctga
+//
+
+LOCUS       XM_028171779            3007 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114241061
+            (LOC114241061), mRNA.
+ACCESSION   XM_028171779
+VERSION     XM_028171779.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011496.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3007
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..3007
+                     /gene="LOC114241061"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114241061"
+     CDS             195..2447
+                     /gene="LOC114241061"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114241061"
+                     /protein_id="XP_028027580.1"
+                     /db_xref="GeneID:114241061"
+                     /translation="MPPKKMPNSEERDARAASPPHAPSSDAPPASVCFRPEDITMLID
+                     TLQRTQLDAFRELLDSVRQSATPTFDHRPANNFSRCKSVFSGRADESVEGFIDAIESY
+                     RDAANVPDDVAVKGISMLLTHTAATWWQGIKHQVSTWEDVISNLRSAFGDRRPPHRIY
+                     VDLFADGQQPMEKTDLFVARARALLAKLPRGDLCEKVELDMIYGLLHHKIRKRLRREE
+                     ITSFNVLLQKARSIEDSTKEAHTSNAVAETSKGAAAAARARLEPPRPATQRVPTAAVE
+                     VSPRQRSSGDNADATPTAEKPEKRRYCVYCKSYGHTRDQCRKLLLKQTANDSNDNVVS
+                     KVNNIKCYGCGASGVIRSNCSKCSSNFSAVDFIQIPRTRSRGTTTAETSAVGKPSAQV
+                     SNLASLPMVFTGAVPDLFLSSSVHTERPNYVNSSLHTAQISLVSCNNVSTPPVNNNFA
+                     RKCNVNSSHKRVDKQIVSNLPRSDDTPLFTYLSRPVKQGECFNRTHVPSELKSVSPRE
+                     FCVNQCVVNNRHKWKTKRSRQCPSRGPLPTRATMIFSGQNQKFDNKSRVTKNFSGHNL
+                     ESCAPVKGTTNFNCDSFVTFSSVTSSQNGNARRPILGIEILGIRGRGLIDTAAKRTVA
+                     GSSLYALLQQHNQPFVRSSIRVKLADGSIQTRQMLSTTLDVKLLPGKVIPMEFVVFPD
+                     AQDNDTLLGVDFLVAAGLAIDFHTSTWRYHGSERVFPLEFEYPSDLTPCSAADFLRED
+                     EGTMLCPPER"
+ORIGIN      
+        1 tatttatata tcatcttcgc caacagcccg gaacaacgaa ctcacgaaaa ctcacaaaag
+       61 cccgccagtc ggacttgtag tgttaaaaat ggcgcccgaa cgtttagctg tgaagtgata
+      121 tttatatgaa attattgtgc ctacatgaac gatttgtgtt ttcctgactt taccgactaa
+      181 accgtcgtca aataatgccg ccgaagaaga tgccgaattc cgaggagcgc gacgcgagag
+      241 ccgcgtcgcc gccccacgcg ccgtcgagtg acgcgccgcc cgccagtgtt tgcttccgcc
+      301 cggaagacat caccatgctg atcgacaccc ttcaacgaac gcagctagac gcgttccggg
+      361 agctgttaga tagcgtcagg cagtcggcga ctcctacatt cgaccatcgg cccgccaaca
+      421 acttcagccg ctgcaaatct gtattcagcg gacgcgcaga cgagtcagta gaaggtttta
+      481 tcgacgcaat agaatcgtac agagacgccg ccaatgttcc cgatgacgta gccgtaaaag
+      541 gtatttccat gttgctgaca cacaccgccg ctacctggtg gcagggtatc aagcatcaag
+      601 tttctacatg ggaagacgtc atctcaaatc tacgaagtgc ttttggtgat cgccgcccac
+      661 cccacagaat ttatgtcgac ctattcgcag acggccagca gcctatggag aaaaccgacc
+      721 tgtttgtcgc cagggctcga gcactcctcg cgaagctacc tcgaggcgac ctatgtgaaa
+      781 aagtggagct cgatatgata tacggattac tgcatcataa aattcgtaaa cgccttcgta
+      841 gagaggaaat caccagtttc aatgttctcc tgcaaaaagc acgaagtatt gaggattcta
+      901 cgaaagaagc gcatacttca aacgccgtcg ccgagacatc aaagggtgcc gccgccgccg
+      961 cccgcgctcg actcgagccg ccgcggcctg caacgcagcg tgtacctacg gccgctgtag
+     1021 aagtttcccc gcgccaacgt tcgtcaggcg ataacgccga cgccactccg accgccgaaa
+     1081 aacccgagaa acgtcgatac tgtgtttatt gtaaaagtta cggtcatacg cgtgatcagt
+     1141 gtcgtaaatt gttattaaaa caaaccgcga atgacagtaa cgataacgta gttagtaaag
+     1201 taaataatat taaatgttac ggttgcggcg cgagcggagt catacgttct aattgttcca
+     1261 aatgtagttc aaattttagc gcggtcgatt ttattcaaat accgcgaacg cgatcgcgag
+     1321 gtacaacgac cgctgagaca tcagctgttg gtaagccgtc cgcccaggtg agtaatttgg
+     1381 caagtttacc tatggttttt actggggctg tacctgactt gtttttatcc agtagtgttc
+     1441 ataccgagcg cccaaattat gttaattcat cgctacacac tgctcagata agtttggtat
+     1501 catgtaataa tgtaagtaca ccccccgtaa ataataattt tgcccgtaaa tgtaatgtaa
+     1561 actcgtccca taaacgtgtt gataaacaaa ttgtttcaaa tttgccgcgt tccgacgata
+     1621 cgcctttgtt tacatactta tctcgtcctg ttaagcaggg ggagtgtttt aaccgcactc
+     1681 atgtacctag cgaattgaaa tcagtatctc ctagggaatt ttgtgttaat cagtgcgtcg
+     1741 taaataatag acataaatgg aaaacgaaac gttctcgtca gtgtccatca cgtggtccgt
+     1801 taccaactag ggcgaccatg attttttcag gacaaaacca gaaattcgat aataaaagta
+     1861 gggtgaccaa aaatttttca ggacacaacc tggaaagttg tgcaccggtt aaagggacca
+     1921 caaattttaa ttgtgatagt tttgtcacct tttcgtctgt aacttcttcg caaaatggca
+     1981 acgcgcgacg acctatttta ggtatagaga ttttaggaat ccgaggtaga ggtttaatcg
+     2041 acaccgcagc caagcgaact gttgccggtt cttcactcta cgccctactg caacagcata
+     2101 atcaaccttt tgtgcgtagt tctatacgtg ttaagcttgc cgatggttca attcaaacgc
+     2161 gacaaatgtt gtcaacgaca cttgatgtaa agttattacc gggtaaagtt attcccatgg
+     2221 aatttgtcgt atttccggac gcccaggata atgacacatt attgggtgta gactttttag
+     2281 tagcagctgg tttagccatc gacttccata cttcgacatg gcgctaccat ggttctgaac
+     2341 gagtttttcc attggagttc gagtacccca gtgacctcac gccttgttct gctgctgatt
+     2401 tcttaagaga agacgaggga actatgctgt gtcctccaga gcgttaaccg cctagcttct
+     2461 cttctgcagt gcaacgagga tgtcttcaga ccagggggag ccccaatgcc ttacgctgaa
+     2521 catcatcagg atgataggaa gtagcaaacc gacaaaattc agttatctgg tcccagttac
+     2581 caagtaggtg atctagtcct tctctctacg cacttgttaa gtgatgccgc caaaggtaga
+     2641 acgaagaagt tcatgcctaa gcgtgacgga ccctaccaga ttagtaatat cgttagtcct
+     2701 actacctatg aggttactga tttgaattcg caggttttag ggaaatttca tgcttctcat
+     2761 ttgaagccgt atcataatca aaccggtcag gtctcagctc cagtacagcc tcgacgcctg
+     2821 cgtggacggc cccgtcttgt tgtttctgcc gagccactaa cgaggcgttc tagtgactcg
+     2881 gagggggagg atataacgga acgtaatttc cgaacgtgcg ataccgcccc cgccgccgcc
+     2941 ttaccgcccg ctgagacaga gctctctgag cgcgaaaaca cacgccctca gcgcgcgcga
+     3001 cgacgac
+//
+
+LOCUS       XM_028173494            3019 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114242367
+            (LOC114242367), mRNA.
+ACCESSION   XM_028173494
+VERSION     XM_028173494.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011505.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3019
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..3019
+                     /gene="LOC114242367"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114242367"
+     CDS             208..2460
+                     /gene="LOC114242367"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114242367"
+                     /protein_id="XP_028029295.1"
+                     /db_xref="GeneID:114242367"
+                     /translation="MPPKKMPNSEERDARAASPPHAPSSDAPPASVCFRPEDITMLID
+                     TLQRTQLDAFRELLDSVRQSATPTFDHRPANNFSRCKSVFSGRADESVEGFIDAIESY
+                     RDAANVPDDVAVKGISMLLTHTAATWWQGIKHQVSTWEDVISNLRSAFGDRRPPHRIY
+                     VDLFADGQQPMEKTDLFVARARALLAKLPRGDLCEKVELDMIYGLLHHKIRKRLRREE
+                     ITSFNVLLQKARSIEDSTKEAHTSNAVAETSKGAAAAARARLEPPRPATQRVPTAAVE
+                     VSPRQRSSGDNADATPTAEKPEKRRYCVYCKSYGHTRDQCRKLLLKQTANDSNDNVVS
+                     KVNNIKCYGCGASGVIRSNCSKCSSNFSAVDFIQIPRTRSRSTTTAETSAVGKSSAQV
+                     SNLASLPMVFTGAVPDLCLSSSVHTERPNYVNSSLHTAQPSLVSRNNVSTPPVNNNFA
+                     RKCNVNSSHKRVDKQIISNLPRSDDTPLFTYLSRPVKQGECFNRTHVPSELKSVSPRE
+                     FCVNQCVVNNRHKWKTKLSRQCPSRGPLPTRATMIFSGQNQEFDNKSRVTKNFSGHNL
+                     ESCAPVKGTTNFNCDSFVTFSSVTSSQNGNARRPILGIEILGIRGRGLIDTAAKRTVA
+                     GSSLYVLLQQHNQSFVSSSIRVKLADGSIQTRQMLSTTLDVKLLPGKVIPMEFVVFPD
+                     AQDNDTLLGVDFLVAAGLAIDFHTSTWRYHGSERVFPLEFEYPSDLTPCSAADFLRED
+                     EGTMLCPPER"
+ORIGIN      
+        1 tcggcgtaaa cattatttct atatcatctt cgccaacagc ccggaacaac gaactcacga
+       61 aaactcacaa aagcccgcca gtcggacttg tagtgttaaa aatggcgccc gaacgtttag
+      121 ctgtgaagtg atatttataa gaaattattg tgcctgcatg aacgatttgt gttttcctga
+      181 ctttaccgac taaaccgtcg tcaaataatg ccgccgaaga agatgccgaa ttccgaggag
+      241 cgcgacgcga gagccgcgtc gccgccccac gcgccgtcga gtgacgcgcc gcccgccagt
+      301 gtttgcttcc gcccggaaga catcaccatg ctgatcgaca cccttcaacg aacgcagcta
+      361 gacgcgttcc gggagctgtt agatagcgtc aggcagtcgg cgactcctac attcgaccat
+      421 cggcccgcca acaacttcag ccgctgcaaa tctgtattca gcggacgcgc agacgagtca
+      481 gtagaaggtt ttatcgacgc aatagaatcg tacagagacg ccgccaatgt tcccgatgac
+      541 gtagccgtaa aaggtatttc catgttgctg acacacaccg ccgctacctg gtggcagggt
+      601 atcaagcatc aagtttctac atgggaagac gtcatctcaa atctacgaag tgcttttggt
+      661 gatcgccgcc caccccacag aatttatgtc gacctattcg cagacggcca gcagcctatg
+      721 gagaaaaccg acctgtttgt cgccagggct cgagcactcc tcgcgaagct acctcgaggc
+      781 gacctatgtg aaaaagtgga gctcgatatg atatacggat tactgcatca taaaattcgt
+      841 aaacgccttc gtagagagga aatcaccagt ttcaatgttc tcctgcaaaa agcacgaagt
+      901 attgaggatt ctacgaaaga agcgcatact tcaaacgccg tcgccgagac atcaaagggt
+      961 gccgccgccg ccgcccgcgc tcgactcgag ccgccgcggc ctgcaacgca gcgtgtacct
+     1021 acggccgctg tagaagtttc cccgcgccaa cgttcgtcag gcgataacgc cgacgccact
+     1081 ccgaccgccg aaaaacccga gaaacgtcga tactgtgttt attgtaaaag ttacggtcat
+     1141 acgcgtgatc agtgtcgtaa attgttatta aaacaaaccg cgaatgacag taacgataac
+     1201 gtagttagta aagtaaataa tattaaatgt tacggttgcg gcgcgagcgg agtcatacgt
+     1261 tctaattgtt ccaaatgtag ttcaaatttt agcgcggtcg attttattca aataccgcga
+     1321 acgcgatcgc gaagtacaac gaccgctgag acatcagctg ttggtaagtc gtccgcccag
+     1381 gtgagtaatt tggcaagttt acctatggtt tttactgggg ctgtacctga cttgtgttta
+     1441 tccagtagtg ttcatactga gcgcccaaat tatgttaatt catcgctaca cactgctcag
+     1501 ccaagtttgg tatcacgtaa taatgtaagt acaccccccg taaataataa ttttgcccgt
+     1561 aaatgtaatg taaactcgtc ccataaacgt gttgataaac aaattatttc aaatttgccg
+     1621 cgttccgacg atacgccttt gtttacatac ttatctcgtc ctgttaagca gggggagtgt
+     1681 tttaaccgca ctcatgtacc tagcgaattg aaatcagtat ctcctaggga attttgtgtt
+     1741 aatcagtgcg tcgtaaataa tagacataaa tggaaaacga aactttctcg tcagtgtcca
+     1801 tcacgtggtc cgttaccaac tagggcgacc atgatttttt caggacaaaa ccaggaattc
+     1861 gataataaaa gtagggtgac caaaaatttt tcaggacaca acctggaaag ttgtgcaccg
+     1921 gttaaaggga ccacaaattt taattgtgat agttttgtca ccttttcgtc tgtaacttct
+     1981 tcgcaaaatg gcaacgcgcg acgacctatt ttaggtatag agattttagg aatccgaggt
+     2041 aggggtttaa tcgataccgc agccaagcga actgttgccg gttcttcact ctacgtctta
+     2101 ctgcaacagc ataatcagtc ttttgtgtct agttctatac gtgttaagct tgccgatggt
+     2161 tcaattcaaa cgcgacaaat gttgtcaacg acacttgatg taaaattatt accgggtaaa
+     2221 gttattccca tggaatttgt cgtatttccg gacgcccagg ataatgacac attattgggt
+     2281 gtagactttt tagtagcagc tggtttagcc atcgacttcc atacttcgac atggcgctac
+     2341 catggttctg aacgagtttt tccattggag ttcgagtacc ccagtgacct cacgccttgt
+     2401 tctgctgctg atttcttaag agaagacgag ggaactatgc tgtgtcctcc agagcgttaa
+     2461 ccgcctagct tctcttctgc agtgcaacga ggatgtcttc agaccagggg gagccccaat
+     2521 gccttacgct gaacatcatc aggatgatag gaagtagcaa accgacaaaa ttcagttatc
+     2581 tggtcccagt taccaagtag gtgatctagt ccttctctct acgcacttgt taagtgatgc
+     2641 cgccaaaggt agaacgaaga agttcatgcc taagcgtgac ggaccctacc agattagcaa
+     2701 tatcgttagt cctactacct atgaggttac tgatttgaat tcgcaggttt tagggaaatt
+     2761 tcatgcttct catttgaagc cgtatcataa tcaaaccggt caggtctcag ctccagtaca
+     2821 gcctcgacgc ctgcgtggac ggccccgtct tgttgtttct gccgagccac taacgaggcg
+     2881 ttctagtgac tcggaggggg aggatataac ggaacgtaat ttccgaacgt gcgataccgc
+     2941 ccccgccgcc gccttaccgc ccgctgagac agagctctct gagcgcgaaa acacacgccc
+     3001 tcagcgcgcg cgacgacga
+//
+
+LOCUS       XM_028177422             660 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114245295), mRNA.
+ACCESSION   XM_028177422
+VERSION     XM_028177422.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011532.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..660
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..660
+                     /gene="LOC114245295"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:114245295"
+     CDS             1..660
+                     /gene="LOC114245295"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028033223.1"
+                     /db_xref="GeneID:114245295"
+                     /translation="MPPRKVRAGAVSDNQSSSEDEAARPSPVLMSGDQLTSFLAAFAK
+                     TQAEVNRQLVESLMTSYARGSSGAPPEVSDAAIASSPTPTSLTSKSGNMAKCTSRFDG
+                     QSRDPEVIEAFIDSVEIFKECASISDDLALRGLPMLLHGEAAVWWRGVRTEVSSWPEA
+                     VKRLRCMYGIPRPAYKIFRNIFAVEQNEELADSFIIKIRAMMSTLPYVLPEQVKCGVQ
+                     Y"
+ORIGIN      
+        1 atgccgccac gcaaagtacg tgcaggtgct gtgagtgata atcagtccag ctcggaagat
+       61 gaagccgcaa gaccttcgcc agtacttatg tctggggacc agttgacctc attccttgcc
+      121 gccttcgcaa aaactcaggc ggaagtgaat cggcaactcg tcgaatccct catgacatcg
+      181 tacgcgagag gtagctcagg tgcaccccct gaagtttccg acgctgcgat agcatcctca
+      241 ccgacaccca cgtctttaac cagtaagtcc ggcaacatgg ctaagtgtac gtcgcgcttc
+      301 gatggtcaga gccgtgaccc tgaagttata gaagcattca tcgactcagt ggagattttt
+      361 aaagagtgtg cgtcgatcag tgatgatctt gcattgcgag gactgcctat gctgctgcac
+      421 ggtgaagctg cagtatggtg gcgaggggtc cggaccgaag tgtcttcgtg gcccgaagcc
+      481 gtcaagagac tacgatgtat gtatggtatt ccacgtccag cctacaagat tttccgtaac
+      541 atattcgctg tcgagcaaaa cgaagagctc gcggattcgt ttattattaa aataagggct
+      601 atgatgtcga cattaccata cgtattaccc gaacaagtga aatgcggtgt ccagtattga
+//
+
+LOCUS       XM_028178028            5059 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114245752
+            (LOC114245752), mRNA.
+ACCESSION   XM_028178028
+VERSION     XM_028178028.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011478.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5059
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..5059
+                     /gene="LOC114245752"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 8 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114245752"
+     CDS             176..5017
+                     /gene="LOC114245752"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114245752"
+                     /protein_id="XP_028033829.1"
+                     /db_xref="GeneID:114245752"
+                     /translation="MPLTRNQDRQQRREDDVIPAADANANENHEEHDSPHDRPHAESR
+                     SNNSTFNLDDVSALMASLQRSQAETFKNIMSYVMEQRSSTPAPPPMPPVNVDGTLARC
+                     RASFSGAPGESVEAFIDAIESYTECVQVSDANIIRGLAMLLSADAATWWLGLKHHIST
+                     WNEAKENLIYAYGTRLPPHRIYLEIFASPQDNENTDKFVARIRALMAKLPRDDITEKV
+                     QLDMIYGLLHNRIRTRLRREEITSFNSLLNHARNIEDSIEETQSRPVSSTSGVRSIRA
+                     QPAQAASRPEPCAARASAPAPRARFPNSAAAVVPATAVPVAVAQPTVATPAAAVPGSA
+                     EQFVTTKKQRPVCSYCKRFGHAREQCRKLNNRGEQSQSNFSEGVQNDNNAFYSVQCNV
+                     NNTNTISSNLPVQNAMYDVKQHDKNNFLSNFECQNFCNRDANINYATINRGPTSRKSY
+                     FHACNDSVSKNINCNCTSNNEMPTFCDSHVLYNQDVRTKCKNLNICYNQGTRPKCKNS
+                     ILPYNQIIEPNCNNLKFSTNHDCDTKGSKCNFGKINECVEIDNCLNFNYCTCEGSVVA
+                     SVYDRESDDRYLHLRPIFKIQVLGKQGTALIDTAAKHCIAGHTLYALLLHKGHPLTPS
+                     TRRVKLADGHVRNMDVLTTILPVRLEHIVINIPFIIFPDSNDNETLLGIDFINAAKVI
+                     IDFHRHEWYFSTDAKVHYKLLFEPMSRGVCIASTNMLRDDEGMHLQSAERQALSEFLI
+                     RHESIFTAGGGPTPFIEHCIDTGDHPPIAVPPYRLNPSKKETMKNEIEKMLADDIIEE
+                     CESAWCSPALMIPKSNEGFQQHLQDLEAVFRRLSEFKLHVNREKCTFAKERVRYLGHV
+                     ITPDGVSPDPEKVSAVLNMLEPSNLKHLRTFLQTCSWFRKFIPNFSKIAEPLTRLTKK
+                     NYTWSWGPEQTQAFKELKRLLTTAPVLVQANFKQPLVLRTDASNYALGAVLAQGEGKD
+                     ERPIEYASRLLTAAERNYSTTEREALAVVWAVERFRPYLDGQPIIIGSDHQPLRWLLS
+                     LKSPAGRLVRWALKLQEFDIRFEYTPGKANVVADTLSRPICSNETQNNCGICSVICDL
+                     PTKSPTQLRQDQLTDPEIQKIVTELEGVDELAAKRWSERGFLMEQGVLYRLNPDSDAE
+                     APQLVIPAHQVTDILKELHDAPTAGHAGIDRTYQQVSRLFYFTGMRRIITDYVKACIH
+                     CQRYKAANTKPPGLLQTPVMNQRNEVLAVDLFGPLPPGKQGERWILLIEDTATRWTEL
+                     FPLKEATAEACAHVLIEEYFMRFGLPRRLVSDNGVQFISAVMRQCMSILGIKQNLIPL
+                     YHPEANPAERKNRDLKTLLAQLVECDHTSWPNMLPVIRFALNNAKCRTTGMSPAYLSF
+                     GREMRSPTEVTHDLRAVLDKDNFVPQITPYLRKFVNSFSAVRERVETLQDKAKGYADR
+                     SRRPIETFNEGDMVLIKSHVLSKSAKGLTSKFVPKRDGPYRIVKKVSPTTYHVAHVDK
+                     PDEVLGKYHVNDLTLYRENQSDALPRPVMPKKKRGRPPNNVKTDSRVPGHMTTRHAEP
+                     CAEAPRLSPAAGGMVGLAPVPQPSSNEMLVQERGRPPGLEGEYVANRPVRHSRGRMPA
+                     RYT"
+ORIGIN      
+        1 aattcgatat tggtgactaa cccatagttt taaatacccc tgagatctac ccctcactat
+       61 atctggctgc ccaacgtttc ctaatttttt tcttgcttgg actaacaaaa tggcgcgcac
+      121 gcttttgtga aaattttgct aactattgta tgctgttggt gcttaattgt aaagaatgcc
+      181 tttaactaga aatcaagatc gccagcaacg tcgcgaagac gacgttattc ctgctgcaga
+      241 tgcaaatgcc aacgaaaatc acgaggagca tgatagcccc catgatcgcc cccacgccga
+      301 atcacgtagc aacaattcta cgttcaactt ggatgatgtt tcagcgttga tggcctcgct
+      361 gcaacgttcg caggccgaaa catttaagaa cattatgtcg tacgtgatgg aacaaagatc
+      421 gtcgactccg gcacctccgc cgatgccccc agtgaacgta gatggtacct tggcgcgttg
+      481 cagagcttct ttcagcggtg cacctggtga atctgttgag gcctttatag atgcaattga
+      541 aagctataca gaatgcgttc aagtatctga cgctaacatc atacgaggcc tagccatgct
+      601 tttgtctgct gacgcagcta cgtggtggct aggattaaag catcacatct ccacttggaa
+      661 cgaagccaaa gaaaatttaa tatatgcata tggcacccgc cttccaccac atagaatata
+      721 tttggaaata tttgcttccc cgcaggataa cgaaaacaca gacaagtttg ttgctcgtat
+      781 tcgtgcgctt atggcaaagc taccgcggga tgatattact gaaaaagtac aacttgatat
+      841 gatatacggg ttgcttcata atagaatacg cacaagattg cgccgtgaag aaatcacatc
+      901 tttcaattca ttattaaacc atgctcggaa tatagaagat tcgatagagg agactcaatc
+      961 gagaccagtg tcgtccacta gtggtgtgcg ttcgatccgt gcccagccgg cccaggctgc
+     1021 gagtcggcct gaaccgtgcg ccgctcgtgc gagtgccccg gcgccgcgcg cgcgctttcc
+     1081 aaactccgcc gcggccgtcg tgcccgccac cgctgtgcct gtcgctgtcg cccagcctac
+     1141 cgttgccacg cctgccgctg ctgtgccagg ttctgcagag caattcgtga ccacgaagaa
+     1201 acagcgtcca gtgtgctcct actgcaaacg gtttggacat gcacgggaac agtgccgtaa
+     1261 gttaaacaac cgaggtgagc aaagtcaatc taacttttcc gagggtgtgc aaaatgacaa
+     1321 taatgcgttt tatagtgttc agtgtaatgt taataatact aacacaatta gttctaattt
+     1381 acctgttcag aatgcaatgt atgatgttaa gcagcatgac aaaaataatt ttctgagtaa
+     1441 ttttgaatgt caaaattttt gtaaccggga tgcaaatatt aattatgcta ccattaacag
+     1501 aggccctact tccagaaaat cttattttca tgcctgtaat gattctgtgt caaagaatat
+     1561 taactgtaat tgcactagta ataatgagat gccaaccttt tgtgattctc atgttttata
+     1621 taatcaggat gttcggacaa agtgtaaaaa tttaaatatt tgttataacc agggaactag
+     1681 acctaaatgt aagaactcaa ttttacctta taatcaaata attgaaccaa attgtaataa
+     1741 tttaaaattt tcaactaacc atgactgtga cacaaaaggc agtaagtgta attttggaaa
+     1801 aattaacgaa tgtgtggaaa ttgataattg tttgaatttt aattattgta catgtgaggg
+     1861 aagtgttgta gcgtccgtgt acgaccgtga gagtgatgat aggtatttgc atttacggcc
+     1921 tattttcaaa attcaagttc tcggtaaaca gggtactgca cttatagata cagcagctaa
+     1981 gcattgtatt gctggtcaca cgctgtatgc tctccttctg cataagggtc accctcttac
+     2041 tccctccact aggcgagtca aacttgctga tgggcatgtt cggaatatgg atgtattgac
+     2101 aaccatatta ccagtgaggt tagaacacat agtgattaat attccattta taatcttccc
+     2161 tgattctaat gataatgaaa ctttactggg tattgatttt attaatgctg ccaaagttat
+     2221 tattgatttt catcgtcatg aatggtattt tagtactgat gctaaggtgc attataaatt
+     2281 actttttgaa cctatgtctc gtggtgtgtg catagcttct actaacatgc ttcgggatga
+     2341 tgaaggcatg cacttgcaat cagctgagcg ccaagcatta tctgagttcc ttattcggca
+     2401 tgaaagtatt tttacagcag ggggaggtcc gacaccattc atagaacatt gcatagacac
+     2461 cggagatcac cccccgatag ctgtgccgcc ctatcgcctt aacccttcca agaaggagac
+     2521 gatgaagaat gaaatagaga agatgctggc agatgacatc attgaagagt gcgaatccgc
+     2581 ctggtgctct cctgcattga tgataccgaa gtccaatgaa ggattccagc aacacctaca
+     2641 agatctggaa gctgttttta gacgtttgtc tgaatttaaa cttcacgtaa acagagagaa
+     2701 gtgcactttt gccaaagaaa gggtccgtta tctgggccac gtcatcactc cagacggtgt
+     2761 gtctcctgac cctgagaagg tcagtgctgt ccttaatatg ctggaaccat ctaacctaaa
+     2821 acatttaaga acttttctcc aaacatgctc ttggttcagg aagtttattc caaacttttc
+     2881 aaagatagca gaaccgctta ctcgactgac caagaagaat tacacatgga gctggggacc
+     2941 tgaacaaaca caggcattca aagaattgaa gcgtctgctg accacggcgc ccgtacttgt
+     3001 tcaagcgaat tttaaacaac ccttagtact gcgtaccgac gcgagcaact atgcacttgg
+     3061 cgcagtttta gctcaagggg aaggcaagga cgaaaggcct atcgagtatg ctagccgcct
+     3121 actcaccgca gcggagcgca actactctac tacagaacgg gaagcgcttg ctgtagtctg
+     3181 ggccgtggag cgtttcaggc catacctcga cggccaacca attattatag gcagtgacca
+     3241 ccaacccttg cgttggttgc tttctttaaa gtctcctgct ggtaggttgg tccgttgggc
+     3301 gcttaaactc caagaatttg acatcagatt cgagtacacc ccaggaaaag ctaacgttgt
+     3361 cgctgacacg ttaagtagac cgatctgttc caacgaaaca caaaataact gcggcatctg
+     3421 ttctgtcatt tgcgacctgc ccaccaagtc acctacccag ttacgtcaag accagttgac
+     3481 tgatccggaa atacagaaga tcgtcacaga actggaagga gtggatgaac ttgctgctaa
+     3541 aagatggtca gaaagaggat ttctaatgga acaaggtgtt ttatatcgac ttaatccgga
+     3601 ttctgatgcc gaggccccac aattagtcat tcctgcccat caagtgaccg acattctcaa
+     3661 agagcttcac gatgccccta ccgctggaca tgcaggaatt gaccggactt accaacaagt
+     3721 ctcacgtctg ttctacttca caggaatgag aagaatcata accgactatg taaaggcatg
+     3781 tatccattgt caacgctata aggctgctaa taccaagcct ccaggtctat tgcagacgcc
+     3841 ggtgatgaac cagcgcaacg aggtcttggc agttgatctt ttcggcccgt taccacctgg
+     3901 aaaacagggg gagcgttgga tcttgctaat agaagatact gctacgaggt ggacagaact
+     3961 tttcccattg aaggaagcta ctgctgaggc gtgtgcacat gtcctcatag aggagtattt
+     4021 tatgaggttt ggtcttccac gccgactagt ttctgataat ggcgtacaat ttatttcggc
+     4081 agtcatgcgt caatgcatgt ccatcctggg gataaagcaa aaccttatcc ctctctatca
+     4141 cccagaagca aaccccgccg aacgtaaaaa cagagatctt aagactttat tagcacaact
+     4201 cgtggaatgt gaccacactt cctggccaaa catgttacca gtgattcgat tcgctcttaa
+     4261 taacgctaaa tgtcgcacca caggtatgtc acctgcttac ttgtcatttg gcagagagat
+     4321 gaggtccccc acagaagtca cccatgacct tcgtgctgtt ctagacaaag ataactttgt
+     4381 tccccaaata actccctatc tcaggaaatt tgttaactcc ttttcagcgg tgcgcgaacg
+     4441 tgtagagacg cttcaagata aagctaaagg gtatgctgat cgttcgagac ggcccattga
+     4501 aacattcaac gaaggtgaca tggttctcat caaatcacac gtcctcagta agagcgctaa
+     4561 aggccttact tctaagtttg ttccaaaacg cgatggtccg tatcgcatcg ttaaaaaggt
+     4621 cagccctact acttaccacg tcgcgcatgt tgacaaacct gatgaagttt tagggaaata
+     4681 tcatgtgaac gatctcactc tataccgtga gaatcagagt gatgctcttc cgcggccggt
+     4741 gatgcctaaa aagaaacgtg gtcgtccccc aaataatgtt aaaacagatt ctcgagttcc
+     4801 agggcatatg acgacacggc atgctgaacc atgtgctgaa gctccacgtc tttctcccgc
+     4861 agctggtggt atggttggtc ttgcgcctgt ccctcagccc agtagtaatg agatgctagt
+     4921 ccaggagcga gggcgtcctc caggactaga gggggagtat gtagcaaacc gaccggtacg
+     4981 tcactctcgc ggccgtatgc ccgctcgcta tacatagtta gtatctatgt caatcttgta
+     5041 acagtgtata atctatgtt
+//
+
+LOCUS       XM_028178716            3726 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114246258), mRNA.
+ACCESSION   XM_028178716
+VERSION     XM_028178716.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011542.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3726
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..3726
+                     /gene="LOC114246258"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114246258"
+     CDS             2356..3024
+                     /gene="LOC114246258"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028034517.1"
+                     /db_xref="GeneID:114246258"
+                     /translation="MTKPRARRQSRRQSEYFDPAEDDSSPPPTASGNISVNDMVAMMS
+                     TWQRNQEETFEKLLHTVLNQSQRSSPPPAQPAHGNFASCKARYSGAPDESLDGFIDAV
+                     EAYKECANVSETIALRGLSMLLTHEAATWWQGVKTTMNKWDHALASLRGAFGDSRPPH
+                     RIYKELFANPQKASEKTELFISKTRVLLSRLPKDDLTTKVQMDMVYETLINIKILIFI
+                     TLPQ"
+ORIGIN      
+        1 ttgattatat aaacattttc aaatatttat taaccaattt acataaaatc attataatcg
+       61 ttatgtacat ctttcacata gctttagata cacaaaatga taacatctca caacgtggag
+      121 ggccttctat ttattagatt atattatagt aaaactaagc accaacttac aaatatatat
+      181 atattcaatt tgccaagctc ttttttaata agttgaacaa ttaaaaacat tcacaaatac
+      241 aatatggagc tttatagtat gaaaaataca tcttaattct gtacacagtc aggggattag
+      301 gttatttact aataagattg attcatacta attttaataa acagattcgt tatgtaatat
+      361 tgttccaaat ggttttacta atattttatt tggtaattgc cattttctct cattgaagag
+      421 aagtaattgc agctgcagaa gctataagct ttctatgtgg tgaggattta ctactaattc
+      481 ttattaacat aactacatag tgctggttag tgcatcaact aaaataatat aaataggata
+      541 aaaattaaag taacatctaa aaccttctga ccgtaatatt cttaatttat tttcattaaa
+      601 aatattgaat aatttatttt ataattccag atgtttcttt aattattata tacatttttc
+      661 ttttaagcaa tacatttaaa cggtaataat ttattacggt ttaattttct ttactgcgtg
+      721 aaaacataaa cacaatttat ttgacgagaa aaatctctta agattataac tagacttaac
+      781 aaaaaaaaaa gcatgcatta catataacat tccaaaacga gtaattaaaa tattttaata
+      841 atatgaggag ttagatctgt agcttgaaat aaaacaaatc acagtaaatt tgaatataaa
+      901 tagatattta taattttctt aaattaattg aaattttgca cgctagtaag tttaaaattt
+      961 tacactacaa tattcacaaa cgatcaactc cacattaaaa gttatcattc aagatgccat
+     1021 ttttatattt ccttcatata gtattcatca aataatgata aaataattgt attccataat
+     1081 attcttctta tatttataaa gatttcgatt ataacattat ttaagtacaa ttcgttcagc
+     1141 cctccatttc tcacagtatc aacttaacat attaagaatg tcaatctttt atttacacaa
+     1201 atgacaattt agaatttgtt taggatacat gtttaatgaa acttcatgat ctatgagaaa
+     1261 ataacagttt acttatttag gaatgttatt ttcataacgg attttaattt tttttggatc
+     1321 attcaaaaat acttaaaatc aattgactcg tatatttata ttattatagt gtacattaca
+     1381 gtaatattaa gaatattatt gcttattaca agtgaaacag tcgttcatga gcaaacaaag
+     1441 agtaaatttc ttttttctta aatgttcata gattgtagta tttttcaagt attttcgcgt
+     1501 aatgaacaat tcagtcgaaa aattcaaagg cagacctagt aataagttta gaaataatct
+     1561 cttcgttaga taattatcaa aataatttca atatacctat aatagtccag tgcatacgtt
+     1621 taggacatta tgcaagcagt ccgtcaatac aaatttcgga aataaaaata aattatgata
+     1681 tttaaaattt caataacgga atgtggcgaa atcggttagt aaaaataagt tgtggaagcg
+     1741 tcataaagct gactcgagac ttaataaaca tccttgtaat aaatataaaa tatttgacaa
+     1801 tccgagtatt ctactaaagt ttttttcatt atgtttttta gatttttttc ataacgataa
+     1861 ttcttaaatc gtagacttta agggactccg acaaactgtg tactagctgt tcacacgatc
+     1921 gctgctgttc ataccgaatc ttgtgataca taaaggtaac atattataac gcgacgggac
+     1981 atttccgaac gcacccttaa ttcccatcag cgcgttcctc ggaacgcgcc tcaacctgcc
+     2041 gtgattggtc cgcgaccgcg ccgccatcgc aagccgccac tgcgcttgcg catgatagac
+     2101 tgacgccgac gcgctgagac gttctccatt ttgtattatt gttgttgcga cttgtgtgtg
+     2161 cgcgtgcgct tatagtaaga ttgattaaag tgtttgtttt aaagttagtc atagtcatta
+     2221 acctctcgaa cgattattcg acgttttatt ccaaagtaac ccacgaaaca ctcatgaaca
+     2281 ttaaaaatgg acgcccaact agtggctttg gaataaacca cgtgtgaact tagtgagaag
+     2341 tgactatcgt acaaaatgac aaaaccgcgc gcacgtcgtc agtctcgtcg acaatccgag
+     2401 tatttcgacc cggcagagga cgattcttcc ccgccgccga ctgcatcggg aaacatttcc
+     2461 gtcaacgaca tggtcgccat gatgtctacg tggcaacgta accaagagga aacgtttgag
+     2521 aaacttctac atacagttct caaccaatcg cagcggtcat cgcccccgcc cgctcaacct
+     2581 gcacacggaa acttcgcctc gtgcaaggct cgctacagcg gagcgccaga cgaatcactt
+     2641 gacggattta tagacgccgt agaggcctac aaggaatgcg caaacgtaag cgaaactatt
+     2701 gcactacgtg ggttgtcaat gttgttaact catgaagccg cgacatggtg gcaaggagtt
+     2761 aagactacca tgaacaagtg ggatcacgcc ctcgcgtccc taagaggtgc gtttggtgat
+     2821 agccgacctc cacatcgtat atacaaggag ctgttcgcca acccacaaaa agcaagtgag
+     2881 aaaacagaac tcttcatctc taaaactcga gtgctactat cacgtctgcc aaaggacgat
+     2941 ctgacaacca aagtacagat ggacatggtg tacgaaacac tcataaacat taaaatatta
+     3001 atttttatca cattaccaca gtgaactcag ccgatataaa ttgcgactaa tcgaatatgt
+     3061 caaggtggta gtattttcca ggctcttttt tccttattgc cctcgtaggc agacgggcgt
+     3121 acggcccacc tgttggtgat tggttaccgt tgcccatgaa cttcagcaat gcctggggca
+     3181 gaaccgttaa ttactaaatt aattatctaa gagttccgat aacaactaca ttctaaaagg
+     3241 tttgttagtt ttcttcgaat gtttagcctc tggttctcgt ggtacaagga tgtatttttg
+     3301 gaggcgtgtg ggatttgtcc ctccttgttt aattattcga tttcaatagg ctgtgagttc
+     3361 acgtttaaaa catttttgta aggatcaact agactcatga gtttttttcg ctttacatcc
+     3421 agaataatcg aattgtcaaa agattaccga gactggcaaa taaatttctt aattacaagt
+     3481 gtatgaactt tttagtaata aaataaatat aatttcattt acaaagtaca ttcacctaaa
+     3541 aaaggtgaaa ataaattagg tatgtatatt ttttaaagtg gatttgttaa gtgattctcc
+     3601 agaggtaaat tccaattgga gttttctaaa cataacaagt ctgttatata aatatcgacg
+     3661 cttgaaaggc taaacgtgac taagcgacat tatctgcttt gtacataaat gataggcaat
+     3721 aaacat
+//
+
+LOCUS       XM_028179624            2290 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114246892
+            (LOC114246892), mRNA.
+ACCESSION   XM_028179624
+VERSION     XM_028179624.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011551.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2290
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..2290
+                     /gene="LOC114246892"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114246892"
+     CDS             90..2084
+                     /gene="LOC114246892"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114246892"
+                     /protein_id="XP_028035425.1"
+                     /db_xref="GeneID:114246892"
+                     /translation="MLLTHTAATWWQGIKHQVSTWEDVISNLRSAFGDRRPPHRIYVD
+                     LFADGQQPMEKTDLFVARARALLAKLPRGDLCEKVELDMIYGLLHHKIRKRLRREEIT
+                     SFNVLLQKARSIEDSTKEAHTSNAVAETSKGAAAAARARLEPPRPATQRVPTAAVEVS
+                     PRQRSSGDNADATPTAEKPEKRRYCVYCKSYGHTRDQCRKLLLKQTANDSNDNVVSKV
+                     NNIKCYGCGASGVIRSNCSKCSSNFSAVDFIQIPRTRSRGTTTAETSAVGKPSAQVSN
+                     LASLPMVFTGAVPDLFLSSSVHTERPNYVNSSLHTAQLSLVSCNNVSTPPVNNNFARK
+                     CNVNSSHKRVDKQIVSNLPRSDDTPLFTYLSRPVKQGECFNRTHVPSELKSVSPREFC
+                     VNQCVVNNRHKWKTKRSRQCPSRGPLPTRATMIFSGQNQEFDNKSRVTKNFSGHNLET
+                     CAPVKGTTNFNCDSFVTFSSVTSSQNGNARRPILGIEILGIRGRGLIDTAAKRTVAGS
+                     SLYALLQQHNQSFVSSSIRVKLADGSIQTRQMLSTTLDVKLLPGKVIPMEFVVFPDAQ
+                     DKDTLLGVDFLVAAGLAIDFHTSTWRYHGSERVFPLEFEYPSDLTPCSAADFLREDEG
+                     TMLCPPERDRLATLLQCNEDVFRPGGAPMPYAEHHQDDRK"
+ORIGIN      
+        1 acgagtcagt agaaggtttt atcgacgcaa tagaatcgta cagagacgcc gccaatgttc
+       61 ccgatgacgt agccgtaaaa ggtatttcca tgttgctgac acacaccgcc gctacctggt
+      121 ggcagggtat caagcatcaa gtttctacat gggaagacgt catctcaaat ctacgaagtg
+      181 cttttggtga tcgccgccca ccccacagaa tttatgtcga cctattcgca gacggccagc
+      241 agcctatgga gaaaaccgac ctgtttgtcg ccagggctcg agcactcctc gcgaagctac
+      301 ctcgaggcga cctatgtgaa aaagtggagc tcgatatgat atacggatta ctgcatcata
+      361 aaattcgtaa acgccttcgt agagaggaaa tcaccagttt caatgttctc ctgcaaaaag
+      421 cacgaagtat tgaggattct acgaaagaag cgcatacttc aaacgccgtc gccgagacat
+      481 caaagggtgc cgccgccgcc gcccgcgctc gactcgagcc gccgcggcct gcaacgcagc
+      541 gtgtacctac ggccgctgta gaagtttccc cgcgccaacg ttcgtcaggc gataacgccg
+      601 acgccactcc gaccgccgaa aaacccgaga aacgtcgata ctgtgtttat tgtaaaagtt
+      661 acggtcatac gcgtgatcag tgtcgtaaat tgttattaaa acaaaccgcg aatgacagta
+      721 acgataacgt agttagtaaa gtaaataata ttaaatgtta cggttgcggc gcgagcggag
+      781 tcatacgttc taattgttcc aaatgtagtt caaattttag cgcggtcgat tttattcaaa
+      841 taccgcgaac gcgatcgcga ggtacaacga ccgctgagac atcagctgtt ggtaagccgt
+      901 ccgcccaggt gagtaatttg gcaagtttac ctatggtttt tactggggct gtacctgact
+      961 tgtttttatc cagtagtgtt cataccgagc gcccaaatta tgttaattca tcgctacaca
+     1021 ctgctcagct aagtttggta tcatgtaata atgtaagtac accccccgta aataataatt
+     1081 ttgcccgtaa atgtaatgta aactcgtccc ataaacgtgt tgataaacaa attgtttcaa
+     1141 atttgccgcg ttccgatgat acgcctttgt ttacatactt atctcgtcct gttaagcagg
+     1201 gggagtgttt taaccgcact catgtaccta gcgaattgaa atcagtatct cctagggaat
+     1261 tttgtgttaa tcagtgcgtc gtaaataata gacataaatg gaaaacgaaa cgttctcgtc
+     1321 agtgtccatc acgtggtccg ttaccaacta gggcgaccat gattttttca ggacaaaacc
+     1381 aggaattcga taataaaagt agggtgacca aaaatttttc aggacacaac ctggaaacat
+     1441 gtgcaccggt taaagggacc acaaatttta attgtgatag ttttgtcacc ttttcgtctg
+     1501 taacttcttc gcaaaatggc aacgcgcgac gacctatttt aggtatagag attttaggaa
+     1561 tccgaggtag gggtttaatc gacaccgcag ccaagcgaac tgttgccggt tcttcactct
+     1621 acgccttact gcaacagcat aatcagtctt ttgtgtctag ttctatacgt gttaagcttg
+     1681 ccgatggttc aattcaaacg cgacaaatgt tgtcaacgac acttgatgta aaattattac
+     1741 cgggtaaagt tattcccatg gaatttgtcg tatttccgga cgcccaggat aaggacacat
+     1801 tattgggtgt agacttttta gtagcagctg gtttagccat cgacttccat acttcgacat
+     1861 ggcgctacca tggttctgaa cgagtttttc cattggagtt cgagtatccc agtgacctca
+     1921 cgccttgttc tgctgctgat ttcttaagag aagacgaggg aactatgctg tgtcctcccg
+     1981 agcgtgaccg cctagctact cttctgcagt gcaacgagga tgtcttcaga ccagggggag
+     2041 ccccaatgcc ttacgctgaa catcatcagg atgataggaa gtagcaaacc gacaaaattc
+     2101 agttatctgg tgccagttac caagtaggtg atctagtcct tctctcaacg cacttgttaa
+     2161 gtgatgccgc caaaggtaga acgaagaagt tcatgcctaa gcgtgacgga ccctaccaga
+     2221 ttagcaatat cgttagtcct actacctatg aggttactga tttgaattcg taggttttag
+     2281 ggaaatttca
+//
+
+LOCUS       XM_028182364             965 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114248928
+            (LOC114248928), mRNA.
+ACCESSION   XM_028182364
+VERSION     XM_028182364.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011589.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 4% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..965
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..965
+                     /gene="LOC114248928"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 95% coverage of the annotated
+                     genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114248928"
+     CDS             6..965
+                     /gene="LOC114248928"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114248928"
+                     /protein_id="XP_028038165.1"
+                     /db_xref="GeneID:114248928"
+                     /translation="MIMVNTRSDNRASRNRRDDDATDPSSVRVPRSVSPSASAAQENG
+                     AGDASRIIYESFREASTSASPACEIGAADASRSNHHNRSGDSHVAPAEATFSSEHVST
+                     IVEALQRSQTEVLKSLFETIRHNTSTPVPASHAHANFARCTARFSGTAGESLDAFLDA
+                     AEAYRDCSDISDENAVRGLSMLLCGDAAVWWLGVKSSISSWYDAVSGLRDAFGDRRPP
+                     HRIYAQLFKRGQQNDERTDRFIAVTRALLAKLPAGDLSEKVQLDMIYGLLSRRVRERL
+                     RRDEVSSFDVLLQRARQIEDATDELRYEHDASXTVSAYKPGIS"
+ORIGIN      
+        1 aactcatgat catggtgaac actcgaagtg ataaccgtgc tagccgaaat cgcagggatg
+       61 atgatgcaac ggacccgtcg tctgtccgcg tcccgcgatc ggtctccccg agcgcgtccg
+      121 ccgcccaaga aaatggcgcc ggtgacgcct cgcgcataat ctacgagtcc tttcgagaag
+      181 catctacgag cgcgtctccc gcctgcgaaa tcggcgctgc tgacgcctcg cgctccaatc
+      241 accacaaccg atccggcgac agccacgtag cccccgccga agccaccttc tccagcgagc
+      301 acgtgtcaac aatagtagag gcactacagc ggagccaaac agaggttttg aaatcattat
+      361 ttgaaacgat acggcacaac acatcaacac cagtgcccgc atcacatgca cacgcgaact
+      421 tcgcccgatg taccgcgcgc tttagtggga ctgcaggtga gtcgcttgat gccttcttgg
+      481 atgcggccga ggcctatcgc gattgctccg acatctcgga tgagaacgcc gtccggggat
+      541 tgtcgatgct gttgtgcggc gacgccgccg tctggtggct gggtgtgaag tcctccatat
+      601 cttcgtggta cgatgccgta tcaggcctac gagacgcttt cggtgatcgc agacctccac
+      661 accgtatata cgctcaacta ttcaaacgag gtcaacaaaa cgatgaaaga acggaccgtt
+      721 tcatcgctgt gacgcgcgct cttctcgcga agctacctgc cggcgaccta agcgagaaag
+      781 tccagctgga catgatctac ggactcctca gccgccgcgt acgggaaaga cttcgccgcg
+      841 acgaagtaag ttcattcgac gtgctcctgc aaagagcgcg ccaaattgaa gacgcgacgg
+      901 acgaacttcg ctacgagcac gacgcctcaa naacagtttc tgcttacaaa ccagggatca
+      961 gttaa
+//
+
+LOCUS       XM_028182487             570 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 1-like (LOC114249022), mRNA.
+ACCESSION   XM_028182487
+VERSION     XM_028182487.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011479.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..570
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..570
+                     /gene="LOC114249022"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:114249022"
+     CDS             1..570
+                     /gene="LOC114249022"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_028038288.1"
+                     /db_xref="GeneID:114249022"
+                     /translation="MPPKKMPNSEERDARAASPPHVPSSDAPPASVCFRPEDITMLID
+                     TLQRTQLDAFRELLDSVRQSATPTFDHRPANNFSRCKSVFSGRADESVEGFIDAIESY
+                     RDAANVPDDVAVKGISMLLTHTAATWWQGIKHQVSTWEDVISNLRSAFGDRRPPHRIY
+                     VDLFADGQQPMEKTEAIICQIDHFCVRPL"
+ORIGIN      
+        1 atgccgccga agaagatgcc gaattccgag gagcgcgacg cgagagccgc gtcgccgccc
+       61 cacgtgccgt cgagtgacgc gccgcccgcc agtgtttgct tccgcccgga agacatcacc
+      121 atgctgatcg acacccttca acgaacgcag ctagacgcgt tccgggagct gttagatagc
+      181 gtcaggcagt cggcgactcc tacattcgac catcggcccg ccaacaactt cagccgctgc
+      241 aaatctgtat tcagcggacg cgcagacgag tcagtagaag gttttatcga cgcaatagaa
+      301 tcgtacagag acgccgccaa tgttcccgat gacgtagccg taaaaggtat ttccatgttg
+      361 ctaacacaca ccgccgctac ctggtggcag ggtatcaagc atcaagtttc tacatgggaa
+      421 gacgtcatct caaatctacg aagtgctttt ggtgatcgcc gcccacccca cagaatttat
+      481 gtcgacctat tcgcagacgg ccagcagcct atggagaaaa ccgaggctat tatatgccaa
+      541 atcgaccact tttgcgtccg acccctttag
+//
+
+LOCUS       XM_028182658            2035 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114249185
+            (LOC114249185), mRNA.
+ACCESSION   XM_028182658
+VERSION     XM_028182658.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011595.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 1% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2035
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..2035
+                     /gene="LOC114249185"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 99% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114249185"
+     CDS             2..2035
+                     /gene="LOC114249185"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114249185"
+                     /protein_id="XP_028038459.1"
+                     /db_xref="GeneID:114249185"
+                     /translation="MIMVNTRSDNRASRNRRDDDATDPSSVRVPRSVSPSASAAQENG
+                     AGDASRTIYESFREASTSASPACEIGAADASRSNHHNRSGDSHVAPAEATFSSEHVST
+                     IVEALQRSQTEVLKSLFETIRHNTSTPVPASHAHANFARCTARFSGTAGESLDAFLDA
+                     AEAYRDCSDISDENAVRGLSMMLCGDAAVWWLGVKSSISSWCDAVSALRDAFGDRRPP
+                     HRIYAQLFKRGQQNDERTDRFIAATRALLAKLPAGDLSEKVQLDMIYGLLSRRVRERL
+                     RRDEVSSFDVLLQRARQIEDATEELRYEHDASRPTGELARKPYESTTGTGRTRPPPAV
+                     AARTAACAPSGAAPGHEPATQPPLAPGTPRVFDSVERKRRPKCSYCHFFGHEKNQCRK
+                     LDSKQGDQSHTNLSKNKTHSKSSESEIKSDQSFYCIDSKVCFKFENDKSVKDRIHSSN
+                     LVHETFIPILPNSDACTDTYTQYKQRRIPQNYNFAAHNSNRSRFKVTDNSDNADRARI
+                     DRPGSSREKNHNITACNTKFITCNRSSDDRKNNNSLSENITHVNPSAATTENVNSLVV
+                     EPKNDNFFLNKSNHLDMFSGVDGHLCRNANANGQCQTLTCAVAEDSSFVHQRCPGDSK
+                     ICIPLFENYCDKNGINPNFPKYGNKRDVIGFDCFYGCGGDDDLMGPPIGTADF"
+ORIGIN      
+        1 catgatcatg gtgaacactc gaagtgataa ccgtgctagc cgaaatcgca gggatgatga
+       61 tgcaacggac ccgtcgtctg tccgcgtccc gcgatcggtc tccccgagcg cgtccgccgc
+      121 ccaagaaaat ggcgccggcg acgcctcgcg cacaatctac gagtcctttc gagaagcatc
+      181 tacgagcgcg tctcccgcct gcgaaatcgg cgctgctgac gcctcgcgct ccaatcacca
+      241 caaccgatcc ggcgacagcc acgtggcccc cgccgaagcc accttctcca gcgagcacgt
+      301 gtcaacaata gtagaggcac tacagcggag ccaaacagag gttttgaaat cattatttga
+      361 aacgatacgg cacaacacat caacaccagt gcccgcatca catgcacacg cgaacttcgc
+      421 ccgatgtacc gcgcgcttta gtgggactgc aggtgagtcg cttgatgcct tcctggatgc
+      481 ggctgaggcg tatcgcgact gctccgacat ctcggatgag aacgccgtcc ggggattgtc
+      541 catgatgttg tgcggcgacg ctgccgtctg gtggctgggt gtgaagtcct ccatatcttc
+      601 gtggtgcgat gccgtatcag ccctacgaga cgctttcggt gatcgcagac ctccacaccg
+      661 tatatacgct caactattca aacgaggtca acaaaacgac gaaagaacgg accgtttcat
+      721 cgctgcgacg cgcgctcttc tcgcgaagct acctgccggc gacctaagcg agaaagtcca
+      781 gctggacatg atctacggac tcctcagccg ccgcgtacgg gagagacttc gccgcgacga
+      841 agtaagttca ttcgacgtgc tcctgcaaag agcgcgccaa attgaagacg cgacggaaga
+      901 acttcgctac gagcacgatg cctcaagacc gacgggagaa ttagcaagaa aaccatacga
+      961 gtcgacgacc ggcaccggtc gcacccgccc tccgccagca gtagcagcgc gcacggccgc
+     1021 gtgcgctccg agcggcgccg cccccggcca cgagcccgcg acgcagccgc cgcttgctcc
+     1081 cggaacgccg cgtgtatttg actccgtcga aaggaagcga cgcccgaaat gttcgtattg
+     1141 ccatttcttc ggtcacgaga agaaccagtg tcgtaagtta gattcaaaac aaggtgatca
+     1201 atctcatact aacttatcta aaaataaaac tcactcaaaa tctagtgaaa gtgaaattaa
+     1261 aagtgatcag tcattttatt gtatcgattc aaaagtttgt tttaaatttg aaaacgacaa
+     1321 atcagtaaaa gaccgtattc atagttctaa tttagtgcat gaaactttta tacctatttt
+     1381 gccaaatagt gatgcatgca ctgataccta cacacagtat aaacagcggc gaattccaca
+     1441 aaattataat tttgctgccc ataattcaaa tcgttcgcgg tttaaggtta ctgataacag
+     1501 tgataatgcc gatcgagctc gtattgatcg cccaggttct tctcgagaaa agaaccacaa
+     1561 tatcactgca tgcaacacga aattcataac atgtaatcga tcgagtgacg atcgcaaaaa
+     1621 taataatagt ctgagcgaaa acattactca tgttaaccct tcagccgcca caactgaaaa
+     1681 tgttaactct ttggttgtcg aacctaaaaa tgataatttt tttttaaaca aaagtaatca
+     1741 tttggatatg ttttctggcg tcgacggaca tctttgccgc aatgccaatg caaacgggca
+     1801 atgtcaaaca ttaacctgcg cggtcgcaga ggattcaagt tttgttcatc aaagatgtcc
+     1861 gggcgacagt aagatttgta taccattatt tgaaaattat tgtgataaaa acgggataaa
+     1921 cccgaatttt ccgaaatatg ggaataagcg tgatgtaata ggatttgatt gtttttatgg
+     1981 ttgcggcgga gatgacgatc ttatgggacc ccctattggt acggccgatt tttaa
+//
+
+LOCUS       XM_028185985            2268 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114251642
+            (LOC114251642), mRNA.
+ACCESSION   XM_028185985
+VERSION     XM_028185985.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011480.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2268
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..2268
+                     /gene="LOC114251642"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114251642"
+     CDS             66..2072
+                     /gene="LOC114251642"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114251642"
+                     /protein_id="XP_028041786.1"
+                     /db_xref="GeneID:114251642"
+                     /translation="MLIDTLQRTQLDAFRELLDSVRQSATPTFDHRPANNFSRCKSVF
+                     SGRADESVEGFIDAIESYRDAANVPDDVAVKGISMLLTHTAATWWQGIKHQVSTWEDV
+                     ISNLRSAFGDRRPPHRIYVDLFADGQQPMEKTDLFVARARALLAKLPRGDLCEKVELD
+                     MIYGLLHHKIRKRLRREEITSFNVLLQKARSIEDSTKEAHTSNAVAETSKGAAAAARA
+                     RLEPPRPATQRVPTAAVEVSPRQRSSGDNADATPTAEKPEKRRYCVYCKSYGHTRDQC
+                     RKLLLKQTANDSNDNVVSKVNNIKCYGCGASGVIRSNCSKCSSNFSAVDFIQIPRTRS
+                     RGTTTAETSAVGKPSAQVSNLASLPMVFTGAVPDLFLSSSVHTERPNYVNSSLHTAQI
+                     SLVSCNNVSTPPVNNNFARKCNVNSSHKRVDKQIVSNLPRSDDTPLFTYLSRPVKQGE
+                     CFNRTHVPSELKSVSPREFCVNQCVVNNRHKWKTKLSRQCPSRGPLPTRATMIFSGQN
+                     QEFDNKSRVTKNFSGHKLEIYAPVKGTTNFNCDSFVTLSSVTSSQNGNARRPILGIEI
+                     LGIRGRGLIDTAAKRTVASSSLYALLQQHNQPFVSSSMRVKLADGSMQTRQMLTTTLD
+                     VKLLPCKMILTEFVVFPDAQDNDTLLGVDFLVAAGLAIDFDTST"
+ORIGIN      
+        1 cgccccacgc gccgtcgagt gacgcgccgc ccgccagtgt ttgcttccgc ccggaagaca
+       61 tcaccatgct gatcgacacc cttcaacgaa cgcagctaga cgcgttccgg gagctgttag
+      121 atagcgtcag gcagtcggcg actcctacat tcgaccatcg gcccgccaac aacttcagcc
+      181 gctgcaaatc tgtattcagc ggacgcgcag acgagtcagt agaaggtttt atcgacgcaa
+      241 tagaatcgta cagagacgcc gccaatgttc ccgatgacgt agccgtaaaa ggtatttcca
+      301 tgttgctgac acacaccgcc gctacctggt ggcagggtat caagcatcaa gtttctacat
+      361 gggaagacgt catctcaaat ctacgaagtg cttttggtga tcgccgccca ccccacagaa
+      421 tttatgtcga cctattcgca gacggccagc agcctatgga gaaaaccgac ctgtttgtcg
+      481 ccagggctcg agcactcctc gcgaagctac ctcgaggcga cctatgtgaa aaagtggagc
+      541 tcgatatgat atacggatta ctgcatcata aaattcgtaa acgccttcgt agagaggaaa
+      601 tcaccagttt caatgttctc ctgcaaaaag cacgaagtat tgaggattct acgaaagaag
+      661 cgcatacttc aaacgccgtc gccgagacat caaagggtgc cgccgccgcc gcccgcgctc
+      721 gactcgagcc gccgcggcct gcaacgcagc gtgtacctac ggccgctgta gaagtttccc
+      781 cgcgccaacg ttcgtcaggc gataacgccg acgccactcc gaccgccgaa aaacccgaga
+      841 aacgtcgata ctgtgtttat tgtaaaagtt acggtcatac gcgtgatcag tgtcgtaaat
+      901 tgttattaaa acaaaccgcg aatgacagta acgataacgt agttagtaaa gtaaataata
+      961 ttaaatgtta cggttgcggc gcgagcggag tcatacgttc taattgttcc aaatgtagtt
+     1021 caaattttag cgcggtcgat tttattcaaa taccgcgaac gcgatcgcga ggtacaacga
+     1081 ccgctgagac atcagctgtt ggtaagccgt ccgcccaggt gagtaatttg gcaagtttac
+     1141 ctatggtttt tactggggct gtacctgact tgtttttatc cagtagtgtt cataccgagc
+     1201 gcccaaatta tgttaattca tcgctacaca ctgctcagat aagtttggta tcatgtaata
+     1261 atgtaagtac accccccgta aataataatt ttgcccgtaa atgtaatgta aactcgtccc
+     1321 ataaacgtgt tgataaacaa attgtttcaa atttgccgcg ttccgatgat acgcctttgt
+     1381 ttacatactt atctcgtcct gttaagcagg gggagtgttt taaccgcact catgtaccta
+     1441 gcgaattgaa atcagtatct cctagggaat tttgtgttaa tcagtgcgtc gtaaataata
+     1501 gacataaatg gaaaacgaaa ctttctcgtc agtgtccatc acgtggtccg ttaccaacta
+     1561 gggcgaccat gattttttca ggacaaaacc aggaattcga taataaaagt agggtgacca
+     1621 aaaatttttc aggacataaa ctggaaattt atgcaccggt taaggggacc acaaatttta
+     1681 attgtgatag ttttgtcacc ctttcgtctg taacttcttc gcaaaatggc aacgcgcgac
+     1741 gacctatttt aggtatagag attttaggaa tccgaggtag gggtttaatc gacaccgcag
+     1801 ccaagcgaac tgttgccagt tcttcactct acgccttact gcaacagcat aatcagcctt
+     1861 ttgtgtctag ttctatgcgt gttaagctcg ccgatggttc aatgcaaaca cgacaaatgc
+     1921 tgacaacgac acttgacgtg aagttattac cgtgtaagat gattctcaca gaattcgtcg
+     1981 tattcccgga cgcccaggat aatgacacat tattgggtgt agatttttta gtagcagctg
+     2041 gtttagccat tgacttcgat acttcgacat gacgctacca aggttctgaa cgagtttttc
+     2101 cattggagtt cgagtatccc agtgacctca cgccttgttc tgctgctgat ttcttaagag
+     2161 aagacgaggg aactatgctg tgtcctcccg aacgtgaccg cctagctact cttctgcagt
+     2221 gcaacgagga tatcttcaga ccagggggag acccaatgcc ttacgctg
+//
+
+LOCUS       XM_028186235            1321 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114251838), partial mRNA.
+ACCESSION   XM_028186235
+VERSION     XM_028186235.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011699.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..1321
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..>1321
+                     /gene="LOC114251838"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 99% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114251838"
+     CDS             770..>1321
+                     /gene="LOC114251838"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028042036.1"
+                     /db_xref="GeneID:114251838"
+                     /translation="MSEEKPELMVMTQEQFTTLINKLSITYEGSQHKSSFTRCTKRYD
+                     GERNHNKVEEFITNISIYKKIEKITDEDALEGLTLLLTGQAATWWSGVRGEIKKWNQA
+                     LDAIRSAFAPKMQPHEVYLELFAKKQTNETIDAFVCDKRALLSHLPAKRHKEEEELDF
+                     VYGLLNIRFKKEIPRYEIKSFSEL"
+ORIGIN      
+        1 tgctagcgcc attctggagg atttttgaac tgttatttag tgctgaaagt aggacacttt
+       61 ttcaagcttc tcccatatga gacggttctc cttttacctc taccttccac ataagcgaga
+      121 agtgtcaaat gtcaagtcac gaatgcctgt gtcaatccgc gtccagtgtt gccgtggtaa
+      181 aaaactcaaa acccacagat tggtttcgaa aattataatt aaaaaatccc tattatagca
+      241 atgctacatt tttcctacaa cgctgcactg tgacgcgctc actcacacaa cgataaccat
+      301 gagtaatcta cgcatcgcca caccactacg acgtctacga tcgctattta agaggccgca
+      361 gcgcgccagt tatgacattc gatagctaga cggcaacgag tgcgatagcc ccgcagtcca
+      421 ctcgtctgcc caagtttgat ctgagcggta gccccgcagc cctcagagaa agcatcagct
+      481 aggaggttaa ggaacgcggt agccccgcag cccgttccaa gaaccaccct taggaattgt
+      541 acgtttacct tactatctac gtatccgtgt gttttgtata atttgttaca tgaacgaata
+      601 aaattcctgt ttactcagac atcagttatt ttaattcatc tggcaacaac atattggcgc
+      661 ccaacggcaa aaaaaaacta ccaaggatct accctcaata aattggattt ggatttgttg
+      721 tctattatct caataaattg gatttggaat tgtaatctac ccacacaaaa tgtcagaaga
+      781 aaaacctgaa ctgatggtta tgacgcagga gcaattcacg acactcatta acaagttgtc
+      841 aattacatac gaaggtagcc aacacaaaag cagtttcact cgttgcacaa aaaggtacga
+      901 cggagaaaga aatcataata aagtagaaga gtttatcaca aatattagta tctacaagaa
+      961 aattgaaaaa atcaccgacg aagacgctct cgaaggatta acgttgttac taacaggaca
+     1021 agcagctacg tggtggagtg gcgtcagagg tgagataaaa aagtggaatc aagctttaga
+     1081 cgcgatcaga agtgcatttg ccccaaaaat gcaaccgcat gaagtttacc tggaattgtt
+     1141 tgcgaagaag caaacaaacg aaactattga tgcattcgtt tgtgacaaac gtgccttgct
+     1201 atcgcatctt ccagcaaaaa ggcacaagga agaagaggaa ctggatttcg tatacggact
+     1261 cctcaatatc cgcttcaaaa aagaaattcc tcgctatgag atcaaatcgt tctcagagct
+     1321 a
+//
+
+LOCUS       XM_028186757            1261 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114252253
+            (LOC114252253), mRNA.
+ACCESSION   XM_028186757
+VERSION     XM_028186757.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011868.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 1% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1261
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..1261
+                     /gene="LOC114252253"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 98% coverage of the annotated
+                     genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114252253"
+     CDS             74..1261
+                     /gene="LOC114252253"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114252253"
+                     /protein_id="XP_028042558.1"
+                     /db_xref="GeneID:114252253"
+                     /translation="MLLNGNAAMWWQGVKASITSWDDALSSLQSAFGDCRPPHRVYLE
+                     LFKMSQGQREKTEIFVARARALLARLPPGDLSEKVQIDMLYGLLHRRVRKRLRRDEIT
+                     SYDTLLKKTRHIEDSIYETSPPEFIHHPQRATPRSSGSTVGEVPAGASTSARMTPRKI
+                     FNSGAAGGPPRDDSAAPSTVRVPAPRYTNPDNVSSTSIVKRLFCVYCKKYGHIRYECL
+                     KLASKTKFDNENTQAVSSCYGCGTKAVTRSQCTKCNASYYAVDAARTRSVTSDLPIGK
+                     VNKQLSSSVNSIHRDSSLHTACTSNTVKSSIFINNRKQCFVDNENNYYPNDFKAILPP
+                     RFFGTDNKVRLQNYSRLNHNINNNISSRNRPLMRYSSGTKPKYSYSEVPSGRDRVTMM
+                     KRK"
+ORIGIN      
+        1 tttccttgac gcggtcgaat catacaaaga ttgtgctgac gtaggacacg ccatcgcgtt
+       61 atgaggactc tcgatgttac taaacggaaa tgcagccatg tggtggcaag gcgttaaagc
+      121 tagcatcact tcctgggacg acgctttatc atcgttacaa agcgctttcg gtgattgcag
+      181 accgccccat cgagtctact tagagctctt caaaatgtcg caaggacaaa gagagaagac
+      241 ggagatcttc gttgccagag cacgagccct gctagctcga ctcccacctg gtgaccttag
+      301 tgagaaagtt caaattgata tgctttacgg ccttctacac cgtcgtgttc gtaaaagatt
+      361 aagaagagac gaaataactt catacgacac gttattaaag aaaacgcgcc atatcgagga
+      421 ctccatctac gagaccagtc cgcctgaatt tattcatcat cctcagcgag cgacgccacg
+      481 ttcatcgggt agtaccgtag gcgaagttcc cgccggtgct tcgacttcgg cgcggatgac
+      541 gccgcggaaa atattcaact cgggcgccgc tggcggcccg ccacgcgacg acagcgctgc
+      601 gccgagcacc gttcgagtcc ccgcgcctcg ctacacgaac cctgataatg tatcatctac
+      661 gtcgattgtt aaaagactgt tctgtgttta ttgcaaaaag tacggacata ttcgttatga
+      721 gtgtttaaaa ttagcgtcaa aaacgaaatt cgacaacgaa aatacgcaag ctgtatcctc
+      781 gtgttacggg tgtggtacca aagctgttac tcggtctcag tgtacaaagt gtaacgcaag
+      841 ttattacgct gtcgacgctg cacggacccg atcagtcaca tccgatttac ctattggtaa
+      901 agtaaataaa cagctgtcaa gttcagtgaa ctctattcat cgtgacagct cgttgcatac
+      961 agcttgcact tcaaacaccg taaagtcgtc catttttatt aataatcgta aacaatgttt
+     1021 tgttgataat gaaaataatt attatcctaa cgattttaag gcgattcttc ccccgcgctt
+     1081 tttcggtact gataacaagg ttagacttca aaattattct agacttaatc ataatataaa
+     1141 caataatatt agttctagga ataggcccct gatgcgttac tcgagtggta ccaaaccaaa
+     1201 atatagttat tccgaggtac caagtggccg cgatagggtg accatgatga aacgaaaata
+     1261 g
+//
+
+LOCUS       XM_028186800             776 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114252305), partial mRNA.
+ACCESSION   XM_028186800
+VERSION     XM_028186800.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021012014.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 6% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 5' end.
+FEATURES             Location/Qualifiers
+     source          1..776
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            <1..776
+                     /gene="LOC114252305"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 93% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114252305"
+     CDS             <1..776
+                     /gene="LOC114252305"
+                     /codon_start=3
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028042601.1"
+                     /db_xref="GeneID:114252305"
+                     /translation="SQHKSSFARCTKRYDGERNHNKVEEFITNITIYKKIEKITDEDA
+                     LEGLTLLLTGQAATWWSGVKGEIKKWNPALDAIRSAFAPKMQPHEVYLELFAKKQTNE
+                     TIDAFVCDKRALLSHLPAKRHKEEEELDFVYGLLNIRFKKEIPRYEIKSFSELLERGR
+                     HIENLAKEAEEIAETSLRTGIERKQPKRCSYCGKKGHFQEVCRKRLSEEAMGKNKSSS
+                     ESVQISCYGCGVPGVFRSNCKTCKNNETPPNVMLPDELK"
+ORIGIN      
+        1 gtagccaaca caaaagcagt ttcgctcgtt gcacaaaaag gtacgacgga gaaagaaatc
+       61 ataataaagt agaagaattt atcacaaata ttactatcta caagaaaatt gaaaaaatca
+      121 ccgacgaaga cgctctcgaa ggattaacgt tgttactaac aggacaagca gctacgtggt
+      181 ggagtggcgt caaaggtgag ataaaaaagt ggaatccagc tttagacgcg atcagaagtg
+      241 catttgcccc aaaaatgcaa ccgcatgaag tttatctgga attgtttgcg aagaagcaaa
+      301 caaacgaaac tattgatgca ttcgtttgtg acaaacgtgc cttgctatcg catcttccag
+      361 caaaaaggca caaggaagaa gaggaactgg atttcgtata cggactcctc aatatccgct
+      421 tcaaaaaaga aattcctcgc tatgagatca aatcgttctc agagctattg gaacgaggtc
+      481 gacatattga aaaccttgcc aaagaagccg aagaaattgc agaaactagc ctgcgcacgg
+      541 gtattgagag gaagcagccg aaaagatgtt cgtactgtgg caaaaaaggc cattttcaag
+      601 aagtttgccg taaaagattg tcagaggaag caatgggaaa aaataagtcc tcaagcgaaa
+      661 gtgtacagat aagctgttat ggttgtggag taccgggggt atttcgcagc aactgcaaaa
+      721 cgtgtaaaaa caatgaaacg ccgccaaatg tgatgttgcc agatgaatta aaataa
+//
+
+LOCUS       XM_028186872            1250 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina uncharacterized LOC114252393
+            (LOC114252393), partial mRNA.
+ACCESSION   XM_028186872
+VERSION     XM_028186872.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021012503.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 8% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..1250
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..>1250
+                     /gene="LOC114252393"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 91% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114252393"
+     CDS             24..>1250
+                     /gene="LOC114252393"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC114252393"
+                     /protein_id="XP_028042673.1"
+                     /db_xref="GeneID:114252393"
+                     /translation="MAKCTARFDGVARDPEAVEAFIDSVEVYKECACVSDDIALRGLP
+                     MLMEGEAAIWWRGVRNEVSSWPDALKRLRAMYGVPRPAHKVFRDVFSSEQGDELADSF
+                     IVEDTCYAVQICAVPEPTQGSQVRHKSIGQLYVYSFVNVNTFSDSHCNDKHSVSRPIL
+                     HIGIQGYNGTALLDTAARRSIAGYTLYALFQRLGMKFRTENMSVRLADGTTRNTKILL
+                     THADVELSSVCIPIEFIIFPDSQNNETLLGIDFILKARLIIDFSSMTWRSADQPRDIH
+                     PLTCENSRDPISCASINLLREDEGKFLSESEKGRLVDLLGEYTDVFEEVGEPTPFSEH
+                     RIDTGDHPPIAVPPYRVTPARKEVMRAELDKMLAEDVIEECESAWSAPCVLVPKPNGT
+                     YRFCVDYRKLNAVTKTD"
+ORIGIN      
+        1 cgtccccgac gccaacaagt aacatggcta aatgcaccgc gcgttttgat ggcgtcgctc
+       61 gcgatccgga ggccgttgaa gcgtttatcg actctgtgga ggtgtacaag gagtgtgcgt
+      121 gcgtctccga cgatatcgca ttgcgtggac taccaatgct catggaaggc gaagcagcca
+      181 tatggtggag aggggtccgg aacgaagtgt cctcgtggcc cgacgctctc aaaaggttac
+      241 gagctatgta tggtgtgcca cgccctgcac ataaagtttt tcgtgacgtg ttttcgtctg
+      301 agcaaggtga tgagcttgct gacagtttca tagtggagga tacgtgctat gctgtccaga
+      361 tctgcgccgt acccgagcct acgcagggaa gccaggttag acataaatct attggacaat
+      421 tatatgtcta ttcttttgta aatgtaaaca ctttctcaga ttcacattgt aatgataaac
+      481 attctgtaag tcgacctata ttgcatatag gtatacaggg ttataatggg actgctttgt
+      541 tagataccgc cgcacggcgt agtatcgcgg gttacacact ctacgcgctt tttcaacgtt
+      601 taggtatgaa gtttcgcact gaaaatatgt cggtgagact cgcagatggt accactcgga
+      661 acactaagat attattaact catgcagacg ttgaattaag ttcagtatgt atacctattg
+      721 agtttattat attccccgat tctcagaata atgaaacctt gttaggaata gattttattt
+      781 tgaaggcacg attaataatt gatttctctt ctatgacttg gcgctcggct gatcagcccc
+      841 gggacattca ccctttgaca tgtgaaaatt cacgtgaccc cataagttgc gcttctataa
+      901 atttgttgcg tgaggatgaa ggcaaattct tatcggagtc ggaaaagggg cgtctggtgg
+      961 atttactagg tgaatatact gatgttttcg aggaagtcgg tgagccgact cctttttcag
+     1021 agcatcggat cgacaccggc gaccaccctc ctatcgcggt acctccgtat cgtgtcacgc
+     1081 cggcgaggaa agaggtcatg cgcgccgagc tcgacaagat gctagcagag gacgtgatcg
+     1141 aggaatgtga gtctgcgtgg tccgcgccgt gtgtcttggt gccgaaacct aacggtacgt
+     1201 ataggttttg tgttgattat aggaaactga atgcggtcac caagaccgat
+//
+
+LOCUS       XM_028186886             600 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114252406), partial mRNA.
+ACCESSION   XM_028186886
+VERSION     XM_028186886.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021012670.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 4% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 5' end.
+FEATURES             Location/Qualifiers
+     source          1..600
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            <1..600
+                     /gene="LOC114252406"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 95% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114252406"
+     CDS             <1..600
+                     /gene="LOC114252406"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028042687.1"
+                     /db_xref="GeneID:114252406"
+                     /translation="VVSHGVSHAANNMASLQESQMAAFERLLDRVFEHKTQLESSATP
+                     TSEPTSPPSSTPAHHAGNFASCTARFSGAPGDSLDGFLDAVESYKDCADVGHAIALRG
+                     LSMLLTGNAAVWWQGVKASITSWDDALSSLRSAFGDCRPPHRVYLELFKMSQGQREKT
+                     EIFVARARALLARLPPGDLSEKVQIDMLYGLYTVVFVKD"
+ORIGIN      
+        1 gtcgtcagtc acggcgtcag tcacgccgca aacaacatgg cgtcattaca agaaagtcaa
+       61 atggcagcat tcgaacgcct actcgaccga gtttttgagc ataaaactca actcgaatca
+      121 tcagcaacac cgacgtcgga gccgacatcg ccgccttcct cgacgcccgc tcaccatgct
+      181 gggaacttcg cgtcatgcac ggcgcggttc agcggagcgc ccggcgactc actcgacggt
+      241 ttccttgacg cggtcgaatc atacaaagat tgtgctgacg taggacacgc catcgcgtta
+      301 cgaggactct cgatgttact aaccggaaat gcagccgtgt ggtggcaagg cgttaaagct
+      361 agcatcactt cctgggacga cgctttatca tcgttacgaa gcgctttcgg tgattgcaga
+      421 ccgccccatc gagtctactt agagctcttc aaaatgtcgc aaggacaaag agagaagacg
+      481 gagatcttcg ttgccagagc acgagccctg ctagctcgac tcccacctgg tgaccttagt
+      541 gagaaagttc aaattgatat gctttacggc ctttacaccg tcgtgttcgt aaaagattaa
+//
+
+LOCUS       XM_028188020             814 bp    mRNA    linear   INV 15-FEB-2019
+DEFINITION  PREDICTED: Bombyx mandarina activity-regulated cytoskeleton
+            associated protein 2-like (LOC114253228), mRNA.
+ACCESSION   XM_028188020
+VERSION     XM_028188020.1
+DBLINK      BioProject: PRJNA522300
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Bombyx mandarina (wild silkworm)
+  ORGANISM  Bombyx mandarina
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_021011484.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Bombyx mandarina Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 1% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..814
+                     /organism="Bombyx mandarina"
+                     /mol_type="mRNA"
+                     /isolate="Bman2017"
+                     /db_xref="taxon:7092"
+                     /chromosome="Unknown"
+                     /tissue_type="Silk gland"
+                     /country="China"
+                     /collection_date="2008"
+                     /breed="wild silkmoth"
+     gene            1..814
+                     /gene="LOC114253228"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 98% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 4 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:114253228"
+     CDS             176..814
+                     /gene="LOC114253228"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028043821.1"
+                     /db_xref="GeneID:114253228"
+                     /translation="MPLTRNQDRQQRREDDVIPAADANANENHEEHDSPHDRPHAESR
+                     SNNSTFNLDDVSALMASLQRSQAETFKNIMSYVMEQRSSTPAPPPMPPVNVDGTLARC
+                     RASFSGAPGESVEAFIDAIESYTECVQVSDANIIRGLAMLLSADAATWWLGLKHHIST
+                     WNEAKENLIYAYGTRLPPHRIYLEIFASPQDNENTDKFVARIRALMAKLPSG"
+ORIGIN      
+        1 aattcgatat tggtgactaa cccatagttt taaatacccc tgagatctac ccctcactat
+       61 atctggctgc ccaacgtttc ctaatttttt tcttgcttgg actaacaaaa tggcgcgcac
+      121 gcttttgtga aaaatttgct aactattgta tgctgttggt gcttaattgt aaagaatgcc
+      181 tttaactaga aatcaagatc gccagcaacg tcgcgaagac gacgttattc ctgctgcaga
+      241 tgcaaatgcc aacgaaaatc acgaggagca tgatagcccc catgatcgcc cccacgccga
+      301 atcacgtagc aacaattcta cgttcaactt ggatgatgtt tcagcgttga tggcctcgct
+      361 gcaacgttcg caggccgaaa catttaagaa cattatgtcg tacgtgatgg aacaaagatc
+      421 gtcgactccg gcacctccgc cgatgccccc agtgaacgta gatggtacct tggcgcgttg
+      481 cagagcttct ttcagcggtg cacctggtga atctgttgag gcctttatag atgcaattga
+      541 aagttataca gaatgcgttc aagtatctga cgctaacatc atacgaggcc tagccatgct
+      601 tttgtctgct gatgcagcta cgtggtggct aggattaaag catcacatct ccacttggaa
+      661 cgaagccaaa gaaaatttaa tatatgcata tggcacccgc cttccaccac atagaatata
+      721 tttggaaata tttgcttccc cgcaggataa cgaaaacaca gacaagtttg ttgctcgtat
+      781 tcgtgcgctt atggcaaagc taccgtcggg atga
+//
+

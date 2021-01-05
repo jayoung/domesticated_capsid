@@ -1,0 +1,167 @@
+LOCUS       XM_017091116             766 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila biarmipes activity-regulated
+            cytoskeleton-associated protein (LOC108022257), mRNA.
+ACCESSION   XM_017091116
+VERSION     XM_017091116.1
+DBLINK      BioProject: PRJNA325502
+KEYWORDS    RefSeq.
+SOURCE      Drosophila biarmipes
+  ORGANISM  Drosophila biarmipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016033298.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila biarmipes Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..766
+                     /organism="Drosophila biarmipes"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14023-0361.10"
+                     /db_xref="taxon:125945"
+                     /chromosome="Unknown"
+     gene            1..766
+                     /gene="LOC108022257"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108022257"
+     CDS             131..715
+                     /gene="LOC108022257"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton-associated
+                     protein"
+                     /protein_id="XP_016946605.1"
+                     /db_xref="GeneID:108022257"
+                     /translation="MTQMSDEQFRILIETIRSLAPIKEEEPPSKGSFSNCAVRFSGQR
+                     DHDAVDEFINAVETYKEVEGISDRDALKGLPLLFNSIAVMWWKGVRRDAKTWPDALQL
+                     LRDHFSPTKPSYQLYMEIFETRQAHGEVIDSFVCKQRALLAKLPEGRHDEETELDFIF
+                     GLMQPKYRESIPRHEIKTFRELLDRGRTVERNKH"
+ORIGIN      
+        1 tgctccgctg ccagcaagac gagtggggcc tttggggctc tgatattgga ctcggagcac
+       61 tgccatttcc ggccgttgtt tgtttacttt tcggggaacc caaacagagc ccaggagcag
+      121 cggccccaag atgacacaga tgtccgacga gcaatttcgc atactcatcg aaaccattcg
+      181 gtcgctggct cccatcaaag aggaggagcc gccctcaaag ggcagcttca gcaactgtgc
+      241 ggtgaggttc agtggccagc gggaccacga tgccgtggat gagttcatca acgccgtgga
+      301 gacgtacaag gaggtggagg gcatcagcga cagggacgcc ctgaagggtc tgccgctgct
+      361 cttcaacagc attgccgtga tgtggtggaa gggtgtgcgc cgggatgcca agacctggcc
+      421 ggatgccctg caactgctgc gggaccactt ctcgccgacc aaaccctcgt atcagctcta
+      481 catggagatc ttcgagacga ggcaggccca cggcgaggtg atcgactcct ttgtctgcaa
+      541 gcagcgggcc ctgctggcca agctgccgga gggccgacac gacgaggaga cggagctgga
+      601 cttcatcttc ggactgatgc agcccaagta ccgggagagc attccgcggc acgagatcaa
+      661 gaccttccgg gagctgctcg atcggggtcg cacggtggag cgcaacaagc actgatgtta
+      721 gatagttgta catatatact aggcaaataa aaattttcaa ttacaa
+//
+
+LOCUS       XM_017092193            2377 bp    mRNA    linear   INV 16-JUN-2016
+DEFINITION  PREDICTED: Drosophila biarmipes uncharacterized LOC108022968
+            (LOC108022968), mRNA.
+ACCESSION   XM_017092193
+VERSION     XM_017092193.1
+DBLINK      BioProject: PRJNA325502
+KEYWORDS    RefSeq.
+SOURCE      Drosophila biarmipes
+  ORGANISM  Drosophila biarmipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016033298.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Drosophila biarmipes Annotation
+                                           Release 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2377
+                     /organism="Drosophila biarmipes"
+                     /mol_type="mRNA"
+                     /bio_material="DSSC<USA-CA>:14023-0361.10"
+                     /db_xref="taxon:125945"
+                     /chromosome="Unknown"
+     gene            1..2377
+                     /gene="LOC108022968"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108022968"
+     CDS             49..819
+                     /gene="LOC108022968"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC108022968"
+                     /protein_id="XP_016947682.1"
+                     /db_xref="GeneID:108022968"
+                     /translation="MAQSVTMTNEQLHELIEAVRLSATSAAGSAAAAGGADAQGARGK
+                     GSFSACTHNFGGTRDHDVVEEFITNIVTYKELENISDENALKGISLLFYGLASTWWQG
+                     VRKEATTWNDALALIREHFSPTKPAYQVYMEFFQRKQEDHDHIDTFVVHKRALLAQLP
+                     SGRHDEETELDLLYGLLNIKYRKHIARQSVRSFKDLLEQGRIIEHNNQEDEELAAASK
+                     NARGSKRTNRCTYCSFRGHTFDNCRKRQKDRQEENQEE"
+ORIGIN      
+        1 tgaaccccca gtgttctacc acctagcctc acagaaaccc cacgcaaaat ggcccaatcc
+       61 gtgacgatga ccaacgagca gctccatgag ctgatcgaag cggtgcgact gtcggccaca
+      121 agtgccgccg gaagtgcagc agcagcgggg ggagcagacg cccagggtgc ccggggcaag
+      181 ggcagcttct cggcgtgcac acacaacttc ggcggaacgc gagatcacga cgtggtcgag
+      241 gagttcatca caaacatcgt gacctacaag gagctggaga acatcagcga cgagaacgcc
+      301 ctcaagggca tctcgctgct gttctacggg ctggccagta cctggtggca gggcgtccgc
+      361 aaggaggcca ccacctggaa cgacgccctc gccctcatcc gcgaacactt ctcgcccacg
+      421 aagcccgcct accaggtcta catggagttc ttccagagga agcaggagga ccacgaccac
+      481 atcgacacct ttgtggtcca caagcgagcg ctgctggccc agctgcccag cggtcgccac
+      541 gacgaggaga cggagctgga cctgctctac ggcctgctga acatcaagta ccgcaagcac
+      601 atcgcccgcc aaagcgtccg gtccttcaag gacctcctgg agcagggtcg catcatcgag
+      661 cacaacaacc aggaggacga ggagctggcc gccgcgtcga agaatgctcg tggctccaag
+      721 cgcaccaacc gctgcaccta ctgcagcttc aggggccaca ccttcgacaa ttgccgcaag
+      781 cgccagaagg accggcagga ggagaatcag gaggagtagt tggccacaca cgtccacaca
+      841 caaccccagg ggggctgggg ccaccagcac atgacatcac cagcggtggt tccgccccca
+      901 ccacaccaag agcaaccaga acttttcgtg gccacactgg ccgctcgacg tcggcgagag
+      961 cccaacatcc ggagagagag ggagcaacaa gtgcggcggc aacaccacca gcagcaacat
+     1021 gtgcggcagc aacactccgc cagccgcctc aatctcctcc aactcactgg caatgggcgt
+     1081 gccggtaagc cgcgaccagc ttctaaaacc cgtaaaatca cgctgtttgt actactattc
+     1141 gtactacctc gagaacggct ctactttcct tgtacttcac gccgcccagt cggctgtttt
+     1201 ggcacagcgc gccagcacca gcagcaattg tttcaattgc aacattgatt ttttgtattt
+     1261 acaacttgaa caagcaacgc atcgagaatt actgggtggg ggcggctggg ggtcaggcat
+     1321 ttcgtccgga gaatcggtca gtcgcagtgg aggagtgcgg aatttcagac cagaggctgc
+     1381 gcctcgaatt tgaacttctt gctttgacca tgcgactccg aacggatgtg gcctgatccc
+     1441 cagtcgcccc cgcatgccct gtagttctca caaccgccgg ctccactttg tgccgctcag
+     1501 cgaaagagta gcgatagagg ccaggggaga tgggatccgt ttattgattc gtcaatttac
+     1561 ggatcgtgtg tcaccagtgc cacccgtatt cgctgccttt tcgcccgatg ctggtccttt
+     1621 gtgaagctgg caaaaacccc ccgcccggcg atcgcccact tagatccttt tgcacgtgac
+     1681 accgacagcc ccgaggggcg gcgactccca cttccggttg aggcttcggc cgcttccggt
+     1741 tgcggaagtc gtgaccctcg cgatgcctct ggtgcgagtg gagctacagt gggcgtgaac
+     1801 agggcaaaac cagaatttcc tcggaaattc aaaaaccaac catttgactt tcgtcaatat
+     1861 tttccactaa gaacatagca ctacgacggc tcccgaatcg ccgtccgtgt ggttggcacg
+     1921 tcaaattgtc acgttcggga tcacgggtgt agggctgttt aacatttcac ccctgcgatt
+     1981 ccgcgacaag cttgaggcac gccagtaccc atcaaaccca aacctggggc tgggtctcgt
+     2041 cgcggccacg cccctccagc tggcaccgac tctccccgcc ccccagcgtg caaaaccagc
+     2101 ctcttgtgca gatgacgtag gcgcgtacag ccatccgacc cggaactgga actcttccgg
+     2161 aacatggtgg ccaggcttgc gacgtgcgcc atcatctgga gacttggcca caggcacacc
+     2221 gagagtctgg cccgcgatcc tcacaagaaa ccgagcgtgg ggcctactga tgaacgcaag
+     2281 aggctgcgct gaagcataac aaaatgtaaa ccattcaaca tgaaagactg aatccagaaa
+     2341 accagtaaac cacaaaaact aaaaaaccaa aagaaaa
+//
+

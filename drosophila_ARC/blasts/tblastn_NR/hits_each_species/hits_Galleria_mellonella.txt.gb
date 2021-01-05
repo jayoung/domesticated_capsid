@@ -1,0 +1,165 @@
+LOCUS       XM_026898124             781 bp    mRNA    linear   INV 19-DEC-2019
+DEFINITION  PREDICTED: Galleria mellonella activity-regulated cytoskeleton
+            associated protein 2-like (LOC113514129), partial mRNA.
+ACCESSION   XM_026898124
+VERSION     XM_026898124.2
+DBLINK      BioProject: PRJNA498111
+KEYWORDS    RefSeq.
+SOURCE      Galleria mellonella (greater wax moth)
+  ORGANISM  Galleria mellonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Galleriinae; Galleria.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022272768.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Dec 19, 2019 this sequence version replaced XM_026898124.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Galleria mellonella Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Galleria mellonella"
+                     /mol_type="mRNA"
+                     /isolate="Carbio01_MB"
+                     /db_xref="taxon:7137"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole adult"
+                     /country="USA: Urbana-Champaign, Illinois, Berenbaum
+                     Laboratory"
+                     /collection_date="2017-12-13"
+                     /note="laboratory colony"
+     gene            1..>781
+                     /gene="LOC113514129"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113514129"
+     CDS             23..>781
+                     /gene="LOC113514129"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_026753925.1"
+                     /db_xref="GeneID:113514129"
+                     /translation="MYAPPYIHHAPMHFIPPDGYLPSPTMPAPVNNMNSHQSYFDGAS
+                     NTAASAAPTPLVITDGQLAQIVSALRTQPASVGGNFARCTARFDGTGDIQAFVDAILI
+                     YKECVSISDEIALRGIPMLLTGFAATWWQGIKHSVTTWNEAIQLLQGTYGVQLPPHKV
+                     YRRLFEREQGDEATDIFVTKARALISQLPPNTLSEETQLDMVYGLLSCYIREKVPRTS
+                     FSSFAELLQKARFVEELYAEGQQTPVTSTMSTPSK"
+ORIGIN      
+        1 acacacgaat gtttcgccat ctatgtatgc tccgccatat atacatcatg ctcccatgca
+       61 cttcattcca cccgatggat acttaccttc gccgacgatg cctgcacctg taaataatat
+      121 gaatagtcat caatcttact tcgatggtgc atcgaacact gctgcttctg ctgcacctac
+      181 gcctttggta atcactgatg gtcagttagc tcagattgtg agtgcgctta gaacgcaacc
+      241 tgcttctgtt ggaggtaatt ttgccaggtg tactgcacgt tttgatggaa cgggagatat
+      301 acaagctttt gtggatgcta ttcttatata taaagaatgt gttagtatct cagatgaaat
+      361 agcgcttcgt ggtataccaa tgcttttaac aggtttcgca gcaacctggt ggcaagggat
+      421 caagcactct gtgacgacct ggaatgaagc gatacaacta cttcaaggta cctatggagt
+      481 tcagttaccg ccacataagg tgtatagacg cctgttcgaa cgggaacaag gagacgaagc
+      541 tactgatatt tttgtaacta aagcgagagc gctgattagt cagctgccgc caaatacgct
+      601 ttcagaagaa actcagctgg acatggttta tggtctactt agttgttata tacgagaaaa
+      661 agtacctcga acatcatttt catcatttgc cgaactgctt cagaaagcac gctttgttga
+      721 agaactgtat gcagaaggcc agcaaacgcc tgtcacatcg acgatgtcaa cacccagtaa
+      781 a
+//
+
+LOCUS       XM_031909913             928 bp    mRNA    linear   INV 19-DEC-2019
+DEFINITION  PREDICTED: Galleria mellonella uncharacterized LOC113512788
+            (LOC113512788), mRNA.
+ACCESSION   XM_031909913
+VERSION     XM_031909913.1
+DBLINK      BioProject: PRJNA498111
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Galleria mellonella (greater wax moth)
+  ORGANISM  Galleria mellonella
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Pyraloidea; Pyralidae; Galleriinae; Galleria.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022270367.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Galleria mellonella Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 30% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..928
+                     /organism="Galleria mellonella"
+                     /mol_type="mRNA"
+                     /isolate="Carbio01_MB"
+                     /db_xref="taxon:7137"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole adult"
+                     /country="USA: Urbana-Champaign, Illinois, Berenbaum
+                     Laboratory"
+                     /collection_date="2017-12-13"
+                     /note="laboratory colony"
+     gene            1..928
+                     /gene="LOC113512788"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 79% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113512788"
+     CDS             302..928
+                     /gene="LOC113512788"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113512788"
+                     /protein_id="XP_031765773.1"
+                     /db_xref="GeneID:113512788"
+                     /translation="MPRRGANRPELDKVVEDEELQEVGELTSGVPPQTHPPSTSHNQS
+                     VMEAFARNMEAFTRNQAETNRTLIETLCSVFPQPLRSSTPATPGTTAASGATPVLQSG
+                     DFSRCTARFHGESRDNEAIEAFIDAILVYKECTSVSDEHALRGLPMLLVLLRANFGQD
+                     TRIERTVYRFNEALETEIRTTFKEMLLLPEFRLAGTIYRASKYCKISA"
+ORIGIN      
+        1 ttattgtaac accgaaaggt atatatatta cgcacgcata gtaagtacct acgccgtgag
+       61 acccatctaa acgtacagcg caggcgcgtc gcgcggtaac cgcgcgaccg accaatagga
+      121 gcgcgcctct cgcgcttcga aaaagttcgc gactaacgaa cgagagagta gttgggcgat
+      181 gagtgtccta gtgatatcat ataatactgt tttgttgttt aatattgtaa tgtattgtaa
+      241 tacaattttc aataaataac gtgttcaccc gttacattgg cgctcaacta gtggccgaac
+      301 catgcctaga cgaggcgcga atcgtccaga gctggacaag gtagtagaag acgaagagct
+      361 gcaggaagtg ggcgagctga ccagtggagt ccccccacaa acgcaccctc cgtcgacgtc
+      421 acacaaccag tcagtgatgg aagcattcgc gaggaacatg gaagcgttca caaggaacca
+      481 agcagaaaca aacaggactc tcatcgaaac actgtgttca gtatttcccc aaccactgag
+      541 atcgtctaca ccagcgacgc ccggaacgac tgcggcgagc ggagccacgc ccgtccttca
+      601 aagcggtgac ttcagtaggt gtacggctcg attccacgga gaatccaggg ataatgaagc
+      661 aatagaggca ttcatcgacg ctatcctggt ctacaaggaa tgcaccagcg tcagcgacga
+      721 gcacgcgctg cgcggcctgc ccatgctgct ggttttatta agagccaatt ttgggcagga
+      781 cactagaatc gagaggaccg tttaccgttt taatgaagct cttgagactg aaataagaac
+      841 aacgttcaag gaaatgttgc tgcttccgga atttaggctt gcaggaacca tatatagagc
+      901 aagtaaatac tgcaagatct cggcataa
+//
+

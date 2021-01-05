@@ -1,0 +1,548 @@
+LOCUS       XM_026871266            4555 bp    mRNA    linear   INV 25-OCT-2018
+DEFINITION  PREDICTED: Trichoplusia ni uncharacterized LOC113493330
+            (LOC113493330), mRNA.
+ACCESSION   XM_026871266
+VERSION     XM_026871266.1
+DBLINK      BioProject: PRJNA497582
+KEYWORDS    RefSeq.
+SOURCE      Trichoplusia ni (cabbage looper)
+  ORGANISM  Trichoplusia ni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Plusiinae; Trichoplusia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_039478.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Trichoplusia ni Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4555
+                     /organism="Trichoplusia ni"
+                     /mol_type="mRNA"
+                     /isolate="ovarian cell line Hi5"
+                     /db_xref="taxon:7111"
+                     /chromosome="1"
+                     /country="USA"
+                     /collection_date="2015"
+     gene            1..4555
+                     /gene="LOC113493330"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113493330"
+     CDS             1151..2752
+                     /gene="LOC113493330"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113493330"
+                     /protein_id="XP_026727067.1"
+                     /db_xref="GeneID:113493330"
+                     /translation="MSRTMSAPMDMPAPLVCFGNSCPLIRSPGPGAFPHAPPTFVFIT
+                     QNETPMFPPMFPPCVPFYPRPPFMPRPRFVAPYVPLEPLTITPLDDGSPSTVISENGS
+                     QSEEDHQENEPMISNECKALALPALTDMSASFSNCPARFPGIGDIRPFITAILNFKEC
+                     TGMADEVALRGLPLLLTDVAAMRWQAEKHTVSSWSEAVALLRNTYKVRPSPYKVYRHL
+                     FGTHQKEDQSTEVFVKKARALLSQLPPFTLTEDTQLDLVYGLLNRHIREKVDRNDCNS
+                     FADLLRLANIAEMSIEQAQRPDAPESAAEAMPDGDVGDNSKDPCQNCKTFGQLLVRMC
+                     QKIHKKNAKETGTENMEAEENKQKKEEYKGPASKMRCFYCLSPNIVRMKCLDCILLTR
+                     LGAPLKPKARPVLTVNIYGLNFDMVVDTGARNCIATPALTEHLVANQQEFTSDDLDLT
+                     TREGSSLRQVMSIAAVDVWVAGVIVRTSFINFPRATENVLGMDFILDAGLVIDFRRNG
+                     QWSLRDMMGFRPVTFEKITPIDNEN"
+ORIGIN      
+        1 ataaaggata aatacataaa tttaataaaa aagtaagttc ggctctatat tatttttgca
+       61 gcaagatttt gggcctaaaa aagataaact ttcggtttaa gtcgtaaatg taatcaaact
+      121 aactattgaa tattcacatt tggaaactaa attcccacac acataactat acaataaagt
+      181 acaagattca tgacgaaata aaatgacagg tattacacct gtcattttat ttcaaatata
+      241 aataaaacga gattctatta actaatcaaa tatgtaaatt caaaatccgc ggctgcacag
+      301 ctaactatca taacattggc caccttgagt cccgggaaat cttgtaacct ttccatgcgc
+      361 ccctgatttc ggaccgtaag ggcccatctg gtgacgtatt gcaaacttca cgtgagatga
+      421 aatatactgt ttaaccggca cctgctatcc ggcaatcggg acgggtgagg gctgtctcgc
+      481 gtccttggca gaaaatcaat actttagcca cagatagggg tgcgttttca ccctttagta
+      541 agcgcttctg ccgtgtagtt tacaagtgta attattcatt caacactatt tgcataaaaa
+      601 tatacgtaat gagtgtgaat ttgtaaagtt ttgctctaaa ttcgcgtttt aaaattataa
+      661 gcgtaggtaa attttttttc ggttgcgcgc agtgctgcca actatccttt gtcaatgatg
+      721 ataaggcaat atggacatcg agattgagtg attgctgtaa caaggacaaa acaaagtgat
+      781 attgaaattg cccttcttgc caccagtgtt attaaaaaca attagataaa cattatgggc
+      841 tcgttttgag tgaatcggat ggactgaaac cggattgcaa agagcagttg tgtttgttga
+      901 tctgacgccg gacttatcga cgcgtgcgta ccagtgtttc cccgtgaacg ttgtgacgta
+      961 tatagggcaa acgttgcctt tgtgcgcagc tcagcaacga caatccagta ccgcgaccgc
+     1021 agcctaccgc tgaggtcctg ctgaccgcgg cgggtcactg ctcaccacca aaaagccaat
+     1081 ttcaccctga accagcatct ccaagagaaa cagaggcctg gaaaacaccg caagtattta
+     1141 atccatttgg atgtcgcgca caatgtcagc gccgatggat atgcccgcgc cgctggtctg
+     1201 ctttggaaac tcctgccccc tcatacgcag tccgggtcct ggagcttttc cacacgctcc
+     1261 gcctaccttt gtatttatta cccagaatga aacacccatg ttccctccta tgttcccccc
+     1321 ttgtgtgcct ttctatccga ggcccccttt catgccacgg ccccgcttcg ttgcgccata
+     1381 cgtacctctt gaacccttaa ccattactcc cttggacgac ggttctcctt ccaccgtcat
+     1441 ttccgaaaat ggatcccaat ctgaagagga tcaccaagag aatgagccca tgattagtaa
+     1501 cgaatgcaag gctctggccc tgcctgctct gactgacatg tcggctagct tcagcaactg
+     1561 tccagcccgt ttccctggga taggcgacat tcgaccattc attaccgcca tcctcaattt
+     1621 caaagaatgt accggaatgg cagatgaagt ggcacttcgt gggctcccgt tgctcctgac
+     1681 tgatgttgct gctatgcgtt ggcaagctga gaaacacacg gtatcctctt ggagcgaagc
+     1741 cgttgcttta ctgcgcaata cctacaaggt tcgcccatcg ccttacaaag tgtaccgtca
+     1801 cctgtttgga acacaccaaa aggaagatca atcgaccgag gtgttcgtga agaaagctag
+     1861 ggcactgttg agccagctcc caccttttac tctgacagag gatactcaac tggatttagt
+     1921 atatggctta ctgaaccgcc atataaggga gaaagtggac cgcaatgatt gtaacagctt
+     1981 tgccgacctg ctaaggctgg ctaatatcgc ggaaatgtct atcgagcaag ctcagcgccc
+     2041 tgatgcaccc gagtctgctg ctgaagcaat gcccgatggt gatgttggtg acaattctaa
+     2101 agacccttgc cagaattgca agactttcgg acagcttctg gttcgcatgt gtcagaagat
+     2161 acataagaag aatgctaaag aaactggcac tgaaaatatg gaagctgaag agaacaagca
+     2221 aaaaaaggaa gagtacaaag gtccagcttc caagatgcgc tgcttctact gcctgtctcc
+     2281 gaacatcgtc cggatgaagt gtttggactg catcctgctt actagacttg gggcaccact
+     2341 gaagcccaag gcacggcctg tactgaccgt caacatttac ggcctcaact ttgatatggt
+     2401 cgtggatacc ggtgctcgta actgcatcgc cactcctgct ctgactgagc atttggttgc
+     2461 caaccagcaa gagtttactt ctgatgactt ggatctgact actcgcgagg gtagctccct
+     2521 gcgccaagtg atgagcattg ctgctgtaga cgtgtgggtg gctggagtca tcgtccgcac
+     2581 atccttcata aacttcccga gggccacaga gaacgtgctt ggcatggact tcattctgga
+     2641 cgctggactt gtgatcgact ttcgtcgcaa cggccagtgg tcgctgcgtg acatgatggg
+     2701 attcagacct gtcacttttg agaaaattac tccgatagat aacgaaaact gaagaggaga
+     2761 aatcgaaaac aatggtatcc tgtaaggaga aatctactca acattccacg actactttat
+     2821 gagaacattt tactttacga agatacgaag atttgataca cacatattgt acttgctata
+     2881 agcaacgagc tcagagcgtc tcaaagccgc ggtcgactga agtactgtaa gtaacgtgat
+     2941 gtgataaagt aacgtgaaaa cgttaaaaat gtgtgacgct acaataagta aattttacac
+     3001 taattaggaa tgcttgccaa aagttaaact gatgatgtaa cgatagcggc ccaaaattat
+     3061 aaattgtgta acgaattgtg atgtaagaga cctgtgggtg ggtgctttat tgtgtcttct
+     3121 cgaagggcga tagtcctcta gataacgacg gcctttcaaa gtgctaggaa tttgtaaaat
+     3181 ttacataacg gtgtggcgaa gactgatgga gctctacagg tttcttatac tttatctacg
+     3241 tcggtaaaca cgacgtcggt tcatcgtttg aaccacacta tacgtagtaa cgttataacg
+     3301 taaattcata atatctattt gtcgtagtta gcttttaatc agtagtgatg atgtaatcag
+     3361 tattttgagt gttcaggggc gggttcgata cgtctgctgg cctaggctta caaacgattg
+     3421 ccgccctata tgtgtcgtaa atcaagaaac gatcaatgct ctatagatac tgagtaaaac
+     3481 tatttaataa taataatcgc catacatgta ttctttgcgg ggttatatgg acatactcta
+     3541 agtttatttt tttgccaccc tagcccgggc ttctcggcct gaagggcaaa ccgcccctgg
+     3601 tagtgtttag attgtgggta cccggtaaca aggtaataaa aagcagcaga caccttaacc
+     3661 agatttattc gttcaaacaa caagaataat ccaggaatgt cagaaatgta ccattaacaa
+     3721 tgttatatac atatattatt taacacaaca cttacataga aacctatgac tggtttgttc
+     3781 acaagagttt agggcacgga tccaggcttt tcagttagat ggaaatagac aaaagtgtcc
+     3841 attaatacat tttcgatata cagtttcgac cgctcaaaaa aacatcccac tgaattaggt
+     3901 ccgcacccca ataacaaaga caaataaact aaaaattggc ctaaaatctg ctaagtactt
+     3961 aacatacaat aaataggttt tatttgcact tagataagta ttgaaaacag ctttcctaaa
+     4021 attaattttg atataattag aacatggtaa ctaagggccg gtagttgcag ggaaccacaa
+     4081 atgcttgcat aaacattttt taaagatata tcggtgttta ctcattttgt aagtgtttat
+     4141 tagattttaa ttatgacaat ctcaatgttg aaaacttagg attaaacaaa cgaatgtagc
+     4201 tcatctgcac ttagcagtca atagtattag tttcgatacg tcaatcgttt tgacgatggt
+     4261 agttcgtaaa tacatactca aaggaaactg attcaattat ctttcgagtg aatagtttgt
+     4321 aaggttcaat attgtataat cgtagtcgta taaaatgtta gtctataact aaacataaga
+     4381 aacgcaacaa accaccgttt tgattaaata acttgtattt gtttagttat taaaccgtat
+     4441 agacaaaact caataacccc aattttttaa gtagaaaaca ggctttttta tgtaaaaact
+     4501 tgccagtccc ttattattat ttaccacaac aataatacat taaaaataat attgt
+//
+
+LOCUS       XM_026878920             897 bp    mRNA    linear   INV 25-OCT-2018
+DEFINITION  PREDICTED: Trichoplusia ni activity-regulated cytoskeleton
+            associated protein 2-like (LOC113498777), mRNA.
+ACCESSION   XM_026878920
+VERSION     XM_026878920.1
+DBLINK      BioProject: PRJNA497582
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Trichoplusia ni (cabbage looper)
+  ORGANISM  Trichoplusia ni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Plusiinae; Trichoplusia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_039488.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Trichoplusia ni Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..897
+                     /organism="Trichoplusia ni"
+                     /mol_type="mRNA"
+                     /isolate="ovarian cell line Hi5"
+                     /db_xref="taxon:7111"
+                     /chromosome="11"
+                     /country="USA"
+                     /collection_date="2015"
+     gene            1..897
+                     /gene="LOC113498777"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:113498777"
+     CDS             1..897
+                     /gene="LOC113498777"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_026734721.1"
+                     /db_xref="GeneID:113498777"
+                     /translation="MPPRKVRTDPGDLDAQASSDEEPGRSSSVLMSGDQLTSFLTAFA
+                     NTQAEANRQLVESLMASHAARGYTATPSPTPSSSTSKSGNMSKCTARFDGQNRDPEMV
+                     EAFIDSVEMYKECALVTDDLALRGLPMLLHGEAAVWWRGIRTEVSSWSEAVKRLRSMY
+                     GTPCPAHKLYRKIFANEQNEELADSFIVRLRGMITKLPYVLPEEAKLDIIYGLLHKRI
+                     RKRLPRDTVNTIESLIDKARDIEESITEHSNASTSSQSAPTETTQPPARCAQAGPRPP
+                     RAAAPCINSAGNGAMTRRSVVR"
+ORIGIN      
+        1 atgcctccac gtaaagtacg aactgaccca ggtgaccttg acgcgcaggc cagctcggat
+       61 gaagaacctg gaagatcttc gtcagtgctc atgtctgggg accagctgac ttcatttctg
+      121 accgccttcg cgaacactca ggcggaagca aatcggcagc tcgtcgaatc cctcatggca
+      181 tcgcacgcgg cgcgtggtta taccgcgacg ccctcaccga caccgtcgtc gtcaactagt
+      241 aaatcaggca acatgtccaa gtgtacggca cgttttgatg gtcaaaaccg agaccctgaa
+      301 atggtagaag ccttcattga ctccgtcgaa atgtataagg agtgtgcatt ggttaccgat
+      361 gaccttgcgc ttcgtggtct cccgatgctg ctacacggcg aggctgcagt atggtggaga
+      421 gggatccgga cggaggtgtc ctcgtggtcc gaagccgtca aacgactacg tagtatgtac
+      481 ggtactccgt gtcctgctca taagctgtat cgaaagatat tcgcaaacga acaaaatgaa
+      541 gaactcgcgg actccttcat tgtacgttta cgaggtatga tcactaagtt accttacgta
+      601 ttacccgaag aagctaagtt agatattata tacggattat tacataaacg tattcgaaag
+      661 cgattacccc gggacacggt taacactatt gagtcgctaa tcgacaaagc ccgagatata
+      721 gaagaatcta tcacggaaca ttccaacgca agtacttcct cgcagtcggc gccaacggag
+      781 acgacgcagc cgcccgcgcg ctgcgcgcag gccggcccgc ggccgccgcg cgctgctgct
+      841 ccgtgcatca attcggcggg aaacggtgca atgacccgac gctcagtggt gcgttag
+//
+
+LOCUS       XM_026887330            1584 bp    mRNA    linear   INV 25-OCT-2018
+DEFINITION  PREDICTED: Trichoplusia ni activity-regulated cytoskeleton
+            associated protein 2-like (LOC113504849), mRNA.
+ACCESSION   XM_026887330
+VERSION     XM_026887330.1
+DBLINK      BioProject: PRJNA497582
+KEYWORDS    RefSeq.
+SOURCE      Trichoplusia ni (cabbage looper)
+  ORGANISM  Trichoplusia ni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Plusiinae; Trichoplusia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_039500.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Trichoplusia ni Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1584
+                     /organism="Trichoplusia ni"
+                     /mol_type="mRNA"
+                     /isolate="ovarian cell line Hi5"
+                     /db_xref="taxon:7111"
+                     /chromosome="23"
+                     /country="USA"
+                     /collection_date="2015"
+     gene            1..1584
+                     /gene="LOC113504849"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113504849"
+     CDS             520..1431
+                     /gene="LOC113504849"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_026743131.1"
+                     /db_xref="GeneID:113504849"
+                     /translation="MNKEITEAEAMEFSKEQFKSLLETIQTQRRSSFVTCKVSYDGTR
+                     DRETVETFLSVATAFKAVENISDEVAIMSVPLILKGEAAIWWSYSRKEVNTWAEFQEK
+                     LRFNFAPRRPAYIIYQDIMGNKQEENELTDKFLLKKRALFGQLPEPSHSESQQLDMIY
+                     GLLRLKIRWSIPRDSISTYEDLMTAARRVEQLLEEEETIAALSNERLQEKKKKKKSKK
+                     ARCGLCRLRGHSAQVCRMGRQQGPNAIVPAVQESPLSPTSSATSDVAPPSQPTLSCQD
+                     CGVLGVIRSNCQSCLIKTQTPRNIRFW"
+ORIGIN      
+        1 tctatagcta cagtgtgtga ttattattta ggatgtcacc tgggaagggt aaaaataaaa
+       61 attgctcgaa atgcgttttt tgcgaacaaa ttttttataa gccatatcca aaacaagttt
+      121 aaagtcatgc tcaaaatgat gctacatcag cttctgaata aaatgtgaca gtacaactaa
+      181 acgcaaaatt tcacattttc gcggcatgcg ttagcgcccg tcaccgtaca cctgtcattg
+      241 ttcacgacat gacagtagcc atcttgccgc cgcactggtc ggccgcgtca aattaggaag
+      301 ccttcggtgt gtacggttgt tattatacgt attctattat aaataaatta aggttagtta
+      361 agtgtgtatc tctggtgtta ttatttatct ccaagtattt gtgacaaaaa ggcgcacaca
+      421 gttttgaggt tgctaacaat atctgccggt ctatataatt cacttgctga gacacttatc
+      481 ttaacagagg ctcaatatcc aatccttaag gcgagaagta tgaataaaga aattacagaa
+      541 gccgaagcaa tggaattctc aaaggagcag ttcaagtcac tgttggagac gatacagaca
+      601 caacgccgca gttcatttgt cacatgcaaa gtaagttacg atggcacgag agatagagaa
+      661 accgttgaaa cctttctgag tgtagcaact gctttcaagg ccgtggaaaa cattagtgat
+      721 gaggtagcca ttatgagcgt accgctgatt ttgaagggtg aagctgcgat ttggtggagt
+      781 tatagcagaa aggaagtcaa tacctgggcc gaattccaag aaaaattgcg ctttaacttt
+      841 gctcccagac gaccagcata tattatttat caggatataa tgggcaacaa gcaagaagag
+      901 aatgaactca cagataaatt tcttttaaaa aagagggctc tttttggaca acttccagaa
+      961 ccatctcact cggaatcaca gcagttggac atgatttatg gcctattaag attgaagatt
+     1021 cgctggagta ttcctagaga ctccatttct acctacgaag atttgatgac agcggcaaga
+     1081 agagtggaac agctgctcga agaagaagaa actatagccg cactgtcgaa tgaaagactg
+     1141 caggaaaaaa agaaaaagaa gaagtccaag aaggcgcggt gtgggctttg cagattacgt
+     1201 ggtcattctg cacaagtttg cagaatggga agacaacagg gtccaaacgc cattgtccct
+     1261 gcagtacaag agtcgccttt gtcaccgaca tcgtcagcta cgtcagacgt ggcaccgcca
+     1321 tcccagccca cactttcttg ccaagattgt ggagtgctag gagtgatacg atcgaactgc
+     1381 caaagttgtc tgatcaagac ccagacgccg cgcaatatca gattttggtg aaaatcaata
+     1441 ctgagtcgtg ccaaaaagat ctatctaaat ttttcgtttc gtgcgtttat attataggag
+     1501 tgacgaaaat gtgcatgtat tttttcaaac tacttaagta atccgtaact aactgtccgt
+     1561 tctaataaat attggttgat ttca
+//
+
+LOCUS       XM_026889684            1476 bp    mRNA    linear   INV 25-OCT-2018
+DEFINITION  PREDICTED: Trichoplusia ni uncharacterized LOC113506846
+            (LOC113506846), mRNA.
+ACCESSION   XM_026889684
+VERSION     XM_026889684.1
+DBLINK      BioProject: PRJNA497582
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Trichoplusia ni (cabbage looper)
+  ORGANISM  Trichoplusia ni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Plusiinae; Trichoplusia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020799936.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Trichoplusia ni Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 40% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1476
+                     /organism="Trichoplusia ni"
+                     /mol_type="mRNA"
+                     /isolate="ovarian cell line Hi5"
+                     /db_xref="taxon:7111"
+                     /chromosome="28"
+                     /map="unlocalized"
+                     /country="USA"
+                     /collection_date="2015"
+     gene            1..1476
+                     /gene="LOC113506846"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 74% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113506846"
+     CDS             1..864
+                     /gene="LOC113506846"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113506846"
+                     /protein_id="XP_026745485.1"
+                     /db_xref="GeneID:113506846"
+                     /translation="MNTDASAEGYGAILIQRANNVPHVVEYFSRRTSEVESLFLAAAS
+                     TYKNVEKLNDSDALQGLPLILRDEAAEWWQGAKTGVENREKFCDILRHTFAPRKPAYM
+                     ICHQITHGAQQPDVTTEAFIAKKRALFASLPPPALTETQQIVLVFALNCTTCKKSSPI
+                     KKEDLRFCAIDVQLEADSRPVVFVEIDGIKGTAYIDTCAKMSVASYSLYVTLAERGCK
+                     FEEQPVNLTLADGVKKSQRVLKCRAEVDLLGHKVQTTFIVLPEAKENRLYRLSLIQCD
+                     NCTRPIPHTED"
+ORIGIN      
+        1 atgaatacag atgcgagtgc cgaaggttat ggtgcgatcc ttatacaaag agcaaataac
+       61 gtaccccatg tagtggagta cttcagccgg cgtacatctg aggtagaatc tctctttcta
+      121 gcagcagcta gcacctacaa aaacgtggaa aagctgaatg actcggacgc gcttcaagga
+      181 ctcccgctta tcctacgtga tgaagcagca gaatggtggc aaggcgcgaa aacaggtgta
+      241 gagaaccggg aaaaattctg cgacatattg cgccatacct tcgctccccg caaaccagca
+      301 tatatgattt gtcatcagat cacacatggg gcccagcagc ctgatgtcac caccgaagcg
+      361 tttattgcca agaagcgagc gctgtttgca tcattgcccc ctcccgctct tactgaaaca
+      421 caacaaatag ttctagtgtt cgctctcaac tgcaccacct gcaagaaatc gtcacccatc
+      481 aaaaaggaag acttaaggtt ttgtgccatc gatgtacagt tagaggcaga ttcccgacca
+      541 gttgtgttcg tggagatcga tggaataaaa ggtactgcgt atatcgatac ctgcgcgaag
+      601 atgagtgtcg catcgtactc tttgtatgtg acgctggctg aacgtggatg caagttcgaa
+      661 gaacagccag tcaacttaac actagccgac ggagtaaaga aaagtcaaag agtgctaaag
+      721 tgcagagcag aggttgattt attgggtcat aaggttcaaa cgacattcat cgtgctaccc
+      781 gaagcaaagg agaaccgtct gtatagacta tcgcttattc aatgcgataa ctgtacccga
+      841 cccatacccc ataccgagga ttgatgatct cctgcacgaa gcaaaaccaa cgccttaaat
+      901 atccctgcta gacttgaaag ctgggtattg gcagattggt gttcaaaaag aagaccagga
+      961 taagacggca ttcatcaaac cccttttggc gtctacaaat tcactcgcat gccgtttggt
+     1021 ttacggaacg ctccagcaac atttcagcga ctcattaacc gcatgcgagt aagtatgccg
+     1081 gaggtgaagc tattggcata tttggacgac ctggccatat tttcacaaac atttgaatct
+     1141 cacttggaag acttacaaaa ggttttcaat cacctaaagg aatttagcct taccgcaaac
+     1201 cgagcgaaat gccatttttt ctgttccacc ataaaatatt tgggacacta tatcacgccg
+     1261 aacggtctac aagtggaccc tgagaagacc gcagcgatcg caaagctgcc tgcgccctcc
+     1321 aacctgaaac atctagttgc attcctgcag acgtgttcgt ggtataggag attcatagaa
+     1381 aactttgcaa cgattgcgga acccctgact cgcctaacaa agaagaatgt tcgttgggag
+     1441 tggacagagg aacagcgaaa cgcctacaat gagttg
+//
+
+LOCUS       XM_026889731            4327 bp    mRNA    linear   INV 25-OCT-2018
+DEFINITION  PREDICTED: Trichoplusia ni uncharacterized LOC113506895
+            (LOC113506895), mRNA.
+ACCESSION   XM_026889731
+VERSION     XM_026889731.1
+DBLINK      BioProject: PRJNA497582
+KEYWORDS    RefSeq.
+SOURCE      Trichoplusia ni (cabbage looper)
+  ORGANISM  Trichoplusia ni
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Noctuoidea; Noctuidae; Plusiinae; Trichoplusia.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020799978.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Trichoplusia ni Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4327
+                     /organism="Trichoplusia ni"
+                     /mol_type="mRNA"
+                     /isolate="ovarian cell line Hi5"
+                     /db_xref="taxon:7111"
+                     /chromosome="Unknown"
+                     /country="USA"
+                     /collection_date="2015"
+     gene            1..4327
+                     /gene="LOC113506895"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:113506895"
+     CDS             773..4024
+                     /gene="LOC113506895"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC113506895"
+                     /protein_id="XP_026745532.1"
+                     /db_xref="GeneID:113506895"
+                     /translation="MVLTHDAAIWYRGIKTEIHSWQQAIDLLLSTYGDRRPPHRIYRE
+                     LFEMQQVQQNTDTFVAKCRALLSKIPAGDITEKAQVDMVYGLLDSRIRRHLRREEFSD
+                     FSNMLRLARSIEIELDTHTPRSAQLTKSASAGARGSSAPMQPPRRSTASATPSGATAS
+                     STTSEPGGGPTRRSSDNNNSASTHSYQSVAKSKYCVYCKQKGHVRDECGKLSKSDNKD
+                     SLYCYGCGEKGVVRSQCHKCSNLSFSSVYVKHNLVRNHYNSKLTTSSHSPTYDDVYCN
+                     INNHYPSAFYQSQCKQTHDVYSPATLDISFNTSSDNNLSSKVKNTFVNSCESEYTACQ
+                     FSDYHSSSVNKSNEFNLCKLSNKVDAPILKNYHCNSMSVNNNNHICESLTVYDNDYVG
+                     NSVSCIDSNPDCDTGDMINISSIKGNDCNLPYRVNAPVINHNNGYLTDRVNVPNINYK
+                     NCYSTDRVKVPVMHSYCHSPSRVKSPVVVPTHKLCSSDFDQFNMPIKVSDCADMPATT
+                     AVSLATVAPAVYLSASDVLSTQQRPVLSIQVMGIRGMALIDTAARCSIAGHSLYKIFK
+                     QKGLTFASKQVNMKLADGVLHTREVLMAGVDVIISVDKGVHVDFVIFPDADNNDTLLG
+                     MDFLNAAGMVIDFYASSWHFSGCTQTYPLEFEDESIPQGNPISLSSFSLRADEGLMLN
+                     GDQRQQLLDLLQKHEDVFRLGGEATAFAEHHIDTGDHAPIAVPPYRLTPAKKAVMEAE
+                     INKMLTDGIIEECESAWAAPALLVPKKDGTYRFCVDYRRLNAVTKSDSYPLPVIEDLL
+                     HSTKREGYMSTIDLRSGYWQVSVSPTDRDKTAFVSPFGTYRFIRMPLGLKNAPATFQR
+                     LMDRFRSGSILKDVTLLVYLDDLLVLSEGPFQKHLEDLEAVFNRLRVFGLRANRDKCH
+                     FVCSQVKYLGHLITPNGIKPDEDKVQAIQQMNEPTNLKHLRSFLQTCSWFRKFVPGFS
+                     EIAQHDLRAILDKETYVPQVTPYLSRFVDSLKDIRDRVERRQDLRKEYADSSRRPAPT
+                     FQVGDQVLLTTHSLSNAPKGLTRKFMPQRDGPYAIQRVPRRLRGRPRKVKARS"
+ORIGIN      
+        1 ttcccgccgc ggtacacgta agcgatattt gaatagccgc ttacgcgtcc cgcgcgcatt
+       61 gaccaatcac agcgctcggc gccgacgcga cgcacaggac gcgtcacccc gcgcccgagc
+      121 ccctttctct ctcgttttca aactgtcgaa cgaacgacgt gctctgtgta aaaattgtgt
+      181 aataatattt ttagtggaat ttaataaact tttaaactca aatacttgtt taccttccac
+      241 acacaagcta taagtggctg cccaacgttg tgccgcgagt tctagtactt ctaaagtaac
+      301 ttcagtgctc gtgatatgtt cgcaactcac catacctacg cgttcgttct actagtttta
+      361 cacgtcttgt aatcgcgatc atcataatgc cgcgcccgca aacgcgcagg gagcttacca
+      421 cgccactctc agatgatgaa gtcgccgtgg acgccggttg tgacaaagga gccgacgctg
+      481 ctagtttcac gtcggaacaa gtggctgcca tgatggccgc catgcagcag tctcaaaccg
+      541 aggcattcga gcgcctgctg gataaggtta tgaaccgcca gccgtcaccc catcaagttc
+      601 ccagcccgcc tcccggcaac tgccactact cgccgccagc ggtactttta cccactgcac
+      661 cgtcaggttt ggcggtgacg ccgacgagtc cgtggacgca ttcgttgacg cgatacaaag
+      721 ctataaagaa tgtgctaacg tgtccgagga aaacgccctc aggggcttgt caatggtgct
+      781 gacccatgac gccgccatat ggtatcgtgg tatcaaaacg gaaattcatt catggcagca
+      841 agccatagat ttgcttctga gtacctacgg agaccggcgg ccgccgcacc gcatctatag
+      901 agagctgttt gagatgcaac aagttcaaca aaacaccgat acatttgttg ctaagtgccg
+      961 tgcattatta tcaaaaattc ctgccggcga cataactgaa aaagcacaag tcgacatggt
+     1021 ttacggcctc ctcgactcca ggatccgaag acacctacga agagaagaat tctcagattt
+     1081 ctcgaacatg ctgcgccttg cgcgttctat tgagatagaa cttgacacgc atacgccgcg
+     1141 cagtgcacag ctaacaaagt cagcgagcgc cggcgcccgc ggcagcagcg cgccgatgca
+     1201 gcctccgcgc cgctcgacgg cgtctgcgac accgagcggg gccaccgcca gctcaacgac
+     1261 gtcggaacca ggcggagggc cgacgcgacg ttcttcagat aataataaca gtgctagtac
+     1321 gcattcttat caaagtgttg cgaaatcaaa gtattgtgtc tattgtaaac aaaaaggtca
+     1381 cgtgcgcgat gagtgcggta agctaagtaa gagtgataac aaagattcac tatattgcta
+     1441 tggttgtggt gagaagggtg tggtgaggtc acagtgtcat aaatgtagta acctgtcgtt
+     1501 ctcatccgtc tatgtgaaac ataatctggt aagaaatcat tataattcta aactcactac
+     1561 atcttctcat tcaccaactt atgatgatgt ttattgtaac attaacaatc attatcccag
+     1621 tgcattctac caatctcaat gtaaacaaac acatgatgtg tactcaccgg ccacactaga
+     1681 catttctttt aatacaagta gtgataataa cttgtctagt aaggtgaaaa acacatttgt
+     1741 caatagttgt gagtctgagt acactgcatg tcaatttagt gattatcatt catcttctgt
+     1801 taacaaaagt aatgaattta atctttgtaa attatcaaat aaggtagatg cacctattct
+     1861 caaaaattat cattgtaact caatgtccgt taacaataat aatcatattt gtgaatcgct
+     1921 tactgtttat gataatgatt atgttggtaa ctcagtgtct tgtattgata gtaatcctga
+     1981 ttgtgataca ggtgatatga taaacatatc cagtataaaa ggtaatgatt gtaacttacc
+     2041 ttatagggtc aatgcacccg tcatcaacca taacaatggt taccttactg atagggtaaa
+     2101 tgtacctaac attaactata aaaattgtta ctctactgat agggtaaagg tacctgttat
+     2161 gcatagttat tgtcactcac ctagtagggt aaagtcacct gttgtcgtcc caactcataa
+     2221 gttgtgctct tctgattttg atcagtttaa catgcctata aaggtttctg attgcgcaga
+     2281 catgccggcg actactgctg tctctctggc tactgttgca cctgcggttt atctctctgc
+     2341 atctgatgtt ctctcaactc agcagaggcc tgtgcttagt attcaagtta tgggtataag
+     2401 gggcatggct ttaattgata cagcagctag atgctcaatt gcaggacaca gcttatataa
+     2461 aatatttaaa caaaaggggc ttacctttgc ttccaagcag gttaatatga aactggctga
+     2521 cggtgttctg catactcgcg aggtcctgat ggctggtgtt gacgtcatca tctctgtgga
+     2581 caaaggtgtt catgtggact tcgtgatctt ccctgatgca gacaacaatg acactctcct
+     2641 gggtatggac ttcctcaatg ctgcaggtat ggttattgat ttttatgctt cttcatggca
+     2701 cttctccggt tgcacgcaga cttacccact tgagtttgag gatgaatcaa taccacaggg
+     2761 taatcctatt tctttgtctt ctttttcgct gagggctgat gaaggcttaa tgcttaatgg
+     2821 cgatcagcgc cagcagcttt tggatttgct tcaaaagcac gaagacgtct tccgtctagg
+     2881 aggagaggca actgccttcg ctgaacatca tattgatacg ggagaccacg caccgattgc
+     2941 ggtgccacca taccgcctca cgcctgcgaa gaaagccgtc atggaggcgg agatcaacaa
+     3001 gatgttgact gatggaataa ttgaagaatg tgagtcggcc tgggctgcgc cggctctcct
+     3061 cgttcctaag aaggacggta cgtataggtt ctgcgttgac tatcgtcgac tcaacgctgt
+     3121 caccaaaagt gactcttacc cattgccggt aatcgaggat cttctgcatt ctaccaagcg
+     3181 tgaagggtac atgagtacca tcgaccttcg gtcaggatac tggcaagtga gcgtctctcc
+     3241 aacggataga gacaaaacag cttttgtgtc acctttcggt acgtatcgct ttatccgcat
+     3301 gccgttgggc ctaaagaacg ctcccgccac cttccagaga ctgatggatc gctttaggtc
+     3361 tggaagtatc ctgaaggatg tcactttatt agtctattta gatgatctgc tagtcctgtc
+     3421 tgaagggcct ttccagaagc acctggaaga cctggaggcc gtcttcaacc gtctacgtgt
+     3481 ttttggttta agagccaaca gggataaatg ccacttcgtc tgcagtcaag ttaagtactt
+     3541 aggtcatctt attactccta atggtataaa gccggatgag gacaaggtgc aggccattca
+     3601 acagatgaat gagccaacaa acctcaaaca tctgagaagc ttccttcaaa cttgctcttg
+     3661 gtttcggaag ttcgtaccag gtttctctga aatagctcag cacgatctgc gtgccatcct
+     3721 ggataaagaa acgtacgtac cacaagttac gccttacctt tctaggtttg tagattccct
+     3781 caaagacatt agagaccgtg tcgagagacg acaggatcta cgaaaagagt acgctgatag
+     3841 ctctcgacgt ccagctccaa ccttccaggt tggtgatcag gtcctattaa ctacgcattc
+     3901 tctcagtaat gcacccaaag gattgactag gaaatttatg ccgcagaggg atggaccgta
+     3961 tgctattcaa agagttccac gccgtctgcg tggacggcca cgtaaagtaa aggcgcgctc
+     4021 ttaattatat tttttgccaa gacattctcg gggcgaggtc atgtcttgga ggaggagagt
+     4081 gtagcgcgca tccctaattt taaaattccc gccgcggtac acgtaagcga tatttgaata
+     4141 gccgcttacg cgtcccgcgc gcattgacca atcacagcgc tcggcgccga cgcgacgcac
+     4201 aggacgcgtc accccgcgcc cgagcccctt tctctctcgt tttcaaactg tcgaacgaac
+     4261 gacgtgctct gtgtaaaaat tgtgtaataa tagttttagt ggaatttaat aaacttttaa
+     4321 actcaaa
+//
+

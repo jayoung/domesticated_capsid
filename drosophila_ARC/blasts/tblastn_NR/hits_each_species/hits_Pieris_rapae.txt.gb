@@ -1,0 +1,76 @@
+LOCUS       XM_022259270             798 bp    mRNA    linear   INV 10-AUG-2017
+DEFINITION  PREDICTED: Pieris rapae uncharacterized LOC110993135
+            (LOC110993135), mRNA.
+ACCESSION   XM_022259270
+VERSION     XM_022259270.1
+DBLINK      BioProject: PRJNA397594
+KEYWORDS    RefSeq.
+SOURCE      Pieris rapae (cabbage white)
+  ORGANISM  Pieris rapae
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Papilionoidea; Pieridae; Pierinae; Pieris.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_019093247.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Pieris rapae Annotation Release 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..798
+                     /organism="Pieris rapae"
+                     /mol_type="mRNA"
+                     /specimen_voucher="NVG-3842"
+                     /db_xref="taxon:64459"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole body"
+                     /country="USA: Texas, Dallas Co., Dallas"
+                     /lat_lon="32.9052 N 96.8155 W"
+                     /collection_date="30-Jun-2015"
+                     /collected_by="Nick V. Grishin"
+                     /identified_by="Nick V. Grishin"
+     gene            1..798
+                     /gene="LOC110993135"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:110993135"
+     CDS             76..693
+                     /gene="LOC110993135"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC110993135"
+                     /protein_id="XP_022114962.1"
+                     /db_xref="GeneID:110993135"
+                     /translation="MSEQVTNIVMSDNQLIHLIEAVSRTSLSSREESFERLIQSFSSI
+                     STSDTNMQRTRFAKCLSRFSGVRDFNLVEEFINAISIFKKIENISDDDAIEGLGLLLT
+                     GQASTWWQGVKCEAKTWTSAINLIRESFAPKKQPHEIYLELFSTRQGFKESIDTFLCT
+                     KRALLSQLPTQRHKEEDQIDLIYGLLNIYLKNIFQGQKLKHFGIY"
+ORIGIN      
+        1 tcaacgcgtc ttacgactgg cgcataatat aaatatatac gggtatttat actaaaattt
+       61 caatctaccc gcaaaatgag tgaacaagtt accaatatag ttatgagtga caatcaactc
+      121 attcacttga ttgaagcggt atcaagaaca tctctgtctt caagagaaga aagttttgaa
+      181 cgactaatac aatctttttc gtcgatatct acttcagata ccaatatgca acgtacacgt
+      241 tttgcgaaat gtttatcaag gtttagtggt gtacgagatt ttaatcttgt ggaggaattt
+      301 attaacgcta taagtatctt caagaaaatt gaaaatattt cggatgacga tgccatagaa
+      361 ggattggggt tattgttgac tggtcaagca tcgacttggt ggcaaggagt aaaatgtgag
+      421 gcaaaaactt ggacttcagc aattaatttg ataagagaat ctttcgcccc gaaaaaacaa
+      481 cctcacgaaa tttatttaga attattttct acacgccagg gttttaagga atcaattgat
+      541 acatttctat gtacaaaacg tgcactatta tcacaattac ctacacaacg gcataaggaa
+      601 gaagatcaga ttgatttaat ttatggtttg ctaaatatat atttaaaaaa catattccaa
+      661 ggtcagaaat taaaacattt cgggatctac tgacaaaagg tcgtcatttt caaaatttaa
+      721 aaaataatga agagggagaa atttcaataa ccaaaaggtg caattattgt aagaaaaggg
+      781 gtcatatgga agatgagt
+//
+

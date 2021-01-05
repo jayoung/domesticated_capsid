@@ -1,0 +1,543 @@
+LOCUS       XM_038031913            1520 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes activity-regulated cytoskeleton
+            associated protein 2-like (LOC119636521), mRNA.
+ACCESSION   XM_038031913
+VERSION     XM_038031913.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998423.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1520
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..1520
+                     /gene="LOC119636521"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 19 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119636521"
+     CDS             230..1024
+                     /gene="LOC119636521"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037887841.1"
+                     /db_xref="GeneID:119636521"
+                     /translation="MAQVIQMTTEQLQQLIESVRTSNPTASAGLTVSTQSKGSFSNCT
+                     ASFDGQRDHEAVEEFITSIVTYKEVESISDEDALKGVPLLFYGLASTWWQGIRKEAKT
+                     WNDVLSLIREHFSPTKPAYQVYMEIFEKKQDDKAAIDTFVCQKRALLAQLPDDRHDEE
+                     TELDFIYGLVNIKYRKHIARHDIKNFKDLLEKGRIIEHNNLESEANGGGYVKGAKRTT
+                     IRCTYCNFRGHNQYQCRKRKREENTTEDYAVPKKRHYTGTTKTTSV"
+ORIGIN      
+        1 gtttaattaa cacaacacaa tcattttaag caggggaacc aattcgagaa cattcaataa
+       61 taaaatctgt ctctcttctt gatagggaat ataaatcata tcttatctta taaaaaaaaa
+      121 atctctctta taagagatat attattgata gttatcaagt ggagtaatca atgattcaat
+      181 gaaaaggggt ttacagtgtg cataagtaag taaataggat tctattaaaa tggcccaagt
+      241 tatacaaatg actaccgaac aattgcaaca attgatcgag tccgtgcgca cttctaatcc
+      301 tacagcatct gccggtttaa cggtatctac tcaatctaaa ggtagcttca gtaactgtac
+      361 agcctctttt gatggtcaac gtgatcatga agccgttgag gaatttatta cttcgattgt
+      421 tacgtataaa gaagttgaat cgattagcga tgaagatgct ttgaaaggtg tacctttatt
+      481 attctacggc ttggcatcga cttggtggca gggaattcga aaagaggcta aaacttggaa
+      541 tgatgtttta tcactgatac gcgaacattt ctctcccacc aagccggctt atcaggttta
+      601 tatggaaatt tttgaaaaga aacaagacga taaagccgct atcgatactt ttgtgtgcca
+      661 gaaacgtgct ctgctggcgc agctaccaga cgatcgtcat gatgaggaga ctgaattgga
+      721 ctttatttac ggtcttgtta atattaaata tcgtaaacat attgcacgcc acgatatcaa
+      781 gaactttaaa gacttactgg aaaaggggcg cattatagag cataataatt tggaaagcga
+      841 agcgaacggt ggtggttacg taaaaggtgc aaaacgcaca acaatacgtt gcacatattg
+      901 taattttcgc ggtcataatc aatatcaatg tcgaaaacgg aagagagaag aaaatactac
+      961 tgaagactac gcagttccta agaaaagaca ttacacggga acaacaaaaa caacttcagt
+     1021 ataataacgt tattttaaat gagcgatgat gttttacgtc atctctactt ctctcctccc
+     1081 caagatgaca agaacagtta gttttactag gttaagaaga tttgttcgca ctttactgca
+     1141 atttgttaga ggaaacattt tcagttcgag gagaaatttt tcaagttttt tgtattgaaa
+     1201 tttctcttga atggtaaaga gcgaatacct atagtgaaca catttgatat ttcgactctt
+     1261 tgaagaaaac ttagctattg aatgagttac aagcaaagcg agggacgatg aatgcaatga
+     1321 aagtataatg tgtttgcctt aatgctacta ttagaagaat tattcatttt cttttgtcat
+     1381 tgttcgcatt ttatgcacta cacttttcct tttattaaag aattgtaggc gacatagtta
+     1441 catacgtgca taggcctcgg tttcgttata tttatttatt attaagaatt tattcgatat
+     1501 aaactaagcc tttcattaag
+//
+
+LOCUS       XM_038031978             762 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes activity-regulated cytoskeleton
+            associated protein 2 (LOC119636570), mRNA.
+ACCESSION   XM_038031978
+VERSION     XM_038031978.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998423.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..762
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..762
+                     /gene="LOC119636570"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 20 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119636570"
+     CDS             68..661
+                     /gene="LOC119636570"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2"
+                     /protein_id="XP_037887906.1"
+                     /db_xref="GeneID:119636570"
+                     /translation="MSGKQMSDEQFRILIETIRSLAPQLKEENNESDSKGSFSNCPTR
+                     FFGQRDNDAVEVFIDAVQTYKDVEHINDKDALRGLPLLFNGLAATWWKGVRREAKTWE
+                     NALTLLREHFSPTKPAYQIYMEIFETQQSDSQTIDSFVLTKRALLAKLPEGRHTEETE
+                     IDFIYGLLRLKYRQRIARHDVKTFKDLLEKGRYVERH"
+ORIGIN      
+        1 aaaaacaaat tgaatttttc gcaacttgtc agtttctctt tggtggccgt taagaataaa
+       61 cttaataatg tcgggtaaac agatgtcaga cgaacaattt cgcattttaa tcgaaactat
+      121 acgctctttg gcgccacagt taaaagagga aaacaatgaa agcgattcga aaggtagttt
+      181 tagtaattgt ccgacccgct ttttcgggca acgagacaac gacgctgtgg aagtgtttat
+      241 tgatgctgta cagacatata aggatgtaga acatatcaat gataaagatg ctttgagagg
+      301 tttgccattg ctgtttaacg gcttagcggc gacgtggtgg aaaggtgtac gtcgtgaagc
+      361 gaagacatgg gaaaatgctt tgaccttgtt acgtgaacat ttctcgccta cgaaaccggc
+      421 ctatcaaatt tatatggaaa tcttcgaaac ccaacaaagt gattcccaaa ctattgatag
+      481 ttttgtgcta acgaaacggg cgctgttagc gaaactgccg gaaggcagac ataccgaaga
+      541 gacggaaatt gattttattt atggtttatt acgtttaaaa tatcgtcaaa gaatagcacg
+      601 tcacgatgtt aaaacattta aagacttatt agagaaggga cgatacgtag agaggcatta
+      661 aattagttaa taataataga caatcgttgt aaaatatctt tttgtattta atgtaagcaa
+      721 aagtattgat aagtttataa tatatgtaaa aaacattaaa aa
+//
+
+LOCUS       XM_038031980            1347 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes activity-regulated cytoskeleton
+            associated protein 1-like (LOC119636573), mRNA.
+ACCESSION   XM_038031980
+VERSION     XM_038031980.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998423.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1347
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..1347
+                     /gene="LOC119636573"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 20 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119636573"
+     CDS             172..915
+                     /gene="LOC119636573"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_037887908.1"
+                     /db_xref="GeneID:119636573"
+                     /translation="MAQTVQMTTEQLQQLIEAVRTSAIAAAGAAGSTVAPKSKGSFSN
+                     CISRFGGQRDHEAVEEFITSIVTYKEVESISDEDALKGVSLLFYGLASTWWQGVRKEA
+                     KTWNDVLSLIREHFSPTKPAYQVYMEIFEKKQDDKAAIDTFVCQKRALLSQLPEDRHD
+                     EETELDFIYGLVNIKYRKHIARHDVKTFKDLLEKGRIIEHNNLESEANADGCIKGSKR
+                     TKRCTYCNFRGHTQDQCRKRNKEENAGDD"
+ORIGIN      
+        1 aacgaccatt ttaaataata gttcctgatt tttaatttaa gacattcgcc agtgaaattt
+       61 ggctttgtta aaaggaactt tctaaaaaaa aaaaaaaaaa cttttaaaat ctgctgcata
+      121 ttctgtaaag tgatttcttg agtgtgtcca actagaagaa cttccttaaa aatggctcaa
+      181 actgtacaaa tgactaccga acaattgcaa caattgattg aagctgtacg tacgtctgct
+      241 atagctgccg ctggagcggc cggttcaact gtagcaccca aatcgaaagg tagctttagt
+      301 aattgcattt cccgttttgg tggtcaacgg gatcatgaag ccgttgagga atttattact
+      361 tcgattgtta cgtataaaga agttgaatcg attagcgatg aagatgcttt gaaaggtgtt
+      421 tccctattat tctacggttt ggcatcgact tggtggcaag gtgttcgaaa agaagctaaa
+      481 acatggaatg atgttttatc actgatacgt gaacatttct ctcccaccaa gccggcttat
+      541 caggtgtata tggaaatttt tgaaaagaaa caagacgata aagccgctat cgatactttt
+      601 gtatgccaga aacgtgctct gctatcgcag ctgccagagg atcgtcatga tgaggagact
+      661 gaattggact ttatttacgg tcttgtcaat atcaaatatc gtaaacatat tgcacgccac
+      721 gatgtcaaga cgtttaaaga tttactggaa aaggggcgca ttatagagca taataatttg
+      781 gagagtgaag ccaatgccga tggttgcata aaaggttcta aacgcacaaa acggtgcaca
+      841 tattgcaact tccgtggcca tactcaggat caatgccgta aacgtaacaa ggaagaaaat
+      901 gctggtgatg actaagtcat tgctaaacga aaggaacaca acaacaataa cagcataaca
+      961 ataactttaa aatatgatgt caccttgaga gagcgattgt tttctacgtc attttctcta
+     1021 cacctcaaag atggcaaaaa cggttactct cttaggttaa tatttttcgc tgcgtaattt
+     1081 ataataattt tcggtaaaat tactcaaata ctctcttata tccaaattaa gtgctttagg
+     1141 aaagattttt tatgcttttg tttagaaaaa aagtttttta attttttttt caaacgtaag
+     1201 cattttaaat tgtttcctaa atcatttagg atggggtaag aatgtataat ttcttttttt
+     1261 ttttctaaac gctgagctcc taagcacggc tattggatat gaacgccaaa ccctccaaca
+     1321 ttgctataga aaaatgattt ttaacaa
+//
+
+LOCUS       XM_038032349             656 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes activity-regulated cytoskeleton
+            associated protein 2-like (LOC119636759), mRNA.
+ACCESSION   XM_038032349
+VERSION     XM_038032349.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998423.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..656
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..656
+                     /gene="LOC119636759"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119636759"
+     CDS             40..645
+                     /gene="LOC119636759"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037888277.1"
+                     /db_xref="GeneID:119636759"
+                     /translation="MTDGKKEGRMSDEQFRILSETLYCLTPRLKQDVHQVESKGSFSN
+                     CPDSFSGYREFEDVEEFIDAIETYKNMEQITNEDALKGLPLLLHDLAFIWWKGIHREF
+                     KTWENAMTLLRENFSPIKPAYQIYKEFFETKQTEYQSIHTFVLQKRALLAKLPEGTLD
+                     KQTEIDFIYGLLNFKFRQHIPRNKIKSIKDLLDKGKRIERY"
+ORIGIN      
+        1 agtttctctt tagatgacaa taagcacaaa ctgtgtccaa tgacggatgg aaagaaggaa
+       61 ggaaggatgt cagatgagca atttcgcata ttaagcgaga cattatattg cttgacgcca
+      121 cgtttgaaac aagatgttca tcaagttgaa tcaaaaggca gttttagcaa ttgtccggac
+      181 agcttctcgg gatatcggga gtttgaagac gtggaagagt ttatagatgc gatagaaacg
+      241 tataaaaata tggaacaaat tacgaatgaa gatgctttaa aaggtttacc gctattattg
+      301 cacgatttag cattcatatg gtggaagggg atacatcgcg aattcaaaac atgggaaaat
+      361 gctatgactt tgttacgtga aaatttctca cctatcaaac ctgcttatca aatctataag
+      421 gaattctttg aaacaaaaca aaccgagtat caatctatcc atacttttgt gctgcagaaa
+      481 cgtgctctct tagctaaact accggaaggg acgctcgaca agcaaactga aattgatttt
+      541 atttatggtt tattaaattt taagtttcgt caacatatac cgcgaaataa aattaaatca
+      601 attaaagatc tgcttgataa aggaaaacgc attgaaagat attaaattaa atattt
+//
+
+LOCUS       XM_038033250            2300 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes uncharacterized LOC119637307
+            (LOC119637307), transcript variant X1, mRNA.
+ACCESSION   XM_038033250
+VERSION     XM_038033250.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998431.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2300
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..2300
+                     /gene="LOC119637307"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 9 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:119637307"
+     CDS             370..1896
+                     /gene="LOC119637307"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119637307 isoform X1"
+                     /protein_id="XP_037889178.1"
+                     /db_xref="GeneID:119637307"
+                     /translation="MAEIIVRNQDKRFQTLLDCSARFAGEHGSRKIQCFLDFIATYKD
+                     VKRIRDEQALEELGHLLTNSAHDWWIRRKDHFLNWPEALTALQKHFSRQRPAHAIYAE
+                     IFGCSFDKYLQAEDFIYDKYELFHELPQPLPSERMQLDIIYALLPEEKRKNIYPMNIM
+                     TVMDLKECIKDLQSNDIATVSTQHPNITIDSNKQCNTDVRIKSPKAKEETKEIEIVCD
+                     ESNPQKQKRRLEEANESVDITLVQDRDPIIKVRRTEDLMPTIRDNKEIRTVQPQETNE
+                     KSTPPFQLASENINQMDHIINLCGNENDLPTNIGGLGVSITSVADASQITYLLNGETT
+                     IAPEIVTPNQQQAFAKDKKPKMRYKLSRSFGGKSDVNPKRVKYTKLVPERLKNTKKTT
+                     ETENVQSATSNTNIVMAAGSMPDISNTNISQSPTISPSTPTTSTASNHTISNTLTTKL
+                     IDPINGPFSTKAAAAKMRLNAGTSSNAKCHQCGTTGFYRSICPNCSPIYFYKPPNNAL
+                     "
+ORIGIN      
+        1 gaacaaagaa tacctagtgt agccaagttt ttgtaccgca ttaaaaaatg ccgtataacc
+       61 gaacgtaact tgccatataa tgcgttgtaa aatgctgtga ttaaaatttt gtggaaattc
+      121 attttcctat cattgcgcgt tctgtcagct ggtatttgaa aggctgccct atttttgaaa
+      181 ctttaacgcg gcgaatgtaa aattggtctg ctaagtaaac gtaaacttta gaagtgaacg
+      241 tttaattata actgtcacaa aaattttaat taacaaatgc gtttttatca accaacaaat
+      301 tgatgataca ggcagtttta taactgggga ataagtattt ctcatctgca tttacaaaat
+      361 cttaatataa tggctgaaat aattgtgaga aatcaagata aacgttttca aacattattg
+      421 gattgttcgg cccgatttgc cggtgagcat ggaagtcgaa agattcaatg ttttcttgat
+      481 tttattgcta cttataagga tgttaaacgc attagagatg aacaagcttt ggaagaatta
+      541 gggcatttgt tgacaaattc tgcgcatgac tggtggatta gaagaaaaga ccatttttta
+      601 aattggccag aggccttaac ggcgttacaa aaacactttt caagacaaag gcctgcgcat
+      661 gcaatttatg ccgaaatatt tggttgctct ttcgataaat atttgcaagc agaagacttc
+      721 atttatgata agtatgaact tttccatgag ttgccgcaac ctttgccgtc cgaaagaatg
+      781 cagttggata ttatatatgc tctgttgccc gaggaaaaac gtaaaaatat ttatcccatg
+      841 aatattatga cggtaatgga tttaaaggaa tgtattaaag atttacaaag taatgatatc
+      901 gcgaccgtct ccacccagca tcccaatatt acaatcgata gtaataagca gtgtaatacc
+      961 gatgttagaa tcaagagtcc gaaggccaaa gaagagacca aagagattga aatagtttgt
+     1021 gatgaaagta acccgcaaaa acaaaaaaga cgtttggaag aagctaatga atctgtggat
+     1081 attactttgg tccaagacag agatcctatt attaaggtta gacgtaccga agacttaatg
+     1141 cccactatta gagataataa agaaatacga acagtacaac cacaggagac aaatgaaaaa
+     1201 tctacgccac cattccaact tgcttccgag aacataaacc aaatggatca cattattaat
+     1261 ttatgcggaa atgaaaacga tttacctacc aacataggtg gtttgggtgt gtcaataaca
+     1321 agtgttgctg atgcttcaca aattacatat ttattaaatg gtgaaactac tattgctcct
+     1381 gaaattgtta cacccaatca gcaacaagca tttgcgaaag acaaaaaacc aaaaatgcgt
+     1441 tataagttga gtcgatcatt tggtggcaaa tccgatgtaa atcctaaaag ggtcaaatat
+     1501 acgaagcttg ttccagaaag acttaaaaat actaaaaaaa ccactgaaac tgaaaatgta
+     1561 cagagtgcaa ccagtaatac caatattgta atggcagcag gatcaatgcc tgacatttcc
+     1621 aacacaaaca ttagccaatc acctacaata agcccttcaa cgccaacaac aagtacggct
+     1681 tccaatcata caattagtaa tacgttaact actaaactta tagatccaat taatggaccg
+     1741 ttttccacga aagccgccgc agccaaaatg cgtttaaatg caggtacaag ttcgaatgcg
+     1801 aagtgccatc agtgtggtac aacgggcttt taccgtagta tatgtccaaa ttgtagtcct
+     1861 atatattttt ataagccccc taataacgct ttgtaagtac taccgaacaa tattttaatt
+     1921 acaattacca ttcttgaatt attacaatca ctattcctga gttatccatt tataggaacg
+     1981 taagcaattt tttattatag acagcatatt tacttggtta gtatataaag atacatacat
+     2041 acatcaggaa caagaacaac aacgtatttt atacgtgtat acgcagattt taagaagata
+     2101 gcattatgaa ctagttagaa caaatactat tgtgatcaaa aggcaagatt ataaatatag
+     2161 caaatatttt aagagaccta aaatgtaaga acctggatag gtactcctta aaatttatgt
+     2221 tttacatgga aaaattgtct ttctatacct tcggggtgca aaagtgtgct tgtagctcat
+     2281 gtcaaagata aaggtattgt
+//
+
+LOCUS       XM_038033251            2250 bp    mRNA    linear   INV 03-DEC-2020
+DEFINITION  PREDICTED: Glossina fuscipes uncharacterized LOC119637307
+            (LOC119637307), transcript variant X2, mRNA.
+ACCESSION   XM_038033251
+VERSION     XM_038033251.1
+DBLINK      BioProject: PRJNA681617
+KEYWORDS    RefSeq.
+SOURCE      Glossina fuscipes
+  ORGANISM  Glossina fuscipes
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Diptera; Brachycera;
+            Muscomorpha; Hippoboscoidea; Glossinidae; Glossina.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023998431.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Glossina fuscipes Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2250
+                     /organism="Glossina fuscipes"
+                     /mol_type="mRNA"
+                     /isolate="IAEA_lab_2018"
+                     /isolation_source="colony maintained in IAEA laboratories
+                     in Seibersdorf, Austria; originally collected from
+                     Ethiopia"
+                     /db_xref="taxon:7396"
+                     /chromosome="Unknown"
+                     /tissue_type="Whole body pupa"
+                     /collection_date="09-Nov-2018"
+     gene            1..2250
+                     /gene="LOC119637307"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 5 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:119637307"
+     CDS             371..1846
+                     /gene="LOC119637307"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119637307 isoform X2"
+                     /protein_id="XP_037889179.1"
+                     /db_xref="GeneID:119637307"
+                     /translation="MAEIIVRNQDKRFQTLLDCSARFAGEHGSRKIQCFLDFIATYKD
+                     VKRIRDEQALEELGHLLTNSAHDWWIRRKDHFLNWPEALTALQKHFSRQRPAHAIYAE
+                     IFGCSFDKYLQAEDFIYDKYELFHELPQPLPSERMQLDIIYALLPEEKRKNIYPMNIM
+                     TVMDLKECIKDLQSNDIATVSTQHPNITIDSNKQCNTDVRIKSPKAKEETKEIEIVCD
+                     ESNPQKQKRRLEEANESVDITLVQDRDPIIKVRRTEDLMPTIRDNKEIRTVQPQETNE
+                     KSTPPFQLASENINQMDHIINLCGNENDLPTNIGGLGVSITSVADASQITYLLNGETT
+                     IAPEIVTPNQQQAFAKDKKPKMRYKLSRSFGGKSDVNPKRVKYTKLVPERLKNTKKTT
+                     ETENVQSATSNTNIVMAAGSMPDISNTNISQSPTISPSTPTTNPINGPFSTKAAAAKM
+                     RLNAGTSSNAKCHQCGTTGFYRSICPNCSPIYFYKPPNNAL"
+ORIGIN      
+        1 agaacaaaga atacctagtg tagccaagtt tttgtaccgc attaaaaaat gccgtataac
+       61 cgaacgtaac ttgccatata atgcgttgta aaatgctgtg attaaaattt tgtggaaatt
+      121 cattttccta tcattgcgcg ttctgtcagc tggtatttga aaggctgccc tatttttgaa
+      181 actttaacgc ggcgaatgta aaattggtct gctaagtaaa cgtaaacttt agaagtgaac
+      241 gtttaattat aactgtcaca aaaattttaa ttaacaaatg cgtttttatc aaccaacaaa
+      301 ttgatgatac aggcagtttt ataactgggg aataagtatt tctcatctgc atttacaaaa
+      361 tcttaatata atggctgaaa taattgtgag aaatcaagat aaacgttttc aaacattatt
+      421 ggattgttcg gcccgatttg ccggtgagca tggaagtcga aagattcaat gttttcttga
+      481 ttttattgct acttataagg atgttaaacg cattagagat gaacaagctt tggaagaatt
+      541 agggcatttg ttgacaaatt ctgcgcatga ctggtggatt agaagaaaag accatttttt
+      601 aaattggcca gaggccttaa cggcgttaca aaaacacttt tcaagacaaa ggcctgcgca
+      661 tgcaatttat gccgaaatat ttggttgctc tttcgataaa tatttgcaag cagaagactt
+      721 catttatgat aagtatgaac ttttccatga gttgccgcaa cctttgccgt ccgaaagaat
+      781 gcagttggat attatatatg ctctgttgcc cgaggaaaaa cgtaaaaata tttatcccat
+      841 gaatattatg acggtaatgg atttaaagga atgtattaaa gatttacaaa gtaatgatat
+      901 cgcgaccgtc tccacccagc atcccaatat tacaatcgat agtaataagc agtgtaatac
+      961 cgatgttaga atcaagagtc cgaaggccaa agaagagacc aaagagattg aaatagtttg
+     1021 tgatgaaagt aacccgcaaa aacaaaaaag acgtttggaa gaagctaatg aatctgtgga
+     1081 tattactttg gtccaagaca gagatcctat tattaaggtt agacgtaccg aagacttaat
+     1141 gcccactatt agagataata aagaaatacg aacagtacaa ccacaggaga caaatgaaaa
+     1201 atctacgcca ccattccaac ttgcttccga gaacataaac caaatggatc acattattaa
+     1261 tttatgcgga aatgaaaacg atttacctac caacataggt ggtttgggtg tgtcaataac
+     1321 aagtgttgct gatgcttcac aaattacata tttattaaat ggtgaaacta ctattgctcc
+     1381 tgaaattgtt acacccaatc agcaacaagc atttgcgaaa gacaaaaaac caaaaatgcg
+     1441 ttataagttg agtcgatcat ttggtggcaa atccgatgta aatcctaaaa gggtcaaata
+     1501 tacgaagctt gttccagaaa gacttaaaaa tactaaaaaa accactgaaa ctgaaaatgt
+     1561 acagagtgca accagtaata ccaatattgt aatggcagca ggatcaatgc ctgacatttc
+     1621 caacacaaac attagccaat cacctacaat aagcccttca acgccaacaa caaatccaat
+     1681 taatggaccg ttttccacga aagccgccgc agccaaaatg cgtttaaatg caggtacaag
+     1741 ttcgaatgcg aagtgccatc agtgtggtac aacgggcttt taccgtagta tatgtccaaa
+     1801 ttgtagtcct atatattttt ataagccccc taataacgct ttgtaagtac taccgaacaa
+     1861 tattttaatt acaattacca ttcttgaatt attacaatca ctattcctga gttatccatt
+     1921 tataggaacg taagcaattt tttattatag acagcatatt tacttggtta gtatataaag
+     1981 atacatacat acatcaggaa caagaacaac aacgtatttt atacgtgtat acgcagattt
+     2041 taagaagata gcattatgaa ctagttagaa caaatactat tgtgatcaaa aggcaagatt
+     2101 ataaatatag caaatatttt aagagaccta aaatgtaaga acctggatag gtactcctta
+     2161 aaatttatgt tttacatgga aaaattgtct ttctatacct tcggggtgca aaagtgtgct
+     2221 tgtagctcat gtcaaagata aaggtattgt
+//
+

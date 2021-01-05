@@ -1,0 +1,153 @@
+LOCUS       XM_018478091             400 bp    mRNA    linear   INV 30-JUL-2018
+DEFINITION  PREDICTED: Agrilus planipennis activity-regulated cytoskeleton
+            associated protein 2-like (LOC108742775), partial mRNA.
+ACCESSION   XM_018478091
+VERSION     XM_018478091.1
+DBLINK      BioProject: PRJNA343475
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Agrilus planipennis (emerald ash borer)
+  ORGANISM  Agrilus planipennis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Coleoptera; Polyphaga;
+            Elateriformia; Buprestoidea; Buprestidae; Agrilinae; Agrilus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020442386.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Agrilus planipennis Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..400
+                     /organism="Agrilus planipennis"
+                     /mol_type="mRNA"
+                     /isolate="EAB-ADULT"
+                     /isolation_source="infested green ash trees in a
+                     residential area"
+                     /host="Fraxinus pennsylvanica (green ash)"
+                     /db_xref="taxon:224129"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /tissue_type="entire body"
+                     /dev_stage="adult"
+                     /country="USA: Clinton, Prince George's County, Maryland"
+                     /collection_date="31-Jul-2013"
+                     /authority="Fairmaire"
+     gene            1..>400
+                     /gene="LOC108742775"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:108742775"
+     CDS             1..>400
+                     /gene="LOC108742775"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_018333593.1"
+                     /db_xref="GeneID:108742775"
+                     /translation="MATLTEEQFARLMTQLQPTNGAPQASFAQCTARCAGSRDPPLVE
+                     EFINVAFIFIKINDDDILTGLSLLLTGVAVIWWQGVKTKATTCDQAAELMRGAFAWKK
+                     PNNQLYQEIFKTAQDKSTLTDLFVCQKRALF"
+ORIGIN      
+        1 atggcaaccc tcacggagga acaattcgct cggcttatga cccaactaca accgaccaat
+       61 ggggcaccac aggccagctt cgcacaatgc accgcgcgat gcgcaggctc acgtgatcca
+      121 ccgctggtag aggagtttat aaacgttgct ttcatcttca tcaagataaa cgacgacgat
+      181 atcctaactg gactatcact gctattaaca ggtgttgcgg tgatatggtg gcaaggcgta
+      241 aagaccaaag ccacaacctg cgatcaagct gccgaactaa tgcgtggggc ttttgcttgg
+      301 aaaaaaccta acaaccaact gtaccaggaa attttcaaaa ccgcacagga caaatcaaca
+      361 ttaacagacc tgttcgtatg tcaaaaaagg gcactgttcg
+//
+
+LOCUS       XM_025975539             363 bp    mRNA    linear   INV 30-JUL-2018
+DEFINITION  PREDICTED: Agrilus planipennis activity-regulated cytoskeleton
+            associated protein 2-like (LOC108742484), mRNA.
+ACCESSION   XM_025975539
+VERSION     XM_025975539.1
+DBLINK      BioProject: PRJNA343475
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Agrilus planipennis (emerald ash borer)
+  ORGANISM  Agrilus planipennis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Coleoptera; Polyphaga;
+            Elateriformia; Buprestoidea; Buprestidae; Agrilinae; Agrilus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020438981.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Agrilus planipennis Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..363
+                     /organism="Agrilus planipennis"
+                     /mol_type="mRNA"
+                     /isolate="EAB-ADULT"
+                     /isolation_source="infested green ash trees in a
+                     residential area"
+                     /host="Fraxinus pennsylvanica (green ash)"
+                     /db_xref="taxon:224129"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /tissue_type="entire body"
+                     /dev_stage="adult"
+                     /country="USA: Clinton, Prince George's County, Maryland"
+                     /collection_date="31-Jul-2013"
+                     /authority="Fairmaire"
+     gene            1..363
+                     /gene="LOC108742484"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:108742484"
+     CDS             1..363
+                     /gene="LOC108742484"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_025831324.1"
+                     /db_xref="GeneID:108742484"
+                     /translation="MTTLTKEQFARLMAHLQPTNATSQASFAQRIACFADSRDPQMVE
+                     EFVNVTSIFRRCMKIADADALCEIPSHHMGPSRGLNKRGFTPKKPDYQVYVEIFKTTQ
+                     DKATPTDLFVCQKRALYS"
+ORIGIN      
+        1 atgacaaccc ttacaaaaga acaattcgcc cgtctaatgg cccatctaca accaacaaac
+       61 gcgacgtcac aagccagctt tgcgcagcgt atcgcttgct ttgcagactc acgcgatcca
+      121 cagatggtcg aagaatttgt taacgtcacg tccatcttca gaaggtgtat gaagatcgcc
+      181 gacgctgatg ccctttgtga aatcccaagc caccacatgg gaccaagccg tgggcttaat
+      241 aagcggggat tcactccaaa gaagccggac taccaggtat acgtggaaat tttcaaaacc
+      301 acgcaggaca aggccacgcc caccgatctc ttcgtgtgtc agaagagagc gctgtacagt
+      361 tag
+//
+

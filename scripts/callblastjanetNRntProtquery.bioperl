@@ -5,11 +5,11 @@ use strict;
 use Bio::SeqIO;
 use Bio::Seq;
 
-#this takes a fasta file with multiple seqs as input, searches each one
-#against the specified database if there's
-#no blast output already existing
+#### takes a fasta file with multiple protein seqs as input, does a tblastn search of NR database at NCBI. Returns results in human-readable format as well as tab-delimited format
 
-#set up the blast parameters
+## these are the fields that will appear in the formatted version
+my $blastFieldsToGet = "qaccver qlen saccver slen evalue score bitscore pident ppos length gapopen qstart qend sstart send sframe staxid ssciname scomname stitle";
+
 
 foreach my $file (@ARGV){
     if (!-e $file) { die "\n\nterminating - file $file does not exist\n\n"; }
@@ -40,8 +40,13 @@ foreach my $file (@ARGV){
             ### check that it worked
             open (TEST2, "< $outfile");
             my $blastsucceed = 0;
+            my $RID = "undefined";
             while ( <TEST2> ) {
-                if (m/Effective\ssearch\sspace\sused/){$blastsucceed = 1;}
+                my $line = $_;
+                if ($line =~ m/Effective\ssearch\sspace\sused/){ $blastsucceed = 1; }
+                if ($line =~ m/^RID:/){ 
+                    $RID = $line; $RID =~ s/^RID:\s//; chomp $RID;
+                }
             }
             close TEST2;
             if ($blastsucceed == 0) {
@@ -54,6 +59,20 @@ foreach my $file (@ARGV){
                 }
                 system ("rm $outfile");
                 redo DO_BLAST_LOOP;
+            } else { ## if the blast succeeded, I will get results formatted in a different way
+                if ($RID eq "undefined") { 
+                    die "\n\nterminating - should have found a line containing RID in blast file $outfile but did not\n\n";
+                } else {
+                    my $outfileTab = "$outfile.txt";
+                    if (!-e $outfileTab) {
+                        my $headerRow = $blastFieldsToGet; $headerRow =~ s/\s/\t/g;
+                        open (OUT, "> $outfileTab");
+                        print OUT "$headerRow\n";
+                        close OUT;
+                        my $formatCommand = "blast_formatter -rid $RID -outfmt \"6 $blastFieldsToGet\" >> $outfileTab";
+                        system($formatCommand);
+                    }
+                }
             }
         } ## end of DO_BLAST_LOOP
         system ("rm tempseq.fasta");

@@ -1,0 +1,333 @@
+LOCUS       XM_032833143            1245 bp    mRNA    linear   INV 13-MAR-2020
+DEFINITION  PREDICTED: Odontomachus brunneus activity-regulated cytoskeleton
+            associated protein 1-like (LOC116852617), mRNA.
+ACCESSION   XM_032833143
+VERSION     XM_032833143.1
+DBLINK      BioProject: PRJNA611815
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Odontomachus brunneus
+  ORGANISM  Odontomachus brunneus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Ponerinae; Ponerini; Odontomachus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022639691.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Odontomachus brunneus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 17% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1245
+                     /organism="Odontomachus brunneus"
+                     /mol_type="mRNA"
+                     /isolate="Ranch 3 - 2012"
+                     /isolation_source="ground/soil nested colonies"
+                     /db_xref="taxon:486640"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole insect"
+                     /dev_stage="adult"
+                     /country="USA: Florida, Lake Placid, Mac Arthur Agro
+                     Ecology Research Center"
+                     /collection_date="06-Mar-2013"
+     gene            1..1245
+                     /gene="LOC116852617"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 88% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 9 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:116852617"
+     CDS             1..807
+                     /gene="LOC116852617"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_032689034.1"
+                     /db_xref="GeneID:116852617"
+                     /translation="MTDNPQALTSRNEDGETSQASESMHSINQMDIAKSINQMRKWGC
+                     QFDGKDPISFLERIEELQNSYGYTEEQMLQGLPELLRGSTLHWYRNNKRTWREWGDFL
+                     NAFREQFFPYRYQFQIKQEIQRRHQGTNEPFRQYSTDLATLMRRAGGFSRRDQIELIY
+                     ENMSPELKVHIRRNNIHTLSELGVQAAEIEDIERQRALFRRNTRSIPQSPTTAAIYNA
+                     AEHCWRCKQRGHTRQRCRNEQKKFCSQCGKDGVLTKNCHPKPGNHTRTEE"
+ORIGIN      
+        1 atgacagata accctcaggc gttaacaagt agaaacgaag atggggaaac aagccaggcg
+       61 tcagaatcga tgcacagcat caaccaaatg gacatagcga agtcaataaa ccagatgcga
+      121 aaatggggat gtcagtttga cggaaaagac ccaatatcat tcttagaacg catcgaagaa
+      181 ttacagaaca gctacggata taccgaggaa caaatgctgc aggggttacc agaactatta
+      241 agaggcagca cactgcactg gtaccgcaat aataaaagaa catggagaga atggggtgat
+      301 tttctaaacg ccttccggga acaattcttc ccataccggt atcaattcca aattaagcag
+      361 gagatacaac gaaggcacca agggacaaat gaacccttcc gacaatattc aaccgacctc
+      421 gcaacattga tgagaagagc aggaggcttc tcacgacgcg accaaatcga actaatttac
+      481 gaaaatatgt caccagaact taaagtgcac ataagaagaa acaacataca cacgctaagc
+      541 gaactaggag tacaggcagc agaaattgaa gatatagaac gacaacgagc actattccgt
+      601 aggaatacac gctctatacc gcagtcaccg acaacagcgg caatatacaa tgcggccgaa
+      661 cactgctggc gatgcaagca aagagggcac acaaggcaaa gatgccgtaa tgaacaaaag
+      721 aaattctgct cacaatgcgg aaaggacgga gtgctcacga aaaattgcca cccgaagccg
+      781 ggaaaccaca caaggaccga ggaatagggc gttccttggt cacacataag cccgcaatta
+      841 aatactctcc tagaccgcac atacaggtaa taattgacga caacaaattc gaagctcttc
+      901 tagactcagg atccgagatc tcctgtatta accaaaaaac agcgaatatg ctaaagaaac
+      961 aaacaagagt acaggcacac accacaacgg tgcgcctcgc agatggtggg agaacaagga
+     1021 taactggaag cctagtggtg ccaatacaga taaacaagaa gacatactgg cataaggtcc
+     1081 atatcatacc gacactagaa agcgccgtat taatcggggt agacttatgg gcgaaactaa
+     1141 aattaccaat ttctccgcca gcaatacagt cgcataataa gaggtacatg cgcacatgta
+     1201 tcatctcgga gggcatgcaa cctcgctcgg ggaaagaaaa cgcaa
+//
+
+LOCUS       XM_032833882             735 bp    mRNA    linear   INV 13-MAR-2020
+DEFINITION  PREDICTED: Odontomachus brunneus activity-regulated cytoskeleton
+            associated protein 2-like (LOC116853032), transcript variant X1,
+            mRNA.
+ACCESSION   XM_032833882
+VERSION     XM_032833882.1
+DBLINK      BioProject: PRJNA611815
+KEYWORDS    RefSeq.
+SOURCE      Odontomachus brunneus
+  ORGANISM  Odontomachus brunneus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Ponerinae; Ponerini; Odontomachus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022639719.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Odontomachus brunneus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..735
+                     /organism="Odontomachus brunneus"
+                     /mol_type="mRNA"
+                     /isolate="Ranch 3 - 2012"
+                     /isolation_source="ground/soil nested colonies"
+                     /db_xref="taxon:486640"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole insect"
+                     /dev_stage="adult"
+                     /country="USA: Florida, Lake Placid, Mac Arthur Agro
+                     Ecology Research Center"
+                     /collection_date="06-Mar-2013"
+     gene            1..735
+                     /gene="LOC116853032"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 17 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:116853032"
+     CDS             8..727
+                     /gene="LOC116853032"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like isoform X1"
+                     /protein_id="XP_032689773.1"
+                     /db_xref="GeneID:116853032"
+                     /translation="MQSVQQDIIAKTINQMRKWGCQFDGKDPISFLERIEELQSSYSY
+                     TDEQMLQGLPELLRGGTLHWYRNNRSTWREWKEFIRAFREHFFPYRFEFQMKQEIQRR
+                     KQEPNEIFRQYATDLATLMRRAGGFSRRDHIDQIYENMSPDLKMHIRRENVHTLRELE
+                     ARAAEIEDIERQRIAFRRDTKSTPRMPMAAALYKASECCWRCKQRGHTRRLCRNEQKK
+                     FCSQCGKDGVLTRNCHPRPGN"
+ORIGIN      
+        1 ggaaacaatg caaagtgtcc agcaggacat aatagcaaag acgattaacc aaatgaggaa
+       61 atggggatgc caatttgatg gcaaagaccc catctcattt ttagaaagaa tcgaggagtt
+      121 acaaagtagc tacagctaca cagatgaaca aatgttgcaa gggctgccgg aactattgag
+      181 aggaggaacg ctccactggt accggaataa cagaagtaca tggagagaat ggaaagaatt
+      241 tataagagca ttcagggagc atttctttcc ataccgcttt gaattccaaa tgaaacaaga
+      301 aattcaaaga agaaagcaag aaccgaatga aatttttcgg caatacgcca ctgatctagc
+      361 cacattaatg aggcgagcag gaggattctc acgccgtgat catattgatc agatttacga
+      421 gaacatgtcg ccggatttaa aaatgcatat ccgaagagaa aacgtacata cgcttaggga
+      481 actggaagca agggcggccg aaatagaaga tattgaacgg cagcgaatag cgtttcgcag
+      541 agatacaaaa tcgacacctc gaatgccgat ggcagccgca ctatacaagg catcagagtg
+      601 ttgctggcgg tgcaagcaga gaggtcatac gagaaggttg tgccgtaatg aacagaaaaa
+      661 attctgttca caatgcggta aggacggcgt gctgaccaga aattgccatc caagaccggg
+      721 aaactaagac cggac
+//
+
+LOCUS       XM_032833884             735 bp    mRNA    linear   INV 13-MAR-2020
+DEFINITION  PREDICTED: Odontomachus brunneus activity-regulated cytoskeleton
+            associated protein 2-like (LOC116853032), transcript variant X2,
+            mRNA.
+ACCESSION   XM_032833884
+VERSION     XM_032833884.1
+DBLINK      BioProject: PRJNA611815
+KEYWORDS    RefSeq.
+SOURCE      Odontomachus brunneus
+  ORGANISM  Odontomachus brunneus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Ponerinae; Ponerini; Odontomachus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022639719.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Odontomachus brunneus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..735
+                     /organism="Odontomachus brunneus"
+                     /mol_type="mRNA"
+                     /isolate="Ranch 3 - 2012"
+                     /isolation_source="ground/soil nested colonies"
+                     /db_xref="taxon:486640"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole insect"
+                     /dev_stage="adult"
+                     /country="USA: Florida, Lake Placid, Mac Arthur Agro
+                     Ecology Research Center"
+                     /collection_date="06-Mar-2013"
+     gene            1..735
+                     /gene="LOC116853032"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 14 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:116853032"
+     CDS             8..727
+                     /gene="LOC116853032"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like isoform X2"
+                     /protein_id="XP_032689775.1"
+                     /db_xref="GeneID:116853032"
+                     /translation="MQSVQQDIIAKTINQMRKWGCQFDGKDPISFLERIEELQSSYSY
+                     TDEQMLQGLPELLRGGTLHWYRNNRSTWREWKEFIRAFREHFFPYRFEFQMKQEIQRR
+                     KQEPNEIFRQYATDLATLMRRAGGFSRRDHIDQIYENMSPDLKMHIRRENVHTLRELE
+                     ARAAEIEDIERQRIAFRRDTKSTPRMPMAAALYKASECCWRCKQRGHTRRLCRNEQKK
+                     FCSQCGKDGVLTRNCHPRPGN"
+ORIGIN      
+        1 ggaaacaatg caaagtgtcc agcaggacat aatagcaaag acgattaacc aaatgaggaa
+       61 atggggatgc caatttgatg gcaaagaccc catctcattt ttagaaagaa tcgaggagtt
+      121 acaaagtagc tacagctaca cagatgaaca aatgttgcaa gggctgccgg aactattgag
+      181 aggaggaacg ctccactggt accggaataa cagaagtaca tggagagaat ggaaagaatt
+      241 tataagagca ttcagggagc atttctttcc ataccgcttt gaattccaaa tgaaacaaga
+      301 aattcaaaga agaaagcaag aaccgaatga aatttttcgg caatacgcca ctgatctagc
+      361 cacattaatg aggcgagcag gaggattctc acgccgtgat catattgatc agatttacga
+      421 gaacatgtcg ccggatttaa aaatgcatat ccgaagagaa aacgtacata cgcttaggga
+      481 actggaagca agggcggccg aaatagaaga tattgaacgg cagcgaatag cgtttcgcag
+      541 agatacaaaa tcgacacctc gaatgccgat ggcagccgca ctatacaagg catcagagtg
+      601 ttgctggcgg tgcaagcaga gaggtcatac gagaaggttg tgccgtaatg aacagaaaaa
+      661 attctgttca caatgcggta aggacggcgt gctgaccaga aattgccatc caagaccggg
+      721 aaactaagac cggac
+//
+
+LOCUS       XM_032834241             624 bp    mRNA    linear   INV 13-MAR-2020
+DEFINITION  PREDICTED: Odontomachus brunneus activity-regulated cytoskeleton
+            associated protein 1-like (LOC116853260), mRNA.
+ACCESSION   XM_032834241
+VERSION     XM_032834241.1
+DBLINK      BioProject: PRJNA611815
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Odontomachus brunneus
+  ORGANISM  Odontomachus brunneus
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Formicoidea; Formicidae; Ponerinae; Ponerini; Odontomachus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022639747.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Odontomachus brunneus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.3
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..624
+                     /organism="Odontomachus brunneus"
+                     /mol_type="mRNA"
+                     /isolate="Ranch 3 - 2012"
+                     /isolation_source="ground/soil nested colonies"
+                     /db_xref="taxon:486640"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="whole insect"
+                     /dev_stage="adult"
+                     /country="USA: Florida, Lake Placid, Mac Arthur Agro
+                     Ecology Research Center"
+                     /collection_date="06-Mar-2013"
+     gene            1..624
+                     /gene="LOC116853260"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:116853260"
+     CDS             1..624
+                     /gene="LOC116853260"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_032690132.1"
+                     /db_xref="GeneID:116853260"
+                     /translation="MLTGLPELLRNDALLWYRNHRASWTHWDDFIRAFREQYLPRRYR
+                     AQLVRELQHRRRLEGEPYAKYATAVLTLMRRAGRLEVDEQVEQLYEGLLPEYKLHVRR
+                     DDVRTLAELGSRTAEFKAITASGSTLRPPERPRHPTLAAAYNRRECCWRCKERGHTRT
+                     NCRRPARKFCSECGKDGILTRECHPRPGNATRAGVYQAEPRSLTESE"
+ORIGIN      
+        1 atgctaaccg ggctaccaga gctcctacgt aacgacgctc tattgtggta ccgaaaccac
+       61 cgcgccagct ggacccactg ggatgacttt atccgcgcgt ttcgggaaca atacctgcca
+      121 cggcgctacc gagcccaatt agtacgggag ctacagcatc ggcgccggct ggaaggagag
+      181 ccatacgcca aatacgccac agcggtgctc accctcatgc ggcgagccgg ccgcctggag
+      241 gtggatgaac aggtagaaca actatacgag ggcctcctac ccgagtacaa actgcacgta
+      301 cgacgggatg atgtcaggac cctcgccgag ctaggctccc ggacggcgga atttaaggca
+      361 atcacggcca gcggttccac cctccggccc ccagaacgac cgcgacatcc caccctggcc
+      421 gccgcctata accgcaggga gtgttgctgg aggtgcaagg aacggggaca tacacgaacg
+      481 aactgtagac ggcccgcacg aaagttctgc tcagagtgtg gcaaggatgg aatcctgacc
+      541 cgagagtgcc atccacggcc gggaaacgcc acccgggccg gggtatacca ggccgagccc
+      601 cggtccctga cggagtccga atag
+//
+

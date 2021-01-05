@@ -1,0 +1,1584 @@
+LOCUS       XM_030179598            3942 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta retrovirus-related Pol polyprotein from
+            transposon 17.6 (LOC115451312), mRNA.
+ACCESSION   XM_030179598
+VERSION     XM_030179598.2
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; corrected model; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051132.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Nov 12, 2020 this sequence version replaced XM_030179598.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio   :: 1% of CDS bases
+            frameshifts :: corrected 1 indel
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-2172              JACVES010000031.1  9204523-9206694     c
+            2173-2173           "N"                1-1
+            2174-3942           JACVES010000031.1  9202754-9204522     c
+FEATURES             Location/Qualifiers
+     source          1..3942
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="18"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..3942
+                     /gene="LOC115451312"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon;
+                     Derived by automated computational analysis using gene
+                     prediction method: Gnomon. Supporting evidence includes
+                     similarity to: 2 Proteins, and 99% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:115451312"
+     CDS             217..3942
+                     /gene="LOC115451312"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon"
+                     /codon_start=1
+                     /product="LOW QUALITY PROTEIN: uncharacterized protein
+                     LOC115451312"
+                     /protein_id="XP_030035458.2"
+                     /db_xref="GeneID:115451312"
+                     /translation="METVMRSSTSTSNDATLARCKATFSGSPTESVTTFIDSIESYID
+                     CCKVSDANTIKGMSMLLSKDAAIWWQGIKSQINSWTEAKDNLISAFGDRRPPHRIYVD
+                     IFKNPHRDENTDLFVAKIRLLFSKLPKGDLSENAELDITYGLLNPKIKKRLRREEFSS
+                     FNELLKLARSVEDSNKEKRGSDHATHAPSPGPRNTITQVRAGRAPAPPTRVATRSPIA
+                     PPSAAGAATHRATQADATPTTPVITSPASTSSAAKMYRPQCTYCRRYNHTRDQCRKLA
+                     NRGESSLTNIPAQVCDNSEINKESFYSVEFSHSNNNVRSLKCSIGGGQSNKHLNAIAT
+                     NRMSKHIANNNNDNYSLRASHNNNFHCTYNNCSTTARVSQKSLQGVNYNSKYVNCMDP
+                     SEYVRNSKIYNFRNCMDPNEYVRNSKINNFCNCMDPNEYVRNSKINNFRNLSKNKKNV
+                     NRFKNYGYCNDCICSGDIVTLEDGSERPVACREVRPIFKINILGVTGTALIDTAAKHC
+                     IAGHTLYALLLRKGQPLVPSTRKIKLADGCVRVMEVLTTTLAVSLDHKIIKIPFLIFP
+                     DSNNNETLLGIDFITAAGVVIDFNKEIWYFSNNNTITHKLLFEPTAKHISCSTANVLR
+                     DDEGSQLHPAERRALAEVLVSHENVFKAXGGPTPYAEHRIDTGNHPPIAVPPYRLTPA
+                     KKELMQQEINKMLDDDVIEACESAWCAPALMVPKSNGTIRFCVDYRRLNAVTKSDTYP
+                     MPRIDELLQSTKRNCYMSTLDLQSSYWQVSIRESDKDKTAFISPLGTYRFKKMPFGLK
+                     NAPATFQRLIDRLRSCAALKDVTILAYLDDILVISEGFQKHLEDLELVLARLEEFNLQ
+                     VNRGKCVFARERVKYLGHIITQNGISTDPQKVSAVLDMKEPSNLKHLRTFLQTCSWFR
+                     KFIPNFSKVSEPLTRLTRKNQVWTWGLEQSQAFSELKRLLTSAPILVQPDFNSPFILR
+                     TDASNFALGAVLLQGEGKQERPIEYASRLLNNAERNYSTTEREALAVVWAVERFRAYL
+                     DGQPVIIGSDHQPLRWLLSLKSPTGRLIRWALKLQSFDIKFEYTPGKANVVADTLSRP
+                     ICSSETRNECGICSTICDLPTKSPSQIRQEQLADPELMKIFKELEGTDEVASQTWCER
+                     GYLMDQGVLYRYNPDSESECPQLVIPADQVINILKELHDSPLAGHPGIDRTYQKVAQL
+                     YYFTGMRRIIADYVTACIHCQRYKASNAKPPGLYKLR"
+ORIGIN      
+        1 gccccgaccg cgcctccctc gacacacaac tccgactgtg gtagtcccat cgcctctggt
+       61 accggcgatg acccgacacc gcagcgctca cgccgcgtgc ccgatatcgc gggcgcagca
+      121 gccacatcaa ccccagaggg gacctttagc caagatagtg tgacagccat tttgtcggca
+      181 ttacaaaggt cacaaaacga agccctacgc gacataatgg agaccgtaat gcgaagttca
+      241 acatccacat ctaacgacgc gaccttggct cgctgtaagg ccacgtttag cggatcacca
+      301 acagagtcag tgaccacgtt catagatagc atcgaaagct acatcgactg ctgtaaggtg
+      361 tcggacgcta atacgatcaa aggcatgtcg atgctgctca gtaaggacgc cgcaatctgg
+      421 tggcaaggaa tcaagagcca aattaacagt tggaccgagg cgaaagacaa cttaatcagc
+      481 gccttcggag accgccgccc gccacataga atatacgtcg atatttttaa aaatccgcat
+      541 cgcgacgaaa ataccgatct gtttgtggct aaaatacgat tattattttc aaaattgcca
+      601 aaaggagact tgtcggaaaa tgccgaacta gatataacat acggcctttt gaatcctaaa
+      661 attaaaaaac ggctccgcag agaagaattc tcgtctttca acgagctcct aaaactggcg
+      721 agaagcgtgg aagactccaa taaagaaaag cgtggttctg atcacgccac acacgcccca
+      781 tcgccaggcc cccgtaacac aatcacacaa gtacgtgccg gccgcgctcc cgcgccgccg
+      841 acacgtgttg ctacgcgctc cccgatcgcc ccgccgagtg ccgccggcgc tgcgacgcac
+      901 cgagccacgc aggccgacgc gacaccgacg acaccagtca tcacatcacc agctagtaca
+      961 tccagtgctg cgaagatgta tcgtccgcag tgtacatact gtcggcggta caaccatacg
+     1021 agagaccaat gtcgtaagtt ggcaaatcga ggtgagtcca gcttaactaa cattcccgcg
+     1081 caagtgtgtg ataatagtga aataaataaa gaaagctttt atagtgtcga attttcgcat
+     1141 tcgaataata acgtacgttc gctaaagtgt tcaatcggtg gtggtcagtc aaataaacat
+     1201 ttaaacgcta ttgcaactaa cagaatgtct aagcatattg ctaataataa taatgataat
+     1261 tatagtttaa gagctagtca taataataat tttcattgta cttataataa ttgtagtacg
+     1321 acagctaggg tctcacaaaa atcacttcaa ggtgtaaact ataattcaaa gtatgtaaat
+     1381 tgtatggatc cgagtgaata tgtacgtaac tcaaaaattt ataattttcg taattgtatg
+     1441 gatcctaatg aatatgtacg taactcaaaa ataaataatt tttgtaattg tatggatcct
+     1501 aatgaatatg tacgtaactc aaaaataaat aattttcgga atttgtctaa gaataaaaaa
+     1561 aatgttaata gatttaagaa ttatggttat tgtaatgatt gtatatgtag tggggacatt
+     1621 gtaacgttag aagacggtag tgagaggcca gttgcatgtc gcgaagttcg tcctattttc
+     1681 aaaattaata ttttgggtgt tactggtaca gctttaatag acaccgccgc gaaacattgc
+     1741 attgctggtc acacgctgta tgctctcctt ctacgaaaag gtcaacccct tgttccctca
+     1801 acgcgtaaga tcaagcttgc tgatggctgt gtgcgggtca tggaagttct tactactact
+     1861 ttagcggtga gtttagacca taaaatcatt aagataccat tcctgatttt tcccgattcc
+     1921 aataataatg aaacactcct aggcattgat tttattacag ctgcaggagt tgttattgat
+     1981 tttaataaag aaatttggta ttttagtaat aataatacta ttacacataa actacttttt
+     2041 gaacctactg caaaacacat aagctgttct actgcgaatg ttcttcgtga tgatgaagga
+     2101 tcccaacttc atccagctga gcgtagagcg ctcgctgaag tcctcgtcag tcacgagaat
+     2161 gtcttcaaag canggggagg tccaactcca tacgcagagc accgcatcga tacaggtaat
+     2221 catccaccta tagcagtgcc gccgtaccgg cttacaccag cgaagaagga gttgatgcag
+     2281 caggaaataa ataaaatgct agatgatgac gtcatcgaag catgtgaatc agcttggtgt
+     2341 gcaccggcat tgatggtgcc gaagtcgaat ggtacaattc gattctgtgt agattacaga
+     2401 cgccttaacg cagtcaccaa gtctgacact tacccgatgc cacgcatcga tgagctctta
+     2461 cagtcaacga aaaggaattg ctatatgagt acattagacc ttcagtcttc ttactggcaa
+     2521 gtaagtatta gggagtctga caaagacaaa actgccttca tatctcctct cggcacctac
+     2581 cgattcaaga agatgccgtt cggtcttaag aacgcgccgg caacttttca acgactgatt
+     2641 gaccgacttc gttcttgtgc agccctgaaa gatgtaacaa ttctagcgta cttagacgat
+     2701 attttggtaa tctctgaagg attccagaag cacctagagg acctagagct ggtgttggca
+     2761 cgtcttgaag aatttaatct tcaagtgaat cgcggtaagt gtgtttttgc gagagagagg
+     2821 gtgaaatacc ttggccacat cataacccaa aatggtattt ctaccgatcc acaaaaggtg
+     2881 agtgcagttt tagacatgaa agaaccttct aatctaaaac atttacgaac ctttttgcaa
+     2941 acttgctcat ggtttcgaaa atttatccca aatttttcta aagtgtccga gcctttgaca
+     3001 cgcttgacaa gaaaaaatca agtatggacc tggggtttgg agcaatccca agctttcagt
+     3061 gagctaaaac gcttgctcac ttcagcaccg atactggttc aacctgactt caacagccct
+     3121 tttattctgc gcacagacgc aagtaacttc gccttaggcg cagtattgct acagggagaa
+     3181 ggtaagcagg aaaggccgat tgaatatgcc agtcgactct taaacaatgc tgagcgcaac
+     3241 tactcgacta cagaacggga agcgctcgcc gttgtctggg cagtcgagcg ttttcgggca
+     3301 tatctcgacg gtcagccagt aatcatcgga agtgatcatc aaccacttcg ctggctatta
+     3361 tctttaaaat cgccaacagg taggttgatc cgttgggcgt taaaactcca gtcctttgat
+     3421 atcaagttcg aatatacacc gggaaaagcc aacgttgttg cagacactct cagcagacca
+     3481 atctgttcga gtgagactcg caacgagtgt ggtatttgct ccactatatg tgacttaccg
+     3541 actaagtcgc caagccaaat aagacaagag caactggccg atcccgagct gatgaaaatt
+     3601 tttaaagaac ttgaaggtac tgacgaagtc gcttcacaga catggtgtga acgcggatac
+     3661 ctcatggatc aaggtgtttt atataggtat aacccggatt cagaaagcga gtgtccccaa
+     3721 ctcgtcattc cagcggatca agtaattaat atacttaagg aactgcacga ctctccgtta
+     3781 gcaggccacc ctggaatcga tcgaacgtac caaaaggtag cgcaattata ttattttaca
+     3841 ggaatgcgaa gaataatagc tgattatgta acagcctgca ttcactgcca acgctataag
+     3901 gcatcaaatg ccaagccacc tggcctttac aaactccggt ga
+//
+
+LOCUS       XM_030180375            3063 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC115451954
+            (LOC115451954), mRNA.
+ACCESSION   XM_030180375
+VERSION     XM_030180375.2
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051122.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Nov 12, 2020 this sequence version replaced XM_030180375.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..3063
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="8"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..3063
+                     /gene="LOC115451954"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:115451954"
+     CDS             1..3063
+                     /gene="LOC115451954"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC115451954"
+                     /protein_id="XP_030036235.2"
+                     /db_xref="GeneID:115451954"
+                     /translation="MAAANESPSASRAPFVDGSAPSSSSPSIVMTEQQLLRLVQLLQM
+                     QSPAPAATCASPSPALSQGNFAKCTARFDGAKESDVVAFIDAIEVYKECVSMEDSIAL
+                     RGLPMLFTGLAATWWQGVKASIESWSNAMDLLKQTYGPRLPPHRIYREIFSKEQGDET
+                     TDMFVCRVRALIAQLPPGSLKEDVQLDMVYGLLSTRIREKIPRSGFKLYAELLSQARR
+                     LEDLFEEGRPRQRKTDAGDGLSPAIPQKSASPSTSTVKTKSRLLCGYCKSYGHEKADC
+                     SRLRERTQTKVTDGTSSPPSVSSLVCFGCGAPGVIRANCTTCRASSTSSAMPFQAVAA
+                     VSATCQPRSRPVMRVGMYGEYARLLVDTGAKQSIASDSLRNFLCKNNHVFHKVHYDFK
+                     FANGVTNSDIVETALVDVTVQGVVVPTQFVVLPGATESLLGINFVRDAGMVLDFRRDI
+                     WSLRDKPGSFPLEYENVGTRIVCSMVDLLREDEATRLTVEERVQLSNVLDNNRDIFEP
+                     GGAATSFAVHRIDTGDHPPISVPPYRVTPAKKNILKEEIDKMLQEGIIEEADSEWTSP
+                     VVLVPKKDGTVRFCVDYRKLNHITRADKYPLPLIDELIQSTKCNSVMSTIDLKSGYWQ
+                     IEVAPEDRDKTAFVSPFGTFRFRRMPFGLRNAPSTFQRLIDRFRSGLKDMTVVCYLDD
+                     ILIISDDLPTHLTHLQQVFDRLRLFNLKANREKCIFGRERLTYLGHVISPAGIEPDPD
+                     KVKAVMDMKPPSNLKELKTFLQTCAWFRKFIPQFSDVARCLTNLTKKDQHWKWGESEH
+                     NAFEELKLRLSSSPILRQPDFNSPFILRTDASAYAIGAALMQGSNDKDERPVEYASRL
+                     LTSAERNYHTTEREALAVVWALDKFRCYLEGVEVRVVTDHQPLKWLLSIKTPSGRLAR
+                     WAMKIQPYNLNIEYTPGKVNVVADTLSRPPGFDNACAFCPVAVDMPRKTAEELRAAQL
+                     SDAEVSKIIKDFEEGNSDASAHWTDRGFIWTKVLCGELIALTKSTILN"
+ORIGIN      
+        1 atggccgccg cgaatgaatc gccgtcggca agccgcgcgc cgtttgttga cggcagcgcg
+       61 ccttcatcgt ctagtccatc tatcgtgatg acggagcagc aactgctgcg acttgttcag
+      121 ttgcttcaaa tgcaatcacc tgcacctgcg gctacttgtg cttcaccatc gcctgcgctt
+      181 tcccagggca actttgccaa gtgcacggcg cggttcgacg gcgctaagga gagcgacgtt
+      241 gtagcgttta ttgacgctat cgaagtttac aaggagtgcg tcagcatgga ggacagcatt
+      301 gccctgcgtg gacttccgat gcttttcacc gggttggctg cgacctggtg gcaaggtgtg
+      361 aaagcttcga tcgagagttg gtcgaacgct atggacctac tgaagcaaac ttatggaccg
+      421 cgtctcccgc ctcacagaat ttatagagag attttctcca aagaacaagg agacgagact
+      481 acagatatgt ttgtatgcag ggtgagagcc ctgatagccc agctgccacc tggtagttta
+      541 aaagaagacg tacaacttga tatggtttac gggctattga gtaccagaat aagggagaaa
+      601 attccccgaa gtggtttcaa attatatgct gaattgttat cccaggctcg tcgcctggaa
+      661 gacctgtttg aagagggtcg tccgagacag cgcaagacgg atgctgggga tgggctgtcc
+      721 ccagccattc cccagaaatc ggcaagtcca tccacttcta cggttaagac aaaatcccgg
+      781 ttgttatgtg ggtactgcaa gagttacggc cacgaaaagg ccgactgctc ccggttgcgc
+      841 gaacggaccc aaaccaaggt aacggacggc acgtcatcgc cgccgtcggt ttcatcactc
+      901 gtgtgctttg gttgtggcgc gccaggcgtc atacgtgcga actgtacgac ttgtcgagca
+      961 tcgtctacat cgagcgctat gccctttcaa gctgtagctg cagtgtcggc gacgtgtcaa
+     1021 ccgcgaagtc gtcccgtaat gcgtgtcgga atgtacggag agtacgcacg gctactcgtc
+     1081 gataccggtg ctaaacagtc gatcgcgagt gatagtttaa gaaacttttt atgtaaaaat
+     1141 aatcatgtgt ttcacaaagt tcattatgat tttaaattcg ccaacggtgt caccaatagc
+     1201 gatattgtag aaacggcatt ggttgacgtt actgtgcaag gggtggtggt accaacacaa
+     1261 tttgtggtac tcccaggcgc gacggaatca ttattaggca ttaatttcgt tagggatgct
+     1321 ggtatggtac tagattttcg tagggatatt tggtcattgc gggataaacc ggggtcattt
+     1381 ccattagaat atgaaaacgt agggacgcgt attgtctgtt ctatggtgga cctattacgc
+     1441 gaggacgaag cgacgcgctt aactgttgaa gaacgcgtcc aactttcgaa tgtcctagac
+     1501 aacaataggg acattttcga gccaggggga gccgctactt ctttcgcggt tcatcgtata
+     1561 gacacaggtg atcacccccc gatatccgtt cccccctatc gcgttacgcc tgcgaaaaag
+     1621 aatattctga aggaagaaat tgacaagatg ctacaagagg gaatcataga agaggcggac
+     1681 tctgaatgga cctctcctgt agtactagta ccaaaaaagg acgggaccgt caggttctgt
+     1741 gtcgactaca gaaaactcaa ccacatcacc cgcgcggata aatatccact ccccttgata
+     1801 gacgagctga tacaatcaac gaaatgcaac agcgtgatgt caactataga tcttaaatct
+     1861 ggttactggc agattgaggt tgcgccggag gacagggata aaacggcctt tgtctctcct
+     1921 tttggaacgt ttcgtttccg acggatgcct ttcgggttgc gcaacgcccc gtcgacgttc
+     1981 cagcggttaa ttgaccgctt ccgcagtggc cttaaggata tgacagtagt ttgttacctg
+     2041 gacgatattt taatcatatc agatgacctg ccgacacatc ttactcacct acaacaagtg
+     2101 tttgaccgct tgaggctttt caaccttaag gcgaatcgcg aaaagtgtat ctttggcagg
+     2161 gagcgcctaa catacctagg ccatgtaatc tccccagccg gaatagaacc agatccggat
+     2221 aaggtaaaag ccgtgatgga catgaagcct ccatcgaatc taaaggagct caagacattt
+     2281 ttacagacct gcgcttggtt ccggaaattt attccgcagt tctcagacgt agcgcggtgt
+     2341 ctaacaaatt tgacgaagaa ggaccaacat tggaagtggg gagagagcga gcataacgcc
+     2401 tttgaagagc taaagttgcg tctctcgtcg agccccatcc ttcgtcaacc ggactttaat
+     2461 tcacctttta tcctgcgaac agatgcgagc gcatacgcaa ttggagccgc tttgatgcaa
+     2521 gggtccaatg ataaggacga gcgaccagtt gaatacgcga gcaggttatt aacatccgcg
+     2581 gaacgtaatt accacaccac ggagcgggag gcgctcgcag ttgtgtgggc gttagataaa
+     2641 ttccggtgtt atttggaagg tgttgaagtt agggtagtta cagaccacca accattgaaa
+     2701 tggttgctgt ccataaagac cccgagtggt cgcttagctc gatgggccat gaagatacag
+     2761 ccctataatt tgaatattga gtatacacct gggaaagtga acgtggtagc ggacacttta
+     2821 agtcgacccc ctgggttcga taatgcctgt gcattttgtc cggtggcagt agatatgcca
+     2881 cgcaagacag cggaagagct ccgtgccgcc caactaagcg atgcagaggt atccaaaatt
+     2941 attaaggatt ttgaagaagg aaattcggac gcatccgcac attggacgga tcgtggtttt
+     3001 atatggacca aggtgttgtg tggcgagcta atagctctga caaaatcgac gatcctaaac
+     3061 tag
+//
+
+LOCUS       XM_037437106            2244 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC119188907
+            (LOC119188907), mRNA.
+ACCESSION   XM_037437106
+VERSION     XM_037437106.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051124.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2244
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="10"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..2244
+                     /gene="LOC119188907"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119188907"
+     CDS             418..1998
+                     /gene="LOC119188907"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119188907"
+                     /protein_id="XP_037293003.1"
+                     /db_xref="GeneID:119188907"
+                     /translation="MPRTARNKRRQTEYFDLEQEEMATPRSTERRRVSVTEGSACITA
+                     SDIASMMTSLQQAQAEHFERLLDKVLDARQPSCSPACVSPAPATPTSSAQPAPGNFAT
+                     CKARYSGATSESLDGFIDAVEAFKDCANVSDTNALRGLSMLLTHEAATWWQGVKQTIT
+                     TWDSALQCLRSAFGDSRPPHRIYVELFSNPQGLQEKTDIFVAKARAHLARLPSGDLTE
+                     KVQLDMIYGLLNYNIRKRLRREEFSNFNDFLHKARSIEEATADSQKARADTSKNAAAV
+                     TRADTSKGAAVVTRARAISPTPATTATMRPSTQRASYNRQSSTAEGSSRHHIPSIDSN
+                     ATPMRKASYCVYCKNYGHTRQQCRKLLQSVDRARDSNINNKNNNIISCYGCGESGVIR
+                     PNCSKCNSNFSAIDFIPMSSSKPRKYPTPPATAAGKASAHVSNFDTYPMVCTGVVPDS
+                     CSRNCSVNFASSNCANVNTGLTTTEPSLINSSYNNESTPPDSNFVCKRNMNVPYKQVK
+                     HKSIMNVPSRPVIQGGVF"
+ORIGIN      
+        1 ataactctta taacgtgtcc gaattttaaa acgcgccgag cgagtagcgc gcatgcgcgg
+       61 agcgttttaa caacggcctc gcgttaccgc tcggccaatg gacagccacg tagcggctcg
+      121 gggacgcgtc gccagtccgt tgtcggccct cgccacacgc gtacacgcat catccgagct
+      181 ccgtcgcgat accgtcttta gtccctaaat gtatttgcgt ttatattgtg tagttgtgta
+      241 tattattgat tatgtgtcaa ataataataa attcttagtc gtcaatcaca cgcgctttta
+      301 caattcaatt cgccccgaac ccacaaagta aagttgttat aaaactggct gcccaacgaa
+      361 agggccgaat aagttttgtg aataagtgct aactaactgt tacgtgatcg ttccaaaatg
+      421 ccacgtacgg cacggaacaa acgacgtcaa accgagtact tcgacttgga acaagaagaa
+      481 atggcgacgc caaggtcaac ggagcggcgc cgcgtgtccg tgactgaagg ttcggcgtgc
+      541 atcacggcga gcgatatcgc ctctatgatg acatccttgc agcaagcgca agcggaacat
+      601 ttcgaacgcc tgcttgataa agttctagat gcccgtcagc catcttgttc gcccgcgtgt
+      661 gtttcacccg cgccggccac acctacgtcc tctgctcaac ctgcaccagg caacttcgca
+      721 acgtgtaagg ctcgttacag cggagcgaca tcggagtcac tcgatggttt tattgatgca
+      781 gtggaagcgt ttaaagactg tgccaacgtt agcgacacta acgctctacg tgggctatca
+      841 atgctgctta ctcacgaagc agccacgtgg tggcaaggag taaaacagac catcaccact
+      901 tgggatagcg cacttcaatg cttgcgcagc gctttcggag atagccgacc gccacatcgt
+      961 atatacgtgg aactcttctc caacccacaa gggcttcaag agaaaacaga tattttcgtg
+     1021 gctaaagcgc gcgcccattt agcacgtcta cccagcgggg acctcactga aaaagtccag
+     1081 ttggatatga tctacggact ccttaattat aacatacgta aacgacttcg aagagaagag
+     1141 ttctctaatt ttaatgactt ccttcacaaa gctcgaagca tcgaggaagc cacagcggat
+     1201 tcacaaaagg cgcgcgccga cacttcaaag aatgccgccg ctgttacgcg cgccgacacc
+     1261 tcaaagggtg ctgccgttgt tacgcgcgcc cgcgctatat cgccgacgcc tgcgacgacc
+     1321 gcgacgatgc ggccgtcaac gcaacgagct tcttacaacc gtcagtcttc gacagcagag
+     1381 ggttcttcgc gtcatcatat accaagcatc gactccaacg ctactccgat gaggaaagcg
+     1441 tcgtattgtg tttattgtaa aaactatgga catacacgtc aacagtgtcg taaattatta
+     1501 caaagtgtag atcgtgctcg tgatagtaat ataaacaata agaataataa tattatatcg
+     1561 tgttatggat gcggcgagag cggagtgatt cgtcctaatt gttctaagtg taattcaaat
+     1621 tttagcgcga ttgattttat tccgatgtcg agctcgaaac cgcgaaaata tccgacccct
+     1681 cctgcaacgg ctgctggtaa ggcgtccgcg cacgtaagta attttgatac ctatcctatg
+     1741 gtttgtactg gggttgtacc tgactcatgt tctcgtaatt gtagtgttaa ctttgcaagt
+     1801 tcaaactgtg ctaatgtaaa cacaggactc accactacag aacctagtct tattaatagt
+     1861 tcgtataata acgaaagtac accccccgat agtaattttg tttgtaaacg taatatgaat
+     1921 gttccctata aacaagttaa gcataaaagt attatgaatg tgccatctcg tcctgtaatt
+     1981 caggggggag tcttttaatc gcactcgtgt acctagtaaa cgtgagttat tgcttcctag
+     2041 ggaacctaac tataataagt gtatcgtaaa taatggtttg cataagtatt gtgatttacc
+     2101 tatattgcat agtagacatc gcgttatcaa aaatgttagg tttcaacagt gtccatcaca
+     2161 aagtagggtg accataaatt ttccgggaca aattccgaaa atgggctcac gaagtagggt
+     2221 gaccatgaat ttttcgggac aaat
+//
+
+LOCUS       XM_037437677            2382 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC119189036
+            (LOC119189036), mRNA.
+ACCESSION   XM_037437677
+VERSION     XM_037437677.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051125.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..2382
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="11"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..2382
+                     /gene="LOC119189036"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:119189036"
+     CDS             1..2382
+                     /gene="LOC119189036"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119189036"
+                     /protein_id="XP_037293574.1"
+                     /db_xref="GeneID:119189036"
+                     /translation="MPPKRHGKQDDSPAVDIDDEQQSNEPVMTITESMLQALVAGITR
+                     SQAEANRQLMQELFSNRDQFQTPSTPTPPPDSHAANGNFAKCTARFDGSTKNADVLEA
+                     FIDAIVVYKECTNVSDEHAVKGLPILLTGEAAIWWQGVKASVSSWEDALRRLRGSFGV
+                     PRPAHKIFRDIFASAQQNERADAFISKVRALLAKLPYEVPQQMCVDIVYGLLSRKIRK
+                     RVSRDDVNGLEQLVAKARLVEESLAEVSAYPSNSNVQESLPRTPDLPTTSHGIGSNSV
+                     VSRSVGPANVSVNPSKVTGTLINPPGTVAGNMGTDFSKSNDYKRSRPRCSYCKLFGHT
+                     VDECRKIKSSRSDVKTQLHCYGCGQLGVVRSKCPKCKNVQSGNNSEFQSVHVNEFKDA
+                     QPLVPVLIAGRQGIAMLDTGATHSIAGPMLHRIFVNAGVEFKRILLTFSLADGSQQIR
+                     TVHEYNTIVTLMGRDVPTTFVVLPEAETRTLLGRDFIRKAKILLDLPQNKWSFSDCTR
+                     RRYPFATHYELPACDEPTLMKMDVSKLMLREDEGTSLTEDQRTRLNELLINRADRFAK
+                     QGSPTDYALHRIKVDTRQEPIASPPYRMAPSKRELLERELQKLLDGDIIEECESPWAA
+                     NVVLVTKKDGGVRLCVDYRKLNAVTEPDRYPLPRIEDVLHAAKNTSYMTTCDLRSGYY
+                     QIAVEPEDRDKTAFVTPLGTFRFKRMPMGLRNSGSTFQRLMDRFKASKELSNTCLLTY
+                     LDDVIILSESFPQHIQDLNAVFDRLETFNLRINREKSCFARESVKFLGHVIVP"
+ORIGIN      
+        1 atgccgccta aacgacacgg gaaacaggac gactccccag cggtggacat agatgatgag
+       61 cagcaaagta atgaaccggt aatgacaatt actgagagta tgctgcaagc gcttgtcgcc
+      121 ggcatcacgc gcagtcaagc tgaagcgaat cgacagctta tgcaggagct cttctcgaac
+      181 agagaccagt ttcagacacc gagtacaccg acccctccgc cggactcaca cgccgcgaac
+      241 ggaaatttcg cgaagtgcac ggcgcgcttc gacgggtcga cgaaaaatgc ggatgttctt
+      301 gaagcattca tagacgcgat tgtggtgtac aaagaatgca ctaacgtgag tgatgaacat
+      361 gcggtcaagg gtctgccgat actgctgacg ggcgaggccg ctatatggtg gcaaggagtt
+      421 aaggcgtccg tatcatcgtg ggaggatgcc ctgcgacgac ttcgaggatc gttcggtgtg
+      481 ccgcgacccg cgcataaaat ttttagagac attttcgcga gtgcgcaaca aaacgaacgt
+      541 gccgacgcgt ttatatcaaa agtgcgtgcg ttattggcaa aactgccata cgaagtgcca
+      601 caacaaatgt gtgtagatat agtgtatgga ctgttaagta ggaaaatacg caaaagagtg
+      661 tcacgcgacg acgtgaacgg gctcgagcag cttgtcgcta aggccaggtt agtcgaagaa
+      721 tcgctggcgg aggtaagtgc ttatccttcc aattccaatg tccaggaatc cttgccacgt
+      781 accccagacc ttcctacaac ctcgcatggc attggttcga atagtgttgt aagccggagt
+      841 gtcggtcccg cgaacgtgag tgttaaccct tcaaaggtca caggtaccct aattaaccct
+      901 ccaggaaccg ttgccggtaa tatgggcacc gattttagta aaagtaacga ttacaaacgc
+      961 tcgcgaccta ggtgtagtta ttgtaaattg tttggacaca ccgtcgacga gtgtcggaaa
+     1021 attaagtcta gccgttcaga cgtaaaaaca cagttgcact gctacgggtg tggtcaactg
+     1081 ggcgtagtac gttcaaaatg tcctaagtgt aaaaatgtgc aaagtggtaa taattcggaa
+     1141 ttccagagtg tacacgtaaa cgagtttaaa gacgcgcaac ctttggtccc ggttctcatt
+     1201 gccggccgtc aaggaatcgc gatgttagat acgggagcca cgcattcgat cgcaggtcct
+     1261 atgttgcatc gaatctttgt taatgcaggt gtcgaattca agcgcatatt acttacgttt
+     1321 agccttgccg acggttcaca acaaattcgt accgtacacg aatataacac tattgttacc
+     1381 ttgatgggcc gcgacgtacc tacaactttt gtagtgctcc ccgaggcgga gacgcgtacc
+     1441 ctattgggaa gagattttat aaggaaggcc aagattctgt tggatttacc acagaataag
+     1501 tggagtttta gtgattgcac acgacgtcga tatccatttg ctacccatta cgaattaccc
+     1561 gcttgcgatg aaccgacgtt gatgaagatg gatgtgtcga aacttatgtt gagagaagac
+     1621 gagggtacca gcctaaccga ggatcagagg acccgattaa acgagcttct tataaacaga
+     1681 gccgatagat ttgcgaaaca agggtctccg acggactacg ctttgcaccg cataaaagtc
+     1741 gacacgcggc aagaaccgat cgcctcaccc ccttaccgga tggcaccaag caagagagag
+     1801 ctcttagaac gagagttgca gaaacttttg gatggcgata ttatagagga gtgcgaatcc
+     1861 ccgtgggccg caaatgtcgt actggtgacg aagaaagatg gtggagttcg actatgcgtc
+     1921 gactatagaa aattaaacgc cgtgacggaa cccgaccgtt acccgcttcc gcgaatagaa
+     1981 gacgtgttac acgcggctaa aaacacgagc tatatgacta cgtgtgacct gcgctctggc
+     2041 tattatcaaa tagccgtgga acccgaagac cgagataaga ctgcctttgt gaccccattg
+     2101 ggcacattca ggtttaagcg catgccgatg ggtctgcgca attcaggatc aaccttccaa
+     2161 aggcttatgg atcgattcaa agccagtaag gaattgtcca acacgtgtct tctgacttat
+     2221 ttagatgacg tgatcatcct ttccgagtcc ttcccgcagc acatccagga tctgaatgcg
+     2281 gtattcgata ggctcgagac ttttaacctt cggataaatc gagagaagag ttgtttcgct
+     2341 cgcgaatcag ttaaattcct aggccacgtg attgtcccgt ga
+//
+
+LOCUS       XM_037437858            1948 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 2-like (LOC119189083), mRNA.
+ACCESSION   XM_037437858
+VERSION     XM_037437858.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051126.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1948
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="12"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..1948
+                     /gene="LOC119189083"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119189083"
+     CDS             488..1312
+                     /gene="LOC119189083"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037293755.1"
+                     /db_xref="GeneID:119189083"
+                     /translation="MNLSVDQFEKLLSIISTQQRRGSFATCKLSYNGVRDTETVESFL
+                     AATSVFKSVEQISDEDAIKSIPLILKEEAATWWNGVKKEVKSWSDFESRVRHAFAPKR
+                     PAYQLYQNIVGIKQSEDELTEVFVAKKRALFAQLPESHTEAQQIDMVYGQLRYKIRVK
+                     MPRETVGTFDALLKAARGVEQLLTEKKLPENGTSENAFQELKTRLTTAPVLRQADETK
+                     PYVIKSDASNYALGAVLVQGEGEDEHPVEYASWLMTPAERNYSTTEREALAVMGHI"
+ORIGIN      
+        1 accactgcgc ggcgagagtg tgcagccgca atattacacg cctccccagt cgctgcgcac
+       61 gcacacaacg atgaccgccc taataaaaac ggcaaacacg ggccggagca gtcagttaac
+      121 gctagcgcgc cgccgtatcc agtactggaa aggaggctac cgctagctga gacgctcccc
+      181 gctccccaca ccgcgaccgg actattccgc ttcccgggtg tagcttcgtt tcgcaccacg
+      241 cgtcacgaac tcgcctggaa cggaacgctg ttcctaccac taatatattg tatatagtgt
+      301 atcgtatatt gtgtgtaaaa ataaactctt tgttgaacaa tcttcttttg atccgtttca
+      361 ccaaacaagt cttacattct gacgcccaac gttaagcccg aaagtataca aactggcact
+      421 taatataaag acccggaaaa gccctaaagg acgaacagcc agcaggataa aaaaagaacc
+      481 tggagatatg aacctgtcgg ttgaccaatt cgaaaagctt ttatccatca tcagcaccca
+      541 gcagcggcga ggttcttttg cgacctgtaa actgtcatat aatggcgtgc gagatactga
+      601 aacggtggaa tctttccttg cggcgacttc agtgttcaaa tctgttgaac agatatccga
+      661 tgaagatgcc attaagagta ttccacttat tcttaaagaa gaagctgcta cttggtggaa
+      721 tggtgttaaa aaagaagtga agtcatggag tgacttcgaa tcacgtgttc gacacgcatt
+      781 tgcccctaag agaccagcat accagttgta ccagaacatc gttggtatta aacagtccga
+      841 agacgagcta acagaagtat tcgtggccaa aaaaagagca ctgtttgcgc aattgcccga
+      901 atcccatacc gaggctcaac agatagatat ggtatatggt cagttgaggt ataagattag
+      961 ggtcaaaatg ccaagagaaa cagtgggaac tttcgatgcc ttgctgaaag ccgctagagg
+     1021 agttgaacag cttctaacag agaagaagct tccagaaaat ggaacttccg aaaacgcttt
+     1081 tcaggaactg aagactcgtc tcacgactgc acctgtactc cggcaagctg atgagacgaa
+     1141 accctacgtc ataaaaagtg atgcaagtaa ttacgcactt ggagcagttc tagtgcaggg
+     1201 ggagggagag gatgagcacc ccgtcgaata tgctagttgg cttatgaccc ctgcagagcg
+     1261 aaattactcc acgacggaaa gggaggccct tgcagtgatg ggccatatct aatcctaaag
+     1321 ccgaatggca tctcttctta tattatttca gatcccaaca caccagacca accgctgggc
+     1381 gtgtatcaca cgtctgcctt gagtccatac caaggtagta ttagccagct tccaccagca
+     1441 gtgcgcccat tgaaaaaacg ggggcgaccg cctaagccta gtgctcctgc cacaacctcg
+     1501 cagcaagcac gcggacgagg gcggccacgg agaaacacac agcagaacaa ttaacttcgc
+     1561 tgtctactcg tcgggacgtc ttcgtatcca gagggggaga atgtaacacc actgcgcggc
+     1621 gagagtgtgc agccgcaata ttacacgcct ccccagtcgc tgcgcacgca cacaacgatg
+     1681 accgccctaa taaaaacggc aaacacgggc cggagcagtc agttaacgct agcgcgccgc
+     1741 cgtatccagt actggaaagg aggctaccgc tagctgagac gcttccccgc tccccacacc
+     1801 gcgaccggac tattccgctt cccgggtgta gcttcgtttc gcaccacgcg tcacgaactc
+     1861 gcctggaacg gaacgctgtt cctaccacta atatattgta tatagtgtat cgtatattgt
+     1921 gtgtaaaaat aaactctttg ttgaacaa
+//
+
+LOCUS       XM_037438968             801 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 2-like (LOC119189419), mRNA.
+ACCESSION   XM_037438968
+VERSION     XM_037438968.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051129.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..801
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="15"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..801
+                     /gene="LOC119189419"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:119189419"
+     CDS             1..801
+                     /gene="LOC119189419"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037294865.1"
+                     /db_xref="GeneID:119189419"
+                     /translation="MPFPCKRVATRRGQGQAADKEEPQPTTSDSEQEITFVGPSAQAS
+                     TPTPTAPVPATTSPTTDHMFKIMELFARSQAEANQKLLETIMANTTSASPEASGVIKM
+                     KSAGNFSKCSARFEGTTGDAETLEAFIDAVLVFKECAGVTDENVVRGLPMLLTGNAAV
+                     WWQGIKKDIHDWEDAIARLRGMYGIVKPAYKLFREIFGYEHTLPERSEVFACKIRALI
+                     SQLPYDLCDAARINIVYGLLNRKIRKRLPRETVNTFEQLIVKLRCVEA"
+ORIGIN      
+        1 atgcccttcc catgcaaaag ggttgctacc cgtcgcggcc aaggccaggc tgccgacaag
+       61 gaagaacccc agcccacaac ttcggattcg gagcaggaga tcacctttgt cggcccgtct
+      121 gcccaggcat cgacgccgac gcctaccgcg ccggtaccgg ccacgacgtc accgacaacg
+      181 gatcatatgt tcaaaatcat ggagctattc gccaggtcgc aagcggaagc gaatcaaaaa
+      241 ttgttagaaa cgattatggc aaatacgacc tcggcatcac ccgaagccag cggtgtcatc
+      301 aaaatgaagt cagcgggtaa cttcagcaaa tgttcagccc gtttcgaggg aactacagga
+      361 gacgcagaga cactcgaagc attcatcgat gcggtcttgg tgttcaaaga gtgtgccgga
+      421 gtgaccgacg aaaacgtagt acgtggtctg ccgatgcttc tcaccggaaa cgcagcagtc
+      481 tggtggcaag gcatcaaaaa ggacatccac gattgggagg atgccatcgc aagactccgc
+      541 ggaatgtacg gcatcgtgaa accggcgtat aaactgttcc gtgagatttt cggctatgaa
+      601 catacactac cggagcgcag tgaagtgttt gcctgtaaaa ttagggccct gataagccag
+      661 ctaccgtatg atttgtgtga cgcggccaga ataaatatag tgtacggctt attgaaccgt
+      721 aagatacgta aacgtttacc ccgcgaaact gtgaatacgt tcgaacaatt aattgtaaaa
+      781 ttacgctgtg tcgaggctta a
+//
+
+LOCUS       XM_037439632            2011 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC115453875
+            (LOC115453875), mRNA.
+ACCESSION   XM_037439632
+VERSION     XM_037439632.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051131.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2011
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="17"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..2011
+                     /gene="LOC115453875"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:115453875"
+     CDS             431..2011
+                     /gene="LOC115453875"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC115453875"
+                     /protein_id="XP_037295529.1"
+                     /db_xref="GeneID:115453875"
+                     /translation="MPRTARNKRRQTEYFDLEQEEMATPRSTERRRVSVTEGSACITA
+                     SDIASMMTSLQQAQAEHFERLLDKVLDARQPSCSPACVSPAPATPTSSAQPAPGNFAT
+                     CKARYSGATSESLDGFIDAVEAFKDCANVSDTNALRGLSMLLTHEAATWWQGVKQTIT
+                     TWDSALQCLRSVFGDSRPPHRIYVELFSNPQGLQEKTDIFVAKARAHLARLPSGDLTE
+                     KVQLDMIYGLLNYNIRKRLRREEFSNFNDFLHKARSIEEATADSQKARADTSKNAAAV
+                     TRADTSKGAAVVTRARAISPTPATTATMRPSTQRASYNRQSSTAEGSSRHHIPSIDSN
+                     ATPMRKASYCVYCKNYGHTRQQCRKLLQSVDRARDSNINNKNNNIISCYGCGESGVIR
+                     PNCSKCNSNFSAIDFIPMSSSKPRKYPTPPATAAGKASAHVSNFDTYPMVCTGVVPDS
+                     CSRNCSVNFASSNCANVNTGLTTTEPSLINSSYNNESTPPDSNFVCKRNMNVPYKQVK
+                     HKSIMNVPSRPVIQGESF"
+ORIGIN      
+        1 cattataatt atgatagact atataacgtg tccgaatttt aaaacgcgcc gagcgagtag
+       61 cgcgcatgcg cggagcgttt taacaacggc ctcgcgttac cgctcggcca atggacagcc
+      121 acgtagcggc tcggggacgc gtcgccagtc cgttgtcggc cctcgccaca cgcgtacacg
+      181 catcacccga gctccgtcgc gataccgtct ttagtcccta aatgtatttg cgtttatatt
+      241 gtgtagttgt gtatattatt gattatgtgt caaataataa taaattctta gtcgtcaatc
+      301 acacgcgctt ttacaattca attcgccccg aacccacaaa gtaaagttgt tataaaactg
+      361 gctgcccaac gaaagggccg aataagtttt gtgaataagt gctaactaac tgttacgtga
+      421 tcgttccaaa atgccacgta cggcacggaa caaacgacgt caaaccgagt acttcgactt
+      481 ggaacaagaa gaaatggcga cgccaaggtc aacggagcgg cgccgcgtgt ccgtgactga
+      541 aggttcggcg tgcatcacgg cgagcgatat cgcctctatg atgacatcct tgcagcaagc
+      601 gcaagcggaa catttcgaac gcctgcttga taaagttcta gatgcccgtc agccatcttg
+      661 ttcgcccgcg tgtgtttcac ccgcgccggc cacacctacg tcctctgctc aacctgcacc
+      721 aggcaacttc gcaacgtgta aggctcgtta cagcggagcg acatcggagt cactcgatgg
+      781 ttttattgat gcagtggaag cgtttaaaga ctgtgccaac gttagcgaca ctaacgctct
+      841 acgtgggcta tcaatgctgc ttactcacga agcagccacg tggtggcaag gagtaaaaca
+      901 gaccatcacc acttgggata gcgcacttca atgcttgcgc agcgttttcg gagatagccg
+      961 accgccacat cgtatatacg tggaactctt ctccaaccca caagggcttc aagagaaaac
+     1021 agatattttt gtggctaaag cgcgcgccca tttagcacgt ctacccagcg gggacctcac
+     1081 tgaaaaagtc cagttggata tgatctacgg actccttaat tataacatac gtaaacgact
+     1141 tcgaagagaa gagttctcta attttaatga cttccttcac aaagctcgaa gcatcgagga
+     1201 agccacagcg gattcacaaa aggcgcgcgc cgacacttca aagaatgccg ccgctgtcac
+     1261 gcgcgccgac acctcaaagg gtgccgccgt tgttacgcgc gcccgcgcta tatcgccgac
+     1321 gcctgcgacg accgcgacga tgcggccgtc aacgcaacga gcttcttaca accgtcagtc
+     1381 ttcgacagca gagggttctt cgcgtcatca tataccaagc atcgactcca acgctactcc
+     1441 gatgaggaaa gcgtcgtatt gtgtttattg taaaaactat ggacatacac gtcaacagtg
+     1501 tcgtaaatta ttacaaagtg tagatcgtgc tcgtgatagt aatataaaca ataagaataa
+     1561 taatattata tcgtgttatg gatgcggcga gagcggagtg attcgtccta attgttctaa
+     1621 gtgtaattca aattttagcg cgattgattt tattccgatg tcgagctcga aaccgcgaaa
+     1681 atatccgacc cctcctgcaa cggctgctgg taaggcgtcc gcgcacgtaa gtaattttga
+     1741 tacctatcct atggtttgta ctggggttgt acctgactca tgttctcgta attgtagtgt
+     1801 taactttgca agttcaaact gtgctaatgt aaacacagga ctcaccacta cagaacctag
+     1861 tcttattaat agttcgtata ataacgaaag tacacccccc gatagtaatt ttgtttgtaa
+     1921 acgtaatatg aatgttccct ataaacaagt taagcataaa agtattatga atgtgccatc
+     1981 tcgtcctgta attcaggggg agtcttttta a
+//
+
+LOCUS       XM_037441674            1828 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 1-like (LOC119190243), mRNA.
+ACCESSION   XM_037441674
+VERSION     XM_037441674.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051137.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1828
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="23"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..1828
+                     /gene="LOC119190243"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119190243"
+     CDS             514..1605
+                     /gene="LOC119190243"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_037297571.1"
+                     /db_xref="GeneID:119190243"
+                     /translation="MPRTARNKRRQTEYFDLEQEEMATPRSTERRRVSVTEGSACITA
+                     SDIASMMTSLQQAQAEHFERLLDKVLDARQPSCSPACVSPAPATPTSSAQPAPGNFAT
+                     CKARYSGATSESLDGFIDAVEAFKDCANVSDTNALRGLSMLLTHEAATWWQGVKQTIT
+                     TWDSALQCLRSAFGDSRPPHRIYVELFSNPQGLQEKTDIFVAKARAHLARLPSGDLTE
+                     KVQLDMIYGLLNYNIRKRLRREEFSNFNDFLHKARSIEEATADSQKARADTSKNAAAV
+                     TRADTSKGAAVVTRARAISPTPATTATMRPSTQRASYNRQSSTAEGSSRHHIPSIDSN
+                     ATPMRKASYCVYCKTMDIHVNSVVNYYKV"
+ORIGIN      
+        1 aatgaactaa actaaaaaaa ctaatgaact tataatccta agtaaattct agtggtggtg
+       61 aaaaaaacca aatggtggaa aacaaaatgc tgtggaaaat aaaatatata acgtgtccga
+      121 attttaaaac gcgccgagcg agtagcgcgc atgcgcggag cgttttaaca acggcctcgc
+      181 gttaccgctc ggccaatgga cagccacgta gcggctcggg gacgcgtcgc cagtccgttg
+      241 tcggccctcg ccacacgcgt acacgcatca cccgagctcc gtcgcgatac cgtctttagt
+      301 ccctaaatgt atttgcgttt atattgtgta gttgtgtata ttattgatta tgtgtcaaat
+      361 aataataaat ccttagtcgt caatcacacg cgcttttaca attcaattcg ccccgaaccc
+      421 acaaagtaaa gttgttataa aactggcgcc caacgtgggg ccgaataagt tttgtgaata
+      481 agtgctaact aactgttacg tgatcgttcc aaaatgccac gtacggcacg gaacaaacga
+      541 cgtcaaaccg agtacttcga cttggaacaa gaagaaatgg cgacgccaag gtcaacggag
+      601 cggcgccgcg tgtccgtgac tgaaggttcg gcgtgcatca cggcgagcga tatcgcctct
+      661 atgatgacat ccttgcagca agcgcaagcg gaacatttcg aacgcctgct tgataaagtt
+      721 ctagatgccc gtcagccatc ttgttcgccc gcgtgtgttt cacccgcgcc ggccacacct
+      781 acgtcctctg ctcaacctgc accaggcaac ttcgcaacgt gtaaggctcg ttacagcgga
+      841 gcgacatcgg agtcactcga tggttttatt gatgcagtgg aagcgtttaa agactgtgcc
+      901 aacgttagcg acactaacgc tctacgtggg ctatcaatgc tgcttactca cgaagcagcc
+      961 acgtggtggc aaggagtaaa acagaccatc accacttggg atagcgcact tcaatgcttg
+     1021 cgcagcgctt tcggagatag ccgaccgcca catcgtatat acgtggaact cttctccaac
+     1081 ccacaagggc ttcaagagaa aacagatatt ttcgtggcta aagcgcgcgc ccatttagca
+     1141 cgtctaccca gcggggacct cactgaaaaa gtccagttgg atatgatcta cggactcctt
+     1201 aattataaca tacgtaaacg acttcgaaga gaagagttct ctaattttaa tgacttcctt
+     1261 cacaaagctc gaagcatcga ggaagccaca gcggattcac aaaaggcgcg cgccgacact
+     1321 tcaaagaatg ccgccgctgt tacgcgcgcc gacacctcaa agggtgccgc cgttgttacg
+     1381 cgcgcccgcg ctatatcgcc gacgcctgcg acgaccgcga cgatgcggcc gtcaacgcaa
+     1441 cgagcttctt acaaccgtca gtcttcgaca gcagagggtt cttcgcgtca tcatatacca
+     1501 agcatcgact ccaacgctac tccgatgagg aaagcgtcgt attgtgttta ttgtaaaact
+     1561 atggacatac acgtcaacag tgtcgtaaat tattacaaag tgtagatcgt gctcgtgata
+     1621 gtaatataaa caataagaat aataatatta tatcgtgtta tggatgcggc gagagcggag
+     1681 tgattcgtcc taattgttct aagtgtaatt caaattttag cgcgattgat tttattccga
+     1741 tgtcgagctc gaaaccgcga aaatatccga cccctcctgc aacggctgct ggtaaggcgt
+     1801 ccgcgcacgt aagtaatttt gataccta
+//
+
+LOCUS       XM_037441784            1733 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 1-like (LOC119190280), mRNA.
+ACCESSION   XM_037441784
+VERSION     XM_037441784.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051137.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1733
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="23"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..1733
+                     /gene="LOC119190280"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119190280"
+     CDS             419..1510
+                     /gene="LOC119190280"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_037297681.1"
+                     /db_xref="GeneID:119190280"
+                     /translation="MPRTARNKRRQTEYFDLEQEEMATPRSTERRRVSVTEGSACITA
+                     SDIASMMTSLQQAQAEHFERLLDKVLDARQPSCSPACVSPAPATPTSSAQPAPGNFAT
+                     CKARYSGATSESLDGFIDAVEAFKDCANVSDTNALRGLSMLLTHEAATWWQGVKQTIT
+                     TWDSALQCLRSAFGDSRPPHRIYVELFSNPQGLQEKTDIFVAKARAHLARLPSGDLTE
+                     KVQLDMIYGLLNYNIRKRLRREEFSNFNDFLHKARSIEEATADSQKARADTSKNAAAV
+                     TRADTSKGAAVVTRARAISPTPATTATMRPSTQRASYNRQSSTAEGSSRHHIPSIDSN
+                     ATPMRKASYCVYCKTMDIHVNSVVNYYKV"
+ORIGIN      
+        1 tattaactgt ataacgtgtc cgaattttaa aacgcgccga gcgagtagcg cgcatgcgcg
+       61 gagcgtttta acaacggcct cgcgttaccg ctcggccaat ggacagccac gtagcggctc
+      121 ggggacgcgt cgccagtccg ttgtcggccc tcgccacacg cgtacacgca tcacccgagc
+      181 tccgtcgcga taccgtcttt agaccctaaa tgtatttgcg tttatattgt gtagttgtgt
+      241 atattattga ttatgtgtca aataataata aattcttagt cgtcaatcac acgcgctttt
+      301 acaattcaat tcgccccgaa cccacaaagt aaagttgtta taaaactggc tgcccaacga
+      361 aagggccgaa taagttttgt gaataagtgc taactaactg ttacgtgatc gttccaaaat
+      421 gccacgtacg gcacggaaca aacgacgtca aaccgagtac ttcgacttgg aacaagaaga
+      481 aatggcgacg ccaaggtcaa cggagcggcg ccgcgtgtcc gtgactgaag gttcggcgtg
+      541 catcacggcg agcgatatcg cctctatgat gacatccttg cagcaagcgc aagcggaaca
+      601 tttcgaacgc ctgcttgata aagttctaga tgcccgtcag ccatcttgtt cgcccgcgtg
+      661 tgtttcaccc gcgccggcca cacctacgtc ctctgctcaa cctgcaccag gcaacttcgc
+      721 aacgtgtaag gctcgttaca gcggagcgac atcggagtca ctcgatggtt ttattgatgc
+      781 agtggaagcg tttaaagact gtgccaacgt tagcgacact aacgctctac gtgggctatc
+      841 aatgctgctt actcacgaag cagccacgtg gtggcaagga gtaaaacaga ccatcaccac
+      901 ttgggatagc gcacttcaat gcttgcgcag cgctttcgga gatagccgac cgccacatcg
+      961 tatatacgtg gaactcttct ccaacccaca agggcttcaa gagaaaacag atatttttgt
+     1021 ggctaaagcg cgcgcccatt tagcacgtct acccagcggg gacctcactg aaaaagtcca
+     1081 gttggatatg atctacggac tccttaatta taacatacgt aaacgacttc gaagagaaga
+     1141 gttctctaat tttaatgact tccttcacaa agctcgaagc atcgaggaag ccacagcgga
+     1201 ttcacaaaag gcgcgcgccg acacttcaaa gaatgccgcc gctgttacgc gcgccgacac
+     1261 ctcaaagggt gccgccgttg ttacgcgcgc ccgcgctata tcgccgacgc ctgcgacgac
+     1321 cgcgacgatg cggccgtcaa cgcaacgagc ttcttacaac cgtcagtctt cgacagcaga
+     1381 gggttcttcg cgtcatcata taccaagcat cgactccaac gctactccga tgaggaaagc
+     1441 gtcgtattgt gtttattgta aaactatgga catacacgtc aacagtgtcg taaattatta
+     1501 caaagtgtag atcgtgctcg tgatagtaat ataaacaata agaataataa tattatatcg
+     1561 tgttatggat gcggcgagag cggagtgatt cgtcctaatt gttctaagtg taattcaaat
+     1621 tttagcgcga ttgattttat tccgatgtcg agctcgaaac cgcgaaaata tccgacccct
+     1681 cctgcaacgg ctgctggtaa ggcgtccgcg cacgtaagta attttgatac cta
+//
+
+LOCUS       XM_037442101            2393 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 1-like (LOC115454963), mRNA.
+ACCESSION   XM_037442101
+VERSION     XM_037442101.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051137.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2393
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="23"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..2393
+                     /gene="LOC115454963"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 3 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:115454963"
+     CDS             396..1460
+                     /gene="LOC115454963"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_037297998.1"
+                     /db_xref="GeneID:115454963"
+                     /translation="MPRTARNKRRQTEYFDLEQEEMATPRLTERRRVSVTEGSACITA
+                     SDIASMMTFLQQAQAEHFERLLDKVLDARQPSCSPARVSPAPAIPTSSAQPAPGNFAT
+                     CKARYSGATSESLDGFIDAVEAFKDCANVSDTNALRGLSMLLTHEAATWWQGVKQTIT
+                     TWDSALQCLRSAFGDSRPPHRIYVELFSNPQGLQEKTEIFVAKARAHLARLPSGDLTE
+                     KVQLDMIYGLLNYNIRKRLRREEFSNFNDFLHKARSIEEATADSQKARADTSKNAAAV
+                     TRADTSKGAAVVTRARAISPTPATTATMRPSTQRASYNRQSSTAEGSSRHHIPSIDSN
+                     ATPIRKASYCVYCKNYRHTR"
+ORIGIN      
+        1 attttaaaac gcgccgagcg attagcgcgc atgcgcgaag cgttttacct acggcctcgc
+       61 gttaccgctc ggccaatgga cagccacgta gcggctcggg gacgtgtcgc cagtccgttg
+      121 ccggccctcg ccacacgcgc acacgcatca cccgagctcc gtcgcgatac cgtttttagt
+      181 ccctaaatgt atttgcgttt atattgtgta gctgtgtata ttattgatta tgtgtcaaat
+      241 aataataaat tcttagtcgt caatcacgcg cgcttttcca attcgattcg ccccgaaccc
+      301 acaacgaaaa gttgttataa aactggctgc ccaacgagaa ggccgaataa gttttgtgaa
+      361 taagtgctaa ctaattgtta cgtgatcgtt ccaaaatgcc acgtacggca cggaacaaac
+      421 gacgtcaaac cgagtacttc gacttggaac aagaagaaat ggcgacgcca aggttaacgg
+      481 agcggcgccg cgtgtccgtg actgaaggtt cggcgtgcat cacggcgagc gatatcgcct
+      541 ctatgatgac attcttgcag caagcgcaag cggaacattt cgaacgcctg cttgataaag
+      601 ttctagatgc ccgtcagcca tcttgttcgc ccgcgcgtgt ttcacccgcg ccggccatac
+      661 ctacgtcctc tgctcaacct gcaccaggca acttcgcaac gtgtaaggct cgttacagcg
+      721 gagcgacatc ggagtcactc gatggtttta ttgatgcagt ggaagcgttt aaagactgtg
+      781 ccaacgttag cgacactaac gctctacgtg ggctatcaat gctgcttact cacgaagcag
+      841 ccacgtggtg gcaaggagta aaacagacca tcaccacttg ggatagcgca cttcaatgct
+      901 tgcgcagcgc tttcggagat agccgaccgc cacatcgtat atacgtggaa ctcttctcca
+      961 acccacaagg gcttcaagag aaaacagaga tttttgtggc taaagcgcgc gcccatttag
+     1021 cacgtctacc cagcggggac ctcactgaaa aagtccagtt ggatatgatc tacggactcc
+     1081 ttaattataa catacgtaaa cgacttcgaa gagaagagtt ctctaatttt aatgacttcc
+     1141 ttcacaaagc tcgaagcatc gaggaagcca cagcggattc acaaaaggcg cgcgccgaca
+     1201 cttcaaagaa tgccgccgct gttacgcgcg ccgacacctc aaagggtgcc gccgttgtta
+     1261 cgcgcgcccg cgctatatcg ccgacgcctg cgacgaccgc gacgatgcgg ccgtcaacgc
+     1321 aacgagcttc ttacaaccgt cagtcttcga cagcagaggg ttcttcgcgt catcatatac
+     1381 caagcatcga ctccaacgct actccgatta ggaaagcgtc gtattgtgtt tattgtaaaa
+     1441 actatagaca tacacgttaa cagtgtcgta aattattaca aagtgtaggt cgtgctcgtg
+     1501 atagtaatat aaacaataag aataataata ttatatcgtg ttatggatgc ggcgagagcg
+     1561 gagtgatgcg tcctaatcgt tctaagtgta attcaaattt tagcgcgact gattttattc
+     1621 cgatgtcgag ctcaaaatcg cgaaaatatc cgacccctcc tgcaacggct gctggtaagg
+     1681 cgtccgcgca cgtaagtaat tttgatacct atcctatggt ttgtactggg gttgtacctg
+     1741 actcgtgttc tcgtaattgt agtgttaact ttgcaagttc aaactgtgct aatgtaaaca
+     1801 caggactcac cactacagaa cctagtctta ttaatagttc gtataataac gaaagtatat
+     1861 tccccgatag taattttgtt tgtaaacgta atatgaatgt tccctataaa caagttaagc
+     1921 ataaaagtat tatgaatgtg ccatctcgtc ctgtaattca gggggagtct tttaatcgca
+     1981 ctcgtgtacc tagtaaatgt gagttattgc ttcctaggga acctaactat aataagtgta
+     2041 tcgtaaataa tggtttgcat aagtattgtg atttacctat attgcatagt agacatcgcg
+     2101 ttatcaacaa tgttaggtct caacagtgtc catcacaaag tagggtgacc atgaattttc
+     2161 cgggacaaat tccgaaaatg ggctcacaaa gtagggtgac catgaatttt tcgggacaaa
+     2221 tttcgaaaac cggtttactg aacagggtca ctaagaattt accaggaaac aatctgaaaa
+     2281 tgaataattt aagtggtccg gcttcgaaac gcaataatga gaggttcgtt accttctcat
+     2341 cagttaactc ttgccatgaa ggaacatttc ggcgacccat tttaggtatc gag
+//
+
+LOCUS       XM_037442766            3207 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC119190566
+            (LOC119190566), mRNA.
+ACCESSION   XM_037442766
+VERSION     XM_037442766.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_051139.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..3207
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="25"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..3207
+                     /gene="LOC119190566"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:119190566"
+     CDS             1..3207
+                     /gene="LOC119190566"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119190566"
+                     /protein_id="XP_037298663.1"
+                     /db_xref="GeneID:119190566"
+                     /translation="MPFPCKRVATRRGQGQAADKEEPQPTTSDSEQEITFVGPSAQAS
+                     TPTPTAPVPAATSPITDHMFKIMELFARSQAEANQKLLETIMANTTSASPEAGGVIKM
+                     KSAGNFSKCSARFDGTTGDAETLEAFIDAVLVFKECAGVTDENAVRGLPMLLTGNAAV
+                     WWQGIKKDVHDWEDAIARLRGMYGIVKPAYKLFREIFAYEHTLPERSEVFACKIRALI
+                     SQLPYDLCDAARIDIVYGLLDLNFCDRLRLVPECERIAPDSLSAVSTDIVDVRYSAPQ
+                     NNTDHDQCHAVDREIPTTFIVIPGADARTLLGCDFIKRAGIAINLLEGKWSFTSTPDR
+                     VYDFVRSYSVKSAGGADLLCTDASPLSLRPDEGAHLSEEQRAQMNEMIARYASRFAVE
+                     GEPTGFITHRIKTDEKQEPIASQPYRMSPAKVAILEKELDKLQRADVIEECGVPVGSQ
+                     HRPEPDRYPLPRMDDVLHAAKTTNFMTTLDLQSGYFQVSVAEEDRDKTAFITPIGTFR
+                     FKRMPMGLRNSGATFQRLMDRFKSNLPGTTLLCYLDDLIVLSDSFTKHLEDLQAVFDR
+                     LELFNLRVNRTKSVFARDSVKFLGHLIVPGGIQVDPEKTAAINDMAKPTNLKHLKCFL
+                     QTSSWFRRFIPNYAEIARPLTALLKKGECLALAERNYTTTEREALAVVWAVGKFRGYI
+                     EGAQIIVKSDHQPLKWLMSIKSPSGRLTRWALTLQEFDLRIEYTPRLAAPRSRRQKIM
+                     EDLEATDEPFRGRPWADRGYIMSDGVLYRYNPEPSDDDDACLVVPIGQRPKILFEYHD
+                     APTAGHLGVERTLQRIASRYYWPGMRASVTDYVKQCTSCQRYKVDARKPAGLVQSPAA
+                     AQRFEVVAVDLFGPLPVTKSGNRWILIAEDVCSRLISDNGVQFISEVMQQVCFAFGID
+                     QALTPYYHPEANPVEHVVHDMRTVLDGDRFVANFTPYLKRLTTVLIDARDAHEKAQAI
+                     QKRYADEKRRPAPDYKVGDLVLLKTHGSNDTVRGQTPKFIPRRDGPYVIKEVLSSTTY
+                     RLENGDGDTLGKYHVSQLTPFVGQSESPVAVDDRRAHD"
+ORIGIN      
+        1 atgccgttcc catgcaaaag ggttgctacc cgtcggggcc aaggccaggc tgccgacaag
+       61 gaagaacccc agcccacaac ttcggattcg gagcaggaga tcacctttgt cggcccgtct
+      121 gcccaggcat cgacgccgac gccgaccgcg ccggtaccgg ccgcgacgtc accgataacg
+      181 gatcatatgt tcaaaatcat ggagctattc gccaggtcgc aagcggaagc gaatcaaaaa
+      241 ttgttagaaa cgattatggc aaacacgacc tcggcctcac ccgaagccgg cggtgtcatc
+      301 aaaatgaagt cagcgggtaa cttcagcaaa tgttcagccc gtttcgacgg aacaacagga
+      361 gacgcagaaa cactcgaagc attcatcgat gcggtcttgg tgttcaaaga gtgtgccgga
+      421 gtgaccgacg aaaacgcagt acgaggcctg ccgatgcttc tcaccggaaa cgcagcagtc
+      481 tggtggcaag gcatcaaaaa ggacgtccac gattgggagg atgccatcgc aagactccgc
+      541 ggaatgtacg gcatcgtgaa accggcgtat aaactgttcc gtgagatctt cgcctatgaa
+      601 catacactac cggagcgcag tgaagtgttt gcctgtaaaa ttagggccct aataagccag
+      661 ctaccgtacg atttgtgtga cgcggctaga atagatatcg tgtacggctt attggaccta
+      721 aatttttgtg atcgtttacg attggttccc gaatgtgaac gaatagcacc cgatagcctc
+      781 agcgccgttt ctacggatat tgtcgatgtg agatattccg caccccagaa taataccgac
+      841 cacgaccagt gtcacgctgt ggatcgtgag atacctacta cgtttattgt gatccctggg
+      901 gcggacgcaa gaacgctttt gggttgcgat ttcatcaagc gtgccggcat tgcgatcaac
+      961 ttactggaag ggaagtggag tttcacctct acacccgacc gcgtgtacga cttcgtgcga
+     1021 tcgtacagtg taaagtccgc aggaggagcg gaccttcttt gcaccgacgc ctcgcctttg
+     1081 agcttgaggc ccgatgaagg tgcccatctg tccgaagaac aacgggccca gatgaatgag
+     1141 atgatcgcca ggtacgccag ccgtttcgct gtggaaggtg agcctactgg ttttataacg
+     1201 catcgcatta agacggacga gaagcaagaa cccatagctt ctcaaccata ccgcatgtca
+     1261 cctgcaaagg tggccatttt ggagaaagag ttggacaaac tacagcgcgc tgacgttatc
+     1321 gaggagtgcg gagtccccgt gggcagccaa catcgtcctg agcccgatag atacccgttg
+     1381 ccgcgcatgg acgatgtgct gcatgctgct aagacgacaa acttcatgac aactcttgat
+     1441 ttgcaatccg gatattttca ggtgtctgtg gcagaggaag atcgcgacaa aactgcgttc
+     1501 atcactccga tcggtacctt taggttcaag cggatgccga tgggcctccg caattccggg
+     1561 gctactttcc agcgcctgat ggatagattt aaatctaacc taccaggtac tactctttta
+     1621 tgttatctcg atgatctaat tgtcctttct gattctttca ccaagcactt ggaggacctg
+     1681 caagccgtct ttgataggct agaattattt aacttgcgag tgaaccgcac caaaagtgtc
+     1741 ttcgctcgtg attctgtcaa gtttcttggg cacctgatcg taccaggcgg tatccaggtg
+     1801 gaccccgaaa agacagctgc tatcaatgac atggctaagc cgacgaatct aaagcatctc
+     1861 aaatgtttct tgcaaacatc aagttggttt aggcgtttta tacccaacta tgccgaaata
+     1921 gccaggccat tgacggcact gttgaagaag ggggagtgtt tggcgttggc tgaacggaac
+     1981 tacacgacga ctgagaggga agcactagct gtagtgtggg ctgtcggtaa gttccgcggt
+     2041 tatattgaag gggcacagat tattgttaaa tcagaccatc aaccgctgaa gtggttgatg
+     2101 agcattaagt ctccgagcgg tcgtttgact cggtgggcgc ttactctaca ggaattcgac
+     2161 ctgcgcatcg agtacacccc gagacttgca gctccaagat ccagacgtca aaagattatg
+     2221 gaggacttgg aagcaacgga cgaaccgttt agggggagac cgtgggcaga ccgcggttat
+     2281 atcatgtccg acggtgtact ttacaggtac aacccggagc ccagcgacga cgacgatgcc
+     2341 tgtctcgtcg tcccgattgg tcagagaccc aaaattctgt ttgaatacca cgacgccccg
+     2401 acagcaggtc atctaggtgt tgagcgtact ctgcagcgca tcgcttcgcg ttattattgg
+     2461 ccaggcatga gggcatccgt gactgattat gtcaaacagt gtacttcgtg tcaacgttac
+     2521 aaagttgacg cacgtaaacc agcggggttg gtgcagtctc cggctgcagc gcaaaggttt
+     2581 gaggtagttg ctgtagacct gttcggtccc cttcccgtca caaagtcggg taaccggtgg
+     2641 atccttattg ccgaggatgt ctgttccagg ctcattagcg ataacggcgt gcagtttatc
+     2701 agcgaggtaa tgcaacaggt atgctttgca tttggtatag atcaggcgct gacaccttac
+     2761 tatcaccctg aggcgaaccc ggtcgaacat gtcgtgcacg acatgcgcac tgttctggat
+     2821 ggcgacaggt ttgtggctaa cttcacgccc tacttgaaac gtctgacaac ggtcttaatt
+     2881 gatgcaagag atgcgcatga aaaggctcag gcaattcaga aaaggtacgc ggacgagaaa
+     2941 cgtcggcccg cacccgacta caaagtgggc gatctagtgt tgctaaaaac tcatgggtcc
+     3001 aacgataccg ttcgtggtca aacccctaaa ttcataccgc gacgcgacgg accttatgtc
+     3061 ataaaagaag tgttgagtag tactacttat cgcctagaga acggcgacgg cgatacttta
+     3121 gggaagtatc atgtgtctca gctgacacca tttgtcggcc agtcggaatc tccggtggcg
+     3181 gtggatgaca ggcgcgcgca cgactag
+//
+
+LOCUS       XM_037445595            2785 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC119191723
+            (LOC119191723), mRNA.
+ACCESSION   XM_037445595
+VERSION     XM_037445595.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023592748.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2785
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="Unknown"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..2785
+                     /gene="LOC119191723"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 20 samples
+                     with support for all annotated introns"
+                     /db_xref="GeneID:119191723"
+     CDS             1247..2278
+                     /gene="LOC119191723"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119191723"
+                     /protein_id="XP_037301492.1"
+                     /db_xref="GeneID:119191723"
+                     /translation="MEQLEKSQNMSKFPSTKDNISQGPQNPQSHVDAIKFGPSLTRLE
+                     KPSTSLHHLPLQRSSTFEDIPHKQKLVPIKDWGVKFSGKGPVSINAFLERITELKEAR
+                     NAGDEDLFRYAIDFFEEDALIWFRANKSSVSNWAELVKLLLDSFQPPYYQEELLQEIR
+                     LRTQSNKESVLIYIAVMQNMFNRLPVPISENEKLMILRKNLQPYFQKAICRDSFDSVG
+                     ELTSVLRVIERTKLSCSNFKEPTLNDRSLEQDLAYHGSINQKLLQENMGTELAAIGNN
+                     GMKQSTSKCWNCRSLGHRFRDCKLPKQRLFCYKCGRFGNTVTKCPCTNTKKGNDHSES
+                     MPADRTPRM"
+ORIGIN      
+        1 agtgagattg cgagagagtg tcgcgaagta ataatcacgt gtgagatatt gagacatagt
+       61 acggagtgtg tgtaaatact gtttcggcca cgggcctgcg gaaacgccct tgataaatcg
+      121 acgataccga aatcgtgctt acggacgtct gcgccagtcg tgggcttccg gtgaggagtc
+      181 aagggactgg aaggtcgcag aactacctca agccagttcc caaatttcct gacctcgtgc
+      241 ggcatcgtcg ccagagacta gtgggccaag taattgcgag caagtagcgg cggactgaga
+      301 tttgagccag tccctgacat tacacggcga gctggactta ggcctttcat tgtggggtca
+      361 ttgttttgtc atgagtgctc atgtcagttt tttttgtcgc atgactagat taagtgattc
+      421 cacttattaa tagattaagt taccttgatt aacatatgtt tagcaaagtt ctggattatc
+      481 cttaattcac tatattgcac attgggccat tggtagttgt aaaggaccca ttacattggc
+      541 gctcaaccgg gttaaccgaa ttaaaataat ttaatctgaa ttttgctaaa taatccttag
+      601 ttatagatat acgctgtgaa attccagttt gtgatcagat tcatatttcc tattatatac
+      661 ccacagttca catttatata taaatttctg taggttgtag taggtttggg taggtacttg
+      721 ttggtcactc tgaacaatat tgttccctaa attaaaatgg atgtaaatgc actacataag
+      781 gatgaacttg aatttgaatt gtcttgtcgc ggggtacatg attgtaaaac ggtggcgaca
+      841 atgcgtaaat ttttacggga aattttgcgg cgcgaagcaa ctggtgagtc aactatttcc
+      901 ttaaaagtac ctaaatcttg cattgatgat ccaagtaacg aaattgatat ttgcgaatat
+      961 aaattgtctg cgttggctcc tttaatatcg gatatatcac acaccggacc agttgtttat
+     1021 taaacgtatt cactcccgct taactcactt gttaaaccgc actaagctca tcattcctac
+     1081 agaaacggaa gacatacata aacatttaac actgctgaaa aatattcagg ataccatttc
+     1141 atccctgata agtctagaac aagactacga cgatggagat gatgtaattt ctgaccatga
+     1201 caaagaaatt ttacagaagt ccttgggcga agaaggtgca caaattatgg aacagttgga
+     1261 gaaaagccaa aatatgagta agttcccctc tacaaaggac aatatttctc aaggccccca
+     1321 aaatcctcaa tcacatgttg atgccatcaa atttggtccg tcattgacca gattagaaaa
+     1381 accttctaca tccttacacc acttaccact acaaaggtct tccacatttg aggatattcc
+     1441 tcataaacag aagttggtgc ctattaagga ctggggtgta aaattcagtg gcaagggtcc
+     1501 tgtaagcatt aacgcattct tggaaagaat aacggaactc aaagaagcac ggaacgctgg
+     1561 tgacgaagat ttatttcggt atgctataga tttttttgaa gaagatgcat taatatggtt
+     1621 cagagcaaat aaaagttcgg tgtcaaattg ggctgaactg gttaagctct tgttggattc
+     1681 ctttcagcct ccttactatc aagaagaatt actgcaagaa attagactga gaactcaaag
+     1741 caacaaagag agtgtcttaa tatacatcgc cgttatgcaa aacatgttta accgtctacc
+     1801 agtccctatt tcggaaaatg aaaagttaat gatattacgg aaaaatctac agccttattt
+     1861 ccagaaagca atctgccgag atagctttga ttctgtgggt gaacttactt cagtcttgag
+     1921 agtaattgaa cgtactaagt tgagttgtag caattttaag gaacccaccc ttaatgaccg
+     1981 ctcgctagag caagacttgg cgtatcatgg aagtattaac cagaaattat tgcaggaaaa
+     2041 tatgggtaca gaattggccg ccataggcaa taatggaatg aagcaatcaa catctaaatg
+     2101 ctggaattgc agaagtctag gacacagatt tagagactgc aaattaccaa aacaaagact
+     2161 tttctgctac aaatgtggac ggtttggcaa cactgtaaca aaatgtccct gcaccaatac
+     2221 caaaaaggga aacgatcatt cggagtcgat gccggccgat cgcactccaa gaatgtaagg
+     2281 cctataattt cgaatgaatg gcaacaatgg ctacgcactg tctcgacata ctttaaaaca
+     2341 gggcagatct gcaatattaa tcgaagaatt caagataaca gatattatgc tgaaattaaa
+     2401 attttaaacc agttatttgt aggcttgctg gattctggtg ccaccgtatc agtggtatca
+     2461 ctgggatttg cgaagaaaat ttttgcattg ggattttcgc aacacaaagt taacaaggaa
+     2521 aggatctcaa tggcagacgg cactaactac acaattgatt gtatggttca tttacctgtt
+     2581 caatttgcgg aatcctatag agtaatagat ttttatatta tggatggttt aacacacgac
+     2641 attattttag gcataaattt ttttgaatct tttaatttat ctataggagc tggtatgcta
+     2701 attactgagg tttcacaaat taataccgta catccagtca tctcccgtga cgaactttcc
+     2761 atcgaccaaa acagcgactt gatga
+//
+
+LOCUS       XM_037446152             591 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 2-like (LOC119192335), partial mRNA.
+ACCESSION   XM_037446152
+VERSION     XM_037446152.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023593617.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: incomplete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..591
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="Unknown"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..>591
+                     /gene="LOC119192335"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins"
+                     /db_xref="GeneID:119192335"
+     CDS             1..>591
+                     /gene="LOC119192335"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_037302049.1"
+                     /db_xref="GeneID:119192335"
+                     /translation="MPPKRHGKQDDSPAVDTDDEQQSNEPVMTITESMLQALVAGITR
+                     SQAEANRQLMQELFSNRDQFQTPSTPTPPPDSHAANGNFAKCTARFDGLTKNADVLEA
+                     FIDAIVVYKECTNVNDEHAVKGLPILLTGEAAIWWQGVKASVSSWEDALRRLRGSFDI
+                     VYGLLSRKIRKRVSRDDVNGLEQLVAKARLVEESLAE"
+ORIGIN      
+        1 atgccgccta aacgacacgg gaaacaggac gactccccag cagttgacac agatgatgag
+       61 cagcaaagta atgaaccggt aatgacaatt actgagagta tgctgcaagc gcttgtcgcc
+      121 ggcatcacgc gcagtcaagc agaagcgaat cgacagctta tgcaggagct cttctcgaac
+      181 agagaccagt ttcagacacc gagtacaccg acccctccgc cggactcaca cgccgcgaat
+      241 ggaaatttcg cgaagtgcac ggcgcgcttc gacgggttga cgaaaaatgc ggatgttctt
+      301 gaagcattca tagatgcgat tgtggtgtac aaagaatgca ctaacgtgaa tgatgaacat
+      361 gcggtcaagg gtctgccgat actgctgacg ggcgaggccg ctatatggtg gcaaggagtt
+      421 aaggcgtccg tatcatcgtg ggaggatgcc ctgcgacgac ttcgaggatc gttcgatata
+      481 gtgtatggac tgttaagtag gaaaatacgc aaaagagtgt cacgcgacga cgtgaacggg
+      541 ctcgagcagc ttgtcgctaa ggccaggtta gtcgaagagt cgctggcgga g
+//
+
+LOCUS       XM_037446700             540 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta activity-regulated cytoskeleton associated
+            protein 1-like (LOC119192987), mRNA.
+ACCESSION   XM_037446700
+VERSION     XM_037446700.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023594545.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 100% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..540
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="Unknown"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..540
+                     /gene="LOC119192987"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:119192987"
+     CDS             1..540
+                     /gene="LOC119192987"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 1-like"
+                     /protein_id="XP_037302597.1"
+                     /db_xref="GeneID:119192987"
+                     /translation="MNLSVDQFEKLLSVISTQQRRGSFATCKLSYNGVRDTETVESFL
+                     AATSVFKSVEQISDEDAIKSIPLILKEEAATWWNGVKKEVMGDFESRVRHAFAPKRPA
+                     YQLYQNIVGQNAKRKTGTFDALLKAARGVEQLLTEKKLPENGTSENATTSVKKKRCNF
+                     CRLPGHSIENCLKKQNKRL"
+ORIGIN      
+        1 atgaacctgt cggttgacca attcgaaaag cttttatccg tcatcagcac ccagcagcgg
+       61 cgaggttctt ttgcgacctg taaactgtca tataatggcg tgcgagatac tgaaacggtg
+      121 gaatctttcc ttgcggcgac ttcagtgttc aaatctgttg aacagatatc cgatgaagat
+      181 gccattaaga gtattccact tattcttaaa gaagaagctg ctacttggtg gaatggtgtt
+      241 aaaaaagaag tcatgggtga cttcgaatca cgtgttcgac acgcatttgc ccctaagaga
+      301 ccagcatacc agttgtacca gaacatcgtt ggtcaaaatg ccaagagaaa aacaggaact
+      361 ttcgatgcct tgctgaaagc cgctagagga gttgaacagc ttctaacaga gaagaagctt
+      421 ccagaaaatg gaacttccga aaacgcaaca actagcgtta aaaagaaaag atgcaacttc
+      481 tgtcgtttgc caggacattc gatcgagaat tgcctgaaga agcagaacaa gcgactgtag
+//
+
+LOCUS       XM_037447132            1847 bp    mRNA    linear   INV 12-NOV-2020
+DEFINITION  PREDICTED: Manduca sexta uncharacterized LOC119193518
+            (LOC119193518), mRNA.
+ACCESSION   XM_037447132
+VERSION     XM_037447132.1
+DBLINK      BioProject: PRJNA674349
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Manduca sexta (tobacco hornworm)
+  ORGANISM  Manduca sexta
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Lepidoptera; Glossata; Ditrysia;
+            Bombycoidea; Sphingidae; Sphinginae; Sphingini; Manduca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023595440.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Manduca sexta Annotation Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 4% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..1847
+                     /organism="Manduca sexta"
+                     /mol_type="mRNA"
+                     /isolate="Smith_Timp_Sample1"
+                     /isolation_source="Purchased from Carolina Biological then
+                     incubated and grown in the lab"
+                     /db_xref="taxon:7130"
+                     /chromosome="Unknown"
+                     /tissue_type="body, legs, wings, head"
+                     /country="USA: Boston"
+                     /collection_date="Sep-2018"
+     gene            1..1847
+                     /gene="LOC119193518"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 95% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:119193518"
+     CDS             51..1847
+                     /gene="LOC119193518"
+                     /codon_start=1
+                     /product="uncharacterized protein LOC119193518"
+                     /protein_id="XP_037303029.1"
+                     /db_xref="GeneID:119193518"
+                     /translation="MAAANESPSASRAPFVDGSAPSSSSTSIVMTEQQLLRLVQLLQM
+                     QSPAAAATCASPSPALSQGNFAKCTARFDGAKESDVVAFIDAIEVYKECVSMDDSIAL
+                     RGLPMLFTGLAATWWQGVKASIDSWSNAIDLLKQTYGPRLPPHRIYREIFSKEQGDET
+                     TDMFICRVRALIAQLPPGSLKEDVQLDMVYGLLSTRIREKIPRSGFKSYAELLSQARR
+                     LEDLFEEGRPRQRKTDAGDKLSPAIPQKSASPSTSTVKAKSRSLCGYCKKYGHEKADC
+                     SRLRERNQTKATDGTSSPPSVSSLVCFGCGAPGVIRANCTTCRASSTSSAMPFQAVAA
+                     VSATCQPRSRPVMRVGMYGEYARLLVDTGAKQSIASDSLRNFLCKNNHVFHKVHYDFK
+                     FANGVTNSNIVETALVDVTVQGVVVPTQFVVLPGATESLLGINFVRDAGMVLDFRRDI
+                     WSLRDKPGSFPLEYEDVGTRIACSTVDLLREDEATRLTVEERIQLSNVLDNNRDIFEP
+                     GGAATSFAVHRIDTGDHPPISVPPYRVTPAKKNILKKEIDKMLQEGIIEEADSEWTSP
+                     VVLVPKRTGPLGSVSTTGNSTTSPARINIHFP"
+ORIGIN      
+        1 gaagtcatac ggacattacc gaatcgagcg cggaatcgaa taataataat atggccgccg
+       61 cgaatgaatc gccgtcggca agccgcgcgc cgtttgttga cggcagcgcg ccttcatcgt
+      121 ctagtacatc tatcgtgatg acggagcagc aactgctgcg acttgttcag ttgcttcaaa
+      181 tgcaatcacc tgcggctgcg gctacttgtg cttcaccatc gcctgcgctt tcccagggca
+      241 actttgccaa gtgcacggcg cggttcgacg gcgctaagga gagcgacgtt gtagcgttta
+      301 ttgacgctat cgaagtttac aaggagtgcg tcagcatgga cgacagcatt gccctgcgtg
+      361 gactaccgat gcttttcacc gggttggctg cgacctggtg gcaaggtgtg aaagcttcga
+      421 tcgatagttg gtcgaacgct attgacctac tgaagcaaac ttatggaccg cgtctcccgc
+      481 ctcacagaat ttatagagag attttctcca aagaacaagg agacgagact acagatatgt
+      541 ttatatgcag ggtgagagcc ctgatagccc agctgccacc tggtagttta aaagaagacg
+      601 tacaacttga tatggtttac gggctattga gtaccagaat aagggagaaa attccccgaa
+      661 gtggtttcaa atcatatgct gaattgttat cccaggctcg tcgcctggaa gacctgtttg
+      721 aagagggtcg tccgagacag cgcaagacag atgctggtga taagctgtcc ccagccattc
+      781 cccagaaatc ggcaagtcca tccacttcta cggttaaggc aaaatcccgg tcgttatgtg
+      841 ggtactgcaa gaagtacggc cacgaaaagg ccgactgctc ccggttgcgc gaacggaacc
+      901 aaaccaaggc aacggacggc acgtcatcgc cgccgtcggt ttcgtcactc gtgtgctttg
+      961 gttgtggcgc gccaggcgtc atacgtgcga actgtacgac ttgtcgagca tcgtctacat
+     1021 cgagcgctat gccctttcaa gctgtagctg cagtgtcggc gacgtgtcaa ccgcgaagtc
+     1081 gtcccgtaat gcgtgtcgga atgtacggag agtacgcacg gctactcgtc gataccggtg
+     1141 ctaaacagtc gatcgcgagt gatagtttaa gaaacttttt atgtaaaaat aatcatgtgt
+     1201 ttcacaaagt tcattatgat tttaaattcg ccaacggtgt caccaatagc aatattgtag
+     1261 aaacagcatt ggttgacgtt actgtgcaag gggtggtggt accaacacaa tttgtggtac
+     1321 tcccaggcgc gacggaatca ttattaggta ttaatttcgt tagggatgct ggtatggtac
+     1381 tagattttcg tagggatatt tggtcattgc gagataaacc ggggtcattt ccattagaat
+     1441 atgaagacgt agggacgcgt atcgcctgct ctacggtaga cttattacgc gaggacgaag
+     1501 cgacgcgctt aactgttgaa gaacgcattc aactttcgaa tgtcctagac aacaataggg
+     1561 acattttcga gccaggggga gccgctactt ctttcgcggt tcatcgtata gacacaggtg
+     1621 atcacccccc gatatccgtt cccccctatc gcgttacgcc tgcgaaaaag aatattctga
+     1681 agaaagaaat tgacaagatg ctacaagagg gaatcataga agaggcggac tctgaatgga
+     1741 cctctccagt agtactagta cctaaaagga cgggaccgtt aggttctgtg tcgactacag
+     1801 gaaactcaac cacatcaccc gcgcggataa atatccactt cccttga
+//
+

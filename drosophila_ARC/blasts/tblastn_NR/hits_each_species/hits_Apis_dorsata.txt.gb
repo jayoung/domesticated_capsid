@@ -1,0 +1,83 @@
+LOCUS       XM_006614844             904 bp    mRNA    linear   INV 05-NOV-2019
+DEFINITION  PREDICTED: Apis dorsata activity-regulated cytoskeleton associated
+            protein 2-like (LOC102678295), mRNA.
+ACCESSION   XM_006614844
+VERSION     XM_006614844.2
+DBLINK      BioProject: PRJNA232132
+KEYWORDS    RefSeq; includes ab initio.
+SOURCE      Apis dorsata (giant honeybee)
+  ORGANISM  Apis dorsata
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Apidae; Apis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_006263482.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Nov 5, 2019 this sequence version replaced XM_006614844.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Apis dorsata Annotation Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio :: 8% of CDS bases
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..904
+                     /organism="Apis dorsata"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7462"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /country="Malaysia: Borneo, Tenom"
+                     /collection_date="Feb-2007"
+     gene            1..904
+                     /gene="LOC102678295"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 92% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:102678295"
+     CDS             1..882
+                     /gene="LOC102678295"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_006614907.1"
+                     /db_xref="GeneID:102678295"
+                     /translation="MEIDEGQHELKMATASTAQSQKMIPERKGSFKQCTARFDGIRDN
+                     LNKFLVTICLYKDVERVNEDVALRELPLLFEGEAAAWWDTVGGNVTKWSQAMSMLQDS
+                     FAPKRAAYEIYAEVFSSKQEGNVATDEFVKQKRALLADLPNPHPDDVQVDMIYWMLKK
+                     QIRRKMPRKAIINLDDMIEKARYVDNMEKRRASVSRRWDEETMAKYFAKALVKCPHHK
+                     HRKDKEKYLHERNEERCHKCNKRKHGKYKNTTINIERFALCTLDSNTLERFASCSLVD
+                     SKDNTSSSSSCHHPSPS"
+ORIGIN      
+        1 atggaaatag acgaaggtca acacgaattg aagatggcga ccgcttcgac cgcgcaatct
+       61 caaaagatga tacctgagag aaagggcagt tttaaacaat gcacggctcg attcgacgga
+      121 attagggaca acttgaacaa atttctggtt acgatctgcc tttacaagga cgtggaaagg
+      181 gtgaacgaag acgtggctct gcgcgagtta ccgctcttgt tcgagggcga agcggccgcg
+      241 tggtgggata cagttggcgg caacgttacg aaatggtcgc aggcaatgtc catgctacaa
+      301 gactcgttcg ctcccaagag agccgcctac gagatatacg ccgaggtgtt ctcctcgaaa
+      361 caggagggca acgtagcgac cgacgagttc gtcaaacaga aacgcgccct cctcgccgat
+      421 cttcccaacc cgcatccgga tgacgtgcag gtcgacatga tatactggat gctgaagaaa
+      481 cagatacgca gaaagatgcc aagaaaagcg ataatcaacc tcgacgacat gatcgagaaa
+      541 gcccgttacg tggacaatat ggagaagagg agggcttcgg ttagccggcg ttgggacgag
+      601 gagacgatgg ctaaatattt cgccaaagcg ttagtcaaat gcccccacca caagcacaga
+      661 aaggacaagg agaaatactt gcacgagcgg aacgaagaga ggtgtcataa gtgtaacaaa
+      721 cgtaaacacg ggaaatataa aaacacgacg ataaatattg agcggttcgc gttgtgtaca
+      781 ttggacagca acacattgga acgttttgcc tcgtgcagcc tcgtagattc caaggacaat
+      841 acgtcgtcct cgtcctcttg ccatcatccg tctccctctt aatttctcgt atatttttct
+      901 aaat
+//
+

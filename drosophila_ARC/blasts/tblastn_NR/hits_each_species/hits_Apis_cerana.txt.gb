@@ -1,0 +1,287 @@
+LOCUS       XM_017061878            1949 bp    mRNA    linear   INV 17-APR-2019
+DEFINITION  PREDICTED: Apis cerana activity-regulated cytoskeleton associated
+            protein 2-like (LOC108001058), mRNA.
+ACCESSION   XM_017061878
+VERSION     XM_017061878.2
+DBLINK      BioProject: PRJNA324433
+KEYWORDS    RefSeq.
+SOURCE      Apis cerana (Asiatic honeybee)
+  ORGANISM  Apis cerana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Apidae; Apis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016019519.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Apr 17, 2019 this sequence version replaced XM_017061878.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Apis cerana Annotation Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1949
+                     /organism="Apis cerana"
+                     /mol_type="mRNA"
+                     /strain="Korean"
+                     /isolation_source="domesticated animals"
+                     /db_xref="taxon:7461"
+                     /chromosome="Unknown"
+                     /country="South Korea: Seoul"
+                     /collection_date="2013"
+     gene            1..1949
+                     /gene="LOC108001058"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:108001058"
+     CDS             207..1079
+                     /gene="LOC108001058"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_016917367.1"
+                     /db_xref="GeneID:108001058"
+                     /translation="MDVDEGQYDSRVGASTARPQTSEKKGSFKQCTARFDGNRENLNK
+                     FLVTICLYKDVERVNEDVALHELPLLFEGEAAEWWKTVGGNVTKWSDAMAMLQDSFAP
+                     KKTAYEIYADVFSSKQEANEPTDEFIKQKRALLAELANPHPDDVQIDMIYWMLKKQIR
+                     RKIPRSAIISLDDMIEKARYMDNMEKRKTSATRHWDEETMAKYFARSLIKCPHHKHKK
+                     EKYLHERNEERCHKCNKRKHTHGKYKNTTINIERLALCTLDSNTLERFASCSLVDSKD
+                     NTSSSSSCHHPSPS"
+ORIGIN      
+        1 tccgggtaac acagtaatct ggcaattctc ggcacaagag cacgtccatt tcgaaaattc
+       61 ttgcgattcc caatcacgac gaatcgtaca tcgactggtt tccacggacg cggaacgcca
+      121 atcaaatatc gatatctgcg atccccgata tacgtgactc gatctcgagt ttcaccgaag
+      181 aggaagaaaa aagggaataa gagaagatgg atgtggacga aggccagtac gactcgaggg
+      241 tgggcgcttc taccgcgcga cctcaaacgt cggagaagaa gggcagtttt aaacagtgca
+      301 cggctcggtt cgatggaaac agagaaaact tgaacaagtt tctggttact atctgcctct
+      361 acaaggacgt ggaaagggtg aacgaggacg tggccctcca cgagctgcct ctcttgttcg
+      421 agggggaagc ggccgagtgg tggaagaccg tcggcggaaa tgtgacgaaa tggtcggatg
+      481 caatggccat gctccaggac tcgttcgccc ccaagaaaac cgcctacgag atatacgccg
+      541 acgtgttctc ctcgaagcag gaggcgaacg agccgacgga cgagttcatc aaacagaaac
+      601 gcgccctcct cgccgagctt gccaacccgc atccggacga cgtgcagatc gacatgattt
+      661 actggatgct gaagaaacag atacgcagga agataccaag gagcgcgata atcagcttgg
+      721 acgacatgat cgagaaagcg cgctacatgg acaacatgga gaagaggaag acctcggcta
+      781 cccgccactg ggacgaggag acgatggcca agtatttcgc cagatcgttg atcaaatgcc
+      841 cccaccacaa acacaagaag gagaagtact tgcacgagcg gaacgaggag aggtgtcaca
+      901 agtgtaacaa acgtaaacac acgcacggca aatacaagaa cacgacgata aatatagagc
+      961 gcctcgcgtt gtgcacgttg gatagcaaca cgttggaacg cttcgcctcg tgcagcctcg
+     1021 tagattccaa ggacaacaca tcgtcctcct cctcttgcca tcacccgtcc ccctcataat
+     1081 tccctcctac ctcttgtata tttttgtaat atatgtatgt atcttattgt aatatatgta
+     1141 tttttctaaa ttgtaaattc tctgtgtgcg tgcgtgtgtg cgtgtgcgtg tgcgtgtgtg
+     1201 tatatacatg tatatatttt atccaacgtt tgatcaattt tatttatgta ttctattaag
+     1261 ctaaatatta aataatttat atcatataat ctattatagt tttataacct tataatctta
+     1321 gtgttattat tgtaatcttg atattattat ttttgttatt ttgtatatta attaatatta
+     1381 ataataacaa tattttgtat ataaacgacg agcgtgaaat tcgtgaaaat tcctgccatt
+     1441 tctatgatta tgatttgtta tattgcgttg caaatatcgt acctgatcga attaaatttt
+     1501 tcatcgttct gttgagagag agagagagaa agagagagag agagagagag agagagagag
+     1561 agaacgaaca gctaaaatgt aaataaaaga tacaaataat gtgataaaac catagatatt
+     1621 ctttaaccga tattctttga cttattcttc gttcgaaaat ttcccccaaa atcctcccaa
+     1681 aatttttatc tccgtaacac acgttcatta cgtaaagtat atacttcgtg aaaagtttac
+     1741 tcgagatcga ctcgtttgac ggacgtcaga ggtttcgcaa aagtcaacaa ataccttccc
+     1801 tttgaccgag gaaggaaaag gaaggaatcc atcgtggctc gaacctcgtt tactttaaac
+     1861 cgcgacgagt gaaacgagag actcgagcta ataaccggct aacgttccat cctatactat
+     1921 cctgcactct atactcttct cttaaaaaa
+//
+
+LOCUS       XM_028668347            1949 bp    mRNA    linear   INV 17-APR-2019
+DEFINITION  PREDICTED: Apis cerana activity-regulated cytoskeleton associated
+            protein 2-like (LOC114577950), mRNA.
+ACCESSION   XM_028668347
+VERSION     XM_028668347.1
+DBLINK      BioProject: PRJNA324433
+KEYWORDS    RefSeq.
+SOURCE      Apis cerana (Asiatic honeybee)
+  ORGANISM  Apis cerana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Apidae; Apis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016019519.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Apis cerana Annotation Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1949
+                     /organism="Apis cerana"
+                     /mol_type="mRNA"
+                     /strain="Korean"
+                     /isolation_source="domesticated animals"
+                     /db_xref="taxon:7461"
+                     /chromosome="Unknown"
+                     /country="South Korea: Seoul"
+                     /collection_date="2013"
+     gene            1..1949
+                     /gene="LOC114577950"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114577950"
+     CDS             207..1079
+                     /gene="LOC114577950"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028524148.1"
+                     /db_xref="GeneID:114577950"
+                     /translation="MDVDEGQYDSRVGASTARPQTSEKKGSFKQCTARFDGNRENLNK
+                     FLVTICLYKDVERVNEDVALHELPLLFEGEAAEWWKTVGGNVTKWSDAMAMLQDSFAP
+                     KKTAYEIYADVFSSKQEANEPTDEFIKQKRALLAELANPHPDDVQIDMIYWMLKKQIR
+                     RKIPRSAIISLDDMIEKARYMDNMEKRKTSATRHWDEETMAKYFARSLIKCPHHKHKK
+                     EKYLHERNEERCHKCNKRKHTHGKYKNTTINIERLALCTLDSNTLERFASCSLVDSKD
+                     NTSSSSSCHHPSPS"
+ORIGIN      
+        1 tccgggtaac acagtaatct ggcaattctc ggcacaagag cacgtccatt tcgaaaattc
+       61 ttgcgattcc caatcacgac gaatcgtaca tcgactggtt tccacggacg cggaacgcca
+      121 atcaaatatc gatatctgcg atccccgata tacgtgactc gatctcgagt ttcaccgaag
+      181 aggaagaaaa aagggaataa gagaagatgg atgtggacga aggccagtac gactcgaggg
+      241 tgggcgcttc taccgcgcga cctcaaacgt cggagaagaa gggcagtttt aaacagtgca
+      301 cggctcggtt cgatggaaac agagaaaact tgaacaagtt tctggttact atctgcctct
+      361 acaaggacgt ggaaagggtg aacgaggacg tggccctcca cgagctgcct ctcttgttcg
+      421 agggggaagc ggccgagtgg tggaagaccg tcggcggaaa tgtgacgaaa tggtcggatg
+      481 caatggccat gctccaggac tcgttcgccc ccaagaaaac cgcctacgag atatacgccg
+      541 acgtgttctc ctcgaagcag gaggcgaacg agccgacgga cgagttcatc aaacagaaac
+      601 gcgccctcct cgccgagctt gccaacccgc atccggacga cgtgcagatc gacatgattt
+      661 actggatgct gaagaaacag atacgcagga agataccaag gagcgcgata atcagcttgg
+      721 acgacatgat cgagaaagcg cgctacatgg acaacatgga gaagaggaag acctcggcta
+      781 cccgccactg ggacgaggag acgatggcca agtatttcgc cagatcgttg atcaaatgcc
+      841 cccaccacaa acacaagaag gagaagtact tgcacgagcg gaacgaggag aggtgtcaca
+      901 agtgtaacaa acgtaaacac acgcacggca aatacaagaa cacgacgata aatatagagc
+      961 gcctcgcgtt gtgcacgttg gatagcaaca cgttggaacg cttcgcctcg tgcagcctcg
+     1021 tagattccaa ggacaacaca tcgtcctcct cctcttgcca tcacccgtcc ccctcataat
+     1081 tccctcctac ctcttgtata tttttgtaat atatgtatgt atcttattgt aatatatgta
+     1141 tttttctaaa ttgtaaattc tctgtgtgcg tgcgtgtgtg cgtgtgcgtg tgcgtgtgtg
+     1201 tatatacatg tatatatttt atccaacgtt tgatcaattt tatttatgta ttctattaag
+     1261 ctaaatatta aataatttat atcatataat ctattatagt tttataacct tataatctta
+     1321 gtgttattat tgtaatcttg atattattat ttttgttatt ttgtatatta attaatatta
+     1381 ataataacaa tattttgtat ataaacgacg agcgtgaaat tcgtgaaaat tcctgccatt
+     1441 tctatgatta tgatttgtta tattgcgttg caaatatcgt acctgatcga attaaatttt
+     1501 tcatcgttct gttgagagag agagagagaa agagagagag agagagagag agagagagag
+     1561 agaacgaaca gctaaaatgt aaataaaaga tacaaataat gtgataaaac catagatatt
+     1621 ctttaaccga tattctttga cttattcttc gttcgaaaat ttcccccaaa atcctcccaa
+     1681 aatttttatc tccgtaacac acgttcatta cgtaaagtat atacttcgtg aaaagtttac
+     1741 tcgagatcga ctcgtttgac ggacgtcaga ggtttcgcaa aagtcaacaa ataccttccc
+     1801 tttgaccgag gaaggaaaag gaaggaatcc atcgtggctc gaacctcgtt tactttaaac
+     1861 cgcgacgagt gaaacgagag actcgagcta ataaccggct aacgttccat cctatactat
+     1921 cctgcactct atactcttct cttaaaaaa
+//
+
+LOCUS       XM_028668348            1950 bp    mRNA    linear   INV 17-APR-2019
+DEFINITION  PREDICTED: Apis cerana activity-regulated cytoskeleton associated
+            protein 2-like (LOC114577951), mRNA.
+ACCESSION   XM_028668348
+VERSION     XM_028668348.1
+DBLINK      BioProject: PRJNA324433
+KEYWORDS    RefSeq.
+SOURCE      Apis cerana (Asiatic honeybee)
+  ORGANISM  Apis cerana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Holometabola; Hymenoptera; Apocrita; Aculeata;
+            Apoidea; Apidae; Apis.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_016019519.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Apis cerana Annotation Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1950
+                     /organism="Apis cerana"
+                     /mol_type="mRNA"
+                     /strain="Korean"
+                     /isolation_source="domesticated animals"
+                     /db_xref="taxon:7461"
+                     /chromosome="Unknown"
+                     /country="South Korea: Seoul"
+                     /collection_date="2013"
+     gene            1..1950
+                     /gene="LOC114577951"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:114577951"
+     CDS             208..1080
+                     /gene="LOC114577951"
+                     /codon_start=1
+                     /product="activity-regulated cytoskeleton associated
+                     protein 2-like"
+                     /protein_id="XP_028524149.1"
+                     /db_xref="GeneID:114577951"
+                     /translation="MDVDEGQYDSRVGASTARPQTSEKKGSFKQCTARFDGNRENLNK
+                     FLVTICLYKDVERVNEDVALHELPLLFEGEAAEWWKTVGGNVTKWSDAMAMLQDSFAP
+                     KKTAYEIYADVFSSKQEANEPTDEFIKQKRALLAELANPHPDDVQIDMIYWMLKKQIR
+                     RKIPRSAIISLDDMIEKARYMDNMEKRKTSATRHWDEETMAKYFARSLIKCPHHKHKK
+                     EKYLHERNEERCHKCNKRKHTHGKYKNTTINIERLALCTLDSNTLERFASCSLVDSKD
+                     NTSSSSSCHHPSPS"
+ORIGIN      
+        1 gtccgggtaa cacagtaatc tggcaattct cggcacatga gcacgtccat ttcgaaaatt
+       61 cttgcgattc ccaatcacga cgaatcgtac atcgactggt ttccacggac gcggaacgcc
+      121 aatcaaatat cgatatctgc gatccccgat atacgtgact cgatctcgag tttcaccgaa
+      181 gaggaagaaa aaagggaata agagaagatg gatgtggacg aaggccagta cgactcgagg
+      241 gtgggcgctt ctaccgcgcg acctcaaacg tcggagaaga agggcagttt taaacagtgc
+      301 acggctcggt tcgatggaaa cagagaaaac ttgaacaagt ttctggttac tatctgcctc
+      361 tacaaggacg tggaaagggt gaacgaggac gtggccctcc acgagctgcc tctcttgttc
+      421 gagggggaag cggccgagtg gtggaagacc gtcggcggaa atgtgacgaa atggtcggat
+      481 gcaatggcca tgctccagga ctcgttcgcc cccaagaaaa ccgcctacga gatatacgcc
+      541 gacgtgttct cctcgaagca ggaggcgaac gagccgacgg acgagttcat caaacagaaa
+      601 cgcgccctcc tcgccgagct tgccaacccg catccggacg acgtgcagat cgacatgatt
+      661 tactggatgc tgaagaaaca gatacgcagg aagataccaa ggagcgcgat aatcagcttg
+      721 gacgacatga tcgagaaagc gcgctacatg gacaacatgg agaagaggaa gacctcggct
+      781 acccgccact gggacgagga gacgatggcc aagtatttcg ccagatcgtt gatcaaatgc
+      841 ccccaccaca aacacaagaa ggagaagtac ttgcacgagc ggaacgagga gaggtgtcac
+      901 aagtgtaaca aacgtaaaca cacgcacggc aaatacaaga acacgacgat aaatatagag
+      961 cgcctcgcgt tgtgcacgtt ggatagcaac acgttggaac gcttcgcctc gtgcagcctc
+     1021 gtagattcca aggacaacac atcgtcctcc tcctcttgcc atcacccgtc cccctcataa
+     1081 ttccctccta cctcttgtat atttttgtaa tatatgtatg tatcttattg taatatatgt
+     1141 atttttctaa attgtaaatt ctctgtgtgc gtgcgtgtgt gcgtgtgcgt gtgcgtgtgt
+     1201 gtatatacat gtatatattt tatccaacgt ttgatcaatt ttatttatgt attctattaa
+     1261 gctaaatatt aaataattta tatcatataa tctattatag ttttataacc ttataatctt
+     1321 agtgttatta ttgtaatctt gatattatta tttttgttat tttgtatatt aattaatatt
+     1381 aataataaca atattttgta tataaacgac gagcgtgaaa ttcgtgaaaa ttcctgccat
+     1441 ttctatgatt atgatttgtt atattgcgtt gcaaatatcg tacctgatcg aattaaattt
+     1501 ttcatcgttc tgttgagaga gagagagaga aagagagaga gagagagaga gagagagaga
+     1561 gagaacgaac agctaaaatg taaataaaag atacaaataa tgtgataaaa ccatagatat
+     1621 tctttaaccg atattctttg acttattctt cgttcgaaaa tttcccccaa aatcctccca
+     1681 aaatttttat ctccgtaaca cacgttcatt acgtaaagta tatacttcgt gaaaagttta
+     1741 ctcgagatcg actcgtttga cggacgtcag aggtttcgca aaagtcaaca aataccttcc
+     1801 ctttgaccga ggaaggaaaa ggaaggaatc catcgtggct cgaacctcgt ttactttaaa
+     1861 ccgcgacgag tgaaacgaga gactcgagct aataaccggc taacgttcca tcctatacta
+     1921 tcctgcactc tatactcttc tcttaaaaaa
+//
+

@@ -535,7 +535,9 @@ cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/drosophila_ARC
 
 cd melanogaster_reference_seqs
 
-got accessions of dARC1 and dARC2 from NCBI: dARC1.txt dARC2.txt
+got accessions of dARC1 and dARC2 from NCBI: 
+dARC1.txt (NM_137111.3) 
+dARC2.txt (NM_137112.2)
 
 ../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide dARC1.txt dARC2.txt
 ../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl dARC1.txt.gb  dARC2.txt.gb
@@ -550,12 +552,12 @@ cd ../blasts/tblastn_NR
 ../../../scripts/sortBlastHitsBySpecies.pl *tblastnNR.txt
 cd hits_each_species
 ../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide hits*.txt 
-
-
 ../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0  hits_*.gb
  
 
 ##### github reminder: pushing edits back up to the github website:
+
+https://github.com/jayoung/domesticated_capsid.git
 
 git status
 

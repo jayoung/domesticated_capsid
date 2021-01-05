@@ -1,6 +1,6 @@
 
 
-xxx should I use orthodb alignments?
+xxx should I use orthodb or Ensembl alignments?
 
 
 ##### workflow, in detail
@@ -275,11 +275,11 @@ grep 'NM_015193' ../allRefSeqs.hg38.justCDS.bed  > ARC_NM_015193.bed
 ## add -multiple - no hit.
 ../liftOver -minMatch=0.1 -minBlocks=0.1 -fudgeThick -multiple ARC_NM_015193.bed /fh/fast/malik_h/grp/public_databases/UCSC/human_Dec2013/liftOverFiles/hg38ToRheMac3.over.chain.gz ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThickMultiple.mapped.bed  ARC_NM_015193.liftOver.rheMac3.minBlockfudgeThickMultiple.unmapped.bed
 
+
+
 xx other ideas:
 
-use NEWER assemblies chain files for some species
 
-use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
 
 use BLAT or sim4-like program to get intact and pseudogenes from entire assemblies (should get pseudogenes as well), and blat/blast back to human to check we get the right bits
 
@@ -500,8 +500,60 @@ the unedited axt2phy.pl needs Bio/Graphics/Wiggle.pm, which I could not install,
 
 
 ./axt2phy.pl -species hg38.chrX -axtin ZCCHC12plusSmallFlank_100wayAln_hg38.axt -gffout ZCCHC12plusSmallFlank_100wayAln_hg38.axt.gff -fastaout ZCCHC12plusSmallFlank_100wayAln_hg38.axt.fa
- 
 
+
+######################## use tblastn of NR database to collect intact orthologs where possible. fill in pseudogenes afterwards.
+
+xx use BLAST to get just intact genes from NCBI NR (require mutual best blast) (won't get pseudogenes, probably)
+
+
+This does the blast, and returns results in the regular format as well as a tab-delimited format that includes taxonomy info
+
+cd blasts/tblastn_NR/Refseq
+../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Refseq.fa
+    xxxx running
+cd ../RepBase
+../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Repbase.fa
+    xxxx a few failed the first time - re-running
+
+xxx or do I want a blast output that directly includes taxonomic info, rather than me having to look it up by downloading each genbank entry? that should be possible due to recent changes, I think.  Use RID of completed blast search (e.g. Z64K14A0016) for lookup, within 48hrs of blast search completing?  I think someone at NCBI told me how to do this?
+
+
+../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Refseq.fa
+
+
+blast_formatter -rid Z6A9UVFM013 -outfmt "6 qaccver qlen saccver slen evalue score bitscore pident ppos length gapopen qstart qend sstart send sframe staxid ssciname scomname stitle" >> NP_001096619.1-PNMA-5-363.tblastnNR.txt2
+
+
+###############  drosophila ARC
+
+I also want to do some analysis on the two Drosophila ARC genes to see if the conservation metrics we are considering would work OK for those.
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/drosophila_ARC
+
+## get D. melanogaster genes/proteins:
+
+cd melanogaster_reference_seqs
+
+got accessions of dARC1 and dARC2 from NCBI: dARC1.txt dARC2.txt
+
+../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide dARC1.txt dARC2.txt
+../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl dARC1.txt.gb  dARC2.txt.gb
+
+rm *info.txt *warnings.txt
+../../scripts/translate1frame.bioperl dARC1.txt.gb.ORFs dARC2.txt.gb.ORFs
+
+## blast NR
+cd ../blasts/tblastn_NR
+../../../scripts/callblastjanetNRntProtquery.bioperl ../../melanogaster_reference_seqs/dARC1.txt.gb.ORFs.peps.fa ../../melanogaster_reference_seqs/dARC2.txt.gb.ORFs.peps.fa
+
+../../../scripts/sortBlastHitsBySpecies.pl *tblastnNR.txt
+cd hits_each_species
+../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide hits*.txt 
+
+
+../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0  hits_*.gb
+ 
 
 ##### github reminder: pushing edits back up to the github website:
 

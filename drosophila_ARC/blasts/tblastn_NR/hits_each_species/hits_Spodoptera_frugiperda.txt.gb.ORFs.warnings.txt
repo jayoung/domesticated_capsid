@@ -1,2 +1,0 @@
-Seq	Warnings
-XR_004783199	no CDS

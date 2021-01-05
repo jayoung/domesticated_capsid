@@ -1,2 +1,0 @@
-Seq	Warnings
-MK431356	no CDS

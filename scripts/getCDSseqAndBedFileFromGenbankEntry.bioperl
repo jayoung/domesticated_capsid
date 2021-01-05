@@ -107,7 +107,8 @@ foreach my $file (@ARGV){
         print TABLE "\n";  
     }
     my $warningsFile = "$file".".ORFs.warnings.txt";
-    open(LOG, ">$warningsFile");
+    my $numWarnings = 0;
+    open (LOG, ">$warningsFile");
     print LOG "Seq\tWarnings\n";
     my %seqNamesUsed;
     my $numSeqs = 0;
@@ -176,6 +177,7 @@ foreach my $file (@ARGV){
         if ($numCDSs == 0) {
             push @warningsElementsParentSeq, "noCDSseqs";
             print LOG "$header\tno CDS\n";
+            $numWarnings++;
             my $CDSseqString = $seq->seq();
             if ($outputWholeSeqIfNoAnnotatedCDS == 1) {
                 print "    WARNING - seq $header had no CDS, giving entire sequence, and using accession as gene/product name\n";
@@ -263,6 +265,7 @@ foreach my $file (@ARGV){
                 push @warningsElementsCDS, "multipleCDSsThisSeq";
                 $CDSname .= $CDScounter;
                 print LOG "$header\tmultipleCDSs\n";
+                $numWarnings++;
             }
             my $start = $CDS->start;
             my $end = $CDS->end;
@@ -328,6 +331,7 @@ foreach my $file (@ARGV){
             if (defined $seqNamesUsed{$CDSname}) {
                 print "\n\nWARNING - seqname $CDSname has been used more than once\n\n";
                 print LOG "$CDSname\tAppearsMoreThanOnce\n";
+                $numWarnings++;
             }
             $seqNamesUsed{$CDSname} = 1;
             if ($strand == -1) { $CDSseq=$CDSseq->revcom(); }
@@ -344,6 +348,7 @@ foreach my $file (@ARGV){
     if ($getBedFile == 1) { close BED; }
     if ($getTable == 1) { close TABLE; }
     close LOG;
+    if ($numWarnings == 0) { unlink $warningsFile; }
 }
 
 ######

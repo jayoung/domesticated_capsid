@@ -1,1 +1,0 @@
-qaccver	qlen	saccver	slen	evalue	score	bitscore	pident	ppos	length	gapopen	qstart	qend	sstart	send	sframe	staxid	ssciname	scomname	stitle

@@ -514,15 +514,10 @@ cd blasts/tblastn_NR/Refseq
     xxxx running
 cd ../RepBase
 ../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Repbase.fa
-    xxxx a few failed the first time - re-running
-
-xxx or do I want a blast output that directly includes taxonomic info, rather than me having to look it up by downloading each genbank entry? that should be possible due to recent changes, I think.  Use RID of completed blast search (e.g. Z64K14A0016) for lookup, within 48hrs of blast search completing?  I think someone at NCBI told me how to do this?
-
+    xxxx a few failed twice in a row: exceeding CPU time.  I think I will leave that alone
 
 ../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Refseq.fa
 
-
-blast_formatter -rid Z6A9UVFM013 -outfmt "6 qaccver qlen saccver slen evalue score bitscore pident ppos length gapopen qstart qend sstart send sframe staxid ssciname scomname stitle" >> NP_001096619.1-PNMA-5-363.tblastnNR.txt2
 
 
 ###############  drosophila ARC
@@ -545,6 +540,10 @@ dARC2.txt (NM_137112.2)
 rm *info.txt *warnings.txt
 ../../scripts/translate1frame.bioperl dARC1.txt.gb.ORFs dARC2.txt.gb.ORFs
 
+## search PFAM
+../../scripts/searchPFAMprotqueryNewMoreSensitive.pl dARC1.txt.gb.ORFs.peps.fa dARC2.txt.gb.ORFs.peps.fa
+cat *ive/*PFAMscan.txt > bothGenesPFAMoutput.txt
+
 ## blast NR
 cd ../blasts/tblastn_NR
 ../../../scripts/callblastjanetNRntProtquery.bioperl ../../melanogaster_reference_seqs/dARC1.txt.gb.ORFs.peps.fa ../../melanogaster_reference_seqs/dARC2.txt.gb.ORFs.peps.fa
@@ -554,6 +553,110 @@ cd hits_each_species
 ../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide hits*.txt 
 ../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0  hits_*.gb
  
+## align
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/drosophila_ARC/alignment
+cp  ../melanogaster_reference_seqs/*ORFs .
+
+# get the 10 additional fly species that UCSC lists:
+pushd ../blasts/tblastn_NR/hits_each_species/Drosophila_species
+cp hits_Drosophila_erecta.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_sechellia.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_simulans.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_yakuba.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_ananassae.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_persimilis.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_pseudoobscura.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_mojavensis.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_virilis.txt.gb.ORFs ../../../../alignment/
+cp hits_Drosophila_grimshawi.txt.gb.ORFs ../../../../alignment/
+popd
+
+## first alignment
+cat *ORFs > dARC_seqsToAlign1.fa
+
+runMACSEsimpleInFrameAlignment.pl dARC_seqsToAlign1.fa
+    ran fine
+mkdir old/aln1_parts
+mv *ORFs dARC_seqsToAlign1.fa aln1_parts/
+
+# trim to well-aligned bits
+../../scripts/trimalignment_userefseqcoords_multi.bioperl -coords=codons  ../melanogaster_reference_seqs/dARC1_alnTrimCoordsCodons_aln1.txt dARC_seqsToAlign1_aln1_NT.fa
+
+# make a tree
+cd dARC_seqsToAlign1_aln1_NT.trimmulti.fa_treeNoBoots 
+cp ../dARC_seqsToAlign1_aln1_NT.trimmulti.fa .
+../../../scripts/runPHYMLonNucleotideAlignmentAndRemoveBranchLengths.pl -removeBlen=0 -job=tree1 dARC_seqsToAlign1_aln1_NT.trimmulti.fa
+
+cd ../dARC_seqsToAlign1_aln1_NT.trimmulti.fa_treeWithBoots 
+cp ../dARC_seqsToAlign1_aln1_NT.trimmulti.fa .
+../../../scripts/runPHYMLonNucleotideAlignmentAndRemoveBranchLengths.pl -boots 100 -removeBlen=0 -job=tree2 dARC_seqsToAlign1_aln1_NT.trimmulti.fa
+
+
+## second alignment - add outgroup: bee, apis mellifera
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/drosophila_ARC/alignment
+cp ../blasts/tblastn_NR/hits_each_species/Hymenoptera/hits_Apis_mellifera.txt.gb.ORFs .
+
+cat dARC_seqsToAlign1_aln1_NT.fa hits_Apis_mellifera.txt.gb.ORFs > dARC_seqsToAlign2.fa
+
+runMACSEsimpleInFrameAlignment.pl dARC_seqsToAlign2.fa
+    ran fine
+mkdir old/aln2_parts
+mv hits_Apis_mellifera.txt.gb.ORFs old/aln2_parts/
+
+# trim to well-aligned bits
+../../scripts/trimalignment_userefseqcoords_multi.bioperl -coords=codons  ../melanogaster_reference_seqs/dARC1_alnTrimCoordsCodons_aln2.txt dARC_seqsToAlign2_aln1_NT.fa
+
+# make a tree
+
+mkdir dARC_seqsToAlign2_aln1_NT.trimmulti.fa_treeNoBoots 
+mkdir dARC_seqsToAlign2_aln1_NT.trimmulti.fa_treeWithBoots 
+
+cd dARC_seqsToAlign2_aln1_NT.trimmulti.fa_treeNoBoots 
+cp ../dARC_seqsToAlign2_aln1_NT.trimmulti.fa .
+../../../scripts/runPHYMLonNucleotideAlignmentAndRemoveBranchLengths.pl -removeBlen=0 -job=tree1 dARC_seqsToAlign2_aln1_NT.trimmulti.fa
+
+cd ../dARC_seqsToAlign2_aln1_NT.trimmulti.fa_treeWithBoots 
+cp ../dARC_seqsToAlign2_aln1_NT.trimmulti.fa .
+../../../scripts/runPHYMLonNucleotideAlignmentAndRemoveBranchLengths.pl -boots 100 -removeBlen=0 -job=tree2 dARC_seqsToAlign2_aln1_NT.trimmulti.fa
+
+# make protein tree
+../../scripts/translate1frame.bioperl dARC_seqsToAlign2_aln1_NT.trimmulti.fa
+../../scripts/runPHYML.pl -type=aa -model=JTT -sbatch=1 -boot=100 -threads=10 dARC_seqsToAlign2_aln1_NT.trimmulti.fa.peps.fa
+
+
+#### subset aln2 - just melanogaster and obscura groups
+
+splitfastafileextractsomeseqs.pl dARC_seqsToAlign2_aln1_NT.trimmulti.fa dARC_seqsToAlign2_justMelanogasterAndObscuraGroups.txt
+
+../../scripts/runPHYML.pl -type=nt -model=GTR -sbatch=1 -boot=100 -threads=10 dARC_seqsToAlign2_justMelanogasterAndObscuraGroups.txt.seqs.fasta
+   ran. 
+makes two nice orthologous groups.
+used FigTree to select names of seqs in each group: 
+    dArc1_justMelanogasterAndObscuraGroups.txt
+    dArc2_justMelanogasterAndObscuraGroups.txt
+
+# split that alignment into Arc1 vs Arc2 (full length)
+splitfastafileextractsomeseqs.bioperl dARC_seqsToAlign2_aln1_NT.fa dArc1_justMelanogasterAndObscuraGroups.txt
+splitfastafileextractsomeseqs.bioperl dARC_seqsToAlign2_aln1_NT.fa dArc2_justMelanogasterAndObscuraGroups.txt
+
+removegapsfromalignmentinframeonly.pl dArc1_justMelanogasterAndObscuraGroups.txt.fa dArc2_justMelanogasterAndObscuraGroups.txt.fa 
+
+edited each a little bit
+
+get overall dN/dS using PAML model 0
+    Arc1: 0.0926
+    Arc2: 0.0383
+(dS tree length is ~ 3.7 in both cases)
+ 
+xx look at translations and amount of conservation
+
+
+xx what am I trying to achieve??
+
+
+
+
 
 ##### github reminder: pushing edits back up to the github website:
 

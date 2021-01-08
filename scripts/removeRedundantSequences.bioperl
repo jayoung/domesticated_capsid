@@ -1,0 +1,80 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+use Getopt::Long;
+
+
+#### takes a file of multiple sequences (possibly with gaps)
+#### any sequences that are IDENTICAL after removing gaps, we only keep one of the group
+#### we record the names of seqs in each group in a second file (one line per group, space-delimited seq list)
+
+#### perhaps also check whether the seq is an exact subseq of another:
+my $checkIsSubseq = 0;
+
+GetOptions("checkSubseq=i" => \$checkIsSubseq
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+
+##############
+print "\nRemoving exactly redundant sequences\n";
+if ($checkIsSubseq == 1) {
+    print "also removing seqs that are exact subsequences of others (only if they come further down the sequence file, so best run on alignments sorted by start position)\n\n";
+}
+
+foreach my $file (@ARGV){
+    if (!-e $file) {
+        die "\n\nterminating - file $file does not exist\n\n";
+    }
+    my $seqIN = Bio::SeqIO->new(-file => "$file", '-format' => 'Fasta');
+    my $out1 = "$file".".nonRedundant";
+    my $out2 = "$file".".nonRedundantGroups.txt";
+    open (OUT, "> $out2");
+    my $seqOUT = new Bio::SeqIO(-file => ">$out1", -format => 'Fasta');
+    my %seqs; # key is the ungapped seq, values are in 'names' (the seqnames) and 'gapped' (the gapped seq object)
+    my %originalSortOrder; #key is a count representing order in file, value is the ungapped seq
+    my $seqIndex=0;
+    while (my $thisseq = $seqIN->next_seq) {
+        $seqIndex++;
+        my $letters = $thisseq->seq(); 
+        my $ungapped = $letters; $ungapped =~ s/-//g;
+        $originalSortOrder{$seqIndex} = $ungapped;
+        my $header = $thisseq->display_id();
+        ### if that exact sequence was already seen:
+        if (defined $seqs{$ungapped}) {
+            push @{$seqs{$ungapped}{'names'}}, $header;
+        } else { ### if not, we might want to check whether this is a subseq of something that already exists - if so, by definition, it is smaller than the thing we looked at already
+            if ($checkIsSubseq == 1) {
+                if (grep /$ungapped/, keys %seqs) {
+                    foreach my $seqMatchAlreadySeen (grep /$ungapped/, keys %seqs) {
+                        push @{$seqs{$seqMatchAlreadySeen}{'names'}}, $header;
+                        #print "current seq $header\n$ungapped\n is a subseq of something already seen\n$seqMatchAlreadySeen\n\n";
+                    }
+                } else { ### not seen before at all
+                    $seqs{$ungapped}{'gapped'} = $thisseq;
+                    push @{$seqs{$ungapped}{'names'}}, $header;
+                } 
+            } else { ### not checking subseqs and not seen before
+                $seqs{$ungapped}{'gapped'} = $thisseq;
+                push @{$seqs{$ungapped}{'names'}}, $header;
+            } 
+            
+        }
+    }
+    #foreach my $seq (keys %seqs) {
+    my %printedAlready;  
+    foreach my $index (sort {$a<=>$b} keys %originalSortOrder) {
+        if (! defined $seqs{$originalSortOrder{$index}} ) { next; }
+        my $seq = $originalSortOrder{$index};
+        if (defined $printedAlready{$seq}) {next;}
+        my $seqobj = $seqs{$seq}{'gapped'};
+        my @names = @{$seqs{$seq}{'names'}};
+        print OUT join " ", @names;
+        print OUT "\n";
+        $seqOUT->write_seq($seqobj);
+        $printedAlready{$seq}=1;
+    }
+    close OUT;
+}
+

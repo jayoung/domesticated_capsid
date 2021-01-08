@@ -1,0 +1,9 @@
+Group my name	Taxonomic terms to include	Taxonomic terms to exclude
+Primates	Primates	none
+Glires	Glires	none
+Cetartiodactyla	Cetartiodactyla	none
+Carnivora	Carnivora	none
+Bats	Chiroptera	none
+Other_mammals	Mammalia	Primates,Glires,Cetartiodactyla,Carnivora,Chiroptera
+BirdsReptiles	Sauropsida	none
+Ray-finned_fish	Actinopterygii	none

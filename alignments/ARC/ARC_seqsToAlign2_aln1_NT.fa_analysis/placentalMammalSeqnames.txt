@@ -1,0 +1,10 @@
+>ARC_Myotis_myotis_XM_036337616
+>ARC_Felis_catus_XM_023248559
+>ARC_Sus_scrofa_XM_021088786
+>ARC_Homo_sapiens_NM_015193
+>ARC_Orycteropus_afer_afer_XM_007940527
+>ARC_Bos_taurus_NM_001206407
+>Arc_Cavia_porcellus_XM_005005200
+>Arc_Mus_musculus_AF162777
+>ARC_Loxodonta_africana_XM_003422399
+>ARC_Equus_caballus_XM_014728117

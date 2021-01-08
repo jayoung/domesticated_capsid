@@ -1,0 +1,9 @@
+7	 sequence(s) with genetic code	The_Standard_Code
+Build draft alignment using greedy strategy based on UPGMA tree
+compute kmer dist 
+build UPGMA done 
+++++++start refining the alignment
+...........-.
+Refine 2 cut : sum of pair========= 1 => -40738.0
+true
+ARC_seqsToAlign1.fa.nonRedundant.v2_aln1_NT.fa

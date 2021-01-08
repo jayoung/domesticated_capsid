@@ -1,0 +1,27 @@
+### for splitting PNMA and SIRH seqs into subgroups for better alignments, I started trying CD-HIT and blastclust, but realised that a blast-back to human genes approach would be better
+
+module load CD-HIT
+
+### problem: for cd-hit-est, can only cluster on 80% or higher.
+### for PEG10 I am reluctant to cluster using protein seqs, because of the programmed frameshift
+# -c 0.4 : need 40% identity, calculated as num matches / length shorter seq
+# -T 4 = 4 threads
+
+cd-hit-est -T 4 -c 0.4 -i SIRHseqsToAlign2.fa -o SIRHseqsToAlign2.cdhit40.txt 
+
+module purge
+
+#### try blastclust
+
+blastclust --help
+
+### parameters I am using:
+# -a 4 num threads
+# -L Length coverage threshold default = 0.9
+# -S  Score coverage threshold (bit score / length if < 3.0, percentage of identities otherwise)   default = 1.75
+# -p  Is input proteins? [T/F] default = TRUE
+### parameters I am NOT using, but maybe I want to:
+# -b  Require coverage on both neighbours? [T/F]   default = TRUE
+
+blastclust -i SIRHseqsToAlign2.fa -a 4 -o SIRHseqsToAlign2.clustList.txt -s SIRHseqsToAlign2.clustNeighbors.txt -L 0.5 -S 40 -p F
+

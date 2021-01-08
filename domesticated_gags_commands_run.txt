@@ -511,12 +511,305 @@ This does the blast, and returns results in the regular format as well as a tab-
 
 cd blasts/tblastn_NR/Refseq
 ../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Refseq.fa
-    xxxx running
+    re-ran a couple of times to get all the failed ones
+    
 cd ../RepBase
 ../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Repbase.fa
     xxxx a few failed twice in a row: exceeding CPU time.  I think I will leave that alone
 
-../../../scripts/callblastjanetNRntProtquery.bioperl ../../../getHumanPepsFromWillFiles/2020.23.10.humanSeqs.fullLen.Refseq.fa
+# sort blast output according to which alignment we want them in:
+../../../scripts/sortBlastOutputByAlignmentGroup.pl *tblastnNR *tblastnNR.txt
+
+
+
+##### get human nucleotide ORF seqs to start off alignments:
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments
+
+## gets the human accessions, sorted by alignment group:
+../scripts/getHumanNucleotideAccessionsAndGroup.pl 
+../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide */*_accs.txt
+../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0 -addORF=0 */*.gb
+
+
+##### work on ARC alignment:
+
+# there's only one blast, only one human ortholog, which makes it easier
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/ARC/
+../../../../../scripts/sortBlastHitsBySpecies.pl NP_056008.1-Arc_C-278-360.tblastnNR.txt
+
+cd hits_each_species
+# sort into taxonmonic classes:
+../../../../../../scripts/sortHitFilesByTaxonomy.pl hit*txt
+
+../../../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide */hits*.txt 
+../../../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0 -addORF=0 */hits_*.gb
+
+## first I take human and add mouse cat cow horse microbat elephant
+(I was going to do dog, but the only two hits from Canis lupus familiaris are GENOMIC sequences not cDNA)
+
+pushd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/ARC/hits_each_species
+
+cp Glires/hits_Mus_musculus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+cp Carnivora/hits_Felis_catus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+cp Other_mammals/hits_Bos_taurus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+cp Other_mammals/hits_Equus_caballus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+cp Bats/hits_Myotis_myotis.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+cp Other_mammals/hits_Loxodonta_africana.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln1_parts
+
+popd
+
+mv things to aln1_parts
+cd aln1_parts
+cat *ORFs > ARC_seqsToAlign1.fa
+
+../../../scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl ARC_seqsToAlign1.fa
+    all did blast back fine (script might need tweaking for PNMA/SIRH groups)
+
+# remove exactly redundant seqs - this reduces down to one seq per species, except mouse
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 ARC_seqsToAlign1.fa
+
+# there are still two mouse seqs: I used blast to show there is only a single difference (in 1191bp). I will remove one by hand, in ARC_seqsToAlign1.fa.nonRedundant.v2
+
+makeblastdb -in ARC_seqsToAlign1.fa.nonRedundant -dbtype nucl
+blastn -task blastn -query ARC_seqsToAlign1.fa.nonRedundant -db ARC_seqsToAlign1.fa.nonRedundant -out ARC_seqsToAlign1.fa.nonRedundant.blastnEachOther
+
+# now align
+../../../scripts/runMACSEsimpleInFrameAlignment.pl ARC_seqsToAlign1.fa.nonRedundant.v2
+mv ARC_seqsToAlign1.fa.nonRedundant.v2_aln1* ..
+
+very good alignment.  
+
+#### ARC aln2
+
+for dN/dS, add 3 more placental mammals: guinea pig, pig, aardvark (because I couldn't get armadillo)
+for amino acid conservation analysis, add a marsupial, platypus, bird, xenopus
+
+pushd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/ARC/hits_each_species
+
+cp Glires/hits_Cavia_porcellus.txt.gb.ORFs Other_mammals/hits_Sus_scrofa.txt.gb.ORFs Other_mammals/hits_Orycteropus_afer_afer.txt.gb.ORFs Other_mammals/hits_Monodelphis_domestica.txt.gb.ORFs Other_mammals/hits_Ornithorhynchus_anatinus.txt.gb.ORFs BirdsReptiles/hits_Gallus_gallus.txt.gb.ORFs other/hits_Xenopus_laevis.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/aln2_parts/
+
+cat hits*Fs > hitsToAdd.fa
+
+# there were no redundant seqs
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 hitsToAdd.fa
+# chicken had 2 seqs - blast shows me there are only 2bp of difference: I manually remove one in hitsToAdd.fa.v2
+makeblastdb -in hitsToAdd.fa -dbtype nucl
+blastn -task blastn -query hitsToAdd.fa -db hitsToAdd.fa -out hitsToAdd.fa.blastnEachOther
+
+../../../scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl hitsToAdd.fa.v2
+    all blast back to ARC
+
+cat ARC_seqsToAlign1.fa.nonRedundant.v2 hitsToAdd.fa.v2 > ARC_seqsToAlign2.fa
+
+
+# now align
+mv ARC_seqsToAlign2.fa ..
+cd ..
+../../scripts/runMACSEsimpleInFrameAlignment.pl ARC_seqsToAlign2.fa
+    good alignment
+
+# do model 0 dN/dS on just placental mammals
+splitfastafileextractsomeseqs.bioperl ARC_seqsToAlign2_aln1_NT.fa placentalMammalSeqnames.txt 
+removegapsfromalignmentinframeonly.pl placentalMammalSeqnames.txt.fa 
+    checked alignment - it is good
+
+../../../scripts/makeTreeAndRunPAML.pl placentalMammalSeqnames.txt.fa.degapcodon
+    ARC dN/dS = 0.0322 (whole gene, 10 placental mammals, dS tree len 5.4)
+
+what next:  add transposon outgroups and make a tree?
+
+
+############ SIRH aignment
+
+# sort blasts by species
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/SIRH/
+../../../../../scripts/sortBlastHitsBySpecies.pl *tblastnNR.txt
+
+# sort into taxonomic classes:
+cd hits_each_species
+../../../../../../scripts/sortHitFilesByTaxonomy.pl hit*txt
+
+../../../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide */hits*.txt 
+../../../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0 -addORF=0 */hits_*.gb
+
+## SIRH aln1 - just human genes, after removing redundant transcript isoforms
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/SIRH/aln1_parts 
+
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 SIRH_accs.txt.gb.ORFs
+    there are still 2 isoforms of PEG10 and RTL8A, but I'll leave them for now
+
+../../../scripts/runMACSEsimpleInFrameAlignment.pl SIRH_accs.txt.gb.ORFs.nonRedundant
+    done
+
+## SIRH aln2 - see what happens if I just try adding all horse and cow and elephant seqs, and split into paralogs later.
+
+
+pushd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/SIRH/hits_each_species
+
+cp Other_mammals/hits_Equus_caballus.txt.gb.ORFs Other_mammals/hits_Bos_taurus.txt.gb.ORFs Other_mammals/hits_Loxodonta_africana.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/SIRH/aln2_parts 
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/SIRH/aln2_parts 
+cat hits*Fs > hitsToAdd.fa
+
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 hitsToAdd.fa
+
+# check for a few other possible redundant seqs:
+makeblastdb -in hitsToAdd.fa.nonRedundant -dbtype nucl
+blastn -task blastn -query hitsToAdd.fa.nonRedundant -db hitsToAdd.fa.nonRedundant -out hitsToAdd.fa.nonRedundant.blastnEachOther
+
+sort hitsToAdd.fa.nonRedundantGroups.txt
+    probably no duplicates
+    
+
+../../../scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl hitsToAdd.fa.nonRedundant
+        three flagged:
+    GNB1L_Bos_taurus_XM_024977193   definitely bad: it's the overlapping gene
+    LOC111774832_Equus_caballus_XM_023648267 definitely bad: don't know why this one came up
+    and keep this one - not sure why the script flagged it (presumably RTL4 is not among my seqs to align - perhaps it should be) 
+    RTL4_Loxodonta_africana_XM_003414856    No      RTL4    NM_001004308
+
+cat ../SIRH_accs.txt.gb.ORFs.nonRedundant hitsToAdd.fa.nonRedundant.v2 > ../SIRHseqsToAlign2.fa
+
+
+cd ..
+../../scripts/runMACSEsimpleInFrameAlignment.pl SIRHseqsToAlign2.fa
+
+
+# SIRH going forwards, split into alignment groups, using blast back, rather than trying to align all to each other
+
+## aln3s - add macaque, marmoset, mouse, rat, chinese hamster, pig, sheep, dog, cat, megabat, armadillo
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/SIRH/hits_each_species
+
+cp Primates/hits_Macaca_mulatta.txt.gb.ORFs Primates/hits_Callithrix_jacchus.txt.gb.ORFs Glires/hits_Mus_musculus.txt.gb.ORFs Glires/hits_Rattus_norvegicus.txt.gb.ORFs Glires/hits_Cricetulus_griseus.txt.gb.ORFs Other_mammals/hits_Sus_scrofa.txt.gb.ORFs Other_mammals/hits_Ovis_aries.txt.gb.ORFs Carnivora/hits_Canis_lupus_familiaris.txt.gb.ORFs Carnivora/hits_Felis_catus.txt.gb.ORFs Bats/hits_Pteropus_alecto.txt.gb.ORFs Other_mammals/hits_Dasypus_novemcinctus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/SIRH/aln3_parts
+
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/SIRH/aln3_parts
+
+cat SIRHseqsToAlign2.fa hits_*Fs > SIRHseqsToAlign3.fa 
+
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 SIRHseqsToAlign3.fa
+../../../scripts/blastBackToClassifyAndRunMACSE.pl SIRHseqsToAlign3.fa.nonRedundant
+
+
+
+xxx next, I make a master alignments dir for all the CURRENT alignments, curated, and fix my script to be able to add to that rather than only look at the newly collected sequences
+
+xx then use a script to parse MACSE alignment and list pseudogenes etc
+    
+    xxx alignment: need to figure out whether to split into subgroups before adding more species
+
+
+xxxxxx
+
+
+############ PNMA alignment
+
+# sort blasts by species
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/PNMA/
+../../../../../scripts/sortBlastHitsBySpecies.pl *tblastnNR.txt
+
+# sort into taxonmonic classes:
+cd hits_each_species
+../../../../../../scripts/sortHitFilesByTaxonomy.pl hit*txt
+
+../../../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide */hits*.txt 
+../../../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0 -addORF=0 */hits_*.gb
+
+## PNMA aln1 - just human genes, after removing redundant transcript isoforms
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/aln1_parts 
+
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 PNMA_accs.txt.gb.ORFs
+    there are still 2 isoforms of PNAM3, PNMA6E and three of PNMA8A, but I'll leave them for now
+
+../../../scripts/runMACSEsimpleInFrameAlignment.pl PNMA_accs.txt.gb.ORFs.nonRedundant
+    done.
+    the paralogs align poorly.      
+    
+    
+## PNMA aln2 -  take all human PNMAs, add all horse and cow and elephant seqs
+
+pushd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/PNMA/hits_each_species
+
+cp Other_mammals/hits_Equus_caballus.txt.gb.ORFs Other_mammals/hits_Bos_taurus.txt.gb.ORFs Other_mammals/hits_Loxodonta_africana.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/aln2_parts 
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/aln2_parts 
+cat hits*Fs > hitsToAdd.fa
+
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 hitsToAdd.fa
+
+# check for a few other possible redundant seqs:
+makeblastdb -in hitsToAdd.fa.nonRedundant -dbtype nucl
+blastn -task blastn -query hitsToAdd.fa.nonRedundant -db hitsToAdd.fa.nonRedundant -out hitsToAdd.fa.nonRedundant.blastnEachOther
+
+sort hitsToAdd.fa.nonRedundantGroups.txt
+    then manually look at apparent duplicates:
+        CCDC8_Bos_taurus: only 2bp diff, remove CCDC8_Bos_taurus_BT021198
+        PNMA8A_Loxodonta_africana  same, but one shorter: remove PNMA8A_Loxodonta_africana_XM_010586464
+
+../../../scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl hitsToAdd.fa.nonRedundant.v2
+    all good.
+
+cat ../PNMA_accs.txt.gb.ORFs.nonRedundant hitsToAdd.fa.nonRedundant.v2 > ../PNMAseqsToAlign2.fa
+cd ..
+
+../../scripts/runMACSEsimpleInFrameAlignment.pl PNMAseqsToAlign2.fa
+
+#### PNMA aln3 - going forwards, split alignment into subgroups 
+
+add macaque, marmoset, mouse, rat, chinese hamster, pig, sheep, dog, cat, megabat, armadillo
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/blasts/tblastn_NR/Refseq/sortedBlasts/PNMA/hits_each_species
+
+
+cp Primates/hits_Macaca_mulatta.txt.gb.ORFs Primates/hits_Callithrix_jacchus.txt.gb.ORFs Glires/hits_Mus_musculus.txt.gb.ORFs Glires/hits_Rattus_norvegicus.txt.gb.ORFs Glires/hits_Cricetulus_griseus.txt.gb.ORFs Other_mammals/hits_Sus_scrofa.txt.gb.ORFs Other_mammals/hits_Ovis_aries.txt.gb.ORFs Carnivora/hits_Canis_lupus_familiaris.txt.gb.ORFs Carnivora/hits_Felis_catus.txt.gb.ORFs Bats/hits_Pteropus_alecto.txt.gb.ORFs Other_mammals/hits_Dasypus_novemcinctus.txt.gb.ORFs ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/aln3_parts
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/aln3_parts
+
+cat PNMAseqsToAlign2.fa hits_*Fs > PNMAseqsToAlign3.fa 
+../../../scripts/removeRedundantSequences.bioperl -checkSubseq=1 PNMAseqsToAlign3.fa
+../../../scripts/blastBackToClassifyAndRunMACSE.pl PNMAseqsToAlign3.fa.nonRedundant
+
+after alignments finish:
+
+cd PNMAseqsToAlign3.fa.nonRedundant_blastBackCheck
+cp *NT.fa ../../masterAlignments/
+   and edit those
+
+
+
+
+
+xxxx add my protein alignments to Will's alignments, after trimming to just alignable bit?
+
+
+
+
+
+##### PNMA/SIRH families:
+
+xxxxx remake the links after other blasts finish, before doing the other alignments
+# PNMA family
+# SIRH family:
+
+
+xx then run ../../../scripts/sortBlastHitsBySpecies.pl *tblastnNR.txt
+cd hits_each_species
+../../../../scripts/getgenbankJY_eutils_gbFormat.bioperl -db=nucleotide hits*.txt 
+../../../../scripts/getCDSseqAndBedFileFromGenbankEntry.bioperl -includeNoCDS=0  hits_*.gb
+    xxx think about exactly how to name the seqs. 
+        for non-human seqs, start with species
+        for human seqs, start with the gene name
+        abbreviate species names
+xx then take selected species and align with the human seqs, in groups
+xx trim to well-alignable regions
+xx appropriate outgroups? choose from Will's tree?
+xx what do I do about splice isoforms? include them all for now?
 
 
 
@@ -645,14 +938,14 @@ removegapsfromalignmentinframeonly.pl dArc1_justMelanogasterAndObscuraGroups.txt
 edited each a little bit
 
 get overall dN/dS using PAML model 0
-    Arc1: 0.0926
-    Arc2: 0.0383
-(dS tree length is ~ 3.7 in both cases)
+
+../../scripts/makeTreeAndRunPAML.pl dArc1_justMelanogasterAndObscuraGroups.txt.fa.degapcodon.edit dArc2_justMelanogasterAndObscuraGroups.txt.fa.degapcodon.edit
+
+    Arc1: 0.0926 (whole gene, 8 Drosophila species, dS tree length is ~3.7)
+    Arc2: 0.0383 (whole gene, 8 Drosophila species, dS tree length is ~3.7)
  
-xx look at translations and amount of conservation
+xx now, what do we do with the per-residue conservation information that these alignments give us?
 
-
-xx what am I trying to achieve??
 
 
 

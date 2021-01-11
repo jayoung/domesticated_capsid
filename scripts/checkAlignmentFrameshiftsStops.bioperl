@@ -16,6 +16,8 @@ use Getopt::Long;
 ## allows for a special case, PEG10, that has a programmed ribosome frameshift, and allows us to ignore frameshifts within a certain distance of the programmed frameshift
 ## tolerates stops near but not quite at the end (as well as AFTER end of ref seq) - tolerable distance is (by default) 60bp (20 codons)
 
+# xxxx add an option to find one or more human seqs as the reference seq, and to take their average length as the reference sequence length (default is to take first seq as ref)
+
 
 ## output = four files: 
 # noPseuds.fa = same alignment, without any pseudogenes
@@ -37,6 +39,9 @@ our $fsDistCheck = 30;
 our $stopCodonDistCheck = 60; ## stop codon is OK if it is within this distance from the end of the reference seq (also OK if any distance after the end of the reference seq)
 our $alnIsMACSE = 1; ## 0 or 1, whether the alignment is output of MACSE aligner (so that frameshifts can be encoded by !)
 our $minAlignedLengthProportion = 0.8; ## proportion of refseq len that the ungapped length of a a seq needs to cover - if it doesn't meet this threshold, it will be called 'truncated'
+our $findFullLenRefSeqs = 0;  ## default is to take the first sequence in the alignment as the reference sequence, and to figure out minimum aligned lengths from that, but if we use -findFullLenSeqs=1 it will find any seqs labelled Homo_sapiens (or whatever string is specified using) and use that as reference length 
+our $fullLenSeqRefString = "Homo_sapiens";
+our $geneField = 0; ## 0-based count of which "_"-delimited field to find the gene name in, considering plain file name without dir.
 our $debug = 0;  ## to help figure things out
 
 ###### get any command line options
@@ -45,6 +50,9 @@ our $debug = 0;  ## to help figure things out
 GetOptions("MACSE=i" => \$alnIsMACSE,
            "minLen=i" => \$minAlignedLengthProportion,
            "stopCodonDist=i" => \$stopCodonDistCheck,
+           "findFullLenRefSeqs=i" => \$findFullLenRefSeqs,
+           "fullLenSeqRefString=s" => \$fullLenSeqRefString,
+           "geneField=i" => \$geneField,
            "debug=i" => \$debug
             ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
 
@@ -57,6 +65,9 @@ if ($alnIsMACSE == 1) {
     print "\n\nParsing non-MACSE alignment\n\n";
 }
 
+
+our $seqOUT;
+
 foreach my $file (@ARGV){
     if (!-e $file) { die "\n\nterminating - cannot open file $file\n\n"; }
     print "\n#### working on file $file\n";
@@ -65,7 +76,8 @@ foreach my $file (@ARGV){
     if ($file !~ m/_/) {
         print "    cannot figure out gene name from file name $file\n";
     } else {
-        $gene = (split /_/, $file)[0];
+        if ($file =~ m/\//) { $gene = (split /\//, $file)[-1]; } else { $gene = $file; }
+        $gene = (split /_/, $gene)[$geneField];
         print "    gene $gene\n";
     }
     my $outStem = $file; $outStem =~ s/\.fasta$//; $outStem =~ s/\.fa$//;
@@ -74,7 +86,7 @@ foreach my $file (@ARGV){
     my $outReportOverallSummary = "$outStem.pseudReportSummary.txt";
     my $outReportDetails = "$outStem.pseudReportDetailed.txt";
     
-    my $seqOUT = Bio::SeqIO->new(-file => "> $outSeqs", '-format' => 'fasta');
+    $seqOUT = Bio::SeqIO->new(-file => "> $outSeqs", '-format' => 'fasta');
     open (SUMMARY, "> $outReportOverallSummary");
     print SUMMARY "Gene_type\tCount\tFile\n";
     open (EACHGENE, "> $outReportEachGene");
@@ -84,7 +96,7 @@ foreach my $file (@ARGV){
     
     my $refSeq = "NA"; my $refName;
     my $lengthThreshold;
-    my $refCounts = 0; my $intactCounts = 0; my $pseudCounts = 0; my $truncatedCounts = 0;
+    my $intactCounts = 0; my $pseudCounts = 0; my $truncatedCounts = 0;
     ## the ! in MACSE alignments made validate_seq complain, so I redefined that subroutine below
     my $alnIN = Bio::AlignIO->new(-file => "< $file",
                                  -alphabet => "dna", 
@@ -102,54 +114,31 @@ foreach my $file (@ARGV){
         } else {
             $gapsRef = $aln->gap_col_matrix();
         }
-        my @gaps = @{$gapsRef};
+        my @gaps = @{$gapsRef}; my @seqBases; 
         
-        my @refBases; my @seqBases; my $ungappedRefLen;
-        my %refInfo; # keys = status: pseud/intact
+        ### process reference sequence(s)
+        my ($refSeqNamesRef, $refSeqAverageLength, $refBasesRef, $ungappedRefLen, $refInfoRef) = getRefSeqs($aln, $gene);
+        my %refInfo = %$refInfoRef;  # keys = status: pseud/intact
                      #        MACSEframeshifts (array of 0-based bp locations w.r.t. ref seq of any MACSE frameshifts (!)
                      #        inFrameStops (array of 0-based bp locations w.r.t. ref seq of any MACSE frameshifts (!)
-        ### iterate through each non-ref seq
+        my @refSeqNames = @$refSeqNamesRef;
+        my @refBases = @$refBasesRef;
+        $lengthThreshold = $refSeqAverageLength * $minAlignedLengthProportion;
+        my $rounded = sprintf("%.1f", $lengthThreshold);
+        my $refName = $refSeqNames[0];
+        print "ref seqs @refSeqNames length $refSeqAverageLength : length threshold is $rounded\n\n";
+        
+        ### iterate through each non-ref seq. We'll take the first of the ref seqs (if >1) as the one to measure length and frameshifts against
         ## go through the seqs
         foreach my $seq ( $aln->each_seq() ) {
-            
-            ### the first sequence is the ref seq
-            if ($refSeq eq "NA") {
-                $refSeq = $seq;
-                $seqOUT->write_seq($seq);
-                $refName = $seq->display_id();
-                @refBases = split //, $seq->seq();
-                $refCounts++;
-                $ungappedRefLen = getUngappedLen($refSeq, $alnIsMACSE);
-                $lengthThreshold = $ungappedRefLen * $minAlignedLengthProportion;
-                my $rounded = sprintf("%.1f", $lengthThreshold);
-                print "    got reference seq $refName ungapped length $ungappedRefLen bp : length threshold is $rounded";
-                print "\n\n";
-                
-                ## we check the reference seq for unexpected stops and frameshifts, e.g. for PEG10, which has a programmed frameshift.
-                my $numRefFrameshifts = 0; my $numRefStops = 0;
-                %refInfo = checkRefSeqIntact($refSeq);
-                if ($refInfo{'status'} eq "pseud") {
-                    if (defined $refInfo{'MACSEframeshifts'}) {
-                        $numRefFrameshifts = @{$refInfo{'MACSEframeshifts'}};
-                    }
-                    if (defined $refInfo{'inFrameStops'}) {
-                        $numRefStops = @{$refInfo{'inFrameStops'}};
-                    }
-                    print "    WARNING - the reference sequence has frameshifts or in-frame stop codons\n";
-                    print "        Num frameshifts $numRefFrameshifts num stops $numRefStops\n";
-                    # check whether this is listed as being OK to be pseud
-                    if (defined $programmedFrameshiftGenes{$gene}) {
-                        print "        BUT it is gene $gene where we expect a programmed frameshift\n";
-                    }
-                    print "\n";
-                }
-                
-                ## output for ref seq
-                print EACHGENE "$refName\tReference\t$numRefFrameshifts\t$numRefStops\t$ungappedRefLen\n";
-                next;
+            my $name = $seq->display_id();
+            my $isArefSeq = "no";
+            foreach my $refSeqName (@refSeqNames) {
+                if ($refSeqName eq $name) {$isArefSeq = "yes";}
             }
+            if ($isArefSeq eq "yes") { next; }
             
-            ### check remaining seqs against reference seq
+            ### check non-ref seqs against reference seq
             my $seqName = $seq->display_id();
             @seqBases = split //, $seq->seq();
             my $ungappedSeqLen = getUngappedLen($seq, $alnIsMACSE);
@@ -274,12 +263,12 @@ foreach my $file (@ARGV){
             }
             print EACHGENE "\t$numFrameshifts\t$numStops\t$ungappedSeqLen\n";
         } ## end of each seq loop
+        my $refCounts = @refSeqNames;
+        print SUMMARY "Ref\t$refCounts\t$file\n";
+        print SUMMARY "Intact\t$intactCounts\t$file\n";
+        print SUMMARY "Truncated\t$truncatedCounts\t$file\n";
+        print SUMMARY "Pseud\t$pseudCounts\t$file\n";
     } # next_aln loop (meaningless for fasta files, which only contain one alignment
-    
-    print SUMMARY "Ref\t$refCounts\t$file\n";
-    print SUMMARY "Intact\t$intactCounts\t$file\n";
-    print SUMMARY "Truncated\t$truncatedCounts\t$file\n";
-    print SUMMARY "Pseud\t$pseudCounts\t$file\n";
     
     close EACHGENE;
     close DETAILS;
@@ -288,6 +277,73 @@ foreach my $file (@ARGV){
 
 ############# subroutines
 
+
+### name(s) and average length of the reference sequences
+sub getRefSeqs {
+    my $subAln = $_[0]; my $gene = $_[1]; 
+    
+    ### figure out name and average length of ref seq(s)
+    my @refSeqNames; my @refSeqLengths; my $aveLen;
+    ## we might take the first sequence:
+    if ($findFullLenRefSeqs == 0) {
+        my $firstSeq = $subAln->get_seq_by_pos(1);
+        my $name = $firstSeq->display_id();
+        push @refSeqNames, $name;
+        $aveLen = getUngappedLen($firstSeq, $alnIsMACSE);
+        print "    Taking the first sequence as the reference seq $name length $aveLen\n";
+    } else {  ## or we might use the string to match
+        my $lengthsTotal = 0;
+        foreach my $alnSeq ($subAln->each_seq()) {
+            my $name = $alnSeq->display_id();
+            if ($name !~ m/$fullLenSeqRefString/) {next;}
+            my $refLen = getUngappedLen($alnSeq, $alnIsMACSE);
+            print "    Found a reference seq $name length $refLen\n";
+            push @refSeqNames, $name;
+            $lengthsTotal += $refLen;
+        }
+        $aveLen = $lengthsTotal / @refSeqNames;
+    }
+    
+    ### now do something with that
+    my $firstRefSeq = $refSeqNames[0];
+    my @refBases; my $ungappedFirstRefLen; my %firstRefInfo;
+    foreach my $refName (@refSeqNames) {
+        my $refSeq = $subAln->get_seq_by_id($refName);
+        $seqOUT->write_seq($refSeq);
+        my $ungappedRefLen = getUngappedLen($refSeq, $alnIsMACSE);
+        
+        ## we check the reference seq for unexpected stops and frameshifts, e.g. for PEG10, which has a programmed frameshift.
+        my $numRefFrameshifts = 0; my $numRefStops = 0;
+        my %refInfo = checkRefSeqIntact($refSeq);
+        if ($refInfo{'status'} eq "pseud") {
+            if (defined $refInfo{'MACSEframeshifts'}) {
+                $numRefFrameshifts = @{$refInfo{'MACSEframeshifts'}};
+            }
+            if (defined $refInfo{'inFrameStops'}) {
+                $numRefStops = @{$refInfo{'inFrameStops'}};
+            }
+            print "    WARNING - the reference sequence has frameshifts or in-frame stop codons\n";
+            print "        Num frameshifts $numRefFrameshifts num stops $numRefStops\n";
+            # check whether this is listed as being OK to be pseud
+            if (defined $programmedFrameshiftGenes{$gene}) {
+                print "        BUT it is gene $gene where we expect a programmed frameshift\n";
+            }
+            print "\n";
+        }
+        ## output for ref seq
+        print EACHGENE "$refName\tReference\t$numRefFrameshifts\t$numRefStops\t$ungappedRefLen\n";
+        ## and for just the first ref seq:
+        if ($refName eq $firstRefSeq) { 
+            @refBases = split //, $refSeq->seq(); 
+            $ungappedFirstRefLen = getUngappedLen($refSeq, $alnIsMACSE);
+            %firstRefInfo = %refInfo;
+        }
+    }
+    
+    return(\@refSeqNames, $aveLen, \@refBases, $ungappedFirstRefLen, \%firstRefInfo);
+}
+
+### seq length not including any gaps
 sub getUngappedLen {
     my $seqObj = $_[0];
     my $alnIsMACSE = $_[1];

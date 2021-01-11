@@ -1,0 +1,34 @@
+# pfam_scan.pl,  run at Mon Jan 11 17:42:41 2021
+#
+# Copyright (c) 2009 Genome Research Ltd
+# Freely distributed under the GNU 
+# General Public License
+#
+# Authors: Jaina Mistry (jaina@ebi.ac.uk), 
+#          Rob Finn (rdf@ebi.ac.uk)
+#
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <http://www.gnu.org/licenses/>. 
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#      query sequence file: pfamscan-R20210111-174239-0858-18173972-p1m.sequence
+#     cpu number specified: 4
+#        searching against: //nfs/public/ro/es/newdata/prod/flatfiles/pfam//Pfam-A.hmm, with cut off -E 10.0 --domE 10.0
+#    resolve clan overlaps: on
+#     predict active sites: off
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan>
+
+ARC_Homo_sapiens_NM_015193.frame1pep.fasta     36     75     23     79 PF12126.8   DUF3583           Family    45    84   329     11.3      0.18   0 No_clan  
+ARC_Homo_sapiens_NM_015193.frame1pep.fasta     37     79     21     90 PF15466.6   DUF4635           Family    82   124   134      6.4         6   0 No_clan  
+ARC_Homo_sapiens_NM_015193.frame1pep.fasta     83    119     50    132 PF05811.13  DUF842            Family    38    74   131     11.4       0.2   0 No_clan  
+ARC_Homo_sapiens_NM_015193.frame1pep.fasta    244    323    240    338 PF03732.17  Retrotrans_gag    Family     5    88    96     18.1    0.0023   0 CL0523   
+ARC_Homo_sapiens_NM_015193.frame1pep.fasta    279    360    278    360 PF18162.1   Arc_C             Domain     2    83    83    159.7   1.2e-47   1 No_clan  

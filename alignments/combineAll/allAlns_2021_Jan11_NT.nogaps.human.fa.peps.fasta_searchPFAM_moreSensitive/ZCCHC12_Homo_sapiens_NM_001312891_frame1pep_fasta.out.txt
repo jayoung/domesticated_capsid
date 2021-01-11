@@ -1,0 +1,33 @@
+# pfam_scan.pl,  run at Mon Jan 11 17:45:19 2021
+#
+# Copyright (c) 2009 Genome Research Ltd
+# Freely distributed under the GNU 
+# General Public License
+#
+# Authors: Jaina Mistry (jaina@ebi.ac.uk), 
+#          Rob Finn (rdf@ebi.ac.uk)
+#
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <http://www.gnu.org/licenses/>. 
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#      query sequence file: pfamscan-R20210111-174514-0222-83517444-p2m.sequence
+#     cpu number specified: 4
+#        searching against: //nfs/public/ro/es/newdata/prod/flatfiles/pfam//Pfam-A.hmm, with cut off -E 10.0 --domE 10.0
+#    resolve clan overlaps: on
+#     predict active sites: off
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan>
+
+ZCCHC12_Homo_sapiens_NM_001312891.frame1pep.fasta     13    212      3    213 PF14893.6   PNMA              Family   134   329   330    144.5   4.8e-42   1 CL0523   
+ZCCHC12_Homo_sapiens_NM_001312891.frame1pep.fasta     78    122     75    134 PF17939.1   TetR_C_30         Domain    31    76   115      7.6       4.2   0 CL0174   
+ZCCHC12_Homo_sapiens_NM_001312891.frame1pep.fasta    344    357    342    362 PF16588.5   zf-C2H2_10        Domain     3    16    23     15.5     0.011   0 CL0361   
+ZCCHC12_Homo_sapiens_NM_001312891.frame1pep.fasta    346    361    345    362 PF00098.23  zf-CCHC           Domain     2    17    18     12.1      0.16   0 CL0511   

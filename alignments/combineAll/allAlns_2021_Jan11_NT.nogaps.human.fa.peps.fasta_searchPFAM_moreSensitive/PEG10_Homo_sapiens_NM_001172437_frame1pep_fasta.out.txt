@@ -1,0 +1,50 @@
+# pfam_scan.pl,  run at Mon Jan 11 17:45:55 2021
+#
+# Copyright (c) 2009 Genome Research Ltd
+# Freely distributed under the GNU 
+# General Public License
+#
+# Authors: Jaina Mistry (jaina@ebi.ac.uk), 
+#          Rob Finn (rdf@ebi.ac.uk)
+#
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <http://www.gnu.org/licenses/>. 
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#      query sequence file: pfamscan-R20210111-174553-0823-87589341-p1m.sequence
+#     cpu number specified: 4
+#        searching against: //nfs/public/ro/es/newdata/prod/flatfiles/pfam//Pfam-A.hmm, with cut off -E 10.0 --domE 10.0
+#    resolve clan overlaps: on
+#     predict active sites: off
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan>
+
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     48    120     41    128 PF17082.5   Spc29             Family    92   164   244     17.3    0.0032   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     59    113     56    115 PF16888.5   DUF5082          Coiled-coil    67   121   123     11.2      0.33   0 CL0352   
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     62    124     28    125 PF08172.12  CASP_C            Family    74   135   252     13.8     0.028   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     64    125     59    129 PF17078.5   SHE3             Coiled-coil    50   111   228     10.0      0.53   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     76    125     59    130 PF14662.6   KASH_CCD         Coiled-coil    91   140   191     21.0   0.00023   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     79    125      5    134 PF15035.6   Rootletin         Family    79   126   188     20.8   0.00031   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     79    125     63    129 PF07889.12  DUF1664          Coiled-coil    58   104   124     12.3      0.13   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     79    130     57    137 PF06785.11  UPF0242           Family    79   132   193     10.9      0.35   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     80    131     76    145 PF05837.12  CENP-H            Domain     6    57   112     12.5      0.15   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     83    116     81    121 PF04728.13  LPP               Domain     3    36    53     12.1      0.19   0 CL0590   
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     83    123     79    129 PF06005.12  ZapB             Coiled-coil    14    54    71     12.0      0.23   0 CL0225   
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     83    122     76    138 PF06156.13  YabA              Family     4    43   102     11.6      0.34   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     84    122     78    130 PF12329.8   TMF_DNA_bd       Coiled-coil    30    68    74      9.3       1.1   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     86    126     73    134 PF08317.11  Spc7             Coiled-coil   198   238   310     10.3      0.22   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     86    124     79    125 PF00170.21  bZIP_1            Family    25    63    64      9.4       1.1   0 CL0018   
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     87    130     79    149 PF04102.12  SlyX              Family    17    60    67     10.9      0.56   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     89    125     87    132 PF15794.5   CCDC106           Family     4    40   226     11.4      0.19   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta     98    123     85    123 PF16559.5   GIT_CC           Coiled-coil    41    66    66      8.1       2.3   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta    101    116     98    118 PF02183.18  HALZ             Coiled-coil    26    41    43      8.7         2   0 No_clan  
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta    152    234    137    240 PF16297.5   DUF4939           Family    22   104   112     56.1     3e-15   1 CL0523   
+PEG10_Homo_sapiens_NM_001172437.frame1pep.fasta    369    390    367    394 PF14787.6   zf-CCHC_5         Domain     3    24    36     17.6    0.0023   0 CL0511   

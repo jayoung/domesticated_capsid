@@ -1,0 +1,33 @@
+# pfam_scan.pl,  run at Mon Jan 11 17:46:17 2021
+#
+# Copyright (c) 2009 Genome Research Ltd
+# Freely distributed under the GNU 
+# General Public License
+#
+# Authors: Jaina Mistry (jaina@ebi.ac.uk), 
+#          Rob Finn (rdf@ebi.ac.uk)
+#
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <http://www.gnu.org/licenses/>. 
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#      query sequence file: pfamscan-R20210111-174613-0960-83513141-p2m.sequence
+#     cpu number specified: 4
+#        searching against: //nfs/public/ro/es/newdata/prod/flatfiles/pfam//Pfam-A.hmm, with cut off -E 10.0 --domE 10.0
+#    resolve clan overlaps: on
+#     predict active sites: off
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan>
+
+RTL1_Homo_sapiens_NM_001134888.frame1pep.fasta    199    280    185    284 PF16297.5   DUF4939           Family    25   106   112     50.1   2.1e-13   1 CL0523   
+RTL1_Homo_sapiens_NM_001134888.frame1pep.fasta    424    510    413    511 PF13975.6   gag-asp_proteas   Domain     9    91    92     22.3   0.00015   0 CL0129   
+RTL1_Homo_sapiens_NM_001134888.frame1pep.fasta    709    781    704    782 PF00078.27  RVT_1             Family   140   221   222     19.8   0.00044   0 CL0027   
+RTL1_Homo_sapiens_NM_001134888.frame1pep.fasta    845    941    845    947 PF17919.1   RT_RNaseH_2       Domain     1    96   100     69.6   1.8e-19   1 CL0219   

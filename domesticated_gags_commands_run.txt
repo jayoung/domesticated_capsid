@@ -781,6 +781,19 @@ cd PNMAseqsToAlign3.fa.nonRedundant_blastBackCheck
 cp *NT.fa ../../masterAlignments/
    and edit those
 
+### parsing my blast alignments:xxxx
+now we use any Homo_sapiens seqs as reference, rather than the first seq
+
+# test parsing a single one
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/ARC/masterAlignments
+
+../../../scripts/checkAlignmentFrameshiftsStops.bioperl -findFullLenRefSeqs=1 ARC_seqsToAlign2_aln1_NT.fa
+
+# parse all 
+cd ../../
+../scripts/checkAlignmentFrameshiftsStops.bioperl -findFullLenRefSeqs=1 -geneField=2 */masterAlignments/*_NT.fa
+    if I need to reset that:  rm */masterAlignments/*NT*seud*
+
 
 
 

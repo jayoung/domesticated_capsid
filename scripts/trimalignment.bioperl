@@ -1,0 +1,75 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::AlignIO;
+use Getopt::Long;
+
+#this script takes an alignment and trims all sequences based on positions given by variables at the top of the script
+
+#usage: trimalignment.bioperl seqfilename(s)
+
+#note: this script will throw up a lot of warnings if seqs contain * or ?
+#example warnings:
+#MSG: In sequence pika_Contig398-2709-1 residue count gives end value 287.  
+#Overriding value [286] with value 287 for Bio::LocatableSeq::end().
+
+
+my $trimstart = "undefined";
+my $trimend = "undefined";
+
+#### $coordSystem 
+## regular = straight-up 1-based coords for start and end
+## AAforNTalignment = working with a NT alignment, but specifying positions when that same alignment is viewed as AA
+my $coordSystem = "regular";
+#my $coordSystem = "AAforNTalignment";
+
+
+## get any non-default options from commandline
+GetOptions("start=s" => \$trimstart,
+           "end=s" => \$trimend,
+           "coords=s" => \$coordSystem
+            ) or die "\n\nterminating - unknown option(s) specified on command line\n\n";
+
+#####################################
+
+if (@ARGV == 0) {
+    die "\n\nterminating - please specify input fasta file(s)\n\n";
+}
+
+if (($trimstart eq "undefined") || ($trimend eq "undefined")) {
+    die "\n\nterminating - you must specify start and end \n\n";
+}
+if (($coordSystem ne "regular") & ($coordSystem ne "AAforNTalignment")) {
+    die "\n\nterminating - coords must be either regular or AAforNTalignment\n\n";
+}
+
+
+if ($coordSystem eq "AAforNTalignment") {
+    print "\n\nScript specifies that coordinates are in amino acids, for a nucleotide alignment. Converting coordinates\n\n";
+    print "    converted amino acid coordinates to corresponding nucleotide positions\n";
+    $trimstart = (($trimstart - 1) * 3) + 1;
+    $trimend = $trimend*3;
+    print "        start2 $trimstart end2 $trimend\n\n";
+}
+
+if ($trimend < $trimstart) {die "\n\nterminating - start ($trimstart) is after end ($trimend)\n\n";}
+
+foreach my $infile (@ARGV) {
+
+    if (!-e $infile ) { die "\n\nterminating - couldn't open file $infile\n\n";}
+    my $outfile = $infile; $outfile =~ s/\.fasta$//; $outfile =~ s/\.fa$//;
+    $outfile .= ".trim$trimstart"."_$trimend.fa";
+
+    my $in  = Bio::AlignIO->new(-file   => $infile, -format => 'fasta');
+    my $out = Bio::AlignIO->new(-file   => "> $outfile", -format => 'fasta');
+
+    while (my $aln = $in->next_aln()) {
+        my $len = $aln->length();
+        if (($trimstart >= $len) || ($trimend > $len)) {die "\n\nterminating - requested start ($trimstart) or end ($trimend) is after end of seq ($len)\n\n";}
+        $aln = $aln->slice($trimstart,$trimend);
+        $aln -> set_displayname_flat();
+        $out -> write_aln($aln);
+    } 
+
+}

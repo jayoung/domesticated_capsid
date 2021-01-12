@@ -1,0 +1,14 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PNMA6A_Pteropus_alecto_XM_025049179	1199	1201	1663	1665	NA	Ignoring stop codon near end
+PNMA6A_Macaca_mulatta_XM_015128458	520	522	553	555	NA	Stop codon
+PNMA6A_Felis_catus_XM_023249749	1199	1201	1543	1545	NA	Ignoring stop codon near end
+PNMA6A_Canis_lupus_familiaris_XM_005641976	1199	1201	1543	1545	NA	Ignoring stop codon near end
+PNMA6A_Callithrix_jacchus_XM_003735848	343	345	364	366	NA	Stop codon
+PNMA6A_Callithrix_jacchus_XM_003735848	430	432	463	465	NA	Stop codon
+LOC101443008_Dasypus_novemcinctus_XM_004469512	1087	1089	1162	1164	NA	Stop codon
+PNMA6A_Loxodonta_africana_XM_010600786	1199	1201	1546	1548	NA	Ignoring stop codon near end
+LOC100758339_Cricetulus_griseus_XM_035450105	265	267	286	288	NA	Stop codon
+LOC100758339_Cricetulus_griseus_XM_035450105	505	507	538	540	NA	Stop codon
+LOC100758339_Cricetulus_griseus_XM_035450105	724	726	778	780	NA	Stop codon
+LOC100758339_Cricetulus_griseus_XM_035450105	1144	1146	1375	1377	NA	Ignoring stop codon near end
+PNMA6A_Equus_caballus_XM_005615109	1199	1201	1543	1545	NA	Ignoring stop codon near end

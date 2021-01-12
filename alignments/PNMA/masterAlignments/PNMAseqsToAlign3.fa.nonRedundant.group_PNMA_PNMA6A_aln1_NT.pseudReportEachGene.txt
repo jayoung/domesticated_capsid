@@ -1,0 +1,11 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PNMA6A_Homo_sapiens_NM_032882	Reference	0	0	1200
+PNMA6A_Pteropus_alecto_XM_025049179	Intact	0	0	1545
+PNMA6A_Macaca_mulatta_XM_015128458	Pseud	0	1	1194
+PNMA6A_Felis_catus_XM_023249749	Intact	0	0	1395
+PNMA6A_Canis_lupus_familiaris_XM_005641976	Intact	0	0	1410
+PNMA6A_Callithrix_jacchus_XM_003735848	Pseud	0	2	1095
+LOC101443008_Dasypus_novemcinctus_XM_004469512	Pseud	0	1	1071
+PNMA6A_Loxodonta_africana_XM_010600786	Intact	0	0	1395
+LOC100758339_Cricetulus_griseus_XM_035450105	Pseud	0	3	1137
+PNMA6A_Equus_caballus_XM_005615109	Intact	0	0	1383

@@ -1,0 +1,25 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+ZCCHC18_Dasypus_novemcinctus_XM_012527412	223	225	229	231	NA	Stop codon
+ZCCHC18_Dasypus_novemcinctus_XM_012527412	295	297	304	306	NA	Stop codon
+ZCCHC18_Dasypus_novemcinctus_XM_012527412	805	805	862	862	1	Frameshift deletion
+ZCCHC18_Dasypus_novemcinctus_XM_012527412	871	872	934	935	2	Frameshift deletion
+ZCCHC18_Callithrix_jacchus_XM_017968639	1120	1122	1213	1215	NA	Stop codon
+ZCCHC18_Ovis_aries_XM_012107643	238	240	244	246	NA	Stop codon
+ZCCHC18_Ovis_aries_XM_012107643	631	633	679	681	NA	Stop codon
+ZCCHC18_Macaca_mulatta_XM_028842476	1021	1023	1114	1116	NA	Stop codon
+ZCCHC18_Equus_caballus_XM_023633367	37	39	37	39	NA	Stop codon
+ZCCHC18_Equus_caballus_XM_023633367	1132	1134	1225	1227	NA	Stop codon
+ZCCHC18_Felis_catus_XM_023249139	415	417	454	456	NA	Stop codon
+ZCCHC18_Felis_catus_XM_023249139	664	666	712	714	NA	Stop codon
+ZCCHC18_Felis_catus_XM_023249139	1208	1210	1333	1335	NA	Ignoring stop codon near end
+LOC102878548_Pteropus_alecto_XM_015586558	61	63	61	63	NA	Stop codon
+LOC102878548_Pteropus_alecto_XM_015586558	943	945	1024	1026	NA	Stop codon
+LOC102878548_Pteropus_alecto_XM_015586558	1021	1023	1114	1116	NA	Stop codon
+ZCCHC18_Bos_taurus_XM_005227884	238	240	244	246	NA	Stop codon
+ZCCHC18_Sus_scrofa_XM_005673784	1135	1137	1228	1230	NA	Stop codon
+ZCCHC18_Canis_lupus_familiaris_XM_014111402	1208	1210	1333	1335	NA	Ignoring stop codon near end
+ZCCHC18_Loxodonta_africana_XM_010594739	271	273	280	282	NA	Stop codon
+ZCCHC18_Loxodonta_africana_XM_010594739	538	540	577	579	NA	Stop codon
+ZCCHC18_Loxodonta_africana_XM_010594739	949	951	1030	1032	NA	Stop codon
+ZCCHC18_Loxodonta_africana_XM_010594739	1021	1023	1114	1116	NA	Stop codon
+ZCCHC18_Loxodonta_africana_XM_010594739	1102	1104	1195	1197	NA	Stop codon

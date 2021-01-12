@@ -1,0 +1,14 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PNMA6E_Homo_sapiens_NM_001367770	Reference	0	0	1944
+PNMA6F_Homo_sapiens_NM_001354980	Reference	0	0	1737
+LOC111766818_Dasypus_novemcinctus_XM_023592027	Truncated	0	0	1209
+LOC113837620_Cricetulus_griseus_XM_035450305	Intact	0	0	1971
+LOC102148493_Equus_caballus_XM_014729271	Truncated	0	0	1164
+PNMA6E_Callithrix_jacchus_XM_035288480	Intact	0	0	1929
+LOC101100193_Felis_catus_XM_023248986	Truncated	0	0	1179
+PNMA6F_Dasypus_novemcinctus_XM_023585789	Truncated	0	0	1137
+LOC114674918_Macaca_mulatta_XM_028842139	Intact	0	0	1752
+LOC113837620_Cricetulus_griseus_XM_027439387	Intact	0	0	1956
+PNMA6F_Macaca_mulatta_XM_015128459	Intact	0	0	1719
+PNMA6F_Equus_caballus_XM_023633706	Intact	0	0	1695
+LOC108589966_Callithrix_jacchus_XM_017968781	Intact	0	0	1737

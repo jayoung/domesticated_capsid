@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	ARC/masterAlignments/ARC_seqsToAlign2_aln1_NT.fa
+Intact	13	ARC/masterAlignments/ARC_seqsToAlign2_aln1_NT.fa
+Truncated	0	ARC/masterAlignments/ARC_seqsToAlign2_aln1_NT.fa
+Pseud	0	ARC/masterAlignments/ARC_seqsToAlign2_aln1_NT.fa

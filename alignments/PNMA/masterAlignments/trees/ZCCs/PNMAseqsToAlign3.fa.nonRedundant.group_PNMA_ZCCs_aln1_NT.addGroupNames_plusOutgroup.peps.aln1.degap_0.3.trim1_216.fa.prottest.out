@@ -1,0 +1,245 @@
+FASTA format detected.MSA read in FASTA format (Taxa = 35, Length =  216).WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Dasypus_novemcinctus_XM_012527412" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Callithrix_jacchus_XM_017968639" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_0".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Ovis_aries_XM_012107643" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_1".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Macaca_mulatta_XM_028842476" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_2".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Callithrix_jacchus_XM_008989813" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_3".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Homo_sapiens_NM_001312891" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_4".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Macaca_mulatta_NM_001261787" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_5".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Macaca_mulatta_XM_028841817" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_6".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Equus_caballus_NM_001256953" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_7".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Canis_lupus_familiaris_XM_549212" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_8".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Felis_catus_XM_004000859" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNMA_9".WARNING: ID for sequence "aln-PNMA-ZCCs_Zcchc18_Rattus_norvegicus_XM_006257298" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_10".WARNING: ID for sequence "aln-PNMA-ZCCs_AK005317_Mus_musculus_AK005317" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_11".WARNING: ID for sequence "aln-PNMA-ZCCs_AK075607_Mus_musculus_AK075607" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_12".WARNING: ID for sequence "aln-PNMA-ZCCs_LOC100755888_Cricetulus_griseus_XM_035449858" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_13".WARNING: ID for sequence "aln-PNMA-ZCCs_LOC100755888_Cricetulus_griseus_XM_035460637" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_14".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Equus_caballus_XM_023633367" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_15".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Felis_catus_XM_023249139" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_16".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Homo_sapiens_NM_001143978" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_17".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Dasypus_novemcinctus_XM_004458684" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_18".WARNING: ID for sequence "aln-PNMA-ZCCs_LOC102878548_Pteropus_alecto_XM_015586558" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_19".WARNING: ID for sequence "aln-PNMA-ZCCs_AK012833_Mus_musculus_AK012833" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_20".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Bos_taurus_XM_005227884" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_21".WARNING: ID for sequence "aln-PNMA-ZCCs_Zcchc12_Cricetulus_griseus_XM_035449838" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_22".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Pteropus_alecto_XM_015589315" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_23".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Bos_taurus_NM_001076197" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_24".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Sus_scrofa_XM_003135349" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_25".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC12_Ovis_aries_XM_012107483" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_26".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Sus_scrofa_XM_005673784" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_27".WARNING: ID for sequence "aln-PNMA-ZCCs_Zcchc12_Rattus_norvegicus_BC089115" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_28".WARNING: ID for sequence "aln-PNMA-ZCCs_Zcchc12_Cricetulus_griseus_XM_035454255" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_29".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Canis_lupus_familiaris_XM_014111402" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_30".WARNING: ID for sequence "aln-PNMA-ZCCs_LOC102555659_Rattus_norvegicus_XM_006227482" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_31".WARNING: ID for sequence "aln-PNMA-ZCCs_ZCCHC18_Loxodonta_africana_XM_010594739" is longer than 10 characters. ID truncated to "aln-PNMA-Z"WARNING: ID for sequence "aln-PNMA-Z" renamed to "aln-PNM_32".WARNING: ID for sequence "MamGyp_gag#LTR/Gypsy" is longer than 10 characters. ID truncated to "MamGyp_gag"MSA successfully converted to PHYLIP format!
+
+----------------------------------------------------------------------------------------------
+ProtTest 3.4.2                      Fast selection of the best-fit models of protein evolution
+(c) 2009-2016   Diego Darriba (1,2), Guillermo Taboada (2), Ramón Doallo (2), David Posada (1)
+(1)                               Facultad de Biologia, Universidad de Vigo, 36200 Vigo, Spain
+(2)                    Facultade de Informática, Universidade da Coruña, 15071 A Coruña, Spain
+----------------------------------------------------------------------------------------------
+Manual:                                    http://darwin.uvigo.es/download/prottest_manual.pdf
+Homepage:                                                 http://github.com/ddarriba/prottest3
+Discussion group:                                     https://groups.google.com/group/prottest
+Contact:                                                  ddarriba@h-its.org, dposada@uvigo.es
+----------------------------------------------------------------------------------------------
+
+Version:  3.4.2 : 8th May 2016
+Date:     Tue Jan 12 05:54:40 PST 2021
+OS:       Linux (4.15.0-101-generic)
+Arch:     amd64
+Java:     11.0.2 (Oracle Corporation)
+PhyML:    /fh/fast/malik_h/grp/malik_lab_shared/prottest-3.4.2/bin/PhyML_3.0_linux64
+
+Citation: Darriba D, Taboada GL, Doallo R, Posada D. ProtTest 3: fast selection of best-fit 
+          models of protein evolution. Bioinformatics, 27:1164-1165, 2011
+
+
+ProtTest options
+----------------
+  Alignment file........... : PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa
+  Tree..................... : BioNJ
+  StrategyMode............. : Fixed BIONJ JTT
+  Candidate models......... : 
+    Matrices............... : JTT LG DCMut MtREV MtMam MtArt Dayhoff WAG RtREV CpREV Blosum62 VT HIVb HIVw FLU 
+    Distributions.......... : Uniform 
+    Observed frequencies... : false
+
+  Statistical framework
+    Sort models according to....: 
+       BIC 
+    Sample size.................: 216.0
+  Other options:
+    Display best tree in ASCII..: false
+    Display best tree in Newick.: false
+    Display consensus tree......: false
+    Verbose.....................: false
+
+**********************************************************
+Observed number of invariant sites: 22
+Observed aminoacid frequencies:
+ A: 0.091    C: 0.003    D: 0.020    E: 0.079    F: 0.037   
+ G: 0.058    H: 0.021    I: 0.040    K: 0.043    L: 0.147   
+ M: 0.046    N: 0.059    P: 0.045    Q: 0.057    R: 0.081   
+ S: 0.065    T: 0.031    V: 0.054    W: 0.014    Y: 0.009   
+
+**********************************************************
+
+Computing JTT...
+Computing MtREV...
+Computing LG...
+Computing DCMut...
+Computed: JTT (-3767.87268)
+Computed: MtREV (-4056.00239)
+Computed: DCMut (-3909.13059)
+Computed: LG (-3883.7212)
+Computing Dayhoff...
+Computing MtArt...
+Computing WAG...
+Computing MtMam...
+Computed: MtArt (-4331.63116)
+Computing RtREV...
+Computed: MtMam (-4139.74233)
+Computed: WAG (-3869.33949)
+Computed: Dayhoff (-3908.94256)
+Computing Blosum62...
+Computing CpREV...
+Computing VT...
+Computed: RtREV (-3936.63388)
+Computing HIVb...
+Computed: Blosum62 (-3978.44973)
+Computed: VT (-3870.17902)
+Computed: CpREV (-3898.0906)
+Computing FLU...
+Computing HIVw...
+Computed: HIVb (-3771.21874)
+Computed: HIVw (-3882.95424)
+Computed: FLU (-3848.85378)
+
+
+Model................................ : JTT
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3767.87
+     (seconds))
+
+Model................................ : LG
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3883.72
+     (seconds))
+
+Model................................ : DCMut
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3909.13
+     (seconds))
+
+Model................................ : MtREV
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 4056.00
+     (seconds))
+
+Model................................ : MtMam
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 4139.74
+     (seconds))
+
+Model................................ : MtArt
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 4331.63
+     (seconds))
+
+Model................................ : Dayhoff
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3908.94
+     (seconds))
+
+Model................................ : WAG
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3869.34
+     (seconds))
+
+Model................................ : RtREV
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3936.63
+     (seconds))
+
+Model................................ : CpREV
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3898.09
+     (seconds))
+
+Model................................ : Blosum62
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3978.45
+     (seconds))
+
+Model................................ : VT
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3870.18
+     (seconds))
+
+Model................................ : HIVb
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3771.22
+     (seconds))
+
+Model................................ : HIVw
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3882.95
+     (seconds))
+
+Model................................ : FLU
+  Number of parameters............... : 67 (0 + 67 branch length estimates)
+ -lnL................................ = 3848.85
+     (seconds))
+
+************************************************************
+Date   :  Tue Jan 12 05:54:43 PST 2021
+Runtime:  0h:00:02
+
+
+
+***************************************************************************
+Best model according to BIC: JTT
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaBIC       BIC            BICw           -lnL           
+---------------------------------------------------------------------------
+JTT            0.00           7895.89        0.97           3767.87        
+HIVb           6.69           7902.58        0.03           3771.22        
+FLU            161.96         8057.85        0.00           3848.85        
+WAG            202.93         8098.82        0.00           3869.34        
+VT             204.61         8100.50        0.00           3870.18        
+HIVw           230.16         8126.05        0.00           3882.95        
+LG             231.70         8127.59        0.00           3883.72        
+CpREV          260.44         8156.32        0.00           3898.09        
+Dayhoff        282.14         8178.03        0.00           3908.94        
+DCMut          282.52         8178.40        0.00           3909.13        
+RtREV          337.52         8233.41        0.00           3936.63        
+Blosum62       421.15         8317.04        0.00           3978.45        
+MtREV          576.26         8472.15        0.00           4056.00        
+MtMam          743.74         8639.63        0.00           4139.74        
+MtArt          1127.52        9023.41        0.00           4331.63        
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
+
+***************************************************************************
+Best model according to LnL: JTT
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaLnL       LnL            LnLw           -lnL           
+---------------------------------------------------------------------------
+JTT            0.00           3767.87        0.84           3767.87        
+HIVb           3.35           3771.22        0.16           3771.22        
+FLU            80.98          3848.85        0.00           3848.85        
+WAG            101.47         3869.34        0.00           3869.34        
+VT             102.31         3870.18        0.00           3870.18        
+HIVw           115.08         3882.95        0.00           3882.95        
+LG             115.85         3883.72        0.00           3883.72        
+CpREV          130.22         3898.09        0.00           3898.09        
+Dayhoff        141.07         3908.94        0.00           3908.94        
+DCMut          141.26         3909.13        0.00           3909.13        
+RtREV          168.76         3936.63        0.00           3936.63        
+Blosum62       210.58         3978.45        0.00           3978.45        
+MtREV          288.13         4056.00        0.00           4056.00        
+MtMam          371.87         4139.74        0.00           4139.74        
+MtArt          563.76         4331.63        0.00           4331.63        
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models

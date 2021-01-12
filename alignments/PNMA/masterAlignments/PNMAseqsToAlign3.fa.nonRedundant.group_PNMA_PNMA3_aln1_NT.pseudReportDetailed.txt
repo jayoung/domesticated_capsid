@@ -1,0 +1,2 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PNMA3_Dasypus_novemcinctus_XM_012529423	1357	1359	1369	1371	NA	Ignoring stop codon near end

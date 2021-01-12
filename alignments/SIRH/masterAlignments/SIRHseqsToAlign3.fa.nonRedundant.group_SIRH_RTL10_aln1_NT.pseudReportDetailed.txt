@@ -1,0 +1,18 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+RTL10_Macaca_mulatta_XM_015149716	1039	1041	1060	1062	NA	Ignoring stop codon near end
+RTL10_Pteropus_alecto_XM_015592026	877	879	898	900	NA	Stop codon
+RTL10_Pteropus_alecto_XM_015592026	1094	1096	1156	1158	NA	Ignoring stop codon near end
+RTL10_Sus_scrofa_XM_021072470	346	346	349	349	1	Frameshift deletion
+RTL10_Sus_scrofa_XM_021072470	412	414	421	423	NA	Stop codon
+RTL10_Sus_scrofa_XM_021072470	1015	1017	1036	1038	NA	Stop codon
+Rtl10_Cricetulus_griseus_XM_035444717	418	418	427	427	1	Frameshift deletion
+Rtl10_Cricetulus_griseus_XM_035444717	433	433	442	442	1	Frameshift deletion
+Rtl10_Cricetulus_griseus_XM_035444717	934	936	955	957	NA	Stop codon
+RTL10_Loxodonta_africana_XM_010598830	94	96	97	99	NA	Stop codon
+RTL10_Loxodonta_africana_XM_010598830	412	414	421	423	NA	Stop codon
+RTL10_Loxodonta_africana_XM_010598830	580	582	598	600	NA	Stop codon
+RTL10_Loxodonta_africana_XM_010598830	769	771	790	792	NA	Stop codon
+RTL10_Ovis_aries_XM_012098119	484	484	499	499	1	Frameshift deletion
+C11H22orf29_Rattus_norvegicus_XM_017604385	334	334	337	337	1	Frameshift deletion
+C11H22orf29_Rattus_norvegicus_XM_017604385	346	347	349	350	2	Frameshift deletion
+C11H22orf29_Rattus_norvegicus_XM_017604385	433	435	442	444	NA	Stop codon

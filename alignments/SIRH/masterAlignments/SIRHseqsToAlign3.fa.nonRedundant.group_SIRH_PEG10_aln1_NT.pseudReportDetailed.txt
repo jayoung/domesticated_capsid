@@ -1,0 +1,11 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PEG10_Homo_sapiens_NM_001172437	1204	1204	1357	1357	1	Frameshift ref
+Peg10_Rattus_norvegicus_XM_017602723	1203	1203	1357	1357	1	Possible programmed frameshift
+PEG10_Equus_caballus_NM_001172559	1203	1205	1357	1359	NA	Stop codon
+PEG10_Dasypus_novemcinctus_NM_001291117	1203	1205	1357	1359	NA	Stop codon
+PEG10_Macaca_mulatta_NM_001172421	1203	1205	1357	1359	NA	Stop codon
+Peg10_Mus_musculus_AB091827	1203	1205	1357	1359	NA	Stop codon
+Peg10_Cricetulus_griseus_XM_035451931	1203	1203	1357	1357	1	Possible programmed frameshift
+PEG10_Loxodonta_africana_XM_010587444	1203	1203	1357	1357	1	Possible programmed frameshift
+PEG10_Bos_taurus_NM_001109815	1203	1205	1357	1359	NA	Stop codon
+PEG10_Ovis_aries_NM_001290793	1203	1205	1357	1359	NA	Stop codon

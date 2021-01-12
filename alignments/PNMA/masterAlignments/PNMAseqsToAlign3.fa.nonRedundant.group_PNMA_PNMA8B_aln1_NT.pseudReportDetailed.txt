@@ -1,0 +1,13 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PNMA8B_Callithrix_jacchus_XM_002762260	1117	1119	1264	1266	NA	Stop codon
+PNMA8B_Bos_taurus_XM_024979172	265	267	280	282	NA	Stop codon
+PNMA8B_Bos_taurus_XM_024979172	709	711	748	750	NA	Stop codon
+PNMA8B_Bos_taurus_XM_024979172	1084	1084	1228	1228	1	Frameshift deletion
+PNMA8B_Bos_taurus_XM_024979172	1102	1103	1246	1247	2	Frameshift deletion
+PNMA8B_Bos_taurus_XM_024979172	1372	1374	1543	1545	NA	Stop codon
+PNMA8B_Bos_taurus_XM_024979172	1528	1530	1747	1749	NA	Stop codon
+PNMA8B_Ovis_aries_XM_015100610	709	711	748	750	NA	Stop codon
+PNMA8B_Ovis_aries_XM_015100610	1318	1319	1477	1478	2	Frameshift deletion
+PNMA8B_Ovis_aries_XM_015100610	1372	1372	1543	1543	1	Frameshift deletion
+PNMA8B_Ovis_aries_XM_015100610	1489	1490	1705	1706	2	Frameshift deletion
+PNMA8B_Felis_catus_XM_023245918	1690	1692	2218	2220	NA	Stop codon

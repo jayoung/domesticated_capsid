@@ -1,0 +1,109 @@
+
+
+. Running the analysis on 10 CPUs..
+
+. Command line: phyml-mpi -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa.phyml -d aa --sequential -m JTT --pinv e --alpha e -f e -b 100 
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:				 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa.phyml
+        . Data type:					 aa
+        . Alphabet size:				 20
+        . Sequence format:				 sequential
+        . Number of data sets:				 1
+        . Nb of bootstrapped data sets:			 100
+        . Compute approximate likelihood ratio test:	 no
+        . Model name:					 JTT
+        . Proportion of invariable sites:		 estimated
+        . RAS model:					 discrete Gamma
+        . Number of subst. rate catgs:			 4
+        . Gamma distribution parameter:			 estimated
+        . 'Middle' of each rate class:			 mean
+        . Amino acid equilibrium frequencies:		 empirical
+        . Optimise tree topology:			 yes
+        . Starting tree:				 BioNJ
+        . Add random input tree:			 no
+        . Optimise branch lengths:			 yes
+        . Minimum length of an edge:			 1e-08
+        . Optimise substitution model parameters:	 yes
+        . Run ID:					 none
+        . Random seed:					 1610454282
+        . Subtree patterns aliasing:			 no
+        . Version:					 3.3.20200621
+        . Byte alignment:				 32
+        . AVX enabled:					 yes
+        . SSE enabled:					 yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+. 369 patterns found (out of a total of 402 sites). 
+
+. 64 sites without polymorphism (15.92%).
+
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. Note: taxon 'seq0007' is a duplicate of taxon 'seq0008'.
+
+. This analysis requires at least 30 MB of memory space.
+
+
+. Score of initial tree: -7622.34
+
+. Starting first round of SPRs...
+
+	      14s |   1 | lnL=     -7544.4 | depth=    1/   40 | improvements=  15 | delta_lnL=    0.0/ 1000.0   +
+
+. Second round of optimization...
+
+	      24s |   2 | lnL=     -7551.2 | depth=    1/   36 | improvements=   7 | delta_lnL=    0.0/ 1000.0  
+	      35s |   3 | lnL=     -7560.1 | depth=    3/   20 | improvements=  15 | delta_lnL=    8.6/ 1000.0  
+	      45s |   4 | lnL=     -7546.2 | depth=    1/   16 | improvements=  10 | delta_lnL=    0.0/ 1000.0  
+	      55s |   5 | lnL=     -7577.8 | depth=    1/   12 | improvements=   9 | delta_lnL=    0.0/ 1000.0  
+	      58s |   6 | lnL=     -7550.7 | depth=    3/    9 | improvements=  11 | delta_lnL=   13.9/   20.0  
+	      60s |   7 | lnL=     -7557.9 | depth=    2/    7 | improvements=   9 | delta_lnL=    7.1/   20.0  
+	      62s |   8 | lnL=     -7544.6 | depth=    2/    6 | improvements=   8 | delta_lnL=    3.0/   20.0  
+	      65s |   9 | lnL=     -7546.6 | depth=    1/    6 | improvements=   9 | delta_lnL=    0.0/   20.0  
+	      67s |  10 | lnL=     -7565.0 | depth=    2/    5 | improvements=  10 | delta_lnL=    5.1/   27.7  
+	      74s |  11 | lnL=     -7549.3 | depth=    1/    6 | improvements=  16 | delta_lnL=    0.0/   27.7  
+
+. Third round of optimization...
+
+	      87s |  12 | lnL=     -7541.8 | depth=    2/   10 | improvements=  11 | delta_lnL=    0.6/  100.0 | triple moves=   5   +
+	     101s |  13 | lnL=     -7537.1 | depth=    3/    8 | improvements=   4 | delta_lnL=    7.6/  100.0 | triple moves=   5   +
+	     121s |  14 | lnL=     -7537.1 | depth=    0/    6 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+
+. Final optimisation steps...
+
+
+. Log likelihood of the current tree: -7537.121665228534766356461.
+
+. Launch bootstrap analysis on the most likely tree...
+
+. The bootstrap analysis will use 10 CPUs.
+  [....................]   20/ 100
+  [....................]   40/ 100
+  [....................]   60/ 100
+  [....................]   80/ 100
+  [....................]  100/ 100
+  
+
+. Exiting bootstrap function normally.
+
+. Completed the bootstrap analysis succesfully.
+
+. Printing the most likely tree in file 'PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa.phyml_phyml_tree.txt'.
+
+. Time used 0h21m29s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

@@ -1,0 +1,16 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PEG10_Homo_sapiens_NM_001172437	Reference	1	0	2354
+Peg10_Rattus_norvegicus_XM_017602723	Intact	0	0	3141
+PEG10_Pteropus_alecto_NM_001291362	Intact	0	0	2216
+PEG10_Equus_caballus_NM_001172559	Pseud	0	1	1086
+PEG10_Dasypus_novemcinctus_NM_001291117	Pseud	0	1	1212
+PEG10_Macaca_mulatta_NM_001172421	Pseud	0	1	1080
+PEG10_Callithrix_jacchus_NM_001302557	Intact	0	0	2354
+PEG10_Felis_catus_NM_001291089	Intact	0	0	2384
+PEG10_Canis_lupus_familiaris_NM_001172543	Intact	0	0	2258
+PEG10_Sus_scrofa_NM_001127224	Intact	0	0	2360
+Peg10_Mus_musculus_AB091827	Pseud	0	1	1131
+Peg10_Cricetulus_griseus_XM_035451931	Intact	0	0	2157
+PEG10_Loxodonta_africana_XM_010587444	Truncated	0	0	1200
+PEG10_Bos_taurus_NM_001109815	Pseud	0	1	1218
+PEG10_Ovis_aries_NM_001290793	Pseud	0	1	1218

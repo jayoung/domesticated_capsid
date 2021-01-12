@@ -1,0 +1,16 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PNMA8B_Homo_sapiens_NM_020709	Reference	0	0	1908
+LOC113837381_Cricetulus_griseus_XM_035449308	Intact	0	0	2013
+LOC113837381_Cricetulus_griseus_XM_035449309	Intact	0	0	1944
+Pnmal2_Mus_musculus_NM_001099636	Intact	0	0	1986
+PNMA8B_Callithrix_jacchus_XM_002762260	Pseud	0	1	1908
+PNMA8B_Macaca_mulatta_XM_001111896	Intact	0	0	1905
+Pnma8b_Rattus_norvegicus_NM_001107481	Intact	0	0	2004
+PNMA8B_Dasypus_novemcinctus_XM_023586768	Intact	0	0	1731
+PNMA8B_Bos_taurus_XM_024979172	Pseud	2	4	1956
+AK143183_Mus_musculus_AK143183	Truncated	0	0	1147
+LOC118142878_Callithrix_jacchus_XM_035285972	Intact	0	0	1908
+PNMA8B_Equus_caballus_XM_023651265	Truncated	0	0	1248
+PNMA8B_Loxodonta_africana_XM_003406697	Intact	0	0	1953
+PNMA8B_Ovis_aries_XM_015100610	Pseud	3	1	1755
+PNMA8B_Felis_catus_XM_023245918	Pseud	0	1	1239

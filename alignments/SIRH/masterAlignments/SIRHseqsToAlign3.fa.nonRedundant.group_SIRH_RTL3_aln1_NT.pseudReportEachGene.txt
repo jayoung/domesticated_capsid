@@ -1,0 +1,15 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+RTL3_Homo_sapiens_NM_152694	Reference	0	0	1428
+Rtl3_Cricetulus_griseus_XM_035449798	Intact	0	0	1455
+RTL3_Macaca_mulatta_XM_015127722	Pseud	0	1	1428
+Zcchc5_Rattus_norvegicus_XM_006227424	Intact	0	0	1869
+RTL3_Callithrix_jacchus_XM_003735771	Pseud	0	2	1419
+RTL3_Sus_scrofa_XM_003135208	Pseud	0	1	1449
+RTL3_Equus_caballus_XM_003365821	Intact	0	0	1479
+RTL3_Bos_taurus_XM_003588150	Pseud	2	1	1365
+RTL3_Felis_catus_XM_019823431	Pseud	0	4	1326
+RTL3_Pteropus_alecto_XM_025049768	Pseud	0	1	1476
+RTL3_Canis_lupus_familiaris_XM_003435565	Pseud	2	2	1425
+Zcchc5_Mus_musculus_BC064821	Intact	0	0	1662
+RTL3_Ovis_aries_XM_015104713	Pseud	2	2	1317
+RTL3_Loxodonta_africana_XM_003412767	Pseud	0	4	1464

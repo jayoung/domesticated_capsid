@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	2	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa
+Intact	7	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa
+Truncated	4	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa
+Pseud	0	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa

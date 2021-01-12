@@ -1,0 +1,10 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+RTL10_Homo_sapiens_NM_024627	Reference	0	0	1095
+RTL10_Callithrix_jacchus_XM_009006750	Intact	0	0	1095
+RTL10_Macaca_mulatta_XM_015149716	Intact	0	0	1041
+RTL10_Pteropus_alecto_XM_015592026	Pseud	0	1	1131
+RTL10_Sus_scrofa_XM_021072470	Pseud	1	2	963
+Rtl10_Cricetulus_griseus_XM_035444717	Pseud	2	1	840
+RTL10_Loxodonta_africana_XM_010598830	Pseud	0	4	939
+RTL10_Ovis_aries_XM_012098119	Pseud	1	0	459
+C11H22orf29_Rattus_norvegicus_XM_017604385	Pseud	2	1	441

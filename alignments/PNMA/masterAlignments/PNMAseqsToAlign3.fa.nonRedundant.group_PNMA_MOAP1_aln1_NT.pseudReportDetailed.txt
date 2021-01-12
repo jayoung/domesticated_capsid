@@ -1,0 +1,5 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+MOAP1_Sus_scrofa_XM_021099631	118	120	118	120	NA	Stop codon
+MOAP1_Sus_scrofa_XM_021099631	472	474	481	483	NA	Stop codon
+MOAP1_Sus_scrofa_XM_021099631	583	585	592	594	NA	Stop codon
+MOAP1_Sus_scrofa_XM_021099631	772	774	781	783	NA	Stop codon

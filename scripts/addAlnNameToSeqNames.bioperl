@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Bio::SeqIO;
+
+### figures out from the file name what the alignment group is called (e.g. PNMA_PNMA1) and adds that to the start of each seq name in the file
+
+foreach my $file (@ARGV){
+    if (!-e $file) { die "\n\nterminating - cannot open file $file\n\n"; }
+    my $groupName = $file;
+    if ($groupName =~ m/\//) { $groupName = (split /\//, $groupName)[-1]; }
+    my @g = split /\./, $groupName;
+    if ($g[3] !~ m/^group_/) {
+        die "\n\nterminating - cannot find group name from file name\n\n";
+    }
+    my $group = $g[3]; $group =~ s/group_//;
+    $group =~ s/_aln\d+_NT//;
+    $group =~ s/_/-/;
+    $group = "aln-$group";
+    print "group $group file $file\n";
+    my $out = $file; $out =~ s/\.fasta$//; $out =~ s/\.fa$//;
+    $out .= ".addGroupNames.fa";
+    my $seqIN = Bio::SeqIO->new(-file => "< $file", '-format' => 'fasta');
+    my $seqOUT = Bio::SeqIO->new(-file => "> $out", '-format' => 'fasta');
+    while (my $seq = $seqIN ->next_seq) {
+        my $seqname = $seq->display_id();
+        $seqname = $group . "_" . $seqname;
+        $seq->display_id($seqname);
+        $seqOUT->write_seq($seq);
+    }
+}
+

@@ -17,7 +17,9 @@ print "found $num files\n";
 foreach my $file (@files) {
     print "translating seqs in file $file\n";
     if (!-e $file) {die "\nterminating - couldn't open $file\n\n";}
-    my $outfile = "$file".".peps.fa";
+    my $outfile = $file;
+    $outfile =~ s/\.fasta$//; $outfile =~ s/\.fa$//; 
+    $outfile = "$outfile".".peps.fa";
     my $outseqio = new Bio::SeqIO(-file => ">$outfile", -format => 'Fasta');
     my $inseqio = new Bio::SeqIO(-file => "<$file", -format => 'Fasta');
     while (my $seq=$inseqio->next_seq()) {

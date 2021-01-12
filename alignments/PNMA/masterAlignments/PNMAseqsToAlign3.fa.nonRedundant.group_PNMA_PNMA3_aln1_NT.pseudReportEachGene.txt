@@ -1,0 +1,11 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PNMA3_Homo_sapiens_NM_013364	Reference	0	0	1392
+Pnma3_Rattus_norvegicus_NM_001106342	Intact	0	0	1398
+Pnma3_Mus_musculus_BC036726	Intact	0	0	1401
+PNMA3_Felis_catus_XM_023249127	Intact	0	0	1392
+PNMA3_Equus_caballus_NM_001257075	Intact	0	0	1392
+PNMA3_Pteropus_alecto_XM_015592814	Intact	0	0	1395
+PNMA3_Callithrix_jacchus_XM_008990061	Intact	0	0	1392
+PNMA3_Macaca_mulatta_NM_001261481	Intact	0	0	1392
+PNMA3_Loxodonta_africana_XM_010600785	Truncated	0	0	855
+PNMA3_Dasypus_novemcinctus_XM_012529423	Intact	0	0	1350

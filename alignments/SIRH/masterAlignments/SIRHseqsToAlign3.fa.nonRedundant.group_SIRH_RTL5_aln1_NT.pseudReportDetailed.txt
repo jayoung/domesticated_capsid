@@ -1,0 +1,4 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+RTL5_Dasypus_novemcinctus_XM_012518506	103	105	103	105	NA	Stop codon
+RTL5_Dasypus_novemcinctus_XM_012518506	1027	1029	1078	1080	NA	Stop codon
+RTL5_Dasypus_novemcinctus_XM_012518506	1654	1656	1873	1875	NA	Ignoring stop codon near end

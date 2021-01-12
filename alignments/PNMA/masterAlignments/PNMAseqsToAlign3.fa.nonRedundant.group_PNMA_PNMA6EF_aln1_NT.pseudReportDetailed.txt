@@ -1,0 +1,3 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+LOC111766818_Dasypus_novemcinctus_XM_023592027	1943	1945	2230	2232	NA	Ignoring stop codon near end
+LOC102148493_Equus_caballus_XM_014729271	1885	1887	2077	2079	NA	Ignoring stop codon near end

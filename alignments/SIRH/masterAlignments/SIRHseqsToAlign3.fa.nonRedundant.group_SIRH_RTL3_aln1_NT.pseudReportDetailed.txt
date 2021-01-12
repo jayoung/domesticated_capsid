@@ -1,0 +1,26 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+RTL3_Macaca_mulatta_XM_015127722	1114	1116	1717	1719	NA	Stop codon
+RTL3_Callithrix_jacchus_XM_003735771	121	123	121	123	NA	Stop codon
+RTL3_Callithrix_jacchus_XM_003735771	241	243	448	450	NA	Stop codon
+RTL3_Sus_scrofa_XM_003135208	130	132	130	132	NA	Stop codon
+RTL3_Bos_taurus_XM_003588150	865	867	1438	1440	NA	Stop codon
+RTL3_Bos_taurus_XM_003588150	1072	1073	1669	1670	2	Frameshift deletion
+RTL3_Bos_taurus_XM_003588150	1111	1111	1714	1714	1	Frameshift deletion
+RTL3_Felis_catus_XM_019823431	100	102	100	102	NA	Stop codon
+RTL3_Felis_catus_XM_019823431	745	747	1300	1302	NA	Stop codon
+RTL3_Felis_catus_XM_019823431	805	807	1363	1365	NA	Stop codon
+RTL3_Felis_catus_XM_019823431	868	870	1441	1443	NA	Stop codon
+RTL3_Felis_catus_XM_019823431	1414	1416	2032	2034	NA	Ignoring stop codon near end
+RTL3_Pteropus_alecto_XM_025049768	892	894	1465	1467	NA	Stop codon
+RTL3_Canis_lupus_familiaris_XM_003435565	70	72	70	72	NA	Stop codon
+RTL3_Canis_lupus_familiaris_XM_003435565	160	160	160	160	1	Frameshift deletion
+RTL3_Canis_lupus_familiaris_XM_003435565	220	221	229	230	2	Frameshift deletion
+RTL3_Canis_lupus_familiaris_XM_003435565	604	606	1159	1161	NA	Stop codon
+RTL3_Ovis_aries_XM_015104713	100	102	100	102	NA	Stop codon
+RTL3_Ovis_aries_XM_015104713	1083	1083	1686	1686	1	Frameshift insertion
+RTL3_Ovis_aries_XM_015104713	1111	1111	1714	1714	1	Frameshift deletion
+RTL3_Ovis_aries_XM_015104713	1306	1308	1924	1926	NA	Stop codon
+RTL3_Loxodonta_africana_XM_003412767	130	132	130	132	NA	Stop codon
+RTL3_Loxodonta_africana_XM_003412767	220	222	229	231	NA	Stop codon
+RTL3_Loxodonta_africana_XM_003412767	433	435	955	957	NA	Stop codon
+RTL3_Loxodonta_africana_XM_003412767	1330	1332	1948	1950	NA	Stop codon

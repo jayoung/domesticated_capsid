@@ -1,0 +1,15 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+ARC_Homo_sapiens_NM_015193	Reference	0	0	1191
+ARC_Myotis_myotis_XM_036337616	Intact	0	0	1221
+ARC_Felis_catus_XM_023248559	Intact	0	0	1191
+ARC_Sus_scrofa_XM_021088786	Intact	0	0	1191
+ARC_Orycteropus_afer_afer_XM_007940527	Intact	0	0	1185
+ARC_Bos_taurus_NM_001206407	Intact	0	0	1191
+Arc_Cavia_porcellus_XM_005005200	Intact	0	0	1188
+Arc_Mus_musculus_AF162777	Intact	0	0	1191
+ARC_Loxodonta_africana_XM_003422399	Intact	0	0	1191
+ARC_Ornithorhynchus_anatinus_XM_001512700	Intact	0	0	1206
+ARC_Monodelphis_domestica_XM_007488415	Intact	0	0	1203
+ARC_Gallus_gallus_NM_204432	Intact	0	0	1215
+ARC_Equus_caballus_XM_014728117	Intact	0	0	1197
+LOC108719444_Xenopus_laevis_XM_018268295	Intact	0	0	1152

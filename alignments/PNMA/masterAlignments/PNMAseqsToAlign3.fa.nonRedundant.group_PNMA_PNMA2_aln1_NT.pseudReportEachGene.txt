@@ -1,0 +1,16 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+PNMA2_Homo_sapiens_NM_007257	Reference	0	0	1095
+AK043718_Mus_musculus_AK043718	Intact	0	0	1098
+Pnma2_Rattus_norvegicus_NM_001107272	Intact	0	0	1095
+Pnma2_Cricetulus_griseus_XM_035452902	Intact	0	0	1095
+PNMA2_Loxodonta_africana_XM_003412366	Intact	0	0	1095
+LOC101414877_Dasypus_novemcinctus_XM_004466515	Intact	0	0	1080
+PNMA2_Sus_scrofa_XM_005670445	Intact	0	0	1095
+PNMA2_Bos_taurus_BC112516	Intact	0	0	1095
+PNMA2_Ovis_aries_XM_015093086	Intact	0	0	1095
+PNMA2_Pteropus_alecto_XM_006916962	Intact	0	0	1095
+PNMA2_Equus_caballus_XM_014737822	Intact	0	0	1095
+PNMA2_Canis_lupus_familiaris_XM_005635683	Intact	0	0	1095
+PNMA2_Felis_catus_XM_011281435	Intact	0	0	1095
+PNMA2_Callithrix_jacchus_XM_008979085	Intact	0	0	1095
+PNMA2_Macaca_mulatta_NM_001257697	Intact	0	0	1095

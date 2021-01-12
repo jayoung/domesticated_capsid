@@ -1,0 +1,14 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PNMA5_Sus_scrofa_XM_021080492	1258	1258	1279	1279	1	Frameshift deletion
+PNMA5_Loxodonta_africana_XM_010600776	1336	1338	1357	1359	NA	Ignoring stop codon near end
+PNMA5_Dasypus_novemcinctus_XM_004469513	1336	1338	1357	1359	NA	Ignoring stop codon near end
+PNMA5_Ovis_aries_XM_027963453	127	128	130	131	2	Frameshift deletion
+PNMA5_Ovis_aries_XM_027963453	175	175	178	178	1	Frameshift deletion
+PNMA5_Ovis_aries_XM_027963453	934	936	946	948	NA	Stop codon
+PNMA5_Ovis_aries_XM_027963453	1276	1278	1297	1299	NA	Stop codon
+PNMA5_Pteropus_alecto_XM_006905162	1336	1338	1357	1359	NA	Ignoring stop codon near end
+PNMA5_Equus_caballus_XM_014729269	1336	1338	1357	1359	NA	Ignoring stop codon near end
+PNMA5_Bos_taurus_XM_005227633	343	345	346	348	NA	Stop codon
+PNMA5_Bos_taurus_XM_005227633	637	639	649	651	NA	Stop codon
+PNMA5_Bos_taurus_XM_005227633	934	936	946	948	NA	Stop codon
+PNMA5_Bos_taurus_XM_005227633	1045	1047	1063	1065	NA	Stop codon

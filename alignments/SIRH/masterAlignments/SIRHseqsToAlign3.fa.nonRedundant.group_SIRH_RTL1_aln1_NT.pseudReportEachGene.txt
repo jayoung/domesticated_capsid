@@ -1,0 +1,17 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+RTL1_Homo_sapiens_NM_001134888	Reference	0	0	4077
+Rtl1_Mus_musculus_BK001261	Intact	0	0	5235
+RTL1_Canis_lupus_familiaris_XM_003639224	Intact	0	0	4044
+RTL1_Sus_scrofa_NM_001134358	Intact	0	0	4074
+RTL1_Loxodonta_africana_XM_023546655	Truncated	0	0	2394
+Rtl1_Cricetulus_griseus_XM_027416405	Intact	0	0	4050
+RTL1_Ovis_aries_XM_015102055	Intact	0	0	4002
+Rtl1_Cricetulus_griseus_XM_007650518	Pseud	0	1	4050
+RTL1_Macaca_mulatta_XM_001110319	Intact	0	0	4080
+RTL1_Felis_catus_XM_023256042	Intact	0	0	4005
+RTL1_Equus_caballus_XM_023628401	Intact	0	0	4050
+RTL1_Callithrix_jacchus_XM_009006557	Intact	0	0	4080
+RTL1_Bos_taurus_NM_001195020	Intact	0	0	3996
+Rtl1_Rattus_norvegicus_XM_017594511	Intact	0	0	4092
+RTL1_Dasypus_novemcinctus_XM_012519872	Intact	0	0	3512
+RTL1_Pteropus_alecto_XM_025042126	Intact	0	0	3300

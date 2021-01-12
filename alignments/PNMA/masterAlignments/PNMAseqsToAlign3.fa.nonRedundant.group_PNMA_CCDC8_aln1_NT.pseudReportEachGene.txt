@@ -1,0 +1,17 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+CCDC8_Homo_sapiens_NM_032040	Reference	0	0	1617
+CCDC8_Callithrix_jacchus_XM_008988268	Intact	0	0	1545
+CCDC8_Ovis_aries_XM_027978517	Intact	0	0	1677
+CCDC8_Callithrix_jacchus_XM_002762259	Intact	0	0	1593
+Ccdc8_Rattus_norvegicus_NM_001009533	Intact	0	0	1956
+CCDC8_Pteropus_alecto_XM_025046716	Truncated	0	0	1266
+CCDC8_Bos_taurus_NM_001035485	Intact	0	0	1557
+CCDC8_Felis_catus_XM_003997664	Intact	0	0	1443
+CCDC8_Sus_scrofa_XM_003127233	Intact	0	0	1416
+CCDC8_Loxodonta_africana_XM_003406472	Intact	0	0	1452
+CCDC8_Macaca_mulatta_XM_001111790	Intact	0	0	1641
+MGC72567_Rattus_norvegicus_BC060520	Intact	0	0	1932
+CCDC8_Canis_lupus_familiaris_XM_005616414	Intact	0	0	1566
+Ccdc8_Mus_musculus_NM_001101535	Intact	0	0	2058
+LOC113837380_Cricetulus_griseus_XM_035449434	Intact	0	0	2343
+CCDC8_Equus_caballus_XM_014729428	Intact	0	0	1737

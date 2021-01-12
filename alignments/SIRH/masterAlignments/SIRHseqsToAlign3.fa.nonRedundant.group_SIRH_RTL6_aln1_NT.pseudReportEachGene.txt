@@ -1,0 +1,16 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+RTL6_Homo_sapiens_NM_032287	Reference	0	0	720
+Ldoc1l_Mus_musculus_BC058638	Intact	0	0	732
+Rtl6_Cricetulus_griseus_XM_003515297	Intact	0	0	720
+RTL6_Sus_scrofa_XM_005663741	Intact	0	0	720
+RTL6_Pteropus_alecto_XM_006917334	Intact	0	0	720
+RTL6_Ovis_aries_XM_012175760	Intact	0	0	720
+RTL6_Macaca_mulatta_NM_001194443	Intact	0	0	720
+RTL6_Loxodonta_africana_XM_023559861	Intact	0	0	720
+RTL6_Felis_catus_XM_023257587	Intact	0	0	720
+RTL6_Equus_caballus_XM_023631790	Intact	0	0	720
+RTL6_Dasypus_novemcinctus_XM_004475300	Intact	0	0	720
+RTL6_Canis_lupus_familiaris_XM_005625760	Intact	0	0	720
+RTL6_Callithrix_jacchus_XM_008991027	Intact	0	0	720
+RTL6_Bos_taurus_XM_015471441	Intact	0	0	720
+Ldoc1l_Rattus_norvegicus_XM_006226184	Intact	0	0	732

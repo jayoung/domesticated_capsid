@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	3	SIRH/masterAlignments/SIRHseqsToAlign3.fa.nonRedundant.group_SIRH_RTL8s_aln1_NT.fa
+Intact	18	SIRH/masterAlignments/SIRHseqsToAlign3.fa.nonRedundant.group_SIRH_RTL8s_aln1_NT.fa
+Truncated	0	SIRH/masterAlignments/SIRHseqsToAlign3.fa.nonRedundant.group_SIRH_RTL8s_aln1_NT.fa
+Pseud	0	SIRH/masterAlignments/SIRHseqsToAlign3.fa.nonRedundant.group_SIRH_RTL8s_aln1_NT.fa

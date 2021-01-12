@@ -1,0 +1,2 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+Rtl1_Cricetulus_griseus_XM_007650518	1192	1194	1963	1965	NA	Stop codon

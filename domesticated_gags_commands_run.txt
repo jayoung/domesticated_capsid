@@ -797,9 +797,175 @@ cd ../../
 
 
 
+##### xxxx add my protein alignments to Will's alignments, after trimming to just alignable bit?
 
-xxxx add my protein alignments to Will's alignments, after trimming to just alignable bit?
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/combineAll
 
+cat  ../*/master*/*NT.fa > allAlns_2021_Jan11_NT.fa
+removegapsfromseq.bioperl allAlns_2021_Jan11_NT.fa  
+../../scripts/getJustHumanSeqs.bioperl allAlns_2021_Jan11_NT.fa.nogaps 
+
+translate1frame.bioperl allAlns_2021_Jan11_NT.nogaps.human.fa
+
+../../scripts/searchPFAMprotqueryNewMoreSensitive.pl allAlns_2021_Jan11_NT.nogaps.human.fa.peps.fasta
+
+xxx I think I will use an HMM to query these seqs to get a cross-paralog alignment that I can make a protein tree on
+
+cat ../../fromWill/4_2020_Dec18/*subtree/*aln.faa > allWillSeqs_AA_2021_Jan11.fa
+removegapsfromseq.bioperl allWillSeqs_AA_2021_Jan11.fa 
+makeblastdb -in allWillSeqs_AA_2021_Jan11.fa.nogaps -dbtype prot
+
+blastx -query allAlns_2021_Jan11_NT.nogaps.human.fa -db allWillSeqs_AA_2021_Jan11.fa.nogaps  -out allAlns_2021_Jan11_NT.nogaps.human.blastxWillAlignedSeqs
+
+###  blast repeatmasker library to get more useful outgroups
+
+blastp -db ~/malik_lab_shared/lib/RepeatMasker2015_Oct29_linux_64/RepeatMasker/Libraries/RepeatPeps.lib -query allAlns_2021_Jan11_NT.nogaps.human.fa.peps.fasta -out allAlns_2021_Jan11_NT.nogaps.human.fa.peps.fasta.blastpRepBase -num_alignments 100 -num_descriptions 100 -num_threads 4
+
+# PNMA family: MamGyp_gag is a very good match and will be a good outgroup.
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/outgroups
+splitfastafileextractoneseq.pl  ~/malik_lab_shared/lib/RepeatMasker2015_Oct29_linux_64/RepeatMasker/Libraries/RepeatPeps.lib MamGyp_gag#LTR/Gypsy
+cd ../
+removegapsfromseq.bioperl PNMAseqsToAlign2_aln1_AA.fa
+cat PNMAseqsToAlign2_aln1_AA.fa.nogaps outgroups/MamGyp_gag#LTR_Gypsy.fa > PNMAseqsToAlign2_plusOutgroup_AA.fa
+
+ARC - only a shortish match to anything in RepBase.  The HMM match is also short.  xx would RAT ARC have a better match? it can form capsids
+
+SIRHs xxx
+
+### aligning all PNMA seqs together with Gypsy outgroup
+
+cd /FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments
+
+../../../scripts/addAlnNameToSeqNames.bioperl *NT.fa
+
+cat *peps.fa ../outgroups/MamGyp_gag#LTR_Gypsy.fa > PNMAseqsToAlign3edited_plusOutgroup.peps.fa
+
+../../../scripts/translate1frame.bioperl *addGroupNames.fa
+
+../../../scripts/removegapsfromseq.bioperl PNMAseqsToAlign3edited_plusOutgroup.peps.fa
+
+mafft PNMAseqsToAlign3edited_plusOutgroup.peps.fa.nogaps > PNMAseqsToAlign3edited_plusOutgroup.peps_aln1.fa
+
+    when they are all together, there's too much divergence for a tree.
+
+# nucleotide collection, for blasting
+
+cat *_NT.addGroupNames.fa > PNMAseqsToAlign3edited.fa
+../../../scripts/removegapsfromseq.bioperl PNMAseqsToAlign3edited.fa
+makeblastdb -in PNMAseqsToAlign3edited.fa.nogaps -dbtype nucl
+
+
+
+### aligning PNMA seqs in three separate groups each  with Gypsy outgroup
+
+#### subgroup 1 - just CCDC8
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/CCDC8
+
+
+## check the ingroups are distant from the outgroups: they are. 
+# When I query with human CCDC8, all CCDC8 ingroups have e-value <  3e-115 and all outgroups >  1e-15
+splitfastafileextractoneseq.pl ../../PNMAseqsToAlign3edited_plusOutgroup.peps.fa.nogaps aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040
+tblastn -query aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa  -db PNMAseqsToAlign3edited.fa.nogaps -out aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa.tblastn_seqsToAln3 
+
+
+## now make a tree for CCDC8, without the gypsy outgroup, because it aligns poorly and for only 70 amino acids
+
+# nucleotide tree - use PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.fa
+but remove gappy positions (if >50% seqs have gap:)
+
+cp ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.fa .
+../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.fa
+
+../../../../../scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.degap_0.3.fa
+
+
+# amino acid tree 
+cp ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.peps.fa .
+../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.peps.fa
+
+../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.peps.degap_0.3.fa
+    
+# dN/dS
+
+xx I should add an option to removegapsfromalignmentifsomeproportionofseqshavegap.pl for in-frame only gap removal
+xx or, add an option to removegapsfromalignmentinframeonly.pl to consider some proportion of seqs
+
+
+#### subgroup 2 - just ZCCs:
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/ZCCs
+
+xxx include gypsy outgroup or not? alignment is 203 aa
+
+
+## check the ingroups are distant from the outgroups: they are. 
+# When I query with either human ZCC, all ZCC ingroups have e-value < 7e-159 and all outgroups >  1e-47
+
+splitfastafileextractoneseq.pl ../../PNMAseqsToAlign3edited_plusOutgroup.peps.fa.nogaps aln-PNMA-ZCCs_ZCCHC12_Homo_sapiens_NM_001312891
+
+splitfastafileextractoneseq.pl ../../PNMAseqsToAlign3edited_plusOutgroup.peps.fa.nogaps aln-PNMA-ZCCs_ZCCHC18_Homo_sapiens_NM_001143978
+
+
+tblastn -query aln-PNMA-ZCCs_ZCCHC12_Homo_sapiens_NM_001312891.fa  -db ../../PNMAseqsToAlign3edited.fa.nogaps -out aln-PNMA-ZCCs_ZCCHC12_Homo_sapiens_NM_001312891.fa.tblastn_seqsToAln3 
+
+tblastn -query aln-PNMA-ZCCs_ZCCHC18_Homo_sapiens_NM_001143978.fa  -db ../../PNMAseqsToAlign3edited.fa.nogaps -out aln-PNMA-ZCCs_ZCCHC18_Homo_sapiens_NM_001143978.fa.tblastn_seqsToAln3 
+
+
+## now make a tree for ZCCs, just amino acids, as they're diverged enough
+
+try it with and without the gypsy outgroup, because outgroup aligns poorly and for only 70 amino acids
+
+
+# amino acid tree WITHOUT gypsy outgroup:
+
+cp ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa .
+
+../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa
+
+# prottest - chooses JTT
+convertStarStopToGap.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa
+
+module load Java
+java -jar ~/malik_lab_shared/prottest-3.4.2/prottest-3.4.2.jar -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.noStop.fa -threads 4 > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.noStop.fa.prottest.out
+module purge
+
+
+../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa
+
+
+# amino acid tree WITH gypsy outgroup:
+
+
+# tried adding outgroup to existing alignment, but there was an error, I'm guessing doe to presence of stop codons
+mafft --leavegappyregion --add ../../.././outgroups/MamGyp_gag#LTR_Gypsy.fa --reorder PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.fa
+# ERROR! The original 34 sequences must be aligned
+# alignmentlength = 443, but strlen(seq[1])=445
+
+# instead, align fresh 
+
+../../../../../scripts/removegapsfromseq.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa
+
+cat PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa.nogaps ../../../outgroups/MamGyp_gag#LTR_Gypsy.fa > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.fa
+
+mafft  PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.fa > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.fa
+
+# degap then trim - I look in Geneious and choose positions 1-216 w.r.t. degapped alignment
+../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.fa
+../../../../../scripts/trimalignment.bioperl -start=1 -end=216 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.fa
+
+
+
+# prottest - chooses JTT
+module load Java
+java -jar ~/malik_lab_shared/prottest-3.4.2/prottest-3.4.2.jar -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa -threads 4 > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa.prottest.out
+module purge
+
+# tree
+../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa
+    
+PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa_PHYMLtree
+
+reorderseqs_treeorder.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa_PHYMLtree/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa.phyml_phyml_tree.txt.names
 
 
 

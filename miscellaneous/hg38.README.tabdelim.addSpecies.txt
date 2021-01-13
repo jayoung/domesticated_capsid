@@ -1,0 +1,103 @@
+Assembly name	Assembly name 2	Assembly date	Common name	Latin name	Species set
+hg38	GRCh38	Dec 2013	Human	Homo sapiens	Primate
+panTro4	CSAC 2.1.4	Feb 2011	Chimp	Pan troglodytes	Primate
+gorGor3	gorGor3.1	May 2011	Gorilla	Gorilla gorilla gorilla	Primate
+ponAbe2	WUGSC 2.0.2	July 2007	Orangutan	Pongo pygmaeus abelii	Primate
+nomLeu3	GGSC Nleu3.0	Oct 2012	Gibbon	Nomascus leucogenys	Primate
+rheMac3	BGI CR_1.0	Oct 2010	Rhesus	Macaca mulatta	Primate
+macFas5	Macaca_fascicularis_5.0	Jun 2013	Crab-eating macaque	Macaca fascicularis	Primate
+papAnu2	Baylor Panu_2.0	Mar 2012	Baboon	Papio hamadryas	Primate
+chlSab2	Chlorocebus_sabeus 1.1	Mar 2014	Green monkey	Chlorocebus sabaeus	Primate
+calJac3	WUGSC 3.2	Mar 2009	Marmoset	Callithrix jacchus	Primate
+saiBol1	Broad	Oct 2011	Squirrel monkey	Saimiri boliviensis	Primate
+otoGar3	Broad	Mar 2011	Bushbaby	Otolemur garnettii	Primate
+tupChi1	TupChi_1.0	Jan 2013	Chinese tree shrew	Tupaia chinensis	Euarchontoglires
+speTri2	Broad	Nov 2011	Squirrel	Spermophilus tridecemlineatus	Euarchontoglires
+jacJac1	JacJac1.0	May 2012	Lesser Egyptian jerboa	Jaculus jaculus	Euarchontoglires
+micOch1	MicOch1.0	Oct 2012	Prairie vole	Microtus ochrogaster	Euarchontoglires
+criGri1	C_griseus_v1.0	Jul 2013	Chinese hamster	Cricetulus griseus	Euarchontoglires
+mesAur1	MesAur1.0	Mar 2013	Golden hamster	Mesocricetus auratus	Euarchontoglires
+mm10	GRCm38	Dec 2011	Mouse	Mus musculus	Euarchontoglires
+rn6	RGSC 6.0	Jul 2014	Rat	Rattus norvegicus	Euarchontoglires
+hetGla2	Broad HetGla_female_1.0	Jan 2012	Naked mole-rat	Heterocephalus glaber	Euarchontoglires
+cavPor3	Broad	Feb 2008	Guinea pig	Cavia porcellus	Euarchontoglires
+chiLan1	ChiLan1.0	May 2012	Chinchilla	Chinchilla lanigera	Euarchontoglires
+octDeg1	OctDeg1.0	Apr 2012	Brush-tailed rat	Octodon degus	Euarchontoglires
+oryCun2	Broad	Apr 2009	Rabbit	Oryctolagus cuniculus	Euarchontoglires
+ochPri3	OchPri3.0	May 2012	Pika	Ochotona princeps	Euarchontoglires
+susScr3	SGSC Sscrofa10.2	Aug 2011	Pig	Sus scrofa	Laurasiatheria
+vicPac2	Vicugna_pacos-2.0.1	Mar 2013	Alpaca	Vicugna pacos	Laurasiatheria
+camFer1	CB1	Dec 2011	Bactrian camel	Camelus ferus	Laurasiatheria
+turTru2	Baylor Ttru_1.4	Oct 2011	Dolphin	Tursiops truncatus	Laurasiatheria
+orcOrc1	Oorc_1.1	Jan 2013	Killer whale	Orcinus orca	Laurasiatheria
+panHod1	PHO1.0	May 2013	Tibetan antelope	Pantholops hodgsonii	Laurasiatheria
+bosTau8	UMD_3.1.1	Jun 2014	Cow	Bos taurus	Laurasiatheria
+oviAri3	ISGC Oar_v3.1	Aug 2012	Sheep	Ovis aries	Laurasiatheria
+capHir1	CHIR_1.0	May 2012	Domestic goat	Capra hircus	Laurasiatheria
+equCab2	Broad	Sep 2007	Horse	Equus caballus	Laurasiatheria
+cerSim1	CerSimSim1.0	May 2012	White rhinoceros	Ceratotherium simum	Laurasiatheria
+felCat8	ICGSC Felis_catus 8.0	Nov 2014	Cat	Felis catus	Laurasiatheria
+canFam3	Broad CanFam3.1	Sep 2011	Dog	Canis lupus familiaris	Laurasiatheria
+musFur1	MusPutFur1.0	Apr 2011	Ferret	Mustela putorius furo	Laurasiatheria
+ailMel1	BGI-Shenzhen 1.0	Dec 2009	Panda	Ailuropoda melanoleuca	Laurasiatheria
+odoRosDiv1	Oros_1.0	Jan 2013	Pacific walrus	Odobenus rosmarus divergens	Laurasiatheria
+lepWed1	LepWed1.0	Mar 2013	Weddell seal	Leptonychotes weddellii	Laurasiatheria
+pteAle1	ASM32557v1	Aug 2012	Black flying-fox	Pteropus alecto	Laurasiatheria
+pteVam1	Broad	Jul 2008	Megabat	Pteropus vampyrus	Laurasiatheria
+myoDav1	ASM32734v1	Aug 2012	David's myotis bat	Myotis davidii	Laurasiatheria
+myoLuc2	Broad Institute Myoluc2.0	Jul 2010	Microbat	Myotis lucifugus	Laurasiatheria
+NA	NA	NA	Greater mouse-eared bat	Myotis myotis	Laurasiatheria
+eptFus1	EptFus1.0	Jul 2012	Big brown bat	Eptesicus fuscus	Laurasiatheria
+eriEur2	EriEur2.0	May 2012	Hedgehog	Erinaceus europaeus	Laurasiatheria
+sorAra2	Broad	Aug 2008	Shrew	Sorex araneus	Laurasiatheria
+conCri1	ConCri1.0	Mar 2012	Star-nosed mole	Condylura cristata	Laurasiatheria
+loxAfr3	Broad	Jul 2009	Elephant	Loxodonta africana	Afrotheria
+eleEdw1	EleEdw1.0	Aug 2012	Cape elephant shrew	Elephantulus edwardii	Afrotheria
+triMan1	Broad v1.0	Oct 2011	Manatee	Trichechus manatus latirostris	Afrotheria
+chrAsi1	ChrAsi1.0	Aug 2012	Cape golden mole	Chrysochloris asiatica	Afrotheria
+echTel2	Broad	Nov 2012	Tenrec	Echinops telfairi	Afrotheria
+oryAfe1	OryAfe1.0	May 2012	Aardvark	Orycteropus afer afer	Afrotheria
+dasNov3	Baylor	Dec 2011	Armadillo	Dasypus novemcinctus	Mammal
+monDom5	Broad	Oct 2006	Opossum	Monodelphis domestica	Mammal
+sarHar1	WTSI Devil_ref v7.0	Feb 2011	Tasmanian devil	Sarcophilus harrisii	Mammal
+macEug2	TWGS Meug_1.1	Sep 2009	Wallaby	Macropus eugenii	Mammal
+ornAna1	WUGSC 5.0.1	Mar 2007	Platypus	Ornithorhynchus anatinus	Mammal
+falChe1	F_cherrug_v1.0	Feb 2013	Saker falcon	Falco cherrug	Aves
+falPer1	F_peregrinus_v1.0	Feb 2013	Peregrine falcon	Falco peregrinus	Aves
+ficAlb2	FicAlb1.5	Jun 2013	Collared flycatcher	Ficedula albicollis	Aves
+zonAlb1	ASM38545v1	Apr 2013	White-throated sparrow	Zonotrichia albicollis	Aves
+geoFor1	GeoFor_1.0	Apr 2012	Medium ground finch	Geospiza fortis	Aves
+taeGut2	WashU taeGut324	Feb 2013	Zebra finch	Taeniopygia guttata	Aves
+pseHum1	PseHum1.0	Jan 2013	Tibetan ground jay	Pseudopodoces humilis	Aves
+melUnd1	WUSTL v6.3	Sep 2011	Budgerigar	Melopsittacus undulatus	Aves
+amaVit1	AV1	Jan 2013	Parrot	Amazona vittata	Aves
+araMac1	SMACv1.1	Jun 2013	Scarlet macaw	Ara macao	Aves
+colLiv1	Cliv_1.0	Feb 2013	Rock pigeon	Columba livia	Aves
+anaPla1	BGI_duck_1.0	Apr 2013	Mallard duck	Anas platyrhynchos	Aves
+galGal4	ICGSC Gallus_gallus-4.0	Nov 2011	Chicken	Gallus gallus	Aves
+melGal1	TGC Turkey_2.01	Dec 2009	Turkey	Meleagris gallopavo	Aves
+allMis1	allMis0.2	Aug 2012	American alligator	Alligator mississippiensis	Sarcopterygii
+cheMyd1	CheMyd_1.0	Mar 2013	Green seaturtle	Chelonia mydas	Sarcopterygii
+chrPic2	v3.0.3	Mar 2014	Painted turtle	Chrysemys picta bellii	Sarcopterygii
+pelSin1	PelSin_1.0	Oct 2011	Chinese softshell turtle	Pelodiscus sinensis	Sarcopterygii
+apaSpi1	ASM38561v1	May 2013	Spiny softshell turtle	Apalone spinifera	Sarcopterygii
+anoCar2	Broad AnoCar2.0	May 2010	Lizard	Anolis carolinensis	Sarcopterygii
+xenTro7	JGI 7.0	Sep 2012	X. tropicalis	Xenopus tropicalis	Sarcopterygii
+NA	NA	NA	X. laevis	Xenopus laevis	Sarcopterygii
+latCha1	Broad	Aug 2011	Coelacanth	Latimeria chalumnae	Sarcopterygii
+tetNig2	Genoscope 8.0	Mar 2007	Tetraodon	Tetraodon nigroviridis	Fish
+fr3	FUGU5	Oct 2011	Fugu	Takifugu rubripes	Fish
+takFla1	version 1 of Takifugu flavidus genome	May 2013	Yellowbelly pufferfish	Takifugu flavidus	Fish
+oreNil2	Broad oreNil1.1	Jan 2011	Nile tilapia	Oreochromis niloticus	Fish
+neoBri1	NeoBri1.0	May 2011	Princess of Burundi	Neolamprologus brichardi	Fish
+hapBur1	AstBur1.0	Oct 2011	Burton's mouthbreeder	Haplochromis burtoni	Fish
+mayZeb1	MetZeb1.1	Mar 2012	Zebra mbuna	Maylandia zebra	Fish
+punNye1	PunNye1.0	Oct 2011	Pundamilia nyererei	Pundamilia nyererei	Fish
+oryLat2	NIG/UT MEDAKA1	Oct 2005	Medaka	Oryzias latipes	Fish
+xipMac1	Xiphophorus_maculatus-4.4.2	Jan 2012	Southern platyfish	Xiphophorus maculatus	Fish
+gasAcu1	Broad	Feb 2006	Stickleback	Gasterosteus aculeatus	Fish
+gadMor1	Genofisk GadMor_May2010	May 2010	Atlantic cod	Gadus morhua	Fish
+danRer10	Zv10	Sep 2014	Zebrafish	Danio rerio	Fish
+astMex1	Astyanax_mexicanus-1.0.2	Apr 2013	Mexican tetra (cavefish)	Astyanax mexicanus	Fish
+lepOcu1	LepOcu1	Dec 2011	Spotted gar	Lepisosteus oculatus	Fish
+petMar2	WUGSC 7.0	Sep 2010	Lamprey	Petromyzon marinus	Fish

@@ -1,7 +1,7 @@
 setwd("/Users/jayoung/Desktop/mac_workStuff/domesticated_capsid")
 library(ape)
 source("scripts/tree_rotate_all_nodes.R")
-source("scripts/multiz_results_functions.R")
+source("scripts/parseAlignmentReports_functions.R")
 
 ######### read in species info, tree, etc
 

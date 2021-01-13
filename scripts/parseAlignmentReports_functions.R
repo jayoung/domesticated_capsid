@@ -1,3 +1,100 @@
+### a function to save an Excel file containing a bunch of tables in a named list, one worksheet per table
+saveReports <- function(tablesList=NULL, outFile=NULL) {
+    if (is.null(outFile)) { stop("\n\nERROR - must specify filename\n\n") }
+    if (is.null(names(tablesList))) { stop("\n\nERROR - tablesList object must have names\n\n") }
+    myWB <- createWorkbook()
+    for (tableName in names(tablesList)) {
+        addWorksheet(myWB, tableName, zoom=120)
+        freezePane(myWB, tableName, firstRow = TRUE)
+        writeData(myWB, tableName, tablesList[[tableName]], borderStyle="none")
+        ## add filter to header row
+        addFilter(myWB, tableName, row=1, cols=1:ncol(tablesList[[tableName]]))
+    }
+    #### save Excel file
+    saveWorkbook(myWB, outFile, overwrite = TRUE)
+}
+
+
+readBlastBasedPseudReport <- function(file, 
+                                      info=species_dat) {
+    cat("### processing file",file,"\n")
+    x <- read.delim(file)
+    x[,"Pseud"] <- factor(x[,"Pseud"], 
+                        levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
+    seqNameSplits <- lapply(x[,"Seq"], splitSeqName)
+    x[,"Locus"] <- sapply(seqNameSplits, "[[", "Locus")
+    x[,"Species"] <- sapply(seqNameSplits, "[[", "Species")
+    x[,"Accession"] <- sapply(seqNameSplits, "[[", "Accession")
+    
+    # check whether all species are in the info file
+    if ( sum(!x[,"Species"] %in% info[,"Latin.name"]) > 0 ) {
+        missingSpecies <- setdiff(pseuds[,"Species"], info[,"Latin.name"])
+        cat("    WARNING - there are species in the blast result table that are not in the species info table\n")
+        for (missing in missingSpecies) { cat("         ",missing,"\n") }
+    }
+    return(x)
+}
+
+
+readBlastBasedPseudReport_old <- function(pseudReportFile, 
+                              tree=tree_latinNames, 
+                              info=species_dat) {
+    require(stringr) # str_extract function - better non-greedy pattern matching
+    ## start the table using the tree and info table
+    results <- data.frame(speciesName=tree$tip.label, row.names=tree$tip.label)
+    results[,"speciesName"] <- gsub("_", " ",results[,"speciesName"] )
+    results[,"commonName"] <- info[ match(results[,"speciesName"], info[,"Latin.name"]), "Common.name" ]
+    results[,"status"] <- factor(NA, 
+                                 levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
+
+    ## read in the pseudogene report
+    if(!file.exists(pseudReportFile)) {
+        stop("ERROR - cannot find pseudReportFile",pseudReportFile," - check pseudReportFileSuffix option\n")
+    }
+    pseudReport <- read.delim(pseudReportFile, header=TRUE) 
+    
+    ## add intact/pseud status using x[["pseudReport"]]
+    pseuds <- pseudReport
+    seqNameSplits <- lapply(pseuds[,"Seq"], splitSeqName)
+    pseuds[,"Locus"] <- sapply(seqNameSplits, "[[", "Locus")
+    pseuds[,"Species"] <- sapply(seqNameSplits, "[[", "Species")
+    pseuds[,"Accession"] <- sapply(seqNameSplits, "[[", "Accession")
+    #return(pseuds)
+    #return(results)
+    # check whether all species are in the info file
+    if ( sum(!pseuds[,"Species"] %in% results[,"speciesName"]) > 0 ) {
+        missingSpecies <- setdiff(pseuds[,"Species"], results[,"speciesName"])
+        for (missing in missingSpecies) { 
+            cat("     ",missing,"\n")
+        }
+        stop("\n\nERROR - there are species in the blast result table that are not in the species info table\n\n")
+    }
+    ## now add to results table
+    results[ match(pseuds[,"Species"], results[,"speciesName"]), "status"] <- pseuds[,"Pseud"]
+    ## don't return empty rows
+    results <- results[which(!is.na(results[,"status"])),]
+    return(results)
+} 
+
+## splits seq names of the type I get from my blast pipeline into useful components.  Probably not the most efficient way to do this, but that's OK.
+splitSeqName <- function(oneSeqname) {
+    output <- list()
+    
+    ## locus - first part of name
+    output[["Locus"]] <- sapply(strsplit(oneSeqname, "_"), "[[", 1)
+    oneSeqname <- gsub(paste(output[["Locus"]] , "_", sep=""), "", oneSeqname)
+    
+    ## need to strip off accessions that look one of two ways: AF162777 XM_005005200
+    species <- gsub("_NM_","_NM", oneSeqname)
+    species <- gsub("_XM_","_XM", species)
+    accToStrip <- str_extract(species, "_[A-Z]+\\d+") 
+    species <- gsub(accToStrip, "", species)
+    accession <- gsub(paste(species, "_", sep=""), "", oneSeqname)
+    output[["Species"]] <- gsub("_", " ",species)
+    output[["Accession"]] <- accession
+    return(output)
+}
+
 readMultizResults <- function(analysisName, 
                               resultsDir="multiz_alignments",
                               refAssembly="hg38", 

@@ -865,7 +865,7 @@ cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlig
 ## check the ingroups are distant from the outgroups: they are. 
 # When I query with human CCDC8, all CCDC8 ingroups have e-value <  3e-115 and all outgroups >  1e-15
 splitfastafileextractoneseq.pl ../../PNMAseqsToAlign3edited_plusOutgroup.peps.fa.nogaps aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040
-tblastn -query aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa  -db PNMAseqsToAlign3edited.fa.nogaps -out aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa.tblastn_seqsToAln3 
+tblastn -query aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa  -db ../../PNMAseqsToAlign3edited.fa.nogaps -out aln-PNMA-CCDC8_CCDC8_Homo_sapiens_NM_032040.fa.tblastn_seqsToAln3 
 
 
 ## now make a tree for CCDC8, without the gypsy outgroup, because it aligns poorly and for only 70 amino acids

@@ -1,5 +1,5 @@
 Gene_type	Count	File
-Ref	2	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
-Intact	22	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
-Truncated	0	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
-Pseud	10	PNMA/masterAlignments/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
+Ref	2	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
+Intact	17	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
+Truncated	0	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa
+Pseud	10	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa

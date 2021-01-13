@@ -1,0 +1,245 @@
+FASTA format detected.MSA read in FASTA format (Taxa = 118, Length =  328).WARNING: ID for sequence "aln-PNMA-MOAP1_Moap1_Cricetulus_griseus_XM_027419169" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-MOAP1_Moap1_Mus_musculus_BC055374" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_0".WARNING: ID for sequence "aln-PNMA-MOAP1_Moap1_Rattus_norvegicus_NM_001013101" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_1".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Sus_scrofa_XM_021099631" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_2".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Pteropus_alecto_XM_006925542" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_3".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Macaca_mulatta_XM_001089776" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_4".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Loxodonta_africana_XM_023546521" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_5".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Homo_sapiens_NM_022151" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_6".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Felis_catus_XM_023255976" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_7".WARNING: ID for sequence "aln-PNMA-MOAP1_MOAP1_Callithrix_jacchus_XM_009006472" is longer than 10 characters. ID truncated to "aln-PNMA-M"WARNING: ID for sequence "aln-PNMA-M" renamed to "aln-PNMA_8".WARNING: ID for sequence "aln-PNMA-PNMA1_AK028331_Mus_musculus_AK028331" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-PNMA1_Pnma1_Cricetulus_griseus_XM_003505132" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNMA_9".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Sus_scrofa_XM_021099497" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_10".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Pteropus_alecto_XM_006925429" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_11".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Ovis_aries_XM_027972000" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_12".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Macaca_mulatta_NM_001348395" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_13".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Loxodonta_africana_XM_010588732" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_14".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Homo_sapiens_NM_006029" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_15".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Felis_catus_XM_003987811" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_16".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Equus_caballus_NM_001256914" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_17".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Dasypus_novemcinctus_XM_004484970" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_18".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Canis_lupus_familiaris_XM_547896" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_19".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Callithrix_jacchus_XM_002754094" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_20".WARNING: ID for sequence "aln-PNMA-PNMA1_PNMA1_Bos_taurus_BC147997" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_21".WARNING: ID for sequence "aln-PNMA-PNMA1_Ma1_Rattus_norvegicus_AF335505" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_22".WARNING: ID for sequence "aln-PNMA-PNMA1_LOC101421238_Dasypus_novemcinctus_XM_012525533" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_23".WARNING: ID for sequence "aln-PNMA-PNMA2_AK043718_Mus_musculus_AK043718" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_24".WARNING: ID for sequence "aln-PNMA-PNMA2_Pnma2_Rattus_norvegicus_NM_001107272" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_25".WARNING: ID for sequence "aln-PNMA-PNMA2_Pnma2_Cricetulus_griseus_XM_035452902" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_26".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Loxodonta_africana_XM_003412366" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_27".WARNING: ID for sequence "aln-PNMA-PNMA2_LOC101414877_Dasypus_novemcinctus_XM_004466515" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_28".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Sus_scrofa_XM_005670445" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_29".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Bos_taurus_BC112516" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_30".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Ovis_aries_XM_015093086" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_31".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Pteropus_alecto_XM_006916962" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_32".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Equus_caballus_XM_014737822" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_33".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Canis_lupus_familiaris_XM_005635683" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_34".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Felis_catus_XM_011281435" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_35".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Callithrix_jacchus_XM_008979085" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_36".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Homo_sapiens_NM_007257" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_37".WARNING: ID for sequence "aln-PNMA-PNMA2_PNMA2_Macaca_mulatta_NM_001257697" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_38".WARNING: ID for sequence "aln-PNMA-PNMA3_Pnma3_Rattus_norvegicus_NM_001106342" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_39".WARNING: ID for sequence "aln-PNMA-PNMA3_Pnma3_Mus_musculus_BC036726" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_40".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Felis_catus_XM_023249127" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_41".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Equus_caballus_NM_001257075" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_42".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Pteropus_alecto_XM_015592814" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_43".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Callithrix_jacchus_XM_008990061" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_44".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Homo_sapiens_NM_013364" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_45".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Macaca_mulatta_NM_001261481" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_46".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Loxodonta_africana_XM_010600785" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_47".WARNING: ID for sequence "aln-PNMA-PNMA3_PNMA3_Dasypus_novemcinctus_XM_012529423" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_48".WARNING: ID for sequence "aln-PNMA-PNMA5_Pnma5_Mus_musculus_NM_001100461" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_49".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Sus_scrofa_XM_021080492" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_50".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Loxodonta_africana_XM_010600776" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_51".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Macaca_mulatta_NM_001266536" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_52".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Dasypus_novemcinctus_XM_004469513" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_53".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Callithrix_jacchus_XM_008990058" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_54".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Ovis_aries_XM_027963453" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_55".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Pteropus_alecto_XM_006905162" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_56".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Equus_caballus_XM_014729269" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_57".WARNING: ID for sequence "aln-PNMA-PNMA5_LOC100763839_Cricetulus_griseus_XM_027385317" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_58".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Homo_sapiens_NM_001103150" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_59".WARNING: ID for sequence "aln-PNMA-PNMA5_PNMA5_Bos_taurus_XM_005227633" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_60".WARNING: ID for sequence "aln-PNMA-PNMA5_Pnma5_Rattus_norvegicus_NM_001107579" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_61".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Pteropus_alecto_XM_025049179" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_62".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Macaca_mulatta_XM_015128458" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_63".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Homo_sapiens_NM_032882" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_64".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Felis_catus_XM_023249749" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_65".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Canis_lupus_familiaris_XM_005641976" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_66".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Callithrix_jacchus_XM_003735848" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_67".WARNING: ID for sequence "aln-PNMA-PNMA6A_LOC101443008_Dasypus_novemcinctus_XM_004469512" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_68".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Loxodonta_africana_XM_010600786" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_69".WARNING: ID for sequence "aln-PNMA-PNMA6A_LOC100758339_Cricetulus_griseus_XM_035450105" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_70".WARNING: ID for sequence "aln-PNMA-PNMA6A_PNMA6A_Equus_caballus_XM_005615109" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_71".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6E_Homo_sapiens_NM_001367770" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_72".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC111766818_Dasypus_novemcinctus_XM_023592027" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_73".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC113837620_Cricetulus_griseus_XM_035450305" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_74".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC102148493_Equus_caballus_XM_014729271" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_75".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6F_Homo_sapiens_NM_001354980" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_76".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6E_Callithrix_jacchus_XM_035288480" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_77".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC101100193_Felis_catus_XM_023248986" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_78".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6F_Dasypus_novemcinctus_XM_023585789" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_79".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC114674918_Macaca_mulatta_XM_028842139" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_80".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC113837620_Cricetulus_griseus_XM_027439387" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_81".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6F_Macaca_mulatta_XM_015128459" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_82".WARNING: ID for sequence "aln-PNMA-PNMA6EF_PNMA6F_Equus_caballus_XM_023633706" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_83".WARNING: ID for sequence "aln-PNMA-PNMA6EF_LOC108589966_Callithrix_jacchus_XM_017968781" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_84".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Dasypus_novemcinctus_XM_023588060" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_85".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Macaca_mulatta_XM_015124310" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_86".WARNING: ID for sequence "aln-PNMA-PNMA8A_LOC101091323_Felis_catus_XM_006941089" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_87".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Ovis_aries_XM_015100609" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_88".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Pteropus_alecto_XM_006911819" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_89".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Homo_sapiens_NM_018215" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_90".WARNING: ID for sequence "aln-PNMA-PNMA8A_LOC100762167_Cricetulus_griseus_XM_035449107" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_91".WARNING: ID for sequence "aln-PNMA-PNMA8A_LOC108587752_Callithrix_jacchus_XM_017969214" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_92".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Bos_taurus_NM_001102512" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_93".WARNING: ID for sequence "aln-PNMA-PNMA8A_Pnma8a_Rattus_norvegicus_NM_001108473" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_94".WARNING: ID for sequence "aln-PNMA-PNMA8A_Pnmal1_Mus_musculus_BC048228" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_95".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Sus_scrofa_XM_005664614" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_96".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Loxodonta_africana_XM_023543184" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_97".WARNING: ID for sequence "aln-PNMA-PNMA8A_LOC102151906_Canis_lupus_familiaris_XM_022405152" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_98".WARNING: ID for sequence "aln-PNMA-PNMA8A_PNMA8A_Equus_caballus_XM_023651264" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PNM_99".WARNING: ID for sequence "aln-PNMA-PNMA8B_LOC113837381_Cricetulus_griseus_XM_035449308" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_100".WARNING: ID for sequence "aln-PNMA-PNMA8B_LOC113837381_Cricetulus_griseus_XM_035449309" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_101".WARNING: ID for sequence "aln-PNMA-PNMA8B_Pnmal2_Mus_musculus_NM_001099636" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_102".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Callithrix_jacchus_XM_002762260" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_103".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Homo_sapiens_NM_020709" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_104".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Macaca_mulatta_XM_001111896" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_105".WARNING: ID for sequence "aln-PNMA-PNMA8B_Pnma8b_Rattus_norvegicus_NM_001107481" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_106".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Dasypus_novemcinctus_XM_023586768" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_107".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Bos_taurus_XM_024979172" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_108".WARNING: ID for sequence "aln-PNMA-PNMA8B_AK143183_Mus_musculus_AK143183" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_109".WARNING: ID for sequence "aln-PNMA-PNMA8B_LOC118142878_Callithrix_jacchus_XM_035285972" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_110".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Equus_caballus_XM_023651265" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_111".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Loxodonta_africana_XM_003406697" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_112".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Ovis_aries_XM_015100610" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_113".WARNING: ID for sequence "aln-PNMA-PNMA8B_PNMA8B_Felis_catus_XM_023245918" is longer than 10 characters. ID truncated to "aln-PNMA-P"WARNING: ID for sequence "aln-PNMA-P" renamed to "aln-PN_114".WARNING: ID for sequence "MamGyp_gag#LTR/Gypsy" is longer than 10 characters. ID truncated to "MamGyp_gag"MSA successfully converted to PHYLIP format!
+
+----------------------------------------------------------------------------------------------
+ProtTest 3.4.2                      Fast selection of the best-fit models of protein evolution
+(c) 2009-2016   Diego Darriba (1,2), Guillermo Taboada (2), Ramón Doallo (2), David Posada (1)
+(1)                               Facultad de Biologia, Universidad de Vigo, 36200 Vigo, Spain
+(2)                    Facultade de Informática, Universidade da Coruña, 15071 A Coruña, Spain
+----------------------------------------------------------------------------------------------
+Manual:                                    http://darwin.uvigo.es/download/prottest_manual.pdf
+Homepage:                                                 http://github.com/ddarriba/prottest3
+Discussion group:                                     https://groups.google.com/group/prottest
+Contact:                                                  ddarriba@h-its.org, dposada@uvigo.es
+----------------------------------------------------------------------------------------------
+
+Version:  3.4.2 : 8th May 2016
+Date:     Wed Jan 13 10:07:50 PST 2021
+OS:       Linux (4.15.0-101-generic)
+Arch:     amd64
+Java:     11.0.2 (Oracle Corporation)
+PhyML:    /fh/fast/malik_h/grp/malik_lab_shared/prottest-3.4.2/bin/PhyML_3.0_linux64
+
+Citation: Darriba D, Taboada GL, Doallo R, Posada D. ProtTest 3: fast selection of best-fit 
+          models of protein evolution. Bioinformatics, 27:1164-1165, 2011
+
+
+ProtTest options
+----------------
+  Alignment file........... : PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.trim1_328.fa
+  Tree..................... : BioNJ
+  StrategyMode............. : Fixed BIONJ JTT
+  Candidate models......... : 
+    Matrices............... : JTT LG DCMut MtREV MtMam MtArt Dayhoff WAG RtREV CpREV Blosum62 VT HIVb HIVw FLU 
+    Distributions.......... : Uniform 
+    Observed frequencies... : false
+
+  Statistical framework
+    Sort models according to....: 
+       BIC 
+    Sample size.................: 328.0
+  Other options:
+    Display best tree in ASCII..: false
+    Display best tree in Newick.: false
+    Display consensus tree......: false
+    Verbose.....................: false
+
+**********************************************************
+Observed number of invariant sites: 0
+Observed aminoacid frequencies:
+ A: 0.088    C: 0.015    D: 0.045    E: 0.100    F: 0.031   
+ G: 0.065    H: 0.012    I: 0.037    K: 0.050    L: 0.124   
+ M: 0.028    N: 0.030    P: 0.055    Q: 0.049    R: 0.079   
+ S: 0.050    T: 0.038    V: 0.074    W: 0.020    Y: 0.012   
+
+**********************************************************
+
+Computing JTT...
+Computing DCMut...
+Computing LG...
+Computing MtREV...
+Computed: DCMut (-23850.32962)
+Computing MtMam...
+Computed: JTT (-23105.89299)
+Computing MtArt...
+Computed: MtREV (-25221.42244)
+Computing Dayhoff...
+Computed: MtArt (-26914.57032)
+Computing WAG...
+Computed: Dayhoff (-23847.13125)
+Computing RtREV...
+Computed: LG (-23782.27607)
+Computing CpREV...
+Computed: MtMam (-25897.71153)
+Computing Blosum62...
+Computed: WAG (-23626.07623)
+Computing VT...
+Computed: CpREV (-23870.71332)
+Computing HIVb...
+Computed: Blosum62 (-24239.59874)
+Computing HIVw...
+Computed: RtREV (-24190.02406)
+Computing FLU...
+Computed: VT (-23684.9973)
+Computed: HIVb (-23371.58818)
+Computed: HIVw (-24157.66118)
+Computed: FLU (-23770.93304)
+
+
+Model................................ : JTT
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23105.89
+     (seconds))
+
+Model................................ : LG
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23782.28
+     (seconds))
+
+Model................................ : DCMut
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23850.33
+     (seconds))
+
+Model................................ : MtREV
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 25221.42
+     (seconds))
+
+Model................................ : MtMam
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 25897.71
+     (seconds))
+
+Model................................ : MtArt
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 26914.57
+     (seconds))
+
+Model................................ : Dayhoff
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23847.13
+     (seconds))
+
+Model................................ : WAG
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23626.08
+     (seconds))
+
+Model................................ : RtREV
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 24190.02
+     (seconds))
+
+Model................................ : CpREV
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23870.71
+     (seconds))
+
+Model................................ : Blosum62
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 24239.60
+     (seconds))
+
+Model................................ : VT
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23685.00
+     (seconds))
+
+Model................................ : HIVb
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23371.59
+     (seconds))
+
+Model................................ : HIVw
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 24157.66
+     (seconds))
+
+Model................................ : FLU
+  Number of parameters............... : 233 (0 + 233 branch length estimates)
+ -lnL................................ = 23770.93
+     (seconds))
+
+************************************************************
+Date   :  Wed Jan 13 10:08:08 PST 2021
+Runtime:  0h:00:16
+
+
+
+***************************************************************************
+Best model according to BIC: JTT
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaBIC       BIC            BICw           -lnL           
+---------------------------------------------------------------------------
+JTT            0.00           47561.56       1.00           23105.89       
+HIVb           531.39         48092.95       0.00           23371.59       
+WAG            1040.37        48601.92       0.00           23626.08       
+VT             1158.21        48719.77       0.00           23685.00       
+FLU            1330.08        48891.64       0.00           23770.93       
+LG             1352.77        48914.32       0.00           23782.28       
+Dayhoff        1482.48        49044.03       0.00           23847.13       
+DCMut          1488.87        49050.43       0.00           23850.33       
+CpREV          1529.64        49091.20       0.00           23870.71       
+HIVw           2103.54        49665.09       0.00           24157.66       
+RtREV          2168.26        49729.82       0.00           24190.02       
+Blosum62       2267.41        49828.97       0.00           24239.60       
+MtREV          4231.06        51792.62       0.00           25221.42       
+MtMam          5583.64        53145.20       0.00           25897.71       
+MtArt          7617.35        55178.91       0.00           26914.57       
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
+
+***************************************************************************
+Best model according to LnL: JTT
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaLnL       LnL            LnLw           -lnL           
+---------------------------------------------------------------------------
+JTT            0.00           23105.89       1.00           23105.89       
+HIVb           265.70         23371.59       0.00           23371.59       
+WAG            520.18         23626.08       0.00           23626.08       
+VT             579.10         23685.00       0.00           23685.00       
+FLU            665.04         23770.93       0.00           23770.93       
+LG             676.38         23782.28       0.00           23782.28       
+Dayhoff        741.24         23847.13       0.00           23847.13       
+DCMut          744.44         23850.33       0.00           23850.33       
+CpREV          764.82         23870.71       0.00           23870.71       
+HIVw           1051.77        24157.66       0.00           24157.66       
+RtREV          1084.13        24190.02       0.00           24190.02       
+Blosum62       1133.71        24239.60       0.00           24239.60       
+MtREV          2115.53        25221.42       0.00           25221.42       
+MtMam          2791.82        25897.71       0.00           25897.71       
+MtArt          3808.68        26914.57       0.00           26914.57       
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models

@@ -1,0 +1,15 @@
+Seq	Pseud	Num_frameshifts	Num_stops	Ungapped_length
+MOAP1_Homo_sapiens_NM_022151	Reference	0	0	1056
+Moap1_Cricetulus_griseus_XM_027419169	Intact	0	0	1062
+Moap1_Mus_musculus_BC055374	Intact	0	0	1059
+MOAP1_Felis_catus_XM_023255976	Intact	0	0	1059
+MOAP_Equus_caballus_fromGenomic	Pseud	2	2	1054
+MOAP1_Loxodonta_africana_XM_023546521	Intact	0	0	1062
+MOAP1_Callithrix_jacchus_XM_009006472	Intact	0	0	1059
+MOAP1_Macaca_mulatta_XM_001089776	Intact	0	0	1056
+MOAP1_Pteropus_alecto_XM_006925542	Intact	0	0	1062
+MOAP1_Sus_scrofa_XM_021099631	Pseud	0	4	1062
+MOAP_Canis_lupus_familiaris_fromGenomic	Pseud	6	1	1016
+Moap1_Rattus_norvegicus_NM_001013101	Intact	0	0	1059
+MOAP_Ovis_aries_fromGenomic	Pseud	8	1	958
+MOAP_Bos_taurus_fromGenomic	Pseud	8	3	965

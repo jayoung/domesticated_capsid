@@ -32,7 +32,7 @@
         . Minimum length of an edge:			 1e-08
         . Optimise substitution model parameters:	 yes
         . Run ID:					 none
-        . Random seed:					 1610455744
+        . Random seed:					 1610558077
         . Subtree patterns aliasing:			 no
         . Version:					 3.3.20200621
         . Byte alignment:				 32
@@ -44,52 +44,47 @@
 
 
 
-. 202 patterns found (out of a total of 216 sites). 
+. 201 patterns found (out of a total of 216 sites). 
 
-. 35 sites without polymorphism (16.20%).
+. 36 sites without polymorphism (16.67%).
 
 
 . Computing pairwise distances...
 
 . Building BioNJ tree...
 
-. Note: taxon 'seq0015' is a duplicate of taxon 'seq0016'.
-. Note: taxon 'seq0013' is a duplicate of taxon 'seq0014'.
-. Note: taxon 'seq0007' is a duplicate of taxon 'seq0008'.
-
-. This analysis requires at least 17 MB of memory space.
+. This analysis requires at least 16 MB of memory space.
 
 
-. Score of initial tree: -3787.05
+. Score of initial tree: -3750.30
 
 . Starting first round of SPRs...
 
-	       9s |   1 | lnL=     -3736.7 | depth=    3/   40 | improvements=   9 | delta_lnL=    3.0/ 1000.0   +
+	       3s |   1 | lnL=     -3712.1 | depth=    3/   40 | improvements=   9 | delta_lnL=    2.6/ 1000.0  
 
 . Second round of optimization...
 
-	      16s |   2 | lnL=     -3737.4 | depth=    2/   36 | improvements=   8 | delta_lnL=    2.3/ 1000.0  
-	      22s |   3 | lnL=     -3740.0 | depth=    1/   20 | improvements=   8 | delta_lnL=    0.0/ 1000.0  
-	      27s |   4 | lnL=     -3736.0 | depth=    3/   16 | improvements=  10 | delta_lnL=    2.9/ 1000.0   +
-	      33s |   5 | lnL=     -3736.2 | depth=    1/   12 | improvements=   8 | delta_lnL=    0.0/ 1000.0  
-	      35s |   6 | lnL=     -3759.6 | depth=    3/    9 | improvements=  12 | delta_lnL=    3.6/   20.0  
-	      37s |   7 | lnL=     -3740.9 | depth=    1/    7 | improvements=  14 | delta_lnL=    0.0/   20.0  
-	      39s |   8 | lnL=     -3745.0 | depth=    2/    5 | improvements=  11 | delta_lnL=    5.2/   20.0  
-	      41s |   9 | lnL=     -3746.1 | depth=    2/    6 | improvements=  13 | delta_lnL=    7.2/   20.0  
-	      42s |  10 | lnL=     -3738.0 | depth=    2/    6 | improvements=  10 | delta_lnL=    5.3/   20.0  
-	      45s |  11 | lnL=     -3748.8 | depth=    2/    6 | improvements=   8 | delta_lnL=    1.0/   20.0  
-	      47s |  12 | lnL=     -3739.9 | depth=    1/    6 | improvements=   7 | delta_lnL=    0.0/   20.0  
-	      49s |  13 | lnL=     -3737.7 | depth=    2/    5 | improvements=   9 | delta_lnL=    7.2/   20.0  
+	       4s |   2 | lnL=     -3704.9 | depth=    2/   36 | improvements=  11 | delta_lnL=    2.4/ 1000.0   +
+	       6s |   3 | lnL=     -3707.4 | depth=    1/   20 | improvements=  13 | delta_lnL=    0.0/ 1000.0  
+	       7s |   4 | lnL=     -3702.0 | depth=    1/   16 | improvements=  19 | delta_lnL=    0.0/ 1000.0   +
+	       9s |   5 | lnL=     -3700.4 | depth=    3/   12 | improvements=   9 | delta_lnL=    6.5/ 1000.0   +
+	      10s |   6 | lnL=     -3705.3 | depth=    1/    9 | improvements=   7 | delta_lnL=    0.0/   20.0  
+	      10s |   7 | lnL=     -3703.3 | depth=    2/    7 | improvements=  11 | delta_lnL=    3.1/   20.0  
+	      11s |   8 | lnL=     -3706.0 | depth=    2/    6 | improvements=   8 | delta_lnL=    4.1/   20.0  
+	      11s |   9 | lnL=     -3703.5 | depth=    1/    6 | improvements=  11 | delta_lnL=    0.0/   20.0  
+	      12s |  10 | lnL=     -3703.2 | depth=    1/    5 | improvements=  13 | delta_lnL=    0.0/   20.0  
+	      13s |  11 | lnL=     -3698.3 | depth=    2/    5 | improvements=  14 | delta_lnL=    5.7/   20.0   +
+	      14s |  12 | lnL=     -3711.5 | depth=    1/    6 | improvements=   5 | delta_lnL=    0.0/   20.0  
 
 . Third round of optimization...
 
-	      59s |  14 | lnL=     -3732.5 | depth=    3/   10 | improvements=   6 | delta_lnL=    6.0/  100.0 | triple moves=   5   +
-	      72s |  15 | lnL=     -3732.4 | depth=    0/    8 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+	      16s |  13 | lnL=     -3696.3 | depth=    2/   10 | improvements=  11 | delta_lnL=    1.2/  100.0 | triple moves=   5   +
+	      22s |  14 | lnL=     -3696.0 | depth=    0/    8 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
 
 . Final optimisation steps...
 
 
-. Log likelihood of the current tree: -3732.427630528502049855888.
+. Log likelihood of the current tree: -3695.995873277855025662575.
 
 . Launch bootstrap analysis on the most likely tree...
 
@@ -107,6 +102,6 @@
 
 . Printing the most likely tree in file 'PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa.phyml_phyml_tree.txt'.
 
-. Time used 0h14m46s
+. Time used 0h5m9s
 
 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

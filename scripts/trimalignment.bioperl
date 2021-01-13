@@ -22,7 +22,7 @@ my $trimend = "undefined";
 ## regular = straight-up 1-based coords for start and end
 ## AAforNTalignment = working with a NT alignment, but specifying positions when that same alignment is viewed as AA
 my $coordSystem = "regular";
-#my $coordSystem = "AAforNTalignment";
+#my $coordSystem = "codons";
 
 
 ## get any non-default options from commandline
@@ -40,12 +40,12 @@ if (@ARGV == 0) {
 if (($trimstart eq "undefined") || ($trimend eq "undefined")) {
     die "\n\nterminating - you must specify start and end \n\n";
 }
-if (($coordSystem ne "regular") & ($coordSystem ne "AAforNTalignment")) {
-    die "\n\nterminating - coords must be either regular or AAforNTalignment\n\n";
+if (($coordSystem ne "regular") & ($coordSystem ne "codons")) {
+    die "\n\nterminating - coords must be either regular or codons\n\n";
 }
 
 
-if ($coordSystem eq "AAforNTalignment") {
+if ($coordSystem eq "codons") {
     print "\n\nScript specifies that coordinates are in amino acids, for a nucleotide alignment. Converting coordinates\n\n";
     print "    converted amino acid coordinates to corresponding nucleotide positions\n";
     $trimstart = (($trimstart - 1) * 3) + 1;

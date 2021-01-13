@@ -17,7 +17,6 @@ saveReports <- function(tablesList=NULL, outFile=NULL) {
 
 readBlastBasedPseudReport <- function(file, 
                                       info=species_dat) {
-    cat("### processing file",file,"\n")
     x <- read.delim(file)
     x[,"Pseud"] <- factor(x[,"Pseud"], 
                         levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
@@ -34,47 +33,6 @@ readBlastBasedPseudReport <- function(file,
     }
     return(x)
 }
-
-
-readBlastBasedPseudReport_old <- function(pseudReportFile, 
-                              tree=tree_latinNames, 
-                              info=species_dat) {
-    require(stringr) # str_extract function - better non-greedy pattern matching
-    ## start the table using the tree and info table
-    results <- data.frame(speciesName=tree$tip.label, row.names=tree$tip.label)
-    results[,"speciesName"] <- gsub("_", " ",results[,"speciesName"] )
-    results[,"commonName"] <- info[ match(results[,"speciesName"], info[,"Latin.name"]), "Common.name" ]
-    results[,"status"] <- factor(NA, 
-                                 levels=c("Reference", "Intact", "Truncated", "Pseud", "Absent"))
-
-    ## read in the pseudogene report
-    if(!file.exists(pseudReportFile)) {
-        stop("ERROR - cannot find pseudReportFile",pseudReportFile," - check pseudReportFileSuffix option\n")
-    }
-    pseudReport <- read.delim(pseudReportFile, header=TRUE) 
-    
-    ## add intact/pseud status using x[["pseudReport"]]
-    pseuds <- pseudReport
-    seqNameSplits <- lapply(pseuds[,"Seq"], splitSeqName)
-    pseuds[,"Locus"] <- sapply(seqNameSplits, "[[", "Locus")
-    pseuds[,"Species"] <- sapply(seqNameSplits, "[[", "Species")
-    pseuds[,"Accession"] <- sapply(seqNameSplits, "[[", "Accession")
-    #return(pseuds)
-    #return(results)
-    # check whether all species are in the info file
-    if ( sum(!pseuds[,"Species"] %in% results[,"speciesName"]) > 0 ) {
-        missingSpecies <- setdiff(pseuds[,"Species"], results[,"speciesName"])
-        for (missing in missingSpecies) { 
-            cat("     ",missing,"\n")
-        }
-        stop("\n\nERROR - there are species in the blast result table that are not in the species info table\n\n")
-    }
-    ## now add to results table
-    results[ match(pseuds[,"Species"], results[,"speciesName"]), "status"] <- pseuds[,"Pseud"]
-    ## don't return empty rows
-    results <- results[which(!is.na(results[,"status"])),]
-    return(results)
-} 
 
 ## splits seq names of the type I get from my blast pipeline into useful components.  Probably not the most efficient way to do this, but that's OK.
 splitSeqName <- function(oneSeqname) {

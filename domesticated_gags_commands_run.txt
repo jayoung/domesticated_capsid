@@ -885,7 +885,17 @@ cp ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames
 
 ../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.peps.degap_0.3.fa
     
+# trim in-frame to get decent alignment to use in PAML:
+manually made PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.trimPositionsCodons.txt
+
+../../../../../scripts/trimalignmentmulti.bioperl -coords=codons PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.trimPositionsCodons.txt PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.fa
+
+
 # dN/dS
+../../../../../scripts/makeTreeAndRunPAML.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_CCDC8_aln1_NT.addGroupNames.segmentsJoined.fa
+
+dN/dS = 0.145 (whole gene minus poorly aligned chunks, 14 placental mammals, dS tree len 3.3)
+
 
 xx I should add an option to removegapsfromalignmentifsomeproportionofseqshavegap.pl for in-frame only gap removal
 xx or, add an option to removegapsfromalignmentinframeonly.pl to consider some proportion of seqs
@@ -928,15 +938,15 @@ convertStarStopToGap.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_al
 module load Java
 java -jar ~/malik_lab_shared/prottest-3.4.2/prottest-3.4.2.jar -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.noStop.fa -threads 4 > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.noStop.fa.prottest.out
 module purge
-
+grep 'Best' PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.noStop.fa.prottest.out
 
 ../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa
-
+    xxxx running
 
 # amino acid tree WITH gypsy outgroup:
 
 
-# tried adding outgroup to existing alignment, but there was an error, I'm guessing doe to presence of stop codons
+# tried adding outgroup to existing alignment, but there was an error, I'm guessing due to presence of stop codons
 mafft --leavegappyregion --add ../../.././outgroups/MamGyp_gag#LTR_Gypsy.fa --reorder PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.fa > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.fa
 # ERROR! The original 34 sequences must be aligned
 # alignmentlength = 443, but strlen(seq[1])=445
@@ -953,21 +963,146 @@ mafft  PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_pl
 ../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.fa
 ../../../../../scripts/trimalignment.bioperl -start=1 -end=216 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.fa
 
-
-
 # prottest - chooses JTT
 module load Java
 java -jar ~/malik_lab_shared/prottest-3.4.2/prottest-3.4.2.jar -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa -threads 4 > PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa.prottest.out
 module purge
 
+grep 'Best' PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa.prottest.out
+
 # tree
 ../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames_plusOutgroup.peps.aln1.degap_0.3.trim1_216.fa
-    
-PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa_PHYMLtree
+    xxx running
+
+cd PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa_PHYMLtree
 
 reorderseqs_treeorder.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa_PHYMLtree/PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.addGroupNames.peps.degap_0.3.fa.phyml_phyml_tree.txt.names
 
+## get nucleotide alignments for dN/dS analysis - separate 12 and 18, without rodents, without Afrotheria/Xenarthra
 
+cp ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa .
+
+manually make ZCCHC12seqsForPAML.txt and ZCCHC18seqsForPAML.txt
+
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa ZCCHC12seqsForPAML.txt
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_ZCCs_aln1_NT.fa ZCCHC18seqsForPAML.txt
+
+../../../../../scripts/removegapsfromalignmentinframeonly.pl ZCCHC12seqsForPAML.txt.fa  ZCCHC18seqsForPAML.txt.fa 
+
+../../../../../scripts/makeTreeAndRunPAML.pl ZCCHC12seqsForPAML.txt.fa.degapcodon ZCCHC18seqsForPAML.txt.fa.degapcodon
+
+
+#### tree and dN/dS for PNMAs other than ZCCs and CCDC8
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others
+
+xxx actually do this with protein seqs where I added group names
+
+cat ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA5_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln1_NT.addGroupNames.peps.fa ../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8B_aln1_NT.addGroupNames.peps.fa > PNMAothers_AA.fa
+removegapsfromseq.bioperl PNMAothers_AA.fa 
+
+### align proteins, no outgroup
+mafft PNMAothers_AA.fa.nogaps > PNMAothers_AA.aln1.fa
+
+### align proteins, with outgroup
+cat PNMAothers_AA.fa.nogaps ../../../outgroups/MamGyp_gag#LTR_Gypsy.fa > PNMAothers_AA.fa.nogaps.plusOutgroup.fa
+
+mafft PNMAothers_AA.fa.nogaps.plusOutgroup.fa > PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.fa
+
+# degap, trim
+../../../../../scripts/removegapsfromalignmentifsomeproportionofseqshavegap.pl -threshold=0.3 PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.fa
+    manually determine trim coords: 1-328
+../../../../../scripts/trimalignment.bioperl -start=1 -end=328 PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.fa
+
+
+
+# prottest - chooses JTT
+module load Java
+java -jar ~/malik_lab_shared/prottest-3.4.2/prottest-3.4.2.jar -i PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.trim1_328.fa -threads 4 > PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.trim1_328.fa.prottest.out
+module purge
+
+grep 'Best' PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.trim1_328.fa.prottest.out
+
+
+# tree
+../../../../../scripts/runPHYML.pl -type=aa -model=JTT -boots=100 -threads=10 -removeBlen=0 PNMAothers_AA.fa.nogaps.plusOutgroup.aln1.degap_0.3.trim1_328.fa
+     xxxxx running
+
+
+### MOAP-only analysis
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_MOAP
+
+xx NT aln, check trimming, check for duplicate species, make tree and check, dN/dS
+
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa .
+
+##  use blastn to get MOAP from some missing species - cow, sheep, horse, dog
+
+removegapsfromseq.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa
+
+mkdir PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa.nogaps_individualSeqs
+
+cd PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa.nogaps_individualSeqs/
+splitfastafile.bioperl ../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa.nogaps
+
+# dog - use cat as query
+blastn -task blastn -query MOAP1_Felis_catus_XM_023255976.fa -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -out  MOAP1_Felis_catus_XM_023255976.fa.blastn_canFam3 -num_threads 4
+    chr8:62393047-62394092 (- strand)
+blastdbcmd -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa  -entry chr8 -range 62393047-62394092 -strand minus -out dog_MOAP.fa
+    edited name to MOAP_Canis_lupus_familiaris_fromGenomic
+
+# sheep - use cat as query
+blastn -task blastn -query MOAP1_Felis_catus_XM_023255976.fa -db ~/public_databases/UCSC/sheep_Aug2012/oviAri3.fa -out  MOAP1_Felis_catus_XM_023255976.fa.blastn_oviAri3 -num_threads 4
+    chr18:56744796-56745761  (- strand)
+blastdbcmd -db ~/public_databases/UCSC/sheep_Aug2012/oviAri3.fa -entry chr18 -range 56744796-56745761 -strand minus -out sheep_MOAP.fa
+    edited name to MOAP_Ovis_aries_fromGenomic
+
+# cow - use cat as query
+blastn -task blastn -query MOAP1_Felis_catus_XM_023255976.fa -db ~/public_databases/UCSC/cow_Jun2014/bosTau8.fa -out  MOAP1_Felis_catus_XM_023255976.fa.blastn_bosTau8 -num_threads 4
+    chr21:58402927-58403899  - strand
+blastdbcmd -db ~/public_databases/UCSC/cow_Jun2014/bosTau8.fa -entry chr21 -range 58402927-58403899 -strand minus -out cow_MOAP.fa
+    edited name to MOAP_Bos_taurus_fromGenomic
+
+# horse - use cat as query
+blastn -task blastn -query MOAP1_Felis_catus_XM_023255976.fa -db ~/public_databases/UCSC/horse_Jan2018/equCab3.fa -out  MOAP1_Felis_catus_XM_023255976.fa.blastn_equCab3 -num_threads 4
+    chr24:36391801-36392854 (- strand)
+blastdbcmd -db ~/public_databases/UCSC/horse_Jan2018/equCab3.fa -entry chr24 -range 36391801-36392854 -strand minus -out horse_MOAP.fa
+    edited name to MOAP_Equus_caballus_fromGenomic
+
+# add these seqs cow_MOAP.fa sheep_MOAP.fa dog_MOAP.fa horse_MOAP.fa
+cat cow_MOAP.fa sheep_MOAP.fa dog_MOAP.fa horse_MOAP.fa > newMOAP1seqs.fa
+/home/jayoung/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl newMOAP1seqs.fa
+   all do blast back to MOAP1
+more newMOAP1seqs.fa_blastBackCheck/blastBacks/*.blastnRefDB
+
+cat ../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1_NT.fa.nogaps newMOAP1seqs.fa > ../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_toAln2.fa
+
+cd  ../
+/home/jayoung/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runMACSEsimpleInFrameAlignment.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_toAln2.fa
+     
+  trim/edit that alignment, call it PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa 
+move it to the masterAlignments dir and rerun the pseudReport script
+
+cp PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_toAln2_aln1_NT.fa PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa 
+    edit
+cp PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa ../../../
+cd ../../../
+mv PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln1* old
+
+../../../scripts/checkAlignmentFrameshiftsStops.bioperl -findFullLenRefSeqs=1 -geneField=2 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa
+
+../../../scripts/addAlnNameToSeqNames.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa
+translate1frame.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.addGroupNames.fa 
+
+cow, sheep, horse, dog are all pseudogenes
+
+    alignment is good.  
+    make a tree. 
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa
+     tree looks as expected.
+
+
+xxx get dN/dS of just intact genes
 
 
 ##### PNMA/SIRH families:

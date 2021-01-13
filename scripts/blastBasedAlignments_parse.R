@@ -52,11 +52,9 @@ analysisNames <- sapply( strsplit(analysisNames, "\\."), function(x) {
     return(y)
 })
     
-# xxx need to deal with situations where there is >1 sequence for a species in an alignment e.g pseudReports[["PNMA_PNMA6EF"]]
-
-
 pseudReports <- lapply(pseudReportFiles, readBlastBasedPseudReport)
 names(pseudReports) <- analysisNames
+
 
 # simple list of species in any analysis
 speciesAnalyzed <- unique(  unlist( sapply(pseudReports, "[[", "Species"))  )
@@ -84,18 +82,3 @@ plot.phylo(speciesAnalyzed_tree,
 dev.off()
 
 
-#xxxx old code:
-pdf(height=7,width=11, file="plots/geneStatus_plots_multizMafs.pdf")
-plotStatusManyGenes(analysisNames)
-dev.off()
-
-
-
-
-
-pdf(height=7,width=11, file="plots/geneStatus_plots_liftOverAlns_justCDS.pdf")
-plotStatusManyGenes(analysisNames, 
-                    tree=tree_placMammals_liftOverSubset_commonNames,
-                    resultsTables=liftOver_results,
-                    myTitle="Gene status in placental mammals\n(liftOver seqs, just CDS, MACSE aligned)")
-dev.off()

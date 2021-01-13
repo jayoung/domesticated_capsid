@@ -1102,7 +1102,130 @@ cow, sheep, horse, dog are all pseudogenes
      tree looks as expected.
 
 
-xxx get dN/dS of just intact genes
+## double-check cat seq is complete, and the gene prediction didn't have a fake intron introduced to get around a frameshift/stop
+
+blastn -task blastn -query MOAP1_Felis_catus_XM_023255976.fa -db ~/public_databases/UCSC/cat_Nov2017/felCat9.fa -out  MOAP1_Felis_catus_XM_023255976.fa.blastn_felCat9 -num_threads 4
+
+
+## get dN/dS of just intact genes
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_MOAP1_aln2_NT.fa MOAP1_intactGenes.txt 
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/removegapsfromalignmentinframeonly.pl MOAP1_intactGenes.txt.fa 
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl MOAP1_intactGenes.txt.fa.degapcodon
+
+#### PNMA1 analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA1
+
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.fa .
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.fa PNMA1_Homo_sapiens_NM_006029
+
+blastn -task blastn -query PNMA1_Homo_sapiens_NM_006029.fa -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA1_Homo_sapiens_NM_006029.fa.blastn_seqsToAln3 
+    clear separation between PNMA1 and non-PNMA1 hits
+
+# check alignment
+great alignment. two Dasypus seqs, only 95% identical
+
+both Dasypus seqs look like PNMA1
+
+/home/jayoung/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/checkOrthologsBlastBackOKtoSameGroupSeq.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.fa
+
+# tree
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.fa
+    tree looks as expected
+
+# remove both of the two Dasypus seqs and run PAML
+
+made this: PNMA1forPAML.txt
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA1_aln1_NT.fa PNMA1forPAML.txt
+
+(and it's such a good alignment there are no gaps)
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA1forPAML.txt.fa
+
+   dN/dS is 0.06165
+
+
+###### PNMA2 analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA2
+
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa .
+
+# check alignment
+great alignment. 
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa PNMA2_Homo_sapiens_NM_007257
+removegapsfromseq.bioperl PNMA2_Homo_sapiens_NM_007257.fa
+blastn -task blastn -query PNMA2_Homo_sapiens_NM_007257.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA2_Homo_sapiens_NM_007257.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA2 and non-PNMA2 hits
+
+
+# tree
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa
+    tree looks more or less as expected
+
+# run PAML on the whole thing
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa
+
+   dN/dS is 0.12210
+
+
+###### PNMA3 analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA3
+
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa .
+
+# check alignment - OK
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa PNMA3_Homo_sapiens_NM_013364
+removegapsfromseq.bioperl PNMA3_Homo_sapiens_NM_013364.fa
+blastn -task blastn -query PNMA3_Homo_sapiens_NM_013364.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA3_Homo_sapiens_NM_013364.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA3 and non-PNMA3 hits
+
+# tree
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa
+    tree looks as expected
+
+
+# started to get missing seqs from pig, cow, sheep, dog.  use horse or cat seq as query for all. 
+but did not finish it.
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa PNMA3_Equus_caballus_NM_001257075
+removegapsfromseq.bioperl PNMA3_Equus_caballus_NM_001257075.fa
+
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa PNMA3_Felis_catus_XM_023249127
+removegapsfromseq.bioperl PNMA3_Felis_catus_XM_023249127.fa
+
+
+# pig
+blastn -task blastn -query PNMA3_Equus_caballus_NM_001257075.fa.nogaps -db ~/public_databases/UCSC/pig_Feb2017/susScr11.fa -out  PNMA3_Equus_caballus_NM_001257075.fa.nogaps.blastn_susScr11 -num_threads 4
+
+# cow
+blastn -task blastn -query PNMA3_Equus_caballus_NM_001257075.fa.nogaps -db ~/public_databases/UCSC/cow_Jun2014/bosTau8.fa -out  PNMA3_Equus_caballus_NM_001257075.fa.nogaps.blastn_bosTau8 -num_threads 4
+    xx two equally good matches
+
+# sheep
+blastn -task blastn -query PNMA3_Equus_caballus_NM_001257075.fa.nogaps -db ~/public_databases/UCSC/sheep_Aug2012/oviAri3.fa -out  PNMA3_Equus_caballus_NM_001257075.fa.nogaps.blastn_oviAri3 -num_threads 4
+    could probably get this
+    
+# dog
+blastn -task blastn -query PNMA3_Equus_caballus_NM_001257075.fa.nogaps -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -out  PNMA3_Equus_caballus_NM_001257075.fa.nogaps.blastn_canFam3 -num_threads 4
+blastn -task blastn -query PNMA3_Felis_catus_XM_023249127.fa.nogaps -db ~/public_databases/UCSC/dog_Sep2011/canFam3.fa -out  PNMA3_Felis_catus_XM_023249127.fa.nogaps.blastn_canFam3 -num_threads 4
+    xxx two equally good hits
+    
+
+# run PAML on the intact genes thing
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa
+
+   dN/dS is 0.20187
+
+
 
 
 ##### PNMA/SIRH families:

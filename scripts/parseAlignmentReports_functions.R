@@ -27,8 +27,8 @@ readBlastBasedPseudReport <- function(file,
     
     # check whether all species are in the info file
     if ( sum(!x[,"Species"] %in% info[,"Latin.name"]) > 0 ) {
-        missingSpecies <- setdiff(pseuds[,"Species"], info[,"Latin.name"])
-        cat("    WARNING - there are species in the blast result table that are not in the species info table\n")
+        missingSpecies <- setdiff(x[,"Species"], info[,"Latin.name"])
+        cat("    WARNING - in file", file, "there are species in the blast result table that are not in the species info table\n")
         for (missing in missingSpecies) { cat("         ",missing,"\n") }
     }
     return(x)
@@ -45,7 +45,11 @@ splitSeqName <- function(oneSeqname) {
     ## need to strip off accessions that look one of two ways: AF162777 XM_005005200
     species <- gsub("_NM_","_NM", oneSeqname)
     species <- gsub("_XM_","_XM", species)
-    accToStrip <- str_extract(species, "_[A-Z]+\\d+") 
+    if (grepl("_fromGenomic",species)[1]) {
+        accToStrip <- "_fromGenomic"
+    } else {
+        accToStrip <- str_extract(species, "_[A-Z]+\\d+") 
+    }
     species <- gsub(accToStrip, "", species)
     accession <- gsub(paste(species, "_", sep=""), "", oneSeqname)
     output[["Species"]] <- gsub("_", " ",species)

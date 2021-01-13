@@ -1,0 +1,84 @@
+
+
+. Command line: phyml -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa.phy --datatype nt --model GTR -b 0 --sequential --pinv e --alpha e -f e 
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:				 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa.phy
+        . Data type:					 dna
+        . Alphabet size:				 4
+        . Sequence format:				 sequential
+        . Number of data sets:				 1
+        . Nb of bootstrapped data sets:			 0
+        . Model name:					 GTR
+        . Proportion of invariable sites:		 estimated
+        . RAS model:					 discrete Gamma
+        . Number of subst. rate catgs:			 4
+        . Gamma distribution parameter:			 estimated
+        . 'Middle' of each rate class:			 mean
+        . Nucleotide equilibrium frequencies:		 empirical
+        . Optimise tree topology:			 yes
+        . Starting tree:				 BioNJ
+        . Add random input tree:			 no
+        . Optimise branch lengths:			 yes
+        . Minimum length of an edge:			 1e-08
+        . Optimise substitution model parameters:	 yes
+        . Run ID:					 none
+        . Random seed:					 1610572329
+        . Subtree patterns aliasing:			 no
+        . Version:					 3.3.20200621
+        . Byte alignment:				 32
+        . AVX enabled:					 yes
+        . SSE enabled:					 yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+. 436 patterns found (out of a total of 1404 sites). 
+
+. 791 sites without polymorphism (56.34%).
+
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 2 MB of memory space.
+
+
+. Score of initial tree: -6417.11
+
+. Starting first round of SPRs...
+
+	       0s |   1 | lnL=     -6360.1 | depth=    1/   40 | improvements=  10 | delta_lnL=    0.0/ 1000.0  
+
+. Second round of optimization...
+
+	       0s |   2 | lnL=     -6366.7 | depth=    3/   36 | improvements=   9 | delta_lnL=  208.5/ 1000.0  
+	       0s |   3 | lnL=     -6343.2 | depth=    1/   20 | improvements=   6 | delta_lnL=    0.0/ 1000.0  
+	       0s |   4 | lnL=     -6364.0 | depth=    2/   16 | improvements=   7 | delta_lnL=    4.6/ 1000.0  
+	       0s |   5 | lnL=     -6336.3 | depth=    2/   12 | improvements=   7 | delta_lnL=  156.2/ 1000.0  
+	       0s |   6 | lnL=     -6336.3 | depth=    2/    9 | improvements=   4 | delta_lnL=    1.5/  416.9  
+
+. Third round of optimization...
+
+	       1s |   7 | lnL=     -6324.6 | depth=    1/   10 | improvements=   8 | delta_lnL=    0.0/  416.9 | triple moves=   5   +
+	       1s |   8 | lnL=     -6324.3 | depth=    0/    8 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   8   +
+
+. Final optimisation steps...
+
+
+. Log likelihood of the current tree: -6324.249387282467978366185.
+
+. Printing the most likely tree in file 'PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA3_aln1_NT.fa.phy_phyml_tree.txt'.
+
+. Time used 0h0m1s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

@@ -1,0 +1,11 @@
+    10
+Pnma3_Rattus_norvegicus_NM_001 
+Pnma3_Mus_musculus_BC036726   0.1655
+PNMA3_Felis_catus_XM_023249127   0.8203  0.7773
+PNMA3_Equus_caballus_NM_001257   0.7885  0.7824  0.3081
+PNMA3_Pteropus_alecto_XM_01559   0.9236  0.9252  0.4243  0.4316
+PNMA3_Callithrix_jacchus_XM_00   0.7956  0.7656  0.5378  0.4908  0.6397
+PNMA3_Homo_sapiens_NM_013364   0.7733  0.7513  0.4668  0.4248  0.5513  0.1478
+PNMA3_Macaca_mulatta_NM_001261   0.7826  0.7389  0.4763  0.4506  0.5785  0.1507  0.0558
+PNMA3_Loxodonta_africana_XM_01   1.1324  1.0941  0.7951  0.7177  0.8149  0.8179  0.7986  0.8436
+PNMA3_Dasypus_novemcinctus_XM_   1.2200  1.1943  0.8979  0.7942  0.8696  0.8261  0.7747  0.8076  0.7957

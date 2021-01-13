@@ -1,0 +1,84 @@
+
+
+. Command line: phyml -i PNMA1forPAML.txt.fa.phy --datatype nt --model GTR -b 0 --sequential --pinv e --alpha e -f e 
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:				 PNMA1forPAML.txt.fa.phy
+        . Data type:					 dna
+        . Alphabet size:				 4
+        . Sequence format:				 sequential
+        . Number of data sets:				 1
+        . Nb of bootstrapped data sets:			 0
+        . Model name:					 GTR
+        . Proportion of invariable sites:		 estimated
+        . RAS model:					 discrete Gamma
+        . Number of subst. rate catgs:			 4
+        . Gamma distribution parameter:			 estimated
+        . 'Middle' of each rate class:			 mean
+        . Nucleotide equilibrium frequencies:		 empirical
+        . Optimise tree topology:			 yes
+        . Starting tree:				 BioNJ
+        . Add random input tree:			 no
+        . Optimise branch lengths:			 yes
+        . Minimum length of an edge:			 1e-08
+        . Optimise substitution model parameters:	 yes
+        . Run ID:					 none
+        . Random seed:					 1610570072
+        . Subtree patterns aliasing:			 no
+        . Version:					 3.3.20200621
+        . Byte alignment:				 32
+        . AVX enabled:					 yes
+        . SSE enabled:					 yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+. 225 patterns found (out of a total of 1062 sites). 
+
+. 753 sites without polymorphism (70.90%).
+
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 2 MB of memory space.
+
+
+. Score of initial tree: -4181.31
+
+. Starting first round of SPRs...
+
+	       1s |   1 | lnL=     -4132.2 | depth=    3/   40 | improvements=  13 | delta_lnL=    2.7/ 1000.0  
+
+. Second round of optimization...
+
+	       1s |   2 | lnL=     -4132.1 | depth=    2/   36 | improvements=   9 | delta_lnL=   30.2/ 1000.0  
+	       1s |   3 | lnL=     -4127.3 | depth=    1/   20 | improvements=   6 | delta_lnL=    0.0/ 1000.0  
+	       1s |   4 | lnL=     -4130.0 | depth=    2/   16 | improvements=  11 | delta_lnL=    4.0/ 1000.0  
+	       1s |   5 | lnL=     -4126.5 | depth=    1/   12 | improvements=   4 | delta_lnL=    0.0/ 1000.0  
+
+. Third round of optimization...
+
+	       1s |   6 | lnL=     -4115.6 | depth=    1/   10 | improvements=   5 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+	       1s |   7 | lnL=     -4114.8 | depth=    0/    8 | improvements=   1 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+	       2s |   8 | lnL=     -4114.8 | depth=    0/    6 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+
+. Final optimisation steps...
+
+
+. Log likelihood of the current tree: -4114.738766856733491295017.
+
+. Printing the most likely tree in file 'PNMA1forPAML.txt.fa.phy_phyml_tree.txt'.
+
+. Time used 0h0m2s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

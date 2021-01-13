@@ -1,0 +1,106 @@
+
+
+. Running the analysis on 10 CPUs..
+
+. Command line: phyml-mpi -i PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa.phyml -d nt --sequential -m GTR --pinv e --alpha e -f e -b 100 
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:				 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa.phyml
+        . Data type:					 dna
+        . Alphabet size:				 4
+        . Sequence format:				 sequential
+        . Number of data sets:				 1
+        . Nb of bootstrapped data sets:			 100
+        . Compute approximate likelihood ratio test:	 no
+        . Model name:					 GTR
+        . Proportion of invariable sites:		 estimated
+        . RAS model:					 discrete Gamma
+        . Number of subst. rate catgs:			 4
+        . Gamma distribution parameter:			 estimated
+        . 'Middle' of each rate class:			 mean
+        . Nucleotide equilibrium frequencies:		 empirical
+        . Optimise tree topology:			 yes
+        . Starting tree:				 BioNJ
+        . Add random input tree:			 no
+        . Optimise branch lengths:			 yes
+        . Minimum length of an edge:			 1e-08
+        . Optimise substitution model parameters:	 yes
+        . Run ID:					 none
+        . Random seed:					 1610570901
+        . Subtree patterns aliasing:			 no
+        . Version:					 3.3.20200621
+        . Byte alignment:				 32
+        . AVX enabled:					 yes
+        . SSE enabled:					 yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+. 392 patterns found (out of a total of 1098 sites). 
+
+. 589 sites without polymorphism (53.64%).
+
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 3 MB of memory space.
+
+
+. Score of initial tree: -6485.61
+
+. Starting first round of SPRs...
+
+	       1s |   1 | lnL=     -6380.6 | depth=    1/   40 | improvements=   6 | delta_lnL=    0.0/ 1000.0  
+
+. Second round of optimization...
+
+	       2s |   2 | lnL=     -6412.1 | depth=    1/   36 | improvements=  10 | delta_lnL=    0.0/ 1000.0  
+	       2s |   3 | lnL=     -6370.6 | depth=    3/   20 | improvements=  10 | delta_lnL=    4.0/ 1000.0  
+	       2s |   4 | lnL=     -6383.9 | depth=    4/   16 | improvements=   6 | delta_lnL=   12.6/ 1000.0  
+	       3s |   5 | lnL=     -6394.1 | depth=    5/   12 | improvements=  10 | delta_lnL=   98.9/ 1000.0  
+	       3s |   6 | lnL=     -6420.5 | depth=    3/    9 | improvements=  14 | delta_lnL=   45.3/   25.2  
+	       3s |   7 | lnL=     -6412.7 | depth=    1/    7 | improvements=   8 | delta_lnL=    0.0/   25.2  
+	       3s |   8 | lnL=     -6374.9 | depth=    3/    5 | improvements=  13 | delta_lnL=   15.1/   25.2  
+	       3s |   9 | lnL=     -6380.4 | depth=    2/    7 | improvements=  10 | delta_lnL=   25.0/   25.2  
+	       3s |  10 | lnL=     -6397.7 | depth=    1/    6 | improvements=   8 | delta_lnL=    0.0/   90.7  
+	       4s |  11 | lnL=     -6387.0 | depth=    3/    5 | improvements=  14 | delta_lnL=   90.6/   90.7  
+
+. Third round of optimization...
+
+	       4s |  12 | lnL=     -6357.6 | depth=    2/   10 | improvements=   7 | delta_lnL=    6.8/  100.0 | triple moves=   5   +
+	       6s |  13 | lnL=     -6357.5 | depth=    0/    8 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+
+. Final optimisation steps...
+
+
+. Log likelihood of the current tree: -6356.953102702236719778739.
+
+. Launch bootstrap analysis on the most likely tree...
+
+. The bootstrap analysis will use 10 CPUs.
+  [....................]   20/ 100
+  [....................]   40/ 100
+  [....................]   60/ 100
+  [....................]   80/ 100
+  [....................]  100/ 100
+  
+
+. Exiting bootstrap function normally.
+
+. Completed the bootstrap analysis succesfully.
+
+. Printing the most likely tree in file 'PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA2_aln1_NT.fa.phyml_phyml_tree.txt'.
+
+. Time used 0h1m18s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

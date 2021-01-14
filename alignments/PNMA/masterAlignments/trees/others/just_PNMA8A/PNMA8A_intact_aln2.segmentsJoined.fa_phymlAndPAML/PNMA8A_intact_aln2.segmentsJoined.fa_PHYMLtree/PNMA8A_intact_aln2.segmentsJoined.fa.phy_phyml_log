@@ -1,0 +1,87 @@
+
+
+. Command line: phyml -i PNMA8A_intact_aln2.segmentsJoined.fa.phy --datatype nt --model GTR -b 0 --sequential --pinv e --alpha e -f e 
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:				 PNMA8A_intact_aln2.segmentsJoined.fa.phy
+        . Data type:					 dna
+        . Alphabet size:				 4
+        . Sequence format:				 sequential
+        . Number of data sets:				 1
+        . Nb of bootstrapped data sets:			 0
+        . Model name:					 GTR
+        . Proportion of invariable sites:		 estimated
+        . RAS model:					 discrete Gamma
+        . Number of subst. rate catgs:			 4
+        . Gamma distribution parameter:			 estimated
+        . 'Middle' of each rate class:			 mean
+        . Nucleotide equilibrium frequencies:		 empirical
+        . Optimise tree topology:			 yes
+        . Starting tree:				 BioNJ
+        . Add random input tree:			 no
+        . Optimise branch lengths:			 yes
+        . Minimum length of an edge:			 1e-08
+        . Optimise substitution model parameters:	 yes
+        . Run ID:					 none
+        . Random seed:					 1610637508
+        . Subtree patterns aliasing:			 no
+        . Version:					 3.3.20200621
+        . Byte alignment:				 32
+        . AVX enabled:					 yes
+        . SSE enabled:					 yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+. 648 patterns found (out of a total of 1284 sites). 
+
+. 498 sites without polymorphism (38.79%).
+
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 4 MB of memory space.
+
+
+. Score of initial tree: -8955.27
+
+. Starting first round of SPRs...
+
+	       0s |   1 | lnL=     -8845.0 | depth=    2/   40 | improvements=  10 | delta_lnL=  115.1/ 1000.0  
+
+. Second round of optimization...
+
+	       1s |   2 | lnL=     -8857.1 | depth=    3/   36 | improvements=   9 | delta_lnL=  134.9/ 1000.0  
+	       1s |   3 | lnL=     -8846.0 | depth=    1/   20 | improvements=   8 | delta_lnL=    0.0/ 1000.0  
+	       1s |   4 | lnL=     -8871.6 | depth=    1/   16 | improvements=  10 | delta_lnL=    0.0/ 1000.0  
+	       1s |   5 | lnL=     -8834.7 | depth=    2/   12 | improvements=  12 | delta_lnL=    5.0/ 1000.0  
+	       1s |   6 | lnL=     -8850.7 | depth=    1/    9 | improvements=   6 | delta_lnL=    0.0/  269.8  
+	       1s |   7 | lnL=     -8837.8 | depth=    2/    7 | improvements=  12 | delta_lnL=    1.4/  269.8  
+	       1s |   8 | lnL=     -8878.7 | depth=    3/    6 | improvements=   8 | delta_lnL=   88.5/  269.8  
+	       1s |   9 | lnL=     -8881.1 | depth=    3/    7 | improvements=   4 | delta_lnL=    3.6/  269.8  
+
+. Third round of optimization...
+
+	       2s |  10 | lnL=     -8816.3 | depth=    3/   10 | improvements=   8 | delta_lnL=    4.7/  177.1 | triple moves=   5   +
+	       4s |  11 | lnL=     -8814.8 | depth=    0/    8 | improvements=   0 | delta_lnL=    0.0/  100.0 | triple moves=   5   +
+
+. Final optimisation steps...
+
+
+. Log likelihood of the current tree: -8814.773992298618395579979.
+
+. Printing the most likely tree in file 'PNMA8A_intact_aln2.segmentsJoined.fa.phy_phyml_tree.txt'.
+
+. Time used 0h0m5s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

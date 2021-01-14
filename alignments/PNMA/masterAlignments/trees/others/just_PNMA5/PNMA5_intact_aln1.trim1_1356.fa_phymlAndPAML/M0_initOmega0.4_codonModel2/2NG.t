@@ -1,0 +1,11 @@
+    10
+Pnma5_Mus_musculus_NM_00110046 
+PNMA5_Loxodonta_africana_XM_01   1.6343
+PNMA5_Macaca_mulatta_NM_001266   1.2651  0.9814
+PNMA5_Dasypus_novemcinctus_XM_   1.4032  1.0307  0.9784
+PNMA5_Callithrix_jacchus_XM_00   1.3483  1.0547  0.3466  0.9689
+PNMA5_Pteropus_alecto_XM_00690   1.3610  1.0856  0.8777  0.9651  0.8780
+PNMA5_Equus_caballus_XM_014729   1.2074  0.9021  0.7497  0.8586  0.7394  0.6137
+LOC100763839_Cricetulus_griseu   0.4687  1.4395  1.2231  1.3101  1.2904  1.2480  1.1131
+PNMA5_Homo_sapiens_NM_00110315   1.2334  0.9872  0.1137  1.0010  0.3492  0.8800  0.7124  1.1960
+Pnma5_Rattus_norvegicus_NM_001   0.2859  1.5324  1.2305  1.5221  1.2746  1.3543  1.1666  0.4593  1.1920

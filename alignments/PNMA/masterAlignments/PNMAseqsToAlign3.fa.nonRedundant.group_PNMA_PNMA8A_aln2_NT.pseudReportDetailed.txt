@@ -1,0 +1,3 @@
+Seq	Region_start_refCoord	Region_end_refCoord	Region_start_alnCoord	Region_end_alnCoord	Indel_size	Region_type
+PNMA8A_Ovis_aries_XM_015100609	304	306	307	309	NA	Stop codon
+PNMA8A_Sus_scrofa_XM_005664614	319	321	322	324	NA	Stop codon

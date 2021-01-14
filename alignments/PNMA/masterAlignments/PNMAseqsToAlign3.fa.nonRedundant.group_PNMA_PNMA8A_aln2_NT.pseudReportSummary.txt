@@ -1,0 +1,5 @@
+Gene_type	Count	File
+Ref	1	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa
+Intact	12	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa
+Truncated	0	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa
+Pseud	2	PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa

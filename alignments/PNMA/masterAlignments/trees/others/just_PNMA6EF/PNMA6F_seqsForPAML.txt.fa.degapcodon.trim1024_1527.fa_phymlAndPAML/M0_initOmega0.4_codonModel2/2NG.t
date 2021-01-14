@@ -1,0 +1,8 @@
+     7
+LOC111766818_Dasypus_novemcinc 
+LOC113837620_Cricetulus_griseu   0.9865
+PNMA6F_Homo_sapiens_NM_0013549   0.9304  1.2148
+LOC101100193_Felis_catus_XM_02   0.7207  0.9931  0.8273
+PNMA6F_Macaca_mulatta_XM_01512   0.9394  1.3096  0.1262  0.8548
+PNMA6F_Equus_caballus_XM_02363   0.7267  0.8150  0.7890  0.4599  0.8244
+LOC108589966_Callithrix_jacchu   1.0725  1.3815  0.4533  0.9626  0.4788  0.9459

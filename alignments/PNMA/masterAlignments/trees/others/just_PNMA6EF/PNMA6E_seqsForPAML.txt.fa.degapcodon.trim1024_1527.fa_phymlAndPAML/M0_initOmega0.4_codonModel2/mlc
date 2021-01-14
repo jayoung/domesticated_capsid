@@ -1,0 +1,182 @@
+CODONML (in paml version 4.8, March 2014)  ../PNMA6E_seqsForPAML.txt.fa.degapcodon.trim1024_1527.fa.phy
+Model: One dN/dS ratio for branches, 
+Codon frequency model: F3x4
+ns =   7  ls = 168
+
+Codon usage in sequences
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   3   2   4   4   3   3 | Ser TCT   1   0   2   3   0   1 | Tyr TAT   0   0   1   0   1   0 | Cys TGT   0   0   1   0   1   0
+    TTC   4   3   1   4   2   3 |     TCC   2   1   1   2   1   3 |     TAC   1   1   1   1   1   2 |     TGC   4   3   2   2   3   2
+Leu TTA   0   0   1   0   1   0 |     TCA   0   0   0   0   0   0 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   3   2   1   4   1   4 |     TCG   2   1   0   1   1   2 |     TAG   0   0   0   0   0   0 | Trp TGG   5   3   3   4   4   4
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   0   0   2   2   0   0 | Pro CCT   1   1   5   0   3   1 | His CAT   2   0   1   1   1   1 | Arg CGT   0   0   0   0   1   0
+    CTC   4   9   3   2   5   4 |     CCC   2   5   0   4   5   2 |     CAC   0   4   1   4   2   2 |     CGC   2   6   2   1   3   2
+    CTA   1   0   2   1   0   1 |     CCA   3   0   3   2   1   3 | Gln CAA   0   0   0   0   0   0 |     CGA   2   1   0   1   0   2
+    CTG  21  16  17  20  18  21 |     CCG   1   0   0   1   0   1 |     CAG  10   8  11   8   8   9 |     CGG   2  10   7   7   5   4
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   0   0   0   2   0 | Thr ACT   2   0   5   2   1   2 | Asn AAT   1   0   2   0   0   0 | Ser AGT   0   0   0   0   1   0
+    ATC   1   1   1   1   2   1 |     ACC   3   3   1   2   5   2 |     AAC   2   3   5   3   4   3 |     AGC   5   7   2   4   3   5
+    ATA   0   0   2   0   0   0 |     ACA   0   0   0   0   1   0 | Lys AAA   0   0   0   1   0   1 | Arg AGA   1   0   0   1   1   0
+Met ATG   4   4   8   4   5   4 |     ACG   1   3   0   1   2   1 |     AAG   6   5   3   3   5   3 |     AGG   7   6  11   8   9  10
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   0   0   0   0   0   0 | Ala GCT   1   0   3   2   1   2 | Asp GAT   3   2   4   4   3   4 | Gly GGT   0   0   2   0   1   0
+    GTC   2   2   1   3   4   2 |     GCC   8  11   6   6   6   7 |     GAC   2   4   3   4   5   2 |     GGC   5   6   3   6   5   5
+    GTA   1   0   1   0   0   1 |     GCA   3   0   6   0   5   3 | Glu GAA   5   0   6   4   4   5 |     GGA   0   0   0   0   0   0
+    GTG   6   9   7   9   5   6 |     GCG   5   8   2   4   2   5 |     GAG  12  14   9  12  11  11 |     GGG   6   4   3   5   3   6
+--------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------
+Phe TTT   2 | Ser TCT   1 | Tyr TAT   1 | Cys TGT   1
+    TTC   3 |     TCC   0 |     TAC   1 |     TGC   2
+Leu TTA   0 |     TCA   1 | *** TAA   0 | *** TGA   0
+    TTG   2 |     TCG   0 |     TAG   0 | Trp TGG   3
+------------------------------------------------------
+Leu CTT   0 | Pro CCT   2 | His CAT   1 | Arg CGT   1
+    CTC   5 |     CCC   5 |     CAC   3 |     CGC   2
+    CTA   0 |     CCA   0 | Gln CAA   0 |     CGA   0
+    CTG  19 |     CCG   2 |     CAG  10 |     CGG   4
+------------------------------------------------------
+Ile ATT   1 | Thr ACT   1 | Asn AAT   1 | Ser AGT   1
+    ATC   2 |     ACC   2 |     AAC   4 |     AGC   2
+    ATA   1 |     ACA   0 | Lys AAA   0 | Arg AGA   2
+Met ATG   6 |     ACG   3 |     AAG   4 |     AGG  10
+------------------------------------------------------
+Val GTT   0 | Ala GCT   2 | Asp GAT   1 | Gly GGT   1
+    GTC   1 |     GCC  10 |     GAC   5 |     GGC   4
+    GTA   0 |     GCA   2 | Glu GAA   3 |     GGA   0
+    GTG   5 |     GCG   6 |     GAG  14 |     GGG   3
+------------------------------------------------------
+
+Codon position x base (3x4) table for each sequence.
+
+#1: PNMA6E_Homo_sapiens_NM_0013677
+position  1:    T:0.14881    C:0.30357    A:0.19643    G:0.35119
+position  2:    T:0.29762    C:0.20833    A:0.26190    G:0.23214
+position  3:    T:0.08333    C:0.27976    A:0.09524    G:0.54167
+Average         T:0.17659    C:0.26389    A:0.18452    G:0.37500
+
+#2: LOC111766818_Dasypus_novemcinc
+position  1:    T:0.09524    C:0.35714    A:0.19048    G:0.35714
+position  2:    T:0.28571    C:0.19643    A:0.24405    G:0.27381
+position  3:    T:0.02976    C:0.41071    A:0.00595    G:0.55357
+Average         T:0.13690    C:0.32143    A:0.14683    G:0.39484
+
+#3: LOC113837620_Cricetulus_griseu
+position  1:    T:0.10714    C:0.32143    A:0.23810    G:0.33333
+position  2:    T:0.30357    C:0.20238    A:0.27976    G:0.21429
+position  3:    T:0.19048    C:0.19643    A:0.12500    G:0.48810
+Average         T:0.20040    C:0.24008    A:0.21429    G:0.34524
+
+#4: PNMA6E_Callithrix_jacchus_XM_0
+position  1:    T:0.14881    C:0.32143    A:0.17857    G:0.35119
+position  2:    T:0.32143    C:0.17857    A:0.26786    G:0.23214
+position  3:    T:0.10714    C:0.29167    A:0.05952    G:0.54167
+Average         T:0.19246    C:0.26389    A:0.16865    G:0.37500
+
+#5: LOC101100193_Felis_catus_XM_02
+position  1:    T:0.11377    C:0.31138    A:0.24551    G:0.32934
+position  2:    T:0.28743    C:0.20359    A:0.26946    G:0.23952
+position  3:    T:0.11377    C:0.33533    A:0.07784    G:0.47305
+Average         T:0.17166    C:0.28343    A:0.19760    G:0.34731
+
+#6: LOC114674918_Macaca_mulatta_XM
+position  1:    T:0.14286    C:0.31548    A:0.19048    G:0.35119
+position  2:    T:0.29762    C:0.20833    A:0.25595    G:0.23810
+position  3:    T:0.08333    C:0.27976    A:0.09524    G:0.54167
+Average         T:0.17460    C:0.26786    A:0.18056    G:0.37698
+
+#7: PNMA6F_Equus_caballus_XM_02363
+position  1:    T:0.10119    C:0.32143    A:0.23810    G:0.33929
+position  2:    T:0.27976    C:0.22024    A:0.28571    G:0.21429
+position  3:    T:0.10119    C:0.30357    A:0.05357    G:0.54167
+Average         T:0.16071    C:0.28175    A:0.19246    G:0.36508
+
+Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT      21 | Ser S TCT       8 | Tyr Y TAT       3 | Cys C TGT       3
+      TTC      20 |       TCC      10 |       TAC       8 |       TGC      18
+Leu L TTA       2 |       TCA       1 | *** * TAA       0 | *** * TGA       0
+      TTG      17 |       TCG       7 |       TAG       0 | Trp W TGG      26
+------------------------------------------------------------------------------
+Leu L CTT       4 | Pro P CCT      13 | His H CAT       7 | Arg R CGT       2
+      CTC      32 |       CCC      23 |       CAC      16 |       CGC      18
+      CTA       5 |       CCA      12 | Gln Q CAA       0 |       CGA       6
+      CTG     132 |       CCG       5 |       CAG      64 |       CGG      39
+------------------------------------------------------------------------------
+Ile I ATT       3 | Thr T ACT      13 | Asn N AAT       4 | Ser S AGT       2
+      ATC       9 |       ACC      18 |       AAC      24 |       AGC      28
+      ATA       3 |       ACA       1 | Lys K AAA       2 | Arg R AGA       5
+Met M ATG      35 |       ACG      11 |       AAG      29 |       AGG      61
+------------------------------------------------------------------------------
+Val V GTT       0 | Ala A GCT      11 | Asp D GAT      21 | Gly G GGT       4
+      GTC      15 |       GCC      54 |       GAC      25 |       GGC      34
+      GTA       3 |       GCA      19 | Glu E GAA      27 |       GGA       0
+      GTG      47 |       GCG      32 |       GAG      83 |       GGG      30
+------------------------------------------------------------------------------
+
+(Ambiguity data are not used in the counts.)
+
+
+Codon position x base (3x4) table, overall
+
+position  1:    T:0.12255    C:0.32170    A:0.21106    G:0.34468
+position  2:    T:0.29617    C:0.20255    A:0.26638    G:0.23489
+position  3:    T:0.10128    C:0.29957    A:0.07319    G:0.52596
+Average         T:0.17333    C:0.27461    A:0.18355    G:0.36851
+
+
+Nei & Gojobori 1986. dN/dS (dN, dS)
+(Pairwise deletion)
+(Note: This matrix is not used in later ML. analysis.
+Use runmode = -2 for ML pairwise comparison.)
+
+PNMA6E_Homo_sapiens_NM_0013677
+LOC111766818_Dasypus_novemcinc 0.4947 (0.2538 0.5132)
+LOC113837620_Cricetulus_griseu 0.3077 (0.2518 0.8186) 0.1913 (0.1575 0.8232)
+PNMA6E_Callithrix_jacchus_XM_0 0.3757 (0.0861 0.2292) 0.4705 (0.2543 0.5405) 0.2948 (0.2677 0.9080)
+LOC101100193_Felis_catus_XM_02 0.5089 (0.2468 0.4850) 0.3993 (0.1731 0.4336) 0.1739 (0.1510 0.8683) 0.5056 (0.2411 0.4768)
+LOC114674918_Macaca_mulatta_XM 0.3341 (0.0300 0.0898) 0.4470 (0.2302 0.5151) 0.2502 (0.2264 0.9048) 0.2911 (0.0599 0.2058) 0.4768 (0.2240 0.4699)
+PNMA6F_Equus_caballus_XM_02363 0.4670 (0.2240 0.4797) 0.3381 (0.1612 0.4767) 0.1590 (0.1171 0.7364) 0.5245 (0.2499 0.4765) 0.3906 (0.1102 0.2822) 0.4368 (0.2137 0.4893)
+
+
+TREE #  1:  (4, (6, 1), (2, (3, (5, 7))));   MP score: -1
+lnL(ntime: 11  np: 13):  -2090.347477      +0.000000
+   8..4     8..9     9..6     9..1     8..10   10..2    10..11   11..3    11..12   12..5    12..7  
+ 0.232901 0.057505 0.024082 0.112762 0.711511 0.528791 0.124534 0.646637 0.116377 0.329511 0.246397 4.637099 0.149696
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   3.13101
+
+(4: 0.232901, (6: 0.024082, 1: 0.112762): 0.057505, (2: 0.528791, (3: 0.646637, (5: 0.329511, 7: 0.246397): 0.116377): 0.124534): 0.711511);
+
+(PNMA6E_Callithrix_jacchus_XM_0: 0.232901, (LOC114674918_Macaca_mulatta_XM: 0.024082, PNMA6E_Homo_sapiens_NM_0013677: 0.112762): 0.057505, (LOC111766818_Dasypus_novemcinc: 0.528791, (LOC113837620_Cricetulus_griseu: 0.646637, (LOC101100193_Felis_catus_XM_02: 0.329511, PNMA6F_Equus_caballus_XM_02363: 0.246397): 0.116377): 0.124534): 0.711511);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  4.63710
+
+omega (dN/dS) =  0.14970
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+   8..4      0.233   405.8    98.2  0.1497  0.0368  0.2461  14.9  24.2
+   8..9      0.058   405.8    98.2  0.1497  0.0091  0.0608   3.7   6.0
+   9..6      0.024   405.8    98.2  0.1497  0.0038  0.0254   1.5   2.5
+   9..1      0.113   405.8    98.2  0.1497  0.0178  0.1192   7.2  11.7
+   8..10     0.712   405.8    98.2  0.1497  0.1126  0.7519  45.7  73.9
+  10..2      0.529   405.8    98.2  0.1497  0.0836  0.5588  33.9  54.9
+  10..11     0.125   405.8    98.2  0.1497  0.0197  0.1316   8.0  12.9
+  11..3      0.647   405.8    98.2  0.1497  0.1023  0.6833  41.5  67.1
+  11..12     0.116   405.8    98.2  0.1497  0.0184  0.1230   7.5  12.1
+  12..5      0.330   405.8    98.2  0.1497  0.0521  0.3482  21.2  34.2
+  12..7      0.246   405.8    98.2  0.1497  0.0390  0.2604  15.8  25.6
+
+tree length for dN:       0.4953
+tree length for dS:       3.3086
+
+
+Time used:  0:01

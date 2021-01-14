@@ -1,0 +1,6 @@
+>PNMA6A_Pteropus_alecto_XM_025049179
+>PNMA6A_Homo_sapiens_NM_032882
+>PNMA6A_Felis_catus_XM_023249749
+>PNMA6A_Canis_lupus_familiaris_XM_005641976
+>PNMA6A_Loxodonta_africana_XM_010600786
+>PNMA6A_Equus_caballus_XM_005615109

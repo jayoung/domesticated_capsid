@@ -1,0 +1,335 @@
+
+ 15         verbose | verbose                0.00
+  7         runmode | runmode                0.00
+  4         seqtype | seqtype                1.00
+ 13       CodonFreq | CodonFreq              2.00
+ 18          aaDist | aaDist                 0.00
+ 16           model | model                  0.00
+ 20         NSsites | NSsites                0.00
+ 22           icode | icode                  0.00
+ 23           Mgene | Mgene                  0.00
+ 24       fix_kappa | fix_kappa              0.00
+ 25           kappa | kappa                  2.00
+ 26       fix_omega | fix_omega              0.00
+ 27           omega | omega                  0.40
+ 28       fix_alpha | fix_alpha              1.00
+ 29           alpha | alpha                  0.00
+ 30          Malpha | Malpha                 0.00
+ 31           ncatG | ncatG                 10.00
+  9           clock | clock                  0.00
+ 11           getSE | getSE                  0.00
+ 12    RateAncestor | RateAncestor           0.00
+ 36      Small_Diff | Small_Diff             0.00
+  6       cleandata | cleandata              0.00
+ 34           ndata | ndata                  1.00
+  8          method | method                 1.00
+CODONML in paml version 4.8, March 2014
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+
+
+Ambiguity character definition table:
+
+T (1): T 
+C (1): C 
+A (1): A 
+G (1): G 
+U (1): T 
+Y (2): T C 
+R (2): A G 
+M (2): C A 
+K (2): T G 
+S (2): C G 
+W (2): T A 
+H (3): T C A 
+B (3): T C G 
+V (3): C A G 
+D (3): T A G 
+- (4): T C A G 
+N (4): T C A G 
+? (4): T C A G 
+
+ns = 6  	ls = 1050
+Reading sequences, sequential format..
+Reading seq # 1: PNMA6A_Pteropus_alecto_XM_0250     Reading seq # 2: PNMA6A_Homo_sapiens_NM_032882     Reading seq # 3: PNMA6A_Felis_catus_XM_02324974     Reading seq # 4: PNMA6A_Canis_lupus_familiaris_     Reading seq # 5: PNMA6A_Loxodonta_africana_XM_0     Reading seq # 6: PNMA6A_Equus_caballus_XM_00561     
+Sequences read..
+Counting site patterns..  0:00
+         260 patterns at      350 /      350 sites (100.0%),  0:00
+3 ambiguous codons are seen in the data:
+ --- NGC NCC
+Counting codons..
+
+  2   1:Sites   265.9 +  757.1 = 1023.0	Diffs    63.5 +   57.5 =  121.0
+  3   1:Sites   266.6 +  756.4 = 1023.0	Diffs    77.5 +   40.5 =  118.0
+  3   2:Sites   262.2 +  760.8 = 1023.0	Diffs    73.0 +   40.0 =  113.0
+  4   1:Sites   266.3 +  756.7 = 1023.0	Diffs    74.0 +   39.0 =  113.0
+  4   2:Sites   261.9 +  761.1 = 1023.0	Diffs    76.0 +   40.0 =  116.0
+  4   3:Sites   262.6 +  760.4 = 1023.0	Diffs    53.5 +   12.5 =   66.0
+  5   1:Sites   269.5 +  735.5 = 1005.0	Diffs    95.8 +   91.2 =  187.0
+  5   2:Sites   265.0 +  740.0 = 1005.0	Diffs   113.0 +  105.0 =  218.0
+  5   3:Sites   265.8 +  739.2 = 1005.0	Diffs   120.2 +   82.8 =  203.0
+  5   4:Sites   265.5 +  739.5 = 1005.0	Diffs   123.5 +   86.5 =  210.0
+  6   1:Sites   262.2 +  754.8 = 1017.0	Diffs    69.5 +   60.5 =  130.0
+  6   2:Sites   257.8 +  759.2 = 1017.0	Diffs    57.8 +   65.2 =  123.0
+  6   3:Sites   258.5 +  758.5 = 1017.0	Diffs    53.0 +   41.0 =   94.0
+  6   4:Sites   258.2 +  758.8 = 1017.0	Diffs    65.5 +   41.5 =  107.0
+  6   5:Sites   262.9 +  739.1 = 1002.0	Diffs   117.5 +  103.5 =  221.0
+
+      120 bytes for distance
+   253760 bytes for conP
+        0 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(((5, 1), 2), 6, (4, 3));   MP score: -1
+   507520 bytes for conP, adjusted
+
+    0.041415    0.085599    0.561824    0.123436    0.195823    0.183326    0.042163    0.120920    0.099209    2.000000    0.400000
+
+ntime & nrate & np:     9     2    11
+
+Bounds (np=11):
+   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000100   0.000100
+  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000 999.000000 999.000000
+
+np =    11
+lnL0 = -3314.750065
+
+
+Round 1a: Paras (2) (e=5)
+Iterating by ming2
+Initial: fx=  3314.750065
+x=  2.00000  0.40000
+
+  1 h-m-p  0.0000 0.0016 255.0109 +++YYC  3274.338780  2 0.0006    12 | 0/2
+  2 h-m-p  0.0133 0.5772  12.2841 ++YC   3256.313089  1 0.1337    20 | 0/2
+  3 h-m-p  0.0329 0.1644   4.1369 Y      3253.234434  0 0.0329    25 | 0/2
+  4 h-m-p  0.5327 8.0000   0.2554 +Y     3252.498398  0 1.4412    31
+
+    3.157574    0.141154         0:00
+
+Round 1b: Blengths (9, e=5)
+	lnL0 =      -3252.498398
+	Cycle  1:   -3245.116157
+	Cycle  2:   -3244.327898
+
+ 0:00
+
+
+Round 2a: Paras (2) (e=2.5)
+Iterating by ming2
+Initial: fx=  3244.327898
+x=  3.15757  0.14115
+
+  1 h-m-p  0.0000 0.0029  48.5876 ++C    3244.090551  0 0.0002    41 | 0/2
+  2 h-m-p  0.0160 8.0000   1.4388 +Y     3243.979154  0 0.1137    47 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0047 Y      3243.977968  0 0.9103    52
+
+    3.317209    0.131809         0:00
+
+Round 2b: Blengths (9, e=2.5)
+	lnL0 =      -3243.977968
+	Cycle  1:   -3243.845025
+
+ 0:00
+
+
+Round 3a: Paras (2) (e=0.001)
+Iterating by ming2
+Initial: fx=  3243.845025
+x=  3.31721  0.13181
+
+  1 h-m-p  0.0000 0.0133   9.9247 ++C    3243.836303  0 0.0002    62 | 0/2
+  2 h-m-p  0.0160 8.0000   0.2555 +Y     3243.832416  0 0.1202    68 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0002 Y      3243.832415  0 0.9835    75
+
+    3.347835    0.130090         0:00
+
+Round 3b: Blengths (9, e=0.001)
+	lnL0 =      -3243.832415
+	Cycle  1:   -3243.819792
+	Cycle  2:   -3243.819218
+
+ 0:00
+
+
+Round 4a: Paras (2) (e=0.00025)
+Iterating by ming2
+Initial: fx=  3243.819218
+x=  3.34783  0.13009
+
+  1 h-m-p  0.0000 0.0493   2.6385 +Y     3243.818617  0 0.0002    84 | 0/2
+  2 h-m-p  0.0160 8.0000   0.0734 +Y     3243.818290  0 0.1218    90 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0000 Y      3243.818290  0 1.0096    97
+
+    3.356773    0.129643         0:00
+
+Round 4b: Blengths (9, e=0.00025)
+	lnL0 =      -3243.818290
+	Cycle  1:   -3243.818125
+
+ 0:00
+
+
+Round 5a: Paras (2) (e=6.25e-05)
+Iterating by ming2
+Initial: fx=  3243.818125
+x=  3.35677  0.12964
+
+  1 h-m-p  0.0001 0.2925   0.4430 C      3243.818109  0 0.0002   105 | 0/2
+  2 h-m-p  0.0160 8.0000   0.0106 +Y     3243.818102  0 0.1221   113 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0000 C      3243.818102  0 1.6000   120
+
+    3.358068    0.129569         0:00
+
+Round 5b: Blengths (9, e=6.25e-05)
+	lnL0 =      -3243.818102
+	Cycle  1:   -3243.818089
+
+ 0:00
+
+
+Round 6a: Paras (2) (e=1.5625e-05)
+Iterating by ming2
+Initial: fx=  3243.818089
+x=  3.35807  0.12957
+
+  1 h-m-p  0.0008 1.5074   0.0859 C      3243.818088  0 0.0002   128 | 0/2
+  2 h-m-p  0.0160 8.0000   0.0022 +Y     3243.818088  0 0.1221   136 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0000 Y      3243.818088  0 1.6000   143
+
+    3.358342    0.129555         0:00
+
+Round 6b: Blengths (9, e=1.5625e-05)
+	lnL0 =      -3243.818088
+	Cycle  1:   -3243.818087
+
+ 0:00
+
+
+Round 7a: Paras (2) (e=3.90625e-06)
+Iterating by ming2
+Initial: fx=  3243.818087
+x=  3.35834  0.12955
+
+  1 h-m-p  0.0033 6.6303   0.0195 -Y     3243.818087  0 0.0002   152 | 0/2
+  2 h-m-p  0.0160 8.0000   0.0005 +Y     3243.818087  0 0.1220   160 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0000 C      3243.818087  0 1.6000   167
+
+    3.358401    0.129552         0:01
+
+Round 7b: Blengths (9, e=3.90625e-06)
+	lnL0 =      -3243.818087
+	Cycle  1:   -3243.818087
+
+ 0:01
+
+
+Round 8a: Paras (2) (e=1e-06)
+Iterating by ming2
+Initial: fx=  3243.818087
+x=  3.35840  0.12955
+
+  1 h-m-p  0.0040 8.0000   0.0057 --Y    3243.818087  0 0.0001   177 | 0/2
+  2 h-m-p  0.0160 8.0000   0.0001 +Y     3243.818087  0 0.1228   185 | 0/2
+  3 h-m-p  1.6000 8.0000   0.0000 -C     3243.818087  0 0.1000   193
+
+    3.358414    0.129551         0:01
+
+Round 8b: Blengths (9, e=1e-06)
+	lnL0 =      -3243.818087
+	Cycle  1:   -3243.818087
+
+ 0:01
+
+lnL  = -3243.818087
+Out..
+lnL  = -3243.818087
+196 lfun, 196 eigenQcodon, 1988 P(t)
+
+d123[*] =  0.00371  0.00343  0.01276  average  0.00663
+    [B] =  0.01998  0.02649  0.01485  average  0.02044
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.00265 dS =  0.02044 d4 =  0.01672 (210.2 four-fold sites)
+             dN*=  0.00280 dS*=  0.01718 S* = 279.68 N* = 770.32
+
+d123[*] =  0.01267  0.01173  0.04361  average  0.02267
+    [B] =  0.06831  0.09054  0.05077  average  0.06987
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.00905 dS =  0.06987 d4 =  0.05716 (210.2 four-fold sites)
+             dN*=  0.00958 dS*=  0.05873 S* = 279.68 N* = 770.32
+
+d123[*] =  0.14072  0.13025  0.48424  average  0.25174
+    [B] =  0.75860  1.00541  0.56375  average  0.77592
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.10052 dS =  0.77592 d4 =  0.63475 (210.2 four-fold sites)
+             dN*=  0.10634 dS*=  0.65220 S* = 279.68 N* = 770.32
+
+d123[*] =  0.03567  0.03302  0.12275  average  0.06381
+    [B] =  0.19229  0.25485  0.14290  average  0.19668
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.02548 dS =  0.19668 d4 =  0.16090 (210.2 four-fold sites)
+             dN*=  0.02696 dS*=  0.16532 S* = 279.68 N* = 770.32
+
+d123[*] =  0.04597  0.04255  0.15820  average  0.08224
+    [B] =  0.24782  0.32845  0.18417  average  0.25348
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.03284 dS =  0.25348 d4 =  0.20736 (210.2 four-fold sites)
+             dN*=  0.03474 dS*=  0.21306 S* = 279.68 N* = 770.32
+
+d123[*] =  0.03764  0.03484  0.12953  average  0.06734
+    [B] =  0.20292  0.26894  0.15080  average  0.20755
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.02689 dS =  0.20755 d4 =  0.16979 (210.2 four-fold sites)
+             dN*=  0.02845 dS*=  0.17446 S* = 279.68 N* = 770.32
+
+d123[*] =  0.01064  0.00985  0.03661  average  0.01903
+    [B] =  0.05736  0.07602  0.04263  average  0.05867
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.00760 dS =  0.05867 d4 =  0.04799 (210.2 four-fold sites)
+             dN*=  0.00804 dS*=  0.04931 S* = 279.68 N* = 770.32
+
+d123[*] =  0.02559  0.02368  0.08805  average  0.04577
+    [B] =  0.13794  0.18281  0.10251  average  0.14108
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.01828 dS =  0.14108 d4 =  0.11542 (210.2 four-fold sites)
+             dN*=  0.01934 dS*=  0.11859 S* = 279.68 N* = 770.32
+
+d123[*] =  0.01564  0.01448  0.05383  average  0.02799
+    [B] =  0.08433  0.11177  0.06267  average  0.08626
+accept  =  0.18550  0.12955  0.85897
+
+w =  0.12955 dN =  0.01118 dS =  0.08626 d4 =  0.07057 (210.2 four-fold sites)
+             dN*=  0.01182 dS*=  0.07251 S* = 279.68 N* = 770.32
+end of tree file.
+
+Time used:  0:01

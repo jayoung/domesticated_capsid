@@ -1228,6 +1228,108 @@ blastn -task blastn -query PNMA3_Felis_catus_XM_023249127.fa.nogaps -db ~/public
 
 
 
+###### PNMA5 analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA5 
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA5_aln1_NT.fa .
+
+# check alignment
+good alignment. 
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA5_aln1_NT.fa PNMA5_Homo_sapiens_NM_001103150
+removegapsfromseq.bioperl PNMA5_Homo_sapiens_NM_001103150.fa
+blastn -task blastn -query PNMA5_Homo_sapiens_NM_001103150.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA5_Homo_sapiens_NM_001103150.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA5 and non-PNMA5 hits
+
+# nucleotide tree
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA5_aln1_NT.fa
+     tree looks more or less as expected
+
+# run PAML on just intact genes
+
+manually made PNMA5_intact_aln1.fa, and trimmed to codons 1-452
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=1 -end=452 -coords=codons PNMA5_intact_aln1.fa
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA5_intact_aln1.trim1_1356.fa
+   dN/dS is 0.34931 
+
+
+
+###### PNMA6A analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA6A
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.fa .
+
+# check alignment
+mostly good alignment, but needs to be trimmed. 
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.fa PNMA6A_Homo_sapiens_NM_032882
+removegapsfromseq.bioperl PNMA6A_Homo_sapiens_NM_032882.fa
+blastn -task blastn -query PNMA6A_Homo_sapiens_NM_032882.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA6A_Homo_sapiens_NM_032882.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA6A and non-PNMA6A hits
+
+
+# nucleotide tree - need to trim, codons 1-357
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=1 -end=357 -coords=codons PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.fa
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.trim1_1071.fa
+    tree looks more or less as expected
+
+# run PAML on just intact genes
+
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6A_aln1_NT.fa PNMA6A_intact_aln1.txt
+
+ trimmed to codons 1-350
+ 
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=1 -end=350 -coords=codons PNMA6A_intact_aln1.txt.fa
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA6A_intact_aln1.txt.trim1_1050.fa
+
+   dN/dS is 0.12955 
+
+
+
+###### PNMA6EF analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA6EF
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa .
+
+# check alignment
+alignment has some big gaps, needs to be trimmed. 
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa PNMA6E_Homo_sapiens_NM_001367770
+
+removegapsfromseq.bioperl PNMA6E_Homo_sapiens_NM_001367770.fa
+blastn -task blastn -query PNMA6E_Homo_sapiens_NM_001367770.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA6E_Homo_sapiens_NM_001367770.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA6EF and non-PNMA6EF hits
+
+
+# nucleotide tree - need to trim, codons 342-509
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=342 -end=509 -coords=codons PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.trim1024_1527.fa
+    
+    tree looks more or less as expected
+
+# run PAML on just intact genes E/F separately, although outgroups are the same
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa PNMA6E_seqsForPAML.txt
+splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa PNMA6F_seqsForPAML.txt
+ 
+ 
+ trimmed to codons 1-350
+ 
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=1 -end=350 -coords=codons PNMA6A_intact_aln1.txt.fa
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA6A_intact_aln1.txt.trim1_1050.fa
+
+   dN/dS is 0.12955 
+
+
+xxxx
+
 ##### PNMA/SIRH families:
 
 xxxxx remake the links after other blasts finish, before doing the other alignments

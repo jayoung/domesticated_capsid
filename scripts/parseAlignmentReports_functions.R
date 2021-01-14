@@ -48,6 +48,7 @@ splitSeqName <- function(oneSeqname) {
     if (grepl("_fromGenomic",species)[1]) {
         accToStrip <- "_fromGenomic"
     } else {
+        require(stringr)
         accToStrip <- str_extract(species, "_[A-Z]+\\d+") 
     }
     species <- gsub(accToStrip, "", species)

@@ -1318,17 +1318,56 @@ blastn -task blastn -query PNMA6E_Homo_sapiens_NM_001367770.fa.nogaps -db ../../
 splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa PNMA6E_seqsForPAML.txt
 splitfastafileextractsomeseqs.bioperl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA6EF_aln1_NT.fa PNMA6F_seqsForPAML.txt
  
- 
- trimmed to codons 1-350
- 
-~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=1 -end=350 -coords=codons PNMA6A_intact_aln1.txt.fa
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/removegapsfromalignmentinframeonly.pl PNMA6E_seqsForPAML.txt.fa PNMA6F_seqsForPAML.txt.fa 
 
-~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA6A_intact_aln1.txt.trim1_1050.fa
+6E trim: codons 342-509
+6F trim: codons 342-509
 
-   dN/dS is 0.12955 
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=342 -end=509 -coords=codons PNMA6E_seqsForPAML.txt.fa.degapcodon
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignment.bioperl -start=342 -end=509 -coords=codons PNMA6F_seqsForPAML.txt.fa.degapcodon
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA6E_seqsForPAML.txt.fa.degapcodon.trim1024_1527.fa PNMA6F_seqsForPAML.txt.fa.degapcodon.trim1024_1527.fa
+   6E dN/dS is 0.14970
+   6F dN/dS is 0.15256
 
 
-xxxx
+
+###### PNMA8A analysis
+
+cd ~/FH_fast_storage/miscMalikLab/domesticated_capsid/alignments/PNMA/masterAlignments/trees/others/just_PNMA8A
+cp ../../../PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln1_NT.fa .
+
+did some more editing, renamed to PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa
+
+# check alignment edited more
+
+# check separate from paralogs
+splitfastafileextractoneseq.pl PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa PNMA8A_Homo_sapiens_NM_018215
+
+removegapsfromseq.bioperl PNMA8A_Homo_sapiens_NM_018215.fa
+blastn -task blastn -query PNMA8A_Homo_sapiens_NM_018215.fa.nogaps -db ../../../../masterAlignments/PNMAseqsToAlign3edited.fa.nogaps -out PNMA8A_Homo_sapiens_NM_018215.fa.nogaps.blastn_seqsToAln3 
+    clear separation between PNMA8A and non-PNMA8A hits
+
+# nucleotide tree - no need to trim for this purpose
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/runPHYML.pl -boots=100 -threads=10 -removeBlen=0 PNMAseqsToAlign3.fa.nonRedundant.group_PNMA_PNMA8A_aln2_NT.fa
+    tree looks more or less as expected
+
+# run PAML 
+
+manually got this: PNMA8A_intact_aln2.fa 
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/trimalignmentmulti.bioperl -coords=codons PNMA8A_intact_aln2_coordsTrimMultiCodons.txt PNMA8A_intact_aln2.fa
+
+
+~/FH_fast_storage/miscMalikLab/domesticated_capsid/scripts/makeTreeAndRunPAML.pl PNMA8A_intact_aln2.segmentsJoined.fa
+
+   dN/dS is 0.32256 
+
+
+xxx  fo PNMA8B
+
 
 ##### PNMA/SIRH families:
 

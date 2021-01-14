@@ -1366,7 +1366,7 @@ manually got this: PNMA8A_intact_aln2.fa
    dN/dS is 0.32256 
 
 
-xxx  fo PNMA8B
+xxx  do PNMA8B
 
 
 ##### PNMA/SIRH families:
